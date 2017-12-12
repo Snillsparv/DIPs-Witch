@@ -28,6 +28,8 @@
       <File Name="fire.h"/>
       <File Name="player.c"/>
       <File Name="player.h"/>
+      <File Name="bird.h"/>
+      <File Name="bird.c"/>
     </VirtualDirectory>
     <VirtualDirectory Name="Graphics">
       <File Name="graphics.c"/>
@@ -83,6 +85,18 @@
       <File Name="bird1_black.xbm"/>
       <File Name="bird1_gray.xbm"/>
       <File Name="bird1_light.xbm"/>
+      <File Name="bird2_black.xbm"/>
+      <File Name="bird2_gray.xbm"/>
+      <File Name="bird2_light.xbm"/>
+      <File Name="bird3_black.xbm"/>
+      <File Name="bird3_gray.xbm"/>
+      <File Name="bird3_light.xbm"/>
+      <File Name="bird4_black.xbm"/>
+      <File Name="bird4_gray.xbm"/>
+      <File Name="bird4_light.xbm"/>
+      <File Name="bird5_black.xbm"/>
+      <File Name="bird5_gray.xbm"/>
+      <File Name="bird5_light.xbm"/>
     </VirtualDirectory>
   </VirtualDirectory>
   <Settings Type="Executable">

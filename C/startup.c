@@ -2,6 +2,7 @@
 #include "monster_black.xbm"
 #include "monster_light.xbm"
 #include "monster_gray.xbm"
+
 #include "castle_black.xbm"
 #include "castle_gray.xbm"
 #include "castle_light.xbm"
@@ -15,6 +16,7 @@
 #include "gpio.h"
 #include "fire.h"
 #include "player.h"
+#include "bird.h"
 
 #define START_SCREEN 1
 #define GAME_SCREEN 2
@@ -48,6 +50,7 @@ sprite *monsterLight;
 sprite *monsterGray;
 sprite *bg;
 
+
 sprite *castleBlack;
 sprite *castleGray;
 sprite *castleLight;
@@ -58,6 +61,7 @@ sprite *titleLight;
 sprite tempMonster;
 sprite tempMonsterLight;
 sprite tempMonsterGray;
+
 sprite tempBg;
 
 sprite tempCastleBlack;
@@ -104,7 +108,9 @@ void initSprites( void ) {
 	titleGray = pointer9;
 	sprite *pointer10 = &tempTitleBlack;
 	load_sprite(pointer10, title_black_bits, title_black_width, title_black_height);
-	titleBlack = pointer10;
+	titleBlack = pointer10;	
+	
+	
 }
 	
 int counter = 0;
@@ -157,22 +163,42 @@ void main(void)
 	castleObj.yPos = 1;
 	castleObj.current_frame = 0;
 	
+	GameObject bird;
+	init_bird( &bird );
+	bird.xPos = 180;
+	bird.yPos = 40;
+	bird.update = gameObjectUpdate;
+	
 	GameObject fire2;
 	init_fire( &fire2 );
 	GameObject fire3;
 	init_fire( &fire3 );
-	fire2.xPos = 94;
-	fire2.yPos = 64-12;
-	fire3.xPos = 94+13;
-	fire3.yPos = 64-12;
+	GameObject fire4;
+	init_fire( &fire4 );
+	GameObject fire1;
+	init_fire( &fire1 );
+	fire2.xPos = 98;
+	fire2.yPos = 26-12;
+	fire3.xPos = 115;
+	fire3.yPos = 34-12;
+	
+	fire1.xPos = 85;
+	fire1.yPos = 23-12;
+	fire4.xPos = 71;
+	fire4.yPos = 27-11;
 	//draw_game_object(&castleObj);
 	
 	fire2.animation_speed = 2;
 	fire3.animation_speed = 2;
+	fire1.animation_speed = 2;
+	fire4.animation_speed = 2;
 	
 	fire2.update = gameObjectUpdate;
 	fire3.update = gameObjectUpdate;
+	fire1.update = gameObjectUpdate;
+	fire4.update = gameObjectUpdate;
 	
+	SlowText text_kra;
 	SlowText text1;
 	SlowText text2;
 	SlowText text3;
@@ -185,6 +211,7 @@ void main(void)
 	SlowText text10;
 	SlowText text11;
 	SlowText text12;
+	init_slow_text(&text_kra, "*KRA!* *KRA!*", "   ", 1);
 	init_slow_text(&text1, "For centuries the", "DILs-witches have", 1);
 	init_slow_text(&text2, "coiled in fear,", "    ", 1);
 	init_slow_text(&text3, "whenever they hear", "that a DIPs-witch", 1);
@@ -216,12 +243,20 @@ void main(void)
 				draw_game_object(&castleObj);
 				draw_game_object(&fire2);
 				draw_game_object(&fire3);
+				draw_game_object(&fire1);
+				draw_game_object(&fire4);
 				draw_game_object(&titleObj);
+				draw_game_object(&bird);
 				show_frame(1);
 				
 				static int long_text = 40;
 				static int short_text = 20;
-				static int delay_until_text = 70;
+				static int delay_until_text = 110;
+				
+				if (counter < delay_until_text - 25 && counter > delay_until_text - 60)
+					text_kra.display(&text_kra, 20);
+				if (counter == delay_until_text - 25)
+					clear_ascii();
 				
 				if (counter < delay_until_text);
 				else if (counter < delay_until_text + 1*long_text)
@@ -236,15 +271,15 @@ void main(void)
 					text5.display(&text5, 15);
 				else if(counter < delay_until_text + 3*long_text + 3*short_text)
 					text6.display(&text6, 20);
-				else if(counter < delay_until_text + 4*long_text + 3*short_text)
+				else if(counter < delay_until_text + 4*long_text + 3*short_text + 3)
 					text7.display(&text7, 20);
-				else if(counter < delay_until_text + 5*long_text + 3*short_text + 3)
+				else if(counter < delay_until_text + 5*long_text + 3*short_text + 2)
 					text8.display(&text8, 20);
-				else if(counter < delay_until_text + 5*long_text + 4*short_text + 3)
+				else if(counter < delay_until_text + 5*long_text + 4*short_text + 2)
 					text9.display(&text9, 20);
-				else if(counter < delay_until_text + 6*long_text + 4*short_text + 3)
+				else if(counter < delay_until_text + 6*long_text + 4*short_text - 2 + 2)
 					text10.display(&text10, 15);
-				else if(counter < delay_until_text + 7*long_text + 5*short_text + 3)
+				else if(counter < delay_until_text + 6*long_text + 5*short_text + 3 + 2)
 					text12.display(&text12, 15);
 				else {
 					text11.display(&text11, 20);
@@ -253,6 +288,13 @@ void main(void)
 				
 				fire2.update(&fire2);
 				fire3.update(&fire3);
+				fire1.update(&fire1);
+				fire4.update(&fire4);
+				bird.update(&bird);
+				bird.xPos -= 2;
+				if (counter % 2 == 0) {
+					bird.yPos--;
+				}
 		}
 		
 		

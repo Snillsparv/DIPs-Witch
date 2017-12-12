@@ -104,11 +104,11 @@ void init_fire( GameObject *fireObj ) {
 		fireImages[3] = fire4Image;
 		fireImages[4] = fire5Image;
 		
-		load_image(&fireImages[0], fireBlack, fire1Gray, fire1Light);
-		load_image(&fireImages[1], fireBlack, fire2Gray, fire2Light);
-		load_image(&fireImages[2], fireBlack, fire3Gray, fire3Light);
-		load_image(&fireImages[3], fireBlack, fire4Gray, fire4Light);
-		load_image(&fireImages[4], fireBlack, fire5Gray, fire5Light);
+		load_image(&fireImages[0], fire1Gray, fire1Light, fireBlack);
+		load_image(&fireImages[1], fire2Gray, fire2Light, fireBlack);
+		load_image(&fireImages[2], fire3Gray, fire3Light, fireBlack);
+		load_image(&fireImages[3], fire4Gray, fire4Light, fireBlack);
+		load_image(&fireImages[4], fire5Gray, fire5Light, fireBlack);
 	}
 	
 	fireObj->images = fireImages;

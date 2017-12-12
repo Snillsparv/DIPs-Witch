@@ -23,6 +23,8 @@ typedef struct tGameObject {
 void gameObjectUpdate(GameObject *this);
 void render(GameObject* this); // metod
 
+
+
 extern GameObject* gameObjects[];
 extern int nGameObjects;
 

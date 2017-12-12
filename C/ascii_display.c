@@ -132,25 +132,25 @@ void ascii_init(void){
 	//initiera displayen:
 		while((ascii_read_status() & 0x80) == 0x80){} //VÃ¤nta tills displayed Ã¤r redo
 		delay_micro(20); //latenstid 
-		ascii_write_cmd(0b00111000); //Function set (39us), 000011NFXX, N = antal rader = 2, F = -->0=5x8<--, 1=5x11
+		ascii_write_cmd(0x38); //Function set (39us), 000011NFXX, N = antal rader = 2, F = -->0=5x8<--, 1=5x11
 		delay_micro(100); //istÃƒÂ¤llet fÃƒÂ¶r 39us
 		
 	// clear display
 		while((ascii_read_status() & 0x80) == 0x80){} //VÃƒÂ¤nta tills displayed ÃƒÂ¤r redo
 		delay_micro(20); //latenstid
-		ascii_write_cmd(0b00000001); 
+		ascii_write_cmd(0x01); 
 		delay_micro(100); //istÃƒÂ¤llet fÃƒÂ¶r 39us
 
 	//display control:
 		while((ascii_read_status() & 0x80) == 0x80){} //VÃƒÂ¤nta tills displayed ÃƒÂ¤r redo
 		delay_micro(20); //latenstid
-		ascii_write_cmd(0b00001111); //000001 + XXX. X:ena = 0:av / 1:pÃƒÂ¥ -  SkÃƒÂ¤rm/MarkÃƒÂ¶r/BlinkaMarkÃƒÂ¶ren
+		ascii_write_cmd(0x0C); //000001 + XXX. X:ena = 0:av / 1:pÃƒÂ¥ -  SkÃƒÂ¤rm/MarkÃƒÂ¶r/BlinkaMarkÃƒÂ¶ren
 		delay_micro(100); //istÃƒÂ¤llet fÃƒÂ¶r 39us
 		
 	// entry mode set
 		while((ascii_read_status() & 0x80) == 0x80){} //VÃƒÂ¤nta tills displayed ÃƒÂ¤r redo
 		delay_micro(20); //latenstid
-		ascii_write_cmd(0b00000110); //00000001 + XY. X=0: markÃƒÂ¶ren vÃƒÂ¤nst. || X=1: marÃƒÂ¶kren hÃƒÂ¶g. - Y=0: skift av || Y=1: skift pÃƒÂ¥
+		ascii_write_cmd(0x06); //00000001 + XY. X=0: markÃƒÂ¶ren vÃƒÂ¤nst. || X=1: marÃƒÂ¶kren hÃƒÂ¶g. - Y=0: skift av || Y=1: skift pÃƒÂ¥
 		delay_micro(100); //istÃƒÂ¤llet fÃƒÂ¶r 39us
 		
 		
@@ -198,7 +198,7 @@ void ascii_write(char *row1, char *row2) {
 		ascii_write_char(*row2++);
 	}
 	
-	ascii_goToXY(21,2);
+	ascii_goToXY(21,1);
 }
 
 void ascii_write_part(char *row1, char *row2, int limit1, int limit2) {
@@ -220,7 +220,7 @@ void ascii_write_part(char *row1, char *row2, int limit1, int limit2) {
 		}
 	}
 	
-	ascii_goToXY(21,2);
+	ascii_goToXY(21,1);
 }
 
 
