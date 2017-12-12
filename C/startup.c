@@ -5,6 +5,11 @@
 #include "castle_black.xbm"
 #include "castle_gray.xbm"
 #include "castle_light.xbm"
+#include "title_light.xbm"
+#include "title_gray.xbm"
+#include "title_black.xbm"
+
+
 #include "bg.xbm"
 #include "gpio.h"
 #include "fire.h"
@@ -41,6 +46,9 @@ sprite *bg;
 sprite *castleBlack;
 sprite *castleGray;
 sprite *castleLight;
+sprite *titleBlack;
+sprite *titleGray;
+sprite *titleLight;
 
 sprite tempMonster;
 sprite tempMonsterLight;
@@ -50,6 +58,9 @@ sprite tempBg;
 sprite tempCastleBlack;
 sprite tempCastleGray;
 sprite tempCastleLight;
+sprite tempTitleBlack;
+sprite tempTitleGray;
+sprite tempTitleLight;
 
 void initSprites( void ) {
 	sprite *monsterPointer = &tempMonster;
@@ -79,8 +90,19 @@ void initSprites( void ) {
 	sprite *pointer7 = &tempCastleLight;
 	load_sprite(pointer7, castle_light_bits, castle_black_width, castle_black_height);
 	castleLight = pointer7;
+	
+	sprite *pointer8 = &tempTitleLight;
+	load_sprite(pointer8, title_light_bits, title_black_width, title_black_height);
+	titleLight = pointer8;
+	sprite *pointer9 = &tempTitleGray;
+	load_sprite(pointer9, title_gray_bits, title_black_width, title_black_height);
+	titleGray = pointer9;
+	sprite *pointer10 = &tempTitleBlack;
+	load_sprite(pointer10, title_black_bits, title_black_width, title_black_height);
+	titleBlack = pointer10;
 }
 	
+int counter = 0;
 void main(void)
 {
 
@@ -104,6 +126,15 @@ void main(void)
 	monsterObj.yPos = 4;
 	monsterObj.current_frame = 0;
 	monsterObj.update = playerUpdate;
+	
+	GameObject titleObj;
+	Image titleImage;
+	Image titleImages[] = {titleImage};
+	titleObj.images = titleImages;
+	load_image(&titleObj.images[0], titleBlack, titleGray, titleLight);
+	titleObj.xPos = 1;
+	titleObj.yPos = -40;
+	titleObj.current_frame = 0;
 	
 
 
@@ -137,10 +168,16 @@ void main(void)
 	fire3.update = gameObjectUpdate;
 	
 	while(1) {
+		counter++;
+		if(titleObj.yPos < 1) {
+			titleObj.yPos++;
+		}
+		
 		draw_game_object(&castleObj);
 		draw_game_object(&fire2);
 		draw_game_object(&fire3);
-		draw_game_object(&monsterObj);
+		//draw_game_object(&monsterObj);
+		draw_game_object(&titleObj);
 		show_frame(1);
 		
 		fire2.update(&fire2);

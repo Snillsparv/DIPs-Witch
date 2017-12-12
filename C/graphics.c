@@ -335,6 +335,10 @@ void draw_sprite(sprite* s, int x, int y, int set, int color) {
 				if (byte & (1 << k)){
 					pixel(8 * j + k + x + 1, i + y + 1, set, color);
 					
+					if(set) {	//Remove the other colors from this pixel
+						pixel(8 * j + k + x + 1, i + y + 1, 0, (color+1) % 3);
+						pixel(8 * j + k + x + 1, i + y + 1, 0, (color+2) % 3);
+					}
 				}
 			}
 		}

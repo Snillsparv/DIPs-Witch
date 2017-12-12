@@ -62,6 +62,11 @@
       <File Name="fire5_light.xbm"/>
       <File Name="fire_black_2.xbm"/>
     </VirtualDirectory>
+    <VirtualDirectory Name="Title">
+      <File Name="title_black.xbm"/>
+      <File Name="title_gray.xbm"/>
+      <File Name="title_light.xbm"/>
+    </VirtualDirectory>
   </VirtualDirectory>
   <Settings Type="Executable">
     <GlobalSettings>
