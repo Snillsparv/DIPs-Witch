@@ -9,11 +9,16 @@
 #include "title_gray.xbm"
 #include "title_black.xbm"
 
-
+#include "slow_text.h"
+#include "ascii_display.h"
 #include "bg.xbm"
 #include "gpio.h"
 #include "fire.h"
 #include "player.h"
+
+#define START_SCREEN 1
+#define GAME_SCREEN 2
+#define GAME_OVER_SCREEN 3
 
 
 void startup(void) __attribute__((naked)) __attribute__((section (".start_section")) );
@@ -167,6 +172,32 @@ void main(void)
 	fire2.update = gameObjectUpdate;
 	fire3.update = gameObjectUpdate;
 	
+	SlowText text1;
+	SlowText text2;
+	SlowText text3;
+	SlowText text4;
+	SlowText text5;
+	SlowText text6;
+	SlowText text7;
+	SlowText text8;
+	SlowText text9;
+	SlowText text10;
+	SlowText text11;
+	init_slow_text(&text1, "For centuries the", "DILs-witches have", 1);
+	init_slow_text(&text2, "coiled in fear,", "    ", 1);
+	init_slow_text(&text3, "whenever they hear", "that a DIPs-witch", 1);
+	init_slow_text(&text4, "is near.", "   ", 1);
+	init_slow_text(&text5, "So it is quite", "surprising, finding", 1);
+	init_slow_text(&text6, "you here,", "    ", 1);
+	init_slow_text(&text7, "queen Daffo of DILs,", "heir to king Lear.", 1);
+	init_slow_text(&text8, "But maybe you're", "tempted, to loot", 1);
+	init_slow_text(&text9, "from the riches,", "    ", 1);
+	init_slow_text(&text10, "so grippily treasured", "by wicked DIPs-witches.", 1);
+	init_slow_text(&text11, "Enter, brave witch,", "by killing the switch!", 1);
+	//ascii_write_part("Yeeaaah!!!", "This is working! :)", 5, 10);
+	
+	
+	//Game loop
 	while(1) {
 		counter++;
 		if(titleObj.yPos < 1) {
@@ -179,6 +210,8 @@ void main(void)
 		//draw_game_object(&monsterObj);
 		draw_game_object(&titleObj);
 		show_frame(1);
+		
+		text1.display(&text1, 20);
 		
 		fire2.update(&fire2);
 		fire3.update(&fire3);

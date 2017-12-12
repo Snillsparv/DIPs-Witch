@@ -66,7 +66,8 @@ ARM_V6LIB:=$(CodeLiteDir)/tools/gcc-arm/arm-none-eabi/lib/thumb/v6-m
 ARM_GCC_V6LIB:=$(CodeLiteDir)/tools/gcc-arm/lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m
 ARM_M4FPLIB:=$(CodeLiteDir)/tools/gcc-arm/arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard
 ARM_GCC_M4FPLIB:=$(CodeLiteDir)/tools/gcc-arm/lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m
-Objects0=$(IntermediateDirectory)/startup.c$(ObjectSuffix) $(IntermediateDirectory)/sprite.c$(ObjectSuffix) $(IntermediateDirectory)/graphics.c$(ObjectSuffix) $(IntermediateDirectory)/gameobject.c$(ObjectSuffix) $(IntermediateDirectory)/gpio.c$(ObjectSuffix) $(IntermediateDirectory)/image.c$(ObjectSuffix) $(IntermediateDirectory)/fire.c$(ObjectSuffix) $(IntermediateDirectory)/player.c$(ObjectSuffix) 
+Objects0=$(IntermediateDirectory)/startup.c$(ObjectSuffix) $(IntermediateDirectory)/gameobject.c$(ObjectSuffix) $(IntermediateDirectory)/fire.c$(ObjectSuffix) $(IntermediateDirectory)/player.c$(ObjectSuffix) $(IntermediateDirectory)/graphics.c$(ObjectSuffix) $(IntermediateDirectory)/image.c$(ObjectSuffix) $(IntermediateDirectory)/sprite.c$(ObjectSuffix) $(IntermediateDirectory)/gpio.c$(ObjectSuffix) $(IntermediateDirectory)/ascii_display.c$(ObjectSuffix) $(IntermediateDirectory)/slow_text.c$(ObjectSuffix) \
+	
 
 
 
@@ -111,22 +112,6 @@ $(IntermediateDirectory)/startup.c$(DependSuffix): startup.c
 $(IntermediateDirectory)/startup.c$(PreprocessSuffix): startup.c
 	$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/startup.c$(PreprocessSuffix) startup.c
 
-$(IntermediateDirectory)/sprite.c$(ObjectSuffix): sprite.c $(IntermediateDirectory)/sprite.c$(DependSuffix)
-	$(CC) $(SourceSwitch) "C:/mop/c/Moplaborationer/DIPs-Witch/C/sprite.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/sprite.c$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/sprite.c$(DependSuffix): sprite.c
-	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/sprite.c$(ObjectSuffix) -MF$(IntermediateDirectory)/sprite.c$(DependSuffix) -MM sprite.c
-
-$(IntermediateDirectory)/sprite.c$(PreprocessSuffix): sprite.c
-	$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/sprite.c$(PreprocessSuffix) sprite.c
-
-$(IntermediateDirectory)/graphics.c$(ObjectSuffix): graphics.c $(IntermediateDirectory)/graphics.c$(DependSuffix)
-	$(CC) $(SourceSwitch) "C:/mop/c/Moplaborationer/DIPs-Witch/C/graphics.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/graphics.c$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/graphics.c$(DependSuffix): graphics.c
-	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/graphics.c$(ObjectSuffix) -MF$(IntermediateDirectory)/graphics.c$(DependSuffix) -MM graphics.c
-
-$(IntermediateDirectory)/graphics.c$(PreprocessSuffix): graphics.c
-	$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/graphics.c$(PreprocessSuffix) graphics.c
-
 $(IntermediateDirectory)/gameobject.c$(ObjectSuffix): gameobject.c $(IntermediateDirectory)/gameobject.c$(DependSuffix)
 	$(CC) $(SourceSwitch) "C:/mop/c/Moplaborationer/DIPs-Witch/C/gameobject.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/gameobject.c$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/gameobject.c$(DependSuffix): gameobject.c
@@ -134,22 +119,6 @@ $(IntermediateDirectory)/gameobject.c$(DependSuffix): gameobject.c
 
 $(IntermediateDirectory)/gameobject.c$(PreprocessSuffix): gameobject.c
 	$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/gameobject.c$(PreprocessSuffix) gameobject.c
-
-$(IntermediateDirectory)/gpio.c$(ObjectSuffix): gpio.c $(IntermediateDirectory)/gpio.c$(DependSuffix)
-	$(CC) $(SourceSwitch) "C:/mop/c/Moplaborationer/DIPs-Witch/C/gpio.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/gpio.c$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/gpio.c$(DependSuffix): gpio.c
-	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/gpio.c$(ObjectSuffix) -MF$(IntermediateDirectory)/gpio.c$(DependSuffix) -MM gpio.c
-
-$(IntermediateDirectory)/gpio.c$(PreprocessSuffix): gpio.c
-	$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/gpio.c$(PreprocessSuffix) gpio.c
-
-$(IntermediateDirectory)/image.c$(ObjectSuffix): image.c $(IntermediateDirectory)/image.c$(DependSuffix)
-	$(CC) $(SourceSwitch) "C:/mop/c/Moplaborationer/DIPs-Witch/C/image.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/image.c$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/image.c$(DependSuffix): image.c
-	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/image.c$(ObjectSuffix) -MF$(IntermediateDirectory)/image.c$(DependSuffix) -MM image.c
-
-$(IntermediateDirectory)/image.c$(PreprocessSuffix): image.c
-	$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/image.c$(PreprocessSuffix) image.c
 
 $(IntermediateDirectory)/fire.c$(ObjectSuffix): fire.c $(IntermediateDirectory)/fire.c$(DependSuffix)
 	$(CC) $(SourceSwitch) "C:/mop/c/Moplaborationer/DIPs-Witch/C/fire.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/fire.c$(ObjectSuffix) $(IncludePath)
@@ -166,6 +135,54 @@ $(IntermediateDirectory)/player.c$(DependSuffix): player.c
 
 $(IntermediateDirectory)/player.c$(PreprocessSuffix): player.c
 	$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/player.c$(PreprocessSuffix) player.c
+
+$(IntermediateDirectory)/graphics.c$(ObjectSuffix): graphics.c $(IntermediateDirectory)/graphics.c$(DependSuffix)
+	$(CC) $(SourceSwitch) "C:/mop/c/Moplaborationer/DIPs-Witch/C/graphics.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/graphics.c$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/graphics.c$(DependSuffix): graphics.c
+	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/graphics.c$(ObjectSuffix) -MF$(IntermediateDirectory)/graphics.c$(DependSuffix) -MM graphics.c
+
+$(IntermediateDirectory)/graphics.c$(PreprocessSuffix): graphics.c
+	$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/graphics.c$(PreprocessSuffix) graphics.c
+
+$(IntermediateDirectory)/image.c$(ObjectSuffix): image.c $(IntermediateDirectory)/image.c$(DependSuffix)
+	$(CC) $(SourceSwitch) "C:/mop/c/Moplaborationer/DIPs-Witch/C/image.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/image.c$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/image.c$(DependSuffix): image.c
+	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/image.c$(ObjectSuffix) -MF$(IntermediateDirectory)/image.c$(DependSuffix) -MM image.c
+
+$(IntermediateDirectory)/image.c$(PreprocessSuffix): image.c
+	$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/image.c$(PreprocessSuffix) image.c
+
+$(IntermediateDirectory)/sprite.c$(ObjectSuffix): sprite.c $(IntermediateDirectory)/sprite.c$(DependSuffix)
+	$(CC) $(SourceSwitch) "C:/mop/c/Moplaborationer/DIPs-Witch/C/sprite.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/sprite.c$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/sprite.c$(DependSuffix): sprite.c
+	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/sprite.c$(ObjectSuffix) -MF$(IntermediateDirectory)/sprite.c$(DependSuffix) -MM sprite.c
+
+$(IntermediateDirectory)/sprite.c$(PreprocessSuffix): sprite.c
+	$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/sprite.c$(PreprocessSuffix) sprite.c
+
+$(IntermediateDirectory)/gpio.c$(ObjectSuffix): gpio.c $(IntermediateDirectory)/gpio.c$(DependSuffix)
+	$(CC) $(SourceSwitch) "C:/mop/c/Moplaborationer/DIPs-Witch/C/gpio.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/gpio.c$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/gpio.c$(DependSuffix): gpio.c
+	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/gpio.c$(ObjectSuffix) -MF$(IntermediateDirectory)/gpio.c$(DependSuffix) -MM gpio.c
+
+$(IntermediateDirectory)/gpio.c$(PreprocessSuffix): gpio.c
+	$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/gpio.c$(PreprocessSuffix) gpio.c
+
+$(IntermediateDirectory)/ascii_display.c$(ObjectSuffix): ascii_display.c $(IntermediateDirectory)/ascii_display.c$(DependSuffix)
+	$(CC) $(SourceSwitch) "C:/mop/c/Moplaborationer/DIPs-Witch/C/ascii_display.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/ascii_display.c$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/ascii_display.c$(DependSuffix): ascii_display.c
+	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/ascii_display.c$(ObjectSuffix) -MF$(IntermediateDirectory)/ascii_display.c$(DependSuffix) -MM ascii_display.c
+
+$(IntermediateDirectory)/ascii_display.c$(PreprocessSuffix): ascii_display.c
+	$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/ascii_display.c$(PreprocessSuffix) ascii_display.c
+
+$(IntermediateDirectory)/slow_text.c$(ObjectSuffix): slow_text.c $(IntermediateDirectory)/slow_text.c$(DependSuffix)
+	$(CC) $(SourceSwitch) "C:/mop/c/Moplaborationer/DIPs-Witch/C/slow_text.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/slow_text.c$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/slow_text.c$(DependSuffix): slow_text.c
+	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/slow_text.c$(ObjectSuffix) -MF$(IntermediateDirectory)/slow_text.c$(DependSuffix) -MM slow_text.c
+
+$(IntermediateDirectory)/slow_text.c$(PreprocessSuffix): slow_text.c
+	$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/slow_text.c$(PreprocessSuffix) slow_text.c
 
 
 -include $(IntermediateDirectory)/*$(DependSuffix)

@@ -11,6 +11,11 @@ void set_up_DIL( void );
 char read_DIL( void );
 int read_DIL_single( int bit );
 
+#define B_E				0x40
+#define B_SELECT		4
+#define B_RW			2
+#define B_RS			1
+
 typedef struct {
 	uint32_t Moder;
 	uint16_t oTyper; // +0x4

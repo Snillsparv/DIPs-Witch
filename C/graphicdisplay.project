@@ -21,21 +21,33 @@
   <Dependencies/>
   <VirtualDirectory Name="src">
     <File Name="startup.c"/>
-    <File Name="sprite.h"/>
-    <File Name="sprite.c"/>
-    <File Name="graphics.h"/>
-    <File Name="graphics.c"/>
-    <File Name="gameobject.c"/>
-    <File Name="gameobject.h"/>
-    <File Name="gpio.h"/>
-    <File Name="gpio.c"/>
-    <File Name="image.h"/>
-    <File Name="image.c"/>
-    <File Name="fire.c"/>
-    <File Name="fire.h"/>
-    <File Name="player.c"/>
-    <File Name="player.h"/>
-    <File Name="controls.h"/>
+    <VirtualDirectory Name="Objects">
+      <File Name="gameobject.c"/>
+      <File Name="gameobject.h"/>
+      <File Name="fire.c"/>
+      <File Name="fire.h"/>
+      <File Name="player.c"/>
+      <File Name="player.h"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="Graphics">
+      <File Name="graphics.c"/>
+      <File Name="graphics.h"/>
+      <File Name="image.c"/>
+      <File Name="image.h"/>
+      <File Name="sprite.c"/>
+      <File Name="sprite.h"/>
+      <VirtualDirectory Name="ASCII">
+        <File Name="ascii_display.c"/>
+        <File Name="ascii_display.h"/>
+        <File Name="slow_text.h"/>
+        <File Name="slow_text.c"/>
+      </VirtualDirectory>
+    </VirtualDirectory>
+    <VirtualDirectory Name="Definitions">
+      <File Name="gpio.c"/>
+      <File Name="gpio.h"/>
+      <File Name="controls.h"/>
+    </VirtualDirectory>
   </VirtualDirectory>
   <VirtualDirectory Name="resources">
     <File Name="md407-ram.x"/>
