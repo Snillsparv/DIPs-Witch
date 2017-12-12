@@ -108,6 +108,7 @@ void initSprites( void ) {
 }
 	
 int counter = 0;
+int current_screen = START_SCREEN;
 void main(void)
 {
 
@@ -183,6 +184,7 @@ void main(void)
 	SlowText text9;
 	SlowText text10;
 	SlowText text11;
+	SlowText text12;
 	init_slow_text(&text1, "For centuries the", "DILs-witches have", 1);
 	init_slow_text(&text2, "coiled in fear,", "    ", 1);
 	init_slow_text(&text3, "whenever they hear", "that a DIPs-witch", 1);
@@ -192,153 +194,70 @@ void main(void)
 	init_slow_text(&text7, "queen Daffo of DILs,", "heir to king Lear.", 1);
 	init_slow_text(&text8, "But maybe you're", "tempted, to loot", 1);
 	init_slow_text(&text9, "from the riches,", "    ", 1);
-	init_slow_text(&text10, "so grippily treasured", "by wicked DIPs-witches.", 1);
-	init_slow_text(&text11, "Enter, brave witch,", "by killing the switch!", 1);
+	init_slow_text(&text12, "wicked DIPs-witches.", "    ", 1);
+	init_slow_text(&text10, "so grippily trea-", "sured by", 1);
+	init_slow_text(&text11, "Enter, brave witch,", "- reset the switch!", 1);
 	//ascii_write_part("Yeeaaah!!!", "This is working! :)", 5, 10);
 	
-	
+	clear_ascii();
 	//Game loop
 	while(1) {
-		counter++;
-		if(titleObj.yPos < 1) {
-			titleObj.yPos++;
-		}
 		
-		draw_game_object(&castleObj);
-		draw_game_object(&fire2);
-		draw_game_object(&fire3);
-		//draw_game_object(&monsterObj);
-		draw_game_object(&titleObj);
-		show_frame(1);
-		
-		text1.display(&text1, 20);
-		
-		fire2.update(&fire2);
-		fire3.update(&fire3);
-		
-		monsterObj.update(&monsterObj);
-		
-		/*fireObj.animation_counter++;
-		if (fireObj.animation_counter == fireObj.animation_speed) {
-			fireObj.animation_counter = 0; 
-			fireObj.current_frame = (fireObj.current_frame + 1) % fireObj.n_frames;
-		}*/
-		/*int switch_zero = read_DIL_single(0);
-		GPIO_D.odrHigh = read_DIL();
-		if (switch_zero) {
-			monsterObj.xPos--;	
-		} else {
-			monsterObj.xPos++;
-		}*/
-		
-	}
-	
-	/*
-	
-	while(1) {
-		draw_game_object(&monsterObj);
-		show_frame(1);
-		
-		int switch_zero = read_DIL_single(0);
-		GPIO_D.odrHigh = read_DIL();
-		if (switch_zero) {
-			monsterObj.xPos--;	
-		} else {
-			monsterObj.xPos++;
-		}
-		
-	}
-	
-	
-	clear_backBuffer();
-	//fillRectangle(20, 20, 10, 10);
-	//int xPos = 1;
-	
-	
-	draw_sprite(monster, 2, 2, 1, 3);
-	draw_sprite(monsterLight, 2, 2, 1, 3);
-	graphic_draw_screen(draw_buffer_black);
-	delay_milli(1000);
-	
-	clear_backBuffer();
-	draw_sprite(bg, 1, 1, 1, 3);
-	graphic_draw_screen(draw_buffer_black);
-	delay_milli(1000);
-	
-	int xPos = 2;
-	int xInc = 1;
-	while(1) {
-/*		clear_backBuffer();
-		draw_sprite(monster, 2, 2, 1);
-		draw_sprite(monsterLight, 2, 2, 0);
-		graphic_draw_screen();
-	*/	/*
-		static int i;
-		xPos += xInc;
-		if(xPos > 100 || xPos < 2) {
-			xInc = -xInc;
-			xInc = (xInc > 0) ? xInc + 1 : xInc - 1;
-		}
-		for (i = 0; i < 1; i++) {
-			clear_backBuffer();
-			draw_sprite(monster, xPos, 2, 1, 3);
-			draw_sprite(monsterLight, xPos, 2, 0, 3);
-			draw_sprite(monsterGray, xPos, 2, 1, 3);
-			graphic_draw_screen(draw_buffer_black);
-			delay_milli(1);
+		switch(current_screen) {
 			
-			clear_backBuffer();
-			draw_sprite(monster, xPos, 2, 1, 3);
-			draw_sprite(monsterLight, xPos, 2, 0, 3);
-			draw_sprite(monsterGray, xPos, 2, 1, 3);
-			graphic_draw_screen(draw_buffer_black);
-			delay_milli(1);
-
-
-			clear_backBuffer();
-			draw_sprite(monster, xPos, 2, 1, 3);
-			draw_sprite(monsterLight, xPos, 2, 0, 3);
-			draw_sprite(monsterGray, xPos, 2, 0, 3);
-			graphic_draw_screen(draw_buffer_black);
-			delay_milli(1);
-			
-			clear_backBuffer();
-			draw_sprite(monster, xPos, 2, 1, 3);
-			draw_sprite(monsterLight, xPos, 2, 1, 3);
-			draw_sprite(monsterGray, xPos, 2, 0, 3);
-			graphic_draw_screen(draw_buffer_black);
-			delay_milli(1);
-			
+			case START_SCREEN:
+				
+				counter++;
+				
+				if(titleObj.yPos < 1) {
+					titleObj.yPos++;
+				}
+				
+				draw_game_object(&castleObj);
+				draw_game_object(&fire2);
+				draw_game_object(&fire3);
+				draw_game_object(&titleObj);
+				show_frame(1);
+				
+				static int long_text = 40;
+				static int short_text = 20;
+				static int delay_until_text = 70;
+				
+				if (counter < delay_until_text);
+				else if (counter < delay_until_text + 1*long_text)
+					text1.display(&text1, 20);
+				else if(counter < delay_until_text + 1*long_text + 1*short_text)
+					text2.display(&text2, 20);
+				else if(counter < delay_until_text + 2*long_text + 1*short_text)
+					text3.display(&text3, 20);
+				else if(counter < delay_until_text + 2*long_text + 2*short_text)
+					text4.display(&text4, 20);
+				else if(counter < delay_until_text + 3*long_text + 2*short_text)
+					text5.display(&text5, 15);
+				else if(counter < delay_until_text + 3*long_text + 3*short_text)
+					text6.display(&text6, 20);
+				else if(counter < delay_until_text + 4*long_text + 3*short_text)
+					text7.display(&text7, 20);
+				else if(counter < delay_until_text + 5*long_text + 3*short_text + 3)
+					text8.display(&text8, 20);
+				else if(counter < delay_until_text + 5*long_text + 4*short_text + 3)
+					text9.display(&text9, 20);
+				else if(counter < delay_until_text + 6*long_text + 4*short_text + 3)
+					text10.display(&text10, 15);
+				else if(counter < delay_until_text + 7*long_text + 5*short_text + 3)
+					text12.display(&text12, 15);
+				else {
+					text11.display(&text11, 20);
+				}
+				
+				
+				fire2.update(&fire2);
+				fire3.update(&fire3);
 		}
+		
+		
+		
+		
 	}
 	
-	
-	
-	
-	//while(1);
-/*
-	clear_backBuffer();
-	//fillRectangle(20, 20, 10, 10);
-	draw_sprite(&monster, 10, 2, 1);
-	graphic_draw_screen();
-	delay_milli(1000);
-*/ /*
-
-
-	while(1){
-		clear_backBuffer();
-		//fillRectangle(20, 20, 10, 10);
-		draw_sprite(monster, 3, 2, 1, 3);
-		graphic_draw_screen(draw_buffer_black);
-		delay_milli(30);
-	}
-	
-	clear_backBuffer();
-	//fillRectangle(20, 20, 10, 10);
-	draw_sprite(monster, 2, 2, 1, 3);
-	graphic_draw_screen(draw_buffer_black);
-	while(1);
-	//grayScaleTest();
-	
-	 */
 }

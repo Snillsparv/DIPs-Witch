@@ -79,6 +79,11 @@
       <File Name="title_gray.xbm"/>
       <File Name="title_light.xbm"/>
     </VirtualDirectory>
+    <VirtualDirectory Name="bird">
+      <File Name="bird1_black.xbm"/>
+      <File Name="bird1_gray.xbm"/>
+      <File Name="bird1_light.xbm"/>
+    </VirtualDirectory>
   </VirtualDirectory>
   <Settings Type="Executable">
     <GlobalSettings>
