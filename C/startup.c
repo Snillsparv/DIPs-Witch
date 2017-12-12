@@ -3,6 +3,12 @@
 #include "monster_light.xbm"
 #include "monster_gray.xbm"
 
+#include "press_black.xbm"
+#include "press_light.xbm"
+#include "press_gray.xbm"
+
+
+
 #include "castle_black.xbm"
 #include "castle_gray.xbm"
 #include "castle_light.xbm"
@@ -18,6 +24,7 @@
 #include "player.h"
 #include "bird.h"
 
+#define SWITCH_LOCK 0
 #define START_SCREEN 1
 #define GAME_SCREEN 2
 #define GAME_OVER_SCREEN 3
@@ -57,6 +64,9 @@ sprite *castleLight;
 sprite *titleBlack;
 sprite *titleGray;
 sprite *titleLight;
+sprite *pressBlack;
+sprite *pressGray;
+sprite *pressLight;
 
 sprite tempMonster;
 sprite tempMonsterLight;
@@ -70,6 +80,9 @@ sprite tempCastleLight;
 sprite tempTitleBlack;
 sprite tempTitleGray;
 sprite tempTitleLight;
+sprite tempPressBlack;
+sprite tempPressGray;
+sprite tempPressLight;
 
 void initSprites( void ) {
 	sprite *monsterPointer = &tempMonster;
@@ -110,6 +123,16 @@ void initSprites( void ) {
 	load_sprite(pointer10, title_black_bits, title_black_width, title_black_height);
 	titleBlack = pointer10;	
 	
+	pointer8 = &tempPressLight;
+	load_sprite(pointer8, press_light_bits, press_black_width, press_black_height);
+	pressLight = pointer8;
+	pointer9 = &tempPressGray;
+	load_sprite(pointer9, press_gray_bits, press_black_width, press_black_height);
+	pressGray = pointer9;
+	pointer10 = &tempPressBlack;
+	load_sprite(pointer10, press_black_bits, press_black_width, press_black_height);
+	pressBlack = pointer10;	
+	
 	
 }
 	
@@ -147,6 +170,15 @@ void main(void)
 	titleObj.xPos = 1;
 	titleObj.yPos = -40;
 	titleObj.current_frame = 0;
+	
+	GameObject pressObj;
+	Image pressImage;
+	Image pressImages[] = {pressImage};
+	pressObj.images = pressImages;
+	load_image(&pressObj.images[0], pressBlack, pressLight, pressGray);
+	pressObj.xPos = 65-30;
+	pressObj.yPos = 29-15;
+	pressObj.current_frame = 0;
 	
 
 
@@ -226,11 +258,28 @@ void main(void)
 	init_slow_text(&text11, "Enter, brave witch,", "- reset the switch!", 1);
 	//ascii_write_part("Yeeaaah!!!", "This is working! :)", 5, 10);
 	
+	set_up_DIL();
 	clear_ascii();
+	
+	if(read_DIL() == 0) {
+		current_screen = SWITCH_LOCK; 
+	}
+	
 	//Game loop
 	while(1) {
-		
+			
 		switch(current_screen) {
+			
+			case SWITCH_LOCK:
+
+				while(read_DIL() == 0){
+					draw_game_object(&pressObj);
+					show_frame(1);
+				}
+				
+				counter = 0;
+				current_screen = START_SCREEN;
+			
 			
 			case START_SCREEN:
 				
@@ -251,9 +300,9 @@ void main(void)
 				
 				static int long_text = 40;
 				static int short_text = 20;
-				static int delay_until_text = 110;
+				static int delay_until_text = 130;
 				
-				if (counter < delay_until_text - 25 && counter > delay_until_text - 60)
+				if (counter < delay_until_text - 55 && counter > delay_until_text - 90)
 					text_kra.display(&text_kra, 20);
 				if (counter == delay_until_text - 25)
 					clear_ascii();

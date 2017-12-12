@@ -98,6 +98,11 @@
       <File Name="bird5_gray.xbm"/>
       <File Name="bird5_light.xbm"/>
     </VirtualDirectory>
+    <VirtualDirectory Name="press">
+      <File Name="press_black.xbm"/>
+      <File Name="press_gray.xbm"/>
+      <File Name="press_light.xbm"/>
+    </VirtualDirectory>
   </VirtualDirectory>
   <Settings Type="Executable">
     <GlobalSettings>
