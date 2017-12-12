@@ -8,6 +8,7 @@
 #include "bg.xbm"
 #include "gpio.h"
 #include "fire.h"
+#include "player.h"
 
 
 void startup(void) __attribute__((naked)) __attribute__((section (".start_section")) );
@@ -102,6 +103,7 @@ void main(void)
 	monsterObj.xPos = 30;
 	monsterObj.yPos = 4;
 	monsterObj.current_frame = 0;
+	monsterObj.update = playerUpdate;
 	
 
 
@@ -143,20 +145,25 @@ void main(void)
 		
 		fire2.update(&fire2);
 		fire3.update(&fire3);
+		
+		monsterObj.update(&monsterObj);
+		
 		/*fireObj.animation_counter++;
 		if (fireObj.animation_counter == fireObj.animation_speed) {
-			fireObj.animation_counter = 0;
+			fireObj.animation_counter = 0; 
 			fireObj.current_frame = (fireObj.current_frame + 1) % fireObj.n_frames;
 		}*/
-		int switch_zero = read_DIL_single(0);
+		/*int switch_zero = read_DIL_single(0);
 		GPIO_D.odrHigh = read_DIL();
 		if (switch_zero) {
 			monsterObj.xPos--;	
 		} else {
 			monsterObj.xPos++;
-		}
+		}*/
 		
 	}
+	
+	/*
 	
 	while(1) {
 		draw_game_object(&monsterObj);
@@ -195,7 +202,7 @@ void main(void)
 		draw_sprite(monster, 2, 2, 1);
 		draw_sprite(monsterLight, 2, 2, 0);
 		graphic_draw_screen();
-	*/	
+	*/	/*
 		static int i;
 		xPos += xInc;
 		if(xPos > 100 || xPos < 2) {
@@ -245,7 +252,7 @@ void main(void)
 	draw_sprite(&monster, 10, 2, 1);
 	graphic_draw_screen();
 	delay_milli(1000);
-*/
+*/ /*
 
 
 	while(1){
@@ -263,5 +270,5 @@ void main(void)
 	while(1);
 	//grayScaleTest();
 	
-	 
+	 */
 }
