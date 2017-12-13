@@ -12,5 +12,6 @@ void playerUpdate(GameObject *this);
 #define LIMIT_DOWN (MAP_HEIGHT - PLAYER_HEIGHT - 7)
 #define MAP_HEIGHT 64
 #define MAP_WIDTH 128
-#define PLATFORM_Y 22
+#define PLATFORM_Y 23
+
 #endif // PLAYER

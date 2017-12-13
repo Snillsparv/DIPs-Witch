@@ -29,7 +29,7 @@ void playerUpdate(GameObject *this) {
 		this->yPos = LIMIT_DOWN;
 		ySpeed = 0;
 	}
-	else if (this->yPos + ySpeed > PLATFORM_Y - PLAYER_HEIGHT && this->yPos + ySpeed < PLATFORM_Y - PLAYER_HEIGHT + SPEED_ADD_Y){
+	else if (this->yPos + ySpeed > PLATFORM_Y - PLAYER_HEIGHT && this->yPos + ySpeed < PLATFORM_Y - PLAYER_HEIGHT + 2*SPEED_ADD_Y){
 		this->yPos = PLATFORM_Y - PLAYER_HEIGHT;
 		ySpeed = 0;
 	}
@@ -37,9 +37,7 @@ void playerUpdate(GameObject *this) {
 		this->yPos+=ySpeed;
 		ySpeed++;
 	}
-	
-	
-	
+
 	// X position changes
 	
 	if (!lastRightValue && read_DIL_single(RIGHT_TRIGGER)){
