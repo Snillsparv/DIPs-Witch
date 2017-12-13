@@ -26,6 +26,7 @@
 #include "witch.h"
 #include "indoors.h"
 #include "indoors2.h"
+#include "DIP.h"
 
 
 #define SWITCH_LOCK 0
@@ -146,14 +147,6 @@ int counter = 0;
 int current_screen = START_SCREEN;
 void main(void)
 {
-
-	/* Now it should work like this:
- * 
- * 1. Set up monster as a gameObject.
- * 2. Draw it with method above.
- * 3. Show frame with some long fram_length for testing.
- * 
- * */
 	
 	init_app();	
 	initSprites();
@@ -210,6 +203,10 @@ void main(void)
 	bird.xPos = 180;
 	bird.yPos = 40;
 	bird.update = gameObjectUpdate;
+	
+	GameObject DIP;
+	init_DIP( &DIP );
+	DIP.update = DIPUpdate;
 	
 	GameObject player;
 	init_witch( &player );
@@ -397,7 +394,7 @@ void main(void)
 					draw_game_object( &indoors );
 					draw_game_object( &fire1_indoors );
 				}
-				
+				draw_game_object( &DIP );
 				draw_game_object( &player );
 				show_frame(1);
 				
@@ -427,6 +424,7 @@ void main(void)
 				}
 				
 				fire1_indoors.update(&fire1_indoors);
+				DIP.update(&DIP);
 				
 				static int distance_player_fire;	//fire_collision
 				distance_player_fire = (player.xPos + 9) - (fire1_indoors.xPos + 5);
@@ -463,6 +461,8 @@ void main(void)
 				bird.xPos = 180;
 				bird.yPos = 40;
 				
+				DIP.xPos = 100;
+				DIP.yPos = 5;
 				player.xPos = 3;
 				player.yPos = 64-18-7; //player position
 				

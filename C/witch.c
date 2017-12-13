@@ -99,3 +99,5 @@ void init_witch( GameObject *witchObj ) {
 	witchObj->animation_speed = 1;
 	witchObj->animation_counter = 0;
 }
+
+
