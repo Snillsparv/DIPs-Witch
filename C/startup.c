@@ -29,6 +29,8 @@
 #include "indoors2.h"
 #include "DIP.h"
 
+int abs(int value);
+
 int random_seed;
 
 void startup(void) __attribute__((naked)) __attribute__((section (".start_section")) );
@@ -194,8 +196,7 @@ void main(void)
 	
 	GameObject trophy;
 	init_trophy( &trophy );
-	trophy.xPos = 19;
-	trophy.yPos = 5;
+
 	
 	GameObject hair;
 	init_flame(&hair);
@@ -227,11 +228,20 @@ void main(void)
 	init_fire( &fire4 );
 	GameObject fire1;
 	init_fire( &fire1 );
+	
 	GameObject fire1_indoors;
 	init_fire( &fire1_indoors );
 	fire1_indoors.xPos = 50;		//FIRE1_INDO
 	fire1_indoors.yPos = 64-12-7;
 	fire1_indoors.update = gameObjectUpdate;
+	GameObject fire2_indoors;
+	init_fire( &fire2_indoors );
+	fire2_indoors.update = gameObjectUpdate;
+	GameObject fire3_indoors;
+	init_fire( &fire3_indoors );
+	fire3_indoors.update = gameObjectUpdate;
+	GameObject fires[] = {fire1_indoors, fire2_indoors, fire3_indoors};
+	
 	
 	fire2.xPos = 98;
 	fire2.yPos = 26-12;
@@ -289,6 +299,7 @@ void main(void)
 	int has_climbed = 0;
 	int game_over = 0;
 	int game_over_adder = 0;
+	int no_DIP = 0;
 	
 	
 	current_screen = RESET_GAME;
@@ -397,12 +408,18 @@ void main(void)
 					draw_game_object( &indoors2 );
 				} else {
 					draw_game_object( &indoors );
-					draw_game_object( &fire1_indoors );
 					draw_game_object( &trophy );
 				}
-				draw_game_object( &DIP );
+				
+				if(!no_DIP)
+					draw_game_object( &DIP );
 				draw_game_object( &player );
-				draw_game_object( &hair );	//ta bort
+				static int i;
+				for(i = 0; i < 3; i++) {
+					draw_game_object( &fires[i] );
+					fires[i].update( &fires[i] );
+				}
+				draw_game_object( &hair );
 				show_frame(1);
 				
 				static int last_climb_value = 100;
@@ -430,19 +447,55 @@ void main(void)
 					game_over_adder = 1;
 				}
 				
-				fire1_indoors.update(&fire1_indoors);
-				setPlayerPosition(player.xPos, player.yPos);
-				DIP.update(&DIP);
+				//fire1_indoors.update(&fire1_indoors);
+				//fire updates done above
+				if(!no_DIP) {
+					setPlayerPosition(player.xPos, player.yPos);
+					DIP.update(&DIP);					
+				}
 				hair.update(&hair);
+				if(read_DIL_single(HAIR_TRIGGER)) {
+					hair.xPos = player.xPos;
+					hair.yPos = player.yPos - 28;
+				} else {
+					hair.xPos = -100;
+					hair.yPos = -100;
+				}
 				
-				if (DIP.yPos >= player.yPos && (player.xPos + DIP_WIDTH/2 >= DIP.xPos && player.xPos <= DIP.xPos + DIP_WIDTH/2 )){ // DIP_collision
+				
+				
+				if (!no_DIP && DIP.yPos >= player.yPos && (player.xPos + DIP_WIDTH/2 >= DIP.xPos && player.xPos <= DIP.xPos + DIP_WIDTH/2 )){ // DIP_collision
 					game_over_adder = 100;
 				}
 				
 				static int distance_player_fire;	//fire_collision
-				distance_player_fire = (player.xPos + 9) - (fire1_indoors.xPos + 5);
-				if(player.yPos > (fire1_indoors.yPos - 18 + 7) && distance_player_fire < 8 && distance_player_fire > -8) {
-					game_over_adder = 100;
+				static int j;
+				for(j = 0; j < 3; j++) {
+					distance_player_fire = (player.xPos + 9) - (fires[j].xPos + 5);
+					if(player.yPos > (fires[j].yPos - 18 + 7) && 
+							player.yPos < fires[j].yPos && distance_player_fire < 8 && distance_player_fire > -8) {
+						game_over_adder = 100;
+					}					
+				}
+				
+				static int trophy_burned = 0;	//trophy burning
+				static int distance_hair_trophy;
+				distance_hair_trophy = (hair.xPos + 9) - (trophy.xPos + 5);
+				if(!trophy_burned && abs(distance_hair_trophy) < 5) {
+					trophy_burned = 1;
+					fires[1].xPos = trophy.xPos;
+					fires[1].yPos = trophy.yPos + 5;
+					trophy.xPos = 500;
+				}
+				
+				static int DIP_burned = 0;
+				static int distance_hair_DIP;
+				distance_hair_DIP = (hair.xPos + 9) - (DIP.xPos + 9);
+				if(!DIP_burned && read_DIL_single(LIGHT_TRIGGER) && player.yPos > 10 && abs(distance_hair_DIP) < 5) {
+					DIP_burned = 1;
+					fires[2].xPos = DIP.xPos;
+					fires[2].yPos = DIP.yPos + 6;
+					no_DIP = 1;
 				}
 				
 				game_over += game_over_adder;
@@ -468,17 +521,27 @@ void main(void)
 				has_climbed = 0;
 				game_over = 0;
 				game_over_adder = 0;
-				fire1_indoors.xPos = 40;		//FIRE1_INDO
-				fire1_indoors.yPos = 64-12-8;
-				
+				fires[0].xPos = 40;		//FIRE1_INDO
+				fires[0].yPos = 64-12-8;
+				fires[2].xPos = -50;		//FIRE1_INDO
+				fires[2].yPos = -50;
+				fires[1].xPos = -50;		//FIRE1_INDO
+				fires[1].yPos = -50;
 				bird.xPos = 180;
 				bird.yPos = 40;
 				
+				trophy.xPos = 19;
+				trophy.yPos = 5;
+				trophy_burned = 0;
+				
 				DIP.xPos = 100;
 				DIP.yPos = 5;
+				DIP_burned = 0;
+				no_DIP = 0;
+				
 				player.xPos = 3;
 				player.yPos = 64-18-7; //player position
-				
+				clear_ascii();
 				break;
 							
 		} //end of switch
@@ -490,5 +553,12 @@ void main(void)
 		
 	}
 	
+}
+
+int abs(int value) {
+	if(value < 0) {
+		return -value;
+	}
+	return value;
 }
 

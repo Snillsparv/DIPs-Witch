@@ -7,6 +7,7 @@
 #define JUMP_TRIGGER 5
 #define LIGHT_TRIGGER 6
 #define LEFT_TRIGGER 7
+#define HAIR_TRIGGER 1
 
 #define SKIP_VALUE 0x81
 

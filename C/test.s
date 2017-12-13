@@ -8,1974 +8,9761 @@
    8              		.eabi_attribute 30, 6
    9              		.eabi_attribute 34, 0
   10              		.eabi_attribute 18, 4
-  11              		.file	"flame.c"
+  11              		.file	"startup.c"
   12              		.text
   13              	.Ltext0:
   14              		.cfi_sections	.debug_frame
-  15              		.data
-  16              		.align	2
-  19              	flame1_black_bits:
-  20 0000 00       		.byte	0
-  21 0001 00       		.byte	0
-  22 0002 00       		.byte	0
-  23 0003 80       		.byte	-128
-  24 0004 08       		.byte	8
-  25 0005 00       		.byte	0
-  26 0006 00       		.byte	0
-  27 0007 00       		.byte	0
-  28 0008 00       		.byte	0
-  29 0009 48       		.byte	72
-  30 000a 00       		.byte	0
-  31 000b 00       		.byte	0
-  32 000c 08       		.byte	8
-  33 000d 4A       		.byte	74
-  34 000e 00       		.byte	0
-  35 000f 48       		.byte	72
-  36 0010 02       		.byte	2
-  37 0011 00       		.byte	0
-  38 0012 40       		.byte	64
-  39 0013 02       		.byte	2
-  40 0014 00       		.byte	0
-  41 0015 14       		.byte	20
-  42 0016 54       		.byte	84
-  43 0017 00       		.byte	0
-  44 0018 40       		.byte	64
-  45 0019 50       		.byte	80
-  46 001a 00       		.byte	0
-  47 001b 22       		.byte	34
-  48 001c B0       		.byte	-80
-  49 001d 00       		.byte	0
-  50 001e 12       		.byte	18
-  51 001f A0       		.byte	-96
-  52 0020 00       		.byte	0
-  53 0021 12       		.byte	18
-  54 0022 01       		.byte	1
-  55 0023 00       		.byte	0
-  56 0024 00       		.byte	0
-  57 0025 10       		.byte	16
-  58 0026 00       		.byte	0
-  59 0027 01       		.byte	1
-  60 0028 00       		.byte	0
-  61 0029 00       		.byte	0
-  62 002a 00       		.byte	0
-  63 002b 01       		.byte	1
-  64 002c 01       		.byte	1
-  65 002d 00       		.byte	0
-  66 002e 21       		.byte	33
-  67 002f 00       		.byte	0
-  68 0030 42       		.byte	66
-  69 0031 00       		.byte	0
-  70 0032 00       		.byte	0
-  71 0033 40       		.byte	64
-  72 0034 00       		.byte	0
-  73 0035 00       		.byte	0
-  74 0036 41       		.byte	65
-  75 0037 20       		.byte	32
-  76 0038 01       		.byte	1
-  77 0039 01       		.byte	1
-  78 003a 20       		.byte	32
-  79 003b 01       		.byte	1
-  80 003c 01       		.byte	1
-  81 003d 20       		.byte	32
-  82 003e 01       		.byte	1
-  83 003f 12       		.byte	18
-  84 0040 00       		.byte	0
-  85 0041 00       		.byte	0
-  86 0042 40       		.byte	64
-  87 0043 90       		.byte	-112
-  88 0044 00       		.byte	0
-  89 0045 02       		.byte	2
-  90 0046 80       		.byte	-128
-  91 0047 00       		.byte	0
-  92 0048 00       		.byte	0
-  93 0049 80       		.byte	-128
-  94 004a 00       		.byte	0
-  95 004b 04       		.byte	4
-  96 004c 01       		.byte	1
-  97 004d 00       		.byte	0
-  98 004e 08       		.byte	8
-  99 004f 20       		.byte	32
- 100 0050 00       		.byte	0
- 101 0051 08       		.byte	8
- 102 0052 08       		.byte	8
- 103 0053 00       		.byte	0
- 104 0054 00       		.byte	0
- 105 0055 00       		.byte	0
- 106 0056 00       		.byte	0
- 107 0057 00       		.byte	0
- 108 0058 00       		.byte	0
- 109 0059 00       		.byte	0
- 110 005a 00       		.byte	0
- 111 005b 00       		.byte	0
- 112 005c 00       		.byte	0
- 113 005d 10       		.byte	16
- 114 005e 00       		.byte	0
- 115 005f 00       		.byte	0
- 116 0060 1C       		.byte	28
- 117 0061 00       		.byte	0
- 118 0062 00       		.byte	0
- 119 0063 32       		.byte	50
- 120 0064 00       		.byte	0
- 121 0065 00       		.byte	0
- 122 0066 2F       		.byte	47
- 123 0067 00       		.byte	0
- 124 0068 00       		.byte	0
- 125 0069 3F       		.byte	63
- 126 006a 00       		.byte	0
- 127 006b 00       		.byte	0
- 128 006c 07       		.byte	7
- 129 006d 00       		.byte	0
- 130 006e 00       		.byte	0
- 131 006f 01       		.byte	1
- 132 0070 00       		.byte	0
- 133 0071 00       		.byte	0
- 134 0072 01       		.byte	1
- 135 0073 00       		.byte	0
- 136 0074 00       		.byte	0
- 137 0075 000000   		.align	2
- 140              	flame1_gray_bits:
- 141 0078 00       		.byte	0
- 142 0079 00       		.byte	0
- 143 007a 00       		.byte	0
- 144 007b 00       		.byte	0
- 145 007c 00       		.byte	0
- 146 007d 00       		.byte	0
- 147 007e 00       		.byte	0
- 148 007f 00       		.byte	0
- 149 0080 00       		.byte	0
- 150 0081 00       		.byte	0
- 151 0082 00       		.byte	0
- 152 0083 00       		.byte	0
- 153 0084 00       		.byte	0
- 154 0085 00       		.byte	0
- 155 0086 00       		.byte	0
- 156 0087 00       		.byte	0
- 157 0088 00       		.byte	0
- 158 0089 00       		.byte	0
- 159 008a 00       		.byte	0
- 160 008b 00       		.byte	0
- 161 008c 00       		.byte	0
- 162 008d 00       		.byte	0
- 163 008e 00       		.byte	0
- 164 008f 00       		.byte	0
- 165 0090 00       		.byte	0
- 166 0091 00       		.byte	0
- 167 0092 00       		.byte	0
- 168 0093 00       		.byte	0
- 169 0094 00       		.byte	0
- 170 0095 00       		.byte	0
- 171 0096 00       		.byte	0
- 172 0097 00       		.byte	0
- 173 0098 00       		.byte	0
- 174 0099 00       		.byte	0
- 175 009a 08       		.byte	8
- 176 009b 00       		.byte	0
- 177 009c 00       		.byte	0
- 178 009d 00       		.byte	0
- 179 009e 00       		.byte	0
- 180 009f 00       		.byte	0
- 181 00a0 08       		.byte	8
- 182 00a1 00       		.byte	0
- 183 00a2 90       		.byte	-112
- 184 00a3 00       		.byte	0
- 185 00a4 00       		.byte	0
- 186 00a5 A0       		.byte	-96
- 187 00a6 02       		.byte	2
- 188 00a7 00       		.byte	0
- 189 00a8 B0       		.byte	-80
- 190 00a9 1B       		.byte	27
- 191 00aa 00       		.byte	0
- 192 00ab B0       		.byte	-80
- 193 00ac 1F       		.byte	31
- 194 00ad 00       		.byte	0
- 195 00ae B0       		.byte	-80
- 196 00af 0F       		.byte	15
- 197 00b0 00       		.byte	0
- 198 00b1 E0       		.byte	-32
- 199 00b2 0F       		.byte	15
- 200 00b3 00       		.byte	0
- 201 00b4 E0       		.byte	-32
- 202 00b5 0F       		.byte	15
- 203 00b6 00       		.byte	0
- 204 00b7 E0       		.byte	-32
- 205 00b8 0F       		.byte	15
- 206 00b9 00       		.byte	0
- 207 00ba A0       		.byte	-96
- 208 00bb 0F       		.byte	15
- 209 00bc 00       		.byte	0
- 210 00bd E0       		.byte	-32
- 211 00be 07       		.byte	7
- 212 00bf 00       		.byte	0
- 213 00c0 C0       		.byte	-64
- 214 00c1 03       		.byte	3
- 215 00c2 00       		.byte	0
- 216 00c3 80       		.byte	-128
- 217 00c4 02       		.byte	2
- 218 00c5 00       		.byte	0
- 219 00c6 C0       		.byte	-64
- 220 00c7 07       		.byte	7
- 221 00c8 00       		.byte	0
- 222 00c9 80       		.byte	-128
- 223 00ca 07       		.byte	7
- 224 00cb 00       		.byte	0
- 225 00cc 80       		.byte	-128
- 226 00cd 03       		.byte	3
- 227 00ce 00       		.byte	0
- 228 00cf 80       		.byte	-128
- 229 00d0 03       		.byte	3
- 230 00d1 00       		.byte	0
- 231 00d2 80       		.byte	-128
- 232 00d3 09       		.byte	9
- 233 00d4 00       		.byte	0
- 234 00d5 80       		.byte	-128
- 235 00d6 01       		.byte	1
- 236 00d7 00       		.byte	0
- 237 00d8 00       		.byte	0
- 238 00d9 00       		.byte	0
- 239 00da 00       		.byte	0
- 240 00db 0C       		.byte	12
- 241 00dc 00       		.byte	0
- 242 00dd 00       		.byte	0
- 243 00de 10       		.byte	16
- 244 00df 00       		.byte	0
- 245 00e0 00       		.byte	0
- 246 00e1 00       		.byte	0
- 247 00e2 00       		.byte	0
- 248 00e3 00       		.byte	0
- 249 00e4 00       		.byte	0
- 250 00e5 00       		.byte	0
- 251 00e6 00       		.byte	0
- 252 00e7 00       		.byte	0
- 253 00e8 00       		.byte	0
- 254 00e9 00       		.byte	0
- 255 00ea 00       		.byte	0
- 256 00eb 00       		.byte	0
- 257 00ec 00       		.byte	0
- 258 00ed 000000   		.align	2
- 261              	flame1_light_bits:
- 262 00f0 00       		.byte	0
- 263 00f1 00       		.byte	0
- 264 00f2 00       		.byte	0
- 265 00f3 00       		.byte	0
- 266 00f4 00       		.byte	0
- 267 00f5 00       		.byte	0
- 268 00f6 00       		.byte	0
- 269 00f7 00       		.byte	0
- 270 00f8 00       		.byte	0
- 271 00f9 00       		.byte	0
- 272 00fa 08       		.byte	8
- 273 00fb 00       		.byte	0
- 274 00fc 80       		.byte	-128
- 275 00fd 00       		.byte	0
- 276 00fe 00       		.byte	0
- 277 00ff 80       		.byte	-128
- 278 0100 0C       		.byte	12
- 279 0101 00       		.byte	0
- 280 0102 88       		.byte	-120
- 281 0103 0C       		.byte	12
- 282 0104 00       		.byte	0
- 283 0105 88       		.byte	-120
- 284 0106 09       		.byte	9
- 285 0107 00       		.byte	0
- 286 0108 B8       		.byte	-72
- 287 0109 0D       		.byte	13
- 288 010a 00       		.byte	0
- 289 010b C8       		.byte	-56
- 290 010c 4D       		.byte	77
- 291 010d 00       		.byte	0
- 292 010e E8       		.byte	-24
- 293 010f 5F       		.byte	95
- 294 0110 00       		.byte	0
- 295 0111 E8       		.byte	-24
- 296 0112 F6       		.byte	-10
- 297 0113 00       		.byte	0
- 298 0114 F8       		.byte	-8
- 299 0115 EF       		.byte	-17
- 300 0116 00       		.byte	0
- 301 0117 FC       		.byte	-4
- 302 0118 F7       		.byte	-9
- 303 0119 00       		.byte	0
- 304 011a 6C       		.byte	108
- 305 011b FE       		.byte	-2
- 306 011c 00       		.byte	0
- 307 011d 5C       		.byte	92
- 308 011e DC       		.byte	-36
- 309 011f 00       		.byte	0
- 310 0120 0C       		.byte	12
- 311 0121 E4       		.byte	-28
- 312 0122 00       		.byte	0
- 313 0123 0C       		.byte	12
- 314 0124 E0       		.byte	-32
- 315 0125 01       		.byte	1
- 316 0126 0E       		.byte	14
- 317 0127 D0       		.byte	-48
- 318 0128 00       		.byte	0
- 319 0129 1E       		.byte	30
- 320 012a D0       		.byte	-48
- 321 012b 00       		.byte	0
- 322 012c 1A       		.byte	26
- 323 012d D0       		.byte	-48
- 324 012e 00       		.byte	0
- 325 012f 0C       		.byte	12
- 326 0130 F0       		.byte	-16
- 327 0131 00       		.byte	0
- 328 0132 0E       		.byte	14
- 329 0133 60       		.byte	96
- 330 0134 00       		.byte	0
- 331 0135 1C       		.byte	28
- 332 0136 68       		.byte	104
- 333 0137 00       		.byte	0
- 334 0138 3C       		.byte	60
- 335 0139 3C       		.byte	60
- 336 013a 00       		.byte	0
- 337 013b 70       		.byte	112
- 338 013c 3C       		.byte	60
- 339 013d 00       		.byte	0
- 340 013e 30       		.byte	48
- 341 013f 18       		.byte	24
- 342 0140 00       		.byte	0
- 343 0141 70       		.byte	112
- 344 0142 30       		.byte	48
- 345 0143 00       		.byte	0
- 346 0144 78       		.byte	120
- 347 0145 3C       		.byte	60
- 348 0146 00       		.byte	0
- 349 0147 78       		.byte	120
- 350 0148 38       		.byte	56
- 351 0149 00       		.byte	0
- 352 014a 70       		.byte	112
- 353 014b 16       		.byte	22
- 354 014c 00       		.byte	0
- 355 014d 60       		.byte	96
- 356 014e 1E       		.byte	30
- 357 014f 00       		.byte	0
- 358 0150 E0       		.byte	-32
- 359 0151 0F       		.byte	15
- 360 0152 00       		.byte	0
- 361 0153 C0       		.byte	-64
- 362 0154 0F       		.byte	15
- 363 0155 00       		.byte	0
- 364 0156 C0       		.byte	-64
- 365 0157 0F       		.byte	15
- 366 0158 00       		.byte	0
- 367 0159 00       		.byte	0
- 368 015a 00       		.byte	0
- 369 015b 00       		.byte	0
- 370 015c 00       		.byte	0
- 371 015d 00       		.byte	0
- 372 015e 00       		.byte	0
- 373 015f 00       		.byte	0
- 374 0160 00       		.byte	0
- 375 0161 00       		.byte	0
- 376 0162 00       		.byte	0
- 377 0163 00       		.byte	0
- 378 0164 00       		.byte	0
- 379 0165 000000   		.align	2
- 382              	flame2_black_bits:
- 383 0168 00       		.byte	0
- 384 0169 00       		.byte	0
- 385 016a 00       		.byte	0
- 386 016b 00       		.byte	0
- 387 016c 42       		.byte	66
- 388 016d 00       		.byte	0
- 389 016e 04       		.byte	4
- 390 016f 40       		.byte	64
- 391 0170 00       		.byte	0
- 392 0171 44       		.byte	68
- 393 0172 04       		.byte	4
- 394 0173 00       		.byte	0
- 395 0174 40       		.byte	64
- 396 0175 04       		.byte	4
- 397 0176 00       		.byte	0
- 398 0177 04       		.byte	4
- 399 0178 22       		.byte	34
- 400 0179 00       		.byte	0
- 401 017a A0       		.byte	-96
- 402 017b 22       		.byte	34
- 403 017c 00       		.byte	0
- 404 017d A8       		.byte	-88
- 405 017e AA       		.byte	-86
- 406 017f 00       		.byte	0
- 407 0180 08       		.byte	8
- 408 0181 91       		.byte	-111
- 409 0182 00       		.byte	0
- 410 0183 00       		.byte	0
- 411 0184 90       		.byte	-112
- 412 0185 00       		.byte	0
- 413 0186 80       		.byte	-128
- 414 0187 84       		.byte	-124
- 415 0188 00       		.byte	0
- 416 0189 04       		.byte	4
- 417 018a 04       		.byte	4
- 418 018b 00       		.byte	0
- 419 018c 04       		.byte	4
- 420 018d 80       		.byte	-128
- 421 018e 00       		.byte	0
- 422 018f 20       		.byte	32
- 423 0190 90       		.byte	-112
- 424 0191 00       		.byte	0
- 425 0192 85       		.byte	-123
- 426 0193 00       		.byte	0
- 427 0194 00       		.byte	0
- 428 0195 00       		.byte	0
- 429 0196 00       		.byte	0
- 430 0197 01       		.byte	1
- 431 0198 02       		.byte	2
- 432 0199 00       		.byte	0
- 433 019a 00       		.byte	0
- 434 019b 20       		.byte	32
- 435 019c 84       		.byte	-124
- 436 019d 00       		.byte	0
- 437 019e 20       		.byte	32
- 438 019f 84       		.byte	-124
- 439 01a0 00       		.byte	0
- 440 01a1 02       		.byte	2
- 441 01a2 00       		.byte	0
- 442 01a3 00       		.byte	0
- 443 01a4 04       		.byte	4
- 444 01a5 40       		.byte	64
- 445 01a6 00       		.byte	0
- 446 01a7 02       		.byte	2
- 447 01a8 80       		.byte	-128
- 448 01a9 00       		.byte	0
- 449 01aa 0A       		.byte	10
- 450 01ab A0       		.byte	-96
- 451 01ac 00       		.byte	0
- 452 01ad 08       		.byte	8
- 453 01ae 24       		.byte	36
- 454 01af 00       		.byte	0
- 455 01b0 48       		.byte	72
- 456 01b1 20       		.byte	32
- 457 01b2 00       		.byte	0
- 458 01b3 08       		.byte	8
- 459 01b4 00       		.byte	0
- 460 01b5 00       		.byte	0
- 461 01b6 00       		.byte	0
- 462 01b7 00       		.byte	0
- 463 01b8 00       		.byte	0
- 464 01b9 10       		.byte	16
- 465 01ba 10       		.byte	16
- 466 01bb 00       		.byte	0
- 467 01bc 50       		.byte	80
- 468 01bd 40       		.byte	64
- 469 01be 00       		.byte	0
- 470 01bf 00       		.byte	0
- 471 01c0 40       		.byte	64
- 472 01c1 00       		.byte	0
- 473 01c2 00       		.byte	0
- 474 01c3 10       		.byte	16
- 475 01c4 00       		.byte	0
- 476 01c5 10       		.byte	16
- 477 01c6 00       		.byte	0
- 478 01c7 00       		.byte	0
- 479 01c8 1C       		.byte	28
- 480 01c9 00       		.byte	0
- 481 01ca 00       		.byte	0
- 482 01cb 32       		.byte	50
- 483 01cc 00       		.byte	0
- 484 01cd 00       		.byte	0
- 485 01ce 2F       		.byte	47
- 486 01cf 00       		.byte	0
- 487 01d0 00       		.byte	0
- 488 01d1 3F       		.byte	63
- 489 01d2 00       		.byte	0
- 490 01d3 00       		.byte	0
- 491 01d4 07       		.byte	7
- 492 01d5 00       		.byte	0
- 493 01d6 00       		.byte	0
- 494 01d7 01       		.byte	1
- 495 01d8 00       		.byte	0
- 496 01d9 00       		.byte	0
- 497 01da 01       		.byte	1
- 498 01db 00       		.byte	0
- 499 01dc 00       		.byte	0
- 500 01dd 000000   		.align	2
- 503              	flame2_gray_bits:
- 504 01e0 00       		.byte	0
- 505 01e1 00       		.byte	0
- 506 01e2 00       		.byte	0
- 507 01e3 00       		.byte	0
- 508 01e4 00       		.byte	0
- 509 01e5 00       		.byte	0
- 510 01e6 00       		.byte	0
- 511 01e7 00       		.byte	0
- 512 01e8 00       		.byte	0
- 513 01e9 00       		.byte	0
- 514 01ea 00       		.byte	0
- 515 01eb 00       		.byte	0
- 516 01ec 00       		.byte	0
- 517 01ed 00       		.byte	0
- 518 01ee 00       		.byte	0
- 519 01ef 00       		.byte	0
- 520 01f0 00       		.byte	0
- 521 01f1 00       		.byte	0
- 522 01f2 00       		.byte	0
- 523 01f3 00       		.byte	0
- 524 01f4 00       		.byte	0
- 525 01f5 00       		.byte	0
- 526 01f6 00       		.byte	0
- 527 01f7 00       		.byte	0
- 528 01f8 00       		.byte	0
- 529 01f9 00       		.byte	0
- 530 01fa 00       		.byte	0
- 531 01fb 00       		.byte	0
- 532 01fc 00       		.byte	0
- 533 01fd 00       		.byte	0
- 534 01fe 00       		.byte	0
- 535 01ff 00       		.byte	0
- 536 0200 00       		.byte	0
- 537 0201 20       		.byte	32
- 538 0202 00       		.byte	0
- 539 0203 00       		.byte	0
- 540 0204 10       		.byte	16
- 541 0205 00       		.byte	0
- 542 0206 00       		.byte	0
- 543 0207 40       		.byte	64
- 544 0208 02       		.byte	2
- 545 0209 00       		.byte	0
- 546 020a 60       		.byte	96
- 547 020b 27       		.byte	39
- 548 020c 00       		.byte	0
- 549 020d E0       		.byte	-32
- 550 020e 1F       		.byte	31
- 551 020f 00       		.byte	0
- 552 0210 E0       		.byte	-32
- 553 0211 0F       		.byte	15
- 554 0212 00       		.byte	0
- 555 0213 C0       		.byte	-64
- 556 0214 03       		.byte	3
- 557 0215 00       		.byte	0
- 558 0216 C0       		.byte	-64
- 559 0217 0B       		.byte	11
- 560 0218 00       		.byte	0
- 561 0219 E0       		.byte	-32
- 562 021a 0F       		.byte	15
- 563 021b 00       		.byte	0
- 564 021c D0       		.byte	-48
- 565 021d 0F       		.byte	15
- 566 021e 00       		.byte	0
- 567 021f C0       		.byte	-64
- 568 0220 0F       		.byte	15
- 569 0221 00       		.byte	0
- 570 0222 C0       		.byte	-64
- 571 0223 0F       		.byte	15
- 572 0224 00       		.byte	0
- 573 0225 E0       		.byte	-32
- 574 0226 03       		.byte	3
- 575 0227 00       		.byte	0
- 576 0228 A0       		.byte	-96
- 577 0229 07       		.byte	7
- 578 022a 00       		.byte	0
- 579 022b C0       		.byte	-64
- 580 022c 07       		.byte	7
- 581 022d 00       		.byte	0
- 582 022e 80       		.byte	-128
- 583 022f 0B       		.byte	11
- 584 0230 00       		.byte	0
- 585 0231 C0       		.byte	-64
- 586 0232 03       		.byte	3
- 587 0233 00       		.byte	0
- 588 0234 80       		.byte	-128
- 589 0235 03       		.byte	3
- 590 0236 00       		.byte	0
- 591 0237 80       		.byte	-128
- 592 0238 03       		.byte	3
- 593 0239 00       		.byte	0
- 594 023a 80       		.byte	-128
- 595 023b 03       		.byte	3
- 596 023c 00       		.byte	0
- 597 023d 00       		.byte	0
- 598 023e 00       		.byte	0
- 599 023f 00       		.byte	0
- 600 0240 00       		.byte	0
- 601 0241 00       		.byte	0
- 602 0242 00       		.byte	0
- 603 0243 0C       		.byte	12
- 604 0244 00       		.byte	0
- 605 0245 00       		.byte	0
- 606 0246 10       		.byte	16
- 607 0247 00       		.byte	0
- 608 0248 00       		.byte	0
- 609 0249 00       		.byte	0
- 610 024a 00       		.byte	0
- 611 024b 00       		.byte	0
- 612 024c 00       		.byte	0
- 613 024d 00       		.byte	0
- 614 024e 00       		.byte	0
- 615 024f 00       		.byte	0
- 616 0250 00       		.byte	0
- 617 0251 00       		.byte	0
- 618 0252 00       		.byte	0
- 619 0253 00       		.byte	0
- 620 0254 00       		.byte	0
- 621 0255 000000   		.align	2
- 624              	flame2_light_bits:
- 625 0258 00       		.byte	0
- 626 0259 00       		.byte	0
- 627 025a 00       		.byte	0
- 628 025b 00       		.byte	0
- 629 025c 00       		.byte	0
- 630 025d 00       		.byte	0
- 631 025e 00       		.byte	0
- 632 025f 00       		.byte	0
- 633 0260 00       		.byte	0
- 634 0261 00       		.byte	0
- 635 0262 02       		.byte	2
- 636 0263 00       		.byte	0
- 637 0264 20       		.byte	32
- 638 0265 02       		.byte	2
- 639 0266 00       		.byte	0
- 640 0267 20       		.byte	32
- 641 0268 05       		.byte	5
- 642 0269 00       		.byte	0
- 643 026a 40       		.byte	64
- 644 026b 05       		.byte	5
- 645 026c 00       		.byte	0
- 646 026d 40       		.byte	64
- 647 026e 05       		.byte	5
- 648 026f 00       		.byte	0
- 649 0270 F4       		.byte	-12
- 650 0271 26       		.byte	38
- 651 0272 00       		.byte	0
- 652 0273 FC       		.byte	-4
- 653 0274 27       		.byte	39
- 654 0275 00       		.byte	0
- 655 0276 7C       		.byte	124
- 656 0277 13       		.byte	19
- 657 0278 00       		.byte	0
- 658 0279 DA       		.byte	-38
- 659 027a FB       		.byte	-5
- 660 027b 00       		.byte	0
- 661 027c EA       		.byte	-22
- 662 027d 7F       		.byte	127
- 663 027e 00       		.byte	0
- 664 027f 9E       		.byte	-98
- 665 0280 6D       		.byte	109
- 666 0281 00       		.byte	0
- 667 0282 18       		.byte	24
- 668 0283 D8       		.byte	-40
- 669 0284 00       		.byte	0
- 670 0285 1C       		.byte	28
- 671 0286 E0       		.byte	-32
- 672 0287 00       		.byte	0
- 673 0288 1C       		.byte	28
- 674 0289 F0       		.byte	-16
- 675 028a 00       		.byte	0
- 676 028b 1E       		.byte	30
- 677 028c 78       		.byte	120
- 678 028d 00       		.byte	0
- 679 028e 1E       		.byte	30
- 680 028f 70       		.byte	112
- 681 0290 00       		.byte	0
- 682 0291 1C       		.byte	28
- 683 0292 F0       		.byte	-16
- 684 0293 00       		.byte	0
- 685 0294 28       		.byte	40
- 686 0295 30       		.byte	48
- 687 0296 00       		.byte	0
- 688 0297 3C       		.byte	60
- 689 0298 70       		.byte	112
- 690 0299 00       		.byte	0
- 691 029a 24       		.byte	36
- 692 029b 50       		.byte	80
- 693 029c 01       		.byte	1
- 694 029d 10       		.byte	16
- 695 029e D8       		.byte	-40
- 696 029f 01       		.byte	1
- 697 02a0 10       		.byte	16
- 698 02a1 48       		.byte	72
- 699 02a2 00       		.byte	0
- 700 02a3 30       		.byte	48
- 701 02a4 38       		.byte	56
- 702 02a5 00       		.byte	0
- 703 02a6 78       		.byte	120
- 704 02a7 34       		.byte	52
- 705 02a8 00       		.byte	0
- 706 02a9 20       		.byte	32
- 707 02aa 2C       		.byte	44
- 708 02ab 00       		.byte	0
- 709 02ac 20       		.byte	32
- 710 02ad 3C       		.byte	60
- 711 02ae 00       		.byte	0
- 712 02af 50       		.byte	80
- 713 02b0 38       		.byte	56
- 714 02b1 00       		.byte	0
- 715 02b2 70       		.byte	112
- 716 02b3 0C       		.byte	12
- 717 02b4 00       		.byte	0
- 718 02b5 E0       		.byte	-32
- 719 02b6 1F       		.byte	31
- 720 02b7 00       		.byte	0
- 721 02b8 E0       		.byte	-32
- 722 02b9 0F       		.byte	15
- 723 02ba 00       		.byte	0
- 724 02bb C0       		.byte	-64
- 725 02bc 0F       		.byte	15
- 726 02bd 00       		.byte	0
- 727 02be C0       		.byte	-64
- 728 02bf 0F       		.byte	15
- 729 02c0 00       		.byte	0
- 730 02c1 00       		.byte	0
- 731 02c2 00       		.byte	0
- 732 02c3 00       		.byte	0
- 733 02c4 00       		.byte	0
- 734 02c5 00       		.byte	0
- 735 02c6 00       		.byte	0
- 736 02c7 00       		.byte	0
- 737 02c8 00       		.byte	0
- 738 02c9 00       		.byte	0
- 739 02ca 00       		.byte	0
- 740 02cb 00       		.byte	0
- 741 02cc 00       		.byte	0
- 742 02cd 000000   		.align	2
- 745              	flame3_black_bits:
- 746 02d0 00       		.byte	0
- 747 02d1 04       		.byte	4
- 748 02d2 00       		.byte	0
- 749 02d3 02       		.byte	2
- 750 02d4 00       		.byte	0
- 751 02d5 00       		.byte	0
- 752 02d6 00       		.byte	0
- 753 02d7 04       		.byte	4
- 754 02d8 00       		.byte	0
- 755 02d9 40       		.byte	64
- 756 02da 04       		.byte	4
- 757 02db 00       		.byte	0
- 758 02dc 04       		.byte	4
- 759 02dd 04       		.byte	4
- 760 02de 00       		.byte	0
- 761 02df A4       		.byte	-92
- 762 02e0 98       		.byte	-104
- 763 02e1 00       		.byte	0
- 764 02e2 A0       		.byte	-96
- 765 02e3 52       		.byte	82
- 766 02e4 00       		.byte	0
- 767 02e5 8A       		.byte	-118
- 768 02e6 02       		.byte	2
- 769 02e7 01       		.byte	1
- 770 02e8 28       		.byte	40
- 771 02e9 20       		.byte	32
- 772 02ea 01       		.byte	1
- 773 02eb 00       		.byte	0
- 774 02ec 00       		.byte	0
- 775 02ed 01       		.byte	1
- 776 02ee 02       		.byte	2
- 777 02ef 00       		.byte	0
- 778 02f0 00       		.byte	0
- 779 02f1 82       		.byte	-126
- 780 02f2 02       		.byte	2
- 781 02f3 01       		.byte	1
- 782 02f4 92       		.byte	-110
- 783 02f5 00       		.byte	0
- 784 02f6 00       		.byte	0
- 785 02f7 80       		.byte	-128
- 786 02f8 00       		.byte	0
- 787 02f9 00       		.byte	0
- 788 02fa 81       		.byte	-127
- 789 02fb 00       		.byte	0
- 790 02fc 01       		.byte	1
- 791 02fd 09       		.byte	9
- 792 02fe 40       		.byte	64
- 793 02ff 01       		.byte	1
- 794 0300 08       		.byte	8
- 795 0301 40       		.byte	64
- 796 0302 00       		.byte	0
- 797 0303 01       		.byte	1
- 798 0304 02       		.byte	2
- 799 0305 00       		.byte	0
- 800 0306 00       		.byte	0
- 801 0307 02       		.byte	2
- 802 0308 01       		.byte	1
- 803 0309 40       		.byte	64
- 804 030a 00       		.byte	0
- 805 030b 01       		.byte	1
- 806 030c 02       		.byte	2
- 807 030d 00       		.byte	0
- 808 030e 00       		.byte	0
- 809 030f 02       		.byte	2
- 810 0310 00       		.byte	0
- 811 0311 00       		.byte	0
- 812 0312 00       		.byte	0
- 813 0313 A1       		.byte	-95
- 814 0314 00       		.byte	0
- 815 0315 24       		.byte	36
- 816 0316 00       		.byte	0
- 817 0317 00       		.byte	0
- 818 0318 00       		.byte	0
- 819 0319 40       		.byte	64
- 820 031a 00       		.byte	0
- 821 031b 10       		.byte	16
- 822 031c 44       		.byte	68
- 823 031d 00       		.byte	0
- 824 031e 00       		.byte	0
- 825 031f 40       		.byte	64
- 826 0320 00       		.byte	0
- 827 0321 08       		.byte	8
- 828 0322 40       		.byte	64
- 829 0323 00       		.byte	0
- 830 0324 08       		.byte	8
- 831 0325 08       		.byte	8
- 832 0326 00       		.byte	0
- 833 0327 00       		.byte	0
- 834 0328 00       		.byte	0
- 835 0329 00       		.byte	0
- 836 032a 00       		.byte	0
- 837 032b 00       		.byte	0
- 838 032c 00       		.byte	0
- 839 032d 10       		.byte	16
- 840 032e 00       		.byte	0
- 841 032f 00       		.byte	0
- 842 0330 1C       		.byte	28
- 843 0331 00       		.byte	0
- 844 0332 00       		.byte	0
- 845 0333 32       		.byte	50
- 846 0334 00       		.byte	0
- 847 0335 00       		.byte	0
- 848 0336 2F       		.byte	47
- 849 0337 00       		.byte	0
- 850 0338 00       		.byte	0
- 851 0339 3F       		.byte	63
- 852 033a 00       		.byte	0
- 853 033b 00       		.byte	0
- 854 033c 07       		.byte	7
- 855 033d 00       		.byte	0
- 856 033e 00       		.byte	0
- 857 033f 01       		.byte	1
- 858 0340 00       		.byte	0
- 859 0341 00       		.byte	0
- 860 0342 01       		.byte	1
- 861 0343 00       		.byte	0
- 862 0344 00       		.byte	0
- 863 0345 000000   		.align	2
- 866              	flame3_gray_bits:
- 867 0348 00       		.byte	0
- 868 0349 00       		.byte	0
- 869 034a 00       		.byte	0
- 870 034b 00       		.byte	0
- 871 034c 00       		.byte	0
- 872 034d 00       		.byte	0
- 873 034e 00       		.byte	0
- 874 034f 00       		.byte	0
- 875 0350 00       		.byte	0
- 876 0351 00       		.byte	0
- 877 0352 00       		.byte	0
- 878 0353 00       		.byte	0
- 879 0354 00       		.byte	0
- 880 0355 00       		.byte	0
- 881 0356 00       		.byte	0
- 882 0357 00       		.byte	0
- 883 0358 00       		.byte	0
- 884 0359 00       		.byte	0
- 885 035a 00       		.byte	0
- 886 035b 00       		.byte	0
- 887 035c 00       		.byte	0
- 888 035d 00       		.byte	0
- 889 035e 00       		.byte	0
- 890 035f 00       		.byte	0
- 891 0360 00       		.byte	0
- 892 0361 00       		.byte	0
- 893 0362 00       		.byte	0
- 894 0363 00       		.byte	0
- 895 0364 00       		.byte	0
- 896 0365 00       		.byte	0
- 897 0366 00       		.byte	0
- 898 0367 00       		.byte	0
- 899 0368 00       		.byte	0
- 900 0369 20       		.byte	32
- 901 036a 00       		.byte	0
- 902 036b 00       		.byte	0
- 903 036c 40       		.byte	64
- 904 036d 00       		.byte	0
- 905 036e 00       		.byte	0
- 906 036f 00       		.byte	0
- 907 0370 23       		.byte	35
- 908 0371 00       		.byte	0
- 909 0372 60       		.byte	96
- 910 0373 17       		.byte	23
- 911 0374 00       		.byte	0
- 912 0375 E0       		.byte	-32
- 913 0376 17       		.byte	23
- 914 0377 00       		.byte	0
- 915 0378 E0       		.byte	-32
- 916 0379 0F       		.byte	15
- 917 037a 00       		.byte	0
- 918 037b E0       		.byte	-32
- 919 037c 3D       		.byte	61
- 920 037d 00       		.byte	0
- 921 037e E0       		.byte	-32
- 922 037f 3D       		.byte	61
- 923 0380 00       		.byte	0
- 924 0381 A0       		.byte	-96
- 925 0382 1F       		.byte	31
- 926 0383 00       		.byte	0
- 927 0384 E8       		.byte	-24
- 928 0385 1F       		.byte	31
- 929 0386 00       		.byte	0
- 930 0387 F0       		.byte	-16
- 931 0388 0F       		.byte	15
- 932 0389 00       		.byte	0
- 933 038a E0       		.byte	-32
- 934 038b 0E       		.byte	14
- 935 038c 00       		.byte	0
- 936 038d C0       		.byte	-64
- 937 038e 0F       		.byte	15
- 938 038f 00       		.byte	0
- 939 0390 E0       		.byte	-32
- 940 0391 0F       		.byte	15
- 941 0392 00       		.byte	0
- 942 0393 C0       		.byte	-64
- 943 0394 0B       		.byte	11
- 944 0395 00       		.byte	0
- 945 0396 C0       		.byte	-64
- 946 0397 17       		.byte	23
- 947 0398 00       		.byte	0
- 948 0399 80       		.byte	-128
- 949 039a 07       		.byte	7
- 950 039b 00       		.byte	0
- 951 039c 80       		.byte	-128
- 952 039d 07       		.byte	7
- 953 039e 00       		.byte	0
- 954 039f 80       		.byte	-128
- 955 03a0 03       		.byte	3
- 956 03a1 00       		.byte	0
- 957 03a2 40       		.byte	64
- 958 03a3 03       		.byte	3
- 959 03a4 00       		.byte	0
- 960 03a5 00       		.byte	0
- 961 03a6 03       		.byte	3
- 962 03a7 00       		.byte	0
- 963 03a8 00       		.byte	0
- 964 03a9 00       		.byte	0
- 965 03aa 00       		.byte	0
- 966 03ab 0C       		.byte	12
- 967 03ac 00       		.byte	0
- 968 03ad 00       		.byte	0
- 969 03ae 10       		.byte	16
- 970 03af 00       		.byte	0
- 971 03b0 00       		.byte	0
- 972 03b1 00       		.byte	0
- 973 03b2 00       		.byte	0
- 974 03b3 00       		.byte	0
- 975 03b4 00       		.byte	0
- 976 03b5 00       		.byte	0
- 977 03b6 00       		.byte	0
- 978 03b7 00       		.byte	0
- 979 03b8 00       		.byte	0
- 980 03b9 00       		.byte	0
- 981 03ba 00       		.byte	0
- 982 03bb 00       		.byte	0
- 983 03bc 00       		.byte	0
- 984 03bd 000000   		.align	2
- 987              	flame3_light_bits:
- 988 03c0 00       		.byte	0
- 989 03c1 00       		.byte	0
- 990 03c2 00       		.byte	0
- 991 03c3 00       		.byte	0
- 992 03c4 00       		.byte	0
- 993 03c5 00       		.byte	0
- 994 03c6 40       		.byte	64
- 995 03c7 00       		.byte	0
- 996 03c8 00       		.byte	0
- 997 03c9 00       		.byte	0
- 998 03ca 02       		.byte	2
- 999 03cb 00       		.byte	0
- 1000 03cc 40       		.byte	64
- 1001 03cd 02       		.byte	2
- 1002 03ce 00       		.byte	0
- 1003 03cf 40       		.byte	64
- 1004 03d0 02       		.byte	2
- 1005 03d1 00       		.byte	0
- 1006 03d2 4C       		.byte	76
- 1007 03d3 01       		.byte	1
- 1008 03d4 00       		.byte	0
- 1009 03d5 74       		.byte	116
- 1010 03d6 31       		.byte	49
- 1011 03d7 00       		.byte	0
- 1012 03d8 D4       		.byte	-44
- 1013 03d9 17       		.byte	23
- 1014 03da 00       		.byte	0
- 1015 03db FC       		.byte	-4
- 1016 03dc 3F       		.byte	63
- 1017 03dd 00       		.byte	0
- 1018 03de F8       		.byte	-8
- 1019 03df BF       		.byte	-65
- 1020 03e0 00       		.byte	0
- 1021 03e1 58       		.byte	88
- 1022 03e2 FD       		.byte	-3
- 1023 03e3 00       		.byte	0
- 1024 03e4 28       		.byte	40
- 1025 03e5 FF       		.byte	-1
- 1026 03e6 00       		.byte	0
- 1027 03e7 78       		.byte	120
- 1028 03e8 DC       		.byte	-36
- 1029 03e9 00       		.byte	0
- 1030 03ea 1C       		.byte	28
- 1031 03eb E8       		.byte	-24
- 1032 03ec 00       		.byte	0
- 1033 03ed 16       		.byte	22
- 1034 03ee A8       		.byte	-88
- 1035 03ef 00       		.byte	0
- 1036 03f0 16       		.byte	22
- 1037 03f1 B0       		.byte	-80
- 1038 03f2 00       		.byte	0
- 1039 03f3 1E       		.byte	30
- 1040 03f4 C0       		.byte	-64
- 1041 03f5 00       		.byte	0
- 1042 03f6 1E       		.byte	30
- 1043 03f7 C0       		.byte	-64
- 1044 03f8 00       		.byte	0
- 1045 03f9 1C       		.byte	28
- 1046 03fa E0       		.byte	-32
- 1047 03fb 00       		.byte	0
- 1048 03fc 14       		.byte	20
- 1049 03fd C0       		.byte	-64
- 1050 03fe 00       		.byte	0
- 1051 03ff 0C       		.byte	12
- 1052 0400 F0       		.byte	-16
- 1053 0401 00       		.byte	0
- 1054 0402 1C       		.byte	28
- 1055 0403 40       		.byte	64
- 1056 0404 00       		.byte	0
- 1057 0405 18       		.byte	24
- 1058 0406 F0       		.byte	-16
- 1059 0407 00       		.byte	0
- 1060 0408 1C       		.byte	28
- 1061 0409 B0       		.byte	-80
- 1062 040a 00       		.byte	0
- 1063 040b 28       		.byte	40
- 1064 040c 30       		.byte	48
- 1065 040d 00       		.byte	0
- 1066 040e 3C       		.byte	60
- 1067 040f 28       		.byte	40
- 1068 0410 00       		.byte	0
- 1069 0411 54       		.byte	84
- 1070 0412 38       		.byte	56
- 1071 0413 00       		.byte	0
- 1072 0414 70       		.byte	112
- 1073 0415 30       		.byte	48
- 1074 0416 00       		.byte	0
- 1075 0417 70       		.byte	112
- 1076 0418 1C       		.byte	28
- 1077 0419 00       		.byte	0
- 1078 041a B0       		.byte	-80
- 1079 041b 3C       		.byte	60
- 1080 041c 00       		.byte	0
- 1081 041d E0       		.byte	-32
- 1082 041e 3C       		.byte	60
- 1083 041f 00       		.byte	0
- 1084 0420 E0       		.byte	-32
- 1085 0421 1F       		.byte	31
- 1086 0422 00       		.byte	0
- 1087 0423 C0       		.byte	-64
- 1088 0424 0F       		.byte	15
- 1089 0425 00       		.byte	0
- 1090 0426 C0       		.byte	-64
- 1091 0427 0F       		.byte	15
- 1092 0428 00       		.byte	0
- 1093 0429 00       		.byte	0
- 1094 042a 00       		.byte	0
- 1095 042b 00       		.byte	0
- 1096 042c 00       		.byte	0
- 1097 042d 00       		.byte	0
- 1098 042e 00       		.byte	0
- 1099 042f 00       		.byte	0
- 1100 0430 00       		.byte	0
- 1101 0431 00       		.byte	0
- 1102 0432 00       		.byte	0
- 1103 0433 00       		.byte	0
- 1104 0434 00       		.byte	0
- 1105 0435 000000   		.align	2
- 1108              	flame4_black_bits:
- 1109 0438 00       		.byte	0
- 1110 0439 01       		.byte	1
- 1111 043a 00       		.byte	0
- 1112 043b 00       		.byte	0
- 1113 043c 00       		.byte	0
- 1114 043d 00       		.byte	0
- 1115 043e 82       		.byte	-126
- 1116 043f 10       		.byte	16
- 1117 0440 00       		.byte	0
- 1118 0441 80       		.byte	-128
- 1119 0442 00       		.byte	0
- 1120 0443 00       		.byte	0
- 1121 0444 C8       		.byte	-56
- 1122 0445 28       		.byte	40
- 1123 0446 00       		.byte	0
- 1124 0447 00       		.byte	0
- 1125 0448 04       		.byte	4
- 1126 0449 00       		.byte	0
- 1127 044a 54       		.byte	84
- 1128 044b 05       		.byte	5
- 1129 044c 00       		.byte	0
- 1130 044d 54       		.byte	84
- 1131 044e A5       		.byte	-91
- 1132 044f 00       		.byte	0
- 1133 0450 20       		.byte	32
- 1134 0451 24       		.byte	36
- 1135 0452 00       		.byte	0
- 1136 0453 08       		.byte	8
- 1137 0454 82       		.byte	-126
- 1138 0455 00       		.byte	0
- 1139 0456 00       		.byte	0
- 1140 0457 50       		.byte	80
- 1141 0458 00       		.byte	0
- 1142 0459 04       		.byte	4
- 1143 045a 00       		.byte	0
- 1144 045b 01       		.byte	1
- 1145 045c 44       		.byte	68
- 1146 045d 04       		.byte	4
- 1147 045e 01       		.byte	1
- 1148 045f 00       		.byte	0
- 1149 0460 24       		.byte	36
- 1150 0461 01       		.byte	1
- 1151 0462 12       		.byte	18
- 1152 0463 84       		.byte	-124
- 1153 0464 00       		.byte	0
- 1154 0465 10       		.byte	16
- 1155 0466 84       		.byte	-124
- 1156 0467 00       		.byte	0
- 1157 0468 01       		.byte	1
- 1158 0469 80       		.byte	-128
- 1159 046a 00       		.byte	0
- 1160 046b 01       		.byte	1
- 1161 046c A0       		.byte	-96
- 1162 046d 00       		.byte	0
- 1163 046e 01       		.byte	1
- 1164 046f 20       		.byte	32
- 1165 0470 00       		.byte	0
- 1166 0471 00       		.byte	0
- 1167 0472 00       		.byte	0
- 1168 0473 01       		.byte	1
- 1169 0474 22       		.byte	34
- 1170 0475 00       		.byte	0
- 1171 0476 00       		.byte	0
- 1172 0477 00       		.byte	0
- 1173 0478 00       		.byte	0
- 1174 0479 00       		.byte	0
- 1175 047a 02       		.byte	2
- 1176 047b 80       		.byte	-128
- 1177 047c 00       		.byte	0
- 1178 047d 8A       		.byte	-118
- 1179 047e 80       		.byte	-128
- 1180 047f 00       		.byte	0
- 1181 0480 00       		.byte	0
- 1182 0481 40       		.byte	64
- 1183 0482 00       		.byte	0
- 1184 0483 04       		.byte	4
- 1185 0484 00       		.byte	0
- 1186 0485 00       		.byte	0
- 1187 0486 44       		.byte	68
- 1188 0487 20       		.byte	32
- 1189 0488 00       		.byte	0
- 1190 0489 00       		.byte	0
- 1191 048a 20       		.byte	32
- 1192 048b 00       		.byte	0
- 1193 048c 08       		.byte	8
- 1194 048d 00       		.byte	0
- 1195 048e 00       		.byte	0
- 1196 048f 00       		.byte	0
- 1197 0490 10       		.byte	16
- 1198 0491 00       		.byte	0
- 1199 0492 00       		.byte	0
- 1200 0493 00       		.byte	0
- 1201 0494 00       		.byte	0
- 1202 0495 10       		.byte	16
- 1203 0496 00       		.byte	0
- 1204 0497 00       		.byte	0
- 1205 0498 1C       		.byte	28
- 1206 0499 00       		.byte	0
- 1207 049a 00       		.byte	0
- 1208 049b 32       		.byte	50
- 1209 049c 00       		.byte	0
- 1210 049d 00       		.byte	0
- 1211 049e 2F       		.byte	47
- 1212 049f 00       		.byte	0
- 1213 04a0 00       		.byte	0
- 1214 04a1 3F       		.byte	63
- 1215 04a2 00       		.byte	0
- 1216 04a3 00       		.byte	0
- 1217 04a4 07       		.byte	7
- 1218 04a5 00       		.byte	0
- 1219 04a6 00       		.byte	0
- 1220 04a7 01       		.byte	1
- 1221 04a8 00       		.byte	0
- 1222 04a9 00       		.byte	0
- 1223 04aa 01       		.byte	1
- 1224 04ab 00       		.byte	0
- 1225 04ac 00       		.byte	0
- 1226 04ad 000000   		.align	2
- 1229              	flame4_gray_bits:
- 1230 04b0 00       		.byte	0
- 1231 04b1 00       		.byte	0
- 1232 04b2 00       		.byte	0
- 1233 04b3 00       		.byte	0
- 1234 04b4 00       		.byte	0
- 1235 04b5 00       		.byte	0
- 1236 04b6 00       		.byte	0
- 1237 04b7 00       		.byte	0
- 1238 04b8 00       		.byte	0
- 1239 04b9 00       		.byte	0
- 1240 04ba 00       		.byte	0
- 1241 04bb 00       		.byte	0
- 1242 04bc 00       		.byte	0
- 1243 04bd 00       		.byte	0
- 1244 04be 00       		.byte	0
- 1245 04bf 00       		.byte	0
- 1246 04c0 00       		.byte	0
- 1247 04c1 00       		.byte	0
- 1248 04c2 00       		.byte	0
- 1249 04c3 00       		.byte	0
- 1250 04c4 00       		.byte	0
- 1251 04c5 00       		.byte	0
- 1252 04c6 00       		.byte	0
- 1253 04c7 00       		.byte	0
- 1254 04c8 00       		.byte	0
- 1255 04c9 00       		.byte	0
- 1256 04ca 00       		.byte	0
- 1257 04cb 00       		.byte	0
- 1258 04cc 00       		.byte	0
- 1259 04cd 00       		.byte	0
- 1260 04ce 00       		.byte	0
- 1261 04cf 00       		.byte	0
- 1262 04d0 00       		.byte	0
- 1263 04d1 00       		.byte	0
- 1264 04d2 00       		.byte	0
- 1265 04d3 00       		.byte	0
- 1266 04d4 00       		.byte	0
- 1267 04d5 00       		.byte	0
- 1268 04d6 00       		.byte	0
- 1269 04d7 40       		.byte	64
- 1270 04d8 10       		.byte	16
- 1271 04d9 00       		.byte	0
- 1272 04da 20       		.byte	32
- 1273 04db 08       		.byte	8
- 1274 04dc 00       		.byte	0
- 1275 04dd C0       		.byte	-64
- 1276 04de 08       		.byte	8
- 1277 04df 00       		.byte	0
- 1278 04e0 C4       		.byte	-60
- 1279 04e1 0F       		.byte	15
- 1280 04e2 00       		.byte	0
- 1281 04e3 F0       		.byte	-16
- 1282 04e4 07       		.byte	7
- 1283 04e5 00       		.byte	0
- 1284 04e6 F8       		.byte	-8
- 1285 04e7 1F       		.byte	31
- 1286 04e8 00       		.byte	0
- 1287 04e9 F0       		.byte	-16
- 1288 04ea 1F       		.byte	31
- 1289 04eb 00       		.byte	0
- 1290 04ec D0       		.byte	-48
- 1291 04ed 1F       		.byte	31
- 1292 04ee 00       		.byte	0
- 1293 04ef F0       		.byte	-16
- 1294 04f0 1F       		.byte	31
- 1295 04f1 00       		.byte	0
- 1296 04f2 C0       		.byte	-64
- 1297 04f3 1F       		.byte	31
- 1298 04f4 00       		.byte	0
- 1299 04f5 50       		.byte	80
- 1300 04f6 1F       		.byte	31
- 1301 04f7 00       		.byte	0
- 1302 04f8 E0       		.byte	-32
- 1303 04f9 0F       		.byte	15
- 1304 04fa 00       		.byte	0
- 1305 04fb E0       		.byte	-32
- 1306 04fc 07       		.byte	7
- 1307 04fd 00       		.byte	0
- 1308 04fe 80       		.byte	-128
- 1309 04ff 07       		.byte	7
- 1310 0500 00       		.byte	0
- 1311 0501 80       		.byte	-128
- 1312 0502 07       		.byte	7
- 1313 0503 00       		.byte	0
- 1314 0504 80       		.byte	-128
- 1315 0505 07       		.byte	7
- 1316 0506 00       		.byte	0
- 1317 0507 00       		.byte	0
- 1318 0508 0B       		.byte	11
- 1319 0509 00       		.byte	0
- 1320 050a 00       		.byte	0
- 1321 050b 03       		.byte	3
- 1322 050c 00       		.byte	0
- 1323 050d 00       		.byte	0
- 1324 050e 01       		.byte	1
- 1325 050f 00       		.byte	0
- 1326 0510 00       		.byte	0
- 1327 0511 00       		.byte	0
- 1328 0512 00       		.byte	0
- 1329 0513 0C       		.byte	12
- 1330 0514 00       		.byte	0
- 1331 0515 00       		.byte	0
- 1332 0516 10       		.byte	16
- 1333 0517 00       		.byte	0
- 1334 0518 00       		.byte	0
- 1335 0519 00       		.byte	0
- 1336 051a 00       		.byte	0
- 1337 051b 00       		.byte	0
- 1338 051c 00       		.byte	0
- 1339 051d 00       		.byte	0
- 1340 051e 00       		.byte	0
- 1341 051f 00       		.byte	0
- 1342 0520 00       		.byte	0
- 1343 0521 00       		.byte	0
- 1344 0522 00       		.byte	0
- 1345 0523 00       		.byte	0
- 1346 0524 00       		.byte	0
- 1347 0525 000000   		.align	2
- 1350              	flame4_light_bits:
- 1351 0528 00       		.byte	0
- 1352 0529 00       		.byte	0
- 1353 052a 00       		.byte	0
- 1354 052b 00       		.byte	0
- 1355 052c 00       		.byte	0
- 1356 052d 00       		.byte	0
- 1357 052e 00       		.byte	0
- 1358 052f 00       		.byte	0
- 1359 0530 00       		.byte	0
- 1360 0531 00       		.byte	0
- 1361 0532 04       		.byte	4
- 1362 0533 00       		.byte	0
- 1363 0534 00       		.byte	0
- 1364 0535 04       		.byte	4
- 1365 0536 00       		.byte	0
- 1366 0537 40       		.byte	64
- 1367 0538 48       		.byte	72
- 1368 0539 00       		.byte	0
- 1369 053a 80       		.byte	-128
- 1370 053b C8       		.byte	-56
- 1371 053c 00       		.byte	0
- 1372 053d 80       		.byte	-128
- 1373 053e 48       		.byte	72
- 1374 053f 00       		.byte	0
- 1375 0540 C4       		.byte	-60
- 1376 0541 4A       		.byte	74
- 1377 0542 00       		.byte	0
- 1378 0543 E4       		.byte	-28
- 1379 0544 7D       		.byte	125
- 1380 0545 00       		.byte	0
- 1381 0546 EC       		.byte	-20
- 1382 0547 2F       		.byte	47
- 1383 0548 00       		.byte	0
- 1384 0549 F8       		.byte	-8
- 1385 054a FF       		.byte	-1
- 1386 054b 00       		.byte	0
- 1387 054c B8       		.byte	-72
- 1388 054d FB       		.byte	-5
- 1389 054e 00       		.byte	0
- 1390 054f BE       		.byte	-66
- 1391 0550 CB       		.byte	-53
- 1392 0551 00       		.byte	0
- 1393 0552 CC       		.byte	-52
- 1394 0553 73       		.byte	115
- 1395 0554 00       		.byte	0
- 1396 0555 2E       		.byte	46
- 1397 0556 73       		.byte	115
- 1398 0557 00       		.byte	0
- 1399 0558 3A       		.byte	58
- 1400 0559 70       		.byte	112
- 1401 055a 00       		.byte	0
- 1402 055b 0E       		.byte	14
- 1403 055c 50       		.byte	80
- 1404 055d 00       		.byte	0
- 1405 055e 06       		.byte	6
- 1406 055f C0       		.byte	-64
- 1407 0560 00       		.byte	0
- 1408 0561 0E       		.byte	14
- 1409 0562 E0       		.byte	-32
- 1410 0563 00       		.byte	0
- 1411 0564 0C       		.byte	12
- 1412 0565 A0       		.byte	-96
- 1413 0566 00       		.byte	0
- 1414 0567 0E       		.byte	14
- 1415 0568 E0       		.byte	-32
- 1416 0569 00       		.byte	0
- 1417 056a 1C       		.byte	28
- 1418 056b 60       		.byte	96
- 1419 056c 00       		.byte	0
- 1420 056d 24       		.byte	36
- 1421 056e 60       		.byte	96
- 1422 056f 00       		.byte	0
- 1423 0570 1C       		.byte	28
- 1424 0571 30       		.byte	48
- 1425 0572 00       		.byte	0
- 1426 0573 18       		.byte	24
- 1427 0574 78       		.byte	120
- 1428 0575 00       		.byte	0
- 1429 0576 38       		.byte	56
- 1430 0577 50       		.byte	80
- 1431 0578 00       		.byte	0
- 1432 0579 70       		.byte	112
- 1433 057a 58       		.byte	88
- 1434 057b 00       		.byte	0
- 1435 057c 30       		.byte	48
- 1436 057d 38       		.byte	56
- 1437 057e 00       		.byte	0
- 1438 057f F0       		.byte	-16
- 1439 0580 24       		.byte	36
- 1440 0581 00       		.byte	0
- 1441 0582 F0       		.byte	-16
- 1442 0583 1C       		.byte	28
- 1443 0584 00       		.byte	0
- 1444 0585 E0       		.byte	-32
- 1445 0586 1E       		.byte	30
- 1446 0587 00       		.byte	0
- 1447 0588 E0       		.byte	-32
- 1448 0589 1F       		.byte	31
- 1449 058a 00       		.byte	0
- 1450 058b C0       		.byte	-64
- 1451 058c 0F       		.byte	15
- 1452 058d 00       		.byte	0
- 1453 058e C0       		.byte	-64
- 1454 058f 0F       		.byte	15
- 1455 0590 00       		.byte	0
- 1456 0591 00       		.byte	0
- 1457 0592 00       		.byte	0
- 1458 0593 00       		.byte	0
- 1459 0594 00       		.byte	0
- 1460 0595 00       		.byte	0
- 1461 0596 00       		.byte	0
- 1462 0597 00       		.byte	0
- 1463 0598 00       		.byte	0
- 1464 0599 00       		.byte	0
- 1465 059a 00       		.byte	0
- 1466 059b 00       		.byte	0
- 1467 059c 00       		.byte	0
- 1468              		.comm	flame1Black,4,4
- 1469              		.comm	flame1Gray,4,4
- 1470              		.comm	flame1Light,4,4
- 1471              		.comm	flame2Black,4,4
- 1472              		.comm	flame2Gray,4,4
- 1473              		.comm	flame2Light,4,4
- 1474              		.comm	flame3Black,4,4
- 1475              		.comm	flame3Gray,4,4
- 1476              		.comm	flame3Light,4,4
- 1477              		.comm	flame4Black,4,4
- 1478              		.comm	flame4Gray,4,4
- 1479              		.comm	flame4Light,4,4
- 1480              		.comm	tempFlameBlack,12,4
- 1481              		.comm	tempFlameLight,12,4
- 1482              		.comm	tempFlameGray,12,4
- 1483              		.comm	tempFlame2Black,12,4
- 1484              		.comm	tempFlame2Light,12,4
- 1485              		.comm	tempFlame2Gray,12,4
- 1486              		.comm	tempFlame3Black,12,4
- 1487              		.comm	tempFlame3Light,12,4
- 1488              		.comm	tempFlame3Gray,12,4
- 1489              		.comm	tempFlame4Black,12,4
- 1490              		.comm	tempFlame4Light,12,4
- 1491              		.comm	tempFlame4Gray,12,4
- 1492              		.comm	flameObj,36,4
- 1493              		.comm	flame1Image,12,4
- 1494              		.comm	flame2Image,12,4
- 1495              		.comm	flame3Image,12,4
- 1496              		.comm	flame4Image,12,4
- 1497              		.comm	flameImages,48,4
- 1498              		.text
- 1499              		.align	1
- 1500              		.syntax unified
- 1501              		.code	16
- 1502              		.thumb_func
- 1503              		.fpu softvfp
- 1505              	initSprites:
- 1506              	.LFB0:
- 1507              		.file 1 "C:/mop/c/Moplaborationer/DIPs-Witch/C/flame.c"
-   1:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** #include "sprite.h"
-   2:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** #include "gameobject.h"
-   3:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** 
-   4:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** #include "flame1_black.xbm"
-   5:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** #include "flame1_gray.xbm"
-   6:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** #include "flame1_light.xbm"
-   7:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** #include "flame2_black.xbm"
-   8:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** #include "flame2_gray.xbm"
-   9:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** #include "flame2_light.xbm"
-  10:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** #include "flame3_black.xbm"
-  11:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** #include "flame3_gray.xbm"
-  12:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** #include "flame3_light.xbm"
-  13:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** #include "flame4_black.xbm"
-  14:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** #include "flame4_gray.xbm"
-  15:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** #include "flame4_light.xbm"
-  16:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** 
-  17:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** sprite *flame1Black;
-  18:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** sprite *flame1Gray;
-  19:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** sprite *flame1Light;
-  20:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** sprite *flame2Black;
-  21:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** sprite *flame2Gray;
-  22:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** sprite *flame2Light;
-  23:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** sprite *flame3Black;
-  24:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** sprite *flame3Gray;
-  25:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** sprite *flame3Light;
-  26:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** sprite *flame4Black;
-  27:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** sprite *flame4Gray;
-  28:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** sprite *flame4Light;
-  29:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** 
-  30:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** sprite tempFlameBlack;
-  31:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** sprite tempFlameLight;
-  32:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** sprite tempFlameGray;
-  33:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** sprite tempFlame2Black;
-  34:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** sprite tempFlame2Light;
-  35:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** sprite tempFlame2Gray;
-  36:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** sprite tempFlame3Black;
-  37:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** sprite tempFlame3Light;
-  38:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** sprite tempFlame3Gray;
-  39:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** sprite tempFlame4Black;
-  40:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** sprite tempFlame4Light;
-  41:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** sprite tempFlame4Gray;
-  42:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** 
-  43:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** 
-  44:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** GameObject flameObj;
-  45:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** Image flame1Image;
-  46:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** Image flame2Image;
-  47:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** Image flame3Image;
-  48:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** Image flame4Image;
-  49:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** Image flameImages[4];
-  50:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** static void initSprites( void ) {	
- 1508              		.loc 1 50 0
- 1509              		.cfi_startproc
- 1510              		@ args = 0, pretend = 0, frame = 48
- 1511              		@ frame_needed = 1, uses_anonymous_args = 0
- 1512 0000 80B5     		push	{r7, lr}
- 1513              		.cfi_def_cfa_offset 8
- 1514              		.cfi_offset 7, -8
- 1515              		.cfi_offset 14, -4
- 1516 0002 8CB0     		sub	sp, sp, #48
- 1517              		.cfi_def_cfa_offset 56
- 1518 0004 00AF     		add	r7, sp, #0
- 1519              		.cfi_def_cfa_register 7
-  51:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** 	
-  52:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** 	sprite *pointer11 = &tempFlameLight;
- 1520              		.loc 1 52 0
- 1521 0006 444B     		ldr	r3, .L2
- 1522 0008 FB62     		str	r3, [r7, #44]
-  53:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** 	load_sprite(pointer11, flame1_light_bits, flame1_black_width, flame1_black_height);
- 1523              		.loc 1 53 0
- 1524 000a 4449     		ldr	r1, .L2+4
- 1525 000c F86A     		ldr	r0, [r7, #44]
- 1526 000e 2723     		movs	r3, #39
- 1527 0010 1122     		movs	r2, #17
- 1528 0012 FFF7FEFF 		bl	load_sprite
-  54:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** 	flame1Light = pointer11;
- 1529              		.loc 1 54 0
- 1530 0016 424B     		ldr	r3, .L2+8
- 1531 0018 FA6A     		ldr	r2, [r7, #44]
- 1532 001a 1A60     		str	r2, [r3]
-  55:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** 	sprite *pointer12 = &tempFlameGray;
- 1533              		.loc 1 55 0
- 1534 001c 414B     		ldr	r3, .L2+12
- 1535 001e BB62     		str	r3, [r7, #40]
-  56:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** 	load_sprite(pointer12, flame1_gray_bits, flame1_black_width, flame1_black_height);
- 1536              		.loc 1 56 0
- 1537 0020 4149     		ldr	r1, .L2+16
- 1538 0022 B86A     		ldr	r0, [r7, #40]
- 1539 0024 2723     		movs	r3, #39
- 1540 0026 1122     		movs	r2, #17
- 1541 0028 FFF7FEFF 		bl	load_sprite
-  57:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** 	flame1Gray = pointer12;
- 1542              		.loc 1 57 0
- 1543 002c 3F4B     		ldr	r3, .L2+20
- 1544 002e BA6A     		ldr	r2, [r7, #40]
- 1545 0030 1A60     		str	r2, [r3]
-  58:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** 	sprite *pointer13 = &tempFlameBlack;
- 1546              		.loc 1 58 0
- 1547 0032 3F4B     		ldr	r3, .L2+24
- 1548 0034 7B62     		str	r3, [r7, #36]
-  59:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** 	load_sprite(pointer13, flame1_black_bits, flame1_black_width, flame1_black_height);
- 1549              		.loc 1 59 0
- 1550 0036 3F49     		ldr	r1, .L2+28
- 1551 0038 786A     		ldr	r0, [r7, #36]
- 1552 003a 2723     		movs	r3, #39
- 1553 003c 1122     		movs	r2, #17
- 1554 003e FFF7FEFF 		bl	load_sprite
-  60:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** 	flame1Black = pointer13;	
- 1555              		.loc 1 60 0
- 1556 0042 3D4B     		ldr	r3, .L2+32
- 1557 0044 7A6A     		ldr	r2, [r7, #36]
- 1558 0046 1A60     		str	r2, [r3]
-  61:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** 	
-  62:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** 	sprite *pointer14 = &tempFlame2Light;
- 1559              		.loc 1 62 0
- 1560 0048 3C4B     		ldr	r3, .L2+36
- 1561 004a 3B62     		str	r3, [r7, #32]
-  63:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** 	load_sprite(pointer14, flame2_light_bits, flame2_black_width, flame2_black_height);
- 1562              		.loc 1 63 0
- 1563 004c 3C49     		ldr	r1, .L2+40
- 1564 004e 386A     		ldr	r0, [r7, #32]
- 1565 0050 2723     		movs	r3, #39
- 1566 0052 1122     		movs	r2, #17
- 1567 0054 FFF7FEFF 		bl	load_sprite
-  64:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** 	flame2Light = pointer14;
- 1568              		.loc 1 64 0
- 1569 0058 3A4B     		ldr	r3, .L2+44
- 1570 005a 3A6A     		ldr	r2, [r7, #32]
- 1571 005c 1A60     		str	r2, [r3]
-  65:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** 	sprite *pointer15 = &tempFlame2Gray;
- 1572              		.loc 1 65 0
- 1573 005e 3A4B     		ldr	r3, .L2+48
- 1574 0060 FB61     		str	r3, [r7, #28]
-  66:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** 	load_sprite(pointer15, flame2_gray_bits, flame2_black_width, flame2_black_height);
- 1575              		.loc 1 66 0
- 1576 0062 3A49     		ldr	r1, .L2+52
- 1577 0064 F869     		ldr	r0, [r7, #28]
- 1578 0066 2723     		movs	r3, #39
- 1579 0068 1122     		movs	r2, #17
- 1580 006a FFF7FEFF 		bl	load_sprite
-  67:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** 	flame2Gray = pointer15;
- 1581              		.loc 1 67 0
- 1582 006e 384B     		ldr	r3, .L2+56
- 1583 0070 FA69     		ldr	r2, [r7, #28]
- 1584 0072 1A60     		str	r2, [r3]
-  68:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** 	sprite *pointer16 = &tempFlame2Black;
- 1585              		.loc 1 68 0
- 1586 0074 374B     		ldr	r3, .L2+60
- 1587 0076 BB61     		str	r3, [r7, #24]
-  69:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** 	load_sprite(pointer16, flame2_black_bits, flame2_black_width, flame2_black_height);
- 1588              		.loc 1 69 0
- 1589 0078 3749     		ldr	r1, .L2+64
- 1590 007a B869     		ldr	r0, [r7, #24]
- 1591 007c 2723     		movs	r3, #39
- 1592 007e 1122     		movs	r2, #17
- 1593 0080 FFF7FEFF 		bl	load_sprite
-  70:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** 	flame2Black = pointer16;
- 1594              		.loc 1 70 0
- 1595 0084 354B     		ldr	r3, .L2+68
- 1596 0086 BA69     		ldr	r2, [r7, #24]
- 1597 0088 1A60     		str	r2, [r3]
-  71:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** 	
-  72:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** 	
-  73:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** 	sprite *finalPointer = &tempFlame3Light;
- 1598              		.loc 1 73 0
- 1599 008a 354B     		ldr	r3, .L2+72
- 1600 008c 7B61     		str	r3, [r7, #20]
-  74:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** 	load_sprite(finalPointer, flame3_light_bits, flame3_black_width, flame3_black_height);
- 1601              		.loc 1 74 0
- 1602 008e 3549     		ldr	r1, .L2+76
- 1603 0090 7869     		ldr	r0, [r7, #20]
- 1604 0092 2723     		movs	r3, #39
- 1605 0094 1122     		movs	r2, #17
- 1606 0096 FFF7FEFF 		bl	load_sprite
-  75:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** 	flame3Light = finalPointer;
- 1607              		.loc 1 75 0
- 1608 009a 334B     		ldr	r3, .L2+80
- 1609 009c 7A69     		ldr	r2, [r7, #20]
- 1610 009e 1A60     		str	r2, [r3]
-  76:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** 	sprite *pointer17 = &tempFlame3Gray;
- 1611              		.loc 1 76 0
- 1612 00a0 324B     		ldr	r3, .L2+84
- 1613 00a2 3B61     		str	r3, [r7, #16]
-  77:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** 	load_sprite(pointer17, flame3_gray_bits, flame3_black_width, flame3_black_height);
- 1614              		.loc 1 77 0
- 1615 00a4 3249     		ldr	r1, .L2+88
- 1616 00a6 3869     		ldr	r0, [r7, #16]
- 1617 00a8 2723     		movs	r3, #39
- 1618 00aa 1122     		movs	r2, #17
- 1619 00ac FFF7FEFF 		bl	load_sprite
-  78:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** 	flame3Gray = pointer17;
- 1620              		.loc 1 78 0
- 1621 00b0 304B     		ldr	r3, .L2+92
- 1622 00b2 3A69     		ldr	r2, [r7, #16]
- 1623 00b4 1A60     		str	r2, [r3]
-  79:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** 	sprite *pointer18 = &tempFlame3Black;
- 1624              		.loc 1 79 0
- 1625 00b6 304B     		ldr	r3, .L2+96
- 1626 00b8 FB60     		str	r3, [r7, #12]
-  80:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** 	load_sprite(pointer18, flame3_black_bits, flame3_black_width, flame3_black_height);
- 1627              		.loc 1 80 0
- 1628 00ba 3049     		ldr	r1, .L2+100
- 1629 00bc F868     		ldr	r0, [r7, #12]
- 1630 00be 2723     		movs	r3, #39
- 1631 00c0 1122     		movs	r2, #17
- 1632 00c2 FFF7FEFF 		bl	load_sprite
-  81:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** 	flame3Black = pointer18;	
- 1633              		.loc 1 81 0
- 1634 00c6 2E4B     		ldr	r3, .L2+104
- 1635 00c8 FA68     		ldr	r2, [r7, #12]
- 1636 00ca 1A60     		str	r2, [r3]
-  82:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** 	
-  83:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** 	sprite *pointer19 = &tempFlame4Light;
- 1637              		.loc 1 83 0
- 1638 00cc 2D4B     		ldr	r3, .L2+108
- 1639 00ce BB60     		str	r3, [r7, #8]
-  84:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** 	load_sprite(pointer19, flame4_light_bits, flame4_black_width, flame4_black_height);
- 1640              		.loc 1 84 0
- 1641 00d0 2D49     		ldr	r1, .L2+112
- 1642 00d2 B868     		ldr	r0, [r7, #8]
- 1643 00d4 2723     		movs	r3, #39
- 1644 00d6 1122     		movs	r2, #17
- 1645 00d8 FFF7FEFF 		bl	load_sprite
-  85:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** 	flame4Light = pointer19;
- 1646              		.loc 1 85 0
- 1647 00dc 2B4B     		ldr	r3, .L2+116
- 1648 00de BA68     		ldr	r2, [r7, #8]
- 1649 00e0 1A60     		str	r2, [r3]
-  86:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** 	sprite *pointer20 = &tempFlame4Gray;
- 1650              		.loc 1 86 0
- 1651 00e2 2B4B     		ldr	r3, .L2+120
- 1652 00e4 7B60     		str	r3, [r7, #4]
-  87:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** 	load_sprite(pointer20, flame4_gray_bits, flame4_black_width, flame4_black_height);
- 1653              		.loc 1 87 0
- 1654 00e6 2B49     		ldr	r1, .L2+124
- 1655 00e8 7868     		ldr	r0, [r7, #4]
- 1656 00ea 2723     		movs	r3, #39
- 1657 00ec 1122     		movs	r2, #17
- 1658 00ee FFF7FEFF 		bl	load_sprite
-  88:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** 	flame4Gray = pointer20;
- 1659              		.loc 1 88 0
- 1660 00f2 294B     		ldr	r3, .L2+128
- 1661 00f4 7A68     		ldr	r2, [r7, #4]
- 1662 00f6 1A60     		str	r2, [r3]
-  89:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** 	sprite *pointer21 = &tempFlame4Black;
- 1663              		.loc 1 89 0
- 1664 00f8 284B     		ldr	r3, .L2+132
- 1665 00fa 3B60     		str	r3, [r7]
-  90:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** 	load_sprite(pointer21, flame4_black_bits, flame4_black_width, flame4_black_height);
- 1666              		.loc 1 90 0
- 1667 00fc 2849     		ldr	r1, .L2+136
- 1668 00fe 3868     		ldr	r0, [r7]
- 1669 0100 2723     		movs	r3, #39
- 1670 0102 1122     		movs	r2, #17
- 1671 0104 FFF7FEFF 		bl	load_sprite
-  91:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** 	flame4Black = pointer21;	
- 1672              		.loc 1 91 0
- 1673 0108 264B     		ldr	r3, .L2+140
- 1674 010a 3A68     		ldr	r2, [r7]
- 1675 010c 1A60     		str	r2, [r3]
-  92:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** 	
-  93:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** }
- 1676              		.loc 1 93 0
- 1677 010e C046     		nop
- 1678 0110 BD46     		mov	sp, r7
- 1679 0112 0CB0     		add	sp, sp, #48
- 1680              		@ sp needed
- 1681 0114 80BD     		pop	{r7, pc}
- 1682              	.L3:
- 1683 0116 C046     		.align	2
- 1684              	.L2:
- 1685 0118 00000000 		.word	tempFlameLight
- 1686 011c F0000000 		.word	flame1_light_bits
- 1687 0120 00000000 		.word	flame1Light
- 1688 0124 00000000 		.word	tempFlameGray
- 1689 0128 78000000 		.word	flame1_gray_bits
- 1690 012c 00000000 		.word	flame1Gray
- 1691 0130 00000000 		.word	tempFlameBlack
- 1692 0134 00000000 		.word	flame1_black_bits
- 1693 0138 00000000 		.word	flame1Black
- 1694 013c 00000000 		.word	tempFlame2Light
- 1695 0140 58020000 		.word	flame2_light_bits
- 1696 0144 00000000 		.word	flame2Light
- 1697 0148 00000000 		.word	tempFlame2Gray
- 1698 014c E0010000 		.word	flame2_gray_bits
- 1699 0150 00000000 		.word	flame2Gray
- 1700 0154 00000000 		.word	tempFlame2Black
- 1701 0158 68010000 		.word	flame2_black_bits
- 1702 015c 00000000 		.word	flame2Black
- 1703 0160 00000000 		.word	tempFlame3Light
- 1704 0164 C0030000 		.word	flame3_light_bits
- 1705 0168 00000000 		.word	flame3Light
- 1706 016c 00000000 		.word	tempFlame3Gray
- 1707 0170 48030000 		.word	flame3_gray_bits
- 1708 0174 00000000 		.word	flame3Gray
- 1709 0178 00000000 		.word	tempFlame3Black
- 1710 017c D0020000 		.word	flame3_black_bits
- 1711 0180 00000000 		.word	flame3Black
- 1712 0184 00000000 		.word	tempFlame4Light
- 1713 0188 28050000 		.word	flame4_light_bits
- 1714 018c 00000000 		.word	flame4Light
- 1715 0190 00000000 		.word	tempFlame4Gray
- 1716 0194 B0040000 		.word	flame4_gray_bits
- 1717 0198 00000000 		.word	flame4Gray
- 1718 019c 00000000 		.word	tempFlame4Black
- 1719 01a0 38040000 		.word	flame4_black_bits
- 1720 01a4 00000000 		.word	flame4Black
- 1721              		.cfi_endproc
- 1722              	.LFE0:
- 1724              		.align	1
- 1725              		.global	init_flame
- 1726              		.syntax unified
- 1727              		.code	16
- 1728              		.thumb_func
- 1729              		.fpu softvfp
- 1731              	init_flame:
- 1732              	.LFB1:
-  94:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** 	
-  95:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** void init_flame( GameObject *flameObj ) {
- 1733              		.loc 1 95 0
- 1734              		.cfi_startproc
- 1735              		@ args = 0, pretend = 0, frame = 8
- 1736              		@ frame_needed = 1, uses_anonymous_args = 0
- 1737 01a8 90B5     		push	{r4, r7, lr}
- 1738              		.cfi_def_cfa_offset 12
- 1739              		.cfi_offset 4, -12
- 1740              		.cfi_offset 7, -8
- 1741              		.cfi_offset 14, -4
- 1742 01aa 83B0     		sub	sp, sp, #12
- 1743              		.cfi_def_cfa_offset 24
- 1744 01ac 00AF     		add	r7, sp, #0
- 1745              		.cfi_def_cfa_register 7
- 1746 01ae 7860     		str	r0, [r7, #4]
-  96:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** 	static int firstTime = 1;
-  97:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** 	if (firstTime) {
- 1747              		.loc 1 97 0
- 1748 01b0 294B     		ldr	r3, .L6
- 1749 01b2 1B68     		ldr	r3, [r3]
- 1750 01b4 002B     		cmp	r3, #0
- 1751 01b6 3BD0     		beq	.L5
-  98:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** 		initSprites();
- 1752              		.loc 1 98 0
- 1753 01b8 FFF722FF 		bl	initSprites
-  99:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** 		firstTime = 0;			
- 1754              		.loc 1 99 0
- 1755 01bc 264B     		ldr	r3, .L6
- 1756 01be 0022     		movs	r2, #0
- 1757 01c0 1A60     		str	r2, [r3]
- 100:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** 
- 101:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** 		flameImages[0] = flame1Image;
- 1758              		.loc 1 101 0
- 1759 01c2 264B     		ldr	r3, .L6+4
- 1760 01c4 264A     		ldr	r2, .L6+8
- 1761 01c6 13CA     		ldmia	r2!, {r0, r1, r4}
- 1762 01c8 13C3     		stmia	r3!, {r0, r1, r4}
- 102:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** 		flameImages[1] = flame2Image;
- 1763              		.loc 1 102 0
- 1764 01ca 244B     		ldr	r3, .L6+4
- 1765 01cc 254A     		ldr	r2, .L6+12
- 1766 01ce 0C33     		adds	r3, r3, #12
- 1767 01d0 13CA     		ldmia	r2!, {r0, r1, r4}
- 1768 01d2 13C3     		stmia	r3!, {r0, r1, r4}
- 103:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** 		flameImages[2] = flame3Image;
- 1769              		.loc 1 103 0
- 1770 01d4 214B     		ldr	r3, .L6+4
- 1771 01d6 244A     		ldr	r2, .L6+16
- 1772 01d8 1833     		adds	r3, r3, #24
- 1773 01da 13CA     		ldmia	r2!, {r0, r1, r4}
- 1774 01dc 13C3     		stmia	r3!, {r0, r1, r4}
- 104:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** 		flameImages[3] = flame4Image;
- 1775              		.loc 1 104 0
- 1776 01de 1F4B     		ldr	r3, .L6+4
- 1777 01e0 224A     		ldr	r2, .L6+20
- 1778 01e2 2433     		adds	r3, r3, #36
- 1779 01e4 13CA     		ldmia	r2!, {r0, r1, r4}
- 1780 01e6 13C3     		stmia	r3!, {r0, r1, r4}
- 105:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** 		
- 106:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** 		load_image(&flameImages[0], flame1Black, flame1Gray, flame1Light);
- 1781              		.loc 1 106 0
- 1782 01e8 214B     		ldr	r3, .L6+24
- 1783 01ea 1968     		ldr	r1, [r3]
- 1784 01ec 214B     		ldr	r3, .L6+28
- 1785 01ee 1A68     		ldr	r2, [r3]
- 1786 01f0 214B     		ldr	r3, .L6+32
- 1787 01f2 1B68     		ldr	r3, [r3]
- 1788 01f4 1948     		ldr	r0, .L6+4
- 1789 01f6 FFF7FEFF 		bl	load_image
- 107:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** 		load_image(&flameImages[1], flame2Black, flame2Gray, flame2Light);
- 1790              		.loc 1 107 0
- 1791 01fa 204B     		ldr	r3, .L6+36
- 1792 01fc 1968     		ldr	r1, [r3]
- 1793 01fe 204B     		ldr	r3, .L6+40
- 1794 0200 1A68     		ldr	r2, [r3]
- 1795 0202 204B     		ldr	r3, .L6+44
- 1796 0204 1B68     		ldr	r3, [r3]
- 1797 0206 2048     		ldr	r0, .L6+48
- 1798 0208 FFF7FEFF 		bl	load_image
- 108:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** 		load_image(&flameImages[2], flame3Black, flame3Gray, flame3Light);
- 1799              		.loc 1 108 0
- 1800 020c 1F4B     		ldr	r3, .L6+52
- 1801 020e 1968     		ldr	r1, [r3]
- 1802 0210 1F4B     		ldr	r3, .L6+56
- 1803 0212 1A68     		ldr	r2, [r3]
- 1804 0214 1F4B     		ldr	r3, .L6+60
- 1805 0216 1B68     		ldr	r3, [r3]
- 1806 0218 1F48     		ldr	r0, .L6+64
- 1807 021a FFF7FEFF 		bl	load_image
- 109:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** 		load_image(&flameImages[3], flame4Black, flame4Gray, flame4Light);
- 1808              		.loc 1 109 0
- 1809 021e 1F4B     		ldr	r3, .L6+68
- 1810 0220 1968     		ldr	r1, [r3]
- 1811 0222 1F4B     		ldr	r3, .L6+72
- 1812 0224 1A68     		ldr	r2, [r3]
- 1813 0226 1F4B     		ldr	r3, .L6+76
- 1814 0228 1B68     		ldr	r3, [r3]
- 1815 022a 1F48     		ldr	r0, .L6+80
- 1816 022c FFF7FEFF 		bl	load_image
- 1817              	.L5:
- 110:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** }
- 111:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** 	
- 112:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** 	flameObj->images = flameImages;
- 1818              		.loc 1 112 0
- 1819 0230 7B68     		ldr	r3, [r7, #4]
- 1820 0232 0A4A     		ldr	r2, .L6+4
- 1821 0234 1A60     		str	r2, [r3]
- 113:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** 
- 114:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** 	flameObj->current_frame = 0;
- 1822              		.loc 1 114 0
- 1823 0236 7B68     		ldr	r3, [r7, #4]
- 1824 0238 0022     		movs	r2, #0
- 1825 023a 5A61     		str	r2, [r3, #20]
- 115:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** 	flameObj->n_frames = 4;
- 1826              		.loc 1 115 0
- 1827 023c 7B68     		ldr	r3, [r7, #4]
- 1828 023e 0422     		movs	r2, #4
- 1829 0240 9A61     		str	r2, [r3, #24]
- 116:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** 	flameObj->animation_speed = 1;
- 1830              		.loc 1 116 0
- 1831 0242 7B68     		ldr	r3, [r7, #4]
- 1832 0244 0122     		movs	r2, #1
- 1833 0246 DA61     		str	r2, [r3, #28]
- 117:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** 	flameObj->animation_counter = 0;
- 1834              		.loc 1 117 0
- 1835 0248 7B68     		ldr	r3, [r7, #4]
- 1836 024a 0022     		movs	r2, #0
- 1837 024c 1A62     		str	r2, [r3, #32]
- 118:C:/mop/c/Moplaborationer/DIPs-Witch/C\flame.c **** }
- 1838              		.loc 1 118 0
- 1839 024e C046     		nop
- 1840 0250 BD46     		mov	sp, r7
- 1841 0252 03B0     		add	sp, sp, #12
- 1842              		@ sp needed
- 1843 0254 90BD     		pop	{r4, r7, pc}
- 1844              	.L7:
- 1845 0256 C046     		.align	2
- 1846              	.L6:
- 1847 0258 A0050000 		.word	firstTime.4079
- 1848 025c 00000000 		.word	flameImages
- 1849 0260 00000000 		.word	flame1Image
- 1850 0264 00000000 		.word	flame2Image
- 1851 0268 00000000 		.word	flame3Image
- 1852 026c 00000000 		.word	flame4Image
- 1853 0270 00000000 		.word	flame1Black
- 1854 0274 00000000 		.word	flame1Gray
- 1855 0278 00000000 		.word	flame1Light
- 1856 027c 00000000 		.word	flame2Black
- 1857 0280 00000000 		.word	flame2Gray
- 1858 0284 00000000 		.word	flame2Light
- 1859 0288 0C000000 		.word	flameImages+12
- 1860 028c 00000000 		.word	flame3Black
- 1861 0290 00000000 		.word	flame3Gray
- 1862 0294 00000000 		.word	flame3Light
- 1863 0298 18000000 		.word	flameImages+24
- 1864 029c 00000000 		.word	flame4Black
- 1865 02a0 00000000 		.word	flame4Gray
- 1866 02a4 00000000 		.word	flame4Light
- 1867 02a8 24000000 		.word	flameImages+36
- 1868              		.cfi_endproc
- 1869              	.LFE1:
- 1871              		.data
- 1872 059d 000000   		.align	2
- 1875              	firstTime.4079:
- 1876 05a0 01000000 		.word	1
- 1877              		.text
- 1878              	.Letext0:
- 1879              		.file 2 "C:/mop/c/Moplaborationer/DIPs-Witch/C/sprite.h"
- 1880              		.file 3 "C:/mop/c/Moplaborationer/DIPs-Witch/C/image.h"
- 1881              		.file 4 "C:/mop/c/Moplaborationer/DIPs-Witch/C/gameobject.h"
- 1882              		.file 5 "C:/mop/c/Moplaborationer/DIPs-Witch/C/flame1_black.xbm"
- 1883              		.file 6 "C:/mop/c/Moplaborationer/DIPs-Witch/C/flame1_gray.xbm"
- 1884              		.file 7 "C:/mop/c/Moplaborationer/DIPs-Witch/C/flame1_light.xbm"
- 1885              		.file 8 "C:/mop/c/Moplaborationer/DIPs-Witch/C/flame2_black.xbm"
- 1886              		.file 9 "C:/mop/c/Moplaborationer/DIPs-Witch/C/flame2_gray.xbm"
- 1887              		.file 10 "C:/mop/c/Moplaborationer/DIPs-Witch/C/flame2_light.xbm"
- 1888              		.file 11 "C:/mop/c/Moplaborationer/DIPs-Witch/C/flame3_black.xbm"
- 1889              		.file 12 "C:/mop/c/Moplaborationer/DIPs-Witch/C/flame3_gray.xbm"
- 1890              		.file 13 "C:/mop/c/Moplaborationer/DIPs-Witch/C/flame3_light.xbm"
- 1891              		.file 14 "C:/mop/c/Moplaborationer/DIPs-Witch/C/flame4_black.xbm"
- 1892              		.file 15 "C:/mop/c/Moplaborationer/DIPs-Witch/C/flame4_gray.xbm"
- 1893              		.file 16 "C:/mop/c/Moplaborationer/DIPs-Witch/C/flame4_light.xbm"
+  15              		.global	monster_black_bits
+  16              		.data
+  17              		.align	2
+  20              	monster_black_bits:
+  21 0000 00       		.byte	0
+  22 0001 00       		.byte	0
+  23 0002 00       		.byte	0
+  24 0003 00       		.byte	0
+  25 0004 00       		.byte	0
+  26 0005 00       		.byte	0
+  27 0006 00       		.byte	0
+  28 0007 00       		.byte	0
+  29 0008 00       		.byte	0
+  30 0009 00       		.byte	0
+  31 000a 00       		.byte	0
+  32 000b 00       		.byte	0
+  33 000c 00       		.byte	0
+  34 000d 00       		.byte	0
+  35 000e 00       		.byte	0
+  36 000f 00       		.byte	0
+  37 0010 00       		.byte	0
+  38 0011 C0       		.byte	-64
+  39 0012 01       		.byte	1
+  40 0013 00       		.byte	0
+  41 0014 00       		.byte	0
+  42 0015 30       		.byte	48
+  43 0016 02       		.byte	2
+  44 0017 00       		.byte	0
+  45 0018 00       		.byte	0
+  46 0019 10       		.byte	16
+  47 001a 02       		.byte	2
+  48 001b 00       		.byte	0
+  49 001c 00       		.byte	0
+  50 001d 08       		.byte	8
+  51 001e 06       		.byte	6
+  52 001f 00       		.byte	0
+  53 0020 00       		.byte	0
+  54 0021 08       		.byte	8
+  55 0022 04       		.byte	4
+  56 0023 00       		.byte	0
+  57 0024 00       		.byte	0
+  58 0025 08       		.byte	8
+  59 0026 04       		.byte	4
+  60 0027 00       		.byte	0
+  61 0028 00       		.byte	0
+  62 0029 28       		.byte	40
+  63 002a 09       		.byte	9
+  64 002b 00       		.byte	0
+  65 002c 00       		.byte	0
+  66 002d 28       		.byte	40
+  67 002e 09       		.byte	9
+  68 002f 00       		.byte	0
+  69 0030 00       		.byte	0
+  70 0031 04       		.byte	4
+  71 0032 10       		.byte	16
+  72 0033 00       		.byte	0
+  73 0034 00       		.byte	0
+  74 0035 04       		.byte	4
+  75 0036 10       		.byte	16
+  76 0037 00       		.byte	0
+  77 0038 00       		.byte	0
+  78 0039 02       		.byte	2
+  79 003a 20       		.byte	32
+  80 003b 00       		.byte	0
+  81 003c 00       		.byte	0
+  82 003d 1B       		.byte	27
+  83 003e 66       		.byte	102
+  84 003f 00       		.byte	0
+  85 0040 00       		.byte	0
+  86 0041 B1       		.byte	-79
+  87 0042 43       		.byte	67
+  88 0043 00       		.byte	0
+  89 0044 80       		.byte	-128
+  90 0045 E0       		.byte	-32
+  91 0046 80       		.byte	-128
+  92 0047 00       		.byte	0
+  93 0048 80       		.byte	-128
+  94 0049 00       		.byte	0
+  95 004a 80       		.byte	-128
+  96 004b 01       		.byte	1
+  97 004c 40       		.byte	64
+  98 004d 00       		.byte	0
+  99 004e 00       		.byte	0
+ 100 004f 01       		.byte	1
+ 101 0050 40       		.byte	64
+ 102 0051 00       		.byte	0
+ 103 0052 00       		.byte	0
+ 104 0053 02       		.byte	2
+ 105 0054 60       		.byte	96
+ 106 0055 00       		.byte	0
+ 107 0056 00       		.byte	0
+ 108 0057 02       		.byte	2
+ 109 0058 20       		.byte	32
+ 110 0059 00       		.byte	0
+ 111 005a 00       		.byte	0
+ 112 005b 02       		.byte	2
+ 113 005c E0       		.byte	-32
+ 114 005d 03       		.byte	3
+ 115 005e FF       		.byte	-1
+ 116 005f 03       		.byte	3
+ 117 0060 00       		.byte	0
+ 118 0061 FC       		.byte	-4
+ 119 0062 01       		.byte	1
+ 120 0063 00       		.byte	0
+ 121 0064 00       		.byte	0
+ 122 0065 00       		.byte	0
+ 123 0066 00       		.byte	0
+ 124 0067 00       		.byte	0
+ 125 0068 00       		.byte	0
+ 126 0069 00       		.byte	0
+ 127 006a 00       		.byte	0
+ 128 006b 00       		.byte	0
+ 129 006c 00       		.byte	0
+ 130 006d 00       		.byte	0
+ 131 006e 00       		.byte	0
+ 132 006f 00       		.byte	0
+ 133 0070 00       		.byte	0
+ 134 0071 00       		.byte	0
+ 135 0072 00       		.byte	0
+ 136 0073 00       		.byte	0
+ 137 0074 00       		.byte	0
+ 138 0075 00       		.byte	0
+ 139 0076 00       		.byte	0
+ 140 0077 00       		.byte	0
+ 141              		.align	2
+ 144              	monster_light_bits:
+ 145 0078 00       		.byte	0
+ 146 0079 00       		.byte	0
+ 147 007a 00       		.byte	0
+ 148 007b 00       		.byte	0
+ 149 007c 00       		.byte	0
+ 150 007d 00       		.byte	0
+ 151 007e 00       		.byte	0
+ 152 007f 00       		.byte	0
+ 153 0080 00       		.byte	0
+ 154 0081 00       		.byte	0
+ 155 0082 00       		.byte	0
+ 156 0083 00       		.byte	0
+ 157 0084 00       		.byte	0
+ 158 0085 00       		.byte	0
+ 159 0086 00       		.byte	0
+ 160 0087 00       		.byte	0
+ 161 0088 00       		.byte	0
+ 162 0089 00       		.byte	0
+ 163 008a 00       		.byte	0
+ 164 008b 00       		.byte	0
+ 165 008c 00       		.byte	0
+ 166 008d 00       		.byte	0
+ 167 008e 01       		.byte	1
+ 168 008f 00       		.byte	0
+ 169 0090 00       		.byte	0
+ 170 0091 80       		.byte	-128
+ 171 0092 01       		.byte	1
+ 172 0093 00       		.byte	0
+ 173 0094 00       		.byte	0
+ 174 0095 F0       		.byte	-16
+ 175 0096 01       		.byte	1
+ 176 0097 00       		.byte	0
+ 177 0098 00       		.byte	0
+ 178 0099 F0       		.byte	-16
+ 179 009a 01       		.byte	1
+ 180 009b 00       		.byte	0
+ 181 009c 00       		.byte	0
+ 182 009d 90       		.byte	-112
+ 183 009e 00       		.byte	0
+ 184 009f 00       		.byte	0
+ 185 00a0 00       		.byte	0
+ 186 00a1 90       		.byte	-112
+ 187 00a2 00       		.byte	0
+ 188 00a3 00       		.byte	0
+ 189 00a4 00       		.byte	0
+ 190 00a5 D0       		.byte	-48
+ 191 00a6 00       		.byte	0
+ 192 00a7 00       		.byte	0
+ 193 00a8 00       		.byte	0
+ 194 00a9 F8       		.byte	-8
+ 195 00aa 01       		.byte	1
+ 196 00ab 00       		.byte	0
+ 197 00ac 00       		.byte	0
+ 198 00ad F8       		.byte	-8
+ 199 00ae 03       		.byte	3
+ 200 00af 00       		.byte	0
+ 201 00b0 00       		.byte	0
+ 202 00b1 FC       		.byte	-4
+ 203 00b2 03       		.byte	3
+ 204 00b3 00       		.byte	0
+ 205 00b4 00       		.byte	0
+ 206 00b5 E4       		.byte	-28
+ 207 00b6 01       		.byte	1
+ 208 00b7 00       		.byte	0
+ 209 00b8 00       		.byte	0
+ 210 00b9 4C       		.byte	76
+ 211 00ba 04       		.byte	4
+ 212 00bb 00       		.byte	0
+ 213 00bc 00       		.byte	0
+ 214 00bd 0C       		.byte	12
+ 215 00be 06       		.byte	6
+ 216 00bf 00       		.byte	0
+ 217 00c0 00       		.byte	0
+ 218 00c1 EE       		.byte	-18
+ 219 00c2 06       		.byte	6
+ 220 00c3 00       		.byte	0
+ 221 00c4 00       		.byte	0
+ 222 00c5 FE       		.byte	-2
+ 223 00c6 0F       		.byte	15
+ 224 00c7 00       		.byte	0
+ 225 00c8 00       		.byte	0
+ 226 00c9 3F       		.byte	63
+ 227 00ca 0F       		.byte	15
+ 228 00cb 00       		.byte	0
+ 229 00cc 80       		.byte	-128
+ 230 00cd 07       		.byte	7
+ 231 00ce 00       		.byte	0
+ 232 00cf 00       		.byte	0
+ 233 00d0 C0       		.byte	-64
+ 234 00d1 03       		.byte	3
+ 235 00d2 00       		.byte	0
+ 236 00d3 00       		.byte	0
+ 237 00d4 00       		.byte	0
+ 238 00d5 00       		.byte	0
+ 239 00d6 00       		.byte	0
+ 240 00d7 00       		.byte	0
+ 241 00d8 00       		.byte	0
+ 242 00d9 00       		.byte	0
+ 243 00da 00       		.byte	0
+ 244 00db 00       		.byte	0
+ 245 00dc 00       		.byte	0
+ 246 00dd 00       		.byte	0
+ 247 00de 00       		.byte	0
+ 248 00df 00       		.byte	0
+ 249 00e0 00       		.byte	0
+ 250 00e1 00       		.byte	0
+ 251 00e2 00       		.byte	0
+ 252 00e3 00       		.byte	0
+ 253 00e4 00       		.byte	0
+ 254 00e5 00       		.byte	0
+ 255 00e6 00       		.byte	0
+ 256 00e7 00       		.byte	0
+ 257 00e8 00       		.byte	0
+ 258 00e9 00       		.byte	0
+ 259 00ea 00       		.byte	0
+ 260 00eb 00       		.byte	0
+ 261 00ec 00       		.byte	0
+ 262 00ed 00       		.byte	0
+ 263 00ee 00       		.byte	0
+ 264 00ef 00       		.byte	0
+ 265              		.align	2
+ 268              	monster_gray_bits:
+ 269 00f0 00       		.byte	0
+ 270 00f1 00       		.byte	0
+ 271 00f2 00       		.byte	0
+ 272 00f3 00       		.byte	0
+ 273 00f4 00       		.byte	0
+ 274 00f5 00       		.byte	0
+ 275 00f6 00       		.byte	0
+ 276 00f7 00       		.byte	0
+ 277 00f8 00       		.byte	0
+ 278 00f9 00       		.byte	0
+ 279 00fa 00       		.byte	0
+ 280 00fb 00       		.byte	0
+ 281 00fc 00       		.byte	0
+ 282 00fd 00       		.byte	0
+ 283 00fe 00       		.byte	0
+ 284 00ff 00       		.byte	0
+ 285 0100 00       		.byte	0
+ 286 0101 00       		.byte	0
+ 287 0102 00       		.byte	0
+ 288 0103 00       		.byte	0
+ 289 0104 00       		.byte	0
+ 290 0105 00       		.byte	0
+ 291 0106 00       		.byte	0
+ 292 0107 00       		.byte	0
+ 293 0108 00       		.byte	0
+ 294 0109 00       		.byte	0
+ 295 010a 00       		.byte	0
+ 296 010b 00       		.byte	0
+ 297 010c 00       		.byte	0
+ 298 010d 00       		.byte	0
+ 299 010e 00       		.byte	0
+ 300 010f 00       		.byte	0
+ 301 0110 00       		.byte	0
+ 302 0111 00       		.byte	0
+ 303 0112 02       		.byte	2
+ 304 0113 00       		.byte	0
+ 305 0114 00       		.byte	0
+ 306 0115 00       		.byte	0
+ 307 0116 00       		.byte	0
+ 308 0117 00       		.byte	0
+ 309 0118 00       		.byte	0
+ 310 0119 00       		.byte	0
+ 311 011a 04       		.byte	4
+ 312 011b 00       		.byte	0
+ 313 011c 00       		.byte	0
+ 314 011d 00       		.byte	0
+ 315 011e 06       		.byte	6
+ 316 011f 00       		.byte	0
+ 317 0120 00       		.byte	0
+ 318 0121 00       		.byte	0
+ 319 0122 0E       		.byte	14
+ 320 0123 00       		.byte	0
+ 321 0124 00       		.byte	0
+ 322 0125 00       		.byte	0
+ 323 0126 0C       		.byte	12
+ 324 0127 00       		.byte	0
+ 325 0128 00       		.byte	0
+ 326 0129 00       		.byte	0
+ 327 012a 1C       		.byte	28
+ 328 012b 00       		.byte	0
+ 329 012c 00       		.byte	0
+ 330 012d 00       		.byte	0
+ 331 012e 18       		.byte	24
+ 332 012f 00       		.byte	0
+ 333 0130 00       		.byte	0
+ 334 0131 00       		.byte	0
+ 335 0132 38       		.byte	56
+ 336 0133 00       		.byte	0
+ 337 0134 00       		.byte	0
+ 338 0135 00       		.byte	0
+ 339 0136 78       		.byte	120
+ 340 0137 00       		.byte	0
+ 341 0138 00       		.byte	0
+ 342 0139 00       		.byte	0
+ 343 013a 78       		.byte	120
+ 344 013b 00       		.byte	0
+ 345 013c 00       		.byte	0
+ 346 013d 00       		.byte	0
+ 347 013e F0       		.byte	-16
+ 348 013f 00       		.byte	0
+ 349 0140 00       		.byte	0
+ 350 0141 C0       		.byte	-64
+ 351 0142 F0       		.byte	-16
+ 352 0143 01       		.byte	1
+ 353 0144 00       		.byte	0
+ 354 0145 F8       		.byte	-8
+ 355 0146 FF       		.byte	-1
+ 356 0147 01       		.byte	1
+ 357 0148 00       		.byte	0
+ 358 0149 FC       		.byte	-4
+ 359 014a FF       		.byte	-1
+ 360 014b 01       		.byte	1
+ 361 014c 00       		.byte	0
+ 362 014d FC       		.byte	-4
+ 363 014e 00       		.byte	0
+ 364 014f 00       		.byte	0
+ 365 0150 00       		.byte	0
+ 366 0151 00       		.byte	0
+ 367 0152 00       		.byte	0
+ 368 0153 00       		.byte	0
+ 369 0154 00       		.byte	0
+ 370 0155 00       		.byte	0
+ 371 0156 00       		.byte	0
+ 372 0157 00       		.byte	0
+ 373 0158 00       		.byte	0
+ 374 0159 00       		.byte	0
+ 375 015a 00       		.byte	0
+ 376 015b 00       		.byte	0
+ 377 015c 00       		.byte	0
+ 378 015d 00       		.byte	0
+ 379 015e 00       		.byte	0
+ 380 015f 00       		.byte	0
+ 381 0160 00       		.byte	0
+ 382 0161 00       		.byte	0
+ 383 0162 00       		.byte	0
+ 384 0163 00       		.byte	0
+ 385 0164 00       		.byte	0
+ 386 0165 00       		.byte	0
+ 387 0166 00       		.byte	0
+ 388 0167 00       		.byte	0
+ 389              		.align	2
+ 392              	press_black_bits:
+ 393 0168 00       		.byte	0
+ 394 0169 00       		.byte	0
+ 395 016a 00       		.byte	0
+ 396 016b 00       		.byte	0
+ 397 016c 00       		.byte	0
+ 398 016d 00       		.byte	0
+ 399 016e 00       		.byte	0
+ 400 016f 00       		.byte	0
+ 401 0170 00       		.byte	0
+ 402 0171 00       		.byte	0
+ 403 0172 00       		.byte	0
+ 404 0173 00       		.byte	0
+ 405 0174 00       		.byte	0
+ 406 0175 00       		.byte	0
+ 407 0176 00       		.byte	0
+ 408 0177 00       		.byte	0
+ 409 0178 00       		.byte	0
+ 410 0179 00       		.byte	0
+ 411 017a 00       		.byte	0
+ 412 017b 00       		.byte	0
+ 413 017c 00       		.byte	0
+ 414 017d 00       		.byte	0
+ 415 017e 00       		.byte	0
+ 416 017f 00       		.byte	0
+ 417 0180 00       		.byte	0
+ 418 0181 00       		.byte	0
+ 419 0182 00       		.byte	0
+ 420 0183 00       		.byte	0
+ 421 0184 00       		.byte	0
+ 422 0185 00       		.byte	0
+ 423 0186 00       		.byte	0
+ 424 0187 00       		.byte	0
+ 425 0188 00       		.byte	0
+ 426 0189 00       		.byte	0
+ 427 018a 00       		.byte	0
+ 428 018b 00       		.byte	0
+ 429 018c 00       		.byte	0
+ 430 018d 00       		.byte	0
+ 431 018e 00       		.byte	0
+ 432 018f 00       		.byte	0
+ 433 0190 00       		.byte	0
+ 434 0191 00       		.byte	0
+ 435 0192 00       		.byte	0
+ 436 0193 00       		.byte	0
+ 437 0194 00       		.byte	0
+ 438 0195 00       		.byte	0
+ 439 0196 00       		.byte	0
+ 440 0197 00       		.byte	0
+ 441 0198 00       		.byte	0
+ 442 0199 00       		.byte	0
+ 443 019a 00       		.byte	0
+ 444 019b 00       		.byte	0
+ 445 019c 00       		.byte	0
+ 446 019d 00       		.byte	0
+ 447 019e 00       		.byte	0
+ 448 019f 00       		.byte	0
+ 449 01a0 00       		.byte	0
+ 450 01a1 00       		.byte	0
+ 451 01a2 1C       		.byte	28
+ 452 01a3 00       		.byte	0
+ 453 01a4 00       		.byte	0
+ 454 01a5 00       		.byte	0
+ 455 01a6 00       		.byte	0
+ 456 01a7 00       		.byte	0
+ 457 01a8 00       		.byte	0
+ 458 01a9 00       		.byte	0
+ 459 01aa 24       		.byte	36
+ 460 01ab 00       		.byte	0
+ 461 01ac 00       		.byte	0
+ 462 01ad 00       		.byte	0
+ 463 01ae 00       		.byte	0
+ 464 01af 00       		.byte	0
+ 465 01b0 00       		.byte	0
+ 466 01b1 00       		.byte	0
+ 467 01b2 44       		.byte	68
+ 468 01b3 00       		.byte	0
+ 469 01b4 00       		.byte	0
+ 470 01b5 00       		.byte	0
+ 471 01b6 00       		.byte	0
+ 472 01b7 00       		.byte	0
+ 473 01b8 00       		.byte	0
+ 474 01b9 00       		.byte	0
+ 475 01ba 24       		.byte	36
+ 476 01bb C5       		.byte	-59
+ 477 01bc 98       		.byte	-104
+ 478 01bd 01       		.byte	1
+ 479 01be 00       		.byte	0
+ 480 01bf 00       		.byte	0
+ 481 01c0 00       		.byte	0
+ 482 01c1 00       		.byte	0
+ 483 01c2 1C       		.byte	28
+ 484 01c3 2B       		.byte	43
+ 485 01c4 45       		.byte	69
+ 486 01c5 00       		.byte	0
+ 487 01c6 00       		.byte	0
+ 488 01c7 00       		.byte	0
+ 489 01c8 00       		.byte	0
+ 490 01c9 00       		.byte	0
+ 491 01ca 04       		.byte	4
+ 492 01cb E1       		.byte	-31
+ 493 01cc CD       		.byte	-51
+ 494 01cd 00       		.byte	0
+ 495 01ce 00       		.byte	0
+ 496 01cf 00       		.byte	0
+ 497 01d0 00       		.byte	0
+ 498 01d1 00       		.byte	0
+ 499 01d2 04       		.byte	4
+ 500 01d3 21       		.byte	33
+ 501 01d4 10       		.byte	16
+ 502 01d5 01       		.byte	1
+ 503 01d6 00       		.byte	0
+ 504 01d7 00       		.byte	0
+ 505 01d8 00       		.byte	0
+ 506 01d9 00       		.byte	0
+ 507 01da 04       		.byte	4
+ 508 01db C1       		.byte	-63
+ 509 01dc CC       		.byte	-52
+ 510 01dd 00       		.byte	0
+ 511 01de 00       		.byte	0
+ 512 01df 00       		.byte	0
+ 513 01e0 00       		.byte	0
+ 514 01e1 00       		.byte	0
+ 515 01e2 00       		.byte	0
+ 516 01e3 00       		.byte	0
+ 517 01e4 00       		.byte	0
+ 518 01e5 00       		.byte	0
+ 519 01e6 00       		.byte	0
+ 520 01e7 00       		.byte	0
+ 521 01e8 00       		.byte	0
+ 522 01e9 00       		.byte	0
+ 523 01ea 00       		.byte	0
+ 524 01eb 00       		.byte	0
+ 525 01ec 00       		.byte	0
+ 526 01ed 00       		.byte	0
+ 527 01ee 00       		.byte	0
+ 528 01ef 00       		.byte	0
+ 529 01f0 00       		.byte	0
+ 530 01f1 00       		.byte	0
+ 531 01f2 00       		.byte	0
+ 532 01f3 00       		.byte	0
+ 533 01f4 00       		.byte	0
+ 534 01f5 00       		.byte	0
+ 535 01f6 00       		.byte	0
+ 536 01f7 00       		.byte	0
+ 537 01f8 00       		.byte	0
+ 538 01f9 00       		.byte	0
+ 539 01fa 00       		.byte	0
+ 540 01fb 00       		.byte	0
+ 541 01fc 00       		.byte	0
+ 542 01fd 00       		.byte	0
+ 543 01fe 00       		.byte	0
+ 544 01ff 00       		.byte	0
+ 545 0200 00       		.byte	0
+ 546 0201 00       		.byte	0
+ 547 0202 00       		.byte	0
+ 548 0203 00       		.byte	0
+ 549 0204 00       		.byte	0
+ 550 0205 00       		.byte	0
+ 551 0206 00       		.byte	0
+ 552 0207 00       		.byte	0
+ 553 0208 00       		.byte	0
+ 554 0209 00       		.byte	0
+ 555 020a 00       		.byte	0
+ 556 020b 00       		.byte	0
+ 557 020c 04       		.byte	4
+ 558 020d 00       		.byte	0
+ 559 020e 00       		.byte	0
+ 560 020f 00       		.byte	0
+ 561 0210 00       		.byte	0
+ 562 0211 00       		.byte	0
+ 563 0212 00       		.byte	0
+ 564 0213 00       		.byte	0
+ 565 0214 04       		.byte	4
+ 566 0215 00       		.byte	0
+ 567 0216 00       		.byte	0
+ 568 0217 00       		.byte	0
+ 569 0218 00       		.byte	0
+ 570 0219 00       		.byte	0
+ 571 021a 00       		.byte	0
+ 572 021b 00       		.byte	0
+ 573 021c 04       		.byte	4
+ 574 021d 00       		.byte	0
+ 575 021e 00       		.byte	0
+ 576 021f 00       		.byte	0
+ 577 0220 00       		.byte	0
+ 578 0221 E0       		.byte	-32
+ 579 0222 94       		.byte	-108
+ 580 0223 04       		.byte	4
+ 581 0224 34       		.byte	52
+ 582 0225 93       		.byte	-109
+ 583 0226 00       		.byte	0
+ 584 0227 00       		.byte	0
+ 585 0228 00       		.byte	0
+ 586 0229 90       		.byte	-112
+ 587 022a AC       		.byte	-84
+ 588 022b 04       		.byte	4
+ 589 022c 94       		.byte	-108
+ 590 022d 94       		.byte	-108
+ 591 022e 00       		.byte	0
+ 592 022f 00       		.byte	0
+ 593 0230 00       		.byte	0
+ 594 0231 90       		.byte	-112
+ 595 0232 A4       		.byte	-92
+ 596 0233 04       		.byte	4
+ 597 0234 8C       		.byte	-116
+ 598 0235 97       		.byte	-105
+ 599 0236 00       		.byte	0
+ 600 0237 00       		.byte	0
+ 601 0238 00       		.byte	0
+ 602 0239 90       		.byte	-112
+ 603 023a A4       		.byte	-92
+ 604 023b 04       		.byte	4
+ 605 023c 94       		.byte	-108
+ 606 023d 90       		.byte	-112
+ 607 023e 00       		.byte	0
+ 608 023f 00       		.byte	0
+ 609 0240 00       		.byte	0
+ 610 0241 60       		.byte	96
+ 611 0242 25       		.byte	37
+ 612 0243 07       		.byte	7
+ 613 0244 24       		.byte	36
+ 614 0245 E3       		.byte	-29
+ 615 0246 00       		.byte	0
+ 616 0247 00       		.byte	0
+ 617 0248 00       		.byte	0
+ 618 0249 00       		.byte	0
+ 619 024a 00       		.byte	0
+ 620 024b 04       		.byte	4
+ 621 024c 00       		.byte	0
+ 622 024d 80       		.byte	-128
+ 623 024e 00       		.byte	0
+ 624 024f 00       		.byte	0
+ 625 0250 00       		.byte	0
+ 626 0251 00       		.byte	0
+ 627 0252 00       		.byte	0
+ 628 0253 04       		.byte	4
+ 629 0254 00       		.byte	0
+ 630 0255 80       		.byte	-128
+ 631 0256 00       		.byte	0
+ 632 0257 00       		.byte	0
+ 633 0258 00       		.byte	0
+ 634 0259 00       		.byte	0
+ 635 025a 00       		.byte	0
+ 636 025b 03       		.byte	3
+ 637 025c 00       		.byte	0
+ 638 025d 60       		.byte	96
+ 639 025e 00       		.byte	0
+ 640 025f 00       		.byte	0
+ 641 0260 00       		.byte	0
+ 642 0261 00       		.byte	0
+ 643 0262 00       		.byte	0
+ 644 0263 00       		.byte	0
+ 645 0264 00       		.byte	0
+ 646 0265 00       		.byte	0
+ 647 0266 00       		.byte	0
+ 648 0267 00       		.byte	0
+ 649 0268 00       		.byte	0
+ 650 0269 00       		.byte	0
+ 651 026a 00       		.byte	0
+ 652 026b 00       		.byte	0
+ 653 026c 00       		.byte	0
+ 654 026d 00       		.byte	0
+ 655 026e 00       		.byte	0
+ 656 026f 00       		.byte	0
+ 657 0270 00       		.byte	0
+ 658 0271 00       		.byte	0
+ 659 0272 00       		.byte	0
+ 660 0273 00       		.byte	0
+ 661 0274 00       		.byte	0
+ 662 0275 00       		.byte	0
+ 663 0276 00       		.byte	0
+ 664 0277 00       		.byte	0
+ 665 0278 00       		.byte	0
+ 666 0279 00       		.byte	0
+ 667 027a 00       		.byte	0
+ 668 027b 00       		.byte	0
+ 669 027c 00       		.byte	0
+ 670 027d 00       		.byte	0
+ 671 027e 00       		.byte	0
+ 672 027f 00       		.byte	0
+ 673              		.align	2
+ 676              	press_light_bits:
+ 677 0280 00       		.byte	0
+ 678 0281 00       		.byte	0
+ 679 0282 00       		.byte	0
+ 680 0283 00       		.byte	0
+ 681 0284 00       		.byte	0
+ 682 0285 00       		.byte	0
+ 683 0286 00       		.byte	0
+ 684 0287 00       		.byte	0
+ 685 0288 00       		.byte	0
+ 686 0289 00       		.byte	0
+ 687 028a 00       		.byte	0
+ 688 028b 00       		.byte	0
+ 689 028c 00       		.byte	0
+ 690 028d 00       		.byte	0
+ 691 028e 00       		.byte	0
+ 692 028f 00       		.byte	0
+ 693 0290 00       		.byte	0
+ 694 0291 00       		.byte	0
+ 695 0292 00       		.byte	0
+ 696 0293 00       		.byte	0
+ 697 0294 00       		.byte	0
+ 698 0295 00       		.byte	0
+ 699 0296 00       		.byte	0
+ 700 0297 00       		.byte	0
+ 701 0298 00       		.byte	0
+ 702 0299 00       		.byte	0
+ 703 029a 00       		.byte	0
+ 704 029b 00       		.byte	0
+ 705 029c 00       		.byte	0
+ 706 029d 00       		.byte	0
+ 707 029e 00       		.byte	0
+ 708 029f 00       		.byte	0
+ 709 02a0 00       		.byte	0
+ 710 02a1 00       		.byte	0
+ 711 02a2 00       		.byte	0
+ 712 02a3 00       		.byte	0
+ 713 02a4 00       		.byte	0
+ 714 02a5 00       		.byte	0
+ 715 02a6 00       		.byte	0
+ 716 02a7 00       		.byte	0
+ 717 02a8 00       		.byte	0
+ 718 02a9 00       		.byte	0
+ 719 02aa 00       		.byte	0
+ 720 02ab 00       		.byte	0
+ 721 02ac 00       		.byte	0
+ 722 02ad 00       		.byte	0
+ 723 02ae 00       		.byte	0
+ 724 02af 00       		.byte	0
+ 725 02b0 00       		.byte	0
+ 726 02b1 00       		.byte	0
+ 727 02b2 00       		.byte	0
+ 728 02b3 00       		.byte	0
+ 729 02b4 00       		.byte	0
+ 730 02b5 00       		.byte	0
+ 731 02b6 00       		.byte	0
+ 732 02b7 00       		.byte	0
+ 733 02b8 00       		.byte	0
+ 734 02b9 00       		.byte	0
+ 735 02ba 00       		.byte	0
+ 736 02bb 00       		.byte	0
+ 737 02bc 00       		.byte	0
+ 738 02bd 00       		.byte	0
+ 739 02be 00       		.byte	0
+ 740 02bf 00       		.byte	0
+ 741 02c0 00       		.byte	0
+ 742 02c1 02       		.byte	2
+ 743 02c2 00       		.byte	0
+ 744 02c3 00       		.byte	0
+ 745 02c4 00       		.byte	0
+ 746 02c5 00       		.byte	0
+ 747 02c6 00       		.byte	0
+ 748 02c7 00       		.byte	0
+ 749 02c8 00       		.byte	0
+ 750 02c9 07       		.byte	7
+ 751 02ca 00       		.byte	0
+ 752 02cb 00       		.byte	0
+ 753 02cc 00       		.byte	0
+ 754 02cd 00       		.byte	0
+ 755 02ce 00       		.byte	0
+ 756 02cf 00       		.byte	0
+ 757 02d0 00       		.byte	0
+ 758 02d1 02       		.byte	2
+ 759 02d2 00       		.byte	0
+ 760 02d3 00       		.byte	0
+ 761 02d4 00       		.byte	0
+ 762 02d5 00       		.byte	0
+ 763 02d6 00       		.byte	0
+ 764 02d7 00       		.byte	0
+ 765 02d8 00       		.byte	0
+ 766 02d9 00       		.byte	0
+ 767 02da 00       		.byte	0
+ 768 02db 00       		.byte	0
+ 769 02dc 00       		.byte	0
+ 770 02dd 00       		.byte	0
+ 771 02de 00       		.byte	0
+ 772 02df 00       		.byte	0
+ 773 02e0 00       		.byte	0
+ 774 02e1 00       		.byte	0
+ 775 02e2 00       		.byte	0
+ 776 02e3 00       		.byte	0
+ 777 02e4 00       		.byte	0
+ 778 02e5 00       		.byte	0
+ 779 02e6 00       		.byte	0
+ 780 02e7 00       		.byte	0
+ 781 02e8 00       		.byte	0
+ 782 02e9 00       		.byte	0
+ 783 02ea 00       		.byte	0
+ 784 02eb 00       		.byte	0
+ 785 02ec 00       		.byte	0
+ 786 02ed 00       		.byte	0
+ 787 02ee 00       		.byte	0
+ 788 02ef 00       		.byte	0
+ 789 02f0 00       		.byte	0
+ 790 02f1 00       		.byte	0
+ 791 02f2 00       		.byte	0
+ 792 02f3 00       		.byte	0
+ 793 02f4 00       		.byte	0
+ 794 02f5 00       		.byte	0
+ 795 02f6 00       		.byte	0
+ 796 02f7 00       		.byte	0
+ 797 02f8 00       		.byte	0
+ 798 02f9 00       		.byte	0
+ 799 02fa 00       		.byte	0
+ 800 02fb 00       		.byte	0
+ 801 02fc 00       		.byte	0
+ 802 02fd 00       		.byte	0
+ 803 02fe 00       		.byte	0
+ 804 02ff 00       		.byte	0
+ 805 0300 00       		.byte	0
+ 806 0301 00       		.byte	0
+ 807 0302 00       		.byte	0
+ 808 0303 00       		.byte	0
+ 809 0304 00       		.byte	0
+ 810 0305 00       		.byte	0
+ 811 0306 00       		.byte	0
+ 812 0307 00       		.byte	0
+ 813 0308 00       		.byte	0
+ 814 0309 00       		.byte	0
+ 815 030a 00       		.byte	0
+ 816 030b 00       		.byte	0
+ 817 030c 00       		.byte	0
+ 818 030d 00       		.byte	0
+ 819 030e 00       		.byte	0
+ 820 030f 00       		.byte	0
+ 821 0310 00       		.byte	0
+ 822 0311 00       		.byte	0
+ 823 0312 00       		.byte	0
+ 824 0313 00       		.byte	0
+ 825 0314 00       		.byte	0
+ 826 0315 00       		.byte	0
+ 827 0316 80       		.byte	-128
+ 828 0317 00       		.byte	0
+ 829 0318 00       		.byte	0
+ 830 0319 00       		.byte	0
+ 831 031a 00       		.byte	0
+ 832 031b 00       		.byte	0
+ 833 031c 00       		.byte	0
+ 834 031d 00       		.byte	0
+ 835 031e C0       		.byte	-64
+ 836 031f 01       		.byte	1
+ 837 0320 00       		.byte	0
+ 838 0321 00       		.byte	0
+ 839 0322 00       		.byte	0
+ 840 0323 00       		.byte	0
+ 841 0324 00       		.byte	0
+ 842 0325 00       		.byte	0
+ 843 0326 80       		.byte	-128
+ 844 0327 00       		.byte	0
+ 845 0328 10       		.byte	16
+ 846 0329 00       		.byte	0
+ 847 032a 00       		.byte	0
+ 848 032b 00       		.byte	0
+ 849 032c 00       		.byte	0
+ 850 032d 00       		.byte	0
+ 851 032e 00       		.byte	0
+ 852 032f 00       		.byte	0
+ 853 0330 38       		.byte	56
+ 854 0331 00       		.byte	0
+ 855 0332 00       		.byte	0
+ 856 0333 00       		.byte	0
+ 857 0334 00       		.byte	0
+ 858 0335 00       		.byte	0
+ 859 0336 00       		.byte	0
+ 860 0337 00       		.byte	0
+ 861 0338 10       		.byte	16
+ 862 0339 00       		.byte	0
+ 863 033a 00       		.byte	0
+ 864 033b 00       		.byte	0
+ 865 033c 00       		.byte	0
+ 866 033d 00       		.byte	0
+ 867 033e 00       		.byte	0
+ 868 033f 00       		.byte	0
+ 869 0340 00       		.byte	0
+ 870 0341 00       		.byte	0
+ 871 0342 00       		.byte	0
+ 872 0343 00       		.byte	0
+ 873 0344 00       		.byte	0
+ 874 0345 00       		.byte	0
+ 875 0346 00       		.byte	0
+ 876 0347 00       		.byte	0
+ 877 0348 00       		.byte	0
+ 878 0349 00       		.byte	0
+ 879 034a 00       		.byte	0
+ 880 034b 00       		.byte	0
+ 881 034c 00       		.byte	0
+ 882 034d 00       		.byte	0
+ 883 034e 00       		.byte	0
+ 884 034f 00       		.byte	0
+ 885 0350 00       		.byte	0
+ 886 0351 00       		.byte	0
+ 887 0352 00       		.byte	0
+ 888 0353 00       		.byte	0
+ 889 0354 00       		.byte	0
+ 890 0355 00       		.byte	0
+ 891 0356 00       		.byte	0
+ 892 0357 00       		.byte	0
+ 893 0358 00       		.byte	0
+ 894 0359 00       		.byte	0
+ 895 035a 00       		.byte	0
+ 896 035b 00       		.byte	0
+ 897 035c 00       		.byte	0
+ 898 035d 00       		.byte	0
+ 899 035e 00       		.byte	0
+ 900 035f 00       		.byte	0
+ 901 0360 00       		.byte	0
+ 902 0361 00       		.byte	0
+ 903 0362 00       		.byte	0
+ 904 0363 00       		.byte	0
+ 905 0364 00       		.byte	0
+ 906 0365 00       		.byte	0
+ 907 0366 00       		.byte	0
+ 908 0367 00       		.byte	0
+ 909 0368 00       		.byte	0
+ 910 0369 00       		.byte	0
+ 911 036a 00       		.byte	0
+ 912 036b 00       		.byte	0
+ 913 036c 00       		.byte	0
+ 914 036d 00       		.byte	0
+ 915 036e 00       		.byte	0
+ 916 036f 00       		.byte	0
+ 917 0370 00       		.byte	0
+ 918 0371 00       		.byte	0
+ 919 0372 00       		.byte	0
+ 920 0373 00       		.byte	0
+ 921 0374 00       		.byte	0
+ 922 0375 00       		.byte	0
+ 923 0376 00       		.byte	0
+ 924 0377 00       		.byte	0
+ 925 0378 00       		.byte	0
+ 926 0379 00       		.byte	0
+ 927 037a 00       		.byte	0
+ 928 037b 00       		.byte	0
+ 929 037c 00       		.byte	0
+ 930 037d 00       		.byte	0
+ 931 037e 00       		.byte	0
+ 932 037f 00       		.byte	0
+ 933 0380 00       		.byte	0
+ 934 0381 00       		.byte	0
+ 935 0382 00       		.byte	0
+ 936 0383 00       		.byte	0
+ 937 0384 00       		.byte	0
+ 938 0385 00       		.byte	0
+ 939 0386 00       		.byte	0
+ 940 0387 00       		.byte	0
+ 941 0388 00       		.byte	0
+ 942 0389 00       		.byte	0
+ 943 038a 00       		.byte	0
+ 944 038b 00       		.byte	0
+ 945 038c 00       		.byte	0
+ 946 038d 00       		.byte	0
+ 947 038e 00       		.byte	0
+ 948 038f 00       		.byte	0
+ 949 0390 00       		.byte	0
+ 950 0391 00       		.byte	0
+ 951 0392 00       		.byte	0
+ 952 0393 00       		.byte	0
+ 953 0394 00       		.byte	0
+ 954 0395 00       		.byte	0
+ 955 0396 00       		.byte	0
+ 956 0397 00       		.byte	0
+ 957              		.align	2
+ 960              	press_gray_bits:
+ 961 0398 00       		.byte	0
+ 962 0399 00       		.byte	0
+ 963 039a 00       		.byte	0
+ 964 039b 00       		.byte	0
+ 965 039c 00       		.byte	0
+ 966 039d 00       		.byte	0
+ 967 039e 00       		.byte	0
+ 968 039f 00       		.byte	0
+ 969 03a0 00       		.byte	0
+ 970 03a1 00       		.byte	0
+ 971 03a2 00       		.byte	0
+ 972 03a3 00       		.byte	0
+ 973 03a4 00       		.byte	0
+ 974 03a5 00       		.byte	0
+ 975 03a6 00       		.byte	0
+ 976 03a7 00       		.byte	0
+ 977 03a8 00       		.byte	0
+ 978 03a9 00       		.byte	0
+ 979 03aa 00       		.byte	0
+ 980 03ab 00       		.byte	0
+ 981 03ac 00       		.byte	0
+ 982 03ad 00       		.byte	0
+ 983 03ae 00       		.byte	0
+ 984 03af 00       		.byte	0
+ 985 03b0 00       		.byte	0
+ 986 03b1 00       		.byte	0
+ 987 03b2 00       		.byte	0
+ 988 03b3 00       		.byte	0
+ 989 03b4 00       		.byte	0
+ 990 03b5 00       		.byte	0
+ 991 03b6 00       		.byte	0
+ 992 03b7 00       		.byte	0
+ 993 03b8 00       		.byte	0
+ 994 03b9 00       		.byte	0
+ 995 03ba 00       		.byte	0
+ 996 03bb 00       		.byte	0
+ 997 03bc 00       		.byte	0
+ 998 03bd 00       		.byte	0
+ 999 03be 00       		.byte	0
+ 1000 03bf 00       		.byte	0
+ 1001 03c0 00       		.byte	0
+ 1002 03c1 00       		.byte	0
+ 1003 03c2 00       		.byte	0
+ 1004 03c3 00       		.byte	0
+ 1005 03c4 00       		.byte	0
+ 1006 03c5 00       		.byte	0
+ 1007 03c6 00       		.byte	0
+ 1008 03c7 00       		.byte	0
+ 1009 03c8 00       		.byte	0
+ 1010 03c9 00       		.byte	0
+ 1011 03ca 00       		.byte	0
+ 1012 03cb 00       		.byte	0
+ 1013 03cc 00       		.byte	0
+ 1014 03cd 00       		.byte	0
+ 1015 03ce 00       		.byte	0
+ 1016 03cf 00       		.byte	0
+ 1017 03d0 00       		.byte	0
+ 1018 03d1 00       		.byte	0
+ 1019 03d2 00       		.byte	0
+ 1020 03d3 00       		.byte	0
+ 1021 03d4 00       		.byte	0
+ 1022 03d5 00       		.byte	0
+ 1023 03d6 00       		.byte	0
+ 1024 03d7 00       		.byte	0
+ 1025 03d8 00       		.byte	0
+ 1026 03d9 00       		.byte	0
+ 1027 03da 18       		.byte	24
+ 1028 03db 00       		.byte	0
+ 1029 03dc 00       		.byte	0
+ 1030 03dd 00       		.byte	0
+ 1031 03de 00       		.byte	0
+ 1032 03df 00       		.byte	0
+ 1033 03e0 00       		.byte	0
+ 1034 03e1 00       		.byte	0
+ 1035 03e2 38       		.byte	56
+ 1036 03e3 00       		.byte	0
+ 1037 03e4 00       		.byte	0
+ 1038 03e5 00       		.byte	0
+ 1039 03e6 00       		.byte	0
+ 1040 03e7 00       		.byte	0
+ 1041 03e8 00       		.byte	0
+ 1042 03e9 00       		.byte	0
+ 1043 03ea 58       		.byte	88
+ 1044 03eb 00       		.byte	0
+ 1045 03ec 20       		.byte	32
+ 1046 03ed 00       		.byte	0
+ 1047 03ee 00       		.byte	0
+ 1048 03ef 00       		.byte	0
+ 1049 03f0 00       		.byte	0
+ 1050 03f1 00       		.byte	0
+ 1051 03f2 20       		.byte	32
+ 1052 03f3 D4       		.byte	-44
+ 1053 03f4 9A       		.byte	-102
+ 1054 03f5 03       		.byte	3
+ 1055 03f6 00       		.byte	0
+ 1056 03f7 00       		.byte	0
+ 1057 03f8 00       		.byte	0
+ 1058 03f9 00       		.byte	0
+ 1059 03fa 38       		.byte	56
+ 1060 03fb 0A       		.byte	10
+ 1061 03fc 02       		.byte	2
+ 1062 03fd 01       		.byte	1
+ 1063 03fe 00       		.byte	0
+ 1064 03ff 00       		.byte	0
+ 1065 0400 00       		.byte	0
+ 1066 0401 00       		.byte	0
+ 1067 0402 08       		.byte	8
+ 1068 0403 C2       		.byte	-62
+ 1069 0404 23       		.byte	35
+ 1070 0405 02       		.byte	2
+ 1071 0406 00       		.byte	0
+ 1072 0407 00       		.byte	0
+ 1073 0408 00       		.byte	0
+ 1074 0409 00       		.byte	0
+ 1075 040a 08       		.byte	8
+ 1076 040b 02       		.byte	2
+ 1077 040c 11       		.byte	17
+ 1078 040d 03       		.byte	3
+ 1079 040e 00       		.byte	0
+ 1080 040f 00       		.byte	0
+ 1081 0410 00       		.byte	0
+ 1082 0411 00       		.byte	0
+ 1083 0412 08       		.byte	8
+ 1084 0413 C1       		.byte	-63
+ 1085 0414 DD       		.byte	-35
+ 1086 0415 01       		.byte	1
+ 1087 0416 00       		.byte	0
+ 1088 0417 00       		.byte	0
+ 1089 0418 00       		.byte	0
+ 1090 0419 00       		.byte	0
+ 1091 041a 00       		.byte	0
+ 1092 041b 00       		.byte	0
+ 1093 041c 00       		.byte	0
+ 1094 041d 00       		.byte	0
+ 1095 041e 00       		.byte	0
+ 1096 041f 00       		.byte	0
+ 1097 0420 00       		.byte	0
+ 1098 0421 00       		.byte	0
+ 1099 0422 00       		.byte	0
+ 1100 0423 00       		.byte	0
+ 1101 0424 00       		.byte	0
+ 1102 0425 00       		.byte	0
+ 1103 0426 00       		.byte	0
+ 1104 0427 00       		.byte	0
+ 1105 0428 00       		.byte	0
+ 1106 0429 00       		.byte	0
+ 1107 042a 00       		.byte	0
+ 1108 042b 00       		.byte	0
+ 1109 042c 00       		.byte	0
+ 1110 042d 00       		.byte	0
+ 1111 042e 00       		.byte	0
+ 1112 042f 00       		.byte	0
+ 1113 0430 00       		.byte	0
+ 1114 0431 00       		.byte	0
+ 1115 0432 00       		.byte	0
+ 1116 0433 00       		.byte	0
+ 1117 0434 00       		.byte	0
+ 1118 0435 00       		.byte	0
+ 1119 0436 00       		.byte	0
+ 1120 0437 00       		.byte	0
+ 1121 0438 00       		.byte	0
+ 1122 0439 00       		.byte	0
+ 1123 043a 00       		.byte	0
+ 1124 043b 00       		.byte	0
+ 1125 043c 00       		.byte	0
+ 1126 043d 00       		.byte	0
+ 1127 043e 00       		.byte	0
+ 1128 043f 00       		.byte	0
+ 1129 0440 00       		.byte	0
+ 1130 0441 00       		.byte	0
+ 1131 0442 00       		.byte	0
+ 1132 0443 00       		.byte	0
+ 1133 0444 08       		.byte	8
+ 1134 0445 00       		.byte	0
+ 1135 0446 00       		.byte	0
+ 1136 0447 00       		.byte	0
+ 1137 0448 00       		.byte	0
+ 1138 0449 00       		.byte	0
+ 1139 044a 00       		.byte	0
+ 1140 044b 00       		.byte	0
+ 1141 044c 08       		.byte	8
+ 1142 044d 00       		.byte	0
+ 1143 044e 00       		.byte	0
+ 1144 044f 00       		.byte	0
+ 1145 0450 00       		.byte	0
+ 1146 0451 00       		.byte	0
+ 1147 0452 00       		.byte	0
+ 1148 0453 00       		.byte	0
+ 1149 0454 08       		.byte	8
+ 1150 0455 00       		.byte	0
+ 1151 0456 00       		.byte	0
+ 1152 0457 00       		.byte	0
+ 1153 0458 00       		.byte	0
+ 1154 0459 60       		.byte	96
+ 1155 045a 11       		.byte	17
+ 1156 045b 09       		.byte	9
+ 1157 045c 28       		.byte	40
+ 1158 045d 23       		.byte	35
+ 1159 045e 01       		.byte	1
+ 1160 045f 00       		.byte	0
+ 1161 0460 00       		.byte	0
+ 1162 0461 60       		.byte	96
+ 1163 0462 59       		.byte	89
+ 1164 0463 09       		.byte	9
+ 1165 0464 10       		.byte	16
+ 1166 0465 28       		.byte	40
+ 1167 0466 01       		.byte	1
+ 1168 0467 00       		.byte	0
+ 1169 0468 00       		.byte	0
+ 1170 0469 20       		.byte	32
+ 1171 046a 49       		.byte	73
+ 1172 046b 0B       		.byte	11
+ 1173 046c 08       		.byte	8
+ 1174 046d 2F       		.byte	47
+ 1175 046e 01       		.byte	1
+ 1176 046f 00       		.byte	0
+ 1177 0470 00       		.byte	0
+ 1178 0471 80       		.byte	-128
+ 1179 0472 48       		.byte	72
+ 1180 0473 08       		.byte	8
+ 1181 0474 58       		.byte	88
+ 1182 0475 04       		.byte	4
+ 1183 0476 01       		.byte	1
+ 1184 0477 00       		.byte	0
+ 1185 0478 00       		.byte	0
+ 1186 0479 E0       		.byte	-32
+ 1187 047a 6B       		.byte	107
+ 1188 047b 0B       		.byte	11
+ 1189 047c 68       		.byte	104
+ 1190 047d 67       		.byte	103
+ 1191 047e 01       		.byte	1
+ 1192 047f 00       		.byte	0
+ 1193 0480 00       		.byte	0
+ 1194 0481 00       		.byte	0
+ 1195 0482 00       		.byte	0
+ 1196 0483 08       		.byte	8
+ 1197 0484 00       		.byte	0
+ 1198 0485 00       		.byte	0
+ 1199 0486 01       		.byte	1
+ 1200 0487 00       		.byte	0
+ 1201 0488 00       		.byte	0
+ 1202 0489 00       		.byte	0
+ 1203 048a 00       		.byte	0
+ 1204 048b 0C       		.byte	12
+ 1205 048c 00       		.byte	0
+ 1206 048d 80       		.byte	-128
+ 1207 048e 01       		.byte	1
+ 1208 048f 00       		.byte	0
+ 1209 0490 00       		.byte	0
+ 1210 0491 00       		.byte	0
+ 1211 0492 00       		.byte	0
+ 1212 0493 06       		.byte	6
+ 1213 0494 00       		.byte	0
+ 1214 0495 C0       		.byte	-64
+ 1215 0496 00       		.byte	0
+ 1216 0497 00       		.byte	0
+ 1217 0498 00       		.byte	0
+ 1218 0499 00       		.byte	0
+ 1219 049a 00       		.byte	0
+ 1220 049b 00       		.byte	0
+ 1221 049c 00       		.byte	0
+ 1222 049d 00       		.byte	0
+ 1223 049e 00       		.byte	0
+ 1224 049f 00       		.byte	0
+ 1225 04a0 00       		.byte	0
+ 1226 04a1 00       		.byte	0
+ 1227 04a2 00       		.byte	0
+ 1228 04a3 00       		.byte	0
+ 1229 04a4 00       		.byte	0
+ 1230 04a5 00       		.byte	0
+ 1231 04a6 00       		.byte	0
+ 1232 04a7 00       		.byte	0
+ 1233 04a8 00       		.byte	0
+ 1234 04a9 00       		.byte	0
+ 1235 04aa 00       		.byte	0
+ 1236 04ab 00       		.byte	0
+ 1237 04ac 00       		.byte	0
+ 1238 04ad 00       		.byte	0
+ 1239 04ae 00       		.byte	0
+ 1240 04af 00       		.byte	0
+ 1241              		.align	2
+ 1244              	castle_black_bits:
+ 1245 04b0 FF       		.byte	-1
+ 1246 04b1 FF       		.byte	-1
+ 1247 04b2 FF       		.byte	-1
+ 1248 04b3 FF       		.byte	-1
+ 1249 04b4 FF       		.byte	-1
+ 1250 04b5 FF       		.byte	-1
+ 1251 04b6 FF       		.byte	-1
+ 1252 04b7 FF       		.byte	-1
+ 1253 04b8 FF       		.byte	-1
+ 1254 04b9 07       		.byte	7
+ 1255 04ba 00       		.byte	0
+ 1256 04bb 00       		.byte	0
+ 1257 04bc 00       		.byte	0
+ 1258 04bd 00       		.byte	0
+ 1259 04be 00       		.byte	0
+ 1260 04bf 00       		.byte	0
+ 1261 04c0 FF       		.byte	-1
+ 1262 04c1 FF       		.byte	-1
+ 1263 04c2 FF       		.byte	-1
+ 1264 04c3 FF       		.byte	-1
+ 1265 04c4 FF       		.byte	-1
+ 1266 04c5 FF       		.byte	-1
+ 1267 04c6 FF       		.byte	-1
+ 1268 04c7 FF       		.byte	-1
+ 1269 04c8 FF       		.byte	-1
+ 1270 04c9 01       		.byte	1
+ 1271 04ca 00       		.byte	0
+ 1272 04cb 00       		.byte	0
+ 1273 04cc 00       		.byte	0
+ 1274 04cd 00       		.byte	0
+ 1275 04ce 00       		.byte	0
+ 1276 04cf 00       		.byte	0
+ 1277 04d0 FF       		.byte	-1
+ 1278 04d1 FF       		.byte	-1
+ 1279 04d2 FF       		.byte	-1
+ 1280 04d3 FF       		.byte	-1
+ 1281 04d4 FF       		.byte	-1
+ 1282 04d5 FF       		.byte	-1
+ 1283 04d6 FF       		.byte	-1
+ 1284 04d7 FF       		.byte	-1
+ 1285 04d8 01       		.byte	1
+ 1286 04d9 00       		.byte	0
+ 1287 04da 00       		.byte	0
+ 1288 04db 00       		.byte	0
+ 1289 04dc 00       		.byte	0
+ 1290 04dd 00       		.byte	0
+ 1291 04de 00       		.byte	0
+ 1292 04df 00       		.byte	0
+ 1293 04e0 FF       		.byte	-1
+ 1294 04e1 FF       		.byte	-1
+ 1295 04e2 FF       		.byte	-1
+ 1296 04e3 FF       		.byte	-1
+ 1297 04e4 FF       		.byte	-1
+ 1298 04e5 FF       		.byte	-1
+ 1299 04e6 FF       		.byte	-1
+ 1300 04e7 7F       		.byte	127
+ 1301 04e8 00       		.byte	0
+ 1302 04e9 00       		.byte	0
+ 1303 04ea 00       		.byte	0
+ 1304 04eb 00       		.byte	0
+ 1305 04ec 00       		.byte	0
+ 1306 04ed 00       		.byte	0
+ 1307 04ee 00       		.byte	0
+ 1308 04ef 00       		.byte	0
+ 1309 04f0 FF       		.byte	-1
+ 1310 04f1 FF       		.byte	-1
+ 1311 04f2 FF       		.byte	-1
+ 1312 04f3 FF       		.byte	-1
+ 1313 04f4 FF       		.byte	-1
+ 1314 04f5 FF       		.byte	-1
+ 1315 04f6 FF       		.byte	-1
+ 1316 04f7 3F       		.byte	63
+ 1317 04f8 00       		.byte	0
+ 1318 04f9 00       		.byte	0
+ 1319 04fa 00       		.byte	0
+ 1320 04fb 00       		.byte	0
+ 1321 04fc 00       		.byte	0
+ 1322 04fd 00       		.byte	0
+ 1323 04fe 00       		.byte	0
+ 1324 04ff 00       		.byte	0
+ 1325 0500 FF       		.byte	-1
+ 1326 0501 FF       		.byte	-1
+ 1327 0502 FF       		.byte	-1
+ 1328 0503 FF       		.byte	-1
+ 1329 0504 FF       		.byte	-1
+ 1330 0505 FF       		.byte	-1
+ 1331 0506 FF       		.byte	-1
+ 1332 0507 1F       		.byte	31
+ 1333 0508 00       		.byte	0
+ 1334 0509 00       		.byte	0
+ 1335 050a 00       		.byte	0
+ 1336 050b 00       		.byte	0
+ 1337 050c 00       		.byte	0
+ 1338 050d 00       		.byte	0
+ 1339 050e 00       		.byte	0
+ 1340 050f 00       		.byte	0
+ 1341 0510 FF       		.byte	-1
+ 1342 0511 FF       		.byte	-1
+ 1343 0512 FF       		.byte	-1
+ 1344 0513 FF       		.byte	-1
+ 1345 0514 FF       		.byte	-1
+ 1346 0515 FF       		.byte	-1
+ 1347 0516 FF       		.byte	-1
+ 1348 0517 07       		.byte	7
+ 1349 0518 00       		.byte	0
+ 1350 0519 00       		.byte	0
+ 1351 051a 00       		.byte	0
+ 1352 051b 00       		.byte	0
+ 1353 051c 00       		.byte	0
+ 1354 051d 00       		.byte	0
+ 1355 051e 00       		.byte	0
+ 1356 051f 00       		.byte	0
+ 1357 0520 FF       		.byte	-1
+ 1358 0521 FF       		.byte	-1
+ 1359 0522 FF       		.byte	-1
+ 1360 0523 FF       		.byte	-1
+ 1361 0524 FF       		.byte	-1
+ 1362 0525 FF       		.byte	-1
+ 1363 0526 FF       		.byte	-1
+ 1364 0527 03       		.byte	3
+ 1365 0528 00       		.byte	0
+ 1366 0529 00       		.byte	0
+ 1367 052a 00       		.byte	0
+ 1368 052b 00       		.byte	0
+ 1369 052c 00       		.byte	0
+ 1370 052d 00       		.byte	0
+ 1371 052e 00       		.byte	0
+ 1372 052f 00       		.byte	0
+ 1373 0530 FF       		.byte	-1
+ 1374 0531 FF       		.byte	-1
+ 1375 0532 FF       		.byte	-1
+ 1376 0533 FF       		.byte	-1
+ 1377 0534 FF       		.byte	-1
+ 1378 0535 FF       		.byte	-1
+ 1379 0536 FF       		.byte	-1
+ 1380 0537 01       		.byte	1
+ 1381 0538 00       		.byte	0
+ 1382 0539 00       		.byte	0
+ 1383 053a 00       		.byte	0
+ 1384 053b 00       		.byte	0
+ 1385 053c 00       		.byte	0
+ 1386 053d 00       		.byte	0
+ 1387 053e 00       		.byte	0
+ 1388 053f 00       		.byte	0
+ 1389 0540 FF       		.byte	-1
+ 1390 0541 FF       		.byte	-1
+ 1391 0542 FF       		.byte	-1
+ 1392 0543 FF       		.byte	-1
+ 1393 0544 FF       		.byte	-1
+ 1394 0545 FF       		.byte	-1
+ 1395 0546 FF       		.byte	-1
+ 1396 0547 00       		.byte	0
+ 1397 0548 00       		.byte	0
+ 1398 0549 00       		.byte	0
+ 1399 054a 00       		.byte	0
+ 1400 054b 00       		.byte	0
+ 1401 054c 00       		.byte	0
+ 1402 054d 00       		.byte	0
+ 1403 054e 00       		.byte	0
+ 1404 054f 00       		.byte	0
+ 1405 0550 FF       		.byte	-1
+ 1406 0551 FF       		.byte	-1
+ 1407 0552 FF       		.byte	-1
+ 1408 0553 FF       		.byte	-1
+ 1409 0554 FF       		.byte	-1
+ 1410 0555 FF       		.byte	-1
+ 1411 0556 7F       		.byte	127
+ 1412 0557 00       		.byte	0
+ 1413 0558 00       		.byte	0
+ 1414 0559 00       		.byte	0
+ 1415 055a 00       		.byte	0
+ 1416 055b 00       		.byte	0
+ 1417 055c 00       		.byte	0
+ 1418 055d 00       		.byte	0
+ 1419 055e 00       		.byte	0
+ 1420 055f 00       		.byte	0
+ 1421 0560 FF       		.byte	-1
+ 1422 0561 FF       		.byte	-1
+ 1423 0562 FF       		.byte	-1
+ 1424 0563 FF       		.byte	-1
+ 1425 0564 FF       		.byte	-1
+ 1426 0565 FF       		.byte	-1
+ 1427 0566 3F       		.byte	63
+ 1428 0567 00       		.byte	0
+ 1429 0568 00       		.byte	0
+ 1430 0569 00       		.byte	0
+ 1431 056a 00       		.byte	0
+ 1432 056b 00       		.byte	0
+ 1433 056c 00       		.byte	0
+ 1434 056d 00       		.byte	0
+ 1435 056e 00       		.byte	0
+ 1436 056f 00       		.byte	0
+ 1437 0570 FF       		.byte	-1
+ 1438 0571 FF       		.byte	-1
+ 1439 0572 FF       		.byte	-1
+ 1440 0573 FF       		.byte	-1
+ 1441 0574 FF       		.byte	-1
+ 1442 0575 FF       		.byte	-1
+ 1443 0576 3F       		.byte	63
+ 1444 0577 00       		.byte	0
+ 1445 0578 00       		.byte	0
+ 1446 0579 00       		.byte	0
+ 1447 057a 00       		.byte	0
+ 1448 057b 00       		.byte	0
+ 1449 057c 00       		.byte	0
+ 1450 057d 00       		.byte	0
+ 1451 057e 00       		.byte	0
+ 1452 057f 00       		.byte	0
+ 1453 0580 FF       		.byte	-1
+ 1454 0581 FF       		.byte	-1
+ 1455 0582 FF       		.byte	-1
+ 1456 0583 FF       		.byte	-1
+ 1457 0584 FF       		.byte	-1
+ 1458 0585 FF       		.byte	-1
+ 1459 0586 3F       		.byte	63
+ 1460 0587 00       		.byte	0
+ 1461 0588 00       		.byte	0
+ 1462 0589 00       		.byte	0
+ 1463 058a 00       		.byte	0
+ 1464 058b 00       		.byte	0
+ 1465 058c 00       		.byte	0
+ 1466 058d 00       		.byte	0
+ 1467 058e 00       		.byte	0
+ 1468 058f 00       		.byte	0
+ 1469 0590 FF       		.byte	-1
+ 1470 0591 FF       		.byte	-1
+ 1471 0592 FF       		.byte	-1
+ 1472 0593 FF       		.byte	-1
+ 1473 0594 FF       		.byte	-1
+ 1474 0595 FF       		.byte	-1
+ 1475 0596 1F       		.byte	31
+ 1476 0597 00       		.byte	0
+ 1477 0598 00       		.byte	0
+ 1478 0599 00       		.byte	0
+ 1479 059a 00       		.byte	0
+ 1480 059b 00       		.byte	0
+ 1481 059c 00       		.byte	0
+ 1482 059d 00       		.byte	0
+ 1483 059e 00       		.byte	0
+ 1484 059f 00       		.byte	0
+ 1485 05a0 FF       		.byte	-1
+ 1486 05a1 FF       		.byte	-1
+ 1487 05a2 FF       		.byte	-1
+ 1488 05a3 FF       		.byte	-1
+ 1489 05a4 FF       		.byte	-1
+ 1490 05a5 FF       		.byte	-1
+ 1491 05a6 1F       		.byte	31
+ 1492 05a7 00       		.byte	0
+ 1493 05a8 00       		.byte	0
+ 1494 05a9 00       		.byte	0
+ 1495 05aa 00       		.byte	0
+ 1496 05ab 00       		.byte	0
+ 1497 05ac 00       		.byte	0
+ 1498 05ad 00       		.byte	0
+ 1499 05ae 00       		.byte	0
+ 1500 05af 00       		.byte	0
+ 1501 05b0 FF       		.byte	-1
+ 1502 05b1 FF       		.byte	-1
+ 1503 05b2 FF       		.byte	-1
+ 1504 05b3 FF       		.byte	-1
+ 1505 05b4 FF       		.byte	-1
+ 1506 05b5 FF       		.byte	-1
+ 1507 05b6 0F       		.byte	15
+ 1508 05b7 00       		.byte	0
+ 1509 05b8 00       		.byte	0
+ 1510 05b9 00       		.byte	0
+ 1511 05ba 00       		.byte	0
+ 1512 05bb 00       		.byte	0
+ 1513 05bc 00       		.byte	0
+ 1514 05bd 00       		.byte	0
+ 1515 05be 00       		.byte	0
+ 1516 05bf 00       		.byte	0
+ 1517 05c0 FF       		.byte	-1
+ 1518 05c1 FF       		.byte	-1
+ 1519 05c2 FF       		.byte	-1
+ 1520 05c3 FF       		.byte	-1
+ 1521 05c4 FF       		.byte	-1
+ 1522 05c5 FF       		.byte	-1
+ 1523 05c6 0F       		.byte	15
+ 1524 05c7 00       		.byte	0
+ 1525 05c8 00       		.byte	0
+ 1526 05c9 00       		.byte	0
+ 1527 05ca 00       		.byte	0
+ 1528 05cb 00       		.byte	0
+ 1529 05cc 00       		.byte	0
+ 1530 05cd 00       		.byte	0
+ 1531 05ce 00       		.byte	0
+ 1532 05cf 00       		.byte	0
+ 1533 05d0 FF       		.byte	-1
+ 1534 05d1 FF       		.byte	-1
+ 1535 05d2 FF       		.byte	-1
+ 1536 05d3 FF       		.byte	-1
+ 1537 05d4 FF       		.byte	-1
+ 1538 05d5 FF       		.byte	-1
+ 1539 05d6 07       		.byte	7
+ 1540 05d7 00       		.byte	0
+ 1541 05d8 00       		.byte	0
+ 1542 05d9 00       		.byte	0
+ 1543 05da 00       		.byte	0
+ 1544 05db 00       		.byte	0
+ 1545 05dc 00       		.byte	0
+ 1546 05dd 00       		.byte	0
+ 1547 05de 00       		.byte	0
+ 1548 05df 00       		.byte	0
+ 1549 05e0 FF       		.byte	-1
+ 1550 05e1 FF       		.byte	-1
+ 1551 05e2 FF       		.byte	-1
+ 1552 05e3 FF       		.byte	-1
+ 1553 05e4 FF       		.byte	-1
+ 1554 05e5 FF       		.byte	-1
+ 1555 05e6 03       		.byte	3
+ 1556 05e7 00       		.byte	0
+ 1557 05e8 00       		.byte	0
+ 1558 05e9 00       		.byte	0
+ 1559 05ea 00       		.byte	0
+ 1560 05eb 00       		.byte	0
+ 1561 05ec 00       		.byte	0
+ 1562 05ed 00       		.byte	0
+ 1563 05ee 00       		.byte	0
+ 1564 05ef 00       		.byte	0
+ 1565 05f0 FF       		.byte	-1
+ 1566 05f1 FF       		.byte	-1
+ 1567 05f2 FF       		.byte	-1
+ 1568 05f3 FF       		.byte	-1
+ 1569 05f4 FF       		.byte	-1
+ 1570 05f5 FF       		.byte	-1
+ 1571 05f6 03       		.byte	3
+ 1572 05f7 00       		.byte	0
+ 1573 05f8 00       		.byte	0
+ 1574 05f9 00       		.byte	0
+ 1575 05fa 00       		.byte	0
+ 1576 05fb 00       		.byte	0
+ 1577 05fc 00       		.byte	0
+ 1578 05fd 00       		.byte	0
+ 1579 05fe 00       		.byte	0
+ 1580 05ff 00       		.byte	0
+ 1581 0600 FF       		.byte	-1
+ 1582 0601 FF       		.byte	-1
+ 1583 0602 FF       		.byte	-1
+ 1584 0603 FF       		.byte	-1
+ 1585 0604 FF       		.byte	-1
+ 1586 0605 FF       		.byte	-1
+ 1587 0606 03       		.byte	3
+ 1588 0607 00       		.byte	0
+ 1589 0608 00       		.byte	0
+ 1590 0609 00       		.byte	0
+ 1591 060a 00       		.byte	0
+ 1592 060b 00       		.byte	0
+ 1593 060c 00       		.byte	0
+ 1594 060d 00       		.byte	0
+ 1595 060e 00       		.byte	0
+ 1596 060f 00       		.byte	0
+ 1597 0610 FF       		.byte	-1
+ 1598 0611 FF       		.byte	-1
+ 1599 0612 FF       		.byte	-1
+ 1600 0613 FF       		.byte	-1
+ 1601 0614 FF       		.byte	-1
+ 1602 0615 FF       		.byte	-1
+ 1603 0616 03       		.byte	3
+ 1604 0617 00       		.byte	0
+ 1605 0618 00       		.byte	0
+ 1606 0619 00       		.byte	0
+ 1607 061a 90       		.byte	-112
+ 1608 061b 04       		.byte	4
+ 1609 061c 00       		.byte	0
+ 1610 061d 00       		.byte	0
+ 1611 061e 00       		.byte	0
+ 1612 061f 00       		.byte	0
+ 1613 0620 FF       		.byte	-1
+ 1614 0621 FF       		.byte	-1
+ 1615 0622 FF       		.byte	-1
+ 1616 0623 FF       		.byte	-1
+ 1617 0624 FF       		.byte	-1
+ 1618 0625 FF       		.byte	-1
+ 1619 0626 03       		.byte	3
+ 1620 0627 00       		.byte	0
+ 1621 0628 00       		.byte	0
+ 1622 0629 00       		.byte	0
+ 1623 062a 68       		.byte	104
+ 1624 062b 0B       		.byte	11
+ 1625 062c 00       		.byte	0
+ 1626 062d 00       		.byte	0
+ 1627 062e 00       		.byte	0
+ 1628 062f 00       		.byte	0
+ 1629 0630 FF       		.byte	-1
+ 1630 0631 FF       		.byte	-1
+ 1631 0632 FF       		.byte	-1
+ 1632 0633 FF       		.byte	-1
+ 1633 0634 FF       		.byte	-1
+ 1634 0635 FF       		.byte	-1
+ 1635 0636 01       		.byte	1
+ 1636 0637 00       		.byte	0
+ 1637 0638 00       		.byte	0
+ 1638 0639 00       		.byte	0
+ 1639 063a 08       		.byte	8
+ 1640 063b 08       		.byte	8
+ 1641 063c 00       		.byte	0
+ 1642 063d 00       		.byte	0
+ 1643 063e 00       		.byte	0
+ 1644 063f 00       		.byte	0
+ 1645 0640 FF       		.byte	-1
+ 1646 0641 FF       		.byte	-1
+ 1647 0642 FF       		.byte	-1
+ 1648 0643 FF       		.byte	-1
+ 1649 0644 FF       		.byte	-1
+ 1650 0645 FF       		.byte	-1
+ 1651 0646 01       		.byte	1
+ 1652 0647 00       		.byte	0
+ 1653 0648 00       		.byte	0
+ 1654 0649 00       		.byte	0
+ 1655 064a 08       		.byte	8
+ 1656 064b 08       		.byte	8
+ 1657 064c 92       		.byte	-110
+ 1658 064d 00       		.byte	0
+ 1659 064e 00       		.byte	0
+ 1660 064f 00       		.byte	0
+ 1661 0650 FF       		.byte	-1
+ 1662 0651 FF       		.byte	-1
+ 1663 0652 FF       		.byte	-1
+ 1664 0653 FF       		.byte	-1
+ 1665 0654 FF       		.byte	-1
+ 1666 0655 FF       		.byte	-1
+ 1667 0656 01       		.byte	1
+ 1668 0657 00       		.byte	0
+ 1669 0658 00       		.byte	0
+ 1670 0659 00       		.byte	0
+ 1671 065a 10       		.byte	16
+ 1672 065b 04       		.byte	4
+ 1673 065c 6D       		.byte	109
+ 1674 065d 01       		.byte	1
+ 1675 065e 00       		.byte	0
+ 1676 065f 00       		.byte	0
+ 1677 0660 FF       		.byte	-1
+ 1678 0661 FF       		.byte	-1
+ 1679 0662 FF       		.byte	-1
+ 1680 0663 FF       		.byte	-1
+ 1681 0664 FF       		.byte	-1
+ 1682 0665 FF       		.byte	-1
+ 1683 0666 01       		.byte	1
+ 1684 0667 00       		.byte	0
+ 1685 0668 40       		.byte	64
+ 1686 0669 12       		.byte	18
+ 1687 066a 10       		.byte	16
+ 1688 066b 04       		.byte	4
+ 1689 066c 01       		.byte	1
+ 1690 066d 01       		.byte	1
+ 1691 066e 00       		.byte	0
+ 1692 066f 00       		.byte	0
+ 1693 0670 FF       		.byte	-1
+ 1694 0671 FF       		.byte	-1
+ 1695 0672 FF       		.byte	-1
+ 1696 0673 FF       		.byte	-1
+ 1697 0674 FF       		.byte	-1
+ 1698 0675 FF       		.byte	-1
+ 1699 0676 00       		.byte	0
+ 1700 0677 00       		.byte	0
+ 1701 0678 A0       		.byte	-96
+ 1702 0679 2D       		.byte	45
+ 1703 067a 10       		.byte	16
+ 1704 067b 04       		.byte	4
+ 1705 067c 01       		.byte	1
+ 1706 067d 01       		.byte	1
+ 1707 067e 00       		.byte	0
+ 1708 067f 00       		.byte	0
+ 1709 0680 FF       		.byte	-1
+ 1710 0681 FF       		.byte	-1
+ 1711 0682 FF       		.byte	-1
+ 1712 0683 FF       		.byte	-1
+ 1713 0684 FF       		.byte	-1
+ 1714 0685 FF       		.byte	-1
+ 1715 0686 00       		.byte	0
+ 1716 0687 00       		.byte	0
+ 1717 0688 20       		.byte	32
+ 1718 0689 20       		.byte	32
+ 1719 068a 10       		.byte	16
+ 1720 068b 04       		.byte	4
+ 1721 068c 01       		.byte	1
+ 1722 068d 01       		.byte	1
+ 1723 068e 00       		.byte	0
+ 1724 068f 00       		.byte	0
+ 1725 0690 FF       		.byte	-1
+ 1726 0691 FF       		.byte	-1
+ 1727 0692 FF       		.byte	-1
+ 1728 0693 FF       		.byte	-1
+ 1729 0694 FF       		.byte	-1
+ 1730 0695 FF       		.byte	-1
+ 1731 0696 00       		.byte	0
+ 1732 0697 00       		.byte	0
+ 1733 0698 20       		.byte	32
+ 1734 0699 20       		.byte	32
+ 1735 069a 10       		.byte	16
+ 1736 069b 04       		.byte	4
+ 1737 069c 01       		.byte	1
+ 1738 069d 01       		.byte	1
+ 1739 069e 00       		.byte	0
+ 1740 069f 00       		.byte	0
+ 1741 06a0 FF       		.byte	-1
+ 1742 06a1 FF       		.byte	-1
+ 1743 06a2 FF       		.byte	-1
+ 1744 06a3 FF       		.byte	-1
+ 1745 06a4 FF       		.byte	-1
+ 1746 06a5 FF       		.byte	-1
+ 1747 06a6 00       		.byte	0
+ 1748 06a7 00       		.byte	0
+ 1749 06a8 40       		.byte	64
+ 1750 06a9 10       		.byte	16
+ 1751 06aa 10       		.byte	16
+ 1752 06ab 04       		.byte	4
+ 1753 06ac 82       		.byte	-126
+ 1754 06ad 00       		.byte	0
+ 1755 06ae 00       		.byte	0
+ 1756 06af 00       		.byte	0
+ 1757 06b0 FF       		.byte	-1
+ 1758 06b1 FF       		.byte	-1
+ 1759 06b2 FF       		.byte	-1
+ 1760 06b3 FF       		.byte	-1
+ 1761 06b4 FF       		.byte	-1
+ 1762 06b5 FF       		.byte	-1
+ 1763 06b6 00       		.byte	0
+ 1764 06b7 00       		.byte	0
+ 1765 06b8 40       		.byte	64
+ 1766 06b9 10       		.byte	16
+ 1767 06ba 10       		.byte	16
+ 1768 06bb 04       		.byte	4
+ 1769 06bc 92       		.byte	-110
+ 1770 06bd 00       		.byte	0
+ 1771 06be 00       		.byte	0
+ 1772 06bf 00       		.byte	0
+ 1773 06c0 FF       		.byte	-1
+ 1774 06c1 FF       		.byte	-1
+ 1775 06c2 FF       		.byte	-1
+ 1776 06c3 FF       		.byte	-1
+ 1777 06c4 FF       		.byte	-1
+ 1778 06c5 FF       		.byte	-1
+ 1779 06c6 00       		.byte	0
+ 1780 06c7 00       		.byte	0
+ 1781 06c8 40       		.byte	64
+ 1782 06c9 10       		.byte	16
+ 1783 06ca 10       		.byte	16
+ 1784 06cb 04       		.byte	4
+ 1785 06cc A2       		.byte	-94
+ 1786 06cd 00       		.byte	0
+ 1787 06ce 24       		.byte	36
+ 1788 06cf 01       		.byte	1
+ 1789 06d0 FF       		.byte	-1
+ 1790 06d1 FF       		.byte	-1
+ 1791 06d2 FF       		.byte	-1
+ 1792 06d3 FF       		.byte	-1
+ 1793 06d4 FF       		.byte	-1
+ 1794 06d5 7F       		.byte	127
+ 1795 06d6 00       		.byte	0
+ 1796 06d7 00       		.byte	0
+ 1797 06d8 40       		.byte	64
+ 1798 06d9 10       		.byte	16
+ 1799 06da 10       		.byte	16
+ 1800 06db 04       		.byte	4
+ 1801 06dc A2       		.byte	-94
+ 1802 06dd 00       		.byte	0
+ 1803 06de DA       		.byte	-38
+ 1804 06df 02       		.byte	2
+ 1805 06e0 FF       		.byte	-1
+ 1806 06e1 FF       		.byte	-1
+ 1807 06e2 FF       		.byte	-1
+ 1808 06e3 FF       		.byte	-1
+ 1809 06e4 FF       		.byte	-1
+ 1810 06e5 4F       		.byte	79
+ 1811 06e6 00       		.byte	0
+ 1812 06e7 00       		.byte	0
+ 1813 06e8 40       		.byte	64
+ 1814 06e9 10       		.byte	16
+ 1815 06ea 10       		.byte	16
+ 1816 06eb 04       		.byte	4
+ 1817 06ec A2       		.byte	-94
+ 1818 06ed 00       		.byte	0
+ 1819 06ee 02       		.byte	2
+ 1820 06ef 02       		.byte	2
+ 1821 06f0 FF       		.byte	-1
+ 1822 06f1 FF       		.byte	-1
+ 1823 06f2 FF       		.byte	-1
+ 1824 06f3 FF       		.byte	-1
+ 1825 06f4 FF       		.byte	-1
+ 1826 06f5 07       		.byte	7
+ 1827 06f6 00       		.byte	0
+ 1828 06f7 00       		.byte	0
+ 1829 06f8 40       		.byte	64
+ 1830 06f9 10       		.byte	16
+ 1831 06fa 08       		.byte	8
+ 1832 06fb 08       		.byte	8
+ 1833 06fc 9A       		.byte	-102
+ 1834 06fd 00       		.byte	0
+ 1835 06fe 02       		.byte	2
+ 1836 06ff 02       		.byte	2
+ 1837 0700 FF       		.byte	-1
+ 1838 0701 FF       		.byte	-1
+ 1839 0702 FF       		.byte	-1
+ 1840 0703 FF       		.byte	-1
+ 1841 0704 FF       		.byte	-1
+ 1842 0705 03       		.byte	3
+ 1843 0706 00       		.byte	0
+ 1844 0707 00       		.byte	0
+ 1845 0708 20       		.byte	32
+ 1846 0709 20       		.byte	32
+ 1847 070a 08       		.byte	8
+ 1848 070b 08       		.byte	8
+ 1849 070c 82       		.byte	-126
+ 1850 070d 00       		.byte	0
+ 1851 070e 04       		.byte	4
+ 1852 070f 01       		.byte	1
+ 1853 0710 FF       		.byte	-1
+ 1854 0711 FF       		.byte	-1
+ 1855 0712 FF       		.byte	-1
+ 1856 0713 FF       		.byte	-1
+ 1857 0714 FF       		.byte	-1
+ 1858 0715 03       		.byte	3
+ 1859 0716 00       		.byte	0
+ 1860 0717 00       		.byte	0
+ 1861 0718 20       		.byte	32
+ 1862 0719 20       		.byte	32
+ 1863 071a 08       		.byte	8
+ 1864 071b 48       		.byte	72
+ 1865 071c 02       		.byte	2
+ 1866 071d 01       		.byte	1
+ 1867 071e 04       		.byte	4
+ 1868 071f 01       		.byte	1
+ 1869 0720 FF       		.byte	-1
+ 1870 0721 FF       		.byte	-1
+ 1871 0722 FF       		.byte	-1
+ 1872 0723 FF       		.byte	-1
+ 1873 0724 FF       		.byte	-1
+ 1874 0725 03       		.byte	3
+ 1875 0726 00       		.byte	0
+ 1876 0727 00       		.byte	0
+ 1877 0728 20       		.byte	32
+ 1878 0729 20       		.byte	32
+ 1879 072a 08       		.byte	8
+ 1880 072b B0       		.byte	-80
+ 1881 072c 01       		.byte	1
+ 1882 072d 01       		.byte	1
+ 1883 072e 04       		.byte	4
+ 1884 072f 01       		.byte	1
+ 1885 0730 FF       		.byte	-1
+ 1886 0731 FF       		.byte	-1
+ 1887 0732 FF       		.byte	-1
+ 1888 0733 FF       		.byte	-1
+ 1889 0734 FF       		.byte	-1
+ 1890 0735 01       		.byte	1
+ 1891 0736 00       		.byte	0
+ 1892 0737 00       		.byte	0
+ 1893 0738 20       		.byte	32
+ 1894 0739 22       		.byte	34
+ 1895 073a 08       		.byte	8
+ 1896 073b 00       		.byte	0
+ 1897 073c 00       		.byte	0
+ 1898 073d 01       		.byte	1
+ 1899 073e 04       		.byte	4
+ 1900 073f 01       		.byte	1
+ 1901 0740 FF       		.byte	-1
+ 1902 0741 FF       		.byte	-1
+ 1903 0742 FF       		.byte	-1
+ 1904 0743 FF       		.byte	-1
+ 1905 0744 FF       		.byte	-1
+ 1906 0745 01       		.byte	1
+ 1907 0746 00       		.byte	0
+ 1908 0747 00       		.byte	0
+ 1909 0748 20       		.byte	32
+ 1910 0749 24       		.byte	36
+ 1911 074a 88       		.byte	-120
+ 1912 074b 00       		.byte	0
+ 1913 074c 00       		.byte	0
+ 1914 074d 01       		.byte	1
+ 1915 074e 04       		.byte	4
+ 1916 074f 01       		.byte	1
+ 1917 0750 FF       		.byte	-1
+ 1918 0751 FF       		.byte	-1
+ 1919 0752 FF       		.byte	-1
+ 1920 0753 FF       		.byte	-1
+ 1921 0754 FF       		.byte	-1
+ 1922 0755 00       		.byte	0
+ 1923 0756 00       		.byte	0
+ 1924 0757 00       		.byte	0
+ 1925 0758 20       		.byte	32
+ 1926 0759 24       		.byte	36
+ 1927 075a 08       		.byte	8
+ 1928 075b 01       		.byte	1
+ 1929 075c 00       		.byte	0
+ 1930 075d 5A       		.byte	90
+ 1931 075e 04       		.byte	4
+ 1932 075f 01       		.byte	1
+ 1933 0760 FF       		.byte	-1
+ 1934 0761 FF       		.byte	-1
+ 1935 0762 FF       		.byte	-1
+ 1936 0763 FF       		.byte	-1
+ 1937 0764 7F       		.byte	127
+ 1938 0765 00       		.byte	0
+ 1939 0766 00       		.byte	0
+ 1940 0767 00       		.byte	0
+ 1941 0768 20       		.byte	32
+ 1942 0769 24       		.byte	36
+ 1943 076a 08       		.byte	8
+ 1944 076b 01       		.byte	1
+ 1945 076c 00       		.byte	0
+ 1946 076d A4       		.byte	-92
+ 1947 076e 04       		.byte	4
+ 1948 076f 01       		.byte	1
+ 1949 0770 FF       		.byte	-1
+ 1950 0771 FF       		.byte	-1
+ 1951 0772 FF       		.byte	-1
+ 1952 0773 FF       		.byte	-1
+ 1953 0774 01       		.byte	1
+ 1954 0775 00       		.byte	0
+ 1955 0776 00       		.byte	0
+ 1956 0777 00       		.byte	0
+ 1957 0778 20       		.byte	32
+ 1958 0779 23       		.byte	35
+ 1959 077a 0B       		.byte	11
+ 1960 077b 01       		.byte	1
+ 1961 077c 01       		.byte	1
+ 1962 077d 00       		.byte	0
+ 1963 077e 03       		.byte	3
+ 1964 077f 01       		.byte	1
+ 1965 0780 FF       		.byte	-1
+ 1966 0781 FF       		.byte	-1
+ 1967 0782 FF       		.byte	-1
+ 1968 0783 FF       		.byte	-1
+ 1969 0784 00       		.byte	0
+ 1970 0785 00       		.byte	0
+ 1971 0786 00       		.byte	0
+ 1972 0787 00       		.byte	0
+ 1973 0788 20       		.byte	32
+ 1974 0789 C0       		.byte	-64
+ 1975 078a C4       		.byte	-60
+ 1976 078b 00       		.byte	0
+ 1977 078c 02       		.byte	2
+ 1978 078d 00       		.byte	0
+ 1979 078e 00       		.byte	0
+ 1980 078f 02       		.byte	2
+ 1981 0790 FF       		.byte	-1
+ 1982 0791 FF       		.byte	-1
+ 1983 0792 FF       		.byte	-1
+ 1984 0793 3F       		.byte	63
+ 1985 0794 00       		.byte	0
+ 1986 0795 00       		.byte	0
+ 1987 0796 00       		.byte	0
+ 1988 0797 00       		.byte	0
+ 1989 0798 20       		.byte	32
+ 1990 0799 00       		.byte	0
+ 1991 079a 00       		.byte	0
+ 1992 079b 00       		.byte	0
+ 1993 079c 02       		.byte	2
+ 1994 079d 00       		.byte	0
+ 1995 079e 20       		.byte	32
+ 1996 079f 02       		.byte	2
+ 1997 07a0 FF       		.byte	-1
+ 1998 07a1 FF       		.byte	-1
+ 1999 07a2 FF       		.byte	-1
+ 2000 07a3 3F       		.byte	63
+ 2001 07a4 00       		.byte	0
+ 2002 07a5 00       		.byte	0
+ 2003 07a6 00       		.byte	0
+ 2004 07a7 00       		.byte	0
+ 2005 07a8 20       		.byte	32
+ 2006 07a9 00       		.byte	0
+ 2007 07aa 00       		.byte	0
+ 2008 07ab 00       		.byte	0
+ 2009 07ac 02       		.byte	2
+ 2010 07ad 00       		.byte	0
+ 2011 07ae 40       		.byte	64
+ 2012 07af 02       		.byte	2
+ 2013 07b0 FF       		.byte	-1
+ 2014 07b1 FF       		.byte	-1
+ 2015 07b2 FF       		.byte	-1
+ 2016 07b3 1F       		.byte	31
+ 2017 07b4 00       		.byte	0
+ 2018 07b5 00       		.byte	0
+ 2019 07b6 00       		.byte	0
+ 2020 07b7 00       		.byte	0
+ 2021 07b8 20       		.byte	32
+ 2022 07b9 00       		.byte	0
+ 2023 07ba 00       		.byte	0
+ 2024 07bb 80       		.byte	-128
+ 2025 07bc 01       		.byte	1
+ 2026 07bd 00       		.byte	0
+ 2027 07be 40       		.byte	64
+ 2028 07bf 02       		.byte	2
+ 2029 07c0 FF       		.byte	-1
+ 2030 07c1 FF       		.byte	-1
+ 2031 07c2 FF       		.byte	-1
+ 2032 07c3 1F       		.byte	31
+ 2033 07c4 00       		.byte	0
+ 2034 07c5 00       		.byte	0
+ 2035 07c6 00       		.byte	0
+ 2036 07c7 00       		.byte	0
+ 2037 07c8 10       		.byte	16
+ 2038 07c9 00       		.byte	0
+ 2039 07ca 00       		.byte	0
+ 2040 07cb 00       		.byte	0
+ 2041 07cc 00       		.byte	0
+ 2042 07cd 00       		.byte	0
+ 2043 07ce 40       		.byte	64
+ 2044 07cf 02       		.byte	2
+ 2045 07d0 FF       		.byte	-1
+ 2046 07d1 FF       		.byte	-1
+ 2047 07d2 FF       		.byte	-1
+ 2048 07d3 0F       		.byte	15
+ 2049 07d4 00       		.byte	0
+ 2050 07d5 00       		.byte	0
+ 2051 07d6 00       		.byte	0
+ 2052 07d7 00       		.byte	0
+ 2053 07d8 10       		.byte	16
+ 2054 07d9 00       		.byte	0
+ 2055 07da 00       		.byte	0
+ 2056 07db 00       		.byte	0
+ 2057 07dc 00       		.byte	0
+ 2058 07dd 00       		.byte	0
+ 2059 07de 30       		.byte	48
+ 2060 07df 02       		.byte	2
+ 2061 07e0 FF       		.byte	-1
+ 2062 07e1 FF       		.byte	-1
+ 2063 07e2 FF       		.byte	-1
+ 2064 07e3 0F       		.byte	15
+ 2065 07e4 00       		.byte	0
+ 2066 07e5 00       		.byte	0
+ 2067 07e6 00       		.byte	0
+ 2068 07e7 00       		.byte	0
+ 2069 07e8 10       		.byte	16
+ 2070 07e9 00       		.byte	0
+ 2071 07ea 00       		.byte	0
+ 2072 07eb 00       		.byte	0
+ 2073 07ec 00       		.byte	0
+ 2074 07ed 00       		.byte	0
+ 2075 07ee 00       		.byte	0
+ 2076 07ef 02       		.byte	2
+ 2077 07f0 FF       		.byte	-1
+ 2078 07f1 FF       		.byte	-1
+ 2079 07f2 FF       		.byte	-1
+ 2080 07f3 07       		.byte	7
+ 2081 07f4 00       		.byte	0
+ 2082 07f5 00       		.byte	0
+ 2083 07f6 00       		.byte	0
+ 2084 07f7 00       		.byte	0
+ 2085 07f8 10       		.byte	16
+ 2086 07f9 00       		.byte	0
+ 2087 07fa 00       		.byte	0
+ 2088 07fb 00       		.byte	0
+ 2089 07fc 00       		.byte	0
+ 2090 07fd 00       		.byte	0
+ 2091 07fe 00       		.byte	0
+ 2092 07ff 04       		.byte	4
+ 2093 0800 FF       		.byte	-1
+ 2094 0801 FF       		.byte	-1
+ 2095 0802 FF       		.byte	-1
+ 2096 0803 03       		.byte	3
+ 2097 0804 00       		.byte	0
+ 2098 0805 00       		.byte	0
+ 2099 0806 00       		.byte	0
+ 2100 0807 00       		.byte	0
+ 2101 0808 10       		.byte	16
+ 2102 0809 00       		.byte	0
+ 2103 080a 00       		.byte	0
+ 2104 080b 00       		.byte	0
+ 2105 080c 00       		.byte	0
+ 2106 080d 00       		.byte	0
+ 2107 080e 00       		.byte	0
+ 2108 080f 04       		.byte	4
+ 2109 0810 FF       		.byte	-1
+ 2110 0811 FF       		.byte	-1
+ 2111 0812 FF       		.byte	-1
+ 2112 0813 01       		.byte	1
+ 2113 0814 00       		.byte	0
+ 2114 0815 00       		.byte	0
+ 2115 0816 00       		.byte	0
+ 2116 0817 00       		.byte	0
+ 2117 0818 08       		.byte	8
+ 2118 0819 00       		.byte	0
+ 2119 081a 00       		.byte	0
+ 2120 081b 00       		.byte	0
+ 2121 081c 00       		.byte	0
+ 2122 081d 00       		.byte	0
+ 2123 081e 00       		.byte	0
+ 2124 081f 04       		.byte	4
+ 2125 0820 FF       		.byte	-1
+ 2126 0821 FF       		.byte	-1
+ 2127 0822 FF       		.byte	-1
+ 2128 0823 01       		.byte	1
+ 2129 0824 00       		.byte	0
+ 2130 0825 00       		.byte	0
+ 2131 0826 00       		.byte	0
+ 2132 0827 00       		.byte	0
+ 2133 0828 08       		.byte	8
+ 2134 0829 00       		.byte	0
+ 2135 082a 00       		.byte	0
+ 2136 082b 00       		.byte	0
+ 2137 082c 00       		.byte	0
+ 2138 082d 00       		.byte	0
+ 2139 082e 00       		.byte	0
+ 2140 082f 04       		.byte	4
+ 2141 0830 FF       		.byte	-1
+ 2142 0831 FF       		.byte	-1
+ 2143 0832 FF       		.byte	-1
+ 2144 0833 00       		.byte	0
+ 2145 0834 00       		.byte	0
+ 2146 0835 00       		.byte	0
+ 2147 0836 00       		.byte	0
+ 2148 0837 00       		.byte	0
+ 2149 0838 08       		.byte	8
+ 2150 0839 00       		.byte	0
+ 2151 083a 00       		.byte	0
+ 2152 083b 00       		.byte	0
+ 2153 083c C0       		.byte	-64
+ 2154 083d 01       		.byte	1
+ 2155 083e 00       		.byte	0
+ 2156 083f 06       		.byte	6
+ 2157 0840 FF       		.byte	-1
+ 2158 0841 FF       		.byte	-1
+ 2159 0842 FF       		.byte	-1
+ 2160 0843 00       		.byte	0
+ 2161 0844 00       		.byte	0
+ 2162 0845 00       		.byte	0
+ 2163 0846 00       		.byte	0
+ 2164 0847 00       		.byte	0
+ 2165 0848 08       		.byte	8
+ 2166 0849 00       		.byte	0
+ 2167 084a 00       		.byte	0
+ 2168 084b 00       		.byte	0
+ 2169 084c 20       		.byte	32
+ 2170 084d 02       		.byte	2
+ 2171 084e 00       		.byte	0
+ 2172 084f 04       		.byte	4
+ 2173 0850 FF       		.byte	-1
+ 2174 0851 FF       		.byte	-1
+ 2175 0852 7F       		.byte	127
+ 2176 0853 00       		.byte	0
+ 2177 0854 00       		.byte	0
+ 2178 0855 00       		.byte	0
+ 2179 0856 00       		.byte	0
+ 2180 0857 00       		.byte	0
+ 2181 0858 08       		.byte	8
+ 2182 0859 00       		.byte	0
+ 2183 085a 00       		.byte	0
+ 2184 085b 00       		.byte	0
+ 2185 085c 00       		.byte	0
+ 2186 085d 04       		.byte	4
+ 2187 085e 10       		.byte	16
+ 2188 085f 04       		.byte	4
+ 2189 0860 FF       		.byte	-1
+ 2190 0861 FF       		.byte	-1
+ 2191 0862 3F       		.byte	63
+ 2192 0863 00       		.byte	0
+ 2193 0864 00       		.byte	0
+ 2194 0865 00       		.byte	0
+ 2195 0866 00       		.byte	0
+ 2196 0867 00       		.byte	0
+ 2197 0868 08       		.byte	8
+ 2198 0869 00       		.byte	0
+ 2199 086a 00       		.byte	0
+ 2200 086b 00       		.byte	0
+ 2201 086c 00       		.byte	0
+ 2202 086d 04       		.byte	4
+ 2203 086e A0       		.byte	-96
+ 2204 086f 04       		.byte	4
+ 2205 0870 FF       		.byte	-1
+ 2206 0871 FF       		.byte	-1
+ 2207 0872 1F       		.byte	31
+ 2208 0873 00       		.byte	0
+ 2209 0874 00       		.byte	0
+ 2210 0875 00       		.byte	0
+ 2211 0876 00       		.byte	0
+ 2212 0877 00       		.byte	0
+ 2213 0878 08       		.byte	8
+ 2214 0879 00       		.byte	0
+ 2215 087a 00       		.byte	0
+ 2216 087b 00       		.byte	0
+ 2217 087c 00       		.byte	0
+ 2218 087d 04       		.byte	4
+ 2219 087e 00       		.byte	0
+ 2220 087f 04       		.byte	4
+ 2221 0880 FF       		.byte	-1
+ 2222 0881 FF       		.byte	-1
+ 2223 0882 07       		.byte	7
+ 2224 0883 00       		.byte	0
+ 2225 0884 00       		.byte	0
+ 2226 0885 00       		.byte	0
+ 2227 0886 00       		.byte	0
+ 2228 0887 00       		.byte	0
+ 2229 0888 08       		.byte	8
+ 2230 0889 00       		.byte	0
+ 2231 088a 00       		.byte	0
+ 2232 088b 00       		.byte	0
+ 2233 088c 00       		.byte	0
+ 2234 088d 04       		.byte	4
+ 2235 088e 40       		.byte	64
+ 2236 088f 07       		.byte	7
+ 2237 0890 FF       		.byte	-1
+ 2238 0891 FF       		.byte	-1
+ 2239 0892 01       		.byte	1
+ 2240 0893 00       		.byte	0
+ 2241 0894 00       		.byte	0
+ 2242 0895 00       		.byte	0
+ 2243 0896 00       		.byte	0
+ 2244 0897 00       		.byte	0
+ 2245 0898 08       		.byte	8
+ 2246 0899 00       		.byte	0
+ 2247 089a 00       		.byte	0
+ 2248 089b 00       		.byte	0
+ 2249 089c 00       		.byte	0
+ 2250 089d 04       		.byte	4
+ 2251 089e 00       		.byte	0
+ 2252 089f 04       		.byte	4
+ 2253 08a0 FF       		.byte	-1
+ 2254 08a1 FF       		.byte	-1
+ 2255 08a2 00       		.byte	0
+ 2256 08a3 00       		.byte	0
+ 2257 08a4 00       		.byte	0
+ 2258 08a5 00       		.byte	0
+ 2259 08a6 00       		.byte	0
+ 2260 08a7 00       		.byte	0
+ 2261 08a8 08       		.byte	8
+ 2262 08a9 00       		.byte	0
+ 2263 08aa 00       		.byte	0
+ 2264 08ab 00       		.byte	0
+ 2265 08ac 00       		.byte	0
+ 2266 08ad 04       		.byte	4
+ 2267 08ae 00       		.byte	0
+ 2268 08af 04       		.byte	4
+ 2269              		.align	2
+ 2272              	castle_gray_bits:
+ 2273 08b0 00       		.byte	0
+ 2274 08b1 00       		.byte	0
+ 2275 08b2 00       		.byte	0
+ 2276 08b3 00       		.byte	0
+ 2277 08b4 00       		.byte	0
+ 2278 08b5 00       		.byte	0
+ 2279 08b6 00       		.byte	0
+ 2280 08b7 00       		.byte	0
+ 2281 08b8 00       		.byte	0
+ 2282 08b9 F8       		.byte	-8
+ 2283 08ba FF       		.byte	-1
+ 2284 08bb FF       		.byte	-1
+ 2285 08bc FF       		.byte	-1
+ 2286 08bd FF       		.byte	-1
+ 2287 08be FF       		.byte	-1
+ 2288 08bf FF       		.byte	-1
+ 2289 08c0 00       		.byte	0
+ 2290 08c1 00       		.byte	0
+ 2291 08c2 00       		.byte	0
+ 2292 08c3 00       		.byte	0
+ 2293 08c4 00       		.byte	0
+ 2294 08c5 00       		.byte	0
+ 2295 08c6 00       		.byte	0
+ 2296 08c7 00       		.byte	0
+ 2297 08c8 00       		.byte	0
+ 2298 08c9 FE       		.byte	-2
+ 2299 08ca FF       		.byte	-1
+ 2300 08cb FF       		.byte	-1
+ 2301 08cc FF       		.byte	-1
+ 2302 08cd FF       		.byte	-1
+ 2303 08ce FF       		.byte	-1
+ 2304 08cf FF       		.byte	-1
+ 2305 08d0 00       		.byte	0
+ 2306 08d1 00       		.byte	0
+ 2307 08d2 00       		.byte	0
+ 2308 08d3 00       		.byte	0
+ 2309 08d4 00       		.byte	0
+ 2310 08d5 00       		.byte	0
+ 2311 08d6 00       		.byte	0
+ 2312 08d7 00       		.byte	0
+ 2313 08d8 FE       		.byte	-2
+ 2314 08d9 FF       		.byte	-1
+ 2315 08da FF       		.byte	-1
+ 2316 08db FF       		.byte	-1
+ 2317 08dc FF       		.byte	-1
+ 2318 08dd FF       		.byte	-1
+ 2319 08de FF       		.byte	-1
+ 2320 08df FF       		.byte	-1
+ 2321 08e0 00       		.byte	0
+ 2322 08e1 00       		.byte	0
+ 2323 08e2 00       		.byte	0
+ 2324 08e3 00       		.byte	0
+ 2325 08e4 00       		.byte	0
+ 2326 08e5 00       		.byte	0
+ 2327 08e6 00       		.byte	0
+ 2328 08e7 80       		.byte	-128
+ 2329 08e8 FF       		.byte	-1
+ 2330 08e9 FF       		.byte	-1
+ 2331 08ea FF       		.byte	-1
+ 2332 08eb FF       		.byte	-1
+ 2333 08ec FF       		.byte	-1
+ 2334 08ed FF       		.byte	-1
+ 2335 08ee FF       		.byte	-1
+ 2336 08ef FF       		.byte	-1
+ 2337 08f0 00       		.byte	0
+ 2338 08f1 00       		.byte	0
+ 2339 08f2 00       		.byte	0
+ 2340 08f3 00       		.byte	0
+ 2341 08f4 00       		.byte	0
+ 2342 08f5 00       		.byte	0
+ 2343 08f6 00       		.byte	0
+ 2344 08f7 C0       		.byte	-64
+ 2345 08f8 FF       		.byte	-1
+ 2346 08f9 FF       		.byte	-1
+ 2347 08fa FF       		.byte	-1
+ 2348 08fb FF       		.byte	-1
+ 2349 08fc FF       		.byte	-1
+ 2350 08fd FF       		.byte	-1
+ 2351 08fe FF       		.byte	-1
+ 2352 08ff FF       		.byte	-1
+ 2353 0900 00       		.byte	0
+ 2354 0901 00       		.byte	0
+ 2355 0902 00       		.byte	0
+ 2356 0903 00       		.byte	0
+ 2357 0904 00       		.byte	0
+ 2358 0905 00       		.byte	0
+ 2359 0906 00       		.byte	0
+ 2360 0907 E0       		.byte	-32
+ 2361 0908 FF       		.byte	-1
+ 2362 0909 FF       		.byte	-1
+ 2363 090a FF       		.byte	-1
+ 2364 090b FF       		.byte	-1
+ 2365 090c BF       		.byte	-65
+ 2366 090d FF       		.byte	-1
+ 2367 090e FF       		.byte	-1
+ 2368 090f FF       		.byte	-1
+ 2369 0910 00       		.byte	0
+ 2370 0911 00       		.byte	0
+ 2371 0912 00       		.byte	0
+ 2372 0913 00       		.byte	0
+ 2373 0914 00       		.byte	0
+ 2374 0915 00       		.byte	0
+ 2375 0916 00       		.byte	0
+ 2376 0917 F8       		.byte	-8
+ 2377 0918 FF       		.byte	-1
+ 2378 0919 CF       		.byte	-49
+ 2379 091a FF       		.byte	-1
+ 2380 091b F3       		.byte	-13
+ 2381 091c BF       		.byte	-65
+ 2382 091d FF       		.byte	-1
+ 2383 091e FF       		.byte	-1
+ 2384 091f FF       		.byte	-1
+ 2385 0920 00       		.byte	0
+ 2386 0921 00       		.byte	0
+ 2387 0922 00       		.byte	0
+ 2388 0923 00       		.byte	0
+ 2389 0924 00       		.byte	0
+ 2390 0925 00       		.byte	0
+ 2391 0926 00       		.byte	0
+ 2392 0927 FC       		.byte	-4
+ 2393 0928 FF       		.byte	-1
+ 2394 0929 8F       		.byte	-113
+ 2395 092a FF       		.byte	-1
+ 2396 092b F1       		.byte	-15
+ 2397 092c 3F       		.byte	63
+ 2398 092d FF       		.byte	-1
+ 2399 092e F9       		.byte	-7
+ 2400 092f FF       		.byte	-1
+ 2401 0930 00       		.byte	0
+ 2402 0931 00       		.byte	0
+ 2403 0932 00       		.byte	0
+ 2404 0933 00       		.byte	0
+ 2405 0934 00       		.byte	0
+ 2406 0935 00       		.byte	0
+ 2407 0936 00       		.byte	0
+ 2408 0937 FE       		.byte	-2
+ 2409 0938 EF       		.byte	-17
+ 2410 0939 8F       		.byte	-113
+ 2411 093a FF       		.byte	-1
+ 2412 093b F0       		.byte	-16
+ 2413 093c 1F       		.byte	31
+ 2414 093d FE       		.byte	-2
+ 2415 093e F9       		.byte	-7
+ 2416 093f FF       		.byte	-1
+ 2417 0940 00       		.byte	0
+ 2418 0941 00       		.byte	0
+ 2419 0942 00       		.byte	0
+ 2420 0943 00       		.byte	0
+ 2421 0944 00       		.byte	0
+ 2422 0945 00       		.byte	0
+ 2423 0946 00       		.byte	0
+ 2424 0947 FF       		.byte	-1
+ 2425 0948 EF       		.byte	-17
+ 2426 0949 87       		.byte	-121
+ 2427 094a FF       		.byte	-1
+ 2428 094b E0       		.byte	-32
+ 2429 094c 1F       		.byte	31
+ 2430 094d FE       		.byte	-2
+ 2431 094e F9       		.byte	-7
+ 2432 094f FF       		.byte	-1
+ 2433 0950 00       		.byte	0
+ 2434 0951 00       		.byte	0
+ 2435 0952 00       		.byte	0
+ 2436 0953 00       		.byte	0
+ 2437 0954 00       		.byte	0
+ 2438 0955 00       		.byte	0
+ 2439 0956 80       		.byte	-128
+ 2440 0957 FF       		.byte	-1
+ 2441 0958 E7       		.byte	-25
+ 2442 0959 07       		.byte	7
+ 2443 095a 7E       		.byte	126
+ 2444 095b C0       		.byte	-64
+ 2445 095c 1F       		.byte	31
+ 2446 095d FC       		.byte	-4
+ 2447 095e E0       		.byte	-32
+ 2448 095f FF       		.byte	-1
+ 2449 0960 00       		.byte	0
+ 2450 0961 00       		.byte	0
+ 2451 0962 00       		.byte	0
+ 2452 0963 00       		.byte	0
+ 2453 0964 00       		.byte	0
+ 2454 0965 00       		.byte	0
+ 2455 0966 C0       		.byte	-64
+ 2456 0967 FF       		.byte	-1
+ 2457 0968 E7       		.byte	-25
+ 2458 0969 07       		.byte	7
+ 2459 096a 1C       		.byte	28
+ 2460 096b 00       		.byte	0
+ 2461 096c 0E       		.byte	14
+ 2462 096d 38       		.byte	56
+ 2463 096e E0       		.byte	-32
+ 2464 096f FF       		.byte	-1
+ 2465 0970 00       		.byte	0
+ 2466 0971 00       		.byte	0
+ 2467 0972 00       		.byte	0
+ 2468 0973 00       		.byte	0
+ 2469 0974 00       		.byte	0
+ 2470 0975 00       		.byte	0
+ 2471 0976 C0       		.byte	-64
+ 2472 0977 FF       		.byte	-1
+ 2473 0978 E3       		.byte	-29
+ 2474 0979 03       		.byte	3
+ 2475 097a 00       		.byte	0
+ 2476 097b 00       		.byte	0
+ 2477 097c 00       		.byte	0
+ 2478 097d 00       		.byte	0
+ 2479 097e C0       		.byte	-64
+ 2480 097f F7       		.byte	-9
+ 2481 0980 00       		.byte	0
+ 2482 0981 00       		.byte	0
+ 2483 0982 00       		.byte	0
+ 2484 0983 00       		.byte	0
+ 2485 0984 00       		.byte	0
+ 2486 0985 00       		.byte	0
+ 2487 0986 C0       		.byte	-64
+ 2488 0987 FF       		.byte	-1
+ 2489 0988 C3       		.byte	-61
+ 2490 0989 01       		.byte	1
+ 2491 098a 00       		.byte	0
+ 2492 098b 00       		.byte	0
+ 2493 098c 00       		.byte	0
+ 2494 098d 00       		.byte	0
+ 2495 098e 80       		.byte	-128
+ 2496 098f E7       		.byte	-25
+ 2497 0990 00       		.byte	0
+ 2498 0991 00       		.byte	0
+ 2499 0992 00       		.byte	0
+ 2500 0993 00       		.byte	0
+ 2501 0994 00       		.byte	0
+ 2502 0995 00       		.byte	0
+ 2503 0996 E0       		.byte	-32
+ 2504 0997 FF       		.byte	-1
+ 2505 0998 03       		.byte	3
+ 2506 0999 00       		.byte	0
+ 2507 099a 00       		.byte	0
+ 2508 099b 00       		.byte	0
+ 2509 099c 00       		.byte	0
+ 2510 099d 00       		.byte	0
+ 2511 099e 80       		.byte	-128
+ 2512 099f C3       		.byte	-61
+ 2513 09a0 00       		.byte	0
+ 2514 09a1 00       		.byte	0
+ 2515 09a2 00       		.byte	0
+ 2516 09a3 00       		.byte	0
+ 2517 09a4 00       		.byte	0
+ 2518 09a5 00       		.byte	0
+ 2519 09a6 E0       		.byte	-32
+ 2520 09a7 FF       		.byte	-1
+ 2521 09a8 01       		.byte	1
+ 2522 09a9 00       		.byte	0
+ 2523 09aa 00       		.byte	0
+ 2524 09ab 00       		.byte	0
+ 2525 09ac 00       		.byte	0
+ 2526 09ad 00       		.byte	0
+ 2527 09ae 00       		.byte	0
+ 2528 09af C0       		.byte	-64
+ 2529 09b0 00       		.byte	0
+ 2530 09b1 00       		.byte	0
+ 2531 09b2 00       		.byte	0
+ 2532 09b3 00       		.byte	0
+ 2533 09b4 00       		.byte	0
+ 2534 09b5 00       		.byte	0
+ 2535 09b6 F0       		.byte	-16
+ 2536 09b7 9F       		.byte	-97
+ 2537 09b8 01       		.byte	1
+ 2538 09b9 00       		.byte	0
+ 2539 09ba 00       		.byte	0
+ 2540 09bb 00       		.byte	0
+ 2541 09bc 00       		.byte	0
+ 2542 09bd 00       		.byte	0
+ 2543 09be 00       		.byte	0
+ 2544 09bf 80       		.byte	-128
+ 2545 09c0 00       		.byte	0
+ 2546 09c1 00       		.byte	0
+ 2547 09c2 00       		.byte	0
+ 2548 09c3 00       		.byte	0
+ 2549 09c4 00       		.byte	0
+ 2550 09c5 00       		.byte	0
+ 2551 09c6 F0       		.byte	-16
+ 2552 09c7 8F       		.byte	-113
+ 2553 09c8 00       		.byte	0
+ 2554 09c9 00       		.byte	0
+ 2555 09ca 00       		.byte	0
+ 2556 09cb 00       		.byte	0
+ 2557 09cc 00       		.byte	0
+ 2558 09cd 00       		.byte	0
+ 2559 09ce 00       		.byte	0
+ 2560 09cf 80       		.byte	-128
+ 2561 09d0 00       		.byte	0
+ 2562 09d1 00       		.byte	0
+ 2563 09d2 00       		.byte	0
+ 2564 09d3 00       		.byte	0
+ 2565 09d4 00       		.byte	0
+ 2566 09d5 00       		.byte	0
+ 2567 09d6 F8       		.byte	-8
+ 2568 09d7 8F       		.byte	-113
+ 2569 09d8 00       		.byte	0
+ 2570 09d9 00       		.byte	0
+ 2571 09da 00       		.byte	0
+ 2572 09db 00       		.byte	0
+ 2573 09dc 00       		.byte	0
+ 2574 09dd 00       		.byte	0
+ 2575 09de 00       		.byte	0
+ 2576 09df 00       		.byte	0
+ 2577 09e0 00       		.byte	0
+ 2578 09e1 00       		.byte	0
+ 2579 09e2 00       		.byte	0
+ 2580 09e3 00       		.byte	0
+ 2581 09e4 00       		.byte	0
+ 2582 09e5 00       		.byte	0
+ 2583 09e6 FC       		.byte	-4
+ 2584 09e7 0F       		.byte	15
+ 2585 09e8 00       		.byte	0
+ 2586 09e9 00       		.byte	0
+ 2587 09ea 00       		.byte	0
+ 2588 09eb 00       		.byte	0
+ 2589 09ec 00       		.byte	0
+ 2590 09ed 00       		.byte	0
+ 2591 09ee 00       		.byte	0
+ 2592 09ef 00       		.byte	0
+ 2593 09f0 00       		.byte	0
+ 2594 09f1 00       		.byte	0
+ 2595 09f2 00       		.byte	0
+ 2596 09f3 00       		.byte	0
+ 2597 09f4 00       		.byte	0
+ 2598 09f5 00       		.byte	0
+ 2599 09f6 FC       		.byte	-4
+ 2600 09f7 0F       		.byte	15
+ 2601 09f8 00       		.byte	0
+ 2602 09f9 00       		.byte	0
+ 2603 09fa 00       		.byte	0
+ 2604 09fb 00       		.byte	0
+ 2605 09fc 00       		.byte	0
+ 2606 09fd 00       		.byte	0
+ 2607 09fe 00       		.byte	0
+ 2608 09ff 00       		.byte	0
+ 2609 0a00 00       		.byte	0
+ 2610 0a01 00       		.byte	0
+ 2611 0a02 00       		.byte	0
+ 2612 0a03 00       		.byte	0
+ 2613 0a04 00       		.byte	0
+ 2614 0a05 00       		.byte	0
+ 2615 0a06 FC       		.byte	-4
+ 2616 0a07 0F       		.byte	15
+ 2617 0a08 00       		.byte	0
+ 2618 0a09 00       		.byte	0
+ 2619 0a0a 00       		.byte	0
+ 2620 0a0b 00       		.byte	0
+ 2621 0a0c 00       		.byte	0
+ 2622 0a0d 00       		.byte	0
+ 2623 0a0e 00       		.byte	0
+ 2624 0a0f 00       		.byte	0
+ 2625 0a10 00       		.byte	0
+ 2626 0a11 00       		.byte	0
+ 2627 0a12 00       		.byte	0
+ 2628 0a13 00       		.byte	0
+ 2629 0a14 00       		.byte	0
+ 2630 0a15 00       		.byte	0
+ 2631 0a16 FC       		.byte	-4
+ 2632 0a17 0F       		.byte	15
+ 2633 0a18 00       		.byte	0
+ 2634 0a19 00       		.byte	0
+ 2635 0a1a 00       		.byte	0
+ 2636 0a1b 00       		.byte	0
+ 2637 0a1c 00       		.byte	0
+ 2638 0a1d 00       		.byte	0
+ 2639 0a1e 00       		.byte	0
+ 2640 0a1f 00       		.byte	0
+ 2641 0a20 00       		.byte	0
+ 2642 0a21 00       		.byte	0
+ 2643 0a22 00       		.byte	0
+ 2644 0a23 00       		.byte	0
+ 2645 0a24 00       		.byte	0
+ 2646 0a25 00       		.byte	0
+ 2647 0a26 FC       		.byte	-4
+ 2648 0a27 0F       		.byte	15
+ 2649 0a28 00       		.byte	0
+ 2650 0a29 00       		.byte	0
+ 2651 0a2a 00       		.byte	0
+ 2652 0a2b 00       		.byte	0
+ 2653 0a2c 00       		.byte	0
+ 2654 0a2d 00       		.byte	0
+ 2655 0a2e 00       		.byte	0
+ 2656 0a2f 00       		.byte	0
+ 2657 0a30 00       		.byte	0
+ 2658 0a31 00       		.byte	0
+ 2659 0a32 00       		.byte	0
+ 2660 0a33 00       		.byte	0
+ 2661 0a34 00       		.byte	0
+ 2662 0a35 00       		.byte	0
+ 2663 0a36 FE       		.byte	-2
+ 2664 0a37 07       		.byte	7
+ 2665 0a38 00       		.byte	0
+ 2666 0a39 00       		.byte	0
+ 2667 0a3a 00       		.byte	0
+ 2668 0a3b 00       		.byte	0
+ 2669 0a3c 00       		.byte	0
+ 2670 0a3d 00       		.byte	0
+ 2671 0a3e 00       		.byte	0
+ 2672 0a3f 00       		.byte	0
+ 2673 0a40 00       		.byte	0
+ 2674 0a41 00       		.byte	0
+ 2675 0a42 00       		.byte	0
+ 2676 0a43 00       		.byte	0
+ 2677 0a44 00       		.byte	0
+ 2678 0a45 00       		.byte	0
+ 2679 0a46 FE       		.byte	-2
+ 2680 0a47 07       		.byte	7
+ 2681 0a48 00       		.byte	0
+ 2682 0a49 00       		.byte	0
+ 2683 0a4a 00       		.byte	0
+ 2684 0a4b 00       		.byte	0
+ 2685 0a4c 00       		.byte	0
+ 2686 0a4d 00       		.byte	0
+ 2687 0a4e 00       		.byte	0
+ 2688 0a4f 00       		.byte	0
+ 2689 0a50 00       		.byte	0
+ 2690 0a51 00       		.byte	0
+ 2691 0a52 00       		.byte	0
+ 2692 0a53 00       		.byte	0
+ 2693 0a54 00       		.byte	0
+ 2694 0a55 00       		.byte	0
+ 2695 0a56 FE       		.byte	-2
+ 2696 0a57 07       		.byte	7
+ 2697 0a58 00       		.byte	0
+ 2698 0a59 00       		.byte	0
+ 2699 0a5a 80       		.byte	-128
+ 2700 0a5b 03       		.byte	3
+ 2701 0a5c 00       		.byte	0
+ 2702 0a5d 00       		.byte	0
+ 2703 0a5e 00       		.byte	0
+ 2704 0a5f 00       		.byte	0
+ 2705 0a60 00       		.byte	0
+ 2706 0a61 00       		.byte	0
+ 2707 0a62 00       		.byte	0
+ 2708 0a63 00       		.byte	0
+ 2709 0a64 00       		.byte	0
+ 2710 0a65 00       		.byte	0
+ 2711 0a66 FE       		.byte	-2
+ 2712 0a67 03       		.byte	3
+ 2713 0a68 00       		.byte	0
+ 2714 0a69 00       		.byte	0
+ 2715 0a6a 00       		.byte	0
+ 2716 0a6b 02       		.byte	2
+ 2717 0a6c 00       		.byte	0
+ 2718 0a6d 00       		.byte	0
+ 2719 0a6e 00       		.byte	0
+ 2720 0a6f 00       		.byte	0
+ 2721 0a70 00       		.byte	0
+ 2722 0a71 00       		.byte	0
+ 2723 0a72 00       		.byte	0
+ 2724 0a73 00       		.byte	0
+ 2725 0a74 00       		.byte	0
+ 2726 0a75 00       		.byte	0
+ 2727 0a76 FF       		.byte	-1
+ 2728 0a77 03       		.byte	3
+ 2729 0a78 00       		.byte	0
+ 2730 0a79 00       		.byte	0
+ 2731 0a7a 00       		.byte	0
+ 2732 0a7b 02       		.byte	2
+ 2733 0a7c 00       		.byte	0
+ 2734 0a7d 00       		.byte	0
+ 2735 0a7e 00       		.byte	0
+ 2736 0a7f 00       		.byte	0
+ 2737 0a80 00       		.byte	0
+ 2738 0a81 00       		.byte	0
+ 2739 0a82 00       		.byte	0
+ 2740 0a83 00       		.byte	0
+ 2741 0a84 00       		.byte	0
+ 2742 0a85 00       		.byte	0
+ 2743 0a86 FF       		.byte	-1
+ 2744 0a87 03       		.byte	3
+ 2745 0a88 00       		.byte	0
+ 2746 0a89 00       		.byte	0
+ 2747 0a8a 00       		.byte	0
+ 2748 0a8b 02       		.byte	2
+ 2749 0a8c 00       		.byte	0
+ 2750 0a8d 00       		.byte	0
+ 2751 0a8e 00       		.byte	0
+ 2752 0a8f 00       		.byte	0
+ 2753 0a90 00       		.byte	0
+ 2754 0a91 00       		.byte	0
+ 2755 0a92 00       		.byte	0
+ 2756 0a93 00       		.byte	0
+ 2757 0a94 00       		.byte	0
+ 2758 0a95 00       		.byte	0
+ 2759 0a96 FF       		.byte	-1
+ 2760 0a97 03       		.byte	3
+ 2761 0a98 00       		.byte	0
+ 2762 0a99 00       		.byte	0
+ 2763 0a9a 00       		.byte	0
+ 2764 0a9b 02       		.byte	2
+ 2765 0a9c 00       		.byte	0
+ 2766 0a9d 00       		.byte	0
+ 2767 0a9e 00       		.byte	0
+ 2768 0a9f 00       		.byte	0
+ 2769 0aa0 00       		.byte	0
+ 2770 0aa1 00       		.byte	0
+ 2771 0aa2 00       		.byte	0
+ 2772 0aa3 00       		.byte	0
+ 2773 0aa4 00       		.byte	0
+ 2774 0aa5 00       		.byte	0
+ 2775 0aa6 FF       		.byte	-1
+ 2776 0aa7 03       		.byte	3
+ 2777 0aa8 00       		.byte	0
+ 2778 0aa9 0C       		.byte	12
+ 2779 0aaa 80       		.byte	-128
+ 2780 0aab 02       		.byte	2
+ 2781 0aac 60       		.byte	96
+ 2782 0aad 00       		.byte	0
+ 2783 0aae 00       		.byte	0
+ 2784 0aaf 00       		.byte	0
+ 2785 0ab0 00       		.byte	0
+ 2786 0ab1 00       		.byte	0
+ 2787 0ab2 00       		.byte	0
+ 2788 0ab3 00       		.byte	0
+ 2789 0ab4 00       		.byte	0
+ 2790 0ab5 00       		.byte	0
+ 2791 0ab6 FF       		.byte	-1
+ 2792 0ab7 03       		.byte	3
+ 2793 0ab8 00       		.byte	0
+ 2794 0ab9 08       		.byte	8
+ 2795 0aba 00       		.byte	0
+ 2796 0abb 03       		.byte	3
+ 2797 0abc 40       		.byte	64
+ 2798 0abd 00       		.byte	0
+ 2799 0abe 00       		.byte	0
+ 2800 0abf 00       		.byte	0
+ 2801 0ac0 00       		.byte	0
+ 2802 0ac1 00       		.byte	0
+ 2803 0ac2 00       		.byte	0
+ 2804 0ac3 00       		.byte	0
+ 2805 0ac4 00       		.byte	0
+ 2806 0ac5 00       		.byte	0
+ 2807 0ac6 FF       		.byte	-1
+ 2808 0ac7 03       		.byte	3
+ 2809 0ac8 00       		.byte	0
+ 2810 0ac9 08       		.byte	8
+ 2811 0aca 00       		.byte	0
+ 2812 0acb 03       		.byte	3
+ 2813 0acc 40       		.byte	64
+ 2814 0acd 00       		.byte	0
+ 2815 0ace 00       		.byte	0
+ 2816 0acf 00       		.byte	0
+ 2817 0ad0 00       		.byte	0
+ 2818 0ad1 00       		.byte	0
+ 2819 0ad2 00       		.byte	0
+ 2820 0ad3 00       		.byte	0
+ 2821 0ad4 00       		.byte	0
+ 2822 0ad5 80       		.byte	-128
+ 2823 0ad6 FF       		.byte	-1
+ 2824 0ad7 03       		.byte	3
+ 2825 0ad8 00       		.byte	0
+ 2826 0ad9 0A       		.byte	10
+ 2827 0ada 00       		.byte	0
+ 2828 0adb 03       		.byte	3
+ 2829 0adc 40       		.byte	64
+ 2830 0add 00       		.byte	0
+ 2831 0ade 00       		.byte	0
+ 2832 0adf 00       		.byte	0
+ 2833 0ae0 00       		.byte	0
+ 2834 0ae1 00       		.byte	0
+ 2835 0ae2 00       		.byte	0
+ 2836 0ae3 00       		.byte	0
+ 2837 0ae4 00       		.byte	0
+ 2838 0ae5 B0       		.byte	-80
+ 2839 0ae6 FF       		.byte	-1
+ 2840 0ae7 01       		.byte	1
+ 2841 0ae8 00       		.byte	0
+ 2842 0ae9 0C       		.byte	12
+ 2843 0aea 00       		.byte	0
+ 2844 0aeb 03       		.byte	3
+ 2845 0aec 40       		.byte	64
+ 2846 0aed 00       		.byte	0
+ 2847 0aee 00       		.byte	0
+ 2848 0aef 00       		.byte	0
+ 2849 0af0 00       		.byte	0
+ 2850 0af1 00       		.byte	0
+ 2851 0af2 00       		.byte	0
+ 2852 0af3 00       		.byte	0
+ 2853 0af4 00       		.byte	0
+ 2854 0af5 F8       		.byte	-8
+ 2855 0af6 FF       		.byte	-1
+ 2856 0af7 01       		.byte	1
+ 2857 0af8 00       		.byte	0
+ 2858 0af9 0C       		.byte	12
+ 2859 0afa 80       		.byte	-128
+ 2860 0afb 07       		.byte	7
+ 2861 0afc 60       		.byte	96
+ 2862 0afd 00       		.byte	0
+ 2863 0afe 00       		.byte	0
+ 2864 0aff 00       		.byte	0
+ 2865 0b00 00       		.byte	0
+ 2866 0b01 00       		.byte	0
+ 2867 0b02 00       		.byte	0
+ 2868 0b03 00       		.byte	0
+ 2869 0b04 00       		.byte	0
+ 2870 0b05 FC       		.byte	-4
+ 2871 0b06 FF       		.byte	-1
+ 2872 0b07 01       		.byte	1
+ 2873 0b08 00       		.byte	0
+ 2874 0b09 18       		.byte	24
+ 2875 0b0a 00       		.byte	0
+ 2876 0b0b 04       		.byte	4
+ 2877 0b0c 58       		.byte	88
+ 2878 0b0d 00       		.byte	0
+ 2879 0b0e C0       		.byte	-64
+ 2880 0b0f 00       		.byte	0
+ 2881 0b10 00       		.byte	0
+ 2882 0b11 00       		.byte	0
+ 2883 0b12 00       		.byte	0
+ 2884 0b13 00       		.byte	0
+ 2885 0b14 00       		.byte	0
+ 2886 0b15 FC       		.byte	-4
+ 2887 0b16 FF       		.byte	-1
+ 2888 0b17 00       		.byte	0
+ 2889 0b18 00       		.byte	0
+ 2890 0b19 14       		.byte	20
+ 2891 0b1a 00       		.byte	0
+ 2892 0b1b 06       		.byte	6
+ 2893 0b1c C0       		.byte	-64
+ 2894 0b1d 00       		.byte	0
+ 2895 0b1e C0       		.byte	-64
+ 2896 0b1f 00       		.byte	0
+ 2897 0b20 00       		.byte	0
+ 2898 0b21 00       		.byte	0
+ 2899 0b22 00       		.byte	0
+ 2900 0b23 00       		.byte	0
+ 2901 0b24 00       		.byte	0
+ 2902 0b25 FC       		.byte	-4
+ 2903 0b26 7F       		.byte	127
+ 2904 0b27 00       		.byte	0
+ 2905 0b28 00       		.byte	0
+ 2906 0b29 10       		.byte	16
+ 2907 0b2a 00       		.byte	0
+ 2908 0b2b 45       		.byte	69
+ 2909 0b2c A0       		.byte	-96
+ 2910 0b2d 00       		.byte	0
+ 2911 0b2e 80       		.byte	-128
+ 2912 0b2f 00       		.byte	0
+ 2913 0b30 00       		.byte	0
+ 2914 0b31 00       		.byte	0
+ 2915 0b32 00       		.byte	0
+ 2916 0b33 00       		.byte	0
+ 2917 0b34 00       		.byte	0
+ 2918 0b35 FE       		.byte	-2
+ 2919 0b36 7F       		.byte	127
+ 2920 0b37 00       		.byte	0
+ 2921 0b38 00       		.byte	0
+ 2922 0b39 10       		.byte	16
+ 2923 0b3a 00       		.byte	0
+ 2924 0b3b 80       		.byte	-128
+ 2925 0b3c C1       		.byte	-63
+ 2926 0b3d 00       		.byte	0
+ 2927 0b3e 80       		.byte	-128
+ 2928 0b3f 00       		.byte	0
+ 2929 0b40 00       		.byte	0
+ 2930 0b41 00       		.byte	0
+ 2931 0b42 00       		.byte	0
+ 2932 0b43 00       		.byte	0
+ 2933 0b44 00       		.byte	0
+ 2934 0b45 FE       		.byte	-2
+ 2935 0b46 3F       		.byte	63
+ 2936 0b47 00       		.byte	0
+ 2937 0b48 00       		.byte	0
+ 2938 0b49 10       		.byte	16
+ 2939 0b4a 00       		.byte	0
+ 2940 0b4b 00       		.byte	0
+ 2941 0b4c F0       		.byte	-16
+ 2942 0b4d 00       		.byte	0
+ 2943 0b4e A0       		.byte	-96
+ 2944 0b4f 00       		.byte	0
+ 2945 0b50 00       		.byte	0
+ 2946 0b51 00       		.byte	0
+ 2947 0b52 00       		.byte	0
+ 2948 0b53 00       		.byte	0
+ 2949 0b54 00       		.byte	0
+ 2950 0b55 FF       		.byte	-1
+ 2951 0b56 3F       		.byte	63
+ 2952 0b57 00       		.byte	0
+ 2953 0b58 00       		.byte	0
+ 2954 0b59 10       		.byte	16
+ 2955 0b5a 00       		.byte	0
+ 2956 0b5b 00       		.byte	0
+ 2957 0b5c E0       		.byte	-32
+ 2958 0b5d 00       		.byte	0
+ 2959 0b5e C0       		.byte	-64
+ 2960 0b5f 00       		.byte	0
+ 2961 0b60 00       		.byte	0
+ 2962 0b61 00       		.byte	0
+ 2963 0b62 00       		.byte	0
+ 2964 0b63 00       		.byte	0
+ 2965 0b64 80       		.byte	-128
+ 2966 0b65 FF       		.byte	-1
+ 2967 0b66 1F       		.byte	31
+ 2968 0b67 00       		.byte	0
+ 2969 0b68 00       		.byte	0
+ 2970 0b69 18       		.byte	24
+ 2971 0b6a 00       		.byte	0
+ 2972 0b6b 02       		.byte	2
+ 2973 0b6c C0       		.byte	-64
+ 2974 0b6d 00       		.byte	0
+ 2975 0b6e C0       		.byte	-64
+ 2976 0b6f 00       		.byte	0
+ 2977 0b70 00       		.byte	0
+ 2978 0b71 00       		.byte	0
+ 2979 0b72 00       		.byte	0
+ 2980 0b73 00       		.byte	0
+ 2981 0b74 FE       		.byte	-2
+ 2982 0b75 FF       		.byte	-1
+ 2983 0b76 19       		.byte	25
+ 2984 0b77 00       		.byte	0
+ 2985 0b78 00       		.byte	0
+ 2986 0b79 14       		.byte	20
+ 2987 0b7a 00       		.byte	0
+ 2988 0b7b 02       		.byte	2
+ 2989 0b7c 00       		.byte	0
+ 2990 0b7d 30       		.byte	48
+ 2991 0b7e 80       		.byte	-128
+ 2992 0b7f 00       		.byte	0
+ 2993 0b80 00       		.byte	0
+ 2994 0b81 00       		.byte	0
+ 2995 0b82 00       		.byte	0
+ 2996 0b83 00       		.byte	0
+ 2997 0b84 FF       		.byte	-1
+ 2998 0b85 FF       		.byte	-1
+ 2999 0b86 18       		.byte	24
+ 3000 0b87 00       		.byte	0
+ 3001 0b88 00       		.byte	0
+ 3002 0b89 3F       		.byte	63
+ 3003 0b8a 03       		.byte	3
+ 3004 0b8b 05       		.byte	5
+ 3005 0b8c 00       		.byte	0
+ 3006 0b8d 00       		.byte	0
+ 3007 0b8e 00       		.byte	0
+ 3008 0b8f 01       		.byte	1
+ 3009 0b90 00       		.byte	0
+ 3010 0b91 00       		.byte	0
+ 3011 0b92 00       		.byte	0
+ 3012 0b93 C0       		.byte	-64
+ 3013 0b94 FF       		.byte	-1
+ 3014 0b95 FF       		.byte	-1
+ 3015 0b96 08       		.byte	8
+ 3016 0b97 00       		.byte	0
+ 3017 0b98 00       		.byte	0
+ 3018 0b99 E4       		.byte	-28
+ 3019 0b9a C0       		.byte	-64
+ 3020 0b9b 00       		.byte	0
+ 3021 0b9c 04       		.byte	4
+ 3022 0b9d 00       		.byte	0
+ 3023 0b9e 00       		.byte	0
+ 3024 0b9f 01       		.byte	1
+ 3025 0ba0 00       		.byte	0
+ 3026 0ba1 00       		.byte	0
+ 3027 0ba2 00       		.byte	0
+ 3028 0ba3 C0       		.byte	-64
+ 3029 0ba4 FF       		.byte	-1
+ 3030 0ba5 7F       		.byte	127
+ 3031 0ba6 00       		.byte	0
+ 3032 0ba7 00       		.byte	0
+ 3033 0ba8 00       		.byte	0
+ 3034 0ba9 20       		.byte	32
+ 3035 0baa 00       		.byte	0
+ 3036 0bab 00       		.byte	0
+ 3037 0bac 08       		.byte	8
+ 3038 0bad 00       		.byte	0
+ 3039 0bae 00       		.byte	0
+ 3040 0baf 01       		.byte	1
+ 3041 0bb0 00       		.byte	0
+ 3042 0bb1 00       		.byte	0
+ 3043 0bb2 00       		.byte	0
+ 3044 0bb3 E0       		.byte	-32
+ 3045 0bb4 FF       		.byte	-1
+ 3046 0bb5 7F       		.byte	127
+ 3047 0bb6 00       		.byte	0
+ 3048 0bb7 00       		.byte	0
+ 3049 0bb8 00       		.byte	0
+ 3050 0bb9 10       		.byte	16
+ 3051 0bba 00       		.byte	0
+ 3052 0bbb 00       		.byte	0
+ 3053 0bbc 06       		.byte	6
+ 3054 0bbd 00       		.byte	0
+ 3055 0bbe 00       		.byte	0
+ 3056 0bbf 01       		.byte	1
+ 3057 0bc0 00       		.byte	0
+ 3058 0bc1 00       		.byte	0
+ 3059 0bc2 00       		.byte	0
+ 3060 0bc3 E0       		.byte	-32
+ 3061 0bc4 FF       		.byte	-1
+ 3062 0bc5 3F       		.byte	63
+ 3063 0bc6 00       		.byte	0
+ 3064 0bc7 00       		.byte	0
+ 3065 0bc8 00       		.byte	0
+ 3066 0bc9 00       		.byte	0
+ 3067 0bca 00       		.byte	0
+ 3068 0bcb 80       		.byte	-128
+ 3069 0bcc 01       		.byte	1
+ 3070 0bcd 00       		.byte	0
+ 3071 0bce 80       		.byte	-128
+ 3072 0bcf 01       		.byte	1
+ 3073 0bd0 00       		.byte	0
+ 3074 0bd1 00       		.byte	0
+ 3075 0bd2 00       		.byte	0
+ 3076 0bd3 F0       		.byte	-16
+ 3077 0bd4 FF       		.byte	-1
+ 3078 0bd5 3F       		.byte	63
+ 3079 0bd6 00       		.byte	0
+ 3080 0bd7 00       		.byte	0
+ 3081 0bd8 00       		.byte	0
+ 3082 0bd9 00       		.byte	0
+ 3083 0bda 40       		.byte	64
+ 3084 0bdb 00       		.byte	0
+ 3085 0bdc 00       		.byte	0
+ 3086 0bdd 00       		.byte	0
+ 3087 0bde 40       		.byte	64
+ 3088 0bdf 01       		.byte	1
+ 3089 0be0 00       		.byte	0
+ 3090 0be1 00       		.byte	0
+ 3091 0be2 00       		.byte	0
+ 3092 0be3 F0       		.byte	-16
+ 3093 0be4 FF       		.byte	-1
+ 3094 0be5 1F       		.byte	31
+ 3095 0be6 00       		.byte	0
+ 3096 0be7 00       		.byte	0
+ 3097 0be8 00       		.byte	0
+ 3098 0be9 00       		.byte	0
+ 3099 0bea 80       		.byte	-128
+ 3100 0beb 03       		.byte	3
+ 3101 0bec 00       		.byte	0
+ 3102 0bed 00       		.byte	0
+ 3103 0bee 30       		.byte	48
+ 3104 0bef 01       		.byte	1
+ 3105 0bf0 00       		.byte	0
+ 3106 0bf1 00       		.byte	0
+ 3107 0bf2 00       		.byte	0
+ 3108 0bf3 F8       		.byte	-8
+ 3109 0bf4 FF       		.byte	-1
+ 3110 0bf5 1B       		.byte	27
+ 3111 0bf6 00       		.byte	0
+ 3112 0bf7 00       		.byte	0
+ 3113 0bf8 00       		.byte	0
+ 3114 0bf9 00       		.byte	0
+ 3115 0bfa E0       		.byte	-32
+ 3116 0bfb 10       		.byte	16
+ 3117 0bfc 00       		.byte	0
+ 3118 0bfd 00       		.byte	0
+ 3119 0bfe 00       		.byte	0
+ 3120 0bff 03       		.byte	3
+ 3121 0c00 00       		.byte	0
+ 3122 0c01 00       		.byte	0
+ 3123 0c02 00       		.byte	0
+ 3124 0c03 FC       		.byte	-4
+ 3125 0c04 FF       		.byte	-1
+ 3126 0c05 01       		.byte	1
+ 3127 0c06 00       		.byte	0
+ 3128 0c07 00       		.byte	0
+ 3129 0c08 00       		.byte	0
+ 3130 0c09 00       		.byte	0
+ 3131 0c0a 80       		.byte	-128
+ 3132 0c0b 0F       		.byte	15
+ 3133 0c0c 00       		.byte	0
+ 3134 0c0d 00       		.byte	0
+ 3135 0c0e 90       		.byte	-112
+ 3136 0c0f 03       		.byte	3
+ 3137 0c10 00       		.byte	0
+ 3138 0c11 00       		.byte	0
+ 3139 0c12 00       		.byte	0
+ 3140 0c13 FE       		.byte	-2
+ 3141 0c14 FF       		.byte	-1
+ 3142 0c15 01       		.byte	1
+ 3143 0c16 00       		.byte	0
+ 3144 0c17 00       		.byte	0
+ 3145 0c18 00       		.byte	0
+ 3146 0c19 00       		.byte	0
+ 3147 0c1a 00       		.byte	0
+ 3148 0c1b 00       		.byte	0
+ 3149 0c1c 00       		.byte	0
+ 3150 0c1d 00       		.byte	0
+ 3151 0c1e E0       		.byte	-32
+ 3152 0c1f 03       		.byte	3
+ 3153 0c20 00       		.byte	0
+ 3154 0c21 00       		.byte	0
+ 3155 0c22 00       		.byte	0
+ 3156 0c23 FE       		.byte	-2
+ 3157 0c24 FF       		.byte	-1
+ 3158 0c25 00       		.byte	0
+ 3159 0c26 00       		.byte	0
+ 3160 0c27 00       		.byte	0
+ 3161 0c28 00       		.byte	0
+ 3162 0c29 00       		.byte	0
+ 3163 0c2a 00       		.byte	0
+ 3164 0c2b 00       		.byte	0
+ 3165 0c2c 00       		.byte	0
+ 3166 0c2d 00       		.byte	0
+ 3167 0c2e F4       		.byte	-12
+ 3168 0c2f 03       		.byte	3
+ 3169 0c30 00       		.byte	0
+ 3170 0c31 00       		.byte	0
+ 3171 0c32 00       		.byte	0
+ 3172 0c33 FF       		.byte	-1
+ 3173 0c34 FF       		.byte	-1
+ 3174 0c35 00       		.byte	0
+ 3175 0c36 00       		.byte	0
+ 3176 0c37 00       		.byte	0
+ 3177 0c38 00       		.byte	0
+ 3178 0c39 20       		.byte	32
+ 3179 0c3a 00       		.byte	0
+ 3180 0c3b 00       		.byte	0
+ 3181 0c3c 00       		.byte	0
+ 3182 0c3d 00       		.byte	0
+ 3183 0c3e F8       		.byte	-8
+ 3184 0c3f 01       		.byte	1
+ 3185 0c40 00       		.byte	0
+ 3186 0c41 00       		.byte	0
+ 3187 0c42 00       		.byte	0
+ 3188 0c43 FF       		.byte	-1
+ 3189 0c44 7F       		.byte	127
+ 3190 0c45 00       		.byte	0
+ 3191 0c46 00       		.byte	0
+ 3192 0c47 00       		.byte	0
+ 3193 0c48 00       		.byte	0
+ 3194 0c49 C0       		.byte	-64
+ 3195 0c4a 10       		.byte	16
+ 3196 0c4b 00       		.byte	0
+ 3197 0c4c 00       		.byte	0
+ 3198 0c4d 00       		.byte	0
+ 3199 0c4e F8       		.byte	-8
+ 3200 0c4f 03       		.byte	3
+ 3201 0c50 00       		.byte	0
+ 3202 0c51 00       		.byte	0
+ 3203 0c52 80       		.byte	-128
+ 3204 0c53 FF       		.byte	-1
+ 3205 0c54 3F       		.byte	63
+ 3206 0c55 00       		.byte	0
+ 3207 0c56 00       		.byte	0
+ 3208 0c57 00       		.byte	0
+ 3209 0c58 00       		.byte	0
+ 3210 0c59 00       		.byte	0
+ 3211 0c5a 0F       		.byte	15
+ 3212 0c5b 00       		.byte	0
+ 3213 0c5c E0       		.byte	-32
+ 3214 0c5d 00       		.byte	0
+ 3215 0c5e E0       		.byte	-32
+ 3216 0c5f 03       		.byte	3
+ 3217 0c60 00       		.byte	0
+ 3218 0c61 00       		.byte	0
+ 3219 0c62 C0       		.byte	-64
+ 3220 0c63 FF       		.byte	-1
+ 3221 0c64 1F       		.byte	31
+ 3222 0c65 00       		.byte	0
+ 3223 0c66 00       		.byte	0
+ 3224 0c67 00       		.byte	0
+ 3225 0c68 00       		.byte	0
+ 3226 0c69 60       		.byte	96
+ 3227 0c6a 02       		.byte	2
+ 3228 0c6b 00       		.byte	0
+ 3229 0c6c F0       		.byte	-16
+ 3230 0c6d 01       		.byte	1
+ 3231 0c6e 50       		.byte	80
+ 3232 0c6f 03       		.byte	3
+ 3233 0c70 00       		.byte	0
+ 3234 0c71 00       		.byte	0
+ 3235 0c72 E0       		.byte	-32
+ 3236 0c73 FF       		.byte	-1
+ 3237 0c74 1F       		.byte	31
+ 3238 0c75 00       		.byte	0
+ 3239 0c76 00       		.byte	0
+ 3240 0c77 00       		.byte	0
+ 3241 0c78 00       		.byte	0
+ 3242 0c79 80       		.byte	-128
+ 3243 0c7a 11       		.byte	17
+ 3244 0c7b 00       		.byte	0
+ 3245 0c7c F0       		.byte	-16
+ 3246 0c7d 01       		.byte	1
+ 3247 0c7e EC       		.byte	-20
+ 3248 0c7f 03       		.byte	3
+ 3249 0c80 00       		.byte	0
+ 3250 0c81 00       		.byte	0
+ 3251 0c82 F8       		.byte	-8
+ 3252 0c83 FF       		.byte	-1
+ 3253 0c84 0F       		.byte	15
+ 3254 0c85 00       		.byte	0
+ 3255 0c86 00       		.byte	0
+ 3256 0c87 00       		.byte	0
+ 3257 0c88 00       		.byte	0
+ 3258 0c89 00       		.byte	0
+ 3259 0c8a 0E       		.byte	14
+ 3260 0c8b 20       		.byte	32
+ 3261 0c8c F0       		.byte	-16
+ 3262 0c8d 22       		.byte	34
+ 3263 0c8e A0       		.byte	-96
+ 3264 0c8f 00       		.byte	0
+ 3265 0c90 00       		.byte	0
+ 3266 0c91 00       		.byte	0
+ 3267 0c92 FE       		.byte	-2
+ 3268 0c93 FF       		.byte	-1
+ 3269 0c94 07       		.byte	7
+ 3270 0c95 00       		.byte	0
+ 3271 0c96 00       		.byte	0
+ 3272 0c97 00       		.byte	0
+ 3273 0c98 00       		.byte	0
+ 3274 0c99 00       		.byte	0
+ 3275 0c9a 00       		.byte	0
+ 3276 0c9b 18       		.byte	24
+ 3277 0c9c 70       		.byte	112
+ 3278 0c9d C1       		.byte	-63
+ 3279 0c9e C0       		.byte	-64
+ 3280 0c9f 03       		.byte	3
+ 3281 0ca0 00       		.byte	0
+ 3282 0ca1 00       		.byte	0
+ 3283 0ca2 FF       		.byte	-1
+ 3284 0ca3 FF       		.byte	-1
+ 3285 0ca4 03       		.byte	3
+ 3286 0ca5 00       		.byte	0
+ 3287 0ca6 00       		.byte	0
+ 3288 0ca7 00       		.byte	0
+ 3289 0ca8 00       		.byte	0
+ 3290 0ca9 00       		.byte	0
+ 3291 0caa 00       		.byte	0
+ 3292 0cab E4       		.byte	-28
+ 3293 0cac F3       		.byte	-13
+ 3294 0cad 70       		.byte	112
+ 3295 0cae C2       		.byte	-62
+ 3296 0caf 03       		.byte	3
+ 3297              		.align	2
+ 3300              	castle_light_bits:
+ 3301 0cb0 00       		.byte	0
+ 3302 0cb1 00       		.byte	0
+ 3303 0cb2 00       		.byte	0
+ 3304 0cb3 00       		.byte	0
+ 3305 0cb4 00       		.byte	0
+ 3306 0cb5 00       		.byte	0
+ 3307 0cb6 00       		.byte	0
+ 3308 0cb7 00       		.byte	0
+ 3309 0cb8 00       		.byte	0
+ 3310 0cb9 00       		.byte	0
+ 3311 0cba 00       		.byte	0
+ 3312 0cbb 00       		.byte	0
+ 3313 0cbc 00       		.byte	0
+ 3314 0cbd 00       		.byte	0
+ 3315 0cbe 00       		.byte	0
+ 3316 0cbf 00       		.byte	0
+ 3317 0cc0 00       		.byte	0
+ 3318 0cc1 00       		.byte	0
+ 3319 0cc2 00       		.byte	0
+ 3320 0cc3 00       		.byte	0
+ 3321 0cc4 00       		.byte	0
+ 3322 0cc5 00       		.byte	0
+ 3323 0cc6 00       		.byte	0
+ 3324 0cc7 00       		.byte	0
+ 3325 0cc8 00       		.byte	0
+ 3326 0cc9 00       		.byte	0
+ 3327 0cca 00       		.byte	0
+ 3328 0ccb 00       		.byte	0
+ 3329 0ccc 00       		.byte	0
+ 3330 0ccd 00       		.byte	0
+ 3331 0cce 00       		.byte	0
+ 3332 0ccf 00       		.byte	0
+ 3333 0cd0 00       		.byte	0
+ 3334 0cd1 00       		.byte	0
+ 3335 0cd2 00       		.byte	0
+ 3336 0cd3 00       		.byte	0
+ 3337 0cd4 00       		.byte	0
+ 3338 0cd5 00       		.byte	0
+ 3339 0cd6 00       		.byte	0
+ 3340 0cd7 00       		.byte	0
+ 3341 0cd8 00       		.byte	0
+ 3342 0cd9 00       		.byte	0
+ 3343 0cda 00       		.byte	0
+ 3344 0cdb 00       		.byte	0
+ 3345 0cdc 00       		.byte	0
+ 3346 0cdd 00       		.byte	0
+ 3347 0cde 00       		.byte	0
+ 3348 0cdf 00       		.byte	0
+ 3349 0ce0 00       		.byte	0
+ 3350 0ce1 00       		.byte	0
+ 3351 0ce2 00       		.byte	0
+ 3352 0ce3 00       		.byte	0
+ 3353 0ce4 00       		.byte	0
+ 3354 0ce5 00       		.byte	0
+ 3355 0ce6 00       		.byte	0
+ 3356 0ce7 00       		.byte	0
+ 3357 0ce8 00       		.byte	0
+ 3358 0ce9 00       		.byte	0
+ 3359 0cea 00       		.byte	0
+ 3360 0ceb 00       		.byte	0
+ 3361 0cec 00       		.byte	0
+ 3362 0ced 00       		.byte	0
+ 3363 0cee 00       		.byte	0
+ 3364 0cef 00       		.byte	0
+ 3365 0cf0 00       		.byte	0
+ 3366 0cf1 00       		.byte	0
+ 3367 0cf2 00       		.byte	0
+ 3368 0cf3 00       		.byte	0
+ 3369 0cf4 00       		.byte	0
+ 3370 0cf5 00       		.byte	0
+ 3371 0cf6 00       		.byte	0
+ 3372 0cf7 00       		.byte	0
+ 3373 0cf8 00       		.byte	0
+ 3374 0cf9 00       		.byte	0
+ 3375 0cfa 00       		.byte	0
+ 3376 0cfb 00       		.byte	0
+ 3377 0cfc 00       		.byte	0
+ 3378 0cfd 00       		.byte	0
+ 3379 0cfe 00       		.byte	0
+ 3380 0cff 00       		.byte	0
+ 3381 0d00 00       		.byte	0
+ 3382 0d01 00       		.byte	0
+ 3383 0d02 00       		.byte	0
+ 3384 0d03 00       		.byte	0
+ 3385 0d04 00       		.byte	0
+ 3386 0d05 00       		.byte	0
+ 3387 0d06 00       		.byte	0
+ 3388 0d07 00       		.byte	0
+ 3389 0d08 00       		.byte	0
+ 3390 0d09 00       		.byte	0
+ 3391 0d0a 00       		.byte	0
+ 3392 0d0b 00       		.byte	0
+ 3393 0d0c 40       		.byte	64
+ 3394 0d0d 00       		.byte	0
+ 3395 0d0e 00       		.byte	0
+ 3396 0d0f 00       		.byte	0
+ 3397 0d10 00       		.byte	0
+ 3398 0d11 00       		.byte	0
+ 3399 0d12 00       		.byte	0
+ 3400 0d13 00       		.byte	0
+ 3401 0d14 00       		.byte	0
+ 3402 0d15 00       		.byte	0
+ 3403 0d16 00       		.byte	0
+ 3404 0d17 00       		.byte	0
+ 3405 0d18 00       		.byte	0
+ 3406 0d19 30       		.byte	48
+ 3407 0d1a 00       		.byte	0
+ 3408 0d1b 0C       		.byte	12
+ 3409 0d1c 40       		.byte	64
+ 3410 0d1d 00       		.byte	0
+ 3411 0d1e 00       		.byte	0
+ 3412 0d1f 00       		.byte	0
+ 3413 0d20 00       		.byte	0
+ 3414 0d21 00       		.byte	0
+ 3415 0d22 00       		.byte	0
+ 3416 0d23 00       		.byte	0
+ 3417 0d24 00       		.byte	0
+ 3418 0d25 00       		.byte	0
+ 3419 0d26 00       		.byte	0
+ 3420 0d27 00       		.byte	0
+ 3421 0d28 00       		.byte	0
+ 3422 0d29 70       		.byte	112
+ 3423 0d2a 00       		.byte	0
+ 3424 0d2b 0E       		.byte	14
+ 3425 0d2c C0       		.byte	-64
+ 3426 0d2d 00       		.byte	0
+ 3427 0d2e 06       		.byte	6
+ 3428 0d2f 00       		.byte	0
+ 3429 0d30 00       		.byte	0
+ 3430 0d31 00       		.byte	0
+ 3431 0d32 00       		.byte	0
+ 3432 0d33 00       		.byte	0
+ 3433 0d34 00       		.byte	0
+ 3434 0d35 00       		.byte	0
+ 3435 0d36 00       		.byte	0
+ 3436 0d37 00       		.byte	0
+ 3437 0d38 10       		.byte	16
+ 3438 0d39 70       		.byte	112
+ 3439 0d3a 00       		.byte	0
+ 3440 0d3b 0F       		.byte	15
+ 3441 0d3c E0       		.byte	-32
+ 3442 0d3d 01       		.byte	1
+ 3443 0d3e 06       		.byte	6
+ 3444 0d3f 00       		.byte	0
+ 3445 0d40 00       		.byte	0
+ 3446 0d41 00       		.byte	0
+ 3447 0d42 00       		.byte	0
+ 3448 0d43 00       		.byte	0
+ 3449 0d44 00       		.byte	0
+ 3450 0d45 00       		.byte	0
+ 3451 0d46 00       		.byte	0
+ 3452 0d47 00       		.byte	0
+ 3453 0d48 10       		.byte	16
+ 3454 0d49 78       		.byte	120
+ 3455 0d4a 00       		.byte	0
+ 3456 0d4b 1F       		.byte	31
+ 3457 0d4c E0       		.byte	-32
+ 3458 0d4d 01       		.byte	1
+ 3459 0d4e 06       		.byte	6
+ 3460 0d4f 00       		.byte	0
+ 3461 0d50 00       		.byte	0
+ 3462 0d51 00       		.byte	0
+ 3463 0d52 00       		.byte	0
+ 3464 0d53 00       		.byte	0
+ 3465 0d54 00       		.byte	0
+ 3466 0d55 00       		.byte	0
+ 3467 0d56 00       		.byte	0
+ 3468 0d57 00       		.byte	0
+ 3469 0d58 18       		.byte	24
+ 3470 0d59 F8       		.byte	-8
+ 3471 0d5a 81       		.byte	-127
+ 3472 0d5b 3F       		.byte	63
+ 3473 0d5c E0       		.byte	-32
+ 3474 0d5d 03       		.byte	3
+ 3475 0d5e 1F       		.byte	31
+ 3476 0d5f 00       		.byte	0
+ 3477 0d60 00       		.byte	0
+ 3478 0d61 00       		.byte	0
+ 3479 0d62 00       		.byte	0
+ 3480 0d63 00       		.byte	0
+ 3481 0d64 00       		.byte	0
+ 3482 0d65 00       		.byte	0
+ 3483 0d66 00       		.byte	0
+ 3484 0d67 00       		.byte	0
+ 3485 0d68 18       		.byte	24
+ 3486 0d69 F8       		.byte	-8
+ 3487 0d6a E3       		.byte	-29
+ 3488 0d6b FF       		.byte	-1
+ 3489 0d6c F1       		.byte	-15
+ 3490 0d6d C7       		.byte	-57
+ 3491 0d6e 1F       		.byte	31
+ 3492 0d6f 00       		.byte	0
+ 3493 0d70 00       		.byte	0
+ 3494 0d71 00       		.byte	0
+ 3495 0d72 00       		.byte	0
+ 3496 0d73 00       		.byte	0
+ 3497 0d74 00       		.byte	0
+ 3498 0d75 00       		.byte	0
+ 3499 0d76 00       		.byte	0
+ 3500 0d77 00       		.byte	0
+ 3501 0d78 1C       		.byte	28
+ 3502 0d79 FC       		.byte	-4
+ 3503 0d7a FF       		.byte	-1
+ 3504 0d7b FF       		.byte	-1
+ 3505 0d7c FF       		.byte	-1
+ 3506 0d7d FF       		.byte	-1
+ 3507 0d7e 3F       		.byte	63
+ 3508 0d7f 08       		.byte	8
+ 3509 0d80 00       		.byte	0
+ 3510 0d81 00       		.byte	0
+ 3511 0d82 00       		.byte	0
+ 3512 0d83 00       		.byte	0
+ 3513 0d84 00       		.byte	0
+ 3514 0d85 00       		.byte	0
+ 3515 0d86 00       		.byte	0
+ 3516 0d87 00       		.byte	0
+ 3517 0d88 3C       		.byte	60
+ 3518 0d89 FE       		.byte	-2
+ 3519 0d8a FF       		.byte	-1
+ 3520 0d8b FF       		.byte	-1
+ 3521 0d8c FF       		.byte	-1
+ 3522 0d8d FF       		.byte	-1
+ 3523 0d8e 7F       		.byte	127
+ 3524 0d8f 18       		.byte	24
+ 3525 0d90 00       		.byte	0
+ 3526 0d91 00       		.byte	0
+ 3527 0d92 00       		.byte	0
+ 3528 0d93 00       		.byte	0
+ 3529 0d94 00       		.byte	0
+ 3530 0d95 00       		.byte	0
+ 3531 0d96 00       		.byte	0
+ 3532 0d97 00       		.byte	0
+ 3533 0d98 FC       		.byte	-4
+ 3534 0d99 FF       		.byte	-1
+ 3535 0d9a FF       		.byte	-1
+ 3536 0d9b FF       		.byte	-1
+ 3537 0d9c FF       		.byte	-1
+ 3538 0d9d FF       		.byte	-1
+ 3539 0d9e 7F       		.byte	127
+ 3540 0d9f 3C       		.byte	60
+ 3541 0da0 00       		.byte	0
+ 3542 0da1 00       		.byte	0
+ 3543 0da2 00       		.byte	0
+ 3544 0da3 00       		.byte	0
+ 3545 0da4 00       		.byte	0
+ 3546 0da5 00       		.byte	0
+ 3547 0da6 00       		.byte	0
+ 3548 0da7 00       		.byte	0
+ 3549 0da8 FE       		.byte	-2
+ 3550 0da9 FF       		.byte	-1
+ 3551 0daa FF       		.byte	-1
+ 3552 0dab FF       		.byte	-1
+ 3553 0dac FF       		.byte	-1
+ 3554 0dad FF       		.byte	-1
+ 3555 0dae FF       		.byte	-1
+ 3556 0daf 3F       		.byte	63
+ 3557 0db0 00       		.byte	0
+ 3558 0db1 00       		.byte	0
+ 3559 0db2 00       		.byte	0
+ 3560 0db3 00       		.byte	0
+ 3561 0db4 00       		.byte	0
+ 3562 0db5 00       		.byte	0
+ 3563 0db6 00       		.byte	0
+ 3564 0db7 60       		.byte	96
+ 3565 0db8 FE       		.byte	-2
+ 3566 0db9 FF       		.byte	-1
+ 3567 0dba FF       		.byte	-1
+ 3568 0dbb FF       		.byte	-1
+ 3569 0dbc FF       		.byte	-1
+ 3570 0dbd FF       		.byte	-1
+ 3571 0dbe FF       		.byte	-1
+ 3572 0dbf 7F       		.byte	127
+ 3573 0dc0 00       		.byte	0
+ 3574 0dc1 00       		.byte	0
+ 3575 0dc2 00       		.byte	0
+ 3576 0dc3 00       		.byte	0
+ 3577 0dc4 00       		.byte	0
+ 3578 0dc5 00       		.byte	0
+ 3579 0dc6 00       		.byte	0
+ 3580 0dc7 70       		.byte	112
+ 3581 0dc8 FF       		.byte	-1
+ 3582 0dc9 FF       		.byte	-1
+ 3583 0dca FF       		.byte	-1
+ 3584 0dcb FF       		.byte	-1
+ 3585 0dcc FF       		.byte	-1
+ 3586 0dcd FF       		.byte	-1
+ 3587 0dce FF       		.byte	-1
+ 3588 0dcf 7F       		.byte	127
+ 3589 0dd0 00       		.byte	0
+ 3590 0dd1 00       		.byte	0
+ 3591 0dd2 00       		.byte	0
+ 3592 0dd3 00       		.byte	0
+ 3593 0dd4 00       		.byte	0
+ 3594 0dd5 00       		.byte	0
+ 3595 0dd6 00       		.byte	0
+ 3596 0dd7 70       		.byte	112
+ 3597 0dd8 FF       		.byte	-1
+ 3598 0dd9 FF       		.byte	-1
+ 3599 0dda FF       		.byte	-1
+ 3600 0ddb FF       		.byte	-1
+ 3601 0ddc FF       		.byte	-1
+ 3602 0ddd FF       		.byte	-1
+ 3603 0dde FF       		.byte	-1
+ 3604 0ddf FF       		.byte	-1
+ 3605 0de0 00       		.byte	0
+ 3606 0de1 00       		.byte	0
+ 3607 0de2 00       		.byte	0
+ 3608 0de3 00       		.byte	0
+ 3609 0de4 00       		.byte	0
+ 3610 0de5 00       		.byte	0
+ 3611 0de6 00       		.byte	0
+ 3612 0de7 F0       		.byte	-16
+ 3613 0de8 FF       		.byte	-1
+ 3614 0de9 FF       		.byte	-1
+ 3615 0dea FF       		.byte	-1
+ 3616 0deb FF       		.byte	-1
+ 3617 0dec FF       		.byte	-1
+ 3618 0ded FF       		.byte	-1
+ 3619 0dee FF       		.byte	-1
+ 3620 0def FF       		.byte	-1
+ 3621 0df0 00       		.byte	0
+ 3622 0df1 00       		.byte	0
+ 3623 0df2 00       		.byte	0
+ 3624 0df3 00       		.byte	0
+ 3625 0df4 00       		.byte	0
+ 3626 0df5 00       		.byte	0
+ 3627 0df6 00       		.byte	0
+ 3628 0df7 F0       		.byte	-16
+ 3629 0df8 FF       		.byte	-1
+ 3630 0df9 FF       		.byte	-1
+ 3631 0dfa FF       		.byte	-1
+ 3632 0dfb FF       		.byte	-1
+ 3633 0dfc FF       		.byte	-1
+ 3634 0dfd FF       		.byte	-1
+ 3635 0dfe FF       		.byte	-1
+ 3636 0dff FF       		.byte	-1
+ 3637 0e00 00       		.byte	0
+ 3638 0e01 00       		.byte	0
+ 3639 0e02 00       		.byte	0
+ 3640 0e03 00       		.byte	0
+ 3641 0e04 00       		.byte	0
+ 3642 0e05 00       		.byte	0
+ 3643 0e06 00       		.byte	0
+ 3644 0e07 F0       		.byte	-16
+ 3645 0e08 FF       		.byte	-1
+ 3646 0e09 FF       		.byte	-1
+ 3647 0e0a FF       		.byte	-1
+ 3648 0e0b FF       		.byte	-1
+ 3649 0e0c FF       		.byte	-1
+ 3650 0e0d FF       		.byte	-1
+ 3651 0e0e FF       		.byte	-1
+ 3652 0e0f FF       		.byte	-1
+ 3653 0e10 00       		.byte	0
+ 3654 0e11 00       		.byte	0
+ 3655 0e12 00       		.byte	0
+ 3656 0e13 00       		.byte	0
+ 3657 0e14 00       		.byte	0
+ 3658 0e15 00       		.byte	0
+ 3659 0e16 00       		.byte	0
+ 3660 0e17 F0       		.byte	-16
+ 3661 0e18 FF       		.byte	-1
+ 3662 0e19 FF       		.byte	-1
+ 3663 0e1a 6F       		.byte	111
+ 3664 0e1b FB       		.byte	-5
+ 3665 0e1c FF       		.byte	-1
+ 3666 0e1d FF       		.byte	-1
+ 3667 0e1e FF       		.byte	-1
+ 3668 0e1f FF       		.byte	-1
+ 3669 0e20 00       		.byte	0
+ 3670 0e21 00       		.byte	0
+ 3671 0e22 00       		.byte	0
+ 3672 0e23 00       		.byte	0
+ 3673 0e24 00       		.byte	0
+ 3674 0e25 00       		.byte	0
+ 3675 0e26 00       		.byte	0
+ 3676 0e27 F0       		.byte	-16
+ 3677 0e28 FF       		.byte	-1
+ 3678 0e29 FF       		.byte	-1
+ 3679 0e2a 07       		.byte	7
+ 3680 0e2b F0       		.byte	-16
+ 3681 0e2c FF       		.byte	-1
+ 3682 0e2d FF       		.byte	-1
+ 3683 0e2e FF       		.byte	-1
+ 3684 0e2f FF       		.byte	-1
+ 3685 0e30 00       		.byte	0
+ 3686 0e31 00       		.byte	0
+ 3687 0e32 00       		.byte	0
+ 3688 0e33 00       		.byte	0
+ 3689 0e34 00       		.byte	0
+ 3690 0e35 00       		.byte	0
+ 3691 0e36 00       		.byte	0
+ 3692 0e37 F8       		.byte	-8
+ 3693 0e38 FF       		.byte	-1
+ 3694 0e39 FF       		.byte	-1
+ 3695 0e3a 07       		.byte	7
+ 3696 0e3b F4       		.byte	-12
+ 3697 0e3c FF       		.byte	-1
+ 3698 0e3d FF       		.byte	-1
+ 3699 0e3e FF       		.byte	-1
+ 3700 0e3f FF       		.byte	-1
+ 3701 0e40 00       		.byte	0
+ 3702 0e41 00       		.byte	0
+ 3703 0e42 00       		.byte	0
+ 3704 0e43 00       		.byte	0
+ 3705 0e44 00       		.byte	0
+ 3706 0e45 00       		.byte	0
+ 3707 0e46 00       		.byte	0
+ 3708 0e47 F8       		.byte	-8
+ 3709 0e48 FF       		.byte	-1
+ 3710 0e49 FF       		.byte	-1
+ 3711 0e4a 07       		.byte	7
+ 3712 0e4b F0       		.byte	-16
+ 3713 0e4c 6D       		.byte	109
+ 3714 0e4d FF       		.byte	-1
+ 3715 0e4e FF       		.byte	-1
+ 3716 0e4f FF       		.byte	-1
+ 3717 0e50 00       		.byte	0
+ 3718 0e51 00       		.byte	0
+ 3719 0e52 00       		.byte	0
+ 3720 0e53 00       		.byte	0
+ 3721 0e54 00       		.byte	0
+ 3722 0e55 00       		.byte	0
+ 3723 0e56 00       		.byte	0
+ 3724 0e57 F8       		.byte	-8
+ 3725 0e58 FF       		.byte	-1
+ 3726 0e59 FF       		.byte	-1
+ 3727 0e5a 0F       		.byte	15
+ 3728 0e5b F8       		.byte	-8
+ 3729 0e5c 00       		.byte	0
+ 3730 0e5d FE       		.byte	-2
+ 3731 0e5e FF       		.byte	-1
+ 3732 0e5f FF       		.byte	-1
+ 3733 0e60 00       		.byte	0
+ 3734 0e61 00       		.byte	0
+ 3735 0e62 00       		.byte	0
+ 3736 0e63 00       		.byte	0
+ 3737 0e64 00       		.byte	0
+ 3738 0e65 00       		.byte	0
+ 3739 0e66 00       		.byte	0
+ 3740 0e67 FC       		.byte	-4
+ 3741 0e68 BF       		.byte	-65
+ 3742 0e69 ED       		.byte	-19
+ 3743 0e6a 0F       		.byte	15
+ 3744 0e6b F8       		.byte	-8
+ 3745 0e6c 00       		.byte	0
+ 3746 0e6d FE       		.byte	-2
+ 3747 0e6e FF       		.byte	-1
+ 3748 0e6f FF       		.byte	-1
+ 3749 0e70 00       		.byte	0
+ 3750 0e71 00       		.byte	0
+ 3751 0e72 00       		.byte	0
+ 3752 0e73 00       		.byte	0
+ 3753 0e74 00       		.byte	0
+ 3754 0e75 00       		.byte	0
+ 3755 0e76 00       		.byte	0
+ 3756 0e77 FC       		.byte	-4
+ 3757 0e78 1F       		.byte	31
+ 3758 0e79 C0       		.byte	-64
+ 3759 0e7a 0F       		.byte	15
+ 3760 0e7b F8       		.byte	-8
+ 3761 0e7c 80       		.byte	-128
+ 3762 0e7d FE       		.byte	-2
+ 3763 0e7e FF       		.byte	-1
+ 3764 0e7f FF       		.byte	-1
+ 3765 0e80 00       		.byte	0
+ 3766 0e81 00       		.byte	0
+ 3767 0e82 00       		.byte	0
+ 3768 0e83 00       		.byte	0
+ 3769 0e84 00       		.byte	0
+ 3770 0e85 00       		.byte	0
+ 3771 0e86 00       		.byte	0
+ 3772 0e87 FC       		.byte	-4
+ 3773 0e88 1F       		.byte	31
+ 3774 0e89 C8       		.byte	-56
+ 3775 0e8a 0F       		.byte	15
+ 3776 0e8b F9       		.byte	-7
+ 3777 0e8c 80       		.byte	-128
+ 3778 0e8d FE       		.byte	-2
+ 3779 0e8e FF       		.byte	-1
+ 3780 0e8f FF       		.byte	-1
+ 3781 0e90 00       		.byte	0
+ 3782 0e91 00       		.byte	0
+ 3783 0e92 00       		.byte	0
+ 3784 0e93 00       		.byte	0
+ 3785 0e94 00       		.byte	0
+ 3786 0e95 00       		.byte	0
+ 3787 0e96 00       		.byte	0
+ 3788 0e97 FC       		.byte	-4
+ 3789 0e98 1F       		.byte	31
+ 3790 0e99 D4       		.byte	-44
+ 3791 0e9a 0F       		.byte	15
+ 3792 0e9b F9       		.byte	-7
+ 3793 0e9c 00       		.byte	0
+ 3794 0e9d FE       		.byte	-2
+ 3795 0e9e FF       		.byte	-1
+ 3796 0e9f FF       		.byte	-1
+ 3797 0ea0 00       		.byte	0
+ 3798 0ea1 00       		.byte	0
+ 3799 0ea2 00       		.byte	0
+ 3800 0ea3 00       		.byte	0
+ 3801 0ea4 00       		.byte	0
+ 3802 0ea5 00       		.byte	0
+ 3803 0ea6 00       		.byte	0
+ 3804 0ea7 FC       		.byte	-4
+ 3805 0ea8 3F       		.byte	63
+ 3806 0ea9 E0       		.byte	-32
+ 3807 0eaa 0F       		.byte	15
+ 3808 0eab F9       		.byte	-7
+ 3809 0eac 01       		.byte	1
+ 3810 0ead FF       		.byte	-1
+ 3811 0eae FF       		.byte	-1
+ 3812 0eaf FF       		.byte	-1
+ 3813 0eb0 00       		.byte	0
+ 3814 0eb1 00       		.byte	0
+ 3815 0eb2 00       		.byte	0
+ 3816 0eb3 00       		.byte	0
+ 3817 0eb4 00       		.byte	0
+ 3818 0eb5 00       		.byte	0
+ 3819 0eb6 00       		.byte	0
+ 3820 0eb7 FC       		.byte	-4
+ 3821 0eb8 3F       		.byte	63
+ 3822 0eb9 E0       		.byte	-32
+ 3823 0eba 8F       		.byte	-113
+ 3824 0ebb F8       		.byte	-8
+ 3825 0ebc 01       		.byte	1
+ 3826 0ebd FF       		.byte	-1
+ 3827 0ebe FF       		.byte	-1
+ 3828 0ebf FF       		.byte	-1
+ 3829 0ec0 00       		.byte	0
+ 3830 0ec1 00       		.byte	0
+ 3831 0ec2 00       		.byte	0
+ 3832 0ec3 00       		.byte	0
+ 3833 0ec4 00       		.byte	0
+ 3834 0ec5 00       		.byte	0
+ 3835 0ec6 00       		.byte	0
+ 3836 0ec7 FC       		.byte	-4
+ 3837 0ec8 3F       		.byte	63
+ 3838 0ec9 E0       		.byte	-32
+ 3839 0eca 8F       		.byte	-113
+ 3840 0ecb F8       		.byte	-8
+ 3841 0ecc 19       		.byte	25
+ 3842 0ecd FF       		.byte	-1
+ 3843 0ece DB       		.byte	-37
+ 3844 0ecf FE       		.byte	-2
+ 3845 0ed0 00       		.byte	0
+ 3846 0ed1 00       		.byte	0
+ 3847 0ed2 00       		.byte	0
+ 3848 0ed3 00       		.byte	0
+ 3849 0ed4 00       		.byte	0
+ 3850 0ed5 00       		.byte	0
+ 3851 0ed6 00       		.byte	0
+ 3852 0ed7 FC       		.byte	-4
+ 3853 0ed8 3F       		.byte	63
+ 3854 0ed9 E0       		.byte	-32
+ 3855 0eda 0F       		.byte	15
+ 3856 0edb F8       		.byte	-8
+ 3857 0edc 11       		.byte	17
+ 3858 0edd FF       		.byte	-1
+ 3859 0ede 01       		.byte	1
+ 3860 0edf FD       		.byte	-3
+ 3861 0ee0 00       		.byte	0
+ 3862 0ee1 00       		.byte	0
+ 3863 0ee2 00       		.byte	0
+ 3864 0ee3 00       		.byte	0
+ 3865 0ee4 00       		.byte	0
+ 3866 0ee5 00       		.byte	0
+ 3867 0ee6 00       		.byte	0
+ 3868 0ee7 FE       		.byte	-2
+ 3869 0ee8 3F       		.byte	63
+ 3870 0ee9 E0       		.byte	-32
+ 3871 0eea 0F       		.byte	15
+ 3872 0eeb F8       		.byte	-8
+ 3873 0eec 19       		.byte	25
+ 3874 0eed FF       		.byte	-1
+ 3875 0eee 01       		.byte	1
+ 3876 0eef FD       		.byte	-3
+ 3877 0ef0 00       		.byte	0
+ 3878 0ef1 00       		.byte	0
+ 3879 0ef2 00       		.byte	0
+ 3880 0ef3 00       		.byte	0
+ 3881 0ef4 00       		.byte	0
+ 3882 0ef5 00       		.byte	0
+ 3883 0ef6 00       		.byte	0
+ 3884 0ef7 FE       		.byte	-2
+ 3885 0ef8 3F       		.byte	63
+ 3886 0ef9 E0       		.byte	-32
+ 3887 0efa 07       		.byte	7
+ 3888 0efb F0       		.byte	-16
+ 3889 0efc 01       		.byte	1
+ 3890 0efd FF       		.byte	-1
+ 3891 0efe 01       		.byte	1
+ 3892 0eff FC       		.byte	-4
+ 3893 0f00 00       		.byte	0
+ 3894 0f01 00       		.byte	0
+ 3895 0f02 00       		.byte	0
+ 3896 0f03 00       		.byte	0
+ 3897 0f04 00       		.byte	0
+ 3898 0f05 00       		.byte	0
+ 3899 0f06 00       		.byte	0
+ 3900 0f07 FE       		.byte	-2
+ 3901 0f08 1F       		.byte	31
+ 3902 0f09 C0       		.byte	-64
+ 3903 0f0a 07       		.byte	7
+ 3904 0f0b F0       		.byte	-16
+ 3905 0f0c 01       		.byte	1
+ 3906 0f0d FF       		.byte	-1
+ 3907 0f0e 03       		.byte	3
+ 3908 0f0f FE       		.byte	-2
+ 3909 0f10 00       		.byte	0
+ 3910 0f11 00       		.byte	0
+ 3911 0f12 00       		.byte	0
+ 3912 0f13 00       		.byte	0
+ 3913 0f14 00       		.byte	0
+ 3914 0f15 00       		.byte	0
+ 3915 0f16 00       		.byte	0
+ 3916 0f17 FF       		.byte	-1
+ 3917 0f18 1F       		.byte	31
+ 3918 0f19 C0       		.byte	-64
+ 3919 0f1a 07       		.byte	7
+ 3920 0f1b B0       		.byte	-80
+ 3921 0f1c 01       		.byte	1
+ 3922 0f1d FE       		.byte	-2
+ 3923 0f1e 03       		.byte	3
+ 3924 0f1f FE       		.byte	-2
+ 3925 0f20 00       		.byte	0
+ 3926 0f21 00       		.byte	0
+ 3927 0f22 00       		.byte	0
+ 3928 0f23 00       		.byte	0
+ 3929 0f24 00       		.byte	0
+ 3930 0f25 00       		.byte	0
+ 3931 0f26 80       		.byte	-128
+ 3932 0f27 FF       		.byte	-1
+ 3933 0f28 1F       		.byte	31
+ 3934 0f29 C0       		.byte	-64
+ 3935 0f2a 07       		.byte	7
+ 3936 0f2b 00       		.byte	0
+ 3937 0f2c 00       		.byte	0
+ 3938 0f2d FE       		.byte	-2
+ 3939 0f2e 03       		.byte	3
+ 3940 0f2f FE       		.byte	-2
+ 3941 0f30 00       		.byte	0
+ 3942 0f31 00       		.byte	0
+ 3943 0f32 00       		.byte	0
+ 3944 0f33 00       		.byte	0
+ 3945 0f34 00       		.byte	0
+ 3946 0f35 00       		.byte	0
+ 3947 0f36 80       		.byte	-128
+ 3948 0f37 FF       		.byte	-1
+ 3949 0f38 1F       		.byte	31
+ 3950 0f39 C0       		.byte	-64
+ 3951 0f3a 07       		.byte	7
+ 3952 0f3b 00       		.byte	0
+ 3953 0f3c 10       		.byte	16
+ 3954 0f3d FE       		.byte	-2
+ 3955 0f3e 03       		.byte	3
+ 3956 0f3f FE       		.byte	-2
+ 3957 0f40 00       		.byte	0
+ 3958 0f41 00       		.byte	0
+ 3959 0f42 00       		.byte	0
+ 3960 0f43 00       		.byte	0
+ 3961 0f44 00       		.byte	0
+ 3962 0f45 00       		.byte	0
+ 3963 0f46 C0       		.byte	-64
+ 3964 0f47 FF       		.byte	-1
+ 3965 0f48 1F       		.byte	31
+ 3966 0f49 C2       		.byte	-62
+ 3967 0f4a 07       		.byte	7
+ 3968 0f4b 00       		.byte	0
+ 3969 0f4c 00       		.byte	0
+ 3970 0f4d FE       		.byte	-2
+ 3971 0f4e 03       		.byte	3
+ 3972 0f4f FE       		.byte	-2
+ 3973 0f50 00       		.byte	0
+ 3974 0f51 00       		.byte	0
+ 3975 0f52 00       		.byte	0
+ 3976 0f53 00       		.byte	0
+ 3977 0f54 00       		.byte	0
+ 3978 0f55 00       		.byte	0
+ 3979 0f56 C0       		.byte	-64
+ 3980 0f57 FF       		.byte	-1
+ 3981 0f58 1F       		.byte	31
+ 3982 0f59 C3       		.byte	-61
+ 3983 0f5a 87       		.byte	-121
+ 3984 0f5b 00       		.byte	0
+ 3985 0f5c 00       		.byte	0
+ 3986 0f5d A4       		.byte	-92
+ 3987 0f5e 03       		.byte	3
+ 3988 0f5f FE       		.byte	-2
+ 3989 0f60 00       		.byte	0
+ 3990 0f61 00       		.byte	0
+ 3991 0f62 00       		.byte	0
+ 3992 0f63 00       		.byte	0
+ 3993 0f64 00       		.byte	0
+ 3994 0f65 00       		.byte	0
+ 3995 0f66 E0       		.byte	-32
+ 3996 0f67 FF       		.byte	-1
+ 3997 0f68 1F       		.byte	31
+ 3998 0f69 C3       		.byte	-61
+ 3999 0f6a C7       		.byte	-57
+ 4000 0f6b 00       		.byte	0
+ 4001 0f6c 00       		.byte	0
+ 4002 0f6d 00       		.byte	0
+ 4003 0f6e 03       		.byte	3
+ 4004 0f6f FE       		.byte	-2
+ 4005 0f70 00       		.byte	0
+ 4006 0f71 00       		.byte	0
+ 4007 0f72 00       		.byte	0
+ 4008 0f73 00       		.byte	0
+ 4009 0f74 00       		.byte	0
+ 4010 0f75 00       		.byte	0
+ 4011 0f76 E6       		.byte	-26
+ 4012 0f77 FF       		.byte	-1
+ 4013 0f78 1F       		.byte	31
+ 4014 0f79 C0       		.byte	-64
+ 4015 0f7a C4       		.byte	-60
+ 4016 0f7b 00       		.byte	0
+ 4017 0f7c 00       		.byte	0
+ 4018 0f7d 00       		.byte	0
+ 4019 0f7e 00       		.byte	0
+ 4020 0f7f FE       		.byte	-2
+ 4021 0f80 00       		.byte	0
+ 4022 0f81 00       		.byte	0
+ 4023 0f82 00       		.byte	0
+ 4024 0f83 00       		.byte	0
+ 4025 0f84 00       		.byte	0
+ 4026 0f85 00       		.byte	0
+ 4027 0f86 E7       		.byte	-25
+ 4028 0f87 FF       		.byte	-1
+ 4029 0f88 1F       		.byte	31
+ 4030 0f89 00       		.byte	0
+ 4031 0f8a 00       		.byte	0
+ 4032 0f8b 80       		.byte	-128
+ 4033 0f8c 01       		.byte	1
+ 4034 0f8d 00       		.byte	0
+ 4035 0f8e 00       		.byte	0
+ 4036 0f8f FC       		.byte	-4
+ 4037 0f90 00       		.byte	0
+ 4038 0f91 00       		.byte	0
+ 4039 0f92 00       		.byte	0
+ 4040 0f93 00       		.byte	0
+ 4041 0f94 00       		.byte	0
+ 4042 0f95 00       		.byte	0
+ 4043 0f96 F7       		.byte	-9
+ 4044 0f97 FF       		.byte	-1
+ 4045 0f98 1F       		.byte	31
+ 4046 0f99 00       		.byte	0
+ 4047 0f9a 00       		.byte	0
+ 4048 0f9b 80       		.byte	-128
+ 4049 0f9c 09       		.byte	9
+ 4050 0f9d 00       		.byte	0
+ 4051 0f9e 00       		.byte	0
+ 4052 0f9f FC       		.byte	-4
+ 4053 0fa0 00       		.byte	0
+ 4054 0fa1 00       		.byte	0
+ 4055 0fa2 00       		.byte	0
+ 4056 0fa3 00       		.byte	0
+ 4057 0fa4 00       		.byte	0
+ 4058 0fa5 80       		.byte	-128
+ 4059 0fa6 FF       		.byte	-1
+ 4060 0fa7 FF       		.byte	-1
+ 4061 0fa8 1F       		.byte	31
+ 4062 0fa9 00       		.byte	0
+ 4063 0faa 00       		.byte	0
+ 4064 0fab 80       		.byte	-128
+ 4065 0fac 01       		.byte	1
+ 4066 0fad 00       		.byte	0
+ 4067 0fae 20       		.byte	32
+ 4068 0faf FC       		.byte	-4
+ 4069 0fb0 00       		.byte	0
+ 4070 0fb1 00       		.byte	0
+ 4071 0fb2 00       		.byte	0
+ 4072 0fb3 00       		.byte	0
+ 4073 0fb4 00       		.byte	0
+ 4074 0fb5 80       		.byte	-128
+ 4075 0fb6 FF       		.byte	-1
+ 4076 0fb7 FF       		.byte	-1
+ 4077 0fb8 1F       		.byte	31
+ 4078 0fb9 00       		.byte	0
+ 4079 0fba 00       		.byte	0
+ 4080 0fbb 00       		.byte	0
+ 4081 0fbc 00       		.byte	0
+ 4082 0fbd 00       		.byte	0
+ 4083 0fbe 30       		.byte	48
+ 4084 0fbf FC       		.byte	-4
+ 4085 0fc0 00       		.byte	0
+ 4086 0fc1 00       		.byte	0
+ 4087 0fc2 00       		.byte	0
+ 4088 0fc3 00       		.byte	0
+ 4089 0fc4 00       		.byte	0
+ 4090 0fc5 C0       		.byte	-64
+ 4091 0fc6 FF       		.byte	-1
+ 4092 0fc7 FF       		.byte	-1
+ 4093 0fc8 0F       		.byte	15
+ 4094 0fc9 00       		.byte	0
+ 4095 0fca 00       		.byte	0
+ 4096 0fcb 00       		.byte	0
+ 4097 0fcc 00       		.byte	0
+ 4098 0fcd 00       		.byte	0
+ 4099 0fce 30       		.byte	48
+ 4100 0fcf FC       		.byte	-4
+ 4101 0fd0 00       		.byte	0
+ 4102 0fd1 00       		.byte	0
+ 4103 0fd2 00       		.byte	0
+ 4104 0fd3 00       		.byte	0
+ 4105 0fd4 00       		.byte	0
+ 4106 0fd5 C0       		.byte	-64
+ 4107 0fd6 FF       		.byte	-1
+ 4108 0fd7 FF       		.byte	-1
+ 4109 0fd8 0F       		.byte	15
+ 4110 0fd9 00       		.byte	0
+ 4111 0fda 00       		.byte	0
+ 4112 0fdb 00       		.byte	0
+ 4113 0fdc 00       		.byte	0
+ 4114 0fdd 00       		.byte	0
+ 4115 0fde 00       		.byte	0
+ 4116 0fdf FC       		.byte	-4
+ 4117 0fe0 00       		.byte	0
+ 4118 0fe1 00       		.byte	0
+ 4119 0fe2 00       		.byte	0
+ 4120 0fe3 00       		.byte	0
+ 4121 0fe4 00       		.byte	0
+ 4122 0fe5 E0       		.byte	-32
+ 4123 0fe6 FF       		.byte	-1
+ 4124 0fe7 FF       		.byte	-1
+ 4125 0fe8 0F       		.byte	15
+ 4126 0fe9 00       		.byte	0
+ 4127 0fea 00       		.byte	0
+ 4128 0feb 10       		.byte	16
+ 4129 0fec 00       		.byte	0
+ 4130 0fed 00       		.byte	0
+ 4131 0fee 00       		.byte	0
+ 4132 0fef FC       		.byte	-4
+ 4133 0ff0 00       		.byte	0
+ 4134 0ff1 00       		.byte	0
+ 4135 0ff2 00       		.byte	0
+ 4136 0ff3 00       		.byte	0
+ 4137 0ff4 00       		.byte	0
+ 4138 0ff5 E4       		.byte	-28
+ 4139 0ff6 FF       		.byte	-1
+ 4140 0ff7 FF       		.byte	-1
+ 4141 0ff8 0F       		.byte	15
+ 4142 0ff9 00       		.byte	0
+ 4143 0ffa 00       		.byte	0
+ 4144 0ffb 08       		.byte	8
+ 4145 0ffc 00       		.byte	0
+ 4146 0ffd 00       		.byte	0
+ 4147 0ffe 08       		.byte	8
+ 4148 0fff F8       		.byte	-8
+ 4149 1000 00       		.byte	0
+ 4150 1001 00       		.byte	0
+ 4151 1002 00       		.byte	0
+ 4152 1003 00       		.byte	0
+ 4153 1004 00       		.byte	0
+ 4154 1005 FE       		.byte	-2
+ 4155 1006 FF       		.byte	-1
+ 4156 1007 FF       		.byte	-1
+ 4157 1008 0F       		.byte	15
+ 4158 1009 00       		.byte	0
+ 4159 100a 00       		.byte	0
+ 4160 100b 00       		.byte	0
+ 4161 100c 00       		.byte	0
+ 4162 100d 00       		.byte	0
+ 4163 100e 00       		.byte	0
+ 4164 100f F8       		.byte	-8
+ 4165 1010 00       		.byte	0
+ 4166 1011 00       		.byte	0
+ 4167 1012 00       		.byte	0
+ 4168 1013 00       		.byte	0
+ 4169 1014 00       		.byte	0
+ 4170 1015 FE       		.byte	-2
+ 4171 1016 FF       		.byte	-1
+ 4172 1017 FF       		.byte	-1
+ 4173 1018 07       		.byte	7
+ 4174 1019 00       		.byte	0
+ 4175 101a 00       		.byte	0
+ 4176 101b 00       		.byte	0
+ 4177 101c 00       		.byte	0
+ 4178 101d 00       		.byte	0
+ 4179 101e 02       		.byte	2
+ 4180 101f F8       		.byte	-8
+ 4181 1020 00       		.byte	0
+ 4182 1021 00       		.byte	0
+ 4183 1022 00       		.byte	0
+ 4184 1023 00       		.byte	0
+ 4185 1024 00       		.byte	0
+ 4186 1025 FF       		.byte	-1
+ 4187 1026 FF       		.byte	-1
+ 4188 1027 FF       		.byte	-1
+ 4189 1028 07       		.byte	7
+ 4190 1029 00       		.byte	0
+ 4191 102a 00       		.byte	0
+ 4192 102b 00       		.byte	0
+ 4193 102c 00       		.byte	0
+ 4194 102d 00       		.byte	0
+ 4195 102e 02       		.byte	2
+ 4196 102f F8       		.byte	-8
+ 4197 1030 00       		.byte	0
+ 4198 1031 00       		.byte	0
+ 4199 1032 00       		.byte	0
+ 4200 1033 00       		.byte	0
+ 4201 1034 00       		.byte	0
+ 4202 1035 FF       		.byte	-1
+ 4203 1036 FF       		.byte	-1
+ 4204 1037 FF       		.byte	-1
+ 4205 1038 07       		.byte	7
+ 4206 1039 00       		.byte	0
+ 4207 103a 10       		.byte	16
+ 4208 103b 00       		.byte	0
+ 4209 103c 00       		.byte	0
+ 4210 103d 00       		.byte	0
+ 4211 103e 04       		.byte	4
+ 4212 103f F8       		.byte	-8
+ 4213 1040 00       		.byte	0
+ 4214 1041 00       		.byte	0
+ 4215 1042 00       		.byte	0
+ 4216 1043 00       		.byte	0
+ 4217 1044 80       		.byte	-128
+ 4218 1045 FF       		.byte	-1
+ 4219 1046 FF       		.byte	-1
+ 4220 1047 FF       		.byte	-1
+ 4221 1048 07       		.byte	7
+ 4222 1049 00       		.byte	0
+ 4223 104a 08       		.byte	8
+ 4224 104b 00       		.byte	0
+ 4225 104c C0       		.byte	-64
+ 4226 104d 01       		.byte	1
+ 4227 104e 00       		.byte	0
+ 4228 104f F8       		.byte	-8
+ 4229 1050 00       		.byte	0
+ 4230 1051 00       		.byte	0
+ 4231 1052 00       		.byte	0
+ 4232 1053 00       		.byte	0
+ 4233 1054 C0       		.byte	-64
+ 4234 1055 FF       		.byte	-1
+ 4235 1056 FF       		.byte	-1
+ 4236 1057 FF       		.byte	-1
+ 4237 1058 07       		.byte	7
+ 4238 1059 00       		.byte	0
+ 4239 105a 00       		.byte	0
+ 4240 105b 00       		.byte	0
+ 4241 105c 00       		.byte	0
+ 4242 105d 03       		.byte	3
+ 4243 105e 08       		.byte	8
+ 4244 105f F8       		.byte	-8
+ 4245 1060 00       		.byte	0
+ 4246 1061 00       		.byte	0
+ 4247 1062 00       		.byte	0
+ 4248 1063 00       		.byte	0
+ 4249 1064 E0       		.byte	-32
+ 4250 1065 FF       		.byte	-1
+ 4251 1066 FF       		.byte	-1
+ 4252 1067 FF       		.byte	-1
+ 4253 1068 07       		.byte	7
+ 4254 1069 00       		.byte	0
+ 4255 106a 20       		.byte	32
+ 4256 106b 00       		.byte	0
+ 4257 106c 00       		.byte	0
+ 4258 106d 02       		.byte	2
+ 4259 106e 08       		.byte	8
+ 4260 106f F8       		.byte	-8
+ 4261 1070 00       		.byte	0
+ 4262 1071 00       		.byte	0
+ 4263 1072 00       		.byte	0
+ 4264 1073 00       		.byte	0
+ 4265 1074 E0       		.byte	-32
+ 4266 1075 FF       		.byte	-1
+ 4267 1076 FF       		.byte	-1
+ 4268 1077 FF       		.byte	-1
+ 4269 1078 07       		.byte	7
+ 4270 1079 00       		.byte	0
+ 4271 107a 00       		.byte	0
+ 4272 107b 00       		.byte	0
+ 4273 107c 00       		.byte	0
+ 4274 107d 02       		.byte	2
+ 4275 107e 00       		.byte	0
+ 4276 107f F8       		.byte	-8
+ 4277 1080 00       		.byte	0
+ 4278 1081 00       		.byte	0
+ 4279 1082 00       		.byte	0
+ 4280 1083 00       		.byte	0
+ 4281 1084 F0       		.byte	-16
+ 4282 1085 FF       		.byte	-1
+ 4283 1086 FF       		.byte	-1
+ 4284 1087 FF       		.byte	-1
+ 4285 1088 07       		.byte	7
+ 4286 1089 00       		.byte	0
+ 4287 108a 00       		.byte	0
+ 4288 108b 00       		.byte	0
+ 4289 108c 00       		.byte	0
+ 4290 108d 01       		.byte	1
+ 4291 108e 00       		.byte	0
+ 4292 108f F8       		.byte	-8
+ 4293 1090 00       		.byte	0
+ 4294 1091 00       		.byte	0
+ 4295 1092 00       		.byte	0
+ 4296 1093 00       		.byte	0
+ 4297 1094 F8       		.byte	-8
+ 4298 1095 FF       		.byte	-1
+ 4299 1096 FF       		.byte	-1
+ 4300 1097 FF       		.byte	-1
+ 4301 1098 07       		.byte	7
+ 4302 1099 00       		.byte	0
+ 4303 109a 00       		.byte	0
+ 4304 109b 01       		.byte	1
+ 4305 109c 80       		.byte	-128
+ 4306 109d 02       		.byte	2
+ 4307 109e 10       		.byte	16
+ 4308 109f F8       		.byte	-8
+ 4309 10a0 00       		.byte	0
+ 4310 10a1 00       		.byte	0
+ 4311 10a2 00       		.byte	0
+ 4312 10a3 00       		.byte	0
+ 4313 10a4 FC       		.byte	-4
+ 4314 10a5 FF       		.byte	-1
+ 4315 10a6 FF       		.byte	-1
+ 4316 10a7 FF       		.byte	-1
+ 4317 10a8 07       		.byte	7
+ 4318 10a9 00       		.byte	0
+ 4319 10aa 00       		.byte	0
+ 4320 10ab 02       		.byte	2
+ 4321 10ac 00       		.byte	0
+ 4322 10ad 03       		.byte	3
+ 4323 10ae 00       		.byte	0
+ 4324 10af F8       		.byte	-8
+ 4325              		.align	2
+ 4328              	title_light_bits:
+ 4329 10b0 00       		.byte	0
+ 4330 10b1 00       		.byte	0
+ 4331 10b2 00       		.byte	0
+ 4332 10b3 00       		.byte	0
+ 4333 10b4 00       		.byte	0
+ 4334 10b5 00       		.byte	0
+ 4335 10b6 00       		.byte	0
+ 4336 10b7 00       		.byte	0
+ 4337 10b8 00       		.byte	0
+ 4338 10b9 00       		.byte	0
+ 4339 10ba 00       		.byte	0
+ 4340 10bb 00       		.byte	0
+ 4341 10bc 00       		.byte	0
+ 4342 10bd 00       		.byte	0
+ 4343 10be 00       		.byte	0
+ 4344 10bf 00       		.byte	0
+ 4345 10c0 00       		.byte	0
+ 4346 10c1 00       		.byte	0
+ 4347 10c2 00       		.byte	0
+ 4348 10c3 00       		.byte	0
+ 4349 10c4 00       		.byte	0
+ 4350 10c5 00       		.byte	0
+ 4351 10c6 00       		.byte	0
+ 4352 10c7 00       		.byte	0
+ 4353 10c8 00       		.byte	0
+ 4354 10c9 00       		.byte	0
+ 4355 10ca 00       		.byte	0
+ 4356 10cb 00       		.byte	0
+ 4357 10cc 00       		.byte	0
+ 4358 10cd 04       		.byte	4
+ 4359 10ce 00       		.byte	0
+ 4360 10cf 00       		.byte	0
+ 4361 10d0 00       		.byte	0
+ 4362 10d1 00       		.byte	0
+ 4363 10d2 00       		.byte	0
+ 4364 10d3 30       		.byte	48
+ 4365 10d4 06       		.byte	6
+ 4366 10d5 9E       		.byte	-98
+ 4367 10d6 0F       		.byte	15
+ 4368 10d7 F8       		.byte	-8
+ 4369 10d8 00       		.byte	0
+ 4370 10d9 00       		.byte	0
+ 4371 10da 30       		.byte	48
+ 4372 10db 06       		.byte	6
+ 4373 10dc BA       		.byte	-70
+ 4374 10dd 8C       		.byte	-116
+ 4375 10de CB       		.byte	-53
+ 4376 10df 00       		.byte	0
+ 4377 10e0 00       		.byte	0
+ 4378 10e1 30       		.byte	48
+ 4379 10e2 03       		.byte	3
+ 4380 10e3 BA       		.byte	-70
+ 4381 10e4 4F       		.byte	79
+ 4382 10e5 EB       		.byte	-21
+ 4383 10e6 00       		.byte	0
+ 4384 10e7 00       		.byte	0
+ 4385 10e8 F0       		.byte	-16
+ 4386 10e9 F3       		.byte	-13
+ 4387 10ea 9E       		.byte	-98
+ 4388 10eb 43       		.byte	67
+ 4389 10ec 3A       		.byte	58
+ 4390 10ed 00       		.byte	0
+ 4391 10ee 00       		.byte	0
+ 4392 10ef F0       		.byte	-16
+ 4393 10f0 9B       		.byte	-101
+ 4394 10f1 8E       		.byte	-114
+ 4395 10f2 47       		.byte	71
+ 4396 10f3 5A       		.byte	90
+ 4397 10f4 00       		.byte	0
+ 4398 10f5 00       		.byte	0
+ 4399 10f6 30       		.byte	48
+ 4400 10f7 9B       		.byte	-101
+ 4401 10f8 36       		.byte	54
+ 4402 10f9 CD       		.byte	-51
+ 4403 10fa 9B       		.byte	-101
+ 4404 10fb 01       		.byte	1
+ 4405 10fc 00       		.byte	0
+ 4406 10fd 30       		.byte	48
+ 4407 10fe DB       		.byte	-37
+ 4408 10ff 66       		.byte	102
+ 4409 1100 D9       		.byte	-39
+ 4410 1101 19       		.byte	25
+ 4411 1102 03       		.byte	3
+ 4412 1103 00       		.byte	0
+ 4413 1104 30       		.byte	48
+ 4414 1105 73       		.byte	115
+ 4415 1106 66       		.byte	102
+ 4416 1107 19       		.byte	25
+ 4417 1108 10       		.byte	16
+ 4418 1109 03       		.byte	3
+ 4419 110a 00       		.byte	0
+ 4420 110b 30       		.byte	48
+ 4421 110c 01       		.byte	1
+ 4422 110d 00       		.byte	0
+ 4423 110e 00       		.byte	0
+ 4424 110f 00       		.byte	0
+ 4425 1110 00       		.byte	0
+ 4426 1111 00       		.byte	0
+ 4427 1112 00       		.byte	0
+ 4428 1113 80       		.byte	-128
+ 4429 1114 7B       		.byte	123
+ 4430 1115 3E       		.byte	62
+ 4431 1116 1D       		.byte	29
+ 4432 1117 00       		.byte	0
+ 4433 1118 00       		.byte	0
+ 4434 1119 00       		.byte	0
+ 4435 111a C0       		.byte	-64
+ 4436 111b 0A       		.byte	10
+ 4437 111c 28       		.byte	40
+ 4438 111d 05       		.byte	5
+ 4439 111e 00       		.byte	0
+ 4440 111f 00       		.byte	0
+ 4441 1120 00       		.byte	0
+ 4442 1121 40       		.byte	64
+ 4443 1122 3A       		.byte	58
+ 4444 1123 EC       		.byte	-20
+ 4445 1124 0D       		.byte	13
+ 4446 1125 00       		.byte	0
+ 4447 1126 00       		.byte	0
+ 4448 1127 00       		.byte	0
+ 4449 1128 C0       		.byte	-64
+ 4450 1129 0B       		.byte	11
+ 4451 112a 24       		.byte	36
+ 4452 112b 05       		.byte	5
+ 4453 112c 00       		.byte	0
+ 4454 112d 00       		.byte	0
+ 4455 112e F0       		.byte	-16
+ 4456 112f 00       		.byte	0
+ 4457 1130 00       		.byte	0
+ 4458 1131 00       		.byte	0
+ 4459 1132 1C       		.byte	28
+ 4460 1133 00       		.byte	0
+ 4461 1134 00       		.byte	0
+ 4462 1135 B0       		.byte	-80
+ 4463 1136 EB       		.byte	-21
+ 4464 1137 03       		.byte	3
+ 4465 1138 00       		.byte	0
+ 4466 1139 00       		.byte	0
+ 4467 113a 00       		.byte	0
+ 4468 113b 00       		.byte	0
+ 4469 113c 30       		.byte	48
+ 4470 113d 23       		.byte	35
+ 4471 113e 03       		.byte	3
+ 4472 113f 0C       		.byte	12
+ 4473 1140 E4       		.byte	-28
+ 4474 1141 23       		.byte	35
+ 4475 1142 01       		.byte	1
+ 4476 1143 30       		.byte	48
+ 4477 1144 2A       		.byte	42
+ 4478 1145 1B       		.byte	27
+ 4479 1146 0C       		.byte	12
+ 4480 1147 94       		.byte	-108
+ 4481 1148 20       		.byte	32
+ 4482 1149 01       		.byte	1
+ 4483 114a 30       		.byte	48
+ 4484 114b EA       		.byte	-22
+ 4485 114c 3D       		.byte	61
+ 4486 114d 0C       		.byte	12
+ 4487 114e 86       		.byte	-122
+ 4488 114f EC       		.byte	-20
+ 4489 1150 01       		.byte	1
+ 4490 1151 30       		.byte	48
+ 4491 1152 EA       		.byte	-22
+ 4492 1153 06       		.byte	6
+ 4493 1154 48       		.byte	72
+ 4494 1155 96       		.byte	-106
+ 4495 1156 E6       		.byte	-26
+ 4496 1157 01       		.byte	1
+ 4497 1158 30       		.byte	48
+ 4498 1159 6B       		.byte	107
+ 4499 115a 9E       		.byte	-98
+ 4500 115b 4B       		.byte	75
+ 4501 115c 96       		.byte	-106
+ 4502 115d 26       		.byte	38
+ 4503 115e 01       		.byte	1
+ 4504 115f 30       		.byte	48
+ 4505 1160 6B       		.byte	107
+ 4506 1161 B0       		.byte	-80
+ 4507 1162 BB       		.byte	-69
+ 4508 1163 92       		.byte	-110
+ 4509 1164 26       		.byte	38
+ 4510 1165 01       		.byte	1
+ 4511 1166 F0       		.byte	-16
+ 4512 1167 69       		.byte	105
+ 4513 1168 32       		.byte	50
+ 4514 1169 B8       		.byte	-72
+ 4515 116a 91       		.byte	-111
+ 4516 116b 26       		.byte	38
+ 4517 116c 01       		.byte	1
+ 4518 116d 70       		.byte	112
+ 4519 116e 68       		.byte	104
+ 4520 116f 1E       		.byte	30
+ 4521 1170 10       		.byte	16
+ 4522 1171 91       		.byte	-111
+ 4523 1172 0E       		.byte	14
+ 4524 1173 01       		.byte	1
+ 4525 1174 00       		.byte	0
+ 4526 1175 00       		.byte	0
+ 4527 1176 00       		.byte	0
+ 4528 1177 00       		.byte	0
+ 4529 1178 00       		.byte	0
+ 4530 1179 00       		.byte	0
+ 4531 117a 00       		.byte	0
+ 4532 117b 00       		.byte	0
+ 4533 117c 00       		.byte	0
+ 4534 117d 00       		.byte	0
+ 4535 117e 00       		.byte	0
+ 4536 117f 00       		.byte	0
+ 4537 1180 00       		.byte	0
+ 4538 1181 00       		.byte	0
+ 4539 1182 0000     		.align	2
+ 4542              	title_gray_bits:
+ 4543 1184 00       		.byte	0
+ 4544 1185 00       		.byte	0
+ 4545 1186 00       		.byte	0
+ 4546 1187 00       		.byte	0
+ 4547 1188 00       		.byte	0
+ 4548 1189 00       		.byte	0
+ 4549 118a 00       		.byte	0
+ 4550 118b 00       		.byte	0
+ 4551 118c 00       		.byte	0
+ 4552 118d 00       		.byte	0
+ 4553 118e 00       		.byte	0
+ 4554 118f 40       		.byte	64
+ 4555 1190 00       		.byte	0
+ 4556 1191 00       		.byte	0
+ 4557 1192 84       		.byte	-124
+ 4558 1193 0F       		.byte	15
+ 4559 1194 FE       		.byte	-2
+ 4560 1195 C3       		.byte	-61
+ 4561 1196 B0       		.byte	-80
+ 4562 1197 00       		.byte	0
+ 4563 1198 00       		.byte	0
+ 4564 1199 F8       		.byte	-8
+ 4565 119a FF       		.byte	-1
+ 4566 119b FF       		.byte	-1
+ 4567 119c 1F       		.byte	31
+ 4568 119d 8F       		.byte	-113
+ 4569 119e 1F       		.byte	31
+ 4570 119f 00       		.byte	0
+ 4571 11a0 F8       		.byte	-8
+ 4572 11a1 FB       		.byte	-5
+ 4573 11a2 FF       		.byte	-1
+ 4574 11a3 FF       		.byte	-1
+ 4575 11a4 FF       		.byte	-1
+ 4576 11a5 1F       		.byte	31
+ 4577 11a6 00       		.byte	0
+ 4578 11a7 C8       		.byte	-56
+ 4579 11a8 F9       		.byte	-7
+ 4580 11a9 61       		.byte	97
+ 4581 11aa F0       		.byte	-16
+ 4582 11ab 07       		.byte	7
+ 4583 11ac 1F       		.byte	31
+ 4584 11ad 00       		.byte	0
+ 4585 11ae CC       		.byte	-52
+ 4586 11af F1       		.byte	-15
+ 4587 11b0 05       		.byte	5
+ 4588 11b1 73       		.byte	115
+ 4589 11b2 34       		.byte	52
+ 4590 11b3 BE       		.byte	-66
+ 4591 11b4 00       		.byte	0
+ 4592 11b5 CE       		.byte	-50
+ 4593 11b6 F0       		.byte	-16
+ 4594 11b7 05       		.byte	5
+ 4595 11b8 30       		.byte	48
+ 4596 11b9 14       		.byte	20
+ 4597 11ba 7E       		.byte	126
+ 4598 11bb 00       		.byte	0
+ 4599 11bc 0F       		.byte	15
+ 4600 11bd 08       		.byte	8
+ 4601 11be 41       		.byte	65
+ 4602 11bf 20       		.byte	32
+ 4603 11c0 01       		.byte	1
+ 4604 11c1 3E       		.byte	62
+ 4605 11c2 00       		.byte	0
+ 4606 11c3 0E       		.byte	14
+ 4607 11c4 60       		.byte	96
+ 4608 11c5 40       		.byte	64
+ 4609 11c6 38       		.byte	56
+ 4610 11c7 01       		.byte	1
+ 4611 11c8 1E       		.byte	30
+ 4612 11c9 00       		.byte	0
+ 4613 11ca 0C       		.byte	12
+ 4614 11cb 60       		.byte	96
+ 4615 11cc C0       		.byte	-64
+ 4616 11cd 30       		.byte	48
+ 4617 11ce 40       		.byte	64
+ 4618 11cf 1C       		.byte	28
+ 4619 11d0 00       		.byte	0
+ 4620 11d1 8C       		.byte	-116
+ 4621 11d2 20       		.byte	32
+ 4622 11d3 10       		.byte	16
+ 4623 11d4 24       		.byte	36
+ 4624 11d5 C0       		.byte	-64
+ 4625 11d6 38       		.byte	56
+ 4626 11d7 00       		.byte	0
+ 4627 11d8 8C       		.byte	-116
+ 4628 11d9 08       		.byte	8
+ 4629 11da 11       		.byte	17
+ 4630 11db 04       		.byte	4
+ 4631 11dc CE       		.byte	-50
+ 4632 11dd F8       		.byte	-8
+ 4633 11de 00       		.byte	0
+ 4634 11df C8       		.byte	-56
+ 4635 11e0 0C       		.byte	12
+ 4636 11e1 99       		.byte	-103
+ 4637 11e2 E6       		.byte	-26
+ 4638 11e3 FF       		.byte	-1
+ 4639 11e4 78       		.byte	120
+ 4640 11e5 01       		.byte	1
+ 4641 11e6 FA       		.byte	-6
+ 4642 11e7 7C       		.byte	124
+ 4643 11e8 84       		.byte	-124
+ 4644 11e9 C1       		.byte	-63
+ 4645 11ea E0       		.byte	-32
+ 4646 11eb 3F       		.byte	63
+ 4647 11ec 00       		.byte	0
+ 4648 11ed F4       		.byte	-12
+ 4649 11ee 3F       		.byte	63
+ 4650 11ef 01       		.byte	1
+ 4651 11f0 C7       		.byte	-57
+ 4652 11f1 C0       		.byte	-64
+ 4653 11f2 1F       		.byte	31
+ 4654 11f3 00       		.byte	0
+ 4655 11f4 F0       		.byte	-16
+ 4656 11f5 3F       		.byte	63
+ 4657 11f6 C0       		.byte	-64
+ 4658 11f7 03       		.byte	3
+ 4659 11f8 E0       		.byte	-32
+ 4660 11f9 07       		.byte	7
+ 4661 11fa 00       		.byte	0
+ 4662 11fb FC       		.byte	-4
+ 4663 11fc 3F       		.byte	63
+ 4664 11fd 80       		.byte	-128
+ 4665 11fe 03       		.byte	3
+ 4666 11ff E0       		.byte	-32
+ 4667 1200 9F       		.byte	-97
+ 4668 1201 00       		.byte	0
+ 4669 1202 0C       		.byte	12
+ 4670 1203 7F       		.byte	127
+ 4671 1204 E4       		.byte	-28
+ 4672 1205 FB       		.byte	-5
+ 4673 1206 C1       		.byte	-63
+ 4674 1207 FF       		.byte	-1
+ 4675 1208 03       		.byte	3
+ 4676 1209 0C       		.byte	12
+ 4677 120a 14       		.byte	20
+ 4678 120b FC       		.byte	-4
+ 4679 120c FF       		.byte	-1
+ 4680 120d C7       		.byte	-57
+ 4681 120e FF       		.byte	-1
+ 4682 120f 03       		.byte	3
+ 4683 1210 0C       		.byte	12
+ 4684 1211 1C       		.byte	28
+ 4685 1212 FC       		.byte	-4
+ 4686 1213 F3       		.byte	-13
+ 4687 1214 1B       		.byte	27
+ 4688 1215 DC       		.byte	-36
+ 4689 1216 02       		.byte	2
+ 4690 1217 0E       		.byte	14
+ 4691 1218 90       		.byte	-112
+ 4692 1219 E4       		.byte	-28
+ 4693 121a F3       		.byte	-13
+ 4694 121b 63       		.byte	99
+ 4695 121c 18       		.byte	24
+ 4696 121d 02       		.byte	2
+ 4697 121e 8E       		.byte	-114
+ 4698 121f 01       		.byte	1
+ 4699 1220 82       		.byte	-126
+ 4700 1221 E3       		.byte	-29
+ 4701 1222 51       		.byte	81
+ 4702 1223 12       		.byte	18
+ 4703 1224 02       		.byte	2
+ 4704 1225 8E       		.byte	-114
+ 4705 1226 01       		.byte	1
+ 4706 1227 88       		.byte	-120
+ 4707 1228 A7       		.byte	-89
+ 4708 1229 61       		.byte	97
+ 4709 122a 00       		.byte	0
+ 4710 122b 02       		.byte	2
+ 4711 122c 8E       		.byte	-114
+ 4712 122d 00       		.byte	0
+ 4713 122e 60       		.byte	96
+ 4714 122f 24       		.byte	36
+ 4715 1230 41       		.byte	65
+ 4716 1231 10       		.byte	16
+ 4717 1232 02       		.byte	2
+ 4718 1233 8E       		.byte	-114
+ 4719 1234 00       		.byte	0
+ 4720 1235 03       		.byte	3
+ 4721 1236 00       		.byte	0
+ 4722 1237 41       		.byte	65
+ 4723 1238 90       		.byte	-112
+ 4724 1239 02       		.byte	2
+ 4725 123a 0E       		.byte	14
+ 4726 123b 00       		.byte	0
+ 4727 123c 8D       		.byte	-115
+ 4728 123d 00       		.byte	0
+ 4729 123e 48       		.byte	72
+ 4730 123f 90       		.byte	-112
+ 4731 1240 02       		.byte	2
+ 4732 1241 0C       		.byte	12
+ 4733 1242 04       		.byte	4
+ 4734 1243 81       		.byte	-127
+ 4735 1244 87       		.byte	-121
+ 4736 1245 4C       		.byte	76
+ 4737 1246 A0       		.byte	-96
+ 4738 1247 02       		.byte	2
+ 4739 1248 FC       		.byte	-4
+ 4740 1249 FF       		.byte	-1
+ 4741 124a FF       		.byte	-1
+ 4742 124b CF       		.byte	-49
+ 4743 124c FC       		.byte	-4
+ 4744 124d E2       		.byte	-30
+ 4745 124e 03       		.byte	3
+ 4746 124f 82       		.byte	-126
+ 4747 1250 07       		.byte	7
+ 4748 1251 1C       		.byte	28
+ 4749 1252 F8       		.byte	-8
+ 4750 1253 E3       		.byte	-29
+ 4751 1254 FF       		.byte	-1
+ 4752 1255 01       		.byte	1
+ 4753 1256 0000     		.align	2
+ 4756              	title_black_bits:
+ 4757 1258 00       		.byte	0
+ 4758 1259 00       		.byte	0
+ 4759 125a 00       		.byte	0
+ 4760 125b 00       		.byte	0
+ 4761 125c 00       		.byte	0
+ 4762 125d 00       		.byte	0
+ 4763 125e 00       		.byte	0
+ 4764 125f 00       		.byte	0
+ 4765 1260 00       		.byte	0
+ 4766 1261 00       		.byte	0
+ 4767 1262 00       		.byte	0
+ 4768 1263 00       		.byte	0
+ 4769 1264 00       		.byte	0
+ 4770 1265 00       		.byte	0
+ 4771 1266 00       		.byte	0
+ 4772 1267 00       		.byte	0
+ 4773 1268 00       		.byte	0
+ 4774 1269 00       		.byte	0
+ 4775 126a 00       		.byte	0
+ 4776 126b 00       		.byte	0
+ 4777 126c 00       		.byte	0
+ 4778 126d 00       		.byte	0
+ 4779 126e 00       		.byte	0
+ 4780 126f 00       		.byte	0
+ 4781 1270 00       		.byte	0
+ 4782 1271 00       		.byte	0
+ 4783 1272 00       		.byte	0
+ 4784 1273 00       		.byte	0
+ 4785 1274 00       		.byte	0
+ 4786 1275 00       		.byte	0
+ 4787 1276 00       		.byte	0
+ 4788 1277 00       		.byte	0
+ 4789 1278 00       		.byte	0
+ 4790 1279 00       		.byte	0
+ 4791 127a 00       		.byte	0
+ 4792 127b 00       		.byte	0
+ 4793 127c 00       		.byte	0
+ 4794 127d 00       		.byte	0
+ 4795 127e 00       		.byte	0
+ 4796 127f 00       		.byte	0
+ 4797 1280 00       		.byte	0
+ 4798 1281 00       		.byte	0
+ 4799 1282 00       		.byte	0
+ 4800 1283 08       		.byte	8
+ 4801 1284 40       		.byte	64
+ 4802 1285 00       		.byte	0
+ 4803 1286 00       		.byte	0
+ 4804 1287 01       		.byte	1
+ 4805 1288 00       		.byte	0
+ 4806 1289 00       		.byte	0
+ 4807 128a 0C       		.byte	12
+ 4808 128b 40       		.byte	64
+ 4809 128c 80       		.byte	-128
+ 4810 128d 00       		.byte	0
+ 4811 128e 01       		.byte	1
+ 4812 128f 00       		.byte	0
+ 4813 1290 00       		.byte	0
+ 4814 1291 04       		.byte	4
+ 4815 1292 20       		.byte	32
+ 4816 1293 9C       		.byte	-100
+ 4817 1294 C4       		.byte	-60
+ 4818 1295 01       		.byte	1
+ 4819 1296 00       		.byte	0
+ 4820 1297 00       		.byte	0
+ 4821 1298 04       		.byte	4
+ 4822 1299 31       		.byte	49
+ 4823 129a 80       		.byte	-128
+ 4824 129b A4       		.byte	-92
+ 4825 129c 01       		.byte	1
+ 4826 129d 00       		.byte	0
+ 4827 129e C0       		.byte	-64
+ 4828 129f 04       		.byte	4
+ 4829 12a0 09       		.byte	9
+ 4830 12a1 02       		.byte	2
+ 4831 12a2 24       		.byte	36
+ 4832 12a3 02       		.byte	2
+ 4833 12a4 00       		.byte	0
+ 4834 12a5 40       		.byte	64
+ 4835 12a6 04       		.byte	4
+ 4836 12a7 89       		.byte	-119
+ 4837 12a8 02       		.byte	2
+ 4838 12a9 26       		.byte	38
+ 4839 12aa 04       		.byte	4
+ 4840 12ab 00       		.byte	0
+ 4841 12ac 40       		.byte	64
+ 4842 12ad 84       		.byte	-124
+ 4843 12ae 88       		.byte	-120
+ 4844 12af E2       		.byte	-30
+ 4845 12b0 21       		.byte	33
+ 4846 12b1 04       		.byte	4
+ 4847 12b2 00       		.byte	0
+ 4848 12b3 00       		.byte	0
+ 4849 12b4 F2       		.byte	-14
+ 4850 12b5 66       		.byte	102
+ 4851 12b6 19       		.byte	25
+ 4852 12b7 00       		.byte	0
+ 4853 12b8 07       		.byte	7
+ 4854 12b9 00       		.byte	0
+ 4855 12ba 00       		.byte	0
+ 4856 12bb 03       		.byte	3
+ 4857 12bc 00       		.byte	0
+ 4858 12bd 00       		.byte	0
+ 4859 12be 02       		.byte	2
+ 4860 12bf 00       		.byte	0
+ 4861 12c0 00       		.byte	0
+ 4862 12c1 00       		.byte	0
+ 4863 12c2 00       		.byte	0
+ 4864 12c3 F4       		.byte	-12
+ 4865 12c4 10       		.byte	16
+ 4866 12c5 3A       		.byte	58
+ 4867 12c6 00       		.byte	0
+ 4868 12c7 00       		.byte	0
+ 4869 12c8 00       		.byte	0
+ 4870 12c9 80       		.byte	-128
+ 4871 12ca 05       		.byte	5
+ 4872 12cb 10       		.byte	16
+ 4873 12cc 12       		.byte	18
+ 4874 12cd 00       		.byte	0
+ 4875 12ce 00       		.byte	0
+ 4876 12cf 00       		.byte	0
+ 4877 12d0 00       		.byte	0
+ 4878 12d1 74       		.byte	116
+ 4879 12d2 D8       		.byte	-40
+ 4880 12d3 1A       		.byte	26
+ 4881 12d4 00       		.byte	0
+ 4882 12d5 00       		.byte	0
+ 4883 12d6 00       		.byte	0
+ 4884 12d7 80       		.byte	-128
+ 4885 12d8 1B       		.byte	27
+ 4886 12d9 04       		.byte	4
+ 4887 12da 22       		.byte	34
+ 4888 12db 00       		.byte	0
+ 4889 12dc 00       		.byte	0
+ 4890 12dd 40       		.byte	64
+ 4891 12de 00       		.byte	0
+ 4892 12df 00       		.byte	0
+ 4893 12e0 00       		.byte	0
+ 4894 12e1 38       		.byte	56
+ 4895 12e2 00       		.byte	0
+ 4896 12e3 00       		.byte	0
+ 4897 12e4 C0       		.byte	-64
+ 4898 12e5 C0       		.byte	-64
+ 4899 12e6 00       		.byte	0
+ 4900 12e7 00       		.byte	0
+ 4901 12e8 00       		.byte	0
+ 4902 12e9 00       		.byte	0
+ 4903 12ea 00       		.byte	0
+ 4904 12eb C0       		.byte	-64
+ 4905 12ec 45       		.byte	69
+ 4906 12ed 00       		.byte	0
+ 4907 12ee 00       		.byte	0
+ 4908 12ef 08       		.byte	8
+ 4909 12f0 C7       		.byte	-57
+ 4910 12f1 00       		.byte	0
+ 4911 12f2 40       		.byte	64
+ 4912 12f3 14       		.byte	20
+ 4913 12f4 40       		.byte	64
+ 4914 12f5 10       		.byte	16
+ 4915 12f6 28       		.byte	40
+ 4916 12f7 01       		.byte	1
+ 4917 12f8 00       		.byte	0
+ 4918 12f9 40       		.byte	64
+ 4919 12fa 14       		.byte	20
+ 4920 12fb 71       		.byte	113
+ 4921 12fc 10       		.byte	16
+ 4922 12fd 08       		.byte	8
+ 4923 12fe 19       		.byte	25
+ 4924 12ff 00       		.byte	0
+ 4925 1300 40       		.byte	64
+ 4926 1301 94       		.byte	-108
+ 4927 1302 01       		.byte	1
+ 4928 1303 90       		.byte	-112
+ 4929 1304 28       		.byte	40
+ 4930 1305 C9       		.byte	-55
+ 4931 1306 00       		.byte	0
+ 4932 1307 40       		.byte	64
+ 4933 1308 94       		.byte	-108
+ 4934 1309 4C       		.byte	76
+ 4935 130a 44       		.byte	68
+ 4936 130b 2C       		.byte	44
+ 4937 130c 49       		.byte	73
+ 4938 130d 00       		.byte	0
+ 4939 130e 00       		.byte	0
+ 4940 130f 96       		.byte	-106
+ 4941 1310 40       		.byte	64
+ 4942 1311 47       		.byte	71
+ 4943 1312 26       		.byte	38
+ 4944 1313 49       		.byte	73
+ 4945 1314 00       		.byte	0
+ 4946 1315 80       		.byte	-128
+ 4947 1316 93       		.byte	-109
+ 4948 1317 60       		.byte	96
+ 4949 1318 68       		.byte	104
+ 4950 1319 22       		.byte	34
+ 4951 131a 51       		.byte	81
+ 4952 131b 00       		.byte	0
+ 4953 131c 00       		.byte	0
+ 4954 131d 00       		.byte	0
+ 4955 131e 00       		.byte	0
+ 4956 131f 30       		.byte	48
+ 4957 1320 03       		.byte	3
+ 4958 1321 1D       		.byte	29
+ 4959 1322 00       		.byte	0
+ 4960 1323 00       		.byte	0
+ 4961 1324 00       		.byte	0
+ 4962 1325 00       		.byte	0
+ 4963 1326 00       		.byte	0
+ 4964 1327 00       		.byte	0
+ 4965 1328 00       		.byte	0
+ 4966 1329 00       		.byte	0
+ 4967 132a 0000     		.align	2
+ 4970              	bg_bits:
+ 4971 132c 00       		.byte	0
+ 4972 132d 00       		.byte	0
+ 4973 132e 00       		.byte	0
+ 4974 132f 00       		.byte	0
+ 4975 1330 00       		.byte	0
+ 4976 1331 00       		.byte	0
+ 4977 1332 00       		.byte	0
+ 4978 1333 00       		.byte	0
+ 4979 1334 00       		.byte	0
+ 4980 1335 00       		.byte	0
+ 4981 1336 00       		.byte	0
+ 4982 1337 00       		.byte	0
+ 4983 1338 00       		.byte	0
+ 4984 1339 00       		.byte	0
+ 4985 133a 00       		.byte	0
+ 4986 133b 00       		.byte	0
+ 4987 133c 00       		.byte	0
+ 4988 133d 00       		.byte	0
+ 4989 133e F8       		.byte	-8
+ 4990 133f FF       		.byte	-1
+ 4991 1340 1F       		.byte	31
+ 4992 1341 00       		.byte	0
+ 4993 1342 00       		.byte	0
+ 4994 1343 00       		.byte	0
+ 4995 1344 00       		.byte	0
+ 4996 1345 00       		.byte	0
+ 4997 1346 00       		.byte	0
+ 4998 1347 00       		.byte	0
+ 4999 1348 00       		.byte	0
+ 5000 1349 00       		.byte	0
+ 5001 134a 00       		.byte	0
+ 5002 134b 00       		.byte	0
+ 5003 134c 00       		.byte	0
+ 5004 134d 00       		.byte	0
+ 5005 134e FE       		.byte	-2
+ 5006 134f FF       		.byte	-1
+ 5007 1350 FF       		.byte	-1
+ 5008 1351 03       		.byte	3
+ 5009 1352 00       		.byte	0
+ 5010 1353 00       		.byte	0
+ 5011 1354 00       		.byte	0
+ 5012 1355 00       		.byte	0
+ 5013 1356 00       		.byte	0
+ 5014 1357 00       		.byte	0
+ 5015 1358 00       		.byte	0
+ 5016 1359 00       		.byte	0
+ 5017 135a 00       		.byte	0
+ 5018 135b 00       		.byte	0
+ 5019 135c 00       		.byte	0
+ 5020 135d 00       		.byte	0
+ 5021 135e FF       		.byte	-1
+ 5022 135f FF       		.byte	-1
+ 5023 1360 FF       		.byte	-1
+ 5024 1361 1F       		.byte	31
+ 5025 1362 00       		.byte	0
+ 5026 1363 00       		.byte	0
+ 5027 1364 00       		.byte	0
+ 5028 1365 00       		.byte	0
+ 5029 1366 00       		.byte	0
+ 5030 1367 00       		.byte	0
+ 5031 1368 00       		.byte	0
+ 5032 1369 00       		.byte	0
+ 5033 136a 00       		.byte	0
+ 5034 136b 00       		.byte	0
+ 5035 136c 00       		.byte	0
+ 5036 136d 80       		.byte	-128
+ 5037 136e FF       		.byte	-1
+ 5038 136f FF       		.byte	-1
+ 5039 1370 FF       		.byte	-1
+ 5040 1371 FF       		.byte	-1
+ 5041 1372 00       		.byte	0
+ 5042 1373 00       		.byte	0
+ 5043 1374 00       		.byte	0
+ 5044 1375 00       		.byte	0
+ 5045 1376 00       		.byte	0
+ 5046 1377 00       		.byte	0
+ 5047 1378 00       		.byte	0
+ 5048 1379 00       		.byte	0
+ 5049 137a 00       		.byte	0
+ 5050 137b 00       		.byte	0
+ 5051 137c 00       		.byte	0
+ 5052 137d 80       		.byte	-128
+ 5053 137e FF       		.byte	-1
+ 5054 137f FF       		.byte	-1
+ 5055 1380 FF       		.byte	-1
+ 5056 1381 FF       		.byte	-1
+ 5057 1382 07       		.byte	7
+ 5058 1383 00       		.byte	0
+ 5059 1384 00       		.byte	0
+ 5060 1385 00       		.byte	0
+ 5061 1386 00       		.byte	0
+ 5062 1387 00       		.byte	0
+ 5063 1388 00       		.byte	0
+ 5064 1389 00       		.byte	0
+ 5065 138a 00       		.byte	0
+ 5066 138b 00       		.byte	0
+ 5067 138c 00       		.byte	0
+ 5068 138d C0       		.byte	-64
+ 5069 138e FF       		.byte	-1
+ 5070 138f FF       		.byte	-1
+ 5071 1390 FF       		.byte	-1
+ 5072 1391 FF       		.byte	-1
+ 5073 1392 3F       		.byte	63
+ 5074 1393 00       		.byte	0
+ 5075 1394 00       		.byte	0
+ 5076 1395 00       		.byte	0
+ 5077 1396 00       		.byte	0
+ 5078 1397 00       		.byte	0
+ 5079 1398 00       		.byte	0
+ 5080 1399 00       		.byte	0
+ 5081 139a 00       		.byte	0
+ 5082 139b 00       		.byte	0
+ 5083 139c 00       		.byte	0
+ 5084 139d E0       		.byte	-32
+ 5085 139e FF       		.byte	-1
+ 5086 139f FF       		.byte	-1
+ 5087 13a0 FF       		.byte	-1
+ 5088 13a1 FF       		.byte	-1
+ 5089 13a2 FF       		.byte	-1
+ 5090 13a3 01       		.byte	1
+ 5091 13a4 00       		.byte	0
+ 5092 13a5 F0       		.byte	-16
+ 5093 13a6 01       		.byte	1
+ 5094 13a7 00       		.byte	0
+ 5095 13a8 00       		.byte	0
+ 5096 13a9 00       		.byte	0
+ 5097 13aa 00       		.byte	0
+ 5098 13ab 00       		.byte	0
+ 5099 13ac 00       		.byte	0
+ 5100 13ad E0       		.byte	-32
+ 5101 13ae 7F       		.byte	127
+ 5102 13af 00       		.byte	0
+ 5103 13b0 FE       		.byte	-2
+ 5104 13b1 FF       		.byte	-1
+ 5105 13b2 FF       		.byte	-1
+ 5106 13b3 0F       		.byte	15
+ 5107 13b4 00       		.byte	0
+ 5108 13b5 F8       		.byte	-8
+ 5109 13b6 03       		.byte	3
+ 5110 13b7 00       		.byte	0
+ 5111 13b8 00       		.byte	0
+ 5112 13b9 00       		.byte	0
+ 5113 13ba 00       		.byte	0
+ 5114 13bb 00       		.byte	0
+ 5115 13bc 00       		.byte	0
+ 5116 13bd E0       		.byte	-32
+ 5117 13be 3F       		.byte	63
+ 5118 13bf 00       		.byte	0
+ 5119 13c0 C0       		.byte	-64
+ 5120 13c1 FF       		.byte	-1
+ 5121 13c2 FF       		.byte	-1
+ 5122 13c3 7F       		.byte	127
+ 5123 13c4 00       		.byte	0
+ 5124 13c5 F8       		.byte	-8
+ 5125 13c6 03       		.byte	3
+ 5126 13c7 00       		.byte	0
+ 5127 13c8 00       		.byte	0
+ 5128 13c9 80       		.byte	-128
+ 5129 13ca 1F       		.byte	31
+ 5130 13cb 00       		.byte	0
+ 5131 13cc 00       		.byte	0
+ 5132 13cd E0       		.byte	-32
+ 5133 13ce 1F       		.byte	31
+ 5134 13cf 00       		.byte	0
+ 5135 13d0 00       		.byte	0
+ 5136 13d1 FE       		.byte	-2
+ 5137 13d2 FF       		.byte	-1
+ 5138 13d3 FF       		.byte	-1
+ 5139 13d4 01       		.byte	1
+ 5140 13d5 F8       		.byte	-8
+ 5141 13d6 03       		.byte	3
+ 5142 13d7 00       		.byte	0
+ 5143 13d8 00       		.byte	0
+ 5144 13d9 C0       		.byte	-64
+ 5145 13da 3F       		.byte	63
+ 5146 13db 00       		.byte	0
+ 5147 13dc 00       		.byte	0
+ 5148 13dd E0       		.byte	-32
+ 5149 13de 3F       		.byte	63
+ 5150 13df 00       		.byte	0
+ 5151 13e0 00       		.byte	0
+ 5152 13e1 F0       		.byte	-16
+ 5153 13e2 FF       		.byte	-1
+ 5154 13e3 FF       		.byte	-1
+ 5155 13e4 07       		.byte	7
+ 5156 13e5 F8       		.byte	-8
+ 5157 13e6 83       		.byte	-125
+ 5158 13e7 3F       		.byte	63
+ 5159 13e8 00       		.byte	0
+ 5160 13e9 E0       		.byte	-32
+ 5161 13ea 3F       		.byte	63
+ 5162 13eb 00       		.byte	0
+ 5163 13ec 00       		.byte	0
+ 5164 13ed E0       		.byte	-32
+ 5165 13ee FF       		.byte	-1
+ 5166 13ef 01       		.byte	1
+ 5167 13f0 00       		.byte	0
+ 5168 13f1 80       		.byte	-128
+ 5169 13f2 FF       		.byte	-1
+ 5170 13f3 FF       		.byte	-1
+ 5171 13f4 0F       		.byte	15
+ 5172 13f5 F8       		.byte	-8
+ 5173 13f6 C3       		.byte	-61
+ 5174 13f7 7F       		.byte	127
+ 5175 13f8 F8       		.byte	-8
+ 5176 13f9 E7       		.byte	-25
+ 5177 13fa 3F       		.byte	63
+ 5178 13fb 00       		.byte	0
+ 5179 13fc 00       		.byte	0
+ 5180 13fd E0       		.byte	-32
+ 5181 13fe FF       		.byte	-1
+ 5182 13ff 07       		.byte	7
+ 5183 1400 00       		.byte	0
+ 5184 1401 00       		.byte	0
+ 5185 1402 FC       		.byte	-4
+ 5186 1403 FF       		.byte	-1
+ 5187 1404 1F       		.byte	31
+ 5188 1405 F0       		.byte	-16
+ 5189 1406 E1       		.byte	-31
+ 5190 1407 7F       		.byte	127
+ 5191 1408 FC       		.byte	-4
+ 5192 1409 FF       		.byte	-1
+ 5193 140a 3F       		.byte	63
+ 5194 140b 00       		.byte	0
+ 5195 140c 00       		.byte	0
+ 5196 140d C0       		.byte	-64
+ 5197 140e FF       		.byte	-1
+ 5198 140f 3F       		.byte	63
+ 5199 1410 00       		.byte	0
+ 5200 1411 00       		.byte	0
+ 5201 1412 E0       		.byte	-32
+ 5202 1413 FF       		.byte	-1
+ 5203 1414 3F       		.byte	63
+ 5204 1415 00       		.byte	0
+ 5205 1416 F0       		.byte	-16
+ 5206 1417 7F       		.byte	127
+ 5207 1418 FC       		.byte	-4
+ 5208 1419 FF       		.byte	-1
+ 5209 141a 7F       		.byte	127
+ 5210 141b 00       		.byte	0
+ 5211 141c 00       		.byte	0
+ 5212 141d C0       		.byte	-64
+ 5213 141e FF       		.byte	-1
+ 5214 141f FF       		.byte	-1
+ 5215 1420 00       		.byte	0
+ 5216 1421 00       		.byte	0
+ 5217 1422 00       		.byte	0
+ 5218 1423 FF       		.byte	-1
+ 5219 1424 7F       		.byte	127
+ 5220 1425 00       		.byte	0
+ 5221 1426 F8       		.byte	-8
+ 5222 1427 7F       		.byte	127
+ 5223 1428 FC       		.byte	-4
+ 5224 1429 FF       		.byte	-1
+ 5225 142a FF       		.byte	-1
+ 5226 142b 3F       		.byte	63
+ 5227 142c 00       		.byte	0
+ 5228 142d C0       		.byte	-64
+ 5229 142e FF       		.byte	-1
+ 5230 142f FF       		.byte	-1
+ 5231 1430 03       		.byte	3
+ 5232 1431 00       		.byte	0
+ 5233 1432 00       		.byte	0
+ 5234 1433 F8       		.byte	-8
+ 5235 1434 FF       		.byte	-1
+ 5236 1435 00       		.byte	0
+ 5237 1436 FC       		.byte	-4
+ 5238 1437 7F       		.byte	127
+ 5239 1438 FC       		.byte	-4
+ 5240 1439 FF       		.byte	-1
+ 5241 143a FF       		.byte	-1
+ 5242 143b 7F       		.byte	127
+ 5243 143c 00       		.byte	0
+ 5244 143d 80       		.byte	-128
+ 5245 143e FF       		.byte	-1
+ 5246 143f FF       		.byte	-1
+ 5247 1440 0F       		.byte	15
+ 5248 1441 00       		.byte	0
+ 5249 1442 00       		.byte	0
+ 5250 1443 E0       		.byte	-32
+ 5251 1444 FF       		.byte	-1
+ 5252 1445 01       		.byte	1
+ 5253 1446 FE       		.byte	-2
+ 5254 1447 7F       		.byte	127
+ 5255 1448 FC       		.byte	-4
+ 5256 1449 FF       		.byte	-1
+ 5257 144a FF       		.byte	-1
+ 5258 144b FF       		.byte	-1
+ 5259 144c 00       		.byte	0
+ 5260 144d 00       		.byte	0
+ 5261 144e FC       		.byte	-4
+ 5262 144f FF       		.byte	-1
+ 5263 1450 1F       		.byte	31
+ 5264 1451 00       		.byte	0
+ 5265 1452 00       		.byte	0
+ 5266 1453 80       		.byte	-128
+ 5267 1454 FF       		.byte	-1
+ 5268 1455 01       		.byte	1
+ 5269 1456 FF       		.byte	-1
+ 5270 1457 7F       		.byte	127
+ 5271 1458 FC       		.byte	-4
+ 5272 1459 FF       		.byte	-1
+ 5273 145a FF       		.byte	-1
+ 5274 145b FF       		.byte	-1
+ 5275 145c 00       		.byte	0
+ 5276 145d 00       		.byte	0
+ 5277 145e E0       		.byte	-32
+ 5278 145f FF       		.byte	-1
+ 5279 1460 7F       		.byte	127
+ 5280 1461 00       		.byte	0
+ 5281 1462 00       		.byte	0
+ 5282 1463 00       		.byte	0
+ 5283 1464 FF       		.byte	-1
+ 5284 1465 83       		.byte	-125
+ 5285 1466 FF       		.byte	-1
+ 5286 1467 7F       		.byte	127
+ 5287 1468 F8       		.byte	-8
+ 5288 1469 FF       		.byte	-1
+ 5289 146a FF       		.byte	-1
+ 5290 146b FF       		.byte	-1
+ 5291 146c 00       		.byte	0
+ 5292 146d 00       		.byte	0
+ 5293 146e 80       		.byte	-128
+ 5294 146f FF       		.byte	-1
+ 5295 1470 FF       		.byte	-1
+ 5296 1471 00       		.byte	0
+ 5297 1472 00       		.byte	0
+ 5298 1473 00       		.byte	0
+ 5299 1474 FE       		.byte	-2
+ 5300 1475 C3       		.byte	-61
+ 5301 1476 FF       		.byte	-1
+ 5302 1477 7F       		.byte	127
+ 5303 1478 E0       		.byte	-32
+ 5304 1479 FF       		.byte	-1
+ 5305 147a FF       		.byte	-1
+ 5306 147b FF       		.byte	-1
+ 5307 147c F0       		.byte	-16
+ 5308 147d FF       		.byte	-1
+ 5309 147e 7F       		.byte	127
+ 5310 147f FC       		.byte	-4
+ 5311 1480 FF       		.byte	-1
+ 5312 1481 01       		.byte	1
+ 5313 1482 C0       		.byte	-64
+ 5314 1483 07       		.byte	7
+ 5315 1484 FC       		.byte	-4
+ 5316 1485 E7       		.byte	-25
+ 5317 1486 FF       		.byte	-1
+ 5318 1487 7F       		.byte	127
+ 5319 1488 C0       		.byte	-64
+ 5320 1489 FF       		.byte	-1
+ 5321 148a FF       		.byte	-1
+ 5322 148b FF       		.byte	-1
+ 5323 148c FE       		.byte	-2
+ 5324 148d FF       		.byte	-1
+ 5325 148e FF       		.byte	-1
+ 5326 148f F0       		.byte	-16
+ 5327 1490 FF       		.byte	-1
+ 5328 1491 07       		.byte	7
+ 5329 1492 E0       		.byte	-32
+ 5330 1493 0F       		.byte	15
+ 5331 1494 FC       		.byte	-4
+ 5332 1495 F7       		.byte	-9
+ 5333 1496 FF       		.byte	-1
+ 5334 1497 7F       		.byte	127
+ 5335 1498 80       		.byte	-128
+ 5336 1499 FF       		.byte	-1
+ 5337 149a FF       		.byte	-1
+ 5338 149b FF       		.byte	-1
+ 5339 149c FF       		.byte	-1
+ 5340 149d FF       		.byte	-1
+ 5341 149e FF       		.byte	-1
+ 5342 149f C0       		.byte	-64
+ 5343 14a0 FF       		.byte	-1
+ 5344 14a1 0F       		.byte	15
+ 5345 14a2 E0       		.byte	-32
+ 5346 14a3 0F       		.byte	15
+ 5347 14a4 F8       		.byte	-8
+ 5348 14a5 FF       		.byte	-1
+ 5349 14a6 FF       		.byte	-1
+ 5350 14a7 7F       		.byte	127
+ 5351 14a8 00       		.byte	0
+ 5352 14a9 FF       		.byte	-1
+ 5353 14aa FF       		.byte	-1
+ 5354 14ab FF       		.byte	-1
+ 5355 14ac FF       		.byte	-1
+ 5356 14ad FF       		.byte	-1
+ 5357 14ae FF       		.byte	-1
+ 5358 14af 01       		.byte	1
+ 5359 14b0 FF       		.byte	-1
+ 5360 14b1 1F       		.byte	31
+ 5361 14b2 E0       		.byte	-32
+ 5362 14b3 0F       		.byte	15
+ 5363 14b4 F8       		.byte	-8
+ 5364 14b5 FF       		.byte	-1
+ 5365 14b6 FF       		.byte	-1
+ 5366 14b7 7F       		.byte	127
+ 5367 14b8 00       		.byte	0
+ 5368 14b9 FC       		.byte	-4
+ 5369 14ba FF       		.byte	-1
+ 5370 14bb 7F       		.byte	127
+ 5371 14bc FF       		.byte	-1
+ 5372 14bd FF       		.byte	-1
+ 5373 14be FF       		.byte	-1
+ 5374 14bf 01       		.byte	1
+ 5375 14c0 FE       		.byte	-2
+ 5376 14c1 3F       		.byte	63
+ 5377 14c2 E0       		.byte	-32
+ 5378 14c3 0F       		.byte	15
+ 5379 14c4 F0       		.byte	-16
+ 5380 14c5 FF       		.byte	-1
+ 5381 14c6 DF       		.byte	-33
+ 5382 14c7 3F       		.byte	63
+ 5383 14c8 00       		.byte	0
+ 5384 14c9 FE       		.byte	-2
+ 5385 14ca FF       		.byte	-1
+ 5386 14cb 3F       		.byte	63
+ 5387 14cc FF       		.byte	-1
+ 5388 14cd FF       		.byte	-1
+ 5389 14ce FF       		.byte	-1
+ 5390 14cf 01       		.byte	1
+ 5391 14d0 F8       		.byte	-8
+ 5392 14d1 3F       		.byte	63
+ 5393 14d2 E0       		.byte	-32
+ 5394 14d3 0F       		.byte	15
+ 5395 14d4 F0       		.byte	-16
+ 5396 14d5 FF       		.byte	-1
+ 5397 14d6 E7       		.byte	-25
+ 5398 14d7 3F       		.byte	63
+ 5399 14d8 00       		.byte	0
+ 5400 14d9 FE       		.byte	-2
+ 5401 14da FF       		.byte	-1
+ 5402 14db 07       		.byte	7
+ 5403 14dc FF       		.byte	-1
+ 5404 14dd FF       		.byte	-1
+ 5405 14de FF       		.byte	-1
+ 5406 14df 03       		.byte	3
+ 5407 14e0 F0       		.byte	-16
+ 5408 14e1 7F       		.byte	127
+ 5409 14e2 C0       		.byte	-64
+ 5410 14e3 07       		.byte	7
+ 5411 14e4 F0       		.byte	-16
+ 5412 14e5 FF       		.byte	-1
+ 5413 14e6 E7       		.byte	-25
+ 5414 14e7 1F       		.byte	31
+ 5415 14e8 00       		.byte	0
+ 5416 14e9 FE       		.byte	-2
+ 5417 14ea FF       		.byte	-1
+ 5418 14eb 0F       		.byte	15
+ 5419 14ec FF       		.byte	-1
+ 5420 14ed 00       		.byte	0
+ 5421 14ee FC       		.byte	-4
+ 5422 14ef 03       		.byte	3
+ 5423 14f0 E0       		.byte	-32
+ 5424 14f1 FF       		.byte	-1
+ 5425 14f2 00       		.byte	0
+ 5426 14f3 00       		.byte	0
+ 5427 14f4 E0       		.byte	-32
+ 5428 14f5 FF       		.byte	-1
+ 5429 14f6 F3       		.byte	-13
+ 5430 14f7 1F       		.byte	31
+ 5431 14f8 00       		.byte	0
+ 5432 14f9 FE       		.byte	-2
+ 5433 14fa FF       		.byte	-1
+ 5434 14fb 1F       		.byte	31
+ 5435 14fc 1F       		.byte	31
+ 5436 14fd 00       		.byte	0
+ 5437 14fe FC       		.byte	-4
+ 5438 14ff 03       		.byte	3
+ 5439 1500 80       		.byte	-128
+ 5440 1501 FF       		.byte	-1
+ 5441 1502 01       		.byte	1
+ 5442 1503 00       		.byte	0
+ 5443 1504 E0       		.byte	-32
+ 5444 1505 FF       		.byte	-1
+ 5445 1506 F9       		.byte	-7
+ 5446 1507 1F       		.byte	31
+ 5447 1508 00       		.byte	0
+ 5448 1509 FE       		.byte	-2
+ 5449 150a FF       		.byte	-1
+ 5450 150b 3F       		.byte	63
+ 5451 150c 07       		.byte	7
+ 5452 150d 00       		.byte	0
+ 5453 150e FC       		.byte	-4
+ 5454 150f 03       		.byte	3
+ 5455 1510 80       		.byte	-128
+ 5456 1511 FF       		.byte	-1
+ 5457 1512 01       		.byte	1
+ 5458 1513 00       		.byte	0
+ 5459 1514 E0       		.byte	-32
+ 5460 1515 FF       		.byte	-1
+ 5461 1516 FC       		.byte	-4
+ 5462 1517 0F       		.byte	15
+ 5463 1518 00       		.byte	0
+ 5464 1519 FE       		.byte	-2
+ 5465 151a FD       		.byte	-3
+ 5466 151b 3F       		.byte	63
+ 5467 151c 07       		.byte	7
+ 5468 151d 00       		.byte	0
+ 5469 151e F8       		.byte	-8
+ 5470 151f 07       		.byte	7
+ 5471 1520 00       		.byte	0
+ 5472 1521 FF       		.byte	-1
+ 5473 1522 03       		.byte	3
+ 5474 1523 00       		.byte	0
+ 5475 1524 F0       		.byte	-16
+ 5476 1525 7F       		.byte	127
+ 5477 1526 FE       		.byte	-2
+ 5478 1527 0F       		.byte	15
+ 5479 1528 00       		.byte	0
+ 5480 1529 FE       		.byte	-2
+ 5481 152a FC       		.byte	-4
+ 5482 152b 3F       		.byte	63
+ 5483 152c 03       		.byte	3
+ 5484 152d 00       		.byte	0
+ 5485 152e F8       		.byte	-8
+ 5486 152f 07       		.byte	7
+ 5487 1530 00       		.byte	0
+ 5488 1531 FE       		.byte	-2
+ 5489 1532 07       		.byte	7
+ 5490 1533 00       		.byte	0
+ 5491 1534 F8       		.byte	-8
+ 5492 1535 7F       		.byte	127
+ 5493 1536 FE       		.byte	-2
+ 5494 1537 07       		.byte	7
+ 5495 1538 00       		.byte	0
+ 5496 1539 FE       		.byte	-2
+ 5497 153a F8       		.byte	-8
+ 5498 153b 3F       		.byte	63
+ 5499 153c 03       		.byte	3
+ 5500 153d 00       		.byte	0
+ 5501 153e F8       		.byte	-8
+ 5502 153f 0F       		.byte	15
+ 5503 1540 00       		.byte	0
+ 5504 1541 FC       		.byte	-4
+ 5505 1542 07       		.byte	7
+ 5506 1543 00       		.byte	0
+ 5507 1544 FC       		.byte	-4
+ 5508 1545 FF       		.byte	-1
+ 5509 1546 FF       		.byte	-1
+ 5510 1547 03       		.byte	3
+ 5511 1548 00       		.byte	0
+ 5512 1549 7C       		.byte	124
+ 5513 154a F8       		.byte	-8
+ 5514 154b 3F       		.byte	63
+ 5515 154c 03       		.byte	3
+ 5516 154d 00       		.byte	0
+ 5517 154e F8       		.byte	-8
+ 5518 154f 0F       		.byte	15
+ 5519 1550 00       		.byte	0
+ 5520 1551 FC       		.byte	-4
+ 5521 1552 07       		.byte	7
+ 5522 1553 00       		.byte	0
+ 5523 1554 FE       		.byte	-2
+ 5524 1555 FF       		.byte	-1
+ 5525 1556 FF       		.byte	-1
+ 5526 1557 01       		.byte	1
+ 5527 1558 00       		.byte	0
+ 5528 1559 00       		.byte	0
+ 5529 155a F0       		.byte	-16
+ 5530 155b 1F       		.byte	31
+ 5531 155c 07       		.byte	7
+ 5532 155d 00       		.byte	0
+ 5533 155e F0       		.byte	-16
+ 5534 155f 0F       		.byte	15
+ 5535 1560 00       		.byte	0
+ 5536 1561 F8       		.byte	-8
+ 5537 1562 0F       		.byte	15
+ 5538 1563 00       		.byte	0
+ 5539 1564 FF       		.byte	-1
+ 5540 1565 FF       		.byte	-1
+ 5541 1566 FF       		.byte	-1
+ 5542 1567 01       		.byte	1
+ 5543 1568 3E       		.byte	62
+ 5544 1569 00       		.byte	0
+ 5545 156a F0       		.byte	-16
+ 5546 156b 07       		.byte	7
+ 5547 156c 07       		.byte	7
+ 5548 156d 00       		.byte	0
+ 5549 156e F0       		.byte	-16
+ 5550 156f 0F       		.byte	15
+ 5551 1570 00       		.byte	0
+ 5552 1571 F0       		.byte	-16
+ 5553 1572 0F       		.byte	15
+ 5554 1573 80       		.byte	-128
+ 5555 1574 FF       		.byte	-1
+ 5556 1575 FF       		.byte	-1
+ 5557 1576 FF       		.byte	-1
+ 5558 1577 00       		.byte	0
+ 5559 1578 7F       		.byte	127
+ 5560 1579 00       		.byte	0
+ 5561 157a E0       		.byte	-32
+ 5562 157b 03       		.byte	3
+ 5563 157c 07       		.byte	7
+ 5564 157d 00       		.byte	0
+ 5565 157e E0       		.byte	-32
+ 5566 157f 0F       		.byte	15
+ 5567 1580 00       		.byte	0
+ 5568 1581 F0       		.byte	-16
+ 5569 1582 0F       		.byte	15
+ 5570 1583 C0       		.byte	-64
+ 5571 1584 FF       		.byte	-1
+ 5572 1585 FF       		.byte	-1
+ 5573 1586 7F       		.byte	127
+ 5574 1587 00       		.byte	0
+ 5575 1588 7F       		.byte	127
+ 5576 1589 00       		.byte	0
+ 5577 158a 00       		.byte	0
+ 5578 158b 00       		.byte	0
+ 5579 158c 07       		.byte	7
+ 5580 158d 00       		.byte	0
+ 5581 158e E0       		.byte	-32
+ 5582 158f 0F       		.byte	15
+ 5583 1590 00       		.byte	0
+ 5584 1591 F0       		.byte	-16
+ 5585 1592 0F       		.byte	15
+ 5586 1593 E0       		.byte	-32
+ 5587 1594 FF       		.byte	-1
+ 5588 1595 FE       		.byte	-2
+ 5589 1596 7F       		.byte	127
+ 5590 1597 00       		.byte	0
+ 5591 1598 7F       		.byte	127
+ 5592 1599 00       		.byte	0
+ 5593 159a 00       		.byte	0
+ 5594 159b 00       		.byte	0
+ 5595 159c 07       		.byte	7
+ 5596 159d 00       		.byte	0
+ 5597 159e E0       		.byte	-32
+ 5598 159f 0F       		.byte	15
+ 5599 15a0 00       		.byte	0
+ 5600 15a1 F0       		.byte	-16
+ 5601 15a2 0F       		.byte	15
+ 5602 15a3 F0       		.byte	-16
+ 5603 15a4 7F       		.byte	127
+ 5604 15a5 FE       		.byte	-2
+ 5605 15a6 3F       		.byte	63
+ 5606 15a7 00       		.byte	0
+ 5607 15a8 7F       		.byte	127
+ 5608 15a9 00       		.byte	0
+ 5609 15aa 00       		.byte	0
+ 5610 15ab 00       		.byte	0
+ 5611 15ac 07       		.byte	7
+ 5612 15ad 00       		.byte	0
+ 5613 15ae E0       		.byte	-32
+ 5614 15af 0F       		.byte	15
+ 5615 15b0 00       		.byte	0
+ 5616 15b1 F0       		.byte	-16
+ 5617 15b2 0F       		.byte	15
+ 5618 15b3 F8       		.byte	-8
+ 5619 15b4 3F       		.byte	63
+ 5620 15b5 FC       		.byte	-4
+ 5621 15b6 1F       		.byte	31
+ 5622 15b7 00       		.byte	0
+ 5623 15b8 7F       		.byte	127
+ 5624 15b9 00       		.byte	0
+ 5625 15ba 00       		.byte	0
+ 5626 15bb 00       		.byte	0
+ 5627 15bc 0F       		.byte	15
+ 5628 15bd 00       		.byte	0
+ 5629 15be E0       		.byte	-32
+ 5630 15bf 1F       		.byte	31
+ 5631 15c0 00       		.byte	0
+ 5632 15c1 F0       		.byte	-16
+ 5633 15c2 0F       		.byte	15
+ 5634 15c3 FC       		.byte	-4
+ 5635 15c4 1F       		.byte	31
+ 5636 15c5 F8       		.byte	-8
+ 5637 15c6 0F       		.byte	15
+ 5638 15c7 00       		.byte	0
+ 5639 15c8 3E       		.byte	62
+ 5640 15c9 00       		.byte	0
+ 5641 15ca 00       		.byte	0
+ 5642 15cb 00       		.byte	0
+ 5643 15cc 0F       		.byte	15
+ 5644 15cd 00       		.byte	0
+ 5645 15ce E0       		.byte	-32
+ 5646 15cf 1F       		.byte	31
+ 5647 15d0 00       		.byte	0
+ 5648 15d1 F0       		.byte	-16
+ 5649 15d2 07       		.byte	7
+ 5650 15d3 FC       		.byte	-4
+ 5651 15d4 0F       		.byte	15
+ 5652 15d5 F0       		.byte	-16
+ 5653 15d6 07       		.byte	7
+ 5654 15d7 00       		.byte	0
+ 5655 15d8 00       		.byte	0
+ 5656 15d9 00       		.byte	0
+ 5657 15da 00       		.byte	0
+ 5658 15db 00       		.byte	0
+ 5659 15dc 0F       		.byte	15
+ 5660 15dd 00       		.byte	0
+ 5661 15de E0       		.byte	-32
+ 5662 15df 1F       		.byte	31
+ 5663 15e0 00       		.byte	0
+ 5664 15e1 F0       		.byte	-16
+ 5665 15e2 07       		.byte	7
+ 5666 15e3 FC       		.byte	-4
+ 5667 15e4 07       		.byte	7
+ 5668 15e5 00       		.byte	0
+ 5669 15e6 00       		.byte	0
+ 5670 15e7 00       		.byte	0
+ 5671 15e8 00       		.byte	0
+ 5672 15e9 00       		.byte	0
+ 5673 15ea 00       		.byte	0
+ 5674 15eb 00       		.byte	0
+ 5675 15ec 0F       		.byte	15
+ 5676 15ed 00       		.byte	0
+ 5677 15ee E0       		.byte	-32
+ 5678 15ef 1F       		.byte	31
+ 5679 15f0 00       		.byte	0
+ 5680 15f1 F8       		.byte	-8
+ 5681 15f2 07       		.byte	7
+ 5682 15f3 FC       		.byte	-4
+ 5683 15f4 03       		.byte	3
+ 5684 15f5 00       		.byte	0
+ 5685 15f6 00       		.byte	0
+ 5686 15f7 00       		.byte	0
+ 5687 15f8 00       		.byte	0
+ 5688 15f9 F8       		.byte	-8
+ 5689 15fa 0F       		.byte	15
+ 5690 15fb 00       		.byte	0
+ 5691 15fc 1F       		.byte	31
+ 5692 15fd 00       		.byte	0
+ 5693 15fe C0       		.byte	-64
+ 5694 15ff 1F       		.byte	31
+ 5695 1600 00       		.byte	0
+ 5696 1601 FC       		.byte	-4
+ 5697 1602 07       		.byte	7
+ 5698 1603 FC       		.byte	-4
+ 5699 1604 01       		.byte	1
+ 5700 1605 00       		.byte	0
+ 5701 1606 00       		.byte	0
+ 5702 1607 00       		.byte	0
+ 5703 1608 00       		.byte	0
+ 5704 1609 FC       		.byte	-4
+ 5705 160a 1F       		.byte	31
+ 5706 160b 00       		.byte	0
+ 5707 160c 3F       		.byte	63
+ 5708 160d 00       		.byte	0
+ 5709 160e C0       		.byte	-64
+ 5710 160f 1F       		.byte	31
+ 5711 1610 80       		.byte	-128
+ 5712 1611 FF       		.byte	-1
+ 5713 1612 07       		.byte	7
+ 5714 1613 FC       		.byte	-4
+ 5715 1614 01       		.byte	1
+ 5716 1615 00       		.byte	0
+ 5717 1616 00       		.byte	0
+ 5718 1617 00       		.byte	0
+ 5719 1618 00       		.byte	0
+ 5720 1619 FF       		.byte	-1
+ 5721 161a 3F       		.byte	63
+ 5722 161b 00       		.byte	0
+ 5723 161c 3F       		.byte	63
+ 5724 161d 00       		.byte	0
+ 5725 161e C0       		.byte	-64
+ 5726 161f 3F       		.byte	63
+ 5727 1620 FC       		.byte	-4
+ 5728 1621 FF       		.byte	-1
+ 5729 1622 07       		.byte	7
+ 5730 1623 FC       		.byte	-4
+ 5731 1624 01       		.byte	1
+ 5732 1625 00       		.byte	0
+ 5733 1626 00       		.byte	0
+ 5734 1627 00       		.byte	0
+ 5735 1628 80       		.byte	-128
+ 5736 1629 FF       		.byte	-1
+ 5737 162a 7F       		.byte	127
+ 5738 162b 00       		.byte	0
+ 5739 162c 3F       		.byte	63
+ 5740 162d 00       		.byte	0
+ 5741 162e C0       		.byte	-64
+ 5742 162f FF       		.byte	-1
+ 5743 1630 FF       		.byte	-1
+ 5744 1631 FF       		.byte	-1
+ 5745 1632 03       		.byte	3
+ 5746 1633 FC       		.byte	-4
+ 5747 1634 01       		.byte	1
+ 5748 1635 00       		.byte	0
+ 5749 1636 00       		.byte	0
+ 5750 1637 00       		.byte	0
+ 5751 1638 E0       		.byte	-32
+ 5752 1639 FF       		.byte	-1
+ 5753 163a FF       		.byte	-1
+ 5754 163b 00       		.byte	0
+ 5755 163c 7F       		.byte	127
+ 5756 163d 00       		.byte	0
+ 5757 163e C0       		.byte	-64
+ 5758 163f FF       		.byte	-1
+ 5759 1640 FF       		.byte	-1
+ 5760 1641 FF       		.byte	-1
+ 5761 1642 01       		.byte	1
+ 5762 1643 FC       		.byte	-4
+ 5763 1644 07       		.byte	7
+ 5764 1645 00       		.byte	0
+ 5765 1646 00       		.byte	0
+ 5766 1647 00       		.byte	0
+ 5767 1648 F0       		.byte	-16
+ 5768 1649 FF       		.byte	-1
+ 5769 164a FF       		.byte	-1
+ 5770 164b 03       		.byte	3
+ 5771 164c 7F       		.byte	127
+ 5772 164d 00       		.byte	0
+ 5773 164e C0       		.byte	-64
+ 5774 164f FF       		.byte	-1
+ 5775 1650 FF       		.byte	-1
+ 5776 1651 FF       		.byte	-1
+ 5777 1652 00       		.byte	0
+ 5778 1653 FC       		.byte	-4
+ 5779 1654 FF       		.byte	-1
+ 5780 1655 FF       		.byte	-1
+ 5781 1656 FF       		.byte	-1
+ 5782 1657 FF       		.byte	-1
+ 5783 1658 F8       		.byte	-8
+ 5784 1659 FF       		.byte	-1
+ 5785 165a FF       		.byte	-1
+ 5786 165b 07       		.byte	7
+ 5787 165c 7F       		.byte	127
+ 5788 165d 00       		.byte	0
+ 5789 165e C0       		.byte	-64
+ 5790 165f FF       		.byte	-1
+ 5791 1660 FF       		.byte	-1
+ 5792 1661 7F       		.byte	127
+ 5793 1662 00       		.byte	0
+ 5794 1663 FC       		.byte	-4
+ 5795 1664 FF       		.byte	-1
+ 5796 1665 FF       		.byte	-1
+ 5797 1666 FF       		.byte	-1
+ 5798 1667 FF       		.byte	-1
+ 5799 1668 FD       		.byte	-3
+ 5800 1669 7F       		.byte	127
+ 5801 166a FF       		.byte	-1
+ 5802 166b 07       		.byte	7
+ 5803 166c 7F       		.byte	127
+ 5804 166d 00       		.byte	0
+ 5805 166e 80       		.byte	-128
+ 5806 166f FF       		.byte	-1
+ 5807 1670 FF       		.byte	-1
+ 5808 1671 3F       		.byte	63
+ 5809 1672 00       		.byte	0
+ 5810 1673 FC       		.byte	-4
+ 5811 1674 FF       		.byte	-1
+ 5812 1675 FF       		.byte	-1
+ 5813 1676 FF       		.byte	-1
+ 5814 1677 FF       		.byte	-1
+ 5815 1678 FF       		.byte	-1
+ 5816 1679 3F       		.byte	63
+ 5817 167a FE       		.byte	-2
+ 5818 167b 0F       		.byte	15
+ 5819 167c 7F       		.byte	127
+ 5820 167d 00       		.byte	0
+ 5821 167e 1F       		.byte	31
+ 5822 167f FF       		.byte	-1
+ 5823 1680 FF       		.byte	-1
+ 5824 1681 07       		.byte	7
+ 5825 1682 00       		.byte	0
+ 5826 1683 F8       		.byte	-8
+ 5827 1684 FF       		.byte	-1
+ 5828 1685 FF       		.byte	-1
+ 5829 1686 FF       		.byte	-1
+ 5830 1687 FF       		.byte	-1
+ 5831 1688 FF       		.byte	-1
+ 5832 1689 3F       		.byte	63
+ 5833 168a FC       		.byte	-4
+ 5834 168b 1F       		.byte	31
+ 5835 168c 7F       		.byte	127
+ 5836 168d 80       		.byte	-128
+ 5837 168e 3F       		.byte	63
+ 5838 168f FC       		.byte	-4
+ 5839 1690 3F       		.byte	63
+ 5840 1691 00       		.byte	0
+ 5841 1692 00       		.byte	0
+ 5842 1693 F8       		.byte	-8
+ 5843 1694 FF       		.byte	-1
+ 5844 1695 FF       		.byte	-1
+ 5845 1696 FF       		.byte	-1
+ 5846 1697 FF       		.byte	-1
+ 5847 1698 FF       		.byte	-1
+ 5848 1699 3F       		.byte	63
+ 5849 169a F8       		.byte	-8
+ 5850 169b 1F       		.byte	31
+ 5851 169c 7F       		.byte	127
+ 5852 169d 80       		.byte	-128
+ 5853 169e 3F       		.byte	63
+ 5854 169f 00       		.byte	0
+ 5855 16a0 00       		.byte	0
+ 5856 16a1 00       		.byte	0
+ 5857 16a2 00       		.byte	0
+ 5858 16a3 F0       		.byte	-16
+ 5859 16a4 FF       		.byte	-1
+ 5860 16a5 FF       		.byte	-1
+ 5861 16a6 FF       		.byte	-1
+ 5862 16a7 FF       		.byte	-1
+ 5863 16a8 FF       		.byte	-1
+ 5864 16a9 3F       		.byte	63
+ 5865 16aa F0       		.byte	-16
+ 5866 16ab 3F       		.byte	63
+ 5867 16ac 7F       		.byte	127
+ 5868 16ad 80       		.byte	-128
+ 5869 16ae 3F       		.byte	63
+ 5870 16af 00       		.byte	0
+ 5871 16b0 00       		.byte	0
+ 5872 16b1 00       		.byte	0
+ 5873 16b2 00       		.byte	0
+ 5874 16b3 C0       		.byte	-64
+ 5875 16b4 FF       		.byte	-1
+ 5876 16b5 FF       		.byte	-1
+ 5877 16b6 FF       		.byte	-1
+ 5878 16b7 FF       		.byte	-1
+ 5879 16b8 FF       		.byte	-1
+ 5880 16b9 3F       		.byte	63
+ 5881 16ba E0       		.byte	-32
+ 5882 16bb 7F       		.byte	127
+ 5883 16bc 3F       		.byte	63
+ 5884 16bd 80       		.byte	-128
+ 5885 16be 3F       		.byte	63
+ 5886 16bf 00       		.byte	0
+ 5887 16c0 00       		.byte	0
+ 5888 16c1 00       		.byte	0
+ 5889 16c2 00       		.byte	0
+ 5890 16c3 00       		.byte	0
+ 5891 16c4 00       		.byte	0
+ 5892 16c5 00       		.byte	0
+ 5893 16c6 00       		.byte	0
+ 5894 16c7 F8       		.byte	-8
+ 5895 16c8 FF       		.byte	-1
+ 5896 16c9 3F       		.byte	63
+ 5897 16ca C0       		.byte	-64
+ 5898 16cb 7F       		.byte	127
+ 5899 16cc 3F       		.byte	63
+ 5900 16cd 80       		.byte	-128
+ 5901 16ce 3F       		.byte	63
+ 5902 16cf 00       		.byte	0
+ 5903 16d0 00       		.byte	0
+ 5904 16d1 F0       		.byte	-16
+ 5905 16d2 FF       		.byte	-1
+ 5906 16d3 FF       		.byte	-1
+ 5907 16d4 0F       		.byte	15
+ 5908 16d5 00       		.byte	0
+ 5909 16d6 00       		.byte	0
+ 5910 16d7 F8       		.byte	-8
+ 5911 16d8 FF       		.byte	-1
+ 5912 16d9 1F       		.byte	31
+ 5913 16da C0       		.byte	-64
+ 5914 16db FF       		.byte	-1
+ 5915 16dc 3F       		.byte	63
+ 5916 16dd 00       		.byte	0
+ 5917 16de 1F       		.byte	31
+ 5918 16df 00       		.byte	0
+ 5919 16e0 00       		.byte	0
+ 5920 16e1 F8       		.byte	-8
+ 5921 16e2 FF       		.byte	-1
+ 5922 16e3 FF       		.byte	-1
+ 5923 16e4 FF       		.byte	-1
+ 5924 16e5 7F       		.byte	127
+ 5925 16e6 00       		.byte	0
+ 5926 16e7 F8       		.byte	-8
+ 5927 16e8 FF       		.byte	-1
+ 5928 16e9 1F       		.byte	31
+ 5929 16ea 80       		.byte	-128
+ 5930 16eb FF       		.byte	-1
+ 5931 16ec 3F       		.byte	63
+ 5932 16ed 00       		.byte	0
+ 5933 16ee 00       		.byte	0
+ 5934 16ef 00       		.byte	0
+ 5935 16f0 00       		.byte	0
+ 5936 16f1 F8       		.byte	-8
+ 5937 16f2 FF       		.byte	-1
+ 5938 16f3 FF       		.byte	-1
+ 5939 16f4 FF       		.byte	-1
+ 5940 16f5 FF       		.byte	-1
+ 5941 16f6 FF       		.byte	-1
+ 5942 16f7 FF       		.byte	-1
+ 5943 16f8 FF       		.byte	-1
+ 5944 16f9 1F       		.byte	31
+ 5945 16fa 80       		.byte	-128
+ 5946 16fb FF       		.byte	-1
+ 5947 16fc 3F       		.byte	63
+ 5948 16fd 00       		.byte	0
+ 5949 16fe 00       		.byte	0
+ 5950 16ff 00       		.byte	0
+ 5951 1700 00       		.byte	0
+ 5952 1701 F8       		.byte	-8
+ 5953 1702 FF       		.byte	-1
+ 5954 1703 FF       		.byte	-1
+ 5955 1704 FF       		.byte	-1
+ 5956 1705 FF       		.byte	-1
+ 5957 1706 FF       		.byte	-1
+ 5958 1707 FF       		.byte	-1
+ 5959 1708 FF       		.byte	-1
+ 5960 1709 1F       		.byte	31
+ 5961 170a 00       		.byte	0
+ 5962 170b FF       		.byte	-1
+ 5963 170c 3F       		.byte	63
+ 5964 170d 00       		.byte	0
+ 5965 170e 00       		.byte	0
+ 5966 170f 00       		.byte	0
+ 5967 1710 00       		.byte	0
+ 5968 1711 F8       		.byte	-8
+ 5969 1712 FF       		.byte	-1
+ 5970 1713 FF       		.byte	-1
+ 5971 1714 FF       		.byte	-1
+ 5972 1715 FF       		.byte	-1
+ 5973 1716 FF       		.byte	-1
+ 5974 1717 FF       		.byte	-1
+ 5975 1718 FF       		.byte	-1
+ 5976 1719 1F       		.byte	31
+ 5977 171a 00       		.byte	0
+ 5978 171b FE       		.byte	-2
+ 5979 171c 3F       		.byte	63
+ 5980 171d 00       		.byte	0
+ 5981 171e 00       		.byte	0
+ 5982 171f 00       		.byte	0
+ 5983 1720 00       		.byte	0
+ 5984 1721 F8       		.byte	-8
+ 5985 1722 FF       		.byte	-1
+ 5986 1723 FF       		.byte	-1
+ 5987 1724 FF       		.byte	-1
+ 5988 1725 FF       		.byte	-1
+ 5989 1726 FF       		.byte	-1
+ 5990 1727 FF       		.byte	-1
+ 5991 1728 FF       		.byte	-1
+ 5992 1729 1F       		.byte	31
+ 5993 172a 00       		.byte	0
+ 5994 172b FE       		.byte	-2
+ 5995              		.comm	random_seed,4,4
+ 5996              		.section	.start_section,"ax",%progbits
+ 5997              		.align	1
+ 5998              		.global	startup
+ 5999              		.syntax unified
+ 6000              		.code	16
+ 6001              		.thumb_func
+ 6002              		.fpu softvfp
+ 6004              	startup:
+ 6005              	.LFB1:
+ 6006              		.file 1 "C:/mop/c/Moplaborationer/DIPs-Witch/C/startup.c"
+   1:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** #include "graphics.h"
+   2:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** #include "monster_black.xbm"
+   3:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** #include "monster_light.xbm"
+   4:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** #include "monster_gray.xbm"
+   5:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 
+   6:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** #include "press_black.xbm"
+   7:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** #include "press_light.xbm"
+   8:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** #include "press_gray.xbm"
+   9:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 
+  10:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** #include "controls.h"
+  11:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 
+  12:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** #include "castle_black.xbm"
+  13:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** #include "castle_gray.xbm"
+  14:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** #include "castle_light.xbm"
+  15:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** #include "title_light.xbm"
+  16:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** #include "title_gray.xbm"
+  17:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** #include "title_black.xbm"
+  18:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 
+  19:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** #include "startup.h"
+  20:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** #include "slow_text.h"
+  21:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** #include "ascii_display.h"
+  22:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** #include "bg.xbm"
+  23:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** #include "gpio.h"
+  24:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** #include "fire.h"
+  25:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** #include "player.h"
+  26:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** #include "bird.h"
+  27:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** #include "witch.h"
+  28:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** #include "indoors.h"
+  29:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** #include "indoors2.h"
+  30:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** #include "DIP.h"
+  31:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 
+  32:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** int abs(int value);
+  33:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 
+  34:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** int random_seed;
+  35:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 
+  36:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** void startup(void) __attribute__((naked)) __attribute__((section (".start_section")) );
+  37:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 
+  38:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** void init_app( void ) {
+  39:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	*portModer = 0x55555555;
+  40:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	set_up_DIL();
+  41:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	//* ( (unsigned long *) 0x40023830) = 0x18;
+  42:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	graphic_initialize();
+  43:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** #ifndef SIMULATOR
+  44:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	graphic_clear_screen();
+  45:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** #endif
+  46:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** }
+  47:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 
+  48:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** void startup ( void )
+  49:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** {
+ 6007              		.loc 1 49 0
+ 6008              		.cfi_startproc
+ 6009              		@ Naked Function: prologue and epilogue provided by programmer.
+ 6010              		@ args = 0, pretend = 0, frame = 0
+ 6011              		@ frame_needed = 1, uses_anonymous_args = 0
+  50:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** __asm volatile(
+ 6012              		.loc 1 50 0
+ 6013              		.syntax divided
+ 6014              	@ 50 "C:/mop/c/Moplaborationer/DIPs-Witch/C/startup.c" 1
+ 6015 0000 0248     		 LDR R0,=0x2001C000
+ 6016 0002 8546     	 MOV SP,R0
+ 6017 0004 FFF7FEFF 	 BL main
+ 6018 0008 FEE7     	_exit: B .
+ 6019              	
+ 6020              	@ 0 "" 2
+  51:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	" LDR R0,=0x2001C000\n"		/* set stack */
+  52:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	" MOV SP,R0\n"
+  53:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	" BL main\n"				/* call main */
+  54:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	"_exit: B .\n"				/* never return */
+  55:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	) ;
+  56:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** }
+ 6021              		.loc 1 56 0
+ 6022              		.thumb
+ 6023              		.syntax unified
+ 6024 000a C046     		nop
+ 6025              		.cfi_endproc
+ 6026              	.LFE1:
+ 6028              		.text
+ 6029              		.align	1
+ 6030              		.global	init_app
+ 6031              		.syntax unified
+ 6032              		.code	16
+ 6033              		.thumb_func
+ 6034              		.fpu softvfp
+ 6036              	init_app:
+ 6037              	.LFB0:
+  38:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	*portModer = 0x55555555;
+ 6038              		.loc 1 38 0
+ 6039              		.cfi_startproc
+ 6040              		@ args = 0, pretend = 0, frame = 0
+ 6041              		@ frame_needed = 1, uses_anonymous_args = 0
+ 6042 0000 80B5     		push	{r7, lr}
+ 6043              		.cfi_def_cfa_offset 8
+ 6044              		.cfi_offset 7, -8
+ 6045              		.cfi_offset 14, -4
+ 6046 0002 00AF     		add	r7, sp, #0
+ 6047              		.cfi_def_cfa_register 7
+  39:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	set_up_DIL();
+ 6048              		.loc 1 39 0
+ 6049 0004 054B     		ldr	r3, .L3
+ 6050 0006 064A     		ldr	r2, .L3+4
+ 6051 0008 1A60     		str	r2, [r3]
+  40:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	//* ( (unsigned long *) 0x40023830) = 0x18;
+ 6052              		.loc 1 40 0
+ 6053 000a FFF7FEFF 		bl	set_up_DIL
+  42:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** #ifndef SIMULATOR
+ 6054              		.loc 1 42 0
+ 6055 000e FFF7FEFF 		bl	graphic_initialize
+  44:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** #endif
+ 6056              		.loc 1 44 0
+ 6057 0012 FFF7FEFF 		bl	graphic_clear_screen
+  46:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 
+ 6058              		.loc 1 46 0
+ 6059 0016 C046     		nop
+ 6060 0018 BD46     		mov	sp, r7
+ 6061              		@ sp needed
+ 6062 001a 80BD     		pop	{r7, pc}
+ 6063              	.L4:
+ 6064              		.align	2
+ 6065              	.L3:
+ 6066 001c 00100240 		.word	1073876992
+ 6067 0020 55555555 		.word	1431655765
+ 6068              		.cfi_endproc
+ 6069              	.LFE0:
+ 6071              		.comm	monster,4,4
+ 6072              		.comm	monsterLight,4,4
+ 6073              		.comm	monsterGray,4,4
+ 6074              		.comm	bg,4,4
+ 6075              		.comm	castleBlack,4,4
+ 6076              		.comm	castleGray,4,4
+ 6077              		.comm	castleLight,4,4
+ 6078              		.comm	titleBlack,4,4
+ 6079              		.comm	titleGray,4,4
+ 6080              		.comm	titleLight,4,4
+ 6081              		.comm	pressBlack,4,4
+ 6082              		.comm	pressGray,4,4
+ 6083              		.comm	pressLight,4,4
+ 6084              		.comm	tempMonster,12,4
+ 6085              		.comm	tempMonsterLight,12,4
+ 6086              		.comm	tempMonsterGray,12,4
+ 6087              		.comm	tempBg,12,4
+ 6088              		.comm	tempCastleBlack,12,4
+ 6089              		.comm	tempCastleGray,12,4
+ 6090              		.comm	tempCastleLight,12,4
+ 6091              		.comm	tempTitleBlack,12,4
+ 6092              		.comm	tempTitleGray,12,4
+ 6093              		.comm	tempTitleLight,12,4
+ 6094              		.comm	tempPressBlack,12,4
+ 6095              		.comm	tempPressGray,12,4
+ 6096              		.comm	tempPressLight,12,4
+ 6097              		.align	1
+ 6098              		.global	initSprites
+ 6099              		.syntax unified
+ 6100              		.code	16
+ 6101              		.thumb_func
+ 6102              		.fpu softvfp
+ 6104              	initSprites:
+ 6105              	.LFB2:
+  57:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 
+  58:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** sprite *monster;
+  59:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** sprite *monsterLight;
+  60:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** sprite *monsterGray;
+  61:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** sprite *bg;
+  62:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 
+  63:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 
+  64:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** sprite *castleBlack;
+  65:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** sprite *castleGray;
+  66:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** sprite *castleLight;
+  67:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** sprite *titleBlack;
+  68:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** sprite *titleGray;
+  69:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** sprite *titleLight;
+  70:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** sprite *pressBlack;
+  71:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** sprite *pressGray;
+  72:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** sprite *pressLight;
+  73:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 
+  74:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** sprite tempMonster;
+  75:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** sprite tempMonsterLight;
+  76:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** sprite tempMonsterGray;
+  77:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 
+  78:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** sprite tempBg;
+  79:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 
+  80:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** sprite tempCastleBlack;
+  81:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** sprite tempCastleGray;
+  82:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** sprite tempCastleLight;
+  83:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** sprite tempTitleBlack;
+  84:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** sprite tempTitleGray;
+  85:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** sprite tempTitleLight;
+  86:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** sprite tempPressBlack;
+  87:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** sprite tempPressGray;
+  88:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** sprite tempPressLight;
+  89:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 
+  90:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** void initSprites( void ) {
+ 6106              		.loc 1 90 0
+ 6107              		.cfi_startproc
+ 6108              		@ args = 0, pretend = 0, frame = 40
+ 6109              		@ frame_needed = 1, uses_anonymous_args = 0
+ 6110 0024 80B5     		push	{r7, lr}
+ 6111              		.cfi_def_cfa_offset 8
+ 6112              		.cfi_offset 7, -8
+ 6113              		.cfi_offset 14, -4
+ 6114 0026 8AB0     		sub	sp, sp, #40
+ 6115              		.cfi_def_cfa_offset 48
+ 6116 0028 00AF     		add	r7, sp, #0
+ 6117              		.cfi_def_cfa_register 7
+  91:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	sprite *monsterPointer = &tempMonster;
+ 6118              		.loc 1 91 0
+ 6119 002a 494B     		ldr	r3, .L6
+ 6120 002c 7B62     		str	r3, [r7, #36]
+  92:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	load_sprite(monsterPointer, monster_black_bits, monster_black_width, monster_black_height);
+ 6121              		.loc 1 92 0
+ 6122 002e 4949     		ldr	r1, .L6+4
+ 6123 0030 786A     		ldr	r0, [r7, #36]
+ 6124 0032 1E23     		movs	r3, #30
+ 6125 0034 1E22     		movs	r2, #30
+ 6126 0036 FFF7FEFF 		bl	load_sprite
+  93:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	monster = monsterPointer;
+ 6127              		.loc 1 93 0
+ 6128 003a 474B     		ldr	r3, .L6+8
+ 6129 003c 7A6A     		ldr	r2, [r7, #36]
+ 6130 003e 1A60     		str	r2, [r3]
+  94:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	
+  95:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	sprite *monsterPointer2 = &tempMonsterLight;
+ 6131              		.loc 1 95 0
+ 6132 0040 464B     		ldr	r3, .L6+12
+ 6133 0042 3B62     		str	r3, [r7, #32]
+  96:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	load_sprite(monsterPointer2, monster_light_bits, monster_light_width, monster_light_height);
+ 6134              		.loc 1 96 0
+ 6135 0044 4649     		ldr	r1, .L6+16
+ 6136 0046 386A     		ldr	r0, [r7, #32]
+ 6137 0048 1E23     		movs	r3, #30
+ 6138 004a 1E22     		movs	r2, #30
+ 6139 004c FFF7FEFF 		bl	load_sprite
+  97:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	monsterLight = monsterPointer2;
+ 6140              		.loc 1 97 0
+ 6141 0050 444B     		ldr	r3, .L6+20
+ 6142 0052 3A6A     		ldr	r2, [r7, #32]
+ 6143 0054 1A60     		str	r2, [r3]
+  98:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 
+  99:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	sprite *monsterPointer3 = &tempMonsterGray;
+ 6144              		.loc 1 99 0
+ 6145 0056 444B     		ldr	r3, .L6+24
+ 6146 0058 FB61     		str	r3, [r7, #28]
+ 100:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	load_sprite(monsterPointer3, monster_gray_bits, monster_gray_width, monster_gray_height);
+ 6147              		.loc 1 100 0
+ 6148 005a 4449     		ldr	r1, .L6+28
+ 6149 005c F869     		ldr	r0, [r7, #28]
+ 6150 005e 1E23     		movs	r3, #30
+ 6151 0060 1E22     		movs	r2, #30
+ 6152 0062 FFF7FEFF 		bl	load_sprite
+ 101:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	monsterGray = monsterPointer3;
+ 6153              		.loc 1 101 0
+ 6154 0066 424B     		ldr	r3, .L6+32
+ 6155 0068 FA69     		ldr	r2, [r7, #28]
+ 6156 006a 1A60     		str	r2, [r3]
+ 102:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 
+ 103:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	sprite *pointer4 = &tempBg;
+ 6157              		.loc 1 103 0
+ 6158 006c 414B     		ldr	r3, .L6+36
+ 6159 006e BB61     		str	r3, [r7, #24]
+ 104:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	load_sprite(pointer4, bg_bits, bg_width, bg_height);
+ 6160              		.loc 1 104 0
+ 6161 0070 4149     		ldr	r1, .L6+40
+ 6162 0072 B869     		ldr	r0, [r7, #24]
+ 6163 0074 4023     		movs	r3, #64
+ 6164 0076 8022     		movs	r2, #128
+ 6165 0078 FFF7FEFF 		bl	load_sprite
+ 105:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	bg = pointer4;
+ 6166              		.loc 1 105 0
+ 6167 007c 3F4B     		ldr	r3, .L6+44
+ 6168 007e BA69     		ldr	r2, [r7, #24]
+ 6169 0080 1A60     		str	r2, [r3]
+ 106:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	
+ 107:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	sprite *pointer5 = &tempCastleBlack;
+ 6170              		.loc 1 107 0
+ 6171 0082 3F4B     		ldr	r3, .L6+48
+ 6172 0084 7B61     		str	r3, [r7, #20]
+ 108:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	load_sprite(pointer5, castle_black_bits, castle_black_width, castle_black_height);
+ 6173              		.loc 1 108 0
+ 6174 0086 3F49     		ldr	r1, .L6+52
+ 6175 0088 7869     		ldr	r0, [r7, #20]
+ 6176 008a 4023     		movs	r3, #64
+ 6177 008c 8022     		movs	r2, #128
+ 6178 008e FFF7FEFF 		bl	load_sprite
+ 109:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	castleBlack = pointer5;
+ 6179              		.loc 1 109 0
+ 6180 0092 3D4B     		ldr	r3, .L6+56
+ 6181 0094 7A69     		ldr	r2, [r7, #20]
+ 6182 0096 1A60     		str	r2, [r3]
+ 110:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	
+ 111:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	sprite *pointer6 = &tempCastleGray;
+ 6183              		.loc 1 111 0
+ 6184 0098 3C4B     		ldr	r3, .L6+60
+ 6185 009a 3B61     		str	r3, [r7, #16]
+ 112:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	load_sprite(pointer6, castle_gray_bits, castle_black_width, castle_black_height);
+ 6186              		.loc 1 112 0
+ 6187 009c 3C49     		ldr	r1, .L6+64
+ 6188 009e 3869     		ldr	r0, [r7, #16]
+ 6189 00a0 4023     		movs	r3, #64
+ 6190 00a2 8022     		movs	r2, #128
+ 6191 00a4 FFF7FEFF 		bl	load_sprite
+ 113:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	castleGray = pointer6;
+ 6192              		.loc 1 113 0
+ 6193 00a8 3A4B     		ldr	r3, .L6+68
+ 6194 00aa 3A69     		ldr	r2, [r7, #16]
+ 6195 00ac 1A60     		str	r2, [r3]
+ 114:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	
+ 115:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	sprite *pointer7 = &tempCastleLight;
+ 6196              		.loc 1 115 0
+ 6197 00ae 3A4B     		ldr	r3, .L6+72
+ 6198 00b0 FB60     		str	r3, [r7, #12]
+ 116:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	load_sprite(pointer7, castle_light_bits, castle_black_width, castle_black_height);
+ 6199              		.loc 1 116 0
+ 6200 00b2 3A49     		ldr	r1, .L6+76
+ 6201 00b4 F868     		ldr	r0, [r7, #12]
+ 6202 00b6 4023     		movs	r3, #64
+ 6203 00b8 8022     		movs	r2, #128
+ 6204 00ba FFF7FEFF 		bl	load_sprite
+ 117:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	castleLight = pointer7;
+ 6205              		.loc 1 117 0
+ 6206 00be 384B     		ldr	r3, .L6+80
+ 6207 00c0 FA68     		ldr	r2, [r7, #12]
+ 6208 00c2 1A60     		str	r2, [r3]
+ 118:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	
+ 119:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	sprite *pointer8 = &tempTitleLight;
+ 6209              		.loc 1 119 0
+ 6210 00c4 374B     		ldr	r3, .L6+84
+ 6211 00c6 BB60     		str	r3, [r7, #8]
+ 120:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	load_sprite(pointer8, title_light_bits, title_black_width, title_black_height);
+ 6212              		.loc 1 120 0
+ 6213 00c8 3749     		ldr	r1, .L6+88
+ 6214 00ca B868     		ldr	r0, [r7, #8]
+ 6215 00cc 1E23     		movs	r3, #30
+ 6216 00ce 3222     		movs	r2, #50
+ 6217 00d0 FFF7FEFF 		bl	load_sprite
+ 121:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	titleLight = pointer8;
+ 6218              		.loc 1 121 0
+ 6219 00d4 354B     		ldr	r3, .L6+92
+ 6220 00d6 BA68     		ldr	r2, [r7, #8]
+ 6221 00d8 1A60     		str	r2, [r3]
+ 122:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	sprite *pointer9 = &tempTitleGray;
+ 6222              		.loc 1 122 0
+ 6223 00da 354B     		ldr	r3, .L6+96
+ 6224 00dc 7B60     		str	r3, [r7, #4]
+ 123:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	load_sprite(pointer9, title_gray_bits, title_black_width, title_black_height);
+ 6225              		.loc 1 123 0
+ 6226 00de 3549     		ldr	r1, .L6+100
+ 6227 00e0 7868     		ldr	r0, [r7, #4]
+ 6228 00e2 1E23     		movs	r3, #30
+ 6229 00e4 3222     		movs	r2, #50
+ 6230 00e6 FFF7FEFF 		bl	load_sprite
+ 124:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	titleGray = pointer9;
+ 6231              		.loc 1 124 0
+ 6232 00ea 334B     		ldr	r3, .L6+104
+ 6233 00ec 7A68     		ldr	r2, [r7, #4]
+ 6234 00ee 1A60     		str	r2, [r3]
+ 125:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	sprite *pointer10 = &tempTitleBlack;
+ 6235              		.loc 1 125 0
+ 6236 00f0 324B     		ldr	r3, .L6+108
+ 6237 00f2 3B60     		str	r3, [r7]
+ 126:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	load_sprite(pointer10, title_black_bits, title_black_width, title_black_height);
+ 6238              		.loc 1 126 0
+ 6239 00f4 3249     		ldr	r1, .L6+112
+ 6240 00f6 3868     		ldr	r0, [r7]
+ 6241 00f8 1E23     		movs	r3, #30
+ 6242 00fa 3222     		movs	r2, #50
+ 6243 00fc FFF7FEFF 		bl	load_sprite
+ 127:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	titleBlack = pointer10;	
+ 6244              		.loc 1 127 0
+ 6245 0100 304B     		ldr	r3, .L6+116
+ 6246 0102 3A68     		ldr	r2, [r7]
+ 6247 0104 1A60     		str	r2, [r3]
+ 128:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	
+ 129:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	pointer8 = &tempPressLight;
+ 6248              		.loc 1 129 0
+ 6249 0106 304B     		ldr	r3, .L6+120
+ 6250 0108 BB60     		str	r3, [r7, #8]
+ 130:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	load_sprite(pointer8, press_light_bits, press_black_width, press_black_height);
+ 6251              		.loc 1 130 0
+ 6252 010a 3049     		ldr	r1, .L6+124
+ 6253 010c B868     		ldr	r0, [r7, #8]
+ 6254 010e 2323     		movs	r3, #35
+ 6255 0110 3C22     		movs	r2, #60
+ 6256 0112 FFF7FEFF 		bl	load_sprite
+ 131:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	pressLight = pointer8;
+ 6257              		.loc 1 131 0
+ 6258 0116 2E4B     		ldr	r3, .L6+128
+ 6259 0118 BA68     		ldr	r2, [r7, #8]
+ 6260 011a 1A60     		str	r2, [r3]
+ 132:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	pointer9 = &tempPressGray;
+ 6261              		.loc 1 132 0
+ 6262 011c 2D4B     		ldr	r3, .L6+132
+ 6263 011e 7B60     		str	r3, [r7, #4]
+ 133:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	load_sprite(pointer9, press_gray_bits, press_black_width, press_black_height);
+ 6264              		.loc 1 133 0
+ 6265 0120 2D49     		ldr	r1, .L6+136
+ 6266 0122 7868     		ldr	r0, [r7, #4]
+ 6267 0124 2323     		movs	r3, #35
+ 6268 0126 3C22     		movs	r2, #60
+ 6269 0128 FFF7FEFF 		bl	load_sprite
+ 134:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	pressGray = pointer9;
+ 6270              		.loc 1 134 0
+ 6271 012c 2B4B     		ldr	r3, .L6+140
+ 6272 012e 7A68     		ldr	r2, [r7, #4]
+ 6273 0130 1A60     		str	r2, [r3]
+ 135:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	pointer10 = &tempPressBlack;
+ 6274              		.loc 1 135 0
+ 6275 0132 2B4B     		ldr	r3, .L6+144
+ 6276 0134 3B60     		str	r3, [r7]
+ 136:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	load_sprite(pointer10, press_black_bits, press_black_width, press_black_height);
+ 6277              		.loc 1 136 0
+ 6278 0136 2B49     		ldr	r1, .L6+148
+ 6279 0138 3868     		ldr	r0, [r7]
+ 6280 013a 2323     		movs	r3, #35
+ 6281 013c 3C22     		movs	r2, #60
+ 6282 013e FFF7FEFF 		bl	load_sprite
+ 137:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	pressBlack = pointer10;	
+ 6283              		.loc 1 137 0
+ 6284 0142 294B     		ldr	r3, .L6+152
+ 6285 0144 3A68     		ldr	r2, [r7]
+ 6286 0146 1A60     		str	r2, [r3]
+ 138:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	
+ 139:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	
+ 140:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** }
+ 6287              		.loc 1 140 0
+ 6288 0148 C046     		nop
+ 6289 014a BD46     		mov	sp, r7
+ 6290 014c 0AB0     		add	sp, sp, #40
+ 6291              		@ sp needed
+ 6292 014e 80BD     		pop	{r7, pc}
+ 6293              	.L7:
+ 6294              		.align	2
+ 6295              	.L6:
+ 6296 0150 00000000 		.word	tempMonster
+ 6297 0154 00000000 		.word	monster_black_bits
+ 6298 0158 00000000 		.word	monster
+ 6299 015c 00000000 		.word	tempMonsterLight
+ 6300 0160 78000000 		.word	monster_light_bits
+ 6301 0164 00000000 		.word	monsterLight
+ 6302 0168 00000000 		.word	tempMonsterGray
+ 6303 016c F0000000 		.word	monster_gray_bits
+ 6304 0170 00000000 		.word	monsterGray
+ 6305 0174 00000000 		.word	tempBg
+ 6306 0178 2C130000 		.word	bg_bits
+ 6307 017c 00000000 		.word	bg
+ 6308 0180 00000000 		.word	tempCastleBlack
+ 6309 0184 B0040000 		.word	castle_black_bits
+ 6310 0188 00000000 		.word	castleBlack
+ 6311 018c 00000000 		.word	tempCastleGray
+ 6312 0190 B0080000 		.word	castle_gray_bits
+ 6313 0194 00000000 		.word	castleGray
+ 6314 0198 00000000 		.word	tempCastleLight
+ 6315 019c B00C0000 		.word	castle_light_bits
+ 6316 01a0 00000000 		.word	castleLight
+ 6317 01a4 00000000 		.word	tempTitleLight
+ 6318 01a8 B0100000 		.word	title_light_bits
+ 6319 01ac 00000000 		.word	titleLight
+ 6320 01b0 00000000 		.word	tempTitleGray
+ 6321 01b4 84110000 		.word	title_gray_bits
+ 6322 01b8 00000000 		.word	titleGray
+ 6323 01bc 00000000 		.word	tempTitleBlack
+ 6324 01c0 58120000 		.word	title_black_bits
+ 6325 01c4 00000000 		.word	titleBlack
+ 6326 01c8 00000000 		.word	tempPressLight
+ 6327 01cc 80020000 		.word	press_light_bits
+ 6328 01d0 00000000 		.word	pressLight
+ 6329 01d4 00000000 		.word	tempPressGray
+ 6330 01d8 98030000 		.word	press_gray_bits
+ 6331 01dc 00000000 		.word	pressGray
+ 6332 01e0 00000000 		.word	tempPressBlack
+ 6333 01e4 68010000 		.word	press_black_bits
+ 6334 01e8 00000000 		.word	pressBlack
+ 6335              		.cfi_endproc
+ 6336              	.LFE2:
+ 6338              		.global	counter
+ 6339              		.bss
+ 6340              		.align	2
+ 6343              	counter:
+ 6344 0000 00000000 		.space	4
+ 6345              		.global	current_screen
+ 6346              		.data
+ 6347              		.align	2
+ 6350              	current_screen:
+ 6351 172c 01000000 		.word	1
+ 6352              		.section	.rodata
+ 6353              		.align	2
+ 6354              	.LC54:
+ 6355 0000 20202000 		.ascii	"   \000"
+ 6356              		.align	2
+ 6357              	.LC56:
+ 6358 0004 2A4B5241 		.ascii	"*KRA!* *KRA!*\000"
+ 6358      212A202A 
+ 6358      4B524121 
+ 6358      2A00
+ 6359 0012 0000     		.align	2
+ 6360              	.LC58:
+ 6361 0014 44494C73 		.ascii	"DILs-witches have\000"
+ 6361      2D776974 
+ 6361      63686573 
+ 6361      20686176 
+ 6361      6500
+ 6362 0026 0000     		.align	2
+ 6363              	.LC60:
+ 6364 0028 466F7220 		.ascii	"For centuries the\000"
+ 6364      63656E74 
+ 6364      75726965 
+ 6364      73207468 
+ 6364      6500
+ 6365 003a 0000     		.align	2
+ 6366              	.LC62:
+ 6367 003c 20202020 		.ascii	"    \000"
+ 6367      00
+ 6368 0041 000000   		.align	2
+ 6369              	.LC64:
+ 6370 0044 636F696C 		.ascii	"coiled in fear,\000"
+ 6370      65642069 
+ 6370      6E206665 
+ 6370      61722C00 
+ 6371              		.align	2
+ 6372              	.LC66:
+ 6373 0054 74686174 		.ascii	"that a DIPs-witch\000"
+ 6373      20612044 
+ 6373      4950732D 
+ 6373      77697463 
+ 6373      6800
+ 6374 0066 0000     		.align	2
+ 6375              	.LC68:
+ 6376 0068 7768656E 		.ascii	"whenever they hear\000"
+ 6376      65766572 
+ 6376      20746865 
+ 6376      79206865 
+ 6376      617200
+ 6377 007b 00       		.align	2
+ 6378              	.LC70:
+ 6379 007c 6973206E 		.ascii	"is near.\000"
+ 6379      6561722E 
+ 6379      00
+ 6380 0085 000000   		.align	2
+ 6381              	.LC72:
+ 6382 0088 73757270 		.ascii	"surprising, finding\000"
+ 6382      72697369 
+ 6382      6E672C20 
+ 6382      66696E64 
+ 6382      696E6700 
+ 6383              		.align	2
+ 6384              	.LC74:
+ 6385 009c 536F2069 		.ascii	"So it is quite\000"
+ 6385      74206973 
+ 6385      20717569 
+ 6385      746500
+ 6386 00ab 00       		.align	2
+ 6387              	.LC76:
+ 6388 00ac 796F7520 		.ascii	"you here,\000"
+ 6388      68657265 
+ 6388      2C00
+ 6389 00b6 0000     		.align	2
+ 6390              	.LC78:
+ 6391 00b8 68656972 		.ascii	"heir to king Lear.\000"
+ 6391      20746F20 
+ 6391      6B696E67 
+ 6391      204C6561 
+ 6391      722E00
+ 6392 00cb 00       		.align	2
+ 6393              	.LC80:
+ 6394 00cc 71756565 		.ascii	"queen Daffo of DILs,\000"
+ 6394      6E204461 
+ 6394      66666F20 
+ 6394      6F662044 
+ 6394      494C732C 
+ 6395 00e1 000000   		.align	2
+ 6396              	.LC82:
+ 6397 00e4 74656D70 		.ascii	"tempted, to loot\000"
+ 6397      7465642C 
+ 6397      20746F20 
+ 6397      6C6F6F74 
+ 6397      00
+ 6398 00f5 000000   		.align	2
+ 6399              	.LC84:
+ 6400 00f8 42757420 		.ascii	"But maybe you're\000"
+ 6400      6D617962 
+ 6400      6520796F 
+ 6400      75277265 
+ 6400      00
+ 6401 0109 000000   		.align	2
+ 6402              	.LC86:
+ 6403 010c 66726F6D 		.ascii	"from the riches,\000"
+ 6403      20746865 
+ 6403      20726963 
+ 6403      6865732C 
+ 6403      00
+ 6404 011d 000000   		.align	2
+ 6405              	.LC88:
+ 6406 0120 7769636B 		.ascii	"wicked DIPs-witches.\000"
+ 6406      65642044 
+ 6406      4950732D 
+ 6406      77697463 
+ 6406      6865732E 
+ 6407 0135 000000   		.align	2
+ 6408              	.LC90:
+ 6409 0138 73757265 		.ascii	"sured by\000"
+ 6409      64206279 
+ 6409      00
+ 6410 0141 000000   		.align	2
+ 6411              	.LC92:
+ 6412 0144 736F2067 		.ascii	"so grippily trea-\000"
+ 6412      72697070 
+ 6412      696C7920 
+ 6412      74726561 
+ 6412      2D00
+ 6413 0156 0000     		.align	2
+ 6414              	.LC94:
+ 6415 0158 2D207265 		.ascii	"- reset the switch!\000"
+ 6415      73657420 
+ 6415      74686520 
+ 6415      73776974 
+ 6415      63682100 
+ 6416              		.align	2
+ 6417              	.LC96:
+ 6418 016c 456E7465 		.ascii	"Enter, brave witch,\000"
+ 6418      722C2062 
+ 6418      72617665 
+ 6418      20776974 
+ 6418      63682C00 
+ 6419              		.text
+ 6420              		.align	1
+ 6421              		.global	main
+ 6422              		.syntax unified
+ 6423              		.code	16
+ 6424              		.thumb_func
+ 6425              		.fpu softvfp
+ 6427              	main:
+ 6428              	.LFB3:
+ 141:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	
+ 142:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** int counter = 0;
+ 143:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** int current_screen = START_SCREEN;
+ 144:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** void main(void)
+ 145:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** {
+ 6429              		.loc 1 145 0
+ 6430              		.cfi_startproc
+ 6431              		@ args = 0, pretend = 0, frame = 1136
+ 6432              		@ frame_needed = 1, uses_anonymous_args = 0
+ 6433 01ec 90B5     		push	{r4, r7, lr}
+ 6434              		.cfi_def_cfa_offset 12
+ 6435              		.cfi_offset 4, -12
+ 6436              		.cfi_offset 7, -8
+ 6437              		.cfi_offset 14, -4
+ 6438 01ee FD4C     		ldr	r4, .L60
+ 6439 01f0 A544     		add	sp, sp, r4
+ 6440              		.cfi_def_cfa_offset 1152
+ 6441 01f2 00AF     		add	r7, sp, #0
+ 6442              		.cfi_def_cfa_register 7
+ 146:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	
+ 147:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	init_app();	
+ 6443              		.loc 1 147 0
+ 6444 01f4 FFF7FEFF 		bl	init_app
+ 148:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	initSprites();
+ 6445              		.loc 1 148 0
+ 6446 01f8 FFF7FEFF 		bl	initSprites
+ 149:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	
+ 150:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	GameObject monsterObj;
+ 151:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	Image monsterImage;
+ 152:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	Image monsterImages[] = {monsterImage};
+ 6447              		.loc 1 152 0
+ 6448 01fc 8423     		movs	r3, #132
+ 6449 01fe DB00     		lsls	r3, r3, #3
+ 6450 0200 FB18     		adds	r3, r7, r3
+ 6451 0202 F94A     		ldr	r2, .L60+4
+ 6452 0204 BA18     		adds	r2, r7, r2
+ 6453 0206 13CA     		ldmia	r2!, {r0, r1, r4}
+ 6454 0208 13C3     		stmia	r3!, {r0, r1, r4}
+ 153:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	monsterObj.images = monsterImages;
+ 6455              		.loc 1 153 0
+ 6456 020a 8723     		movs	r3, #135
+ 6457 020c DB00     		lsls	r3, r3, #3
+ 6458 020e FB18     		adds	r3, r7, r3
+ 6459 0210 8422     		movs	r2, #132
+ 6460 0212 D200     		lsls	r2, r2, #3
+ 6461 0214 BA18     		adds	r2, r7, r2
+ 6462 0216 1A60     		str	r2, [r3]
+ 154:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	load_image(&monsterObj.images[0], monster, monsterGray, monsterLight);
+ 6463              		.loc 1 154 0
+ 6464 0218 8723     		movs	r3, #135
+ 6465 021a DB00     		lsls	r3, r3, #3
+ 6466 021c FB18     		adds	r3, r7, r3
+ 6467 021e 1868     		ldr	r0, [r3]
+ 6468 0220 F24B     		ldr	r3, .L60+8
+ 6469 0222 1968     		ldr	r1, [r3]
+ 6470 0224 F24B     		ldr	r3, .L60+12
+ 6471 0226 1A68     		ldr	r2, [r3]
+ 6472 0228 F24B     		ldr	r3, .L60+16
+ 6473 022a 1B68     		ldr	r3, [r3]
+ 6474 022c FFF7FEFF 		bl	load_image
+ 155:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	monsterObj.xPos = 30;
+ 6475              		.loc 1 155 0
+ 6476 0230 8723     		movs	r3, #135
+ 6477 0232 DB00     		lsls	r3, r3, #3
+ 6478 0234 FB18     		adds	r3, r7, r3
+ 6479 0236 1E22     		movs	r2, #30
+ 6480 0238 5A60     		str	r2, [r3, #4]
+ 156:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	monsterObj.yPos = 4;
+ 6481              		.loc 1 156 0
+ 6482 023a 8723     		movs	r3, #135
+ 6483 023c DB00     		lsls	r3, r3, #3
+ 6484 023e FB18     		adds	r3, r7, r3
+ 6485 0240 0422     		movs	r2, #4
+ 6486 0242 9A60     		str	r2, [r3, #8]
+ 157:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	monsterObj.current_frame = 0;
+ 6487              		.loc 1 157 0
+ 6488 0244 8723     		movs	r3, #135
+ 6489 0246 DB00     		lsls	r3, r3, #3
+ 6490 0248 FB18     		adds	r3, r7, r3
+ 6491 024a 0022     		movs	r2, #0
+ 6492 024c 5A61     		str	r2, [r3, #20]
+ 158:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	monsterObj.update = playerUpdate;
+ 6493              		.loc 1 158 0
+ 6494 024e 8723     		movs	r3, #135
+ 6495 0250 DB00     		lsls	r3, r3, #3
+ 6496 0252 FB18     		adds	r3, r7, r3
+ 6497 0254 E84A     		ldr	r2, .L60+20
+ 6498 0256 DA60     		str	r2, [r3, #12]
+ 159:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	
+ 160:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	GameObject titleObj;
+ 161:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	Image titleImage;
+ 162:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	Image titleImages[] = {titleImage};
+ 6499              		.loc 1 162 0
+ 6500 0258 F923     		movs	r3, #249
+ 6501 025a 9B00     		lsls	r3, r3, #2
+ 6502 025c FB18     		adds	r3, r7, r3
+ 6503 025e FC22     		movs	r2, #252
+ 6504 0260 9200     		lsls	r2, r2, #2
+ 6505 0262 BA18     		adds	r2, r7, r2
+ 6506 0264 13CA     		ldmia	r2!, {r0, r1, r4}
+ 6507 0266 13C3     		stmia	r3!, {r0, r1, r4}
+ 163:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	titleObj.images = titleImages;
+ 6508              		.loc 1 163 0
+ 6509 0268 FF23     		movs	r3, #255
+ 6510 026a 9B00     		lsls	r3, r3, #2
+ 6511 026c FB18     		adds	r3, r7, r3
+ 6512 026e F922     		movs	r2, #249
+ 6513 0270 9200     		lsls	r2, r2, #2
+ 6514 0272 BA18     		adds	r2, r7, r2
+ 6515 0274 1A60     		str	r2, [r3]
+ 164:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	load_image(&titleObj.images[0], titleBlack, titleGray, titleLight);
+ 6516              		.loc 1 164 0
+ 6517 0276 FF23     		movs	r3, #255
+ 6518 0278 9B00     		lsls	r3, r3, #2
+ 6519 027a FB18     		adds	r3, r7, r3
+ 6520 027c 1868     		ldr	r0, [r3]
+ 6521 027e DF4B     		ldr	r3, .L60+24
+ 6522 0280 1968     		ldr	r1, [r3]
+ 6523 0282 DF4B     		ldr	r3, .L60+28
+ 6524 0284 1A68     		ldr	r2, [r3]
+ 6525 0286 DF4B     		ldr	r3, .L60+32
+ 6526 0288 1B68     		ldr	r3, [r3]
+ 6527 028a FFF7FEFF 		bl	load_image
+ 165:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	titleObj.xPos = 1;
+ 6528              		.loc 1 165 0
+ 6529 028e FF23     		movs	r3, #255
+ 6530 0290 9B00     		lsls	r3, r3, #2
+ 6531 0292 FB18     		adds	r3, r7, r3
+ 6532 0294 0122     		movs	r2, #1
+ 6533 0296 5A60     		str	r2, [r3, #4]
+ 166:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	titleObj.yPos = -40;
+ 6534              		.loc 1 166 0
+ 6535 0298 FF23     		movs	r3, #255
+ 6536 029a 9B00     		lsls	r3, r3, #2
+ 6537 029c FB18     		adds	r3, r7, r3
+ 6538 029e 2822     		movs	r2, #40
+ 6539 02a0 5242     		rsbs	r2, r2, #0
+ 6540 02a2 9A60     		str	r2, [r3, #8]
+ 167:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	titleObj.current_frame = 0;
+ 6541              		.loc 1 167 0
+ 6542 02a4 FF23     		movs	r3, #255
+ 6543 02a6 9B00     		lsls	r3, r3, #2
+ 6544 02a8 FB18     		adds	r3, r7, r3
+ 6545 02aa 0022     		movs	r2, #0
+ 6546 02ac 5A61     		str	r2, [r3, #20]
+ 168:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	
+ 169:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	GameObject pressObj;
+ 170:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	Image pressImage;
+ 171:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	Image pressImages[] = {pressImage};
+ 6547              		.loc 1 171 0
+ 6548 02ae EA23     		movs	r3, #234
+ 6549 02b0 9B00     		lsls	r3, r3, #2
+ 6550 02b2 FB18     		adds	r3, r7, r3
+ 6551 02b4 ED22     		movs	r2, #237
+ 6552 02b6 9200     		lsls	r2, r2, #2
+ 6553 02b8 BA18     		adds	r2, r7, r2
+ 6554 02ba 13CA     		ldmia	r2!, {r0, r1, r4}
+ 6555 02bc 13C3     		stmia	r3!, {r0, r1, r4}
+ 172:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	pressObj.images = pressImages;
+ 6556              		.loc 1 172 0
+ 6557 02be F023     		movs	r3, #240
+ 6558 02c0 9B00     		lsls	r3, r3, #2
+ 6559 02c2 FB18     		adds	r3, r7, r3
+ 6560 02c4 EA22     		movs	r2, #234
+ 6561 02c6 9200     		lsls	r2, r2, #2
+ 6562 02c8 BA18     		adds	r2, r7, r2
+ 6563 02ca 1A60     		str	r2, [r3]
+ 173:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	load_image(&pressObj.images[0], pressBlack, pressLight, pressGray);
+ 6564              		.loc 1 173 0
+ 6565 02cc F023     		movs	r3, #240
+ 6566 02ce 9B00     		lsls	r3, r3, #2
+ 6567 02d0 FB18     		adds	r3, r7, r3
+ 6568 02d2 1868     		ldr	r0, [r3]
+ 6569 02d4 CC4B     		ldr	r3, .L60+36
+ 6570 02d6 1968     		ldr	r1, [r3]
+ 6571 02d8 CC4B     		ldr	r3, .L60+40
+ 6572 02da 1A68     		ldr	r2, [r3]
+ 6573 02dc CC4B     		ldr	r3, .L60+44
+ 6574 02de 1B68     		ldr	r3, [r3]
+ 6575 02e0 FFF7FEFF 		bl	load_image
+ 174:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	pressObj.xPos = 65-30;
+ 6576              		.loc 1 174 0
+ 6577 02e4 F023     		movs	r3, #240
+ 6578 02e6 9B00     		lsls	r3, r3, #2
+ 6579 02e8 FB18     		adds	r3, r7, r3
+ 6580 02ea 2322     		movs	r2, #35
+ 6581 02ec 5A60     		str	r2, [r3, #4]
+ 175:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	pressObj.yPos = 29-15;
+ 6582              		.loc 1 175 0
+ 6583 02ee F023     		movs	r3, #240
+ 6584 02f0 9B00     		lsls	r3, r3, #2
+ 6585 02f2 FB18     		adds	r3, r7, r3
+ 6586 02f4 0E22     		movs	r2, #14
+ 6587 02f6 9A60     		str	r2, [r3, #8]
+ 176:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	pressObj.current_frame = 0;
+ 6588              		.loc 1 176 0
+ 6589 02f8 F023     		movs	r3, #240
+ 6590 02fa 9B00     		lsls	r3, r3, #2
+ 6591 02fc FB18     		adds	r3, r7, r3
+ 6592 02fe 0022     		movs	r2, #0
+ 6593 0300 5A61     		str	r2, [r3, #20]
+ 177:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	
+ 178:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	GameObject castleObj;
+ 179:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	Image castleImage;
+ 180:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	Image castleImages[] = {castleImage};
+ 6594              		.loc 1 180 0
+ 6595 0302 C44B     		ldr	r3, .L60+48
+ 6596 0304 8E22     		movs	r2, #142
+ 6597 0306 D200     		lsls	r2, r2, #3
+ 6598 0308 9446     		mov	ip, r2
+ 6599 030a BC44     		add	ip, ip, r7
+ 6600 030c 6344     		add	r3, r3, ip
+ 6601 030e DE22     		movs	r2, #222
+ 6602 0310 9200     		lsls	r2, r2, #2
+ 6603 0312 BA18     		adds	r2, r7, r2
+ 6604 0314 13CA     		ldmia	r2!, {r0, r1, r4}
+ 6605 0316 13C3     		stmia	r3!, {r0, r1, r4}
+ 181:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	castleObj.images = castleImages;
+ 6606              		.loc 1 181 0
+ 6607 0318 E123     		movs	r3, #225
+ 6608 031a 9B00     		lsls	r3, r3, #2
+ 6609 031c FB18     		adds	r3, r7, r3
+ 6610 031e DB22     		movs	r2, #219
+ 6611 0320 9200     		lsls	r2, r2, #2
+ 6612 0322 BA18     		adds	r2, r7, r2
+ 6613 0324 1A60     		str	r2, [r3]
+ 182:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	load_image(&castleObj.images[0], castleBlack, castleGray, castleLight);
+ 6614              		.loc 1 182 0
+ 6615 0326 E123     		movs	r3, #225
+ 6616 0328 9B00     		lsls	r3, r3, #2
+ 6617 032a FB18     		adds	r3, r7, r3
+ 6618 032c 1868     		ldr	r0, [r3]
+ 6619 032e BA4B     		ldr	r3, .L60+52
+ 6620 0330 1968     		ldr	r1, [r3]
+ 6621 0332 BA4B     		ldr	r3, .L60+56
+ 6622 0334 1A68     		ldr	r2, [r3]
+ 6623 0336 BA4B     		ldr	r3, .L60+60
+ 6624 0338 1B68     		ldr	r3, [r3]
+ 6625 033a FFF7FEFF 		bl	load_image
+ 183:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	castleObj.xPos = 1;
+ 6626              		.loc 1 183 0
+ 6627 033e E123     		movs	r3, #225
+ 6628 0340 9B00     		lsls	r3, r3, #2
+ 6629 0342 FB18     		adds	r3, r7, r3
+ 6630 0344 0122     		movs	r2, #1
+ 6631 0346 5A60     		str	r2, [r3, #4]
+ 184:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	castleObj.yPos = 1;
+ 6632              		.loc 1 184 0
+ 6633 0348 E123     		movs	r3, #225
+ 6634 034a 9B00     		lsls	r3, r3, #2
+ 6635 034c FB18     		adds	r3, r7, r3
+ 6636 034e 0122     		movs	r2, #1
+ 6637 0350 9A60     		str	r2, [r3, #8]
+ 185:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	castleObj.current_frame = 0;
+ 6638              		.loc 1 185 0
+ 6639 0352 E123     		movs	r3, #225
+ 6640 0354 9B00     		lsls	r3, r3, #2
+ 6641 0356 FB18     		adds	r3, r7, r3
+ 6642 0358 0022     		movs	r2, #0
+ 6643 035a 5A61     		str	r2, [r3, #20]
+ 186:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	
+ 187:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	GameObject indoors;
+ 188:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	init_indoors( &indoors );
+ 6644              		.loc 1 188 0
+ 6645 035c D223     		movs	r3, #210
+ 6646 035e 9B00     		lsls	r3, r3, #2
+ 6647 0360 FB18     		adds	r3, r7, r3
+ 6648 0362 1800     		movs	r0, r3
+ 6649 0364 FFF7FEFF 		bl	init_indoors
+ 189:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	indoors.xPos = 1;
+ 6650              		.loc 1 189 0
+ 6651 0368 AE4B     		ldr	r3, .L60+64
+ 6652 036a 8E22     		movs	r2, #142
+ 6653 036c D200     		lsls	r2, r2, #3
+ 6654 036e 9446     		mov	ip, r2
+ 6655 0370 BC44     		add	ip, ip, r7
+ 6656 0372 6344     		add	r3, r3, ip
+ 6657 0374 0122     		movs	r2, #1
+ 6658 0376 5A60     		str	r2, [r3, #4]
+ 190:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	indoors.yPos = 1;
+ 6659              		.loc 1 190 0
+ 6660 0378 AA4B     		ldr	r3, .L60+64
+ 6661 037a 8E22     		movs	r2, #142
+ 6662 037c D200     		lsls	r2, r2, #3
+ 6663 037e 9446     		mov	ip, r2
+ 6664 0380 BC44     		add	ip, ip, r7
+ 6665 0382 6344     		add	r3, r3, ip
+ 6666 0384 0122     		movs	r2, #1
+ 6667 0386 9A60     		str	r2, [r3, #8]
+ 191:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	
+ 192:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	GameObject indoors2;
+ 193:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	init_indoors2( &indoors2 );
+ 6668              		.loc 1 193 0
+ 6669 0388 C923     		movs	r3, #201
+ 6670 038a 9B00     		lsls	r3, r3, #2
+ 6671 038c FB18     		adds	r3, r7, r3
+ 6672 038e 1800     		movs	r0, r3
+ 6673 0390 FFF7FEFF 		bl	init_indoors2
+ 194:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	indoors2.xPos = 1;
+ 6674              		.loc 1 194 0
+ 6675 0394 A44B     		ldr	r3, .L60+68
+ 6676 0396 8E22     		movs	r2, #142
+ 6677 0398 D200     		lsls	r2, r2, #3
+ 6678 039a 9446     		mov	ip, r2
+ 6679 039c BC44     		add	ip, ip, r7
+ 6680 039e 6344     		add	r3, r3, ip
+ 6681 03a0 0122     		movs	r2, #1
+ 6682 03a2 5A60     		str	r2, [r3, #4]
+ 195:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	indoors2.yPos = 1;
+ 6683              		.loc 1 195 0
+ 6684 03a4 A04B     		ldr	r3, .L60+68
+ 6685 03a6 8E22     		movs	r2, #142
+ 6686 03a8 D200     		lsls	r2, r2, #3
+ 6687 03aa 9446     		mov	ip, r2
+ 6688 03ac BC44     		add	ip, ip, r7
+ 6689 03ae 6344     		add	r3, r3, ip
+ 6690 03b0 0122     		movs	r2, #1
+ 6691 03b2 9A60     		str	r2, [r3, #8]
+ 196:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	
+ 197:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	GameObject trophy;
+ 198:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	init_trophy( &trophy );
+ 6692              		.loc 1 198 0
+ 6693 03b4 C023     		movs	r3, #192
+ 6694 03b6 9B00     		lsls	r3, r3, #2
+ 6695 03b8 FB18     		adds	r3, r7, r3
+ 6696 03ba 1800     		movs	r0, r3
+ 6697 03bc FFF7FEFF 		bl	init_trophy
+ 199:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 
+ 200:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	
+ 201:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	GameObject hair;
+ 202:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	init_flame(&hair);
+ 6698              		.loc 1 202 0
+ 6699 03c0 B723     		movs	r3, #183
+ 6700 03c2 9B00     		lsls	r3, r3, #2
+ 6701 03c4 FB18     		adds	r3, r7, r3
+ 6702 03c6 1800     		movs	r0, r3
+ 6703 03c8 FFF7FEFF 		bl	init_flame
+ 203:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	hair.xPos = 40;
+ 6704              		.loc 1 203 0
+ 6705 03cc 974B     		ldr	r3, .L60+72
+ 6706 03ce 8E22     		movs	r2, #142
+ 6707 03d0 D200     		lsls	r2, r2, #3
+ 6708 03d2 9446     		mov	ip, r2
+ 6709 03d4 BC44     		add	ip, ip, r7
+ 6710 03d6 6344     		add	r3, r3, ip
+ 6711 03d8 2822     		movs	r2, #40
+ 6712 03da 5A60     		str	r2, [r3, #4]
+ 204:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	hair.yPos = 10;
+ 6713              		.loc 1 204 0
+ 6714 03dc 934B     		ldr	r3, .L60+72
+ 6715 03de 8E22     		movs	r2, #142
+ 6716 03e0 D200     		lsls	r2, r2, #3
+ 6717 03e2 9446     		mov	ip, r2
+ 6718 03e4 BC44     		add	ip, ip, r7
+ 6719 03e6 6344     		add	r3, r3, ip
+ 6720 03e8 0A22     		movs	r2, #10
+ 6721 03ea 9A60     		str	r2, [r3, #8]
+ 205:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	hair.update = gameObjectUpdate;
+ 6722              		.loc 1 205 0
+ 6723 03ec 8F4B     		ldr	r3, .L60+72
+ 6724 03ee 8E22     		movs	r2, #142
+ 6725 03f0 D200     		lsls	r2, r2, #3
+ 6726 03f2 9446     		mov	ip, r2
+ 6727 03f4 BC44     		add	ip, ip, r7
+ 6728 03f6 6344     		add	r3, r3, ip
+ 6729 03f8 8D4A     		ldr	r2, .L60+76
+ 6730 03fa DA60     		str	r2, [r3, #12]
+ 206:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	
+ 207:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	GameObject bird;
+ 208:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	init_bird( &bird );
+ 6731              		.loc 1 208 0
+ 6732 03fc AE23     		movs	r3, #174
+ 6733 03fe 9B00     		lsls	r3, r3, #2
+ 6734 0400 FB18     		adds	r3, r7, r3
+ 6735 0402 1800     		movs	r0, r3
+ 6736 0404 FFF7FEFF 		bl	init_bird
+ 209:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	bird.xPos = 180;
+ 6737              		.loc 1 209 0
+ 6738 0408 8A4B     		ldr	r3, .L60+80
+ 6739 040a 8E22     		movs	r2, #142
+ 6740 040c D200     		lsls	r2, r2, #3
+ 6741 040e 9446     		mov	ip, r2
+ 6742 0410 BC44     		add	ip, ip, r7
+ 6743 0412 6344     		add	r3, r3, ip
+ 6744 0414 B422     		movs	r2, #180
+ 6745 0416 5A60     		str	r2, [r3, #4]
+ 210:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	bird.yPos = 40;
+ 6746              		.loc 1 210 0
+ 6747 0418 864B     		ldr	r3, .L60+80
+ 6748 041a 8E22     		movs	r2, #142
+ 6749 041c D200     		lsls	r2, r2, #3
+ 6750 041e 9446     		mov	ip, r2
+ 6751 0420 BC44     		add	ip, ip, r7
+ 6752 0422 6344     		add	r3, r3, ip
+ 6753 0424 2822     		movs	r2, #40
+ 6754 0426 9A60     		str	r2, [r3, #8]
+ 211:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	bird.update = gameObjectUpdate;
+ 6755              		.loc 1 211 0
+ 6756 0428 824B     		ldr	r3, .L60+80
+ 6757 042a 8E22     		movs	r2, #142
+ 6758 042c D200     		lsls	r2, r2, #3
+ 6759 042e 9446     		mov	ip, r2
+ 6760 0430 BC44     		add	ip, ip, r7
+ 6761 0432 6344     		add	r3, r3, ip
+ 6762 0434 7E4A     		ldr	r2, .L60+76
+ 6763 0436 DA60     		str	r2, [r3, #12]
+ 212:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	
+ 213:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	GameObject DIP;
+ 214:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	init_DIP( &DIP );
+ 6764              		.loc 1 214 0
+ 6765 0438 A523     		movs	r3, #165
+ 6766 043a 9B00     		lsls	r3, r3, #2
+ 6767 043c FB18     		adds	r3, r7, r3
+ 6768 043e 1800     		movs	r0, r3
+ 6769 0440 FFF7FEFF 		bl	init_DIP
+ 215:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	DIP.update = DIPUpdate;
+ 6770              		.loc 1 215 0
+ 6771 0444 7C4B     		ldr	r3, .L60+84
+ 6772 0446 8E22     		movs	r2, #142
+ 6773 0448 D200     		lsls	r2, r2, #3
+ 6774 044a 9446     		mov	ip, r2
+ 6775 044c BC44     		add	ip, ip, r7
+ 6776 044e 6344     		add	r3, r3, ip
+ 6777 0450 7A4A     		ldr	r2, .L60+88
+ 6778 0452 DA60     		str	r2, [r3, #12]
+ 216:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	
+ 217:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	GameObject player;
+ 218:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	init_witch( &player );
+ 6779              		.loc 1 218 0
+ 6780 0454 9C23     		movs	r3, #156
+ 6781 0456 9B00     		lsls	r3, r3, #2
+ 6782 0458 FB18     		adds	r3, r7, r3
+ 6783 045a 1800     		movs	r0, r3
+ 6784 045c FFF7FEFF 		bl	init_witch
+ 219:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	player.xPos = 3;
+ 6785              		.loc 1 219 0
+ 6786 0460 774B     		ldr	r3, .L60+92
+ 6787 0462 8E22     		movs	r2, #142
+ 6788 0464 D200     		lsls	r2, r2, #3
+ 6789 0466 9446     		mov	ip, r2
+ 6790 0468 BC44     		add	ip, ip, r7
+ 6791 046a 6344     		add	r3, r3, ip
+ 6792 046c 0322     		movs	r2, #3
+ 6793 046e 5A60     		str	r2, [r3, #4]
+ 220:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	player.yPos = LIMIT_DOWN - 1; //player position
+ 6794              		.loc 1 220 0
+ 6795 0470 734B     		ldr	r3, .L60+92
+ 6796 0472 8E22     		movs	r2, #142
+ 6797 0474 D200     		lsls	r2, r2, #3
+ 6798 0476 9446     		mov	ip, r2
+ 6799 0478 BC44     		add	ip, ip, r7
+ 6800 047a 6344     		add	r3, r3, ip
+ 6801 047c 2622     		movs	r2, #38
+ 6802 047e 9A60     		str	r2, [r3, #8]
+ 221:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	player.update = playerUpdate;
+ 6803              		.loc 1 221 0
+ 6804 0480 6F4B     		ldr	r3, .L60+92
+ 6805 0482 8E22     		movs	r2, #142
+ 6806 0484 D200     		lsls	r2, r2, #3
+ 6807 0486 9446     		mov	ip, r2
+ 6808 0488 BC44     		add	ip, ip, r7
+ 6809 048a 6344     		add	r3, r3, ip
+ 6810 048c 5A4A     		ldr	r2, .L60+20
+ 6811 048e DA60     		str	r2, [r3, #12]
+ 222:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	
+ 223:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	GameObject fire2;
+ 224:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	init_fire( &fire2 );
+ 6812              		.loc 1 224 0
+ 6813 0490 9323     		movs	r3, #147
+ 6814 0492 9B00     		lsls	r3, r3, #2
+ 6815 0494 FB18     		adds	r3, r7, r3
+ 6816 0496 1800     		movs	r0, r3
+ 6817 0498 FFF7FEFF 		bl	init_fire
+ 225:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	GameObject fire3;
+ 226:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	init_fire( &fire3 );
+ 6818              		.loc 1 226 0
+ 6819 049c 8A23     		movs	r3, #138
+ 6820 049e 9B00     		lsls	r3, r3, #2
+ 6821 04a0 FB18     		adds	r3, r7, r3
+ 6822 04a2 1800     		movs	r0, r3
+ 6823 04a4 FFF7FEFF 		bl	init_fire
+ 227:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	GameObject fire4;
+ 228:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	init_fire( &fire4 );
+ 6824              		.loc 1 228 0
+ 6825 04a8 8123     		movs	r3, #129
+ 6826 04aa 9B00     		lsls	r3, r3, #2
+ 6827 04ac FB18     		adds	r3, r7, r3
+ 6828 04ae 1800     		movs	r0, r3
+ 6829 04b0 FFF7FEFF 		bl	init_fire
+ 229:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	GameObject fire1;
+ 230:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	init_fire( &fire1 );
+ 6830              		.loc 1 230 0
+ 6831 04b4 F023     		movs	r3, #240
+ 6832 04b6 5B00     		lsls	r3, r3, #1
+ 6833 04b8 FB18     		adds	r3, r7, r3
+ 6834 04ba 1800     		movs	r0, r3
+ 6835 04bc FFF7FEFF 		bl	init_fire
+ 231:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	
+ 232:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	GameObject fire1_indoors;
+ 233:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	init_fire( &fire1_indoors );
+ 6836              		.loc 1 233 0
+ 6837 04c0 DE23     		movs	r3, #222
+ 6838 04c2 5B00     		lsls	r3, r3, #1
+ 6839 04c4 FB18     		adds	r3, r7, r3
+ 6840 04c6 1800     		movs	r0, r3
+ 6841 04c8 FFF7FEFF 		bl	init_fire
+ 234:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	fire1_indoors.xPos = 50;		//FIRE1_INDO
+ 6842              		.loc 1 234 0
+ 6843 04cc 5D4B     		ldr	r3, .L60+96
+ 6844 04ce 8E22     		movs	r2, #142
+ 6845 04d0 D200     		lsls	r2, r2, #3
+ 6846 04d2 9446     		mov	ip, r2
+ 6847 04d4 BC44     		add	ip, ip, r7
+ 6848 04d6 6344     		add	r3, r3, ip
+ 6849 04d8 3222     		movs	r2, #50
+ 6850 04da 5A60     		str	r2, [r3, #4]
+ 235:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	fire1_indoors.yPos = 64-12-7;
+ 6851              		.loc 1 235 0
+ 6852 04dc 594B     		ldr	r3, .L60+96
+ 6853 04de 8E22     		movs	r2, #142
+ 6854 04e0 D200     		lsls	r2, r2, #3
+ 6855 04e2 9446     		mov	ip, r2
+ 6856 04e4 BC44     		add	ip, ip, r7
+ 6857 04e6 6344     		add	r3, r3, ip
+ 6858 04e8 2D22     		movs	r2, #45
+ 6859 04ea 9A60     		str	r2, [r3, #8]
+ 236:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	fire1_indoors.update = gameObjectUpdate;
+ 6860              		.loc 1 236 0
+ 6861 04ec 554B     		ldr	r3, .L60+96
+ 6862 04ee 8E22     		movs	r2, #142
+ 6863 04f0 D200     		lsls	r2, r2, #3
+ 6864 04f2 9446     		mov	ip, r2
+ 6865 04f4 BC44     		add	ip, ip, r7
+ 6866 04f6 6344     		add	r3, r3, ip
+ 6867 04f8 4D4A     		ldr	r2, .L60+76
+ 6868 04fa DA60     		str	r2, [r3, #12]
+ 237:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	GameObject fire2_indoors;
+ 238:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	init_fire( &fire2_indoors );
+ 6869              		.loc 1 238 0
+ 6870 04fc CC23     		movs	r3, #204
+ 6871 04fe 5B00     		lsls	r3, r3, #1
+ 6872 0500 FB18     		adds	r3, r7, r3
+ 6873 0502 1800     		movs	r0, r3
+ 6874 0504 FFF7FEFF 		bl	init_fire
+ 239:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	fire2_indoors.update = gameObjectUpdate;
+ 6875              		.loc 1 239 0
+ 6876 0508 4F4B     		ldr	r3, .L60+100
+ 6877 050a 8E22     		movs	r2, #142
+ 6878 050c D200     		lsls	r2, r2, #3
+ 6879 050e 9446     		mov	ip, r2
+ 6880 0510 BC44     		add	ip, ip, r7
+ 6881 0512 6344     		add	r3, r3, ip
+ 6882 0514 464A     		ldr	r2, .L60+76
+ 6883 0516 DA60     		str	r2, [r3, #12]
+ 240:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	GameObject fire3_indoors;
+ 241:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	init_fire( &fire3_indoors );
+ 6884              		.loc 1 241 0
+ 6885 0518 BA23     		movs	r3, #186
+ 6886 051a 5B00     		lsls	r3, r3, #1
+ 6887 051c FB18     		adds	r3, r7, r3
+ 6888 051e 1800     		movs	r0, r3
+ 6889 0520 FFF7FEFF 		bl	init_fire
+ 242:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	fire3_indoors.update = gameObjectUpdate;
+ 6890              		.loc 1 242 0
+ 6891 0524 494B     		ldr	r3, .L60+104
+ 6892 0526 8E22     		movs	r2, #142
+ 6893 0528 D200     		lsls	r2, r2, #3
+ 6894 052a 9446     		mov	ip, r2
+ 6895 052c BC44     		add	ip, ip, r7
+ 6896 052e 6344     		add	r3, r3, ip
+ 6897 0530 3F4A     		ldr	r2, .L60+76
+ 6898 0532 DA60     		str	r2, [r3, #12]
+ 243:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	GameObject fires[] = {fire1_indoors, fire2_indoors, fire3_indoors};
+ 6899              		.loc 1 243 0
+ 6900 0534 464B     		ldr	r3, .L60+108
+ 6901 0536 8E22     		movs	r2, #142
+ 6902 0538 D200     		lsls	r2, r2, #3
+ 6903 053a BA18     		adds	r2, r7, r2
+ 6904 053c D118     		adds	r1, r2, r3
+ 6905 053e 414B     		ldr	r3, .L60+96
+ 6906 0540 8E22     		movs	r2, #142
+ 6907 0542 D200     		lsls	r2, r2, #3
+ 6908 0544 BA18     		adds	r2, r7, r2
+ 6909 0546 D218     		adds	r2, r2, r3
+ 6910 0548 0B00     		movs	r3, r1
+ 6911 054a 13CA     		ldmia	r2!, {r0, r1, r4}
+ 6912 054c 13C3     		stmia	r3!, {r0, r1, r4}
+ 6913 054e 13CA     		ldmia	r2!, {r0, r1, r4}
+ 6914 0550 13C3     		stmia	r3!, {r0, r1, r4}
+ 6915 0552 13CA     		ldmia	r2!, {r0, r1, r4}
+ 6916 0554 13C3     		stmia	r3!, {r0, r1, r4}
+ 6917 0556 3E4B     		ldr	r3, .L60+108
+ 6918 0558 8E22     		movs	r2, #142
+ 6919 055a D200     		lsls	r2, r2, #3
+ 6920 055c 9446     		mov	ip, r2
+ 6921 055e BC44     		add	ip, ip, r7
+ 6922 0560 6344     		add	r3, r3, ip
+ 6923 0562 394A     		ldr	r2, .L60+100
+ 6924 0564 8E21     		movs	r1, #142
+ 6925 0566 C900     		lsls	r1, r1, #3
+ 6926 0568 8C46     		mov	ip, r1
+ 6927 056a BC44     		add	ip, ip, r7
+ 6928 056c 6244     		add	r2, r2, ip
+ 6929 056e 2433     		adds	r3, r3, #36
+ 6930 0570 13CA     		ldmia	r2!, {r0, r1, r4}
+ 6931 0572 13C3     		stmia	r3!, {r0, r1, r4}
+ 6932 0574 13CA     		ldmia	r2!, {r0, r1, r4}
+ 6933 0576 13C3     		stmia	r3!, {r0, r1, r4}
+ 6934 0578 13CA     		ldmia	r2!, {r0, r1, r4}
+ 6935 057a 13C3     		stmia	r3!, {r0, r1, r4}
+ 6936 057c 344B     		ldr	r3, .L60+108
+ 6937 057e 8E22     		movs	r2, #142
+ 6938 0580 D200     		lsls	r2, r2, #3
+ 6939 0582 9446     		mov	ip, r2
+ 6940 0584 BC44     		add	ip, ip, r7
+ 6941 0586 6344     		add	r3, r3, ip
+ 6942 0588 304A     		ldr	r2, .L60+104
+ 6943 058a 8E21     		movs	r1, #142
+ 6944 058c C900     		lsls	r1, r1, #3
+ 6945 058e 8C46     		mov	ip, r1
+ 6946 0590 BC44     		add	ip, ip, r7
+ 6947 0592 6244     		add	r2, r2, ip
+ 6948 0594 4833     		adds	r3, r3, #72
+ 6949 0596 13CA     		ldmia	r2!, {r0, r1, r4}
+ 6950 0598 13C3     		stmia	r3!, {r0, r1, r4}
+ 6951 059a 13CA     		ldmia	r2!, {r0, r1, r4}
+ 6952 059c 13C3     		stmia	r3!, {r0, r1, r4}
+ 6953 059e 13CA     		ldmia	r2!, {r0, r1, r4}
+ 6954 05a0 13C3     		stmia	r3!, {r0, r1, r4}
+ 244:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	
+ 245:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	
+ 246:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	fire2.xPos = 98;
+ 6955              		.loc 1 246 0
+ 6956 05a2 2C4B     		ldr	r3, .L60+112
+ 6957 05a4 8E22     		movs	r2, #142
+ 6958 05a6 D200     		lsls	r2, r2, #3
+ 6959 05a8 9446     		mov	ip, r2
+ 6960 05aa BC44     		add	ip, ip, r7
+ 6961 05ac 6344     		add	r3, r3, ip
+ 6962 05ae 6222     		movs	r2, #98
+ 6963 05b0 5A60     		str	r2, [r3, #4]
+ 247:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	fire2.yPos = 26-12;
+ 6964              		.loc 1 247 0
+ 6965 05b2 284B     		ldr	r3, .L60+112
+ 6966 05b4 8E22     		movs	r2, #142
+ 6967 05b6 D200     		lsls	r2, r2, #3
+ 6968 05b8 9446     		mov	ip, r2
+ 6969 05ba BC44     		add	ip, ip, r7
+ 6970 05bc 6344     		add	r3, r3, ip
+ 6971 05be 0E22     		movs	r2, #14
+ 6972 05c0 9A60     		str	r2, [r3, #8]
+ 248:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	fire3.xPos = 115;
+ 6973              		.loc 1 248 0
+ 6974 05c2 254B     		ldr	r3, .L60+116
+ 6975 05c4 8E22     		movs	r2, #142
+ 6976 05c6 D200     		lsls	r2, r2, #3
+ 6977 05c8 9446     		mov	ip, r2
+ 6978 05ca BC44     		add	ip, ip, r7
+ 6979 05cc 6344     		add	r3, r3, ip
+ 6980 05ce 7322     		movs	r2, #115
+ 6981 05d0 5A60     		str	r2, [r3, #4]
+ 249:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	fire3.yPos = 34-12;
+ 6982              		.loc 1 249 0
+ 6983 05d2 214B     		ldr	r3, .L60+116
+ 6984 05d4 8E22     		movs	r2, #142
+ 6985 05d6 D200     		lsls	r2, r2, #3
+ 6986 05d8 9446     		mov	ip, r2
+ 6987 05da BC44     		add	ip, ip, r7
+ 6988 05dc 6344     		add	r3, r3, ip
+ 6989 05de 1622     		movs	r2, #22
+ 6990 05e0 9A60     		str	r2, [r3, #8]
+ 6991 05e2 3BE0     		b	.L61
+ 6992              	.L62:
+ 6993              		.align	2
+ 6994              	.L60:
+ 6995 05e4 8CFBFFFF 		.word	-1140
+ 6996 05e8 2C040000 		.word	1068
+ 6997 05ec 00000000 		.word	monster
+ 6998 05f0 00000000 		.word	monsterGray
+ 6999 05f4 00000000 		.word	monsterLight
+ 7000 05f8 00000000 		.word	playerUpdate
+ 7001 05fc 00000000 		.word	titleBlack
+ 7002 0600 00000000 		.word	titleGray
+ 7003 0604 00000000 		.word	titleLight
+ 7004 0608 00000000 		.word	pressBlack
+ 7005 060c 00000000 		.word	pressLight
+ 7006 0610 00000000 		.word	pressGray
+ 7007 0614 FCFEFFFF 		.word	-260
+ 7008 0618 00000000 		.word	castleBlack
+ 7009 061c 00000000 		.word	castleGray
+ 7010 0620 00000000 		.word	castleLight
+ 7011 0624 D8FEFFFF 		.word	-296
+ 7012 0628 B4FEFFFF 		.word	-332
+ 7013 062c 6CFEFFFF 		.word	-404
+ 7014 0630 00000000 		.word	gameObjectUpdate
+ 7015 0634 48FEFFFF 		.word	-440
+ 7016 0638 24FEFFFF 		.word	-476
+ 7017 063c 00000000 		.word	DIPUpdate
+ 7018 0640 00FEFFFF 		.word	-512
+ 7019 0644 4CFDFFFF 		.word	-692
+ 7020 0648 28FDFFFF 		.word	-728
+ 7021 064c 04FDFFFF 		.word	-764
+ 7022 0650 98FCFFFF 		.word	-872
+ 7023 0654 DCFDFFFF 		.word	-548
+ 7024 0658 B8FDFFFF 		.word	-584
+ 7025              	.L61:
+ 250:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	
+ 251:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	fire1.xPos = 85;
+ 7026              		.loc 1 251 0
+ 7027 065c E74B     		ldr	r3, .L63
+ 7028 065e 8E22     		movs	r2, #142
+ 7029 0660 D200     		lsls	r2, r2, #3
+ 7030 0662 9446     		mov	ip, r2
+ 7031 0664 BC44     		add	ip, ip, r7
+ 7032 0666 6344     		add	r3, r3, ip
+ 7033 0668 5522     		movs	r2, #85
+ 7034 066a 5A60     		str	r2, [r3, #4]
+ 252:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	fire1.yPos = 23-12;
+ 7035              		.loc 1 252 0
+ 7036 066c E34B     		ldr	r3, .L63
+ 7037 066e 8E22     		movs	r2, #142
+ 7038 0670 D200     		lsls	r2, r2, #3
+ 7039 0672 9446     		mov	ip, r2
+ 7040 0674 BC44     		add	ip, ip, r7
+ 7041 0676 6344     		add	r3, r3, ip
+ 7042 0678 0B22     		movs	r2, #11
+ 7043 067a 9A60     		str	r2, [r3, #8]
+ 253:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	fire4.xPos = 71;
+ 7044              		.loc 1 253 0
+ 7045 067c E04B     		ldr	r3, .L63+4
+ 7046 067e 8E22     		movs	r2, #142
+ 7047 0680 D200     		lsls	r2, r2, #3
+ 7048 0682 9446     		mov	ip, r2
+ 7049 0684 BC44     		add	ip, ip, r7
+ 7050 0686 6344     		add	r3, r3, ip
+ 7051 0688 4722     		movs	r2, #71
+ 7052 068a 5A60     		str	r2, [r3, #4]
+ 254:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	fire4.yPos = 27-11;
+ 7053              		.loc 1 254 0
+ 7054 068c DC4B     		ldr	r3, .L63+4
+ 7055 068e 8E22     		movs	r2, #142
+ 7056 0690 D200     		lsls	r2, r2, #3
+ 7057 0692 9446     		mov	ip, r2
+ 7058 0694 BC44     		add	ip, ip, r7
+ 7059 0696 6344     		add	r3, r3, ip
+ 7060 0698 1022     		movs	r2, #16
+ 7061 069a 9A60     		str	r2, [r3, #8]
+ 255:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	//draw_game_object(&castleObj);
+ 256:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	
+ 257:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	fire2.animation_speed = 2;
+ 7062              		.loc 1 257 0
+ 7063 069c D94B     		ldr	r3, .L63+8
+ 7064 069e 8E22     		movs	r2, #142
+ 7065 06a0 D200     		lsls	r2, r2, #3
+ 7066 06a2 9446     		mov	ip, r2
+ 7067 06a4 BC44     		add	ip, ip, r7
+ 7068 06a6 6344     		add	r3, r3, ip
+ 7069 06a8 0222     		movs	r2, #2
+ 7070 06aa DA61     		str	r2, [r3, #28]
+ 258:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	fire3.animation_speed = 2;
+ 7071              		.loc 1 258 0
+ 7072 06ac D64B     		ldr	r3, .L63+12
+ 7073 06ae 8E22     		movs	r2, #142
+ 7074 06b0 D200     		lsls	r2, r2, #3
+ 7075 06b2 9446     		mov	ip, r2
+ 7076 06b4 BC44     		add	ip, ip, r7
+ 7077 06b6 6344     		add	r3, r3, ip
+ 7078 06b8 0222     		movs	r2, #2
+ 7079 06ba DA61     		str	r2, [r3, #28]
+ 259:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	fire1.animation_speed = 2;
+ 7080              		.loc 1 259 0
+ 7081 06bc CF4B     		ldr	r3, .L63
+ 7082 06be 8E22     		movs	r2, #142
+ 7083 06c0 D200     		lsls	r2, r2, #3
+ 7084 06c2 9446     		mov	ip, r2
+ 7085 06c4 BC44     		add	ip, ip, r7
+ 7086 06c6 6344     		add	r3, r3, ip
+ 7087 06c8 0222     		movs	r2, #2
+ 7088 06ca DA61     		str	r2, [r3, #28]
+ 260:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	fire4.animation_speed = 2;
+ 7089              		.loc 1 260 0
+ 7090 06cc CC4B     		ldr	r3, .L63+4
+ 7091 06ce 8E22     		movs	r2, #142
+ 7092 06d0 D200     		lsls	r2, r2, #3
+ 7093 06d2 9446     		mov	ip, r2
+ 7094 06d4 BC44     		add	ip, ip, r7
+ 7095 06d6 6344     		add	r3, r3, ip
+ 7096 06d8 0222     		movs	r2, #2
+ 7097 06da DA61     		str	r2, [r3, #28]
+ 261:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	
+ 262:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	fire2.update = gameObjectUpdate;
+ 7098              		.loc 1 262 0
+ 7099 06dc C94B     		ldr	r3, .L63+8
+ 7100 06de 8E22     		movs	r2, #142
+ 7101 06e0 D200     		lsls	r2, r2, #3
+ 7102 06e2 9446     		mov	ip, r2
+ 7103 06e4 BC44     		add	ip, ip, r7
+ 7104 06e6 6344     		add	r3, r3, ip
+ 7105 06e8 C84A     		ldr	r2, .L63+16
+ 7106 06ea DA60     		str	r2, [r3, #12]
+ 263:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	fire3.update = gameObjectUpdate;
+ 7107              		.loc 1 263 0
+ 7108 06ec C64B     		ldr	r3, .L63+12
+ 7109 06ee 8E22     		movs	r2, #142
+ 7110 06f0 D200     		lsls	r2, r2, #3
+ 7111 06f2 9446     		mov	ip, r2
+ 7112 06f4 BC44     		add	ip, ip, r7
+ 7113 06f6 6344     		add	r3, r3, ip
+ 7114 06f8 C44A     		ldr	r2, .L63+16
+ 7115 06fa DA60     		str	r2, [r3, #12]
+ 264:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	fire1.update = gameObjectUpdate;
+ 7116              		.loc 1 264 0
+ 7117 06fc BF4B     		ldr	r3, .L63
+ 7118 06fe 8E22     		movs	r2, #142
+ 7119 0700 D200     		lsls	r2, r2, #3
+ 7120 0702 9446     		mov	ip, r2
+ 7121 0704 BC44     		add	ip, ip, r7
+ 7122 0706 6344     		add	r3, r3, ip
+ 7123 0708 C04A     		ldr	r2, .L63+16
+ 7124 070a DA60     		str	r2, [r3, #12]
+ 265:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	fire4.update = gameObjectUpdate;
+ 7125              		.loc 1 265 0
+ 7126 070c BC4B     		ldr	r3, .L63+4
+ 7127 070e 8E22     		movs	r2, #142
+ 7128 0710 D200     		lsls	r2, r2, #3
+ 7129 0712 9446     		mov	ip, r2
+ 7130 0714 BC44     		add	ip, ip, r7
+ 7131 0716 6344     		add	r3, r3, ip
+ 7132 0718 BC4A     		ldr	r2, .L63+16
+ 7133 071a DA60     		str	r2, [r3, #12]
+ 266:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	
+ 267:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	SlowText text_kra;
+ 268:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	SlowText text1;
+ 269:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	SlowText text2;
+ 270:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	SlowText text3;
+ 271:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	SlowText text4;
+ 272:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	SlowText text5;
+ 273:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	SlowText text6;
+ 274:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	SlowText text7;
+ 275:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	SlowText text8;
+ 276:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	SlowText text9;
+ 277:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	SlowText text10;
+ 278:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	SlowText text11;
+ 279:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	SlowText text12;
+ 280:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	init_slow_text(&text_kra, "*KRA!* *KRA!*", "   ", 1);
+ 7134              		.loc 1 280 0
+ 7135 071c BC4A     		ldr	r2, .L63+20
+ 7136 071e BD49     		ldr	r1, .L63+24
+ 7137 0720 F423     		movs	r3, #244
+ 7138 0722 F818     		adds	r0, r7, r3
+ 7139 0724 0123     		movs	r3, #1
+ 7140 0726 FFF7FEFF 		bl	init_slow_text
+ 281:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	init_slow_text(&text1, "For centuries the", "DILs-witches have", 1);
+ 7141              		.loc 1 281 0
+ 7142 072a BB4A     		ldr	r2, .L63+28
+ 7143 072c BB49     		ldr	r1, .L63+32
+ 7144 072e E023     		movs	r3, #224
+ 7145 0730 F818     		adds	r0, r7, r3
+ 7146 0732 0123     		movs	r3, #1
+ 7147 0734 FFF7FEFF 		bl	init_slow_text
+ 282:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	init_slow_text(&text2, "coiled in fear,", "    ", 1);
+ 7148              		.loc 1 282 0
+ 7149 0738 B94A     		ldr	r2, .L63+36
+ 7150 073a BA49     		ldr	r1, .L63+40
+ 7151 073c CC23     		movs	r3, #204
+ 7152 073e F818     		adds	r0, r7, r3
+ 7153 0740 0123     		movs	r3, #1
+ 7154 0742 FFF7FEFF 		bl	init_slow_text
+ 283:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	init_slow_text(&text3, "whenever they hear", "that a DIPs-witch", 1);
+ 7155              		.loc 1 283 0
+ 7156 0746 B84A     		ldr	r2, .L63+44
+ 7157 0748 B849     		ldr	r1, .L63+48
+ 7158 074a B823     		movs	r3, #184
+ 7159 074c F818     		adds	r0, r7, r3
+ 7160 074e 0123     		movs	r3, #1
+ 7161 0750 FFF7FEFF 		bl	init_slow_text
+ 284:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	init_slow_text(&text4, "is near.", "   ", 1);
+ 7162              		.loc 1 284 0
+ 7163 0754 AE4A     		ldr	r2, .L63+20
+ 7164 0756 B649     		ldr	r1, .L63+52
+ 7165 0758 A423     		movs	r3, #164
+ 7166 075a F818     		adds	r0, r7, r3
+ 7167 075c 0123     		movs	r3, #1
+ 7168 075e FFF7FEFF 		bl	init_slow_text
+ 285:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	init_slow_text(&text5, "So it is quite", "surprising, finding", 1);
+ 7169              		.loc 1 285 0
+ 7170 0762 B44A     		ldr	r2, .L63+56
+ 7171 0764 B449     		ldr	r1, .L63+60
+ 7172 0766 9023     		movs	r3, #144
+ 7173 0768 F818     		adds	r0, r7, r3
+ 7174 076a 0123     		movs	r3, #1
+ 7175 076c FFF7FEFF 		bl	init_slow_text
+ 286:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	init_slow_text(&text6, "you here,", "    ", 1);
+ 7176              		.loc 1 286 0
+ 7177 0770 AB4A     		ldr	r2, .L63+36
+ 7178 0772 B249     		ldr	r1, .L63+64
+ 7179 0774 7C23     		movs	r3, #124
+ 7180 0776 F818     		adds	r0, r7, r3
+ 7181 0778 0123     		movs	r3, #1
+ 7182 077a FFF7FEFF 		bl	init_slow_text
+ 287:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	init_slow_text(&text7, "queen Daffo of DILs,", "heir to king Lear.", 1);
+ 7183              		.loc 1 287 0
+ 7184 077e B04A     		ldr	r2, .L63+68
+ 7185 0780 B049     		ldr	r1, .L63+72
+ 7186 0782 6823     		movs	r3, #104
+ 7187 0784 F818     		adds	r0, r7, r3
+ 7188 0786 0123     		movs	r3, #1
+ 7189 0788 FFF7FEFF 		bl	init_slow_text
+ 288:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	init_slow_text(&text8, "But maybe you're", "tempted, to loot", 1);
+ 7190              		.loc 1 288 0
+ 7191 078c AE4A     		ldr	r2, .L63+76
+ 7192 078e AF49     		ldr	r1, .L63+80
+ 7193 0790 5423     		movs	r3, #84
+ 7194 0792 F818     		adds	r0, r7, r3
+ 7195 0794 0123     		movs	r3, #1
+ 7196 0796 FFF7FEFF 		bl	init_slow_text
+ 289:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	init_slow_text(&text9, "from the riches,", "    ", 1);
+ 7197              		.loc 1 289 0
+ 7198 079a A14A     		ldr	r2, .L63+36
+ 7199 079c AC49     		ldr	r1, .L63+84
+ 7200 079e 4023     		movs	r3, #64
+ 7201 07a0 F818     		adds	r0, r7, r3
+ 7202 07a2 0123     		movs	r3, #1
+ 7203 07a4 FFF7FEFF 		bl	init_slow_text
+ 290:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	init_slow_text(&text12, "wicked DIPs-witches.", "    ", 1);
+ 7204              		.loc 1 290 0
+ 7205 07a8 9D4A     		ldr	r2, .L63+36
+ 7206 07aa AA49     		ldr	r1, .L63+88
+ 7207 07ac 381D     		adds	r0, r7, #4
+ 7208 07ae 0123     		movs	r3, #1
+ 7209 07b0 FFF7FEFF 		bl	init_slow_text
+ 291:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	init_slow_text(&text10, "so grippily trea-", "sured by", 1);
+ 7210              		.loc 1 291 0
+ 7211 07b4 A84A     		ldr	r2, .L63+92
+ 7212 07b6 A949     		ldr	r1, .L63+96
+ 7213 07b8 2C23     		movs	r3, #44
+ 7214 07ba F818     		adds	r0, r7, r3
+ 7215 07bc 0123     		movs	r3, #1
+ 7216 07be FFF7FEFF 		bl	init_slow_text
+ 292:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	init_slow_text(&text11, "Enter, brave witch,", "- reset the switch!", 1);
+ 7217              		.loc 1 292 0
+ 7218 07c2 A74A     		ldr	r2, .L63+100
+ 7219 07c4 A749     		ldr	r1, .L63+104
+ 7220 07c6 1823     		movs	r3, #24
+ 7221 07c8 F818     		adds	r0, r7, r3
+ 7222 07ca 0123     		movs	r3, #1
+ 7223 07cc FFF7FEFF 		bl	init_slow_text
+ 293:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	//ascii_write_part("Yeeaaah!!!", "This is working! :)", 5, 10);
+ 294:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	set_up_ascii();
+ 7224              		.loc 1 294 0
+ 7225 07d0 FFF7FEFF 		bl	set_up_ascii
+ 295:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	set_up_DIL();
+ 7226              		.loc 1 295 0
+ 7227 07d4 FFF7FEFF 		bl	set_up_DIL
+ 296:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	clear_ascii();
+ 7228              		.loc 1 296 0
+ 7229 07d8 FFF7FEFF 		bl	clear_ascii
+ 297:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	
+ 298:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	int is_climbing = 0;
+ 7230              		.loc 1 298 0
+ 7231 07dc 0023     		movs	r3, #0
+ 7232 07de A24A     		ldr	r2, .L63+108
+ 7233 07e0 BA18     		adds	r2, r7, r2
+ 7234 07e2 1360     		str	r3, [r2]
+ 299:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	int has_climbed = 0;
+ 7235              		.loc 1 299 0
+ 7236 07e4 0023     		movs	r3, #0
+ 7237 07e6 8D22     		movs	r2, #141
+ 7238 07e8 D200     		lsls	r2, r2, #3
+ 7239 07ea BA18     		adds	r2, r7, r2
+ 7240 07ec 1360     		str	r3, [r2]
+ 300:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	int game_over = 0;
+ 7241              		.loc 1 300 0
+ 7242 07ee 0023     		movs	r3, #0
+ 7243 07f0 9E4A     		ldr	r2, .L63+112
+ 7244 07f2 BA18     		adds	r2, r7, r2
+ 7245 07f4 1360     		str	r3, [r2]
+ 301:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	int game_over_adder = 0;
+ 7246              		.loc 1 301 0
+ 7247 07f6 0023     		movs	r3, #0
+ 7248 07f8 8C22     		movs	r2, #140
+ 7249 07fa D200     		lsls	r2, r2, #3
+ 7250 07fc BA18     		adds	r2, r7, r2
+ 7251 07fe 1360     		str	r3, [r2]
+ 302:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	int no_DIP = 0;
+ 7252              		.loc 1 302 0
+ 7253 0800 0023     		movs	r3, #0
+ 7254 0802 9B4A     		ldr	r2, .L63+116
+ 7255 0804 BA18     		adds	r2, r7, r2
+ 7256 0806 1360     		str	r3, [r2]
+ 303:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	
+ 304:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	
+ 305:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	current_screen = RESET_GAME;
+ 7257              		.loc 1 305 0
+ 7258 0808 9A4B     		ldr	r3, .L63+120
+ 7259 080a 0A22     		movs	r2, #10
+ 7260 080c 1A60     		str	r2, [r3]
+ 7261              	.L57:
+ 306:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	
+ 307:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	//Game loop
+ 308:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	while(1) {
+ 309:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 			
+ 310:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 		switch(current_screen) {
+ 7262              		.loc 1 310 0
+ 7263 080e 994B     		ldr	r3, .L63+120
+ 7264 0810 1B68     		ldr	r3, [r3]
+ 7265 0812 012B     		cmp	r3, #1
+ 7266 0814 20D0     		beq	.L10
+ 7267 0816 02DC     		bgt	.L11
+ 7268 0818 002B     		cmp	r3, #0
+ 7269 081a 11D0     		beq	.L15
+ 7270 081c F7E7     		b	.L57
+ 7271              	.L11:
+ 7272 081e 022B     		cmp	r3, #2
+ 7273 0820 00D1     		bne	.LCB975
+ 7274 0822 B7E2     		b	.L13	@long jump
+ 7275              	.LCB975:
+ 7276 0824 0A2B     		cmp	r3, #10
+ 7277 0826 01D1     		bne	.LCB977
+ 7278 0828 00F098FD 		bl	.L14	@far jump
+ 7279              	.LCB977:
+ 7280 082c EFE7     		b	.L57
+ 7281              	.L16:
+ 7282              	.LBB2:
+ 311:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 			
+ 312:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 			case SWITCH_LOCK: //before
+ 313:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 
+ 314:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				while(read_DIL() == 0){
+ 315:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					draw_game_object(&pressObj);
+ 7283              		.loc 1 315 0
+ 7284 082e F023     		movs	r3, #240
+ 7285 0830 9B00     		lsls	r3, r3, #2
+ 7286 0832 FB18     		adds	r3, r7, r3
+ 7287 0834 1800     		movs	r0, r3
+ 7288 0836 FFF7FEFF 		bl	draw_game_object
+ 316:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					show_frame(1);
+ 7289              		.loc 1 316 0
+ 7290 083a 0120     		movs	r0, #1
+ 7291 083c FFF7FEFF 		bl	show_frame
+ 7292              	.L15:
+ 314:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					draw_game_object(&pressObj);
+ 7293              		.loc 1 314 0
+ 7294 0840 FFF7FEFF 		bl	read_DIL
+ 7295 0844 031E     		subs	r3, r0, #0
+ 7296 0846 F2D0     		beq	.L16
+ 317:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				}
+ 318:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
+ 319:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				counter = 0;
+ 7297              		.loc 1 319 0
+ 7298 0848 8B4B     		ldr	r3, .L63+124
+ 7299 084a 0022     		movs	r2, #0
+ 7300 084c 1A60     		str	r2, [r3]
+ 320:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				current_screen = START_SCREEN;
+ 7301              		.loc 1 320 0
+ 7302 084e 894B     		ldr	r3, .L63+120
+ 7303 0850 0122     		movs	r2, #1
+ 7304 0852 1A60     		str	r2, [r3]
+ 321:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				break;
+ 7305              		.loc 1 321 0
+ 7306 0854 00F02BFE 		bl	.L9	@ far jump
+ 7307              	.L10:
+ 322:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 			
+ 323:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 			
+ 324:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 			case START_SCREEN: //outside
+ 325:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
+ 326:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				counter++;
+ 7308              		.loc 1 326 0
+ 7309 0858 874B     		ldr	r3, .L63+124
+ 7310 085a 1B68     		ldr	r3, [r3]
+ 7311 085c 5A1C     		adds	r2, r3, #1
+ 7312 085e 864B     		ldr	r3, .L63+124
+ 7313 0860 1A60     		str	r2, [r3]
+ 327:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
+ 328:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				if(titleObj.yPos < 1) {
+ 7314              		.loc 1 328 0
+ 7315 0862 FF23     		movs	r3, #255
+ 7316 0864 9B00     		lsls	r3, r3, #2
+ 7317 0866 FB18     		adds	r3, r7, r3
+ 7318 0868 9B68     		ldr	r3, [r3, #8]
+ 7319 086a 002B     		cmp	r3, #0
+ 7320 086c 08DC     		bgt	.L17
+ 329:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					titleObj.yPos++;
+ 7321              		.loc 1 329 0
+ 7322 086e FF23     		movs	r3, #255
+ 7323 0870 9B00     		lsls	r3, r3, #2
+ 7324 0872 FB18     		adds	r3, r7, r3
+ 7325 0874 9B68     		ldr	r3, [r3, #8]
+ 7326 0876 5A1C     		adds	r2, r3, #1
+ 7327 0878 FF23     		movs	r3, #255
+ 7328 087a 9B00     		lsls	r3, r3, #2
+ 7329 087c FB18     		adds	r3, r7, r3
+ 7330 087e 9A60     		str	r2, [r3, #8]
+ 7331              	.L17:
+ 330:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				}
+ 331:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
+ 332:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				draw_game_object(&castleObj);
+ 7332              		.loc 1 332 0
+ 7333 0880 E123     		movs	r3, #225
+ 7334 0882 9B00     		lsls	r3, r3, #2
+ 7335 0884 FB18     		adds	r3, r7, r3
+ 7336 0886 1800     		movs	r0, r3
+ 7337 0888 FFF7FEFF 		bl	draw_game_object
+ 333:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				draw_game_object(&fire2);
+ 7338              		.loc 1 333 0
+ 7339 088c 9323     		movs	r3, #147
+ 7340 088e 9B00     		lsls	r3, r3, #2
+ 7341 0890 FB18     		adds	r3, r7, r3
+ 7342 0892 1800     		movs	r0, r3
+ 7343 0894 FFF7FEFF 		bl	draw_game_object
+ 334:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				draw_game_object(&fire3);
+ 7344              		.loc 1 334 0
+ 7345 0898 8A23     		movs	r3, #138
+ 7346 089a 9B00     		lsls	r3, r3, #2
+ 7347 089c FB18     		adds	r3, r7, r3
+ 7348 089e 1800     		movs	r0, r3
+ 7349 08a0 FFF7FEFF 		bl	draw_game_object
+ 335:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				draw_game_object(&fire1);
+ 7350              		.loc 1 335 0
+ 7351 08a4 F023     		movs	r3, #240
+ 7352 08a6 5B00     		lsls	r3, r3, #1
+ 7353 08a8 FB18     		adds	r3, r7, r3
+ 7354 08aa 1800     		movs	r0, r3
+ 7355 08ac FFF7FEFF 		bl	draw_game_object
+ 336:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				draw_game_object(&fire4);
+ 7356              		.loc 1 336 0
+ 7357 08b0 8123     		movs	r3, #129
+ 7358 08b2 9B00     		lsls	r3, r3, #2
+ 7359 08b4 FB18     		adds	r3, r7, r3
+ 7360 08b6 1800     		movs	r0, r3
+ 7361 08b8 FFF7FEFF 		bl	draw_game_object
+ 337:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				draw_game_object(&titleObj);
+ 7362              		.loc 1 337 0
+ 7363 08bc FF23     		movs	r3, #255
+ 7364 08be 9B00     		lsls	r3, r3, #2
+ 7365 08c0 FB18     		adds	r3, r7, r3
+ 7366 08c2 1800     		movs	r0, r3
+ 7367 08c4 FFF7FEFF 		bl	draw_game_object
+ 338:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				draw_game_object(&bird);
+ 7368              		.loc 1 338 0
+ 7369 08c8 AE23     		movs	r3, #174
+ 7370 08ca 9B00     		lsls	r3, r3, #2
+ 7371 08cc FB18     		adds	r3, r7, r3
+ 7372 08ce 1800     		movs	r0, r3
+ 7373 08d0 FFF7FEFF 		bl	draw_game_object
+ 339:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				show_frame(1);
+ 7374              		.loc 1 339 0
+ 7375 08d4 0120     		movs	r0, #1
+ 7376 08d6 FFF7FEFF 		bl	show_frame
+ 340:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
+ 341:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				static int long_text = 40;
+ 342:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				static int short_text = 20;
+ 343:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				static int delay_until_text = 130;
+ 344:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
+ 345:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				if (counter < delay_until_text - 55 && counter > delay_until_text - 90)
+ 7377              		.loc 1 345 0
+ 7378 08da 684B     		ldr	r3, .L63+128
+ 7379 08dc 1B68     		ldr	r3, [r3]
+ 7380 08de 373B     		subs	r3, r3, #55
+ 7381 08e0 1A00     		movs	r2, r3
+ 7382 08e2 654B     		ldr	r3, .L63+124
+ 7383 08e4 1B68     		ldr	r3, [r3]
+ 7384 08e6 9A42     		cmp	r2, r3
+ 7385 08e8 13DD     		ble	.L18
+ 7386              		.loc 1 345 0 is_stmt 0 discriminator 1
+ 7387 08ea 644B     		ldr	r3, .L63+128
+ 7388 08ec 1B68     		ldr	r3, [r3]
+ 7389 08ee 5A3B     		subs	r3, r3, #90
+ 7390 08f0 1A00     		movs	r2, r3
+ 7391 08f2 614B     		ldr	r3, .L63+124
+ 7392 08f4 1B68     		ldr	r3, [r3]
+ 7393 08f6 9A42     		cmp	r2, r3
+ 7394 08f8 0BDA     		bge	.L18
+ 346:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					text_kra.display(&text_kra, 20);
+ 7395              		.loc 1 346 0 is_stmt 1
+ 7396 08fa 614B     		ldr	r3, .L63+132
+ 7397 08fc 8E22     		movs	r2, #142
+ 7398 08fe D200     		lsls	r2, r2, #3
+ 7399 0900 9446     		mov	ip, r2
+ 7400 0902 BC44     		add	ip, ip, r7
+ 7401 0904 6344     		add	r3, r3, ip
+ 7402 0906 1B69     		ldr	r3, [r3, #16]
+ 7403 0908 F422     		movs	r2, #244
+ 7404 090a BA18     		adds	r2, r7, r2
+ 7405 090c 1421     		movs	r1, #20
+ 7406 090e 1000     		movs	r0, r2
+ 7407 0910 9847     		blx	r3
+ 7408              	.LVL0:
+ 7409              	.L18:
+ 347:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				if (counter == delay_until_text - 25)
+ 7410              		.loc 1 347 0
+ 7411 0912 5A4B     		ldr	r3, .L63+128
+ 7412 0914 1B68     		ldr	r3, [r3]
+ 7413 0916 193B     		subs	r3, r3, #25
+ 7414 0918 1A00     		movs	r2, r3
+ 7415 091a 574B     		ldr	r3, .L63+124
+ 7416 091c 1B68     		ldr	r3, [r3]
+ 7417 091e 9A42     		cmp	r2, r3
+ 7418 0920 01D1     		bne	.L19
+ 348:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					clear_ascii();
+ 7419              		.loc 1 348 0
+ 7420 0922 FFF7FEFF 		bl	clear_ascii
+ 7421              	.L19:
+ 349:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
+ 350:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				if (counter < delay_until_text);
+ 7422              		.loc 1 350 0
+ 7423 0926 544B     		ldr	r3, .L63+124
+ 7424 0928 1A68     		ldr	r2, [r3]
+ 7425 092a 544B     		ldr	r3, .L63+128
+ 7426 092c 1B68     		ldr	r3, [r3]
+ 7427 092e 9A42     		cmp	r2, r3
+ 7428 0930 00DA     		bge	.LCB1111
+ 7429 0932 BCE1     		b	.L20	@long jump
+ 7430              	.LCB1111:
+ 351:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				else if (counter < delay_until_text + 1*long_text)
+ 7431              		.loc 1 351 0
+ 7432 0934 514B     		ldr	r3, .L63+128
+ 7433 0936 1A68     		ldr	r2, [r3]
+ 7434 0938 524B     		ldr	r3, .L63+136
+ 7435 093a 1B68     		ldr	r3, [r3]
+ 7436 093c D218     		adds	r2, r2, r3
+ 7437 093e 4E4B     		ldr	r3, .L63+124
+ 7438 0940 1B68     		ldr	r3, [r3]
+ 7439 0942 9A42     		cmp	r2, r3
+ 7440 0944 0CDD     		ble	.L21
+ 352:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					text1.display(&text1, 20);
+ 7441              		.loc 1 352 0
+ 7442 0946 504B     		ldr	r3, .L63+140
+ 7443 0948 8E22     		movs	r2, #142
+ 7444 094a D200     		lsls	r2, r2, #3
+ 7445 094c 9446     		mov	ip, r2
+ 7446 094e BC44     		add	ip, ip, r7
+ 7447 0950 6344     		add	r3, r3, ip
+ 7448 0952 1B69     		ldr	r3, [r3, #16]
+ 7449 0954 E022     		movs	r2, #224
+ 7450 0956 BA18     		adds	r2, r7, r2
+ 7451 0958 1421     		movs	r1, #20
+ 7452 095a 1000     		movs	r0, r2
+ 7453 095c 9847     		blx	r3
+ 7454              	.LVL1:
+ 7455 095e A6E1     		b	.L20
+ 7456              	.L21:
+ 353:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				else if(counter < delay_until_text + 1*long_text + 1*short_text)
+ 7457              		.loc 1 353 0
+ 7458 0960 464B     		ldr	r3, .L63+128
+ 7459 0962 1A68     		ldr	r2, [r3]
+ 7460 0964 474B     		ldr	r3, .L63+136
+ 7461 0966 1B68     		ldr	r3, [r3]
+ 7462 0968 D218     		adds	r2, r2, r3
+ 7463 096a 484B     		ldr	r3, .L63+144
+ 7464 096c 1B68     		ldr	r3, [r3]
+ 7465 096e D218     		adds	r2, r2, r3
+ 7466 0970 414B     		ldr	r3, .L63+124
+ 7467 0972 1B68     		ldr	r3, [r3]
+ 7468 0974 9A42     		cmp	r2, r3
+ 7469 0976 0CDD     		ble	.L22
+ 354:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					text2.display(&text2, 20);
+ 7470              		.loc 1 354 0
+ 7471 0978 454B     		ldr	r3, .L63+148
+ 7472 097a 8E22     		movs	r2, #142
+ 7473 097c D200     		lsls	r2, r2, #3
+ 7474 097e 9446     		mov	ip, r2
+ 7475 0980 BC44     		add	ip, ip, r7
+ 7476 0982 6344     		add	r3, r3, ip
+ 7477 0984 1B69     		ldr	r3, [r3, #16]
+ 7478 0986 CC22     		movs	r2, #204
+ 7479 0988 BA18     		adds	r2, r7, r2
+ 7480 098a 1421     		movs	r1, #20
+ 7481 098c 1000     		movs	r0, r2
+ 7482 098e 9847     		blx	r3
+ 7483              	.LVL2:
+ 7484 0990 8DE1     		b	.L20
+ 7485              	.L22:
+ 355:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				else if(counter < delay_until_text + 2*long_text + 1*short_text)
+ 7486              		.loc 1 355 0
+ 7487 0992 3C4B     		ldr	r3, .L63+136
+ 7488 0994 1B68     		ldr	r3, [r3]
+ 7489 0996 5A00     		lsls	r2, r3, #1
+ 7490 0998 384B     		ldr	r3, .L63+128
+ 7491 099a 1B68     		ldr	r3, [r3]
+ 7492 099c D218     		adds	r2, r2, r3
+ 7493 099e 3B4B     		ldr	r3, .L63+144
+ 7494 09a0 1B68     		ldr	r3, [r3]
+ 7495 09a2 D218     		adds	r2, r2, r3
+ 7496 09a4 344B     		ldr	r3, .L63+124
+ 7497 09a6 1B68     		ldr	r3, [r3]
+ 7498 09a8 9A42     		cmp	r2, r3
+ 7499 09aa 0CDD     		ble	.L23
+ 356:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					text3.display(&text3, 20);
+ 7500              		.loc 1 356 0
+ 7501 09ac 394B     		ldr	r3, .L63+152
+ 7502 09ae 8E22     		movs	r2, #142
+ 7503 09b0 D200     		lsls	r2, r2, #3
+ 7504 09b2 9446     		mov	ip, r2
+ 7505 09b4 BC44     		add	ip, ip, r7
+ 7506 09b6 6344     		add	r3, r3, ip
+ 7507 09b8 1B69     		ldr	r3, [r3, #16]
+ 7508 09ba B822     		movs	r2, #184
+ 7509 09bc BA18     		adds	r2, r7, r2
+ 7510 09be 1421     		movs	r1, #20
+ 7511 09c0 1000     		movs	r0, r2
+ 7512 09c2 9847     		blx	r3
+ 7513              	.LVL3:
+ 7514 09c4 73E1     		b	.L20
+ 7515              	.L23:
+ 357:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				else if(counter < delay_until_text + 2*long_text + 2*short_text)
+ 7516              		.loc 1 357 0
+ 7517 09c6 2F4B     		ldr	r3, .L63+136
+ 7518 09c8 1B68     		ldr	r3, [r3]
+ 7519 09ca 5A00     		lsls	r2, r3, #1
+ 7520 09cc 2B4B     		ldr	r3, .L63+128
+ 7521 09ce 1B68     		ldr	r3, [r3]
+ 7522 09d0 D218     		adds	r2, r2, r3
+ 7523 09d2 2E4B     		ldr	r3, .L63+144
+ 7524 09d4 1B68     		ldr	r3, [r3]
+ 7525 09d6 5B00     		lsls	r3, r3, #1
+ 7526 09d8 D218     		adds	r2, r2, r3
+ 7527 09da 274B     		ldr	r3, .L63+124
+ 7528 09dc 1B68     		ldr	r3, [r3]
+ 7529 09de 9A42     		cmp	r2, r3
+ 7530 09e0 5CDD     		ble	.L24
+ 358:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					text4.display(&text4, 20);
+ 7531              		.loc 1 358 0
+ 7532 09e2 2D4B     		ldr	r3, .L63+156
+ 7533 09e4 8E22     		movs	r2, #142
+ 7534 09e6 D200     		lsls	r2, r2, #3
+ 7535 09e8 9446     		mov	ip, r2
+ 7536 09ea BC44     		add	ip, ip, r7
+ 7537 09ec 6344     		add	r3, r3, ip
+ 7538 09ee 1B69     		ldr	r3, [r3, #16]
+ 7539 09f0 A422     		movs	r2, #164
+ 7540 09f2 BA18     		adds	r2, r7, r2
+ 7541 09f4 1421     		movs	r1, #20
+ 7542 09f6 1000     		movs	r0, r2
+ 7543 09f8 9847     		blx	r3
+ 7544              	.LVL4:
+ 7545 09fa 58E1     		b	.L20
+ 7546              	.L64:
+ 7547              		.align	2
+ 7548              	.L63:
+ 7549 09fc 70FDFFFF 		.word	-656
+ 7550 0a00 94FDFFFF 		.word	-620
+ 7551 0a04 DCFDFFFF 		.word	-548
+ 7552 0a08 B8FDFFFF 		.word	-584
+ 7553 0a0c 00000000 		.word	gameObjectUpdate
+ 7554 0a10 00000000 		.word	.LC54
+ 7555 0a14 04000000 		.word	.LC56
+ 7556 0a18 14000000 		.word	.LC58
+ 7557 0a1c 28000000 		.word	.LC60
+ 7558 0a20 3C000000 		.word	.LC62
+ 7559 0a24 44000000 		.word	.LC64
+ 7560 0a28 54000000 		.word	.LC66
+ 7561 0a2c 68000000 		.word	.LC68
+ 7562 0a30 7C000000 		.word	.LC70
+ 7563 0a34 88000000 		.word	.LC72
+ 7564 0a38 9C000000 		.word	.LC74
+ 7565 0a3c AC000000 		.word	.LC76
+ 7566 0a40 B8000000 		.word	.LC78
+ 7567 0a44 CC000000 		.word	.LC80
+ 7568 0a48 E4000000 		.word	.LC82
+ 7569 0a4c F8000000 		.word	.LC84
+ 7570 0a50 0C010000 		.word	.LC86
+ 7571 0a54 20010000 		.word	.LC88
+ 7572 0a58 38010000 		.word	.LC90
+ 7573 0a5c 44010000 		.word	.LC92
+ 7574 0a60 58010000 		.word	.LC94
+ 7575 0a64 6C010000 		.word	.LC96
+ 7576 0a68 6C040000 		.word	1132
+ 7577 0a6c 64040000 		.word	1124
+ 7578 0a70 5C040000 		.word	1116
+ 7579 0a74 00000000 		.word	current_screen
+ 7580 0a78 00000000 		.word	counter
+ 7581 0a7c 30170000 		.word	delay_until_text.4303
+ 7582 0a80 84FCFFFF 		.word	-892
+ 7583 0a84 34170000 		.word	long_text.4301
+ 7584 0a88 70FCFFFF 		.word	-912
+ 7585 0a8c 38170000 		.word	short_text.4302
+ 7586 0a90 5CFCFFFF 		.word	-932
+ 7587 0a94 48FCFFFF 		.word	-952
+ 7588 0a98 34FCFFFF 		.word	-972
+ 7589              	.L24:
+ 359:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				else if(counter < delay_until_text + 3*long_text + 2*short_text)
+ 7590              		.loc 1 359 0
+ 7591 0a9c D64B     		ldr	r3, .L65
+ 7592 0a9e 1A68     		ldr	r2, [r3]
+ 7593 0aa0 1300     		movs	r3, r2
+ 7594 0aa2 5B00     		lsls	r3, r3, #1
+ 7595 0aa4 9A18     		adds	r2, r3, r2
+ 7596 0aa6 D54B     		ldr	r3, .L65+4
+ 7597 0aa8 1B68     		ldr	r3, [r3]
+ 7598 0aaa D218     		adds	r2, r2, r3
+ 7599 0aac D44B     		ldr	r3, .L65+8
+ 7600 0aae 1B68     		ldr	r3, [r3]
+ 7601 0ab0 5B00     		lsls	r3, r3, #1
+ 7602 0ab2 D218     		adds	r2, r2, r3
+ 7603 0ab4 D34B     		ldr	r3, .L65+12
+ 7604 0ab6 1B68     		ldr	r3, [r3]
+ 7605 0ab8 9A42     		cmp	r2, r3
+ 7606 0aba 0CDD     		ble	.L25
+ 360:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					text5.display(&text5, 15);
+ 7607              		.loc 1 360 0
+ 7608 0abc D24B     		ldr	r3, .L65+16
+ 7609 0abe 8E22     		movs	r2, #142
+ 7610 0ac0 D200     		lsls	r2, r2, #3
+ 7611 0ac2 9446     		mov	ip, r2
+ 7612 0ac4 BC44     		add	ip, ip, r7
+ 7613 0ac6 6344     		add	r3, r3, ip
+ 7614 0ac8 1B69     		ldr	r3, [r3, #16]
+ 7615 0aca 9022     		movs	r2, #144
+ 7616 0acc BA18     		adds	r2, r7, r2
+ 7617 0ace 0F21     		movs	r1, #15
+ 7618 0ad0 1000     		movs	r0, r2
+ 7619 0ad2 9847     		blx	r3
+ 7620              	.LVL5:
+ 7621 0ad4 EBE0     		b	.L20
+ 7622              	.L25:
+ 361:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				else if(counter < delay_until_text + 3*long_text + 3*short_text)
+ 7623              		.loc 1 361 0
+ 7624 0ad6 C84B     		ldr	r3, .L65
+ 7625 0ad8 1A68     		ldr	r2, [r3]
+ 7626 0ada 1300     		movs	r3, r2
+ 7627 0adc 5B00     		lsls	r3, r3, #1
+ 7628 0ade 9A18     		adds	r2, r3, r2
+ 7629 0ae0 C64B     		ldr	r3, .L65+4
+ 7630 0ae2 1B68     		ldr	r3, [r3]
+ 7631 0ae4 D118     		adds	r1, r2, r3
+ 7632 0ae6 C64B     		ldr	r3, .L65+8
+ 7633 0ae8 1A68     		ldr	r2, [r3]
+ 7634 0aea 1300     		movs	r3, r2
+ 7635 0aec 5B00     		lsls	r3, r3, #1
+ 7636 0aee 9B18     		adds	r3, r3, r2
+ 7637 0af0 CA18     		adds	r2, r1, r3
+ 7638 0af2 C44B     		ldr	r3, .L65+12
+ 7639 0af4 1B68     		ldr	r3, [r3]
+ 7640 0af6 9A42     		cmp	r2, r3
+ 7641 0af8 0CDD     		ble	.L26
+ 362:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					text6.display(&text6, 20);
+ 7642              		.loc 1 362 0
+ 7643 0afa C44B     		ldr	r3, .L65+20
+ 7644 0afc 8E22     		movs	r2, #142
+ 7645 0afe D200     		lsls	r2, r2, #3
+ 7646 0b00 9446     		mov	ip, r2
+ 7647 0b02 BC44     		add	ip, ip, r7
+ 7648 0b04 6344     		add	r3, r3, ip
+ 7649 0b06 1B69     		ldr	r3, [r3, #16]
+ 7650 0b08 7C22     		movs	r2, #124
+ 7651 0b0a BA18     		adds	r2, r7, r2
+ 7652 0b0c 1421     		movs	r1, #20
+ 7653 0b0e 1000     		movs	r0, r2
+ 7654 0b10 9847     		blx	r3
+ 7655              	.LVL6:
+ 7656 0b12 CCE0     		b	.L20
+ 7657              	.L26:
+ 363:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				else if(counter < delay_until_text + 4*long_text + 3*short_text + 3)
+ 7658              		.loc 1 363 0
+ 7659 0b14 B84B     		ldr	r3, .L65
+ 7660 0b16 1B68     		ldr	r3, [r3]
+ 7661 0b18 9A00     		lsls	r2, r3, #2
+ 7662 0b1a B84B     		ldr	r3, .L65+4
+ 7663 0b1c 1B68     		ldr	r3, [r3]
+ 7664 0b1e D118     		adds	r1, r2, r3
+ 7665 0b20 B74B     		ldr	r3, .L65+8
+ 7666 0b22 1A68     		ldr	r2, [r3]
+ 7667 0b24 1300     		movs	r3, r2
+ 7668 0b26 5B00     		lsls	r3, r3, #1
+ 7669 0b28 9B18     		adds	r3, r3, r2
+ 7670 0b2a CB18     		adds	r3, r1, r3
+ 7671 0b2c DA1C     		adds	r2, r3, #3
+ 7672 0b2e B54B     		ldr	r3, .L65+12
+ 7673 0b30 1B68     		ldr	r3, [r3]
+ 7674 0b32 9A42     		cmp	r2, r3
+ 7675 0b34 0CDD     		ble	.L27
+ 364:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					text7.display(&text7, 20);
+ 7676              		.loc 1 364 0
+ 7677 0b36 B64B     		ldr	r3, .L65+24
+ 7678 0b38 8E22     		movs	r2, #142
+ 7679 0b3a D200     		lsls	r2, r2, #3
+ 7680 0b3c 9446     		mov	ip, r2
+ 7681 0b3e BC44     		add	ip, ip, r7
+ 7682 0b40 6344     		add	r3, r3, ip
+ 7683 0b42 1B69     		ldr	r3, [r3, #16]
+ 7684 0b44 6822     		movs	r2, #104
+ 7685 0b46 BA18     		adds	r2, r7, r2
+ 7686 0b48 1421     		movs	r1, #20
+ 7687 0b4a 1000     		movs	r0, r2
+ 7688 0b4c 9847     		blx	r3
+ 7689              	.LVL7:
+ 7690 0b4e AEE0     		b	.L20
+ 7691              	.L27:
+ 365:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				else if(counter < delay_until_text + 5*long_text + 3*short_text + 2)
+ 7692              		.loc 1 365 0
+ 7693 0b50 A94B     		ldr	r3, .L65
+ 7694 0b52 1A68     		ldr	r2, [r3]
+ 7695 0b54 1300     		movs	r3, r2
+ 7696 0b56 9B00     		lsls	r3, r3, #2
+ 7697 0b58 9A18     		adds	r2, r3, r2
+ 7698 0b5a A84B     		ldr	r3, .L65+4
+ 7699 0b5c 1B68     		ldr	r3, [r3]
+ 7700 0b5e D118     		adds	r1, r2, r3
+ 7701 0b60 A74B     		ldr	r3, .L65+8
+ 7702 0b62 1A68     		ldr	r2, [r3]
+ 7703 0b64 1300     		movs	r3, r2
+ 7704 0b66 5B00     		lsls	r3, r3, #1
+ 7705 0b68 9B18     		adds	r3, r3, r2
+ 7706 0b6a CB18     		adds	r3, r1, r3
+ 7707 0b6c 9A1C     		adds	r2, r3, #2
+ 7708 0b6e A54B     		ldr	r3, .L65+12
+ 7709 0b70 1B68     		ldr	r3, [r3]
+ 7710 0b72 9A42     		cmp	r2, r3
+ 7711 0b74 0CDD     		ble	.L28
+ 366:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					text8.display(&text8, 20);
+ 7712              		.loc 1 366 0
+ 7713 0b76 A74B     		ldr	r3, .L65+28
+ 7714 0b78 8E22     		movs	r2, #142
+ 7715 0b7a D200     		lsls	r2, r2, #3
+ 7716 0b7c 9446     		mov	ip, r2
+ 7717 0b7e BC44     		add	ip, ip, r7
+ 7718 0b80 6344     		add	r3, r3, ip
+ 7719 0b82 1B69     		ldr	r3, [r3, #16]
+ 7720 0b84 5422     		movs	r2, #84
+ 7721 0b86 BA18     		adds	r2, r7, r2
+ 7722 0b88 1421     		movs	r1, #20
+ 7723 0b8a 1000     		movs	r0, r2
+ 7724 0b8c 9847     		blx	r3
+ 7725              	.LVL8:
+ 7726 0b8e 8EE0     		b	.L20
+ 7727              	.L28:
+ 367:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				else if(counter < delay_until_text + 5*long_text + 4*short_text + 2)
+ 7728              		.loc 1 367 0
+ 7729 0b90 994B     		ldr	r3, .L65
+ 7730 0b92 1A68     		ldr	r2, [r3]
+ 7731 0b94 1300     		movs	r3, r2
+ 7732 0b96 9B00     		lsls	r3, r3, #2
+ 7733 0b98 9A18     		adds	r2, r3, r2
+ 7734 0b9a 984B     		ldr	r3, .L65+4
+ 7735 0b9c 1B68     		ldr	r3, [r3]
+ 7736 0b9e D218     		adds	r2, r2, r3
+ 7737 0ba0 974B     		ldr	r3, .L65+8
+ 7738 0ba2 1B68     		ldr	r3, [r3]
+ 7739 0ba4 9B00     		lsls	r3, r3, #2
+ 7740 0ba6 D318     		adds	r3, r2, r3
+ 7741 0ba8 9A1C     		adds	r2, r3, #2
+ 7742 0baa 964B     		ldr	r3, .L65+12
+ 7743 0bac 1B68     		ldr	r3, [r3]
+ 7744 0bae 9A42     		cmp	r2, r3
+ 7745 0bb0 0CDD     		ble	.L29
+ 368:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					text9.display(&text9, 20);
+ 7746              		.loc 1 368 0
+ 7747 0bb2 994B     		ldr	r3, .L65+32
+ 7748 0bb4 8E22     		movs	r2, #142
+ 7749 0bb6 D200     		lsls	r2, r2, #3
+ 7750 0bb8 9446     		mov	ip, r2
+ 7751 0bba BC44     		add	ip, ip, r7
+ 7752 0bbc 6344     		add	r3, r3, ip
+ 7753 0bbe 1B69     		ldr	r3, [r3, #16]
+ 7754 0bc0 4022     		movs	r2, #64
+ 7755 0bc2 BA18     		adds	r2, r7, r2
+ 7756 0bc4 1421     		movs	r1, #20
+ 7757 0bc6 1000     		movs	r0, r2
+ 7758 0bc8 9847     		blx	r3
+ 7759              	.LVL9:
+ 7760 0bca 70E0     		b	.L20
+ 7761              	.L29:
+ 369:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				else if(counter < delay_until_text + 6*long_text + 4*short_text - 2 + 2)
+ 7762              		.loc 1 369 0
+ 7763 0bcc 8A4B     		ldr	r3, .L65
+ 7764 0bce 1A68     		ldr	r2, [r3]
+ 7765 0bd0 1300     		movs	r3, r2
+ 7766 0bd2 5B00     		lsls	r3, r3, #1
+ 7767 0bd4 9B18     		adds	r3, r3, r2
+ 7768 0bd6 5B00     		lsls	r3, r3, #1
+ 7769 0bd8 1A00     		movs	r2, r3
+ 7770 0bda 884B     		ldr	r3, .L65+4
+ 7771 0bdc 1B68     		ldr	r3, [r3]
+ 7772 0bde D218     		adds	r2, r2, r3
+ 7773 0be0 874B     		ldr	r3, .L65+8
+ 7774 0be2 1B68     		ldr	r3, [r3]
+ 7775 0be4 9B00     		lsls	r3, r3, #2
+ 7776 0be6 D218     		adds	r2, r2, r3
+ 7777 0be8 864B     		ldr	r3, .L65+12
+ 7778 0bea 1B68     		ldr	r3, [r3]
+ 7779 0bec 9A42     		cmp	r2, r3
+ 7780 0bee 0CDD     		ble	.L30
+ 370:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					text10.display(&text10, 15);
+ 7781              		.loc 1 370 0
+ 7782 0bf0 8A4B     		ldr	r3, .L65+36
+ 7783 0bf2 8E22     		movs	r2, #142
+ 7784 0bf4 D200     		lsls	r2, r2, #3
+ 7785 0bf6 9446     		mov	ip, r2
+ 7786 0bf8 BC44     		add	ip, ip, r7
+ 7787 0bfa 6344     		add	r3, r3, ip
+ 7788 0bfc 1B69     		ldr	r3, [r3, #16]
+ 7789 0bfe 2C22     		movs	r2, #44
+ 7790 0c00 BA18     		adds	r2, r7, r2
+ 7791 0c02 0F21     		movs	r1, #15
+ 7792 0c04 1000     		movs	r0, r2
+ 7793 0c06 9847     		blx	r3
+ 7794              	.LVL10:
+ 7795 0c08 51E0     		b	.L20
+ 7796              	.L30:
+ 371:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				else if(counter < delay_until_text + 6*long_text + 5*short_text + 3 + 2)
+ 7797              		.loc 1 371 0
+ 7798 0c0a 7B4B     		ldr	r3, .L65
+ 7799 0c0c 1A68     		ldr	r2, [r3]
+ 7800 0c0e 1300     		movs	r3, r2
+ 7801 0c10 5B00     		lsls	r3, r3, #1
+ 7802 0c12 9B18     		adds	r3, r3, r2
+ 7803 0c14 5B00     		lsls	r3, r3, #1
+ 7804 0c16 1A00     		movs	r2, r3
+ 7805 0c18 784B     		ldr	r3, .L65+4
+ 7806 0c1a 1B68     		ldr	r3, [r3]
+ 7807 0c1c D118     		adds	r1, r2, r3
+ 7808 0c1e 784B     		ldr	r3, .L65+8
+ 7809 0c20 1A68     		ldr	r2, [r3]
+ 7810 0c22 1300     		movs	r3, r2
+ 7811 0c24 9B00     		lsls	r3, r3, #2
+ 7812 0c26 9B18     		adds	r3, r3, r2
+ 7813 0c28 CB18     		adds	r3, r1, r3
+ 7814 0c2a 5A1D     		adds	r2, r3, #5
+ 7815 0c2c 754B     		ldr	r3, .L65+12
+ 7816 0c2e 1B68     		ldr	r3, [r3]
+ 7817 0c30 9A42     		cmp	r2, r3
+ 7818 0c32 0BDD     		ble	.L31
+ 372:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					text12.display(&text12, 15);
+ 7819              		.loc 1 372 0
+ 7820 0c34 7A4B     		ldr	r3, .L65+40
+ 7821 0c36 8E22     		movs	r2, #142
+ 7822 0c38 D200     		lsls	r2, r2, #3
+ 7823 0c3a 9446     		mov	ip, r2
+ 7824 0c3c BC44     		add	ip, ip, r7
+ 7825 0c3e 6344     		add	r3, r3, ip
+ 7826 0c40 1B69     		ldr	r3, [r3, #16]
+ 7827 0c42 3A1D     		adds	r2, r7, #4
+ 7828 0c44 0F21     		movs	r1, #15
+ 7829 0c46 1000     		movs	r0, r2
+ 7830 0c48 9847     		blx	r3
+ 7831              	.LVL11:
+ 7832 0c4a 30E0     		b	.L20
+ 7833              	.L31:
+ 373:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				else if(counter < delay_until_text + 7*long_text + 5*short_text + 6 + 2) {
+ 7834              		.loc 1 373 0
+ 7835 0c4c 6A4B     		ldr	r3, .L65
+ 7836 0c4e 1A68     		ldr	r2, [r3]
+ 7837 0c50 1300     		movs	r3, r2
+ 7838 0c52 DB00     		lsls	r3, r3, #3
+ 7839 0c54 9A1A     		subs	r2, r3, r2
+ 7840 0c56 694B     		ldr	r3, .L65+4
+ 7841 0c58 1B68     		ldr	r3, [r3]
+ 7842 0c5a D118     		adds	r1, r2, r3
+ 7843 0c5c 684B     		ldr	r3, .L65+8
+ 7844 0c5e 1A68     		ldr	r2, [r3]
+ 7845 0c60 1300     		movs	r3, r2
+ 7846 0c62 9B00     		lsls	r3, r3, #2
+ 7847 0c64 9B18     		adds	r3, r3, r2
+ 7848 0c66 CB18     		adds	r3, r1, r3
+ 7849 0c68 0833     		adds	r3, r3, #8
+ 7850 0c6a 1A00     		movs	r2, r3
+ 7851 0c6c 654B     		ldr	r3, .L65+12
+ 7852 0c6e 1B68     		ldr	r3, [r3]
+ 7853 0c70 9A42     		cmp	r2, r3
+ 7854 0c72 0CDD     		ble	.L32
+ 374:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					text11.display(&text11, 20);
+ 7855              		.loc 1 374 0
+ 7856 0c74 6B4B     		ldr	r3, .L65+44
+ 7857 0c76 8E22     		movs	r2, #142
+ 7858 0c78 D200     		lsls	r2, r2, #3
+ 7859 0c7a 9446     		mov	ip, r2
+ 7860 0c7c BC44     		add	ip, ip, r7
+ 7861 0c7e 6344     		add	r3, r3, ip
+ 7862 0c80 1B69     		ldr	r3, [r3, #16]
+ 7863 0c82 1822     		movs	r2, #24
+ 7864 0c84 BA18     		adds	r2, r7, r2
+ 7865 0c86 1421     		movs	r1, #20
+ 7866 0c88 1000     		movs	r0, r2
+ 7867 0c8a 9847     		blx	r3
+ 7868              	.LVL12:
+ 7869 0c8c 0FE0     		b	.L20
+ 7870              	.L32:
+ 375:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				} else {
+ 376:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					if (read_DIL() == 0) {
+ 7871              		.loc 1 376 0
+ 7872 0c8e FFF7FEFF 		bl	read_DIL
+ 7873 0c92 031E     		subs	r3, r0, #0
+ 7874 0c94 0BD1     		bne	.L20
+ 377:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 						current_screen = GAME_SCREEN;
+ 7875              		.loc 1 377 0
+ 7876 0c96 644B     		ldr	r3, .L65+48
+ 7877 0c98 0222     		movs	r2, #2
+ 7878 0c9a 1A60     		str	r2, [r3]
+ 378:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 						random_seed = counter;
+ 7879              		.loc 1 378 0
+ 7880 0c9c 594B     		ldr	r3, .L65+12
+ 7881 0c9e 1A68     		ldr	r2, [r3]
+ 7882 0ca0 624B     		ldr	r3, .L65+52
+ 7883 0ca2 1A60     		str	r2, [r3]
+ 379:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 						counter = 0;
+ 7884              		.loc 1 379 0
+ 7885 0ca4 574B     		ldr	r3, .L65+12
+ 7886 0ca6 0022     		movs	r2, #0
+ 7887 0ca8 1A60     		str	r2, [r3]
+ 380:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 						clear_ascii();
+ 7888              		.loc 1 380 0
+ 7889 0caa FFF7FEFF 		bl	clear_ascii
+ 7890              	.L20:
+ 381:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					}
+ 382:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				}
+ 383:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
+ 384:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				if(read_DIL() == SKIP_VALUE) {
+ 7891              		.loc 1 384 0
+ 7892 0cae FFF7FEFF 		bl	read_DIL
+ 7893 0cb2 0300     		movs	r3, r0
+ 7894 0cb4 812B     		cmp	r3, #129
+ 7895 0cb6 0BD1     		bne	.L33
+ 385:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					current_screen = GAME_SCREEN;
+ 7896              		.loc 1 385 0
+ 7897 0cb8 5B4B     		ldr	r3, .L65+48
+ 7898 0cba 0222     		movs	r2, #2
+ 7899 0cbc 1A60     		str	r2, [r3]
+ 386:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					random_seed = counter;
+ 7900              		.loc 1 386 0
+ 7901 0cbe 514B     		ldr	r3, .L65+12
+ 7902 0cc0 1A68     		ldr	r2, [r3]
+ 7903 0cc2 5A4B     		ldr	r3, .L65+52
+ 7904 0cc4 1A60     		str	r2, [r3]
+ 387:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					counter = 0;
+ 7905              		.loc 1 387 0
+ 7906 0cc6 4F4B     		ldr	r3, .L65+12
+ 7907 0cc8 0022     		movs	r2, #0
+ 7908 0cca 1A60     		str	r2, [r3]
+ 388:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					clear_ascii();
+ 7909              		.loc 1 388 0
+ 7910 0ccc FFF7FEFF 		bl	clear_ascii
+ 7911              	.L33:
+ 389:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				}
+ 390:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
+ 391:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
+ 392:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				fire2.update(&fire2);
+ 7912              		.loc 1 392 0
+ 7913 0cd0 574B     		ldr	r3, .L65+56
+ 7914 0cd2 8E22     		movs	r2, #142
+ 7915 0cd4 D200     		lsls	r2, r2, #3
+ 7916 0cd6 9446     		mov	ip, r2
+ 7917 0cd8 BC44     		add	ip, ip, r7
+ 7918 0cda 6344     		add	r3, r3, ip
+ 7919 0cdc DB68     		ldr	r3, [r3, #12]
+ 7920 0cde 9322     		movs	r2, #147
+ 7921 0ce0 9200     		lsls	r2, r2, #2
+ 7922 0ce2 BA18     		adds	r2, r7, r2
+ 7923 0ce4 1000     		movs	r0, r2
+ 7924 0ce6 9847     		blx	r3
+ 7925              	.LVL13:
+ 393:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				fire3.update(&fire3);
+ 7926              		.loc 1 393 0
+ 7927 0ce8 524B     		ldr	r3, .L65+60
+ 7928 0cea 8E22     		movs	r2, #142
+ 7929 0cec D200     		lsls	r2, r2, #3
+ 7930 0cee 9446     		mov	ip, r2
+ 7931 0cf0 BC44     		add	ip, ip, r7
+ 7932 0cf2 6344     		add	r3, r3, ip
+ 7933 0cf4 DB68     		ldr	r3, [r3, #12]
+ 7934 0cf6 8A22     		movs	r2, #138
+ 7935 0cf8 9200     		lsls	r2, r2, #2
+ 7936 0cfa BA18     		adds	r2, r7, r2
+ 7937 0cfc 1000     		movs	r0, r2
+ 7938 0cfe 9847     		blx	r3
+ 7939              	.LVL14:
+ 394:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				fire1.update(&fire1);
+ 7940              		.loc 1 394 0
+ 7941 0d00 4D4B     		ldr	r3, .L65+64
+ 7942 0d02 8E22     		movs	r2, #142
+ 7943 0d04 D200     		lsls	r2, r2, #3
+ 7944 0d06 9446     		mov	ip, r2
+ 7945 0d08 BC44     		add	ip, ip, r7
+ 7946 0d0a 6344     		add	r3, r3, ip
+ 7947 0d0c DB68     		ldr	r3, [r3, #12]
+ 7948 0d0e F022     		movs	r2, #240
+ 7949 0d10 5200     		lsls	r2, r2, #1
+ 7950 0d12 BA18     		adds	r2, r7, r2
+ 7951 0d14 1000     		movs	r0, r2
+ 7952 0d16 9847     		blx	r3
+ 7953              	.LVL15:
+ 395:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				fire4.update(&fire4);
+ 7954              		.loc 1 395 0
+ 7955 0d18 484B     		ldr	r3, .L65+68
+ 7956 0d1a 8E22     		movs	r2, #142
+ 7957 0d1c D200     		lsls	r2, r2, #3
+ 7958 0d1e 9446     		mov	ip, r2
+ 7959 0d20 BC44     		add	ip, ip, r7
+ 7960 0d22 6344     		add	r3, r3, ip
+ 7961 0d24 DB68     		ldr	r3, [r3, #12]
+ 7962 0d26 8122     		movs	r2, #129
+ 7963 0d28 9200     		lsls	r2, r2, #2
+ 7964 0d2a BA18     		adds	r2, r7, r2
+ 7965 0d2c 1000     		movs	r0, r2
+ 7966 0d2e 9847     		blx	r3
+ 7967              	.LVL16:
+ 396:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				bird.update(&bird);
+ 7968              		.loc 1 396 0
+ 7969 0d30 434B     		ldr	r3, .L65+72
+ 7970 0d32 8E22     		movs	r2, #142
+ 7971 0d34 D200     		lsls	r2, r2, #3
+ 7972 0d36 9446     		mov	ip, r2
+ 7973 0d38 BC44     		add	ip, ip, r7
+ 7974 0d3a 6344     		add	r3, r3, ip
+ 7975 0d3c DB68     		ldr	r3, [r3, #12]
+ 7976 0d3e AE22     		movs	r2, #174
+ 7977 0d40 9200     		lsls	r2, r2, #2
+ 7978 0d42 BA18     		adds	r2, r7, r2
+ 7979 0d44 1000     		movs	r0, r2
+ 7980 0d46 9847     		blx	r3
+ 7981              	.LVL17:
+ 397:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				bird.xPos -= 2;
+ 7982              		.loc 1 397 0
+ 7983 0d48 3D4B     		ldr	r3, .L65+72
+ 7984 0d4a 8E22     		movs	r2, #142
+ 7985 0d4c D200     		lsls	r2, r2, #3
+ 7986 0d4e 9446     		mov	ip, r2
+ 7987 0d50 BC44     		add	ip, ip, r7
+ 7988 0d52 6344     		add	r3, r3, ip
+ 7989 0d54 5B68     		ldr	r3, [r3, #4]
+ 7990 0d56 9A1E     		subs	r2, r3, #2
+ 7991 0d58 394B     		ldr	r3, .L65+72
+ 7992 0d5a 8E21     		movs	r1, #142
+ 7993 0d5c C900     		lsls	r1, r1, #3
+ 7994 0d5e 8C46     		mov	ip, r1
+ 7995 0d60 BC44     		add	ip, ip, r7
+ 7996 0d62 6344     		add	r3, r3, ip
+ 7997 0d64 5A60     		str	r2, [r3, #4]
+ 398:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				if (counter % 2 == 0) {
+ 7998              		.loc 1 398 0
+ 7999 0d66 274B     		ldr	r3, .L65+12
+ 8000 0d68 1B68     		ldr	r3, [r3]
+ 8001 0d6a 1A00     		movs	r2, r3
+ 8002 0d6c 0123     		movs	r3, #1
+ 8003 0d6e 1340     		ands	r3, r2
+ 8004 0d70 00D0     		beq	.LCB1657
+ 8005 0d72 98E3     		b	.L58	@long jump
+ 8006              	.LCB1657:
+ 399:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					bird.yPos--;
+ 8007              		.loc 1 399 0
+ 8008 0d74 324B     		ldr	r3, .L65+72
+ 8009 0d76 8E22     		movs	r2, #142
+ 8010 0d78 D200     		lsls	r2, r2, #3
+ 8011 0d7a 9446     		mov	ip, r2
+ 8012 0d7c BC44     		add	ip, ip, r7
+ 8013 0d7e 6344     		add	r3, r3, ip
+ 8014 0d80 9B68     		ldr	r3, [r3, #8]
+ 8015 0d82 5A1E     		subs	r2, r3, #1
+ 8016 0d84 2E4B     		ldr	r3, .L65+72
+ 8017 0d86 8E21     		movs	r1, #142
+ 8018 0d88 C900     		lsls	r1, r1, #3
+ 8019 0d8a 8C46     		mov	ip, r1
+ 8020 0d8c BC44     		add	ip, ip, r7
+ 8021 0d8e 6344     		add	r3, r3, ip
+ 8022 0d90 9A60     		str	r2, [r3, #8]
+ 400:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				}
+ 401:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
+ 402:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				break;
+ 8023              		.loc 1 402 0
+ 8024 0d92 88E3     		b	.L58
+ 8025              	.L13:
+ 403:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
+ 404:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 			case GAME_SCREEN: //inside
+ 405:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
+ 406:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				counter++;
+ 8026              		.loc 1 406 0
+ 8027 0d94 1B4B     		ldr	r3, .L65+12
+ 8028 0d96 1B68     		ldr	r3, [r3]
+ 8029 0d98 5A1C     		adds	r2, r3, #1
+ 8030 0d9a 1A4B     		ldr	r3, .L65+12
+ 8031 0d9c 1A60     		str	r2, [r3]
+ 407:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				if(read_DIL_single( LIGHT_TRIGGER )) {
+ 8032              		.loc 1 407 0
+ 8033 0d9e 0620     		movs	r0, #6
+ 8034 0da0 FFF7FEFF 		bl	read_DIL_single
+ 8035 0da4 031E     		subs	r3, r0, #0
+ 8036 0da6 06D0     		beq	.L35
+ 408:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					draw_game_object( &indoors2 );
+ 8037              		.loc 1 408 0
+ 8038 0da8 C923     		movs	r3, #201
+ 8039 0daa 9B00     		lsls	r3, r3, #2
+ 8040 0dac FB18     		adds	r3, r7, r3
+ 8041 0dae 1800     		movs	r0, r3
+ 8042 0db0 FFF7FEFF 		bl	draw_game_object
+ 8043 0db4 0BE0     		b	.L36
+ 8044              	.L35:
+ 409:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				} else {
+ 410:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					draw_game_object( &indoors );
+ 8045              		.loc 1 410 0
+ 8046 0db6 D223     		movs	r3, #210
+ 8047 0db8 9B00     		lsls	r3, r3, #2
+ 8048 0dba FB18     		adds	r3, r7, r3
+ 8049 0dbc 1800     		movs	r0, r3
+ 8050 0dbe FFF7FEFF 		bl	draw_game_object
+ 411:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					draw_game_object( &trophy );
+ 8051              		.loc 1 411 0
+ 8052 0dc2 C023     		movs	r3, #192
+ 8053 0dc4 9B00     		lsls	r3, r3, #2
+ 8054 0dc6 FB18     		adds	r3, r7, r3
+ 8055 0dc8 1800     		movs	r0, r3
+ 8056 0dca FFF7FEFF 		bl	draw_game_object
+ 8057              	.L36:
+ 412:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				}
+ 413:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
+ 414:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				if(!no_DIP)
+ 8058              		.loc 1 414 0
+ 8059 0dce 1D4B     		ldr	r3, .L65+76
+ 8060 0dd0 FB18     		adds	r3, r7, r3
+ 8061 0dd2 1B68     		ldr	r3, [r3]
+ 8062 0dd4 002B     		cmp	r3, #0
+ 8063 0dd6 05D1     		bne	.L37
+ 415:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					draw_game_object( &DIP );
+ 8064              		.loc 1 415 0
+ 8065 0dd8 A523     		movs	r3, #165
+ 8066 0dda 9B00     		lsls	r3, r3, #2
+ 8067 0ddc FB18     		adds	r3, r7, r3
+ 8068 0dde 1800     		movs	r0, r3
+ 8069 0de0 FFF7FEFF 		bl	draw_game_object
+ 8070              	.L37:
+ 416:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				draw_game_object( &player );
+ 8071              		.loc 1 416 0
+ 8072 0de4 9C23     		movs	r3, #156
+ 8073 0de6 9B00     		lsls	r3, r3, #2
+ 8074 0de8 FB18     		adds	r3, r7, r3
+ 8075 0dea 1800     		movs	r0, r3
+ 8076 0dec FFF7FEFF 		bl	draw_game_object
+ 417:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				static int i;
+ 418:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				for(i = 0; i < 3; i++) {
+ 8077              		.loc 1 418 0
+ 8078 0df0 154B     		ldr	r3, .L65+80
+ 8079 0df2 0022     		movs	r2, #0
+ 8080 0df4 1A60     		str	r2, [r3]
+ 8081 0df6 55E0     		b	.L38
+ 8082              	.L66:
+ 8083              		.align	2
+ 8084              	.L65:
+ 8085 0df8 34170000 		.word	long_text.4301
+ 8086 0dfc 30170000 		.word	delay_until_text.4303
+ 8087 0e00 38170000 		.word	short_text.4302
+ 8088 0e04 00000000 		.word	counter
+ 8089 0e08 20FCFFFF 		.word	-992
+ 8090 0e0c 0CFCFFFF 		.word	-1012
+ 8091 0e10 F8FBFFFF 		.word	-1032
+ 8092 0e14 E4FBFFFF 		.word	-1052
+ 8093 0e18 D0FBFFFF 		.word	-1072
+ 8094 0e1c BCFBFFFF 		.word	-1092
+ 8095 0e20 94FBFFFF 		.word	-1132
+ 8096 0e24 A8FBFFFF 		.word	-1112
+ 8097 0e28 00000000 		.word	current_screen
+ 8098 0e2c 00000000 		.word	random_seed
+ 8099 0e30 DCFDFFFF 		.word	-548
+ 8100 0e34 B8FDFFFF 		.word	-584
+ 8101 0e38 70FDFFFF 		.word	-656
+ 8102 0e3c 94FDFFFF 		.word	-620
+ 8103 0e40 48FEFFFF 		.word	-440
+ 8104 0e44 5C040000 		.word	1116
+ 8105 0e48 04000000 		.word	i.4305
+ 8106              	.L39:
+ 419:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					draw_game_object( &fires[i] );
+ 8107              		.loc 1 419 0 discriminator 3
+ 8108 0e4c B24B     		ldr	r3, .L67
+ 8109 0e4e 1A68     		ldr	r2, [r3]
+ 8110 0e50 8423     		movs	r3, #132
+ 8111 0e52 5B00     		lsls	r3, r3, #1
+ 8112 0e54 F918     		adds	r1, r7, r3
+ 8113 0e56 1300     		movs	r3, r2
+ 8114 0e58 DB00     		lsls	r3, r3, #3
+ 8115 0e5a 9B18     		adds	r3, r3, r2
+ 8116 0e5c 9B00     		lsls	r3, r3, #2
+ 8117 0e5e CB18     		adds	r3, r1, r3
+ 8118 0e60 1800     		movs	r0, r3
+ 8119 0e62 FFF7FEFF 		bl	draw_game_object
+ 420:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					fires[i].update( &fires[i] );
+ 8120              		.loc 1 420 0 discriminator 3
+ 8121 0e66 AC4B     		ldr	r3, .L67
+ 8122 0e68 1A68     		ldr	r2, [r3]
+ 8123 0e6a AC4B     		ldr	r3, .L67+4
+ 8124 0e6c 8E21     		movs	r1, #142
+ 8125 0e6e C900     		lsls	r1, r1, #3
+ 8126 0e70 7918     		adds	r1, r7, r1
+ 8127 0e72 C918     		adds	r1, r1, r3
+ 8128 0e74 1300     		movs	r3, r2
+ 8129 0e76 DB00     		lsls	r3, r3, #3
+ 8130 0e78 9B18     		adds	r3, r3, r2
+ 8131 0e7a 9B00     		lsls	r3, r3, #2
+ 8132 0e7c CB18     		adds	r3, r1, r3
+ 8133 0e7e 0C33     		adds	r3, r3, #12
+ 8134 0e80 1968     		ldr	r1, [r3]
+ 8135 0e82 A54B     		ldr	r3, .L67
+ 8136 0e84 1A68     		ldr	r2, [r3]
+ 8137 0e86 8423     		movs	r3, #132
+ 8138 0e88 5B00     		lsls	r3, r3, #1
+ 8139 0e8a F818     		adds	r0, r7, r3
+ 8140 0e8c 1300     		movs	r3, r2
+ 8141 0e8e DB00     		lsls	r3, r3, #3
+ 8142 0e90 9B18     		adds	r3, r3, r2
+ 8143 0e92 9B00     		lsls	r3, r3, #2
+ 8144 0e94 C318     		adds	r3, r0, r3
+ 8145 0e96 1800     		movs	r0, r3
+ 8146 0e98 8847     		blx	r1
+ 8147              	.LVL18:
+ 418:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					draw_game_object( &fires[i] );
+ 8148              		.loc 1 418 0 discriminator 3
+ 8149 0e9a 9F4B     		ldr	r3, .L67
+ 8150 0e9c 1B68     		ldr	r3, [r3]
+ 8151 0e9e 5A1C     		adds	r2, r3, #1
+ 8152 0ea0 9D4B     		ldr	r3, .L67
+ 8153 0ea2 1A60     		str	r2, [r3]
+ 8154              	.L38:
+ 418:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					draw_game_object( &fires[i] );
+ 8155              		.loc 1 418 0 is_stmt 0 discriminator 1
+ 8156 0ea4 9C4B     		ldr	r3, .L67
+ 8157 0ea6 1B68     		ldr	r3, [r3]
+ 8158 0ea8 022B     		cmp	r3, #2
+ 8159 0eaa CFDD     		ble	.L39
+ 421:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				}
+ 422:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				draw_game_object( &hair );
+ 8160              		.loc 1 422 0 is_stmt 1
+ 8161 0eac B723     		movs	r3, #183
+ 8162 0eae 9B00     		lsls	r3, r3, #2
+ 8163 0eb0 FB18     		adds	r3, r7, r3
+ 8164 0eb2 1800     		movs	r0, r3
+ 8165 0eb4 FFF7FEFF 		bl	draw_game_object
+ 423:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				show_frame(1);
+ 8166              		.loc 1 423 0
+ 8167 0eb8 0120     		movs	r0, #1
+ 8168 0eba FFF7FEFF 		bl	show_frame
+ 424:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
+ 425:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				static int last_climb_value = 100;
+ 426:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				if((read_DIL_single(CLIMB_TRIGGER) != last_climb_value) && player.xPos > 90 && player.xPos < 10
+ 8169              		.loc 1 426 0
+ 8170 0ebe 0420     		movs	r0, #4
+ 8171 0ec0 FFF7FEFF 		bl	read_DIL_single
+ 8172 0ec4 0200     		movs	r2, r0
+ 8173 0ec6 964B     		ldr	r3, .L67+8
+ 8174 0ec8 1B68     		ldr	r3, [r3]
+ 8175 0eca 9A42     		cmp	r2, r3
+ 8176 0ecc 23D0     		beq	.L40
+ 8177              		.loc 1 426 0 is_stmt 0 discriminator 1
+ 8178 0ece 954B     		ldr	r3, .L67+12
+ 8179 0ed0 8E22     		movs	r2, #142
+ 8180 0ed2 D200     		lsls	r2, r2, #3
+ 8181 0ed4 9446     		mov	ip, r2
+ 8182 0ed6 BC44     		add	ip, ip, r7
+ 8183 0ed8 6344     		add	r3, r3, ip
+ 8184 0eda 5B68     		ldr	r3, [r3, #4]
+ 8185 0edc 5A2B     		cmp	r3, #90
+ 8186 0ede 1ADD     		ble	.L40
+ 8187              		.loc 1 426 0 discriminator 2
+ 8188 0ee0 904B     		ldr	r3, .L67+12
+ 8189 0ee2 8E22     		movs	r2, #142
+ 8190 0ee4 D200     		lsls	r2, r2, #3
+ 8191 0ee6 9446     		mov	ip, r2
+ 8192 0ee8 BC44     		add	ip, ip, r7
+ 8193 0eea 6344     		add	r3, r3, ip
+ 8194 0eec 5B68     		ldr	r3, [r3, #4]
+ 8195 0eee 6B2B     		cmp	r3, #107
+ 8196 0ef0 11DC     		bgt	.L40
+ 8197              		.loc 1 426 0 discriminator 3
+ 8198 0ef2 8D23     		movs	r3, #141
+ 8199 0ef4 DB00     		lsls	r3, r3, #3
+ 8200 0ef6 FB18     		adds	r3, r7, r3
+ 8201 0ef8 1B68     		ldr	r3, [r3]
+ 8202 0efa 002B     		cmp	r3, #0
+ 8203 0efc 0BD1     		bne	.L40
+ 427:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					is_climbing = 1;
+ 8204              		.loc 1 427 0 is_stmt 1
+ 8205 0efe 0123     		movs	r3, #1
+ 8206 0f00 894A     		ldr	r2, .L67+16
+ 8207 0f02 BA18     		adds	r2, r7, r2
+ 8208 0f04 1360     		str	r3, [r2]
+ 428:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					player.xPos = 98;
+ 8209              		.loc 1 428 0
+ 8210 0f06 874B     		ldr	r3, .L67+12
+ 8211 0f08 8E22     		movs	r2, #142
+ 8212 0f0a D200     		lsls	r2, r2, #3
+ 8213 0f0c 9446     		mov	ip, r2
+ 8214 0f0e BC44     		add	ip, ip, r7
+ 8215 0f10 6344     		add	r3, r3, ip
+ 8216 0f12 6222     		movs	r2, #98
+ 8217 0f14 5A60     		str	r2, [r3, #4]
+ 8218              	.L40:
+ 429:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				}
+ 430:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				last_climb_value = read_DIL_single(CLIMB_TRIGGER);
+ 8219              		.loc 1 430 0
+ 8220 0f16 0420     		movs	r0, #4
+ 8221 0f18 FFF7FEFF 		bl	read_DIL_single
+ 8222 0f1c 0200     		movs	r2, r0
+ 8223 0f1e 804B     		ldr	r3, .L67+8
+ 8224 0f20 1A60     		str	r2, [r3]
+ 431:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
+ 432:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				if(is_climbing) {
+ 8225              		.loc 1 432 0
+ 8226 0f22 814B     		ldr	r3, .L67+16
+ 8227 0f24 FB18     		adds	r3, r7, r3
+ 8228 0f26 1B68     		ldr	r3, [r3]
+ 8229 0f28 002B     		cmp	r3, #0
+ 8230 0f2a 38D0     		beq	.L41
+ 433:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					gameObjectUpdate( &player );
+ 8231              		.loc 1 433 0
+ 8232 0f2c 9C23     		movs	r3, #156
+ 8233 0f2e 9B00     		lsls	r3, r3, #2
+ 8234 0f30 FB18     		adds	r3, r7, r3
+ 8235 0f32 1800     		movs	r0, r3
+ 8236 0f34 FFF7FEFF 		bl	gameObjectUpdate
+ 434:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					if(player.yPos > 4) {
+ 8237              		.loc 1 434 0
+ 8238 0f38 7A4B     		ldr	r3, .L67+12
+ 8239 0f3a 8E22     		movs	r2, #142
+ 8240 0f3c D200     		lsls	r2, r2, #3
+ 8241 0f3e 9446     		mov	ip, r2
+ 8242 0f40 BC44     		add	ip, ip, r7
+ 8243 0f42 6344     		add	r3, r3, ip
+ 8244 0f44 9B68     		ldr	r3, [r3, #8]
+ 8245 0f46 042B     		cmp	r3, #4
+ 8246 0f48 0FDD     		ble	.L42
+ 435:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 						player.yPos--;
+ 8247              		.loc 1 435 0
+ 8248 0f4a 764B     		ldr	r3, .L67+12
+ 8249 0f4c 8E22     		movs	r2, #142
+ 8250 0f4e D200     		lsls	r2, r2, #3
+ 8251 0f50 9446     		mov	ip, r2
+ 8252 0f52 BC44     		add	ip, ip, r7
+ 8253 0f54 6344     		add	r3, r3, ip
+ 8254 0f56 9B68     		ldr	r3, [r3, #8]
+ 8255 0f58 5A1E     		subs	r2, r3, #1
+ 8256 0f5a 724B     		ldr	r3, .L67+12
+ 8257 0f5c 8E21     		movs	r1, #142
+ 8258 0f5e C900     		lsls	r1, r1, #3
+ 8259 0f60 8C46     		mov	ip, r1
+ 8260 0f62 BC44     		add	ip, ip, r7
+ 8261 0f64 6344     		add	r3, r3, ip
+ 8262 0f66 9A60     		str	r2, [r3, #8]
+ 8263 0f68 25E0     		b	.L44
+ 8264              	.L42:
+ 436:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					} else {	//Stay at top level and disable climbing forever!
+ 437:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 						player.yPos = 5;
+ 8265              		.loc 1 437 0
+ 8266 0f6a 6E4B     		ldr	r3, .L67+12
+ 8267 0f6c 8E22     		movs	r2, #142
+ 8268 0f6e D200     		lsls	r2, r2, #3
+ 8269 0f70 9446     		mov	ip, r2
+ 8270 0f72 BC44     		add	ip, ip, r7
+ 8271 0f74 6344     		add	r3, r3, ip
+ 8272 0f76 0522     		movs	r2, #5
+ 8273 0f78 9A60     		str	r2, [r3, #8]
+ 438:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 						player.xPos = 96;
+ 8274              		.loc 1 438 0
+ 8275 0f7a 6A4B     		ldr	r3, .L67+12
+ 8276 0f7c 8E22     		movs	r2, #142
+ 8277 0f7e D200     		lsls	r2, r2, #3
+ 8278 0f80 9446     		mov	ip, r2
+ 8279 0f82 BC44     		add	ip, ip, r7
+ 8280 0f84 6344     		add	r3, r3, ip
+ 8281 0f86 6022     		movs	r2, #96
+ 8282 0f88 5A60     		str	r2, [r3, #4]
+ 439:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 						is_climbing = 0;
+ 8283              		.loc 1 439 0
+ 8284 0f8a 0023     		movs	r3, #0
+ 8285 0f8c 664A     		ldr	r2, .L67+16
+ 8286 0f8e BA18     		adds	r2, r7, r2
+ 8287 0f90 1360     		str	r3, [r2]
+ 440:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 						has_climbed = 1;
+ 8288              		.loc 1 440 0
+ 8289 0f92 0123     		movs	r3, #1
+ 8290 0f94 8D22     		movs	r2, #141
+ 8291 0f96 D200     		lsls	r2, r2, #3
+ 8292 0f98 BA18     		adds	r2, r7, r2
+ 8293 0f9a 1360     		str	r3, [r2]
+ 8294 0f9c 0BE0     		b	.L44
+ 8295              	.L41:
+ 441:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					}
+ 442:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				} else {
+ 443:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					player.update(&player);
+ 8296              		.loc 1 443 0
+ 8297 0f9e 614B     		ldr	r3, .L67+12
+ 8298 0fa0 8E22     		movs	r2, #142
+ 8299 0fa2 D200     		lsls	r2, r2, #3
+ 8300 0fa4 9446     		mov	ip, r2
+ 8301 0fa6 BC44     		add	ip, ip, r7
+ 8302 0fa8 6344     		add	r3, r3, ip
+ 8303 0faa DB68     		ldr	r3, [r3, #12]
+ 8304 0fac 9C22     		movs	r2, #156
+ 8305 0fae 9200     		lsls	r2, r2, #2
+ 8306 0fb0 BA18     		adds	r2, r7, r2
+ 8307 0fb2 1000     		movs	r0, r2
+ 8308 0fb4 9847     		blx	r3
+ 8309              	.LVL19:
+ 8310              	.L44:
+ 444:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				}
+ 445:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
+ 446:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				if (read_DIL_single(EXPLOSION_TRIGGER)){
+ 8311              		.loc 1 446 0
+ 8312 0fb6 0320     		movs	r0, #3
+ 8313 0fb8 FFF7FEFF 		bl	read_DIL_single
+ 8314 0fbc 031E     		subs	r3, r0, #0
+ 8315 0fbe 04D0     		beq	.L45
+ 447:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					game_over_adder = 1;
+ 8316              		.loc 1 447 0
+ 8317 0fc0 0123     		movs	r3, #1
+ 8318 0fc2 8C22     		movs	r2, #140
+ 8319 0fc4 D200     		lsls	r2, r2, #3
+ 8320 0fc6 BA18     		adds	r2, r7, r2
+ 8321 0fc8 1360     		str	r3, [r2]
+ 8322              	.L45:
+ 448:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				}
+ 449:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
+ 450:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				//fire1_indoors.update(&fire1_indoors);
+ 451:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				//fire updates done above
+ 452:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				if(!no_DIP) {
+ 8323              		.loc 1 452 0
+ 8324 0fca 584B     		ldr	r3, .L67+20
+ 8325 0fcc FB18     		adds	r3, r7, r3
+ 8326 0fce 1B68     		ldr	r3, [r3]
+ 8327 0fd0 002B     		cmp	r3, #0
+ 8328 0fd2 1DD1     		bne	.L46
+ 453:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					setPlayerPosition(player.xPos, player.yPos);
+ 8329              		.loc 1 453 0
+ 8330 0fd4 534B     		ldr	r3, .L67+12
+ 8331 0fd6 8E22     		movs	r2, #142
+ 8332 0fd8 D200     		lsls	r2, r2, #3
+ 8333 0fda 9446     		mov	ip, r2
+ 8334 0fdc BC44     		add	ip, ip, r7
+ 8335 0fde 6344     		add	r3, r3, ip
+ 8336 0fe0 5A68     		ldr	r2, [r3, #4]
+ 8337 0fe2 504B     		ldr	r3, .L67+12
+ 8338 0fe4 8E21     		movs	r1, #142
+ 8339 0fe6 C900     		lsls	r1, r1, #3
+ 8340 0fe8 8C46     		mov	ip, r1
+ 8341 0fea BC44     		add	ip, ip, r7
+ 8342 0fec 6344     		add	r3, r3, ip
+ 8343 0fee 9B68     		ldr	r3, [r3, #8]
+ 8344 0ff0 1900     		movs	r1, r3
+ 8345 0ff2 1000     		movs	r0, r2
+ 8346 0ff4 FFF7FEFF 		bl	setPlayerPosition
+ 454:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					DIP.update(&DIP);					
+ 8347              		.loc 1 454 0
+ 8348 0ff8 4D4B     		ldr	r3, .L67+24
+ 8349 0ffa 8E22     		movs	r2, #142
+ 8350 0ffc D200     		lsls	r2, r2, #3
+ 8351 0ffe 9446     		mov	ip, r2
+ 8352 1000 BC44     		add	ip, ip, r7
+ 8353 1002 6344     		add	r3, r3, ip
+ 8354 1004 DB68     		ldr	r3, [r3, #12]
+ 8355 1006 A522     		movs	r2, #165
+ 8356 1008 9200     		lsls	r2, r2, #2
+ 8357 100a BA18     		adds	r2, r7, r2
+ 8358 100c 1000     		movs	r0, r2
+ 8359 100e 9847     		blx	r3
+ 8360              	.LVL20:
+ 8361              	.L46:
+ 455:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				}
+ 456:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				hair.update(&hair);
+ 8362              		.loc 1 456 0
+ 8363 1010 484B     		ldr	r3, .L67+28
+ 8364 1012 8E22     		movs	r2, #142
+ 8365 1014 D200     		lsls	r2, r2, #3
+ 8366 1016 9446     		mov	ip, r2
+ 8367 1018 BC44     		add	ip, ip, r7
+ 8368 101a 6344     		add	r3, r3, ip
+ 8369 101c DB68     		ldr	r3, [r3, #12]
+ 8370 101e B722     		movs	r2, #183
+ 8371 1020 9200     		lsls	r2, r2, #2
+ 8372 1022 BA18     		adds	r2, r7, r2
+ 8373 1024 1000     		movs	r0, r2
+ 8374 1026 9847     		blx	r3
+ 8375              	.LVL21:
+ 457:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				if(read_DIL_single(HAIR_TRIGGER)) {
+ 8376              		.loc 1 457 0
+ 8377 1028 0120     		movs	r0, #1
+ 8378 102a FFF7FEFF 		bl	read_DIL_single
+ 8379 102e 031E     		subs	r3, r0, #0
+ 8380 1030 1ED0     		beq	.L47
+ 458:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					hair.xPos = player.xPos;
+ 8381              		.loc 1 458 0
+ 8382 1032 3C4B     		ldr	r3, .L67+12
+ 8383 1034 8E22     		movs	r2, #142
+ 8384 1036 D200     		lsls	r2, r2, #3
+ 8385 1038 9446     		mov	ip, r2
+ 8386 103a BC44     		add	ip, ip, r7
+ 8387 103c 6344     		add	r3, r3, ip
+ 8388 103e 5A68     		ldr	r2, [r3, #4]
+ 8389 1040 3C4B     		ldr	r3, .L67+28
+ 8390 1042 8E21     		movs	r1, #142
+ 8391 1044 C900     		lsls	r1, r1, #3
+ 8392 1046 8C46     		mov	ip, r1
+ 8393 1048 BC44     		add	ip, ip, r7
+ 8394 104a 6344     		add	r3, r3, ip
+ 8395 104c 5A60     		str	r2, [r3, #4]
+ 459:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					hair.yPos = player.yPos - 28;
+ 8396              		.loc 1 459 0
+ 8397 104e 354B     		ldr	r3, .L67+12
+ 8398 1050 8E22     		movs	r2, #142
+ 8399 1052 D200     		lsls	r2, r2, #3
+ 8400 1054 9446     		mov	ip, r2
+ 8401 1056 BC44     		add	ip, ip, r7
+ 8402 1058 6344     		add	r3, r3, ip
+ 8403 105a 9B68     		ldr	r3, [r3, #8]
+ 8404 105c 1C3B     		subs	r3, r3, #28
+ 8405 105e 1A00     		movs	r2, r3
+ 8406 1060 344B     		ldr	r3, .L67+28
+ 8407 1062 8E21     		movs	r1, #142
+ 8408 1064 C900     		lsls	r1, r1, #3
+ 8409 1066 8C46     		mov	ip, r1
+ 8410 1068 BC44     		add	ip, ip, r7
+ 8411 106a 6344     		add	r3, r3, ip
+ 8412 106c 9A60     		str	r2, [r3, #8]
+ 8413 106e 11E0     		b	.L48
+ 8414              	.L47:
+ 460:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				} else {
+ 461:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					hair.xPos = -100;
+ 8415              		.loc 1 461 0
+ 8416 1070 304B     		ldr	r3, .L67+28
+ 8417 1072 8E22     		movs	r2, #142
+ 8418 1074 D200     		lsls	r2, r2, #3
+ 8419 1076 9446     		mov	ip, r2
+ 8420 1078 BC44     		add	ip, ip, r7
+ 8421 107a 6344     		add	r3, r3, ip
+ 8422 107c 6422     		movs	r2, #100
+ 8423 107e 5242     		rsbs	r2, r2, #0
+ 8424 1080 5A60     		str	r2, [r3, #4]
+ 462:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					hair.yPos = -100;
+ 8425              		.loc 1 462 0
+ 8426 1082 2C4B     		ldr	r3, .L67+28
+ 8427 1084 8E22     		movs	r2, #142
+ 8428 1086 D200     		lsls	r2, r2, #3
+ 8429 1088 9446     		mov	ip, r2
+ 8430 108a BC44     		add	ip, ip, r7
+ 8431 108c 6344     		add	r3, r3, ip
+ 8432 108e 6422     		movs	r2, #100
+ 8433 1090 5242     		rsbs	r2, r2, #0
+ 8434 1092 9A60     		str	r2, [r3, #8]
+ 8435              	.L48:
+ 463:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				}
+ 464:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
+ 465:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
+ 466:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
+ 467:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				if (!no_DIP && DIP.yPos >= player.yPos && (player.xPos + DIP_WIDTH/2 >= DIP.xPos && player.xPos
+ 8436              		.loc 1 467 0
+ 8437 1094 254B     		ldr	r3, .L67+20
+ 8438 1096 FB18     		adds	r3, r7, r3
+ 8439 1098 1B68     		ldr	r3, [r3]
+ 8440 109a 002B     		cmp	r3, #0
+ 8441 109c 37D1     		bne	.L49
+ 8442              		.loc 1 467 0 is_stmt 0 discriminator 1
+ 8443 109e 244B     		ldr	r3, .L67+24
+ 8444 10a0 8E22     		movs	r2, #142
+ 8445 10a2 D200     		lsls	r2, r2, #3
+ 8446 10a4 9446     		mov	ip, r2
+ 8447 10a6 BC44     		add	ip, ip, r7
+ 8448 10a8 6344     		add	r3, r3, ip
+ 8449 10aa 9A68     		ldr	r2, [r3, #8]
+ 8450 10ac 1D4B     		ldr	r3, .L67+12
+ 8451 10ae 8E21     		movs	r1, #142
+ 8452 10b0 C900     		lsls	r1, r1, #3
+ 8453 10b2 8C46     		mov	ip, r1
+ 8454 10b4 BC44     		add	ip, ip, r7
+ 8455 10b6 6344     		add	r3, r3, ip
+ 8456 10b8 9B68     		ldr	r3, [r3, #8]
+ 8457 10ba 9A42     		cmp	r2, r3
+ 8458 10bc 27DB     		blt	.L49
+ 8459              		.loc 1 467 0 discriminator 2
+ 8460 10be 194B     		ldr	r3, .L67+12
+ 8461 10c0 8E22     		movs	r2, #142
+ 8462 10c2 D200     		lsls	r2, r2, #3
+ 8463 10c4 9446     		mov	ip, r2
+ 8464 10c6 BC44     		add	ip, ip, r7
+ 8465 10c8 6344     		add	r3, r3, ip
+ 8466 10ca 5B68     		ldr	r3, [r3, #4]
+ 8467 10cc 0933     		adds	r3, r3, #9
+ 8468 10ce 1A00     		movs	r2, r3
+ 8469 10d0 174B     		ldr	r3, .L67+24
+ 8470 10d2 8E21     		movs	r1, #142
+ 8471 10d4 C900     		lsls	r1, r1, #3
+ 8472 10d6 8C46     		mov	ip, r1
+ 8473 10d8 BC44     		add	ip, ip, r7
+ 8474 10da 6344     		add	r3, r3, ip
+ 8475 10dc 5B68     		ldr	r3, [r3, #4]
+ 8476 10de 9A42     		cmp	r2, r3
+ 8477 10e0 15DB     		blt	.L49
+ 8478              		.loc 1 467 0 discriminator 3
+ 8479 10e2 104B     		ldr	r3, .L67+12
+ 8480 10e4 8E22     		movs	r2, #142
+ 8481 10e6 D200     		lsls	r2, r2, #3
+ 8482 10e8 9446     		mov	ip, r2
+ 8483 10ea BC44     		add	ip, ip, r7
+ 8484 10ec 6344     		add	r3, r3, ip
+ 8485 10ee 5A68     		ldr	r2, [r3, #4]
+ 8486 10f0 0F4B     		ldr	r3, .L67+24
+ 8487 10f2 8E21     		movs	r1, #142
+ 8488 10f4 C900     		lsls	r1, r1, #3
+ 8489 10f6 8C46     		mov	ip, r1
+ 8490 10f8 BC44     		add	ip, ip, r7
+ 8491 10fa 6344     		add	r3, r3, ip
+ 8492 10fc 5B68     		ldr	r3, [r3, #4]
+ 8493 10fe 0933     		adds	r3, r3, #9
+ 8494 1100 9A42     		cmp	r2, r3
+ 8495 1102 04DC     		bgt	.L49
+ 468:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					game_over_adder = 100;
+ 8496              		.loc 1 468 0 is_stmt 1
+ 8497 1104 6423     		movs	r3, #100
+ 8498 1106 8C22     		movs	r2, #140
+ 8499 1108 D200     		lsls	r2, r2, #3
+ 8500 110a BA18     		adds	r2, r7, r2
+ 8501 110c 1360     		str	r3, [r2]
+ 8502              	.L49:
+ 469:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				}
+ 470:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
+ 471:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				static int distance_player_fire;	//fire_collision
+ 472:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				static int j;
+ 473:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				for(j = 0; j < 3; j++) {
+ 8503              		.loc 1 473 0
+ 8504 110e 0A4B     		ldr	r3, .L67+32
+ 8505 1110 0022     		movs	r2, #0
+ 8506 1112 1A60     		str	r2, [r3]
+ 8507 1114 6EE0     		b	.L50
+ 8508              	.L68:
+ 8509 1116 C046     		.align	2
+ 8510              	.L67:
+ 8511 1118 04000000 		.word	i.4305
+ 8512 111c 98FCFFFF 		.word	-872
+ 8513 1120 3C170000 		.word	last_climb_value.4309
+ 8514 1124 00FEFFFF 		.word	-512
+ 8515 1128 6C040000 		.word	1132
+ 8516 112c 5C040000 		.word	1116
+ 8517 1130 24FEFFFF 		.word	-476
+ 8518 1134 6CFEFFFF 		.word	-404
+ 8519 1138 08000000 		.word	j.4311
+ 8520              	.L52:
+ 474:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					distance_player_fire = (player.xPos + 9) - (fires[j].xPos + 5);
+ 8521              		.loc 1 474 0
+ 8522 113c DD4B     		ldr	r3, .L69
+ 8523 113e 8E22     		movs	r2, #142
+ 8524 1140 D200     		lsls	r2, r2, #3
+ 8525 1142 9446     		mov	ip, r2
+ 8526 1144 BC44     		add	ip, ip, r7
+ 8527 1146 6344     		add	r3, r3, ip
+ 8528 1148 5B68     		ldr	r3, [r3, #4]
+ 8529 114a 0933     		adds	r3, r3, #9
+ 8530 114c 1900     		movs	r1, r3
+ 8531 114e DA4B     		ldr	r3, .L69+4
+ 8532 1150 1A68     		ldr	r2, [r3]
+ 8533 1152 DA4B     		ldr	r3, .L69+8
+ 8534 1154 8E20     		movs	r0, #142
+ 8535 1156 C000     		lsls	r0, r0, #3
+ 8536 1158 3818     		adds	r0, r7, r0
+ 8537 115a C018     		adds	r0, r0, r3
+ 8538 115c 1300     		movs	r3, r2
+ 8539 115e DB00     		lsls	r3, r3, #3
+ 8540 1160 9B18     		adds	r3, r3, r2
+ 8541 1162 9B00     		lsls	r3, r3, #2
+ 8542 1164 C318     		adds	r3, r0, r3
+ 8543 1166 0433     		adds	r3, r3, #4
+ 8544 1168 1B68     		ldr	r3, [r3]
+ 8545 116a 0533     		adds	r3, r3, #5
+ 8546 116c CA1A     		subs	r2, r1, r3
+ 8547 116e D44B     		ldr	r3, .L69+12
+ 8548 1170 1A60     		str	r2, [r3]
+ 475:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					if(player.yPos > (fires[j].yPos - 18 + 7) && 
+ 8549              		.loc 1 475 0
+ 8550 1172 D04B     		ldr	r3, .L69
+ 8551 1174 8E22     		movs	r2, #142
+ 8552 1176 D200     		lsls	r2, r2, #3
+ 8553 1178 9446     		mov	ip, r2
+ 8554 117a BC44     		add	ip, ip, r7
+ 8555 117c 6344     		add	r3, r3, ip
+ 8556 117e 9968     		ldr	r1, [r3, #8]
+ 8557 1180 CD4B     		ldr	r3, .L69+4
+ 8558 1182 1A68     		ldr	r2, [r3]
+ 8559 1184 CD4B     		ldr	r3, .L69+8
+ 8560 1186 8E20     		movs	r0, #142
+ 8561 1188 C000     		lsls	r0, r0, #3
+ 8562 118a 3818     		adds	r0, r7, r0
+ 8563 118c C018     		adds	r0, r0, r3
+ 8564 118e 1300     		movs	r3, r2
+ 8565 1190 DB00     		lsls	r3, r3, #3
+ 8566 1192 9B18     		adds	r3, r3, r2
+ 8567 1194 9B00     		lsls	r3, r3, #2
+ 8568 1196 C318     		adds	r3, r0, r3
+ 8569 1198 0833     		adds	r3, r3, #8
+ 8570 119a 1B68     		ldr	r3, [r3]
+ 8571 119c 0B3B     		subs	r3, r3, #11
+ 8572 119e 9942     		cmp	r1, r3
+ 8573 11a0 23DD     		ble	.L51
+ 476:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 							player.yPos < fires[j].yPos && distance_player_fire < 8 && distance_player_fire > -8) {
+ 8574              		.loc 1 476 0 discriminator 1
+ 8575 11a2 C44B     		ldr	r3, .L69
+ 8576 11a4 8E22     		movs	r2, #142
+ 8577 11a6 D200     		lsls	r2, r2, #3
+ 8578 11a8 9446     		mov	ip, r2
+ 8579 11aa BC44     		add	ip, ip, r7
+ 8580 11ac 6344     		add	r3, r3, ip
+ 8581 11ae 9968     		ldr	r1, [r3, #8]
+ 8582 11b0 C14B     		ldr	r3, .L69+4
+ 8583 11b2 1A68     		ldr	r2, [r3]
+ 8584 11b4 C14B     		ldr	r3, .L69+8
+ 8585 11b6 8E20     		movs	r0, #142
+ 8586 11b8 C000     		lsls	r0, r0, #3
+ 8587 11ba 3818     		adds	r0, r7, r0
+ 8588 11bc C018     		adds	r0, r0, r3
+ 8589 11be 1300     		movs	r3, r2
+ 8590 11c0 DB00     		lsls	r3, r3, #3
+ 8591 11c2 9B18     		adds	r3, r3, r2
+ 8592 11c4 9B00     		lsls	r3, r3, #2
+ 8593 11c6 C318     		adds	r3, r0, r3
+ 8594 11c8 0833     		adds	r3, r3, #8
+ 8595 11ca 1B68     		ldr	r3, [r3]
+ 475:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					if(player.yPos > (fires[j].yPos - 18 + 7) && 
+ 8596              		.loc 1 475 0 discriminator 1
+ 8597 11cc 9942     		cmp	r1, r3
+ 8598 11ce 0CDA     		bge	.L51
+ 8599              		.loc 1 476 0
+ 8600 11d0 BB4B     		ldr	r3, .L69+12
+ 8601 11d2 1B68     		ldr	r3, [r3]
+ 8602 11d4 072B     		cmp	r3, #7
+ 8603 11d6 08DC     		bgt	.L51
+ 8604              		.loc 1 476 0 is_stmt 0 discriminator 1
+ 8605 11d8 B94B     		ldr	r3, .L69+12
+ 8606 11da 1B68     		ldr	r3, [r3]
+ 8607 11dc 0733     		adds	r3, r3, #7
+ 8608 11de 04DB     		blt	.L51
+ 477:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 						game_over_adder = 100;
+ 8609              		.loc 1 477 0 is_stmt 1
+ 8610 11e0 6423     		movs	r3, #100
+ 8611 11e2 8C22     		movs	r2, #140
+ 8612 11e4 D200     		lsls	r2, r2, #3
+ 8613 11e6 BA18     		adds	r2, r7, r2
+ 8614 11e8 1360     		str	r3, [r2]
+ 8615              	.L51:
+ 473:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					distance_player_fire = (player.xPos + 9) - (fires[j].xPos + 5);
+ 8616              		.loc 1 473 0 discriminator 2
+ 8617 11ea B34B     		ldr	r3, .L69+4
+ 8618 11ec 1B68     		ldr	r3, [r3]
+ 8619 11ee 5A1C     		adds	r2, r3, #1
+ 8620 11f0 B14B     		ldr	r3, .L69+4
+ 8621 11f2 1A60     		str	r2, [r3]
+ 8622              	.L50:
+ 473:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					distance_player_fire = (player.xPos + 9) - (fires[j].xPos + 5);
+ 8623              		.loc 1 473 0 is_stmt 0 discriminator 1
+ 8624 11f4 B04B     		ldr	r3, .L69+4
+ 8625 11f6 1B68     		ldr	r3, [r3]
+ 8626 11f8 022B     		cmp	r3, #2
+ 8627 11fa 9FDD     		ble	.L52
+ 478:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					}					
+ 479:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				}
+ 480:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
+ 481:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				static int trophy_burned = 0;	//trophy burning
+ 482:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				static int distance_hair_trophy;
+ 483:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				distance_hair_trophy = (hair.xPos + 9) - (trophy.xPos + 5);
+ 8628              		.loc 1 483 0 is_stmt 1
+ 8629 11fc B14B     		ldr	r3, .L69+16
+ 8630 11fe 8E22     		movs	r2, #142
+ 8631 1200 D200     		lsls	r2, r2, #3
+ 8632 1202 9446     		mov	ip, r2
+ 8633 1204 BC44     		add	ip, ip, r7
+ 8634 1206 6344     		add	r3, r3, ip
+ 8635 1208 5B68     		ldr	r3, [r3, #4]
+ 8636 120a 0933     		adds	r3, r3, #9
+ 8637 120c 1A00     		movs	r2, r3
+ 8638 120e AE4B     		ldr	r3, .L69+20
+ 8639 1210 8E21     		movs	r1, #142
+ 8640 1212 C900     		lsls	r1, r1, #3
+ 8641 1214 8C46     		mov	ip, r1
+ 8642 1216 BC44     		add	ip, ip, r7
+ 8643 1218 6344     		add	r3, r3, ip
+ 8644 121a 5B68     		ldr	r3, [r3, #4]
+ 8645 121c 0533     		adds	r3, r3, #5
+ 8646 121e D21A     		subs	r2, r2, r3
+ 8647 1220 AA4B     		ldr	r3, .L69+24
+ 8648 1222 1A60     		str	r2, [r3]
+ 484:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				if(!trophy_burned && abs(distance_hair_trophy) < 5) {
+ 8649              		.loc 1 484 0
+ 8650 1224 AA4B     		ldr	r3, .L69+28
+ 8651 1226 1B68     		ldr	r3, [r3]
+ 8652 1228 002B     		cmp	r3, #0
+ 8653 122a 30D1     		bne	.L53
+ 8654              		.loc 1 484 0 is_stmt 0 discriminator 1
+ 8655 122c A74B     		ldr	r3, .L69+24
+ 8656 122e 1B68     		ldr	r3, [r3]
+ 8657 1230 0433     		adds	r3, r3, #4
+ 8658 1232 2CDB     		blt	.L53
+ 8659              		.loc 1 484 0 discriminator 2
+ 8660 1234 A54B     		ldr	r3, .L69+24
+ 8661 1236 1B68     		ldr	r3, [r3]
+ 8662 1238 042B     		cmp	r3, #4
+ 8663 123a 28DC     		bgt	.L53
+ 485:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					trophy_burned = 1;
+ 8664              		.loc 1 485 0 is_stmt 1
+ 8665 123c A44B     		ldr	r3, .L69+28
+ 8666 123e 0122     		movs	r2, #1
+ 8667 1240 1A60     		str	r2, [r3]
+ 486:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					fires[1].xPos = trophy.xPos;
+ 8668              		.loc 1 486 0
+ 8669 1242 A14B     		ldr	r3, .L69+20
+ 8670 1244 8E22     		movs	r2, #142
+ 8671 1246 D200     		lsls	r2, r2, #3
+ 8672 1248 9446     		mov	ip, r2
+ 8673 124a BC44     		add	ip, ip, r7
+ 8674 124c 6344     		add	r3, r3, ip
+ 8675 124e 5A68     		ldr	r2, [r3, #4]
+ 8676 1250 9A4B     		ldr	r3, .L69+8
+ 8677 1252 8E21     		movs	r1, #142
+ 8678 1254 C900     		lsls	r1, r1, #3
+ 8679 1256 8C46     		mov	ip, r1
+ 8680 1258 BC44     		add	ip, ip, r7
+ 8681 125a 6344     		add	r3, r3, ip
+ 8682 125c 9A62     		str	r2, [r3, #40]
+ 487:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					fires[1].yPos = trophy.yPos + 5;
+ 8683              		.loc 1 487 0
+ 8684 125e 9A4B     		ldr	r3, .L69+20
+ 8685 1260 8E22     		movs	r2, #142
+ 8686 1262 D200     		lsls	r2, r2, #3
+ 8687 1264 9446     		mov	ip, r2
+ 8688 1266 BC44     		add	ip, ip, r7
+ 8689 1268 6344     		add	r3, r3, ip
+ 8690 126a 9B68     		ldr	r3, [r3, #8]
+ 8691 126c 5A1D     		adds	r2, r3, #5
+ 8692 126e 934B     		ldr	r3, .L69+8
+ 8693 1270 8E21     		movs	r1, #142
+ 8694 1272 C900     		lsls	r1, r1, #3
+ 8695 1274 8C46     		mov	ip, r1
+ 8696 1276 BC44     		add	ip, ip, r7
+ 8697 1278 6344     		add	r3, r3, ip
+ 8698 127a DA62     		str	r2, [r3, #44]
+ 488:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					trophy.xPos = 500;
+ 8699              		.loc 1 488 0
+ 8700 127c 924B     		ldr	r3, .L69+20
+ 8701 127e 8E22     		movs	r2, #142
+ 8702 1280 D200     		lsls	r2, r2, #3
+ 8703 1282 9446     		mov	ip, r2
+ 8704 1284 BC44     		add	ip, ip, r7
+ 8705 1286 6344     		add	r3, r3, ip
+ 8706 1288 FA22     		movs	r2, #250
+ 8707 128a 5200     		lsls	r2, r2, #1
+ 8708 128c 5A60     		str	r2, [r3, #4]
+ 8709              	.L53:
+ 489:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				}
+ 490:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
+ 491:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				static int DIP_burned = 0;
+ 492:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				static int distance_hair_DIP;
+ 493:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				distance_hair_DIP = (hair.xPos + 9) - (DIP.xPos + 9);
+ 8710              		.loc 1 493 0
+ 8711 128e 8D4B     		ldr	r3, .L69+16
+ 8712 1290 8E22     		movs	r2, #142
+ 8713 1292 D200     		lsls	r2, r2, #3
+ 8714 1294 9446     		mov	ip, r2
+ 8715 1296 BC44     		add	ip, ip, r7
+ 8716 1298 6344     		add	r3, r3, ip
+ 8717 129a 5B68     		ldr	r3, [r3, #4]
+ 8718 129c 0933     		adds	r3, r3, #9
+ 8719 129e 1A00     		movs	r2, r3
+ 8720 12a0 8C4B     		ldr	r3, .L69+32
+ 8721 12a2 8E21     		movs	r1, #142
+ 8722 12a4 C900     		lsls	r1, r1, #3
+ 8723 12a6 8C46     		mov	ip, r1
+ 8724 12a8 BC44     		add	ip, ip, r7
+ 8725 12aa 6344     		add	r3, r3, ip
+ 8726 12ac 5B68     		ldr	r3, [r3, #4]
+ 8727 12ae 0933     		adds	r3, r3, #9
+ 8728 12b0 D21A     		subs	r2, r2, r3
+ 8729 12b2 894B     		ldr	r3, .L69+36
+ 8730 12b4 1A60     		str	r2, [r3]
+ 494:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				if(!DIP_burned && read_DIL_single(LIGHT_TRIGGER) && player.yPos > 10 && abs(distance_hair_DIP) 
+ 8731              		.loc 1 494 0
+ 8732 12b6 894B     		ldr	r3, .L69+40
+ 8733 12b8 1B68     		ldr	r3, [r3]
+ 8734 12ba 002B     		cmp	r3, #0
+ 8735 12bc 39D1     		bne	.L54
+ 8736              		.loc 1 494 0 is_stmt 0 discriminator 1
+ 8737 12be 0620     		movs	r0, #6
+ 8738 12c0 FFF7FEFF 		bl	read_DIL_single
+ 8739 12c4 031E     		subs	r3, r0, #0
+ 8740 12c6 34D0     		beq	.L54
+ 8741              		.loc 1 494 0 discriminator 2
+ 8742 12c8 7A4B     		ldr	r3, .L69
+ 8743 12ca 8E22     		movs	r2, #142
+ 8744 12cc D200     		lsls	r2, r2, #3
+ 8745 12ce 9446     		mov	ip, r2
+ 8746 12d0 BC44     		add	ip, ip, r7
+ 8747 12d2 6344     		add	r3, r3, ip
+ 8748 12d4 9B68     		ldr	r3, [r3, #8]
+ 8749 12d6 0A2B     		cmp	r3, #10
+ 8750 12d8 2BDD     		ble	.L54
+ 8751              		.loc 1 494 0 discriminator 3
+ 8752 12da 7F4B     		ldr	r3, .L69+36
+ 8753 12dc 1B68     		ldr	r3, [r3]
+ 8754 12de 0433     		adds	r3, r3, #4
+ 8755 12e0 27DB     		blt	.L54
+ 8756              		.loc 1 494 0 discriminator 4
+ 8757 12e2 7D4B     		ldr	r3, .L69+36
+ 8758 12e4 1B68     		ldr	r3, [r3]
+ 8759 12e6 042B     		cmp	r3, #4
+ 8760 12e8 23DC     		bgt	.L54
+ 495:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					DIP_burned = 1;
+ 8761              		.loc 1 495 0 is_stmt 1
+ 8762 12ea 7C4B     		ldr	r3, .L69+40
+ 8763 12ec 0122     		movs	r2, #1
+ 8764 12ee 1A60     		str	r2, [r3]
+ 496:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					fires[2].xPos = DIP.xPos;
+ 8765              		.loc 1 496 0
+ 8766 12f0 784B     		ldr	r3, .L69+32
+ 8767 12f2 8E22     		movs	r2, #142
+ 8768 12f4 D200     		lsls	r2, r2, #3
+ 8769 12f6 9446     		mov	ip, r2
+ 8770 12f8 BC44     		add	ip, ip, r7
+ 8771 12fa 6344     		add	r3, r3, ip
+ 8772 12fc 5A68     		ldr	r2, [r3, #4]
+ 8773 12fe 6F4B     		ldr	r3, .L69+8
+ 8774 1300 8E21     		movs	r1, #142
+ 8775 1302 C900     		lsls	r1, r1, #3
+ 8776 1304 8C46     		mov	ip, r1
+ 8777 1306 BC44     		add	ip, ip, r7
+ 8778 1308 6344     		add	r3, r3, ip
+ 8779 130a DA64     		str	r2, [r3, #76]
+ 497:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					fires[2].yPos = DIP.yPos + 6;
+ 8780              		.loc 1 497 0
+ 8781 130c 714B     		ldr	r3, .L69+32
+ 8782 130e 8E22     		movs	r2, #142
+ 8783 1310 D200     		lsls	r2, r2, #3
+ 8784 1312 9446     		mov	ip, r2
+ 8785 1314 BC44     		add	ip, ip, r7
+ 8786 1316 6344     		add	r3, r3, ip
+ 8787 1318 9B68     		ldr	r3, [r3, #8]
+ 8788 131a 9A1D     		adds	r2, r3, #6
+ 8789 131c 674B     		ldr	r3, .L69+8
+ 8790 131e 8E21     		movs	r1, #142
+ 8791 1320 C900     		lsls	r1, r1, #3
+ 8792 1322 8C46     		mov	ip, r1
+ 8793 1324 BC44     		add	ip, ip, r7
+ 8794 1326 6344     		add	r3, r3, ip
+ 8795 1328 1A65     		str	r2, [r3, #80]
+ 498:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					no_DIP = 1;
+ 8796              		.loc 1 498 0
+ 8797 132a 0123     		movs	r3, #1
+ 8798 132c 6C4A     		ldr	r2, .L69+44
+ 8799 132e BA18     		adds	r2, r7, r2
+ 8800 1330 1360     		str	r3, [r2]
+ 8801              	.L54:
+ 499:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				}
+ 500:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
+ 501:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				game_over += game_over_adder;
+ 8802              		.loc 1 501 0
+ 8803 1332 6C4B     		ldr	r3, .L69+48
+ 8804 1334 FB18     		adds	r3, r7, r3
+ 8805 1336 1A68     		ldr	r2, [r3]
+ 8806 1338 8C23     		movs	r3, #140
+ 8807 133a DB00     		lsls	r3, r3, #3
+ 8808 133c FB18     		adds	r3, r7, r3
+ 8809 133e 1B68     		ldr	r3, [r3]
+ 8810 1340 D318     		adds	r3, r2, r3
+ 8811 1342 684A     		ldr	r2, .L69+48
+ 8812 1344 BA18     		adds	r2, r7, r2
+ 8813 1346 1360     		str	r3, [r2]
+ 502:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
+ 503:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				if(game_over >= 100) {
+ 8814              		.loc 1 503 0
+ 8815 1348 664B     		ldr	r3, .L69+48
+ 8816 134a FB18     		adds	r3, r7, r3
+ 8817 134c 1B68     		ldr	r3, [r3]
+ 8818 134e 632B     		cmp	r3, #99
+ 8819 1350 00DC     		bgt	.LCB2422
+ 8820 1352 ABE0     		b	.L59	@long jump
+ 8821              	.LCB2422:
+ 504:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					current_screen = RESET_GAME;
+ 8822              		.loc 1 504 0
+ 8823 1354 644B     		ldr	r3, .L69+52
+ 8824 1356 0A22     		movs	r2, #10
+ 8825 1358 1A60     		str	r2, [r3]
+ 505:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				}
+ 506:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
+ 507:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				break;
+ 8826              		.loc 1 507 0
+ 8827 135a A7E0     		b	.L59
+ 8828              	.L14:
+ 508:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
+ 509:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 			
+ 510:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 			case RESET_GAME: //restart
+ 511:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				counter = 0;
+ 8829              		.loc 1 511 0
+ 8830 135c 634B     		ldr	r3, .L69+56
+ 8831 135e 0022     		movs	r2, #0
+ 8832 1360 1A60     		str	r2, [r3]
+ 512:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				current_screen = START_SCREEN;
+ 8833              		.loc 1 512 0
+ 8834 1362 614B     		ldr	r3, .L69+52
+ 8835 1364 0122     		movs	r2, #1
+ 8836 1366 1A60     		str	r2, [r3]
+ 513:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				if(read_DIL() == 0) {
+ 8837              		.loc 1 513 0
+ 8838 1368 FFF7FEFF 		bl	read_DIL
+ 8839 136c 031E     		subs	r3, r0, #0
+ 8840 136e 02D1     		bne	.L56
+ 514:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					current_screen = SWITCH_LOCK; 
+ 8841              		.loc 1 514 0
+ 8842 1370 5D4B     		ldr	r3, .L69+52
+ 8843 1372 0022     		movs	r2, #0
+ 8844 1374 1A60     		str	r2, [r3]
+ 8845              	.L56:
+ 515:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				}
+ 516:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	
+ 517:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				static int test = 0;
+ 518:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				test+=2;
+ 8846              		.loc 1 518 0
+ 8847 1376 5E4B     		ldr	r3, .L69+60
+ 8848 1378 1B68     		ldr	r3, [r3]
+ 8849 137a 9A1C     		adds	r2, r3, #2
+ 8850 137c 5C4B     		ldr	r3, .L69+60
+ 8851 137e 1A60     		str	r2, [r3]
+ 519:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	
+ 520:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				is_climbing = 0;
+ 8852              		.loc 1 520 0
+ 8853 1380 0023     		movs	r3, #0
+ 8854 1382 5C4A     		ldr	r2, .L69+64
+ 8855 1384 BA18     		adds	r2, r7, r2
+ 8856 1386 1360     		str	r3, [r2]
+ 521:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				has_climbed = 0;
+ 8857              		.loc 1 521 0
+ 8858 1388 0023     		movs	r3, #0
+ 8859 138a 8D22     		movs	r2, #141
+ 8860 138c D200     		lsls	r2, r2, #3
+ 8861 138e BA18     		adds	r2, r7, r2
+ 8862 1390 1360     		str	r3, [r2]
+ 522:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				game_over = 0;
+ 8863              		.loc 1 522 0
+ 8864 1392 0023     		movs	r3, #0
+ 8865 1394 534A     		ldr	r2, .L69+48
+ 8866 1396 BA18     		adds	r2, r7, r2
+ 8867 1398 1360     		str	r3, [r2]
+ 523:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				game_over_adder = 0;
+ 8868              		.loc 1 523 0
+ 8869 139a 0023     		movs	r3, #0
+ 8870 139c 8C22     		movs	r2, #140
+ 8871 139e D200     		lsls	r2, r2, #3
+ 8872 13a0 BA18     		adds	r2, r7, r2
+ 8873 13a2 1360     		str	r3, [r2]
+ 524:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				fires[0].xPos = 40;		//FIRE1_INDO
+ 8874              		.loc 1 524 0
+ 8875 13a4 454B     		ldr	r3, .L69+8
+ 8876 13a6 8E22     		movs	r2, #142
+ 8877 13a8 D200     		lsls	r2, r2, #3
+ 8878 13aa 9446     		mov	ip, r2
+ 8879 13ac BC44     		add	ip, ip, r7
+ 8880 13ae 6344     		add	r3, r3, ip
+ 8881 13b0 2822     		movs	r2, #40
+ 8882 13b2 5A60     		str	r2, [r3, #4]
+ 525:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				fires[0].yPos = 64-12-8;
+ 8883              		.loc 1 525 0
+ 8884 13b4 414B     		ldr	r3, .L69+8
+ 8885 13b6 8E22     		movs	r2, #142
+ 8886 13b8 D200     		lsls	r2, r2, #3
+ 8887 13ba 9446     		mov	ip, r2
+ 8888 13bc BC44     		add	ip, ip, r7
+ 8889 13be 6344     		add	r3, r3, ip
+ 8890 13c0 2C22     		movs	r2, #44
+ 8891 13c2 9A60     		str	r2, [r3, #8]
+ 526:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				fires[2].xPos = -50;		//FIRE1_INDO
+ 8892              		.loc 1 526 0
+ 8893 13c4 3D4B     		ldr	r3, .L69+8
+ 8894 13c6 8E22     		movs	r2, #142
+ 8895 13c8 D200     		lsls	r2, r2, #3
+ 8896 13ca 9446     		mov	ip, r2
+ 8897 13cc BC44     		add	ip, ip, r7
+ 8898 13ce 6344     		add	r3, r3, ip
+ 8899 13d0 3222     		movs	r2, #50
+ 8900 13d2 5242     		rsbs	r2, r2, #0
+ 8901 13d4 DA64     		str	r2, [r3, #76]
+ 527:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				fires[2].yPos = -50;
+ 8902              		.loc 1 527 0
+ 8903 13d6 394B     		ldr	r3, .L69+8
+ 8904 13d8 8E22     		movs	r2, #142
+ 8905 13da D200     		lsls	r2, r2, #3
+ 8906 13dc 9446     		mov	ip, r2
+ 8907 13de BC44     		add	ip, ip, r7
+ 8908 13e0 6344     		add	r3, r3, ip
+ 8909 13e2 3222     		movs	r2, #50
+ 8910 13e4 5242     		rsbs	r2, r2, #0
+ 8911 13e6 1A65     		str	r2, [r3, #80]
+ 528:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				fires[1].xPos = -50;		//FIRE1_INDO
+ 8912              		.loc 1 528 0
+ 8913 13e8 344B     		ldr	r3, .L69+8
+ 8914 13ea 8E22     		movs	r2, #142
+ 8915 13ec D200     		lsls	r2, r2, #3
+ 8916 13ee 9446     		mov	ip, r2
+ 8917 13f0 BC44     		add	ip, ip, r7
+ 8918 13f2 6344     		add	r3, r3, ip
+ 8919 13f4 3222     		movs	r2, #50
+ 8920 13f6 5242     		rsbs	r2, r2, #0
+ 8921 13f8 9A62     		str	r2, [r3, #40]
+ 529:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				fires[1].yPos = -50;
+ 8922              		.loc 1 529 0
+ 8923 13fa 304B     		ldr	r3, .L69+8
+ 8924 13fc 8E22     		movs	r2, #142
+ 8925 13fe D200     		lsls	r2, r2, #3
+ 8926 1400 9446     		mov	ip, r2
+ 8927 1402 BC44     		add	ip, ip, r7
+ 8928 1404 6344     		add	r3, r3, ip
+ 8929 1406 3222     		movs	r2, #50
+ 8930 1408 5242     		rsbs	r2, r2, #0
+ 8931 140a DA62     		str	r2, [r3, #44]
+ 530:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				bird.xPos = 180;
+ 8932              		.loc 1 530 0
+ 8933 140c 3A4B     		ldr	r3, .L69+68
+ 8934 140e 8E22     		movs	r2, #142
+ 8935 1410 D200     		lsls	r2, r2, #3
+ 8936 1412 9446     		mov	ip, r2
+ 8937 1414 BC44     		add	ip, ip, r7
+ 8938 1416 6344     		add	r3, r3, ip
+ 8939 1418 B422     		movs	r2, #180
+ 8940 141a 5A60     		str	r2, [r3, #4]
+ 531:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				bird.yPos = 40;
+ 8941              		.loc 1 531 0
+ 8942 141c 364B     		ldr	r3, .L69+68
+ 8943 141e 8E22     		movs	r2, #142
+ 8944 1420 D200     		lsls	r2, r2, #3
+ 8945 1422 9446     		mov	ip, r2
+ 8946 1424 BC44     		add	ip, ip, r7
+ 8947 1426 6344     		add	r3, r3, ip
+ 8948 1428 2822     		movs	r2, #40
+ 8949 142a 9A60     		str	r2, [r3, #8]
+ 532:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
+ 533:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				trophy.xPos = 19;
+ 8950              		.loc 1 533 0
+ 8951 142c 264B     		ldr	r3, .L69+20
+ 8952 142e 8E22     		movs	r2, #142
+ 8953 1430 D200     		lsls	r2, r2, #3
+ 8954 1432 9446     		mov	ip, r2
+ 8955 1434 BC44     		add	ip, ip, r7
+ 8956 1436 6344     		add	r3, r3, ip
+ 8957 1438 1322     		movs	r2, #19
+ 8958 143a 5A60     		str	r2, [r3, #4]
+ 534:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				trophy.yPos = 5;
+ 8959              		.loc 1 534 0
+ 8960 143c 224B     		ldr	r3, .L69+20
+ 8961 143e 8E22     		movs	r2, #142
+ 8962 1440 D200     		lsls	r2, r2, #3
+ 8963 1442 9446     		mov	ip, r2
+ 8964 1444 BC44     		add	ip, ip, r7
+ 8965 1446 6344     		add	r3, r3, ip
+ 8966 1448 0522     		movs	r2, #5
+ 8967 144a 9A60     		str	r2, [r3, #8]
+ 535:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				trophy_burned = 0;
+ 8968              		.loc 1 535 0
+ 8969 144c 204B     		ldr	r3, .L69+28
+ 8970 144e 0022     		movs	r2, #0
+ 8971 1450 1A60     		str	r2, [r3]
+ 536:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
+ 537:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				DIP.xPos = 100;
+ 8972              		.loc 1 537 0
+ 8973 1452 204B     		ldr	r3, .L69+32
+ 8974 1454 8E22     		movs	r2, #142
+ 8975 1456 D200     		lsls	r2, r2, #3
+ 8976 1458 9446     		mov	ip, r2
+ 8977 145a BC44     		add	ip, ip, r7
+ 8978 145c 6344     		add	r3, r3, ip
+ 8979 145e 6422     		movs	r2, #100
+ 8980 1460 5A60     		str	r2, [r3, #4]
+ 538:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				DIP.yPos = 5;
+ 8981              		.loc 1 538 0
+ 8982 1462 1C4B     		ldr	r3, .L69+32
+ 8983 1464 8E22     		movs	r2, #142
+ 8984 1466 D200     		lsls	r2, r2, #3
+ 8985 1468 9446     		mov	ip, r2
+ 8986 146a BC44     		add	ip, ip, r7
+ 8987 146c 6344     		add	r3, r3, ip
+ 8988 146e 0522     		movs	r2, #5
+ 8989 1470 9A60     		str	r2, [r3, #8]
+ 539:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				DIP_burned = 0;
+ 8990              		.loc 1 539 0
+ 8991 1472 1A4B     		ldr	r3, .L69+40
+ 8992 1474 0022     		movs	r2, #0
+ 8993 1476 1A60     		str	r2, [r3]
+ 540:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				no_DIP = 0;
+ 8994              		.loc 1 540 0
+ 8995 1478 0023     		movs	r3, #0
+ 8996 147a 194A     		ldr	r2, .L69+44
+ 8997 147c BA18     		adds	r2, r7, r2
+ 8998 147e 1360     		str	r3, [r2]
+ 541:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
+ 542:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				player.xPos = 3;
+ 8999              		.loc 1 542 0
+ 9000 1480 0C4B     		ldr	r3, .L69
+ 9001 1482 8E22     		movs	r2, #142
+ 9002 1484 D200     		lsls	r2, r2, #3
+ 9003 1486 9446     		mov	ip, r2
+ 9004 1488 BC44     		add	ip, ip, r7
+ 9005 148a 6344     		add	r3, r3, ip
+ 9006 148c 0322     		movs	r2, #3
+ 9007 148e 5A60     		str	r2, [r3, #4]
+ 543:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				player.yPos = 64-18-7; //player position
+ 9008              		.loc 1 543 0
+ 9009 1490 084B     		ldr	r3, .L69
+ 9010 1492 8E22     		movs	r2, #142
+ 9011 1494 D200     		lsls	r2, r2, #3
+ 9012 1496 9446     		mov	ip, r2
+ 9013 1498 BC44     		add	ip, ip, r7
+ 9014 149a 6344     		add	r3, r3, ip
+ 9015 149c 2722     		movs	r2, #39
+ 9016 149e 9A60     		str	r2, [r3, #8]
+ 544:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				clear_ascii();
+ 9017              		.loc 1 544 0
+ 9018 14a0 FFF7FEFF 		bl	clear_ascii
+ 545:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				break;
+ 9019              		.loc 1 545 0
+ 9020 14a4 03E0     		b	.L9
+ 9021              	.L58:
+ 402:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
+ 9022              		.loc 1 402 0
+ 9023 14a6 C046     		nop
+ 9024 14a8 FFF7B1F9 		bl	.L57	@ far jump
+ 9025              	.L59:
+ 507:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
+ 9026              		.loc 1 507 0
+ 9027 14ac C046     		nop
+ 9028              	.L9:
+ 9029              	.LBE2:
+ 310:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 			
+ 9030              		.loc 1 310 0 discriminator 1
+ 9031 14ae FFF7AEF9 		bl	.L57	@ far jump
+ 9032              	.L70:
+ 9033 14b2 C046     		.align	2
+ 9034              	.L69:
+ 9035 14b4 00FEFFFF 		.word	-512
+ 9036 14b8 08000000 		.word	j.4311
+ 9037 14bc 98FCFFFF 		.word	-872
+ 9038 14c0 0C000000 		.word	distance_player_fire.4310
+ 9039 14c4 6CFEFFFF 		.word	-404
+ 9040 14c8 90FEFFFF 		.word	-368
+ 9041 14cc 10000000 		.word	distance_hair_trophy.4316
+ 9042 14d0 14000000 		.word	trophy_burned.4315
+ 9043 14d4 24FEFFFF 		.word	-476
+ 9044 14d8 18000000 		.word	distance_hair_DIP.4318
+ 9045 14dc 1C000000 		.word	DIP_burned.4317
+ 9046 14e0 5C040000 		.word	1116
+ 9047 14e4 64040000 		.word	1124
+ 9048 14e8 00000000 		.word	current_screen
+ 9049 14ec 00000000 		.word	counter
+ 9050 14f0 20000000 		.word	test.4320
+ 9051 14f4 6C040000 		.word	1132
+ 9052 14f8 48FEFFFF 		.word	-440
+ 9053              		.cfi_endproc
+ 9054              	.LFE3:
+ 9056              		.align	1
+ 9057              		.global	abs
+ 9058              		.syntax unified
+ 9059              		.code	16
+ 9060              		.thumb_func
+ 9061              		.fpu softvfp
+ 9063              	abs:
+ 9064              	.LFB4:
+ 546:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 							
+ 547:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 		} //end of switch
+ 548:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 		
+ 549:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 		
+ 550:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 		
+ 551:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 		
+ 552:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 		
+ 553:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 		
+ 554:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	}
+ 555:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	
+ 556:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** }
+ 557:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 
+ 558:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** int abs(int value) {
+ 9065              		.loc 1 558 0
+ 9066              		.cfi_startproc
+ 9067              		@ args = 0, pretend = 0, frame = 8
+ 9068              		@ frame_needed = 1, uses_anonymous_args = 0
+ 9069 14fc 80B5     		push	{r7, lr}
+ 9070              		.cfi_def_cfa_offset 8
+ 9071              		.cfi_offset 7, -8
+ 9072              		.cfi_offset 14, -4
+ 9073 14fe 82B0     		sub	sp, sp, #8
+ 9074              		.cfi_def_cfa_offset 16
+ 9075 1500 00AF     		add	r7, sp, #0
+ 9076              		.cfi_def_cfa_register 7
+ 9077 1502 7860     		str	r0, [r7, #4]
+ 559:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	if(value < 0) {
+ 9078              		.loc 1 559 0
+ 9079 1504 7B68     		ldr	r3, [r7, #4]
+ 9080 1506 002B     		cmp	r3, #0
+ 9081 1508 02DA     		bge	.L72
+ 560:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 		return -value;
+ 9082              		.loc 1 560 0
+ 9083 150a 7B68     		ldr	r3, [r7, #4]
+ 9084 150c 5B42     		rsbs	r3, r3, #0
+ 9085 150e 00E0     		b	.L73
+ 9086              	.L72:
+ 561:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	}
+ 562:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	return value;
+ 9087              		.loc 1 562 0
+ 9088 1510 7B68     		ldr	r3, [r7, #4]
+ 9089              	.L73:
+ 563:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** }
+ 9090              		.loc 1 563 0
+ 9091 1512 1800     		movs	r0, r3
+ 9092 1514 BD46     		mov	sp, r7
+ 9093 1516 02B0     		add	sp, sp, #8
+ 9094              		@ sp needed
+ 9095 1518 80BD     		pop	{r7, pc}
+ 9096              		.cfi_endproc
+ 9097              	.LFE4:
+ 9099              		.data
+ 9100              		.align	2
+ 9103              	delay_until_text.4303:
+ 9104 1730 82000000 		.word	130
+ 9105              		.align	2
+ 9108              	long_text.4301:
+ 9109 1734 28000000 		.word	40
+ 9110              		.align	2
+ 9113              	short_text.4302:
+ 9114 1738 14000000 		.word	20
+ 9115              		.bss
+ 9116              		.align	2
+ 9117              	i.4305:
+ 9118 0004 00000000 		.space	4
+ 9120              		.data
+ 9121              		.align	2
+ 9124              	last_climb_value.4309:
+ 9125 173c 64000000 		.word	100
+ 9126              		.bss
+ 9127              		.align	2
+ 9128              	j.4311:
+ 9129 0008 00000000 		.space	4
+ 9131              		.align	2
+ 9132              	distance_player_fire.4310:
+ 9133 000c 00000000 		.space	4
+ 9135              		.align	2
+ 9136              	distance_hair_trophy.4316:
+ 9137 0010 00000000 		.space	4
+ 9139              		.align	2
+ 9140              	trophy_burned.4315:
+ 9141 0014 00000000 		.space	4
+ 9143              		.align	2
+ 9144              	distance_hair_DIP.4318:
+ 9145 0018 00000000 		.space	4
+ 9147              		.align	2
+ 9148              	DIP_burned.4317:
+ 9149 001c 00000000 		.space	4
+ 9151              		.align	2
+ 9152              	test.4320:
+ 9153 0020 00000000 		.space	4
+ 9155              		.text
+ 9156              	.Letext0:
+ 9157              		.file 2 "C:/mop/c/Moplaborationer/DIPs-Witch/C/sprite.h"
+ 9158              		.file 3 "C:/mop/c/Moplaborationer/DIPs-Witch/C/image.h"
+ 9159              		.file 4 "C:/mop/c/Moplaborationer/DIPs-Witch/C/gameobject.h"
+ 9160              		.file 5 "C:/mop/c/Moplaborationer/DIPs-Witch/C/graphics.h"
+ 9161              		.file 6 "C:/mop/c/Moplaborationer/DIPs-Witch/C/monster_black.xbm"
+ 9162              		.file 7 "C:/mop/c/Moplaborationer/DIPs-Witch/C/monster_light.xbm"
+ 9163              		.file 8 "C:/mop/c/Moplaborationer/DIPs-Witch/C/monster_gray.xbm"
+ 9164              		.file 9 "C:/mop/c/Moplaborationer/DIPs-Witch/C/press_black.xbm"
+ 9165              		.file 10 "C:/mop/c/Moplaborationer/DIPs-Witch/C/press_light.xbm"
+ 9166              		.file 11 "C:/mop/c/Moplaborationer/DIPs-Witch/C/press_gray.xbm"
+ 9167              		.file 12 "C:/mop/c/Moplaborationer/DIPs-Witch/C/castle_black.xbm"
+ 9168              		.file 13 "C:/mop/c/Moplaborationer/DIPs-Witch/C/castle_gray.xbm"
+ 9169              		.file 14 "C:/mop/c/Moplaborationer/DIPs-Witch/C/castle_light.xbm"
+ 9170              		.file 15 "C:/mop/c/Moplaborationer/DIPs-Witch/C/title_light.xbm"
+ 9171              		.file 16 "C:/mop/c/Moplaborationer/DIPs-Witch/C/title_gray.xbm"
+ 9172              		.file 17 "C:/mop/c/Moplaborationer/DIPs-Witch/C/title_black.xbm"
+ 9173              		.file 18 "C:/mop/c/Moplaborationer/DIPs-Witch/C/slow_text.h"
+ 9174              		.file 19 "C:/mop/c/Moplaborationer/DIPs-Witch/C/bg.xbm"
