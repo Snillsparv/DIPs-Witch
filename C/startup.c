@@ -424,9 +424,9 @@ void main(void)
 				
 				fire1_indoors.update(&fire1_indoors);
 				
-				static int distance_player_fire;
+				static int distance_player_fire;	//fire_collision
 				distance_player_fire = (player.xPos + 9) - (fire1_indoors.xPos + 5);
-				if(player.yPos > (fire1_indoors.yPos - 18 + 4) && distance_player_fire < 5 && distance_player_fire > -5) {
+				if(player.yPos > (fire1_indoors.yPos - 18 + 7) && distance_player_fire < 8 && distance_player_fire > -8) {
 					game_over_adder = 100;
 				}
 				
@@ -444,6 +444,9 @@ void main(void)
 				if(read_DIL() == 0) {
 					current_screen = SWITCH_LOCK; 
 				}
+	
+				static int test = 0;
+				test+=2;
 	
 				is_climbing = 0;
 				has_climbed = 0;
