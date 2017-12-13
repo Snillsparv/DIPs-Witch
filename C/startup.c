@@ -32,6 +32,7 @@
 #define START_SCREEN 1
 #define GAME_SCREEN 2
 #define GAME_OVER_SCREEN 3
+#define RESET_GAME 10
 
 int random_seed;
 
@@ -226,8 +227,8 @@ void main(void)
 	init_fire( &fire1 );
 	GameObject fire1_indoors;
 	init_fire( &fire1_indoors );
-	fire1_indoors.xPos = 105;		//FIRE1_INDO
-	fire1_indoors.yPos = 64-11-7;
+	fire1_indoors.xPos = 50;		//FIRE1_INDO
+	fire1_indoors.yPos = 64-12-7;
 	fire1_indoors.update = gameObjectUpdate;
 	
 	fire2.xPos = 98;
@@ -282,12 +283,13 @@ void main(void)
 	set_up_DIL();
 	clear_ascii();
 	
-	if(read_DIL() == 0) {
-		current_screen = SWITCH_LOCK; 
-	}
-	
 	int is_climbing = 0;
 	int has_climbed = 0;
+	int game_over = 0;
+	int game_over_adder = 0;
+	
+	
+	current_screen = RESET_GAME;
 	
 	//Game loop
 	while(1) {
@@ -422,10 +424,45 @@ void main(void)
 				
 				fire1_indoors.update(&fire1_indoors);
 				
+				static int distance_player_fire;
+				distance_player_fire = (player.xPos + 9) - (fire1_indoors.xPos + 5);
+				if(player.yPos > (39-12) && distance_player_fire < 5 && distance_player_fire > -5) {
+					game_over_adder = 1;
+				}
+				
+				game_over += game_over_adder;
+				if(game_over == 1) {
+					current_screen = RESET_GAME;
+				}
+				
 				break;
 				
+			
+			case RESET_GAME: //restart
+				counter = 0;
+				current_screen = START_SCREEN;
+				if(read_DIL() == 0) {
+					current_screen = SWITCH_LOCK; 
+				}
+	
+				is_climbing = 0;
+				has_climbed = 0;
+				game_over = 0;
+				game_over_adder = 0;
+				fire1_indoors.xPos = 40;		//FIRE1_INDO
+				fire1_indoors.yPos = 64-12-7;
 				
+				bird.xPos = 180;
+				bird.yPos = 40;
+				
+				player.xPos = 3;
+				player.yPos = 64-18-7; //player position
+				
+				break;
+							
 		} //end of switch
+		
+		
 		
 		
 		
@@ -433,3 +470,4 @@ void main(void)
 	}
 	
 }
+
