@@ -213,7 +213,7 @@ void main(void)
 	GameObject player;
 	init_witch( &player );
 	player.xPos = 1;
-	player.yPos = 64-18;
+	player.yPos = 64-18-7; //player position
 	player.update = playerUpdate;
 	
 	GameObject fire2;
@@ -353,7 +353,15 @@ void main(void)
 						current_screen = GAME_SCREEN;
 						random_seed = counter;
 						counter = 0;
+						clear_ascii();
 					}
+				}
+				
+				if(read_DIL() == 0x8f) {
+					current_screen = GAME_SCREEN;
+					random_seed = counter;
+					counter = 0;
+					clear_ascii();
 				}
 				
 				
