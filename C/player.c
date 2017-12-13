@@ -22,7 +22,11 @@ void playerUpdate(GameObject *this) {
 		speed -= SPEED_ADD;
 	}
 	
-	this->xPos += speed;
+	if (this->xPos + speed > LIMIT_RIGHT || this->xPos + speed < LIMIT_LEFT){
+		speed *= -1;	
+	}
+	
+	this->xPos += speed;	
 	
 	if (speed > 0){
 		speed--;
