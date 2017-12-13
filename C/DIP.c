@@ -1,5 +1,8 @@
 #include "sprite.h"
 #include "gameobject.h"
+#include "DIP.h"
+#include "gpio.h"
+#include "controls.h"
 
 #include "witch1_black.xbm"
 #include "witch1_gray.xbm"
@@ -10,6 +13,7 @@
 #include "witch3_black.xbm"
 #include "witch3_gray.xbm"
 #include "witch3_light.xbm"
+
 
 sprite *DIP1Black;
 sprite *DIP1Gray;
@@ -100,16 +104,33 @@ void init_DIP( GameObject *DIPObj ) {
 	DIPObj->animation_counter = 0;
 }
 
+static int playerPositionX = 0;
+static int playerPositionY = 0;
+
+void setPlayerPosition(int x, int y){
+	playerPositionX = x;
+	playerPositionY = y;
+}
+
+
 void DIPUpdate(GameObject *this) {
 	gameObjectUpdate(this);
 	static int counter = 0;
 	static int direction = -1;
 	counter++;
-	this->xPos += (counter % 2)*direction;
 	
-	if(this->xPos > 100) {
-		direction = -1;
-	} else if(this->xPos < 50) {
-		direction = 1;
+	if (!read_DIL_single(LIGHT_TRIGGER)){ // Only move if the light is off
+		
+		if (this->yPos >= playerPositionY || (playerPositionX + DIP_WIDTH >= this->xPos && playerPositionX <= this->xPos + DIP_WIDTH )) { // Move faster if player is below or on the same level
+			this->xPos += direction*3;
+		} else {
+			this->xPos += (counter % 2)*direction;
+		}
+		
+		if(this->xPos > RIGHT_POINT) {
+			direction = -1;
+		} else if(this->xPos < LEFT_POINT) {
+			direction = 1;
+		}
 	}
 }

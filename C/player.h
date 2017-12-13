@@ -1,6 +1,9 @@
 #ifndef PLAYER
 #define PLAYER
 
+#include "startup.h"
+#include "gameobject.h"
+
 void playerUpdate(GameObject *this);
 
 #define PLAYER_WIDTH 18
@@ -10,8 +13,5 @@ void playerUpdate(GameObject *this);
 #define LIMIT_RIGHT (MAP_WIDTH - PLAYER_WIDTH)
 #define LIMIT_LEFT 0
 #define LIMIT_DOWN (MAP_HEIGHT - PLAYER_HEIGHT - 7)
-#define MAP_HEIGHT 64
-#define MAP_WIDTH 128
-#define PLATFORM_Y 23
 
 #endif // PLAYER

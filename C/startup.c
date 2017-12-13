@@ -16,6 +16,7 @@
 #include "title_gray.xbm"
 #include "title_black.xbm"
 
+#include "startup.h"
 #include "slow_text.h"
 #include "ascii_display.h"
 #include "bg.xbm"
@@ -27,13 +28,6 @@
 #include "indoors.h"
 #include "indoors2.h"
 #include "DIP.h"
-
-
-#define SWITCH_LOCK 0
-#define START_SCREEN 1
-#define GAME_SCREEN 2
-#define GAME_OVER_SCREEN 3
-#define RESET_GAME 10
 
 int random_seed;
 
@@ -424,7 +418,12 @@ void main(void)
 				}
 				
 				fire1_indoors.update(&fire1_indoors);
+				setPlayerPosition(player.xPos, player.yPos);
 				DIP.update(&DIP);
+				
+				if (DIP.yPos >= player.yPos && (player.xPos + DIP_WIDTH/2 >= DIP.xPos && player.xPos <= DIP.xPos + DIP_WIDTH/2 )){ // DIP_collision
+					game_over_adder = 100;
+				}
 				
 				static int distance_player_fire;	//fire_collision
 				distance_player_fire = (player.xPos + 9) - (fire1_indoors.xPos + 5);
