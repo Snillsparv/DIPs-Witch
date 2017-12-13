@@ -32,6 +32,8 @@
       <File Name="bird.c"/>
       <File Name="witch.h"/>
       <File Name="witch.c"/>
+      <File Name="DIP.h"/>
+      <File Name="DIP.c"/>
     </VirtualDirectory>
     <VirtualDirectory Name="Graphics">
       <File Name="graphics.c"/>
