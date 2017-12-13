@@ -6,7 +6,7 @@ void set_up_DIL( void ) {
 }
 
 char read_DIL( void ) {
-	GPIO_D.idrHigh = GPIO_D.idrLow; //Show on bargraph
+	GPIO_D.odrHigh = GPIO_D.idrLow; //Show on bargraph
 	return GPIO_D.idrLow;
 }
 

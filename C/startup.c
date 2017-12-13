@@ -212,7 +212,7 @@ void main(void)
 	
 	GameObject player;
 	init_witch( &player );
-	player.xPos = 1;
+	player.xPos = 3;
 	player.yPos = 64-18-7; //player position
 	player.update = playerUpdate;
 	
@@ -224,6 +224,12 @@ void main(void)
 	init_fire( &fire4 );
 	GameObject fire1;
 	init_fire( &fire1 );
+	GameObject fire1_indoors;
+	init_fire( &fire1_indoors );
+	fire1_indoors.xPos = 110;
+	fire1_indoors.yPos = 64-18-7;
+	fire1_indoors.update = gameObjectUpdate;
+	
 	fire2.xPos = 98;
 	fire2.yPos = 26-12;
 	fire3.xPos = 115;
@@ -285,7 +291,7 @@ void main(void)
 			
 		switch(current_screen) {
 			
-			case SWITCH_LOCK:
+			case SWITCH_LOCK: //before
 
 				while(read_DIL() == 0){
 					draw_game_object(&pressObj);
@@ -297,7 +303,7 @@ void main(void)
 				break;
 			
 			
-			case START_SCREEN:
+			case START_SCREEN: //outside
 				
 				counter++;
 				
@@ -357,7 +363,7 @@ void main(void)
 					}
 				}
 				
-				if(read_DIL() == 0x8f) {
+				if(read_DIL() == SKIP_VALUE) {
 					current_screen = GAME_SCREEN;
 					random_seed = counter;
 					counter = 0;
@@ -377,13 +383,15 @@ void main(void)
 				
 				break;
 				
-			case GAME_SCREEN:
+			case GAME_SCREEN: //inside
+				
 				
 				counter++;
 				if(read_DIL_single( LIGHT_TRIGGER )) {
 					draw_game_object( &indoors2 );
 				} else {
 					draw_game_object( &indoors );
+					draw_game_object( &fire1_indoors );
 				}
 				
 				draw_game_object( &player );
@@ -391,6 +399,7 @@ void main(void)
 				
 				
 				player.update(&player);
+				fire1_indoors.update(&fire1_indoors);
 				
 				break;
 				
