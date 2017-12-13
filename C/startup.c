@@ -286,6 +286,9 @@ void main(void)
 		current_screen = SWITCH_LOCK; 
 	}
 	
+	int is_climbing = 0;
+	int has_climbed = 0;
+	
 	//Game loop
 	while(1) {
 			
@@ -385,9 +388,6 @@ void main(void)
 				
 			case GAME_SCREEN: //inside
 				
-				static int is_climbing = 0;
-				static int has_climbed = 0;
-				
 				counter++;
 				if(read_DIL_single( LIGHT_TRIGGER )) {
 					draw_game_object( &indoors2 );
@@ -399,18 +399,20 @@ void main(void)
 				draw_game_object( &player );
 				show_frame(1);
 				
-				
-				if(read_DIL_single(CLIMB_TRIGGER) && player.xPos > 75 && player.xPos < 115 && !has_climbed) {
+				static int last_climb_value = 100;
+				if((read_DIL_single(CLIMB_TRIGGER) != last_climb_value) && player.xPos > 90 && player.xPos < 108 && !has_climbed) {
 					is_climbing = 1;
-					player.xPos = 95;
+					player.xPos = 98;
 				}
+				last_climb_value = read_DIL_single(CLIMB_TRIGGER);
 				
 				if(is_climbing) {
 					gameObjectUpdate( &player );
-					if(player.yPos > 15) {
+					if(player.yPos > 4) {
 						player.yPos--;
 					} else {	//Stay at top level and disable climbing forever!
-						player.yPos = 15;
+						player.yPos = 5;
+						player.xPos = 96;
 						is_climbing = 0;
 						has_climbed = 1;
 					}
