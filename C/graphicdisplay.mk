@@ -13,7 +13,7 @@ CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=Sparven
-Date                   :=12/12/2017
+Date                   :=13/12/2017
 CodeLitePath           :=C:/cseapp/CodeLite
 LinkerName             :=$(CodeLiteDir)/tools/gcc-arm/bin/arm-none-eabi-g++.exe
 SharedObjectLinkerName :=$(CodeLiteDir)/tools/gcc-arm/arm-none-eabi-g++.exe -shared -fPIC
@@ -66,8 +66,8 @@ ARM_V6LIB:=$(CodeLiteDir)/tools/gcc-arm/arm-none-eabi/lib/thumb/v6-m
 ARM_GCC_V6LIB:=$(CodeLiteDir)/tools/gcc-arm/lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m
 ARM_M4FPLIB:=$(CodeLiteDir)/tools/gcc-arm/arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard
 ARM_GCC_M4FPLIB:=$(CodeLiteDir)/tools/gcc-arm/lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m
-Objects0=$(IntermediateDirectory)/startup.c$(ObjectSuffix) $(IntermediateDirectory)/gameobject.c$(ObjectSuffix) $(IntermediateDirectory)/fire.c$(ObjectSuffix) $(IntermediateDirectory)/player.c$(ObjectSuffix) $(IntermediateDirectory)/bird.c$(ObjectSuffix) $(IntermediateDirectory)/graphics.c$(ObjectSuffix) $(IntermediateDirectory)/image.c$(ObjectSuffix) $(IntermediateDirectory)/sprite.c$(ObjectSuffix) $(IntermediateDirectory)/gpio.c$(ObjectSuffix) $(IntermediateDirectory)/ascii_display.c$(ObjectSuffix) \
-	$(IntermediateDirectory)/slow_text.c$(ObjectSuffix) 
+Objects0=$(IntermediateDirectory)/startup.c$(ObjectSuffix) $(IntermediateDirectory)/gameobject.c$(ObjectSuffix) $(IntermediateDirectory)/fire.c$(ObjectSuffix) $(IntermediateDirectory)/player.c$(ObjectSuffix) $(IntermediateDirectory)/bird.c$(ObjectSuffix) $(IntermediateDirectory)/witch.c$(ObjectSuffix) $(IntermediateDirectory)/graphics.c$(ObjectSuffix) $(IntermediateDirectory)/image.c$(ObjectSuffix) $(IntermediateDirectory)/sprite.c$(ObjectSuffix) $(IntermediateDirectory)/gpio.c$(ObjectSuffix) \
+	$(IntermediateDirectory)/ascii_display.c$(ObjectSuffix) $(IntermediateDirectory)/slow_text.c$(ObjectSuffix) $(IntermediateDirectory)/indoors.c$(ObjectSuffix) $(IntermediateDirectory)/indoors2.c$(ObjectSuffix) 
 
 
 
@@ -144,6 +144,14 @@ $(IntermediateDirectory)/bird.c$(DependSuffix): bird.c
 $(IntermediateDirectory)/bird.c$(PreprocessSuffix): bird.c
 	$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/bird.c$(PreprocessSuffix) bird.c
 
+$(IntermediateDirectory)/witch.c$(ObjectSuffix): witch.c $(IntermediateDirectory)/witch.c$(DependSuffix)
+	$(CC) $(SourceSwitch) "C:/mop/c/Moplaborationer/DIPs-Witch/C/witch.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/witch.c$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/witch.c$(DependSuffix): witch.c
+	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/witch.c$(ObjectSuffix) -MF$(IntermediateDirectory)/witch.c$(DependSuffix) -MM witch.c
+
+$(IntermediateDirectory)/witch.c$(PreprocessSuffix): witch.c
+	$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/witch.c$(PreprocessSuffix) witch.c
+
 $(IntermediateDirectory)/graphics.c$(ObjectSuffix): graphics.c $(IntermediateDirectory)/graphics.c$(DependSuffix)
 	$(CC) $(SourceSwitch) "C:/mop/c/Moplaborationer/DIPs-Witch/C/graphics.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/graphics.c$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/graphics.c$(DependSuffix): graphics.c
@@ -191,6 +199,22 @@ $(IntermediateDirectory)/slow_text.c$(DependSuffix): slow_text.c
 
 $(IntermediateDirectory)/slow_text.c$(PreprocessSuffix): slow_text.c
 	$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/slow_text.c$(PreprocessSuffix) slow_text.c
+
+$(IntermediateDirectory)/indoors.c$(ObjectSuffix): indoors.c $(IntermediateDirectory)/indoors.c$(DependSuffix)
+	$(CC) $(SourceSwitch) "C:/mop/c/Moplaborationer/DIPs-Witch/C/indoors.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/indoors.c$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/indoors.c$(DependSuffix): indoors.c
+	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/indoors.c$(ObjectSuffix) -MF$(IntermediateDirectory)/indoors.c$(DependSuffix) -MM indoors.c
+
+$(IntermediateDirectory)/indoors.c$(PreprocessSuffix): indoors.c
+	$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/indoors.c$(PreprocessSuffix) indoors.c
+
+$(IntermediateDirectory)/indoors2.c$(ObjectSuffix): indoors2.c $(IntermediateDirectory)/indoors2.c$(DependSuffix)
+	$(CC) $(SourceSwitch) "C:/mop/c/Moplaborationer/DIPs-Witch/C/indoors2.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/indoors2.c$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/indoors2.c$(DependSuffix): indoors2.c
+	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/indoors2.c$(ObjectSuffix) -MF$(IntermediateDirectory)/indoors2.c$(DependSuffix) -MM indoors2.c
+
+$(IntermediateDirectory)/indoors2.c$(PreprocessSuffix): indoors2.c
+	$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/indoors2.c$(PreprocessSuffix) indoors2.c
 
 
 -include $(IntermediateDirectory)/*$(DependSuffix)

@@ -13,8 +13,8 @@ char read_DIL( void ) {
 int read_DIL_single( int bit ) {
 	char DIL = read_DIL();
 	if (DIL & (1<<bit)) {
-		return 0;
-	} else {
 		return 1;
+	} else {
+		return 0;
 	}
 }

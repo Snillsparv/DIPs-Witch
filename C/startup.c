@@ -7,7 +7,7 @@
 #include "press_light.xbm"
 #include "press_gray.xbm"
 
-
+#include "controls.h"
 
 #include "castle_black.xbm"
 #include "castle_gray.xbm"
@@ -23,12 +23,17 @@
 #include "fire.h"
 #include "player.h"
 #include "bird.h"
+#include "witch.h"
+#include "indoors.h"
+#include "indoors2.h"
+
 
 #define SWITCH_LOCK 0
 #define START_SCREEN 1
 #define GAME_SCREEN 2
 #define GAME_OVER_SCREEN 3
 
+int random_seed;
 
 void startup(void) __attribute__((naked)) __attribute__((section (".start_section")) );
 
@@ -180,12 +185,6 @@ void main(void)
 	pressObj.yPos = 29-15;
 	pressObj.current_frame = 0;
 	
-
-
-	/*monsterObj.image.blackImage = monster;
-	monsterObj.image.grayImage = monsterGray;
-	monsterObj.image.lightImage = monsterLight;
-	*/
 	GameObject castleObj;
 	Image castleImage;
 	Image castleImages[] = {castleImage};
@@ -195,11 +194,27 @@ void main(void)
 	castleObj.yPos = 1;
 	castleObj.current_frame = 0;
 	
+	GameObject indoors;
+	init_indoors( &indoors );
+	indoors.xPos = 1;
+	indoors.yPos = 1;
+	
+	GameObject indoors2;
+	init_indoors2( &indoors2 );
+	indoors2.xPos = 1;
+	indoors2.yPos = 1;
+	
 	GameObject bird;
 	init_bird( &bird );
 	bird.xPos = 180;
 	bird.yPos = 40;
 	bird.update = gameObjectUpdate;
+	
+	GameObject player;
+	init_witch( &player );
+	player.xPos = 1;
+	player.yPos = 64-18;
+	player.update = playerUpdate;
 	
 	GameObject fire2;
 	init_fire( &fire2 );
@@ -257,7 +272,7 @@ void main(void)
 	init_slow_text(&text10, "so grippily trea-", "sured by", 1);
 	init_slow_text(&text11, "Enter, brave witch,", "- reset the switch!", 1);
 	//ascii_write_part("Yeeaaah!!!", "This is working! :)", 5, 10);
-	
+	set_up_ascii();
 	set_up_DIL();
 	clear_ascii();
 	
@@ -279,6 +294,7 @@ void main(void)
 				
 				counter = 0;
 				current_screen = START_SCREEN;
+				break;
 			
 			
 			case START_SCREEN:
@@ -330,8 +346,14 @@ void main(void)
 					text10.display(&text10, 15);
 				else if(counter < delay_until_text + 6*long_text + 5*short_text + 3 + 2)
 					text12.display(&text12, 15);
-				else {
+				else if(counter < delay_until_text + 7*long_text + 5*short_text + 6 + 2) {
 					text11.display(&text11, 20);
+				} else {
+					if (read_DIL() == 0) {
+						current_screen = GAME_SCREEN;
+						random_seed = counter;
+						counter = 0;
+					}
 				}
 				
 				
@@ -344,7 +366,28 @@ void main(void)
 				if (counter % 2 == 0) {
 					bird.yPos--;
 				}
-		}
+				
+				break;
+				
+			case GAME_SCREEN:
+				
+				counter++;
+				if(read_DIL_single( LIGHT_TRIGGER )) {
+					draw_game_object( &indoors2 );
+				} else {
+					draw_game_object( &indoors );
+				}
+				
+				draw_game_object( &player );
+				show_frame(1);
+				
+				
+				player.update(&player);
+				
+				break;
+				
+				
+		} //end of switch
 		
 		
 		

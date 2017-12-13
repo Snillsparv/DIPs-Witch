@@ -30,6 +30,8 @@
       <File Name="player.h"/>
       <File Name="bird.h"/>
       <File Name="bird.c"/>
+      <File Name="witch.h"/>
+      <File Name="witch.c"/>
     </VirtualDirectory>
     <VirtualDirectory Name="Graphics">
       <File Name="graphics.c"/>
@@ -43,6 +45,12 @@
         <File Name="ascii_display.h"/>
         <File Name="slow_text.h"/>
         <File Name="slow_text.c"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="Backgrounds_and_Animation">
+        <File Name="indoors.h"/>
+        <File Name="indoors.c"/>
+        <File Name="indoors2.h"/>
+        <File Name="indoors2.c"/>
       </VirtualDirectory>
     </VirtualDirectory>
     <VirtualDirectory Name="Definitions">
@@ -102,6 +110,25 @@
       <File Name="press_black.xbm"/>
       <File Name="press_gray.xbm"/>
       <File Name="press_light.xbm"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="witch">
+      <File Name="witch1_black.xbm"/>
+      <File Name="witch1_gray.xbm"/>
+      <File Name="witch1_light.xbm"/>
+      <File Name="witch2_black.xbm"/>
+      <File Name="witch2_gray.xbm"/>
+      <File Name="witch2_light.xbm"/>
+      <File Name="witch3_black.xbm"/>
+      <File Name="witch3_gray.xbm"/>
+      <File Name="witch3_light.xbm"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="backgrounds">
+      <File Name="indoors_black.xbm"/>
+      <File Name="indoors_gray.xbm"/>
+      <File Name="indoors_light.xbm"/>
+      <File Name="indoors2_black.xbm"/>
+      <File Name="indoors2_gray.xbm"/>
+      <File Name="indoors2_light.xbm"/>
     </VirtualDirectory>
   </VirtualDirectory>
   <Settings Type="Executable">
