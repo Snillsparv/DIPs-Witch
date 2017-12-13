@@ -422,6 +422,10 @@ void main(void)
 					player.update(&player);
 				}
 				
+				if (read_DIL_single(EXPLOSION_TRIGGER)){
+					game_over_adder = 1;
+				}
+				
 				fire1_indoors.update(&fire1_indoors);
 				
 				static int distance_player_fire;	//fire_collision
@@ -431,6 +435,7 @@ void main(void)
 				}
 				
 				game_over += game_over_adder;
+				
 				if(game_over >= 100) {
 					current_screen = RESET_GAME;
 				}

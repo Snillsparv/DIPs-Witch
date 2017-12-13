@@ -2,13 +2,13 @@
 #define CONTROLS
 
 #define RIGHT_TRIGGER 0
-#define EXPLOSION_TRIGGER 1
+#define EXPLOSION_TRIGGER 3
 #define CLIMB_TRIGGER 4
 #define JUMP_TRIGGER 5
 #define LIGHT_TRIGGER 6
 #define LEFT_TRIGGER 7
 
-#define SKIP_VALUE 0x80
+#define SKIP_VALUE 0x81
 
 
 #endif // CONTROLS
