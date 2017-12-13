@@ -6,4 +6,5 @@
 #define LIGHT_TRIGGER 6
 #define SKIP_VALUE 0x8f
 
+
 #endif // CONTROLS

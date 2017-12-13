@@ -226,8 +226,8 @@ void main(void)
 	init_fire( &fire1 );
 	GameObject fire1_indoors;
 	init_fire( &fire1_indoors );
-	fire1_indoors.xPos = 110;
-	fire1_indoors.yPos = 64-18-7;
+	fire1_indoors.xPos = 105;		//FIRE1_INDO
+	fire1_indoors.yPos = 64-11-7;
 	fire1_indoors.update = gameObjectUpdate;
 	
 	fire2.xPos = 98;
@@ -385,6 +385,8 @@ void main(void)
 				
 			case GAME_SCREEN: //inside
 				
+				static int is_climbing = 0;
+				static int has_climbed = 0;
 				
 				counter++;
 				if(read_DIL_single( LIGHT_TRIGGER )) {
@@ -398,7 +400,24 @@ void main(void)
 				show_frame(1);
 				
 				
-				player.update(&player);
+				if(read_DIL_single(CLIMB_TRIGGER) && player.xPos > 75 && player.xPos < 115 && !has_climbed) {
+					is_climbing = 1;
+					player.xPos = 95;
+				}
+				
+				if(is_climbing) {
+					gameObjectUpdate( &player );
+					if(player.yPos > 15) {
+						player.yPos--;
+					} else {	//Stay at top level and disable climbing forever!
+						player.yPos = 15;
+						is_climbing = 0;
+						has_climbed = 1;
+					}
+				} else {
+					player.update(&player);
+				}
+				
 				fire1_indoors.update(&fire1_indoors);
 				
 				break;
