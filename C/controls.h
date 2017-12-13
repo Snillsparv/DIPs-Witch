@@ -8,7 +8,7 @@
 #define LIGHT_TRIGGER 6
 #define LEFT_TRIGGER 7
 
-#define SKIP_VALUE 0x8f
+#define SKIP_VALUE 0x80
 
 
 #endif // CONTROLS

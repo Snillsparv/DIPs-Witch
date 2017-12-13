@@ -213,7 +213,7 @@ void main(void)
 	GameObject player;
 	init_witch( &player );
 	player.xPos = 3;
-	player.yPos = 64-18-7; //player position
+	player.yPos = LIMIT_DOWN - 1; //player position
 	player.update = playerUpdate;
 	
 	GameObject fire2;
