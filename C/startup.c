@@ -435,7 +435,7 @@ void main(void)
 				}
 				
 				game_over += game_over_adder;
-
+				
 				if(game_over >= 100) {
 					current_screen = RESET_GAME;
 				}
