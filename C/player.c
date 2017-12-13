@@ -48,7 +48,7 @@ void playerUpdate(GameObject *this) {
 		xSpeed -= SPEED_ADD_X;
 	}
 	
-	if ((!lastLeftValue && read_DIL_single(LEFT_TRIGGER)) || (!lastRightValue && read_DIL_single(RIGHT_TRIGGER)) && this->yPos != PLATFORM_Y - PLAYER_HEIGHT && this->yPos != LIMIT_DOWN){
+	if (((!lastLeftValue && read_DIL_single(LEFT_TRIGGER)) || (!lastRightValue && read_DIL_single(RIGHT_TRIGGER))) && this->yPos != PLATFORM_Y - PLAYER_HEIGHT && this->yPos != LIMIT_DOWN){
 		xSpeed *=2;
 	}
 	
