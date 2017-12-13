@@ -192,6 +192,17 @@ void main(void)
 	indoors2.xPos = 1;
 	indoors2.yPos = 1;
 	
+	GameObject trophy;
+	init_trophy( &trophy );
+	trophy.xPos = 19;
+	trophy.yPos = 5;
+	
+	GameObject hair;
+	init_flame(&hair);
+	hair.xPos = 40;
+	hair.yPos = 10;
+	hair.update = gameObjectUpdate;
+	
 	GameObject bird;
 	init_bird( &bird );
 	bird.xPos = 180;
@@ -387,9 +398,11 @@ void main(void)
 				} else {
 					draw_game_object( &indoors );
 					draw_game_object( &fire1_indoors );
+					draw_game_object( &trophy );
 				}
 				draw_game_object( &DIP );
 				draw_game_object( &player );
+				draw_game_object( &hair );	//ta bort
 				show_frame(1);
 				
 				static int last_climb_value = 100;
@@ -420,6 +433,7 @@ void main(void)
 				fire1_indoors.update(&fire1_indoors);
 				setPlayerPosition(player.xPos, player.yPos);
 				DIP.update(&DIP);
+				hair.update(&hair);
 				
 				if (DIP.yPos >= player.yPos && (player.xPos + DIP_WIDTH/2 >= DIP.xPos && player.xPos <= DIP.xPos + DIP_WIDTH/2 )){ // DIP_collision
 					game_over_adder = 100;

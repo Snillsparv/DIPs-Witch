@@ -34,6 +34,8 @@
       <File Name="witch.c"/>
       <File Name="DIP.h"/>
       <File Name="DIP.c"/>
+      <File Name="flame.h"/>
+      <File Name="flame.c"/>
     </VirtualDirectory>
     <VirtualDirectory Name="Graphics">
       <File Name="graphics.c"/>
@@ -53,6 +55,8 @@
         <File Name="indoors.c"/>
         <File Name="indoors2.h"/>
         <File Name="indoors2.c"/>
+        <File Name="trophy.h"/>
+        <File Name="trophy.c"/>
       </VirtualDirectory>
     </VirtualDirectory>
     <VirtualDirectory Name="Definitions">
@@ -131,6 +135,25 @@
       <File Name="indoors2_black.xbm"/>
       <File Name="indoors2_gray.xbm"/>
       <File Name="indoors2_light.xbm"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="trophy">
+      <File Name="trophy_black.xbm"/>
+      <File Name="trophy_gray.xbm"/>
+      <File Name="trophy_light.xbm"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="flame">
+      <File Name="flame1_black.xbm"/>
+      <File Name="flame1_gray.xbm"/>
+      <File Name="flame1_light.xbm"/>
+      <File Name="flame2_black.xbm"/>
+      <File Name="flame2_gray.xbm"/>
+      <File Name="flame2_light.xbm"/>
+      <File Name="flame3_black.xbm"/>
+      <File Name="flame3_gray.xbm"/>
+      <File Name="flame3_light.xbm"/>
+      <File Name="flame4_black.xbm"/>
+      <File Name="flame4_gray.xbm"/>
+      <File Name="flame4_light.xbm"/>
     </VirtualDirectory>
   </VirtualDirectory>
   <Settings Type="Executable">
