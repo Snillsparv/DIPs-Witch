@@ -2,6 +2,7 @@
 #include "controls.h"
 #include "gameobject.h"
 #include "player.h"
+#include "ascii_display.h"
 
 void playerUpdate(GameObject *this) {
 	
@@ -27,10 +28,16 @@ void playerUpdate(GameObject *this) {
 	
 	if (this->yPos + ySpeed > LIMIT_DOWN){
 		this->yPos = LIMIT_DOWN;
+		if (ySpeed == SPEED_ADD_Y + 1){
+			ascii_write("*THUMP*","");
+		}
 		ySpeed = 0;
 	}
 	else if (this->yPos + ySpeed > PLATFORM_Y - PLAYER_HEIGHT && this->yPos + ySpeed < PLATFORM_Y - PLAYER_HEIGHT + 2*SPEED_ADD_Y){
 		this->yPos = PLATFORM_Y - PLAYER_HEIGHT;
+		if (ySpeed == SPEED_ADD_Y + 1){
+			ascii_write("*THUMP*","");
+		}
 		ySpeed = 0;
 	}
 	else{

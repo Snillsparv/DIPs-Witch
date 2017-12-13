@@ -406,6 +406,7 @@ void main(void)
 				counter++;
 				if(read_DIL_single( LIGHT_TRIGGER )) {
 					draw_game_object( &indoors2 );
+					ascii_write("*click*","");
 				} else {
 					draw_game_object( &indoors );
 					draw_game_object( &trophy );
@@ -433,18 +434,21 @@ void main(void)
 					gameObjectUpdate( &player );
 					if(player.yPos > 4) {
 						player.yPos--;
+						ascii_write("*tipp*","");
 					} else {	//Stay at top level and disable climbing forever!
 						player.yPos = 5;
 						player.xPos = 96;
 						is_climbing = 0;
 						has_climbed = 1;
+						ascii_write("*tapp*","");
 					}
 				} else {
 					player.update(&player);
 				}
 				
 				if (read_DIL_single(EXPLOSION_TRIGGER)){
-					game_over_adder = 1;
+					game_over_adder = 20;
+					ascii_write("*KABOOOOM*","");
 				}
 				
 				//fire1_indoors.update(&fire1_indoors);
@@ -466,6 +470,7 @@ void main(void)
 				
 				if (!no_DIP && DIP.yPos >= player.yPos && (player.xPos + DIP_WIDTH/2 >= DIP.xPos && player.xPos <= DIP.xPos + DIP_WIDTH/2 )){ // DIP_collision
 					game_over_adder = 100;
+					ascii_write("DIPs-WITCH:","       NyAHAHAHAH");
 				}
 				
 				static int distance_player_fire;	//fire_collision
@@ -474,7 +479,8 @@ void main(void)
 					distance_player_fire = (player.xPos + 9) - (fires[j].xPos + 5);
 					if(player.yPos > (fires[j].yPos - 18 + 7) && 
 							player.yPos < fires[j].yPos && distance_player_fire < 8 && distance_player_fire > -8) {
-						game_over_adder = 100;
+						game_over_adder = 20;
+						ascii_write("*FWOOSH*","");
 					}					
 				}
 				

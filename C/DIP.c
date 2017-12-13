@@ -117,19 +117,37 @@ void DIPUpdate(GameObject *this) {
 	gameObjectUpdate(this);
 	static int counter = 0;
 	static int direction = -1;
+	static int isRunning = 0;
 	counter++;
 	
 	if (!read_DIL_single(LIGHT_TRIGGER)){ // Only move if the light is off
 		
-		if (this->yPos >= playerPositionY || (playerPositionX + DIP_WIDTH >= this->xPos && playerPositionX <= this->xPos + DIP_WIDTH )) { // Move faster if player is below or on the same level
+		if (this->yPos >= playerPositionY){
+			isRunning = 1;
+		}
+		else if ((playerPositionX + DIP_WIDTH >= this->xPos && playerPositionX <= this->xPos + DIP_WIDTH )) { // Move faster if player is below or on the same level
+			isRunning = 1;
+			if (RIGHT_POINT - playerPositionX > playerPositionX - LEFT_POINT){
+				direction = 1;
+			}
+			else{
+				direction = -1;
+			}
+		} 
+		
+		
+		
+		if (isRunning){
 			this->xPos += direction*3;
 		} else {
 			this->xPos += (counter % 2)*direction;
 		}
 		
 		if(this->xPos > RIGHT_POINT) {
+			isRunning = 0;
 			direction = -1;
 		} else if(this->xPos < LEFT_POINT) {
+			isRunning = 0;
 			direction = 1;
 		}
 	}
