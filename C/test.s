@@ -6600,894 +6600,957 @@
  6418      63682C00 
  6419              		.align	2
  6420              	.LC104:
- 6421 0180 00       		.ascii	"\000"
- 6422 0181 000000   		.align	2
+ 6421 0180 61206269 		.ascii	"a bit spooked out...\000"
+ 6421      74207370 
+ 6421      6F6F6B65 
+ 6421      64206F75 
+ 6421      742E2E2E 
+ 6422 0195 000000   		.align	2
  6423              	.LC106:
- 6424 0184 2A636C69 		.ascii	"*click*\000"
- 6424      636B2A00 
+ 6424 0198 44616666 		.ascii	"Daffo: I'm feeling \000"
+ 6424      6F3A2049 
+ 6424      276D2066 
+ 6424      65656C69 
+ 6424      6E672000 
  6425              		.align	2
- 6426              	.LC111:
- 6427 018c 2A746970 		.ascii	"*tipp*\000"
- 6427      702A00
- 6428 0193 00       		.align	2
- 6429              	.LC113:
- 6430 0194 2A746170 		.ascii	"*tapp*\000"
- 6430      702A00
- 6431 019b 00       		.align	2
- 6432              	.LC115:
- 6433 019c 2A4B4142 		.ascii	"*KABOOOOM*\000"
- 6433      4F4F4F4F 
- 6433      4D2A00
- 6434 01a7 00       		.align	2
- 6435              	.LC117:
- 6436 01a8 20202020 		.ascii	"       NyAHAHAHAH\000"
- 6436      2020204E 
- 6436      79414841 
- 6436      48414841 
- 6436      4800
- 6437 01ba 0000     		.align	2
- 6438              	.LC119:
- 6439 01bc 44495073 		.ascii	"DIPs-WITCH:\000"
- 6439      2D574954 
- 6439      43483A00 
- 6440              		.align	2
- 6441              	.LC123:
- 6442 01c8 2A46574F 		.ascii	"*FWOOSH*\000"
- 6442      4F53482A 
- 6442      00
- 6443              		.text
- 6444              		.align	1
- 6445              		.global	main
- 6446              		.syntax unified
- 6447              		.code	16
- 6448              		.thumb_func
- 6449              		.fpu softvfp
- 6451              	main:
- 6452              	.LFB3:
+ 6426              	.LC108:
+ 6427 01ac 00       		.ascii	"\000"
+ 6428 01ad 000000   		.align	2
+ 6429              	.LC110:
+ 6430 01b0 2A636C69 		.ascii	"*click*\000"
+ 6430      636B2A00 
+ 6431              		.global	__aeabi_idivmod
+ 6432              		.align	2
+ 6433              	.LC114:
+ 6434 01b8 2A746970 		.ascii	"*tipp*\000"
+ 6434      702A00
+ 6435 01bf 00       		.align	2
+ 6436              	.LC116:
+ 6437 01c0 2A746170 		.ascii	"*tapp*\000"
+ 6437      702A00
+ 6438 01c7 00       		.align	2
+ 6439              	.LC118:
+ 6440 01c8 746F2067 		.ascii	"to grab the trophy!\000"
+ 6440      72616220 
+ 6440      74686520 
+ 6440      74726F70 
+ 6440      68792100 
+ 6441              		.align	2
+ 6442              	.LC120:
+ 6443 01dc 44616666 		.ascii	"Daffo: I need magic \000"
+ 6443      6F3A2049 
+ 6443      206E6565 
+ 6443      64206D61 
+ 6443      67696320 
+ 6444 01f1 000000   		.align	2
+ 6445              	.LC122:
+ 6446 01f4 504C4143 		.ascii	"PLACEHOLDER DU VANN\000"
+ 6446      45484F4C 
+ 6446      44455220 
+ 6446      44552056 
+ 6446      414E4E00 
+ 6447              		.align	2
+ 6448              	.LC124:
+ 6449 0208 2A4B4142 		.ascii	"*KABOOOOM*\000"
+ 6449      4F4F4F4F 
+ 6449      4D2A00
+ 6450 0213 00       		.align	2
+ 6451              	.LC126:
+ 6452 0214 2A46774F 		.ascii	"*FwOOOo*\000"
+ 6452      4F4F6F2A 
+ 6452      00
+ 6453 021d 000000   		.align	2
+ 6454              	.LC128:
+ 6455 0220 20202020 		.ascii	"      NyAHAHAHAH!\000"
+ 6455      20204E79 
+ 6455      41484148 
+ 6455      41484148 
+ 6455      2100
+ 6456 0232 0000     		.align	2
+ 6457              	.LC130:
+ 6458 0234 44495073 		.ascii	"DIPs-WITCH:\000"
+ 6458      2D574954 
+ 6458      43483A00 
+ 6459              		.align	2
+ 6460              	.LC134:
+ 6461 0240 2A46574F 		.ascii	"*FWOOSH*\000"
+ 6461      4F53482A 
+ 6461      00
+ 6462 0249 000000   		.align	2
+ 6463              	.LC138:
+ 6464 024c 20202020 		.ascii	"        Oops...!\000"
+ 6464      20202020 
+ 6464      4F6F7073 
+ 6464      2E2E2E21 
+ 6464      00
+ 6465 025d 000000   		.align	2
+ 6466              	.LC140:
+ 6467 0260 44414646 		.ascii	"DAFFO:  \000"
+ 6467      4F3A2020 
+ 6467      00
+ 6468 0269 000000   		.align	2
+ 6469              	.LC144:
+ 6470 026c 20202020 		.ascii	"       ARGHGHHRH!\000"
+ 6470      20202041 
+ 6470      52474847 
+ 6470      48485248 
+ 6470      2100
+ 6471              		.text
+ 6472              		.align	1
+ 6473              		.global	main
+ 6474              		.syntax unified
+ 6475              		.code	16
+ 6476              		.thumb_func
+ 6477              		.fpu softvfp
+ 6479              	main:
+ 6480              	.LFB3:
  141:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	
  142:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** int counter = 0;
  143:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** int current_screen = START_SCREEN;
  144:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** void main(void)
  145:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** {
- 6453              		.loc 1 145 0
- 6454              		.cfi_startproc
- 6455              		@ args = 0, pretend = 0, frame = 1176
- 6456              		@ frame_needed = 1, uses_anonymous_args = 0
- 6457 01ec 90B5     		push	{r4, r7, lr}
- 6458              		.cfi_def_cfa_offset 12
- 6459              		.cfi_offset 4, -12
- 6460              		.cfi_offset 7, -8
- 6461              		.cfi_offset 14, -4
- 6462 01ee FE4C     		ldr	r4, .L62
- 6463 01f0 A544     		add	sp, sp, r4
- 6464              		.cfi_def_cfa_offset 1192
- 6465 01f2 00AF     		add	r7, sp, #0
- 6466              		.cfi_def_cfa_register 7
+ 6481              		.loc 1 145 0
+ 6482              		.cfi_startproc
+ 6483              		@ args = 0, pretend = 0, frame = 1184
+ 6484              		@ frame_needed = 1, uses_anonymous_args = 0
+ 6485 01ec 90B5     		push	{r4, r7, lr}
+ 6486              		.cfi_def_cfa_offset 12
+ 6487              		.cfi_offset 4, -12
+ 6488              		.cfi_offset 7, -8
+ 6489              		.cfi_offset 14, -4
+ 6490 01ee FD4C     		ldr	r4, .L67
+ 6491 01f0 A544     		add	sp, sp, r4
+ 6492              		.cfi_def_cfa_offset 1200
+ 6493 01f2 00AF     		add	r7, sp, #0
+ 6494              		.cfi_def_cfa_register 7
  146:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	
  147:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	init_app();	
- 6467              		.loc 1 147 0
- 6468 01f4 FFF7FEFF 		bl	init_app
+ 6495              		.loc 1 147 0
+ 6496 01f4 FFF7FEFF 		bl	init_app
  148:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	initSprites();
- 6469              		.loc 1 148 0
- 6470 01f8 FFF7FEFF 		bl	initSprites
+ 6497              		.loc 1 148 0
+ 6498 01f8 FFF7FEFF 		bl	initSprites
  149:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	
  150:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	GameObject monsterObj;
  151:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	Image monsterImage;
  152:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	Image monsterImages[] = {monsterImage};
- 6471              		.loc 1 152 0
- 6472 01fc FB4B     		ldr	r3, .L62+4
- 6473 01fe FB18     		adds	r3, r7, r3
- 6474 0200 8A22     		movs	r2, #138
- 6475 0202 D200     		lsls	r2, r2, #3
- 6476 0204 BA18     		adds	r2, r7, r2
- 6477 0206 13CA     		ldmia	r2!, {r0, r1, r4}
- 6478 0208 13C3     		stmia	r3!, {r0, r1, r4}
+ 6499              		.loc 1 152 0
+ 6500 01fc FA4B     		ldr	r3, .L67+4
+ 6501 01fe FB18     		adds	r3, r7, r3
+ 6502 0200 8A22     		movs	r2, #138
+ 6503 0202 D200     		lsls	r2, r2, #3
+ 6504 0204 BA18     		adds	r2, r7, r2
+ 6505 0206 13CA     		ldmia	r2!, {r0, r1, r4}
+ 6506 0208 13C3     		stmia	r3!, {r0, r1, r4}
  153:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	monsterObj.images = monsterImages;
- 6479              		.loc 1 153 0
- 6480 020a F94B     		ldr	r3, .L62+8
- 6481 020c FB18     		adds	r3, r7, r3
- 6482 020e F74A     		ldr	r2, .L62+4
- 6483 0210 BA18     		adds	r2, r7, r2
- 6484 0212 1A60     		str	r2, [r3]
+ 6507              		.loc 1 153 0
+ 6508 020a F84B     		ldr	r3, .L67+8
+ 6509 020c FB18     		adds	r3, r7, r3
+ 6510 020e F64A     		ldr	r2, .L67+4
+ 6511 0210 BA18     		adds	r2, r7, r2
+ 6512 0212 1A60     		str	r2, [r3]
  154:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	load_image(&monsterObj.images[0], monster, monsterGray, monsterLight);
- 6485              		.loc 1 154 0
- 6486 0214 F64B     		ldr	r3, .L62+8
- 6487 0216 FB18     		adds	r3, r7, r3
- 6488 0218 1868     		ldr	r0, [r3]
- 6489 021a F64B     		ldr	r3, .L62+12
- 6490 021c 1968     		ldr	r1, [r3]
- 6491 021e F64B     		ldr	r3, .L62+16
- 6492 0220 1A68     		ldr	r2, [r3]
- 6493 0222 F64B     		ldr	r3, .L62+20
- 6494 0224 1B68     		ldr	r3, [r3]
- 6495 0226 FFF7FEFF 		bl	load_image
+ 6513              		.loc 1 154 0
+ 6514 0214 F54B     		ldr	r3, .L67+8
+ 6515 0216 FB18     		adds	r3, r7, r3
+ 6516 0218 1868     		ldr	r0, [r3]
+ 6517 021a F54B     		ldr	r3, .L67+12
+ 6518 021c 1968     		ldr	r1, [r3]
+ 6519 021e F54B     		ldr	r3, .L67+16
+ 6520 0220 1A68     		ldr	r2, [r3]
+ 6521 0222 F54B     		ldr	r3, .L67+20
+ 6522 0224 1B68     		ldr	r3, [r3]
+ 6523 0226 FFF7FEFF 		bl	load_image
  155:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	monsterObj.xPos = 30;
- 6496              		.loc 1 155 0
- 6497 022a F14B     		ldr	r3, .L62+8
- 6498 022c FB18     		adds	r3, r7, r3
- 6499 022e 1E22     		movs	r2, #30
- 6500 0230 5A60     		str	r2, [r3, #4]
+ 6524              		.loc 1 155 0
+ 6525 022a F04B     		ldr	r3, .L67+8
+ 6526 022c FB18     		adds	r3, r7, r3
+ 6527 022e 1E22     		movs	r2, #30
+ 6528 0230 5A60     		str	r2, [r3, #4]
  156:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	monsterObj.yPos = 4;
- 6501              		.loc 1 156 0
- 6502 0232 EF4B     		ldr	r3, .L62+8
- 6503 0234 FB18     		adds	r3, r7, r3
- 6504 0236 0422     		movs	r2, #4
- 6505 0238 9A60     		str	r2, [r3, #8]
+ 6529              		.loc 1 156 0
+ 6530 0232 EE4B     		ldr	r3, .L67+8
+ 6531 0234 FB18     		adds	r3, r7, r3
+ 6532 0236 0422     		movs	r2, #4
+ 6533 0238 9A60     		str	r2, [r3, #8]
  157:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	monsterObj.current_frame = 0;
- 6506              		.loc 1 157 0
- 6507 023a ED4B     		ldr	r3, .L62+8
- 6508 023c FB18     		adds	r3, r7, r3
- 6509 023e 0022     		movs	r2, #0
- 6510 0240 5A61     		str	r2, [r3, #20]
+ 6534              		.loc 1 157 0
+ 6535 023a EC4B     		ldr	r3, .L67+8
+ 6536 023c FB18     		adds	r3, r7, r3
+ 6537 023e 0022     		movs	r2, #0
+ 6538 0240 5A61     		str	r2, [r3, #20]
  158:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	monsterObj.update = playerUpdate;
- 6511              		.loc 1 158 0
- 6512 0242 EB4B     		ldr	r3, .L62+8
- 6513 0244 FB18     		adds	r3, r7, r3
- 6514 0246 EE4A     		ldr	r2, .L62+24
- 6515 0248 DA60     		str	r2, [r3, #12]
+ 6539              		.loc 1 158 0
+ 6540 0242 EA4B     		ldr	r3, .L67+8
+ 6541 0244 FB18     		adds	r3, r7, r3
+ 6542 0246 ED4A     		ldr	r2, .L67+24
+ 6543 0248 DA60     		str	r2, [r3, #12]
  159:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	
  160:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	GameObject titleObj;
  161:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	Image titleImage;
  162:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	Image titleImages[] = {titleImage};
- 6516              		.loc 1 162 0
- 6517 024a 8123     		movs	r3, #129
- 6518 024c DB00     		lsls	r3, r3, #3
- 6519 024e FB18     		adds	r3, r7, r3
- 6520 0250 EC4A     		ldr	r2, .L62+28
- 6521 0252 BA18     		adds	r2, r7, r2
- 6522 0254 13CA     		ldmia	r2!, {r0, r1, r4}
- 6523 0256 13C3     		stmia	r3!, {r0, r1, r4}
+ 6544              		.loc 1 162 0
+ 6545 024a 8123     		movs	r3, #129
+ 6546 024c DB00     		lsls	r3, r3, #3
+ 6547 024e FB18     		adds	r3, r7, r3
+ 6548 0250 EB4A     		ldr	r2, .L67+28
+ 6549 0252 BA18     		adds	r2, r7, r2
+ 6550 0254 13CA     		ldmia	r2!, {r0, r1, r4}
+ 6551 0256 13C3     		stmia	r3!, {r0, r1, r4}
  163:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	titleObj.images = titleImages;
- 6524              		.loc 1 163 0
- 6525 0258 8423     		movs	r3, #132
- 6526 025a DB00     		lsls	r3, r3, #3
- 6527 025c FB18     		adds	r3, r7, r3
- 6528 025e 8122     		movs	r2, #129
- 6529 0260 D200     		lsls	r2, r2, #3
- 6530 0262 BA18     		adds	r2, r7, r2
- 6531 0264 1A60     		str	r2, [r3]
+ 6552              		.loc 1 163 0
+ 6553 0258 8423     		movs	r3, #132
+ 6554 025a DB00     		lsls	r3, r3, #3
+ 6555 025c FB18     		adds	r3, r7, r3
+ 6556 025e 8122     		movs	r2, #129
+ 6557 0260 D200     		lsls	r2, r2, #3
+ 6558 0262 BA18     		adds	r2, r7, r2
+ 6559 0264 1A60     		str	r2, [r3]
  164:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	load_image(&titleObj.images[0], titleBlack, titleGray, titleLight);
- 6532              		.loc 1 164 0
- 6533 0266 8423     		movs	r3, #132
- 6534 0268 DB00     		lsls	r3, r3, #3
- 6535 026a FB18     		adds	r3, r7, r3
- 6536 026c 1868     		ldr	r0, [r3]
- 6537 026e E64B     		ldr	r3, .L62+32
- 6538 0270 1968     		ldr	r1, [r3]
- 6539 0272 E64B     		ldr	r3, .L62+36
- 6540 0274 1A68     		ldr	r2, [r3]
- 6541 0276 E64B     		ldr	r3, .L62+40
- 6542 0278 1B68     		ldr	r3, [r3]
- 6543 027a FFF7FEFF 		bl	load_image
+ 6560              		.loc 1 164 0
+ 6561 0266 8423     		movs	r3, #132
+ 6562 0268 DB00     		lsls	r3, r3, #3
+ 6563 026a FB18     		adds	r3, r7, r3
+ 6564 026c 1868     		ldr	r0, [r3]
+ 6565 026e E54B     		ldr	r3, .L67+32
+ 6566 0270 1968     		ldr	r1, [r3]
+ 6567 0272 E54B     		ldr	r3, .L67+36
+ 6568 0274 1A68     		ldr	r2, [r3]
+ 6569 0276 E54B     		ldr	r3, .L67+40
+ 6570 0278 1B68     		ldr	r3, [r3]
+ 6571 027a FFF7FEFF 		bl	load_image
  165:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	titleObj.xPos = 1;
- 6544              		.loc 1 165 0
- 6545 027e 8423     		movs	r3, #132
- 6546 0280 DB00     		lsls	r3, r3, #3
- 6547 0282 FB18     		adds	r3, r7, r3
- 6548 0284 0122     		movs	r2, #1
- 6549 0286 5A60     		str	r2, [r3, #4]
+ 6572              		.loc 1 165 0
+ 6573 027e 8423     		movs	r3, #132
+ 6574 0280 DB00     		lsls	r3, r3, #3
+ 6575 0282 FB18     		adds	r3, r7, r3
+ 6576 0284 0122     		movs	r2, #1
+ 6577 0286 5A60     		str	r2, [r3, #4]
  166:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	titleObj.yPos = -40;
- 6550              		.loc 1 166 0
- 6551 0288 8423     		movs	r3, #132
- 6552 028a DB00     		lsls	r3, r3, #3
- 6553 028c FB18     		adds	r3, r7, r3
- 6554 028e 2822     		movs	r2, #40
- 6555 0290 5242     		rsbs	r2, r2, #0
- 6556 0292 9A60     		str	r2, [r3, #8]
+ 6578              		.loc 1 166 0
+ 6579 0288 8423     		movs	r3, #132
+ 6580 028a DB00     		lsls	r3, r3, #3
+ 6581 028c FB18     		adds	r3, r7, r3
+ 6582 028e 2822     		movs	r2, #40
+ 6583 0290 5242     		rsbs	r2, r2, #0
+ 6584 0292 9A60     		str	r2, [r3, #8]
  167:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	titleObj.current_frame = 0;
- 6557              		.loc 1 167 0
- 6558 0294 8423     		movs	r3, #132
- 6559 0296 DB00     		lsls	r3, r3, #3
- 6560 0298 FB18     		adds	r3, r7, r3
- 6561 029a 0022     		movs	r2, #0
- 6562 029c 5A61     		str	r2, [r3, #20]
+ 6585              		.loc 1 167 0
+ 6586 0294 8423     		movs	r3, #132
+ 6587 0296 DB00     		lsls	r3, r3, #3
+ 6588 0298 FB18     		adds	r3, r7, r3
+ 6589 029a 0022     		movs	r2, #0
+ 6590 029c 5A61     		str	r2, [r3, #20]
  168:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	
  169:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	GameObject pressObj;
  170:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	Image pressImage;
  171:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	Image pressImages[] = {pressImage};
- 6563              		.loc 1 171 0
- 6564 029e F323     		movs	r3, #243
- 6565 02a0 9B00     		lsls	r3, r3, #2
- 6566 02a2 FB18     		adds	r3, r7, r3
- 6567 02a4 F622     		movs	r2, #246
- 6568 02a6 9200     		lsls	r2, r2, #2
- 6569 02a8 BA18     		adds	r2, r7, r2
- 6570 02aa 13CA     		ldmia	r2!, {r0, r1, r4}
- 6571 02ac 13C3     		stmia	r3!, {r0, r1, r4}
+ 6591              		.loc 1 171 0
+ 6592 029e F323     		movs	r3, #243
+ 6593 02a0 9B00     		lsls	r3, r3, #2
+ 6594 02a2 FB18     		adds	r3, r7, r3
+ 6595 02a4 F622     		movs	r2, #246
+ 6596 02a6 9200     		lsls	r2, r2, #2
+ 6597 02a8 BA18     		adds	r2, r7, r2
+ 6598 02aa 13CA     		ldmia	r2!, {r0, r1, r4}
+ 6599 02ac 13C3     		stmia	r3!, {r0, r1, r4}
  172:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	pressObj.images = pressImages;
- 6572              		.loc 1 172 0
- 6573 02ae F923     		movs	r3, #249
- 6574 02b0 9B00     		lsls	r3, r3, #2
- 6575 02b2 FB18     		adds	r3, r7, r3
- 6576 02b4 F322     		movs	r2, #243
- 6577 02b6 9200     		lsls	r2, r2, #2
- 6578 02b8 BA18     		adds	r2, r7, r2
- 6579 02ba 1A60     		str	r2, [r3]
+ 6600              		.loc 1 172 0
+ 6601 02ae F923     		movs	r3, #249
+ 6602 02b0 9B00     		lsls	r3, r3, #2
+ 6603 02b2 FB18     		adds	r3, r7, r3
+ 6604 02b4 F322     		movs	r2, #243
+ 6605 02b6 9200     		lsls	r2, r2, #2
+ 6606 02b8 BA18     		adds	r2, r7, r2
+ 6607 02ba 1A60     		str	r2, [r3]
  173:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	load_image(&pressObj.images[0], pressBlack, pressLight, pressGray);
- 6580              		.loc 1 173 0
- 6581 02bc F923     		movs	r3, #249
- 6582 02be 9B00     		lsls	r3, r3, #2
- 6583 02c0 FB18     		adds	r3, r7, r3
- 6584 02c2 1868     		ldr	r0, [r3]
- 6585 02c4 D34B     		ldr	r3, .L62+44
- 6586 02c6 1968     		ldr	r1, [r3]
- 6587 02c8 D34B     		ldr	r3, .L62+48
- 6588 02ca 1A68     		ldr	r2, [r3]
- 6589 02cc D34B     		ldr	r3, .L62+52
- 6590 02ce 1B68     		ldr	r3, [r3]
- 6591 02d0 FFF7FEFF 		bl	load_image
+ 6608              		.loc 1 173 0
+ 6609 02bc F923     		movs	r3, #249
+ 6610 02be 9B00     		lsls	r3, r3, #2
+ 6611 02c0 FB18     		adds	r3, r7, r3
+ 6612 02c2 1868     		ldr	r0, [r3]
+ 6613 02c4 D24B     		ldr	r3, .L67+44
+ 6614 02c6 1968     		ldr	r1, [r3]
+ 6615 02c8 D24B     		ldr	r3, .L67+48
+ 6616 02ca 1A68     		ldr	r2, [r3]
+ 6617 02cc D24B     		ldr	r3, .L67+52
+ 6618 02ce 1B68     		ldr	r3, [r3]
+ 6619 02d0 FFF7FEFF 		bl	load_image
  174:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	pressObj.xPos = 65-30;
- 6592              		.loc 1 174 0
- 6593 02d4 F923     		movs	r3, #249
- 6594 02d6 9B00     		lsls	r3, r3, #2
- 6595 02d8 FB18     		adds	r3, r7, r3
- 6596 02da 2322     		movs	r2, #35
- 6597 02dc 5A60     		str	r2, [r3, #4]
+ 6620              		.loc 1 174 0
+ 6621 02d4 F923     		movs	r3, #249
+ 6622 02d6 9B00     		lsls	r3, r3, #2
+ 6623 02d8 FB18     		adds	r3, r7, r3
+ 6624 02da 2322     		movs	r2, #35
+ 6625 02dc 5A60     		str	r2, [r3, #4]
  175:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	pressObj.yPos = 29-15;
- 6598              		.loc 1 175 0
- 6599 02de F923     		movs	r3, #249
- 6600 02e0 9B00     		lsls	r3, r3, #2
- 6601 02e2 FB18     		adds	r3, r7, r3
- 6602 02e4 0E22     		movs	r2, #14
- 6603 02e6 9A60     		str	r2, [r3, #8]
+ 6626              		.loc 1 175 0
+ 6627 02de F923     		movs	r3, #249
+ 6628 02e0 9B00     		lsls	r3, r3, #2
+ 6629 02e2 FB18     		adds	r3, r7, r3
+ 6630 02e4 0E22     		movs	r2, #14
+ 6631 02e6 9A60     		str	r2, [r3, #8]
  176:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	pressObj.current_frame = 0;
- 6604              		.loc 1 176 0
- 6605 02e8 F923     		movs	r3, #249
- 6606 02ea 9B00     		lsls	r3, r3, #2
- 6607 02ec FB18     		adds	r3, r7, r3
- 6608 02ee 0022     		movs	r2, #0
- 6609 02f0 5A61     		str	r2, [r3, #20]
+ 6632              		.loc 1 176 0
+ 6633 02e8 F923     		movs	r3, #249
+ 6634 02ea 9B00     		lsls	r3, r3, #2
+ 6635 02ec FB18     		adds	r3, r7, r3
+ 6636 02ee 0022     		movs	r2, #0
+ 6637 02f0 5A61     		str	r2, [r3, #20]
  177:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	
  178:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	GameObject castleObj;
  179:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	Image castleImage;
  180:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	Image castleImages[] = {castleImage};
- 6610              		.loc 1 180 0
- 6611 02f2 CB4B     		ldr	r3, .L62+56
- 6612 02f4 9322     		movs	r2, #147
- 6613 02f6 D200     		lsls	r2, r2, #3
- 6614 02f8 9446     		mov	ip, r2
- 6615 02fa BC44     		add	ip, ip, r7
- 6616 02fc 6344     		add	r3, r3, ip
- 6617 02fe E722     		movs	r2, #231
- 6618 0300 9200     		lsls	r2, r2, #2
- 6619 0302 BA18     		adds	r2, r7, r2
- 6620 0304 13CA     		ldmia	r2!, {r0, r1, r4}
- 6621 0306 13C3     		stmia	r3!, {r0, r1, r4}
+ 6638              		.loc 1 180 0
+ 6639 02f2 CA4B     		ldr	r3, .L67+56
+ 6640 02f4 9422     		movs	r2, #148
+ 6641 02f6 D200     		lsls	r2, r2, #3
+ 6642 02f8 BA18     		adds	r2, r7, r2
+ 6643 02fa D118     		adds	r1, r2, r3
+ 6644 02fc C84B     		ldr	r3, .L67+60
+ 6645 02fe 9422     		movs	r2, #148
+ 6646 0300 D200     		lsls	r2, r2, #3
+ 6647 0302 BA18     		adds	r2, r7, r2
+ 6648 0304 D218     		adds	r2, r2, r3
+ 6649 0306 0B00     		movs	r3, r1
+ 6650 0308 13CA     		ldmia	r2!, {r0, r1, r4}
+ 6651 030a 13C3     		stmia	r3!, {r0, r1, r4}
  181:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	castleObj.images = castleImages;
- 6622              		.loc 1 181 0
- 6623 0308 EA23     		movs	r3, #234
- 6624 030a 9B00     		lsls	r3, r3, #2
- 6625 030c FB18     		adds	r3, r7, r3
- 6626 030e E422     		movs	r2, #228
- 6627 0310 9200     		lsls	r2, r2, #2
- 6628 0312 BA18     		adds	r2, r7, r2
- 6629 0314 1A60     		str	r2, [r3]
+ 6652              		.loc 1 181 0
+ 6653 030c EA23     		movs	r3, #234
+ 6654 030e 9B00     		lsls	r3, r3, #2
+ 6655 0310 FB18     		adds	r3, r7, r3
+ 6656 0312 E422     		movs	r2, #228
+ 6657 0314 9200     		lsls	r2, r2, #2
+ 6658 0316 BA18     		adds	r2, r7, r2
+ 6659 0318 1A60     		str	r2, [r3]
  182:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	load_image(&castleObj.images[0], castleBlack, castleGray, castleLight);
- 6630              		.loc 1 182 0
- 6631 0316 EA23     		movs	r3, #234
- 6632 0318 9B00     		lsls	r3, r3, #2
- 6633 031a FB18     		adds	r3, r7, r3
- 6634 031c 1868     		ldr	r0, [r3]
- 6635 031e C14B     		ldr	r3, .L62+60
- 6636 0320 1968     		ldr	r1, [r3]
- 6637 0322 C14B     		ldr	r3, .L62+64
- 6638 0324 1A68     		ldr	r2, [r3]
- 6639 0326 C14B     		ldr	r3, .L62+68
- 6640 0328 1B68     		ldr	r3, [r3]
- 6641 032a FFF7FEFF 		bl	load_image
+ 6660              		.loc 1 182 0
+ 6661 031a EA23     		movs	r3, #234
+ 6662 031c 9B00     		lsls	r3, r3, #2
+ 6663 031e FB18     		adds	r3, r7, r3
+ 6664 0320 1868     		ldr	r0, [r3]
+ 6665 0322 C04B     		ldr	r3, .L67+64
+ 6666 0324 1968     		ldr	r1, [r3]
+ 6667 0326 C04B     		ldr	r3, .L67+68
+ 6668 0328 1A68     		ldr	r2, [r3]
+ 6669 032a C04B     		ldr	r3, .L67+72
+ 6670 032c 1B68     		ldr	r3, [r3]
+ 6671 032e FFF7FEFF 		bl	load_image
  183:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	castleObj.xPos = 1;
- 6642              		.loc 1 183 0
- 6643 032e EA23     		movs	r3, #234
- 6644 0330 9B00     		lsls	r3, r3, #2
- 6645 0332 FB18     		adds	r3, r7, r3
- 6646 0334 0122     		movs	r2, #1
- 6647 0336 5A60     		str	r2, [r3, #4]
+ 6672              		.loc 1 183 0
+ 6673 0332 EA23     		movs	r3, #234
+ 6674 0334 9B00     		lsls	r3, r3, #2
+ 6675 0336 FB18     		adds	r3, r7, r3
+ 6676 0338 0122     		movs	r2, #1
+ 6677 033a 5A60     		str	r2, [r3, #4]
  184:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	castleObj.yPos = 1;
- 6648              		.loc 1 184 0
- 6649 0338 EA23     		movs	r3, #234
- 6650 033a 9B00     		lsls	r3, r3, #2
- 6651 033c FB18     		adds	r3, r7, r3
- 6652 033e 0122     		movs	r2, #1
- 6653 0340 9A60     		str	r2, [r3, #8]
+ 6678              		.loc 1 184 0
+ 6679 033c EA23     		movs	r3, #234
+ 6680 033e 9B00     		lsls	r3, r3, #2
+ 6681 0340 FB18     		adds	r3, r7, r3
+ 6682 0342 0122     		movs	r2, #1
+ 6683 0344 9A60     		str	r2, [r3, #8]
  185:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	castleObj.current_frame = 0;
- 6654              		.loc 1 185 0
- 6655 0342 EA23     		movs	r3, #234
- 6656 0344 9B00     		lsls	r3, r3, #2
- 6657 0346 FB18     		adds	r3, r7, r3
- 6658 0348 0022     		movs	r2, #0
- 6659 034a 5A61     		str	r2, [r3, #20]
+ 6684              		.loc 1 185 0
+ 6685 0346 EA23     		movs	r3, #234
+ 6686 0348 9B00     		lsls	r3, r3, #2
+ 6687 034a FB18     		adds	r3, r7, r3
+ 6688 034c 0022     		movs	r2, #0
+ 6689 034e 5A61     		str	r2, [r3, #20]
  186:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	
  187:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	GameObject indoors;
  188:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	init_indoors( &indoors );
- 6660              		.loc 1 188 0
- 6661 034c DB23     		movs	r3, #219
- 6662 034e 9B00     		lsls	r3, r3, #2
- 6663 0350 FB18     		adds	r3, r7, r3
- 6664 0352 1800     		movs	r0, r3
- 6665 0354 FFF7FEFF 		bl	init_indoors
+ 6690              		.loc 1 188 0
+ 6691 0350 DB23     		movs	r3, #219
+ 6692 0352 9B00     		lsls	r3, r3, #2
+ 6693 0354 FB18     		adds	r3, r7, r3
+ 6694 0356 1800     		movs	r0, r3
+ 6695 0358 FFF7FEFF 		bl	init_indoors
  189:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	indoors.xPos = 1;
- 6666              		.loc 1 189 0
- 6667 0358 B54B     		ldr	r3, .L62+72
- 6668 035a 9322     		movs	r2, #147
- 6669 035c D200     		lsls	r2, r2, #3
- 6670 035e 9446     		mov	ip, r2
- 6671 0360 BC44     		add	ip, ip, r7
- 6672 0362 6344     		add	r3, r3, ip
- 6673 0364 0122     		movs	r2, #1
- 6674 0366 5A60     		str	r2, [r3, #4]
+ 6696              		.loc 1 189 0
+ 6697 035c B44B     		ldr	r3, .L67+76
+ 6698 035e 9422     		movs	r2, #148
+ 6699 0360 D200     		lsls	r2, r2, #3
+ 6700 0362 9446     		mov	ip, r2
+ 6701 0364 BC44     		add	ip, ip, r7
+ 6702 0366 6344     		add	r3, r3, ip
+ 6703 0368 0122     		movs	r2, #1
+ 6704 036a 5A60     		str	r2, [r3, #4]
  190:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	indoors.yPos = 1;
- 6675              		.loc 1 190 0
- 6676 0368 B14B     		ldr	r3, .L62+72
- 6677 036a 9322     		movs	r2, #147
- 6678 036c D200     		lsls	r2, r2, #3
- 6679 036e 9446     		mov	ip, r2
- 6680 0370 BC44     		add	ip, ip, r7
- 6681 0372 6344     		add	r3, r3, ip
- 6682 0374 0122     		movs	r2, #1
- 6683 0376 9A60     		str	r2, [r3, #8]
+ 6705              		.loc 1 190 0
+ 6706 036c B04B     		ldr	r3, .L67+76
+ 6707 036e 9422     		movs	r2, #148
+ 6708 0370 D200     		lsls	r2, r2, #3
+ 6709 0372 9446     		mov	ip, r2
+ 6710 0374 BC44     		add	ip, ip, r7
+ 6711 0376 6344     		add	r3, r3, ip
+ 6712 0378 0122     		movs	r2, #1
+ 6713 037a 9A60     		str	r2, [r3, #8]
  191:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	
  192:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	GameObject indoors2;
  193:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	init_indoors2( &indoors2 );
- 6684              		.loc 1 193 0
- 6685 0378 D223     		movs	r3, #210
- 6686 037a 9B00     		lsls	r3, r3, #2
- 6687 037c FB18     		adds	r3, r7, r3
- 6688 037e 1800     		movs	r0, r3
- 6689 0380 FFF7FEFF 		bl	init_indoors2
+ 6714              		.loc 1 193 0
+ 6715 037c D223     		movs	r3, #210
+ 6716 037e 9B00     		lsls	r3, r3, #2
+ 6717 0380 FB18     		adds	r3, r7, r3
+ 6718 0382 1800     		movs	r0, r3
+ 6719 0384 FFF7FEFF 		bl	init_indoors2
  194:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	indoors2.xPos = 1;
- 6690              		.loc 1 194 0
- 6691 0384 AB4B     		ldr	r3, .L62+76
- 6692 0386 9322     		movs	r2, #147
- 6693 0388 D200     		lsls	r2, r2, #3
- 6694 038a 9446     		mov	ip, r2
- 6695 038c BC44     		add	ip, ip, r7
- 6696 038e 6344     		add	r3, r3, ip
- 6697 0390 0122     		movs	r2, #1
- 6698 0392 5A60     		str	r2, [r3, #4]
+ 6720              		.loc 1 194 0
+ 6721 0388 AA4B     		ldr	r3, .L67+80
+ 6722 038a 9422     		movs	r2, #148
+ 6723 038c D200     		lsls	r2, r2, #3
+ 6724 038e 9446     		mov	ip, r2
+ 6725 0390 BC44     		add	ip, ip, r7
+ 6726 0392 6344     		add	r3, r3, ip
+ 6727 0394 0122     		movs	r2, #1
+ 6728 0396 5A60     		str	r2, [r3, #4]
  195:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	indoors2.yPos = 1;
- 6699              		.loc 1 195 0
- 6700 0394 A74B     		ldr	r3, .L62+76
- 6701 0396 9322     		movs	r2, #147
- 6702 0398 D200     		lsls	r2, r2, #3
- 6703 039a 9446     		mov	ip, r2
- 6704 039c BC44     		add	ip, ip, r7
- 6705 039e 6344     		add	r3, r3, ip
- 6706 03a0 0122     		movs	r2, #1
- 6707 03a2 9A60     		str	r2, [r3, #8]
+ 6729              		.loc 1 195 0
+ 6730 0398 A64B     		ldr	r3, .L67+80
+ 6731 039a 9422     		movs	r2, #148
+ 6732 039c D200     		lsls	r2, r2, #3
+ 6733 039e 9446     		mov	ip, r2
+ 6734 03a0 BC44     		add	ip, ip, r7
+ 6735 03a2 6344     		add	r3, r3, ip
+ 6736 03a4 0122     		movs	r2, #1
+ 6737 03a6 9A60     		str	r2, [r3, #8]
  196:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	
  197:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	GameObject trophy;
  198:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	init_trophy( &trophy );
- 6708              		.loc 1 198 0
- 6709 03a4 C923     		movs	r3, #201
- 6710 03a6 9B00     		lsls	r3, r3, #2
- 6711 03a8 FB18     		adds	r3, r7, r3
- 6712 03aa 1800     		movs	r0, r3
- 6713 03ac FFF7FEFF 		bl	init_trophy
+ 6738              		.loc 1 198 0
+ 6739 03a8 C923     		movs	r3, #201
+ 6740 03aa 9B00     		lsls	r3, r3, #2
+ 6741 03ac FB18     		adds	r3, r7, r3
+ 6742 03ae 1800     		movs	r0, r3
+ 6743 03b0 FFF7FEFF 		bl	init_trophy
  199:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 
  200:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	
  201:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	GameObject hair;
  202:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	init_flame(&hair);
- 6714              		.loc 1 202 0
- 6715 03b0 C023     		movs	r3, #192
- 6716 03b2 9B00     		lsls	r3, r3, #2
- 6717 03b4 FB18     		adds	r3, r7, r3
- 6718 03b6 1800     		movs	r0, r3
- 6719 03b8 FFF7FEFF 		bl	init_flame
+ 6744              		.loc 1 202 0
+ 6745 03b4 C023     		movs	r3, #192
+ 6746 03b6 9B00     		lsls	r3, r3, #2
+ 6747 03b8 FB18     		adds	r3, r7, r3
+ 6748 03ba 1800     		movs	r0, r3
+ 6749 03bc FFF7FEFF 		bl	init_flame
  203:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	hair.xPos = 40;
- 6720              		.loc 1 203 0
- 6721 03bc 9E4B     		ldr	r3, .L62+80
- 6722 03be 9322     		movs	r2, #147
- 6723 03c0 D200     		lsls	r2, r2, #3
- 6724 03c2 9446     		mov	ip, r2
- 6725 03c4 BC44     		add	ip, ip, r7
- 6726 03c6 6344     		add	r3, r3, ip
- 6727 03c8 2822     		movs	r2, #40
- 6728 03ca 5A60     		str	r2, [r3, #4]
+ 6750              		.loc 1 203 0
+ 6751 03c0 9D4B     		ldr	r3, .L67+84
+ 6752 03c2 9422     		movs	r2, #148
+ 6753 03c4 D200     		lsls	r2, r2, #3
+ 6754 03c6 9446     		mov	ip, r2
+ 6755 03c8 BC44     		add	ip, ip, r7
+ 6756 03ca 6344     		add	r3, r3, ip
+ 6757 03cc 2822     		movs	r2, #40
+ 6758 03ce 5A60     		str	r2, [r3, #4]
  204:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	hair.yPos = 10;
- 6729              		.loc 1 204 0
- 6730 03cc 9A4B     		ldr	r3, .L62+80
- 6731 03ce 9322     		movs	r2, #147
- 6732 03d0 D200     		lsls	r2, r2, #3
- 6733 03d2 9446     		mov	ip, r2
- 6734 03d4 BC44     		add	ip, ip, r7
- 6735 03d6 6344     		add	r3, r3, ip
- 6736 03d8 0A22     		movs	r2, #10
- 6737 03da 9A60     		str	r2, [r3, #8]
+ 6759              		.loc 1 204 0
+ 6760 03d0 994B     		ldr	r3, .L67+84
+ 6761 03d2 9422     		movs	r2, #148
+ 6762 03d4 D200     		lsls	r2, r2, #3
+ 6763 03d6 9446     		mov	ip, r2
+ 6764 03d8 BC44     		add	ip, ip, r7
+ 6765 03da 6344     		add	r3, r3, ip
+ 6766 03dc 0A22     		movs	r2, #10
+ 6767 03de 9A60     		str	r2, [r3, #8]
  205:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	hair.update = gameObjectUpdate;
- 6738              		.loc 1 205 0
- 6739 03dc 964B     		ldr	r3, .L62+80
- 6740 03de 9322     		movs	r2, #147
- 6741 03e0 D200     		lsls	r2, r2, #3
- 6742 03e2 9446     		mov	ip, r2
- 6743 03e4 BC44     		add	ip, ip, r7
- 6744 03e6 6344     		add	r3, r3, ip
- 6745 03e8 944A     		ldr	r2, .L62+84
- 6746 03ea DA60     		str	r2, [r3, #12]
+ 6768              		.loc 1 205 0
+ 6769 03e0 954B     		ldr	r3, .L67+84
+ 6770 03e2 9422     		movs	r2, #148
+ 6771 03e4 D200     		lsls	r2, r2, #3
+ 6772 03e6 9446     		mov	ip, r2
+ 6773 03e8 BC44     		add	ip, ip, r7
+ 6774 03ea 6344     		add	r3, r3, ip
+ 6775 03ec 934A     		ldr	r2, .L67+88
+ 6776 03ee DA60     		str	r2, [r3, #12]
  206:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	
  207:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	GameObject bird;
  208:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	init_bird( &bird );
- 6747              		.loc 1 208 0
- 6748 03ec B723     		movs	r3, #183
- 6749 03ee 9B00     		lsls	r3, r3, #2
- 6750 03f0 FB18     		adds	r3, r7, r3
- 6751 03f2 1800     		movs	r0, r3
- 6752 03f4 FFF7FEFF 		bl	init_bird
+ 6777              		.loc 1 208 0
+ 6778 03f0 B723     		movs	r3, #183
+ 6779 03f2 9B00     		lsls	r3, r3, #2
+ 6780 03f4 FB18     		adds	r3, r7, r3
+ 6781 03f6 1800     		movs	r0, r3
+ 6782 03f8 FFF7FEFF 		bl	init_bird
  209:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	bird.xPos = 180;
- 6753              		.loc 1 209 0
- 6754 03f8 914B     		ldr	r3, .L62+88
- 6755 03fa 9322     		movs	r2, #147
- 6756 03fc D200     		lsls	r2, r2, #3
- 6757 03fe 9446     		mov	ip, r2
- 6758 0400 BC44     		add	ip, ip, r7
- 6759 0402 6344     		add	r3, r3, ip
- 6760 0404 B422     		movs	r2, #180
- 6761 0406 5A60     		str	r2, [r3, #4]
+ 6783              		.loc 1 209 0
+ 6784 03fc 904B     		ldr	r3, .L67+92
+ 6785 03fe 9422     		movs	r2, #148
+ 6786 0400 D200     		lsls	r2, r2, #3
+ 6787 0402 9446     		mov	ip, r2
+ 6788 0404 BC44     		add	ip, ip, r7
+ 6789 0406 6344     		add	r3, r3, ip
+ 6790 0408 B422     		movs	r2, #180
+ 6791 040a 5A60     		str	r2, [r3, #4]
  210:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	bird.yPos = 40;
- 6762              		.loc 1 210 0
- 6763 0408 8D4B     		ldr	r3, .L62+88
- 6764 040a 9322     		movs	r2, #147
- 6765 040c D200     		lsls	r2, r2, #3
- 6766 040e 9446     		mov	ip, r2
- 6767 0410 BC44     		add	ip, ip, r7
- 6768 0412 6344     		add	r3, r3, ip
- 6769 0414 2822     		movs	r2, #40
- 6770 0416 9A60     		str	r2, [r3, #8]
+ 6792              		.loc 1 210 0
+ 6793 040c 8C4B     		ldr	r3, .L67+92
+ 6794 040e 9422     		movs	r2, #148
+ 6795 0410 D200     		lsls	r2, r2, #3
+ 6796 0412 9446     		mov	ip, r2
+ 6797 0414 BC44     		add	ip, ip, r7
+ 6798 0416 6344     		add	r3, r3, ip
+ 6799 0418 2822     		movs	r2, #40
+ 6800 041a 9A60     		str	r2, [r3, #8]
  211:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	bird.update = gameObjectUpdate;
- 6771              		.loc 1 211 0
- 6772 0418 894B     		ldr	r3, .L62+88
- 6773 041a 9322     		movs	r2, #147
- 6774 041c D200     		lsls	r2, r2, #3
- 6775 041e 9446     		mov	ip, r2
- 6776 0420 BC44     		add	ip, ip, r7
- 6777 0422 6344     		add	r3, r3, ip
- 6778 0424 854A     		ldr	r2, .L62+84
- 6779 0426 DA60     		str	r2, [r3, #12]
+ 6801              		.loc 1 211 0
+ 6802 041c 884B     		ldr	r3, .L67+92
+ 6803 041e 9422     		movs	r2, #148
+ 6804 0420 D200     		lsls	r2, r2, #3
+ 6805 0422 9446     		mov	ip, r2
+ 6806 0424 BC44     		add	ip, ip, r7
+ 6807 0426 6344     		add	r3, r3, ip
+ 6808 0428 844A     		ldr	r2, .L67+88
+ 6809 042a DA60     		str	r2, [r3, #12]
  212:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	
  213:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	GameObject boom;
  214:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	init_boom( &boom );
- 6780              		.loc 1 214 0
- 6781 0428 AE23     		movs	r3, #174
- 6782 042a 9B00     		lsls	r3, r3, #2
- 6783 042c FB18     		adds	r3, r7, r3
- 6784 042e 1800     		movs	r0, r3
- 6785 0430 FFF7FEFF 		bl	init_boom
+ 6810              		.loc 1 214 0
+ 6811 042c AE23     		movs	r3, #174
+ 6812 042e 9B00     		lsls	r3, r3, #2
+ 6813 0430 FB18     		adds	r3, r7, r3
+ 6814 0432 1800     		movs	r0, r3
+ 6815 0434 FFF7FEFF 		bl	init_boom
  215:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	boom.update = gameObjectUpdate;
- 6786              		.loc 1 215 0
- 6787 0434 834B     		ldr	r3, .L62+92
- 6788 0436 9322     		movs	r2, #147
- 6789 0438 D200     		lsls	r2, r2, #3
- 6790 043a 9446     		mov	ip, r2
- 6791 043c BC44     		add	ip, ip, r7
- 6792 043e 6344     		add	r3, r3, ip
- 6793 0440 7E4A     		ldr	r2, .L62+84
- 6794 0442 DA60     		str	r2, [r3, #12]
+ 6816              		.loc 1 215 0
+ 6817 0438 824B     		ldr	r3, .L67+96
+ 6818 043a 9422     		movs	r2, #148
+ 6819 043c D200     		lsls	r2, r2, #3
+ 6820 043e 9446     		mov	ip, r2
+ 6821 0440 BC44     		add	ip, ip, r7
+ 6822 0442 6344     		add	r3, r3, ip
+ 6823 0444 7D4A     		ldr	r2, .L67+88
+ 6824 0446 DA60     		str	r2, [r3, #12]
  216:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	
  217:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	GameObject DIP;
  218:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	init_DIP( &DIP );
- 6795              		.loc 1 218 0
- 6796 0444 A523     		movs	r3, #165
- 6797 0446 9B00     		lsls	r3, r3, #2
- 6798 0448 FB18     		adds	r3, r7, r3
- 6799 044a 1800     		movs	r0, r3
- 6800 044c FFF7FEFF 		bl	init_DIP
+ 6825              		.loc 1 218 0
+ 6826 0448 A523     		movs	r3, #165
+ 6827 044a 9B00     		lsls	r3, r3, #2
+ 6828 044c FB18     		adds	r3, r7, r3
+ 6829 044e 1800     		movs	r0, r3
+ 6830 0450 FFF7FEFF 		bl	init_DIP
  219:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	DIP.update = DIPUpdate;
- 6801              		.loc 1 219 0
- 6802 0450 7D4B     		ldr	r3, .L62+96
- 6803 0452 9322     		movs	r2, #147
- 6804 0454 D200     		lsls	r2, r2, #3
- 6805 0456 9446     		mov	ip, r2
- 6806 0458 BC44     		add	ip, ip, r7
- 6807 045a 6344     		add	r3, r3, ip
- 6808 045c 7B4A     		ldr	r2, .L62+100
- 6809 045e DA60     		str	r2, [r3, #12]
+ 6831              		.loc 1 219 0
+ 6832 0454 7C4B     		ldr	r3, .L67+100
+ 6833 0456 9422     		movs	r2, #148
+ 6834 0458 D200     		lsls	r2, r2, #3
+ 6835 045a 9446     		mov	ip, r2
+ 6836 045c BC44     		add	ip, ip, r7
+ 6837 045e 6344     		add	r3, r3, ip
+ 6838 0460 7A4A     		ldr	r2, .L67+104
+ 6839 0462 DA60     		str	r2, [r3, #12]
  220:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	
  221:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	GameObject player;
  222:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	init_witch( &player );
- 6810              		.loc 1 222 0
- 6811 0460 9C23     		movs	r3, #156
- 6812 0462 9B00     		lsls	r3, r3, #2
- 6813 0464 FB18     		adds	r3, r7, r3
- 6814 0466 1800     		movs	r0, r3
- 6815 0468 FFF7FEFF 		bl	init_witch
+ 6840              		.loc 1 222 0
+ 6841 0464 9C23     		movs	r3, #156
+ 6842 0466 9B00     		lsls	r3, r3, #2
+ 6843 0468 FB18     		adds	r3, r7, r3
+ 6844 046a 1800     		movs	r0, r3
+ 6845 046c FFF7FEFF 		bl	init_witch
  223:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	player.xPos = 3;
- 6816              		.loc 1 223 0
- 6817 046c 784B     		ldr	r3, .L62+104
- 6818 046e 9322     		movs	r2, #147
- 6819 0470 D200     		lsls	r2, r2, #3
- 6820 0472 9446     		mov	ip, r2
- 6821 0474 BC44     		add	ip, ip, r7
- 6822 0476 6344     		add	r3, r3, ip
- 6823 0478 0322     		movs	r2, #3
- 6824 047a 5A60     		str	r2, [r3, #4]
+ 6846              		.loc 1 223 0
+ 6847 0470 774B     		ldr	r3, .L67+108
+ 6848 0472 9422     		movs	r2, #148
+ 6849 0474 D200     		lsls	r2, r2, #3
+ 6850 0476 9446     		mov	ip, r2
+ 6851 0478 BC44     		add	ip, ip, r7
+ 6852 047a 6344     		add	r3, r3, ip
+ 6853 047c 0322     		movs	r2, #3
+ 6854 047e 5A60     		str	r2, [r3, #4]
  224:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	player.yPos = LIMIT_DOWN - 1; //player position
- 6825              		.loc 1 224 0
- 6826 047c 744B     		ldr	r3, .L62+104
- 6827 047e 9322     		movs	r2, #147
- 6828 0480 D200     		lsls	r2, r2, #3
- 6829 0482 9446     		mov	ip, r2
- 6830 0484 BC44     		add	ip, ip, r7
- 6831 0486 6344     		add	r3, r3, ip
- 6832 0488 2622     		movs	r2, #38
- 6833 048a 9A60     		str	r2, [r3, #8]
+ 6855              		.loc 1 224 0
+ 6856 0480 734B     		ldr	r3, .L67+108
+ 6857 0482 9422     		movs	r2, #148
+ 6858 0484 D200     		lsls	r2, r2, #3
+ 6859 0486 9446     		mov	ip, r2
+ 6860 0488 BC44     		add	ip, ip, r7
+ 6861 048a 6344     		add	r3, r3, ip
+ 6862 048c 2622     		movs	r2, #38
+ 6863 048e 9A60     		str	r2, [r3, #8]
  225:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	player.update = playerUpdate;
- 6834              		.loc 1 225 0
- 6835 048c 704B     		ldr	r3, .L62+104
- 6836 048e 9322     		movs	r2, #147
- 6837 0490 D200     		lsls	r2, r2, #3
- 6838 0492 9446     		mov	ip, r2
- 6839 0494 BC44     		add	ip, ip, r7
- 6840 0496 6344     		add	r3, r3, ip
- 6841 0498 594A     		ldr	r2, .L62+24
- 6842 049a DA60     		str	r2, [r3, #12]
+ 6864              		.loc 1 225 0
+ 6865 0490 6F4B     		ldr	r3, .L67+108
+ 6866 0492 9422     		movs	r2, #148
+ 6867 0494 D200     		lsls	r2, r2, #3
+ 6868 0496 9446     		mov	ip, r2
+ 6869 0498 BC44     		add	ip, ip, r7
+ 6870 049a 6344     		add	r3, r3, ip
+ 6871 049c 574A     		ldr	r2, .L67+24
+ 6872 049e DA60     		str	r2, [r3, #12]
  226:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	
  227:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	GameObject fire2;
  228:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	init_fire( &fire2 );
- 6843              		.loc 1 228 0
- 6844 049c 9323     		movs	r3, #147
- 6845 049e 9B00     		lsls	r3, r3, #2
- 6846 04a0 FB18     		adds	r3, r7, r3
- 6847 04a2 1800     		movs	r0, r3
- 6848 04a4 FFF7FEFF 		bl	init_fire
+ 6873              		.loc 1 228 0
+ 6874 04a0 9323     		movs	r3, #147
+ 6875 04a2 9B00     		lsls	r3, r3, #2
+ 6876 04a4 FB18     		adds	r3, r7, r3
+ 6877 04a6 1800     		movs	r0, r3
+ 6878 04a8 FFF7FEFF 		bl	init_fire
  229:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	GameObject fire3;
  230:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	init_fire( &fire3 );
- 6849              		.loc 1 230 0
- 6850 04a8 8A23     		movs	r3, #138
- 6851 04aa 9B00     		lsls	r3, r3, #2
- 6852 04ac FB18     		adds	r3, r7, r3
- 6853 04ae 1800     		movs	r0, r3
- 6854 04b0 FFF7FEFF 		bl	init_fire
+ 6879              		.loc 1 230 0
+ 6880 04ac 8A23     		movs	r3, #138
+ 6881 04ae 9B00     		lsls	r3, r3, #2
+ 6882 04b0 FB18     		adds	r3, r7, r3
+ 6883 04b2 1800     		movs	r0, r3
+ 6884 04b4 FFF7FEFF 		bl	init_fire
  231:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	GameObject fire4;
  232:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	init_fire( &fire4 );
- 6855              		.loc 1 232 0
- 6856 04b4 8123     		movs	r3, #129
- 6857 04b6 9B00     		lsls	r3, r3, #2
- 6858 04b8 FB18     		adds	r3, r7, r3
- 6859 04ba 1800     		movs	r0, r3
- 6860 04bc FFF7FEFF 		bl	init_fire
+ 6885              		.loc 1 232 0
+ 6886 04b8 8123     		movs	r3, #129
+ 6887 04ba 9B00     		lsls	r3, r3, #2
+ 6888 04bc FB18     		adds	r3, r7, r3
+ 6889 04be 1800     		movs	r0, r3
+ 6890 04c0 FFF7FEFF 		bl	init_fire
  233:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	GameObject fire1;
  234:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	init_fire( &fire1 );
- 6861              		.loc 1 234 0
- 6862 04c0 F023     		movs	r3, #240
- 6863 04c2 5B00     		lsls	r3, r3, #1
- 6864 04c4 FB18     		adds	r3, r7, r3
- 6865 04c6 1800     		movs	r0, r3
- 6866 04c8 FFF7FEFF 		bl	init_fire
+ 6891              		.loc 1 234 0
+ 6892 04c4 F023     		movs	r3, #240
+ 6893 04c6 5B00     		lsls	r3, r3, #1
+ 6894 04c8 FB18     		adds	r3, r7, r3
+ 6895 04ca 1800     		movs	r0, r3
+ 6896 04cc FFF7FEFF 		bl	init_fire
  235:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	
  236:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	GameObject fire1_indoors;
  237:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	init_fire( &fire1_indoors );
- 6867              		.loc 1 237 0
- 6868 04cc DE23     		movs	r3, #222
- 6869 04ce 5B00     		lsls	r3, r3, #1
- 6870 04d0 FB18     		adds	r3, r7, r3
- 6871 04d2 1800     		movs	r0, r3
- 6872 04d4 FFF7FEFF 		bl	init_fire
+ 6897              		.loc 1 237 0
+ 6898 04d0 DE23     		movs	r3, #222
+ 6899 04d2 5B00     		lsls	r3, r3, #1
+ 6900 04d4 FB18     		adds	r3, r7, r3
+ 6901 04d6 1800     		movs	r0, r3
+ 6902 04d8 FFF7FEFF 		bl	init_fire
  238:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	fire1_indoors.xPos = 50;		//FIRE1_INDO
- 6873              		.loc 1 238 0
- 6874 04d8 5E4B     		ldr	r3, .L62+108
- 6875 04da 9322     		movs	r2, #147
- 6876 04dc D200     		lsls	r2, r2, #3
- 6877 04de 9446     		mov	ip, r2
- 6878 04e0 BC44     		add	ip, ip, r7
- 6879 04e2 6344     		add	r3, r3, ip
- 6880 04e4 3222     		movs	r2, #50
- 6881 04e6 5A60     		str	r2, [r3, #4]
+ 6903              		.loc 1 238 0
+ 6904 04dc 5D4B     		ldr	r3, .L67+112
+ 6905 04de 9422     		movs	r2, #148
+ 6906 04e0 D200     		lsls	r2, r2, #3
+ 6907 04e2 9446     		mov	ip, r2
+ 6908 04e4 BC44     		add	ip, ip, r7
+ 6909 04e6 6344     		add	r3, r3, ip
+ 6910 04e8 3222     		movs	r2, #50
+ 6911 04ea 5A60     		str	r2, [r3, #4]
  239:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	fire1_indoors.yPos = 64-12-7;
- 6882              		.loc 1 239 0
- 6883 04e8 5A4B     		ldr	r3, .L62+108
- 6884 04ea 9322     		movs	r2, #147
- 6885 04ec D200     		lsls	r2, r2, #3
- 6886 04ee 9446     		mov	ip, r2
- 6887 04f0 BC44     		add	ip, ip, r7
- 6888 04f2 6344     		add	r3, r3, ip
- 6889 04f4 2D22     		movs	r2, #45
- 6890 04f6 9A60     		str	r2, [r3, #8]
+ 6912              		.loc 1 239 0
+ 6913 04ec 594B     		ldr	r3, .L67+112
+ 6914 04ee 9422     		movs	r2, #148
+ 6915 04f0 D200     		lsls	r2, r2, #3
+ 6916 04f2 9446     		mov	ip, r2
+ 6917 04f4 BC44     		add	ip, ip, r7
+ 6918 04f6 6344     		add	r3, r3, ip
+ 6919 04f8 2D22     		movs	r2, #45
+ 6920 04fa 9A60     		str	r2, [r3, #8]
  240:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	fire1_indoors.update = gameObjectUpdate;
- 6891              		.loc 1 240 0
- 6892 04f8 564B     		ldr	r3, .L62+108
- 6893 04fa 9322     		movs	r2, #147
- 6894 04fc D200     		lsls	r2, r2, #3
- 6895 04fe 9446     		mov	ip, r2
- 6896 0500 BC44     		add	ip, ip, r7
- 6897 0502 6344     		add	r3, r3, ip
- 6898 0504 4D4A     		ldr	r2, .L62+84
- 6899 0506 DA60     		str	r2, [r3, #12]
+ 6921              		.loc 1 240 0
+ 6922 04fc 554B     		ldr	r3, .L67+112
+ 6923 04fe 9422     		movs	r2, #148
+ 6924 0500 D200     		lsls	r2, r2, #3
+ 6925 0502 9446     		mov	ip, r2
+ 6926 0504 BC44     		add	ip, ip, r7
+ 6927 0506 6344     		add	r3, r3, ip
+ 6928 0508 4C4A     		ldr	r2, .L67+88
+ 6929 050a DA60     		str	r2, [r3, #12]
  241:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	GameObject fire2_indoors;
  242:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	init_fire( &fire2_indoors );
- 6900              		.loc 1 242 0
- 6901 0508 CC23     		movs	r3, #204
- 6902 050a 5B00     		lsls	r3, r3, #1
- 6903 050c FB18     		adds	r3, r7, r3
- 6904 050e 1800     		movs	r0, r3
- 6905 0510 FFF7FEFF 		bl	init_fire
+ 6930              		.loc 1 242 0
+ 6931 050c CC23     		movs	r3, #204
+ 6932 050e 5B00     		lsls	r3, r3, #1
+ 6933 0510 FB18     		adds	r3, r7, r3
+ 6934 0512 1800     		movs	r0, r3
+ 6935 0514 FFF7FEFF 		bl	init_fire
  243:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	fire2_indoors.update = gameObjectUpdate;
- 6906              		.loc 1 243 0
- 6907 0514 504B     		ldr	r3, .L62+112
- 6908 0516 9322     		movs	r2, #147
- 6909 0518 D200     		lsls	r2, r2, #3
- 6910 051a 9446     		mov	ip, r2
- 6911 051c BC44     		add	ip, ip, r7
- 6912 051e 6344     		add	r3, r3, ip
- 6913 0520 464A     		ldr	r2, .L62+84
- 6914 0522 DA60     		str	r2, [r3, #12]
+ 6936              		.loc 1 243 0
+ 6937 0518 4F4B     		ldr	r3, .L67+116
+ 6938 051a 9422     		movs	r2, #148
+ 6939 051c D200     		lsls	r2, r2, #3
+ 6940 051e 9446     		mov	ip, r2
+ 6941 0520 BC44     		add	ip, ip, r7
+ 6942 0522 6344     		add	r3, r3, ip
+ 6943 0524 454A     		ldr	r2, .L67+88
+ 6944 0526 DA60     		str	r2, [r3, #12]
  244:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	GameObject fire3_indoors;
  245:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	init_fire( &fire3_indoors );
- 6915              		.loc 1 245 0
- 6916 0524 BA23     		movs	r3, #186
- 6917 0526 5B00     		lsls	r3, r3, #1
- 6918 0528 FB18     		adds	r3, r7, r3
- 6919 052a 1800     		movs	r0, r3
- 6920 052c FFF7FEFF 		bl	init_fire
+ 6945              		.loc 1 245 0
+ 6946 0528 BA23     		movs	r3, #186
+ 6947 052a 5B00     		lsls	r3, r3, #1
+ 6948 052c FB18     		adds	r3, r7, r3
+ 6949 052e 1800     		movs	r0, r3
+ 6950 0530 FFF7FEFF 		bl	init_fire
  246:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	fire3_indoors.update = gameObjectUpdate;
- 6921              		.loc 1 246 0
- 6922 0530 4A4B     		ldr	r3, .L62+116
- 6923 0532 9322     		movs	r2, #147
- 6924 0534 D200     		lsls	r2, r2, #3
- 6925 0536 9446     		mov	ip, r2
- 6926 0538 BC44     		add	ip, ip, r7
- 6927 053a 6344     		add	r3, r3, ip
- 6928 053c 3F4A     		ldr	r2, .L62+84
- 6929 053e DA60     		str	r2, [r3, #12]
+ 6951              		.loc 1 246 0
+ 6952 0534 494B     		ldr	r3, .L67+120
+ 6953 0536 9422     		movs	r2, #148
+ 6954 0538 D200     		lsls	r2, r2, #3
+ 6955 053a 9446     		mov	ip, r2
+ 6956 053c BC44     		add	ip, ip, r7
+ 6957 053e 6344     		add	r3, r3, ip
+ 6958 0540 3E4A     		ldr	r2, .L67+88
+ 6959 0542 DA60     		str	r2, [r3, #12]
  247:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	GameObject fires[] = {fire1_indoors, fire2_indoors, fire3_indoors};
- 6930              		.loc 1 247 0
- 6931 0540 474B     		ldr	r3, .L62+120
- 6932 0542 9322     		movs	r2, #147
- 6933 0544 D200     		lsls	r2, r2, #3
- 6934 0546 BA18     		adds	r2, r7, r2
- 6935 0548 D118     		adds	r1, r2, r3
- 6936 054a 424B     		ldr	r3, .L62+108
- 6937 054c 9322     		movs	r2, #147
- 6938 054e D200     		lsls	r2, r2, #3
- 6939 0550 BA18     		adds	r2, r7, r2
- 6940 0552 D218     		adds	r2, r2, r3
- 6941 0554 0B00     		movs	r3, r1
- 6942 0556 13CA     		ldmia	r2!, {r0, r1, r4}
- 6943 0558 13C3     		stmia	r3!, {r0, r1, r4}
- 6944 055a 13CA     		ldmia	r2!, {r0, r1, r4}
- 6945 055c 13C3     		stmia	r3!, {r0, r1, r4}
- 6946 055e 13CA     		ldmia	r2!, {r0, r1, r4}
- 6947 0560 13C3     		stmia	r3!, {r0, r1, r4}
- 6948 0562 3F4B     		ldr	r3, .L62+120
- 6949 0564 9322     		movs	r2, #147
- 6950 0566 D200     		lsls	r2, r2, #3
- 6951 0568 9446     		mov	ip, r2
- 6952 056a BC44     		add	ip, ip, r7
- 6953 056c 6344     		add	r3, r3, ip
- 6954 056e 3A4A     		ldr	r2, .L62+112
- 6955 0570 9321     		movs	r1, #147
- 6956 0572 C900     		lsls	r1, r1, #3
- 6957 0574 8C46     		mov	ip, r1
- 6958 0576 BC44     		add	ip, ip, r7
- 6959 0578 6244     		add	r2, r2, ip
- 6960 057a 2433     		adds	r3, r3, #36
- 6961 057c 13CA     		ldmia	r2!, {r0, r1, r4}
- 6962 057e 13C3     		stmia	r3!, {r0, r1, r4}
- 6963 0580 13CA     		ldmia	r2!, {r0, r1, r4}
- 6964 0582 13C3     		stmia	r3!, {r0, r1, r4}
- 6965 0584 13CA     		ldmia	r2!, {r0, r1, r4}
- 6966 0586 13C3     		stmia	r3!, {r0, r1, r4}
- 6967 0588 354B     		ldr	r3, .L62+120
- 6968 058a 9322     		movs	r2, #147
- 6969 058c D200     		lsls	r2, r2, #3
- 6970 058e 9446     		mov	ip, r2
- 6971 0590 BC44     		add	ip, ip, r7
- 6972 0592 6344     		add	r3, r3, ip
- 6973 0594 314A     		ldr	r2, .L62+116
- 6974 0596 9321     		movs	r1, #147
- 6975 0598 C900     		lsls	r1, r1, #3
- 6976 059a 8C46     		mov	ip, r1
- 6977 059c BC44     		add	ip, ip, r7
- 6978 059e 6244     		add	r2, r2, ip
- 6979 05a0 4833     		adds	r3, r3, #72
- 6980 05a2 13CA     		ldmia	r2!, {r0, r1, r4}
- 6981 05a4 13C3     		stmia	r3!, {r0, r1, r4}
- 6982 05a6 13CA     		ldmia	r2!, {r0, r1, r4}
- 6983 05a8 13C3     		stmia	r3!, {r0, r1, r4}
- 6984 05aa 13CA     		ldmia	r2!, {r0, r1, r4}
- 6985 05ac 13C3     		stmia	r3!, {r0, r1, r4}
+ 6960              		.loc 1 247 0
+ 6961 0544 464B     		ldr	r3, .L67+124
+ 6962 0546 9422     		movs	r2, #148
+ 6963 0548 D200     		lsls	r2, r2, #3
+ 6964 054a BA18     		adds	r2, r7, r2
+ 6965 054c D118     		adds	r1, r2, r3
+ 6966 054e 414B     		ldr	r3, .L67+112
+ 6967 0550 9422     		movs	r2, #148
+ 6968 0552 D200     		lsls	r2, r2, #3
+ 6969 0554 BA18     		adds	r2, r7, r2
+ 6970 0556 D218     		adds	r2, r2, r3
+ 6971 0558 0B00     		movs	r3, r1
+ 6972 055a 13CA     		ldmia	r2!, {r0, r1, r4}
+ 6973 055c 13C3     		stmia	r3!, {r0, r1, r4}
+ 6974 055e 13CA     		ldmia	r2!, {r0, r1, r4}
+ 6975 0560 13C3     		stmia	r3!, {r0, r1, r4}
+ 6976 0562 13CA     		ldmia	r2!, {r0, r1, r4}
+ 6977 0564 13C3     		stmia	r3!, {r0, r1, r4}
+ 6978 0566 3E4B     		ldr	r3, .L67+124
+ 6979 0568 9422     		movs	r2, #148
+ 6980 056a D200     		lsls	r2, r2, #3
+ 6981 056c 9446     		mov	ip, r2
+ 6982 056e BC44     		add	ip, ip, r7
+ 6983 0570 6344     		add	r3, r3, ip
+ 6984 0572 394A     		ldr	r2, .L67+116
+ 6985 0574 9421     		movs	r1, #148
+ 6986 0576 C900     		lsls	r1, r1, #3
+ 6987 0578 8C46     		mov	ip, r1
+ 6988 057a BC44     		add	ip, ip, r7
+ 6989 057c 6244     		add	r2, r2, ip
+ 6990 057e 2433     		adds	r3, r3, #36
+ 6991 0580 13CA     		ldmia	r2!, {r0, r1, r4}
+ 6992 0582 13C3     		stmia	r3!, {r0, r1, r4}
+ 6993 0584 13CA     		ldmia	r2!, {r0, r1, r4}
+ 6994 0586 13C3     		stmia	r3!, {r0, r1, r4}
+ 6995 0588 13CA     		ldmia	r2!, {r0, r1, r4}
+ 6996 058a 13C3     		stmia	r3!, {r0, r1, r4}
+ 6997 058c 344B     		ldr	r3, .L67+124
+ 6998 058e 9422     		movs	r2, #148
+ 6999 0590 D200     		lsls	r2, r2, #3
+ 7000 0592 9446     		mov	ip, r2
+ 7001 0594 BC44     		add	ip, ip, r7
+ 7002 0596 6344     		add	r3, r3, ip
+ 7003 0598 304A     		ldr	r2, .L67+120
+ 7004 059a 9421     		movs	r1, #148
+ 7005 059c C900     		lsls	r1, r1, #3
+ 7006 059e 8C46     		mov	ip, r1
+ 7007 05a0 BC44     		add	ip, ip, r7
+ 7008 05a2 6244     		add	r2, r2, ip
+ 7009 05a4 4833     		adds	r3, r3, #72
+ 7010 05a6 13CA     		ldmia	r2!, {r0, r1, r4}
+ 7011 05a8 13C3     		stmia	r3!, {r0, r1, r4}
+ 7012 05aa 13CA     		ldmia	r2!, {r0, r1, r4}
+ 7013 05ac 13C3     		stmia	r3!, {r0, r1, r4}
+ 7014 05ae 13CA     		ldmia	r2!, {r0, r1, r4}
+ 7015 05b0 13C3     		stmia	r3!, {r0, r1, r4}
  248:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	
  249:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	
  250:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	fire2.xPos = 98;
- 6986              		.loc 1 250 0
- 6987 05ae 2D4B     		ldr	r3, .L62+124
- 6988 05b0 9322     		movs	r2, #147
- 6989 05b2 D200     		lsls	r2, r2, #3
- 6990 05b4 9446     		mov	ip, r2
- 6991 05b6 BC44     		add	ip, ip, r7
- 6992 05b8 6344     		add	r3, r3, ip
- 6993 05ba 6222     		movs	r2, #98
- 6994 05bc 5A60     		str	r2, [r3, #4]
+ 7016              		.loc 1 250 0
+ 7017 05b2 2C4B     		ldr	r3, .L67+128
+ 7018 05b4 9422     		movs	r2, #148
+ 7019 05b6 D200     		lsls	r2, r2, #3
+ 7020 05b8 9446     		mov	ip, r2
+ 7021 05ba BC44     		add	ip, ip, r7
+ 7022 05bc 6344     		add	r3, r3, ip
+ 7023 05be 6222     		movs	r2, #98
+ 7024 05c0 5A60     		str	r2, [r3, #4]
  251:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	fire2.yPos = 26-12;
- 6995              		.loc 1 251 0
- 6996 05be 294B     		ldr	r3, .L62+124
- 6997 05c0 9322     		movs	r2, #147
- 6998 05c2 D200     		lsls	r2, r2, #3
- 6999 05c4 9446     		mov	ip, r2
- 7000 05c6 BC44     		add	ip, ip, r7
- 7001 05c8 6344     		add	r3, r3, ip
- 7002 05ca 0E22     		movs	r2, #14
- 7003 05cc 9A60     		str	r2, [r3, #8]
+ 7025              		.loc 1 251 0
+ 7026 05c2 284B     		ldr	r3, .L67+128
+ 7027 05c4 9422     		movs	r2, #148
+ 7028 05c6 D200     		lsls	r2, r2, #3
+ 7029 05c8 9446     		mov	ip, r2
+ 7030 05ca BC44     		add	ip, ip, r7
+ 7031 05cc 6344     		add	r3, r3, ip
+ 7032 05ce 0E22     		movs	r2, #14
+ 7033 05d0 9A60     		str	r2, [r3, #8]
  252:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	fire3.xPos = 115;
- 7004              		.loc 1 252 0
- 7005 05ce 264B     		ldr	r3, .L62+128
- 7006 05d0 9322     		movs	r2, #147
- 7007 05d2 D200     		lsls	r2, r2, #3
- 7008 05d4 9446     		mov	ip, r2
- 7009 05d6 BC44     		add	ip, ip, r7
- 7010 05d8 6344     		add	r3, r3, ip
- 7011 05da 7322     		movs	r2, #115
- 7012 05dc 5A60     		str	r2, [r3, #4]
+ 7034              		.loc 1 252 0
+ 7035 05d2 254B     		ldr	r3, .L67+132
+ 7036 05d4 9422     		movs	r2, #148
+ 7037 05d6 D200     		lsls	r2, r2, #3
+ 7038 05d8 9446     		mov	ip, r2
+ 7039 05da BC44     		add	ip, ip, r7
+ 7040 05dc 6344     		add	r3, r3, ip
+ 7041 05de 7322     		movs	r2, #115
+ 7042 05e0 5A60     		str	r2, [r3, #4]
+ 7043 05e2 43E0     		b	.L68
+ 7044              	.L69:
+ 7045              		.align	2
+ 7046              	.L67:
+ 7047 05e4 5CFBFFFF 		.word	-1188
+ 7048 05e8 44040000 		.word	1092
+ 7049 05ec 5C040000 		.word	1116
+ 7050 05f0 00000000 		.word	monster
+ 7051 05f4 00000000 		.word	monsterGray
+ 7052 05f8 00000000 		.word	monsterLight
+ 7053 05fc 00000000 		.word	playerUpdate
+ 7054 0600 14040000 		.word	1044
+ 7055 0604 00000000 		.word	titleBlack
+ 7056 0608 00000000 		.word	titleGray
+ 7057 060c 00000000 		.word	titleLight
+ 7058 0610 00000000 		.word	pressBlack
+ 7059 0614 00000000 		.word	pressLight
+ 7060 0618 00000000 		.word	pressGray
+ 7061 061c F0FEFFFF 		.word	-272
+ 7062 0620 FCFEFFFF 		.word	-260
+ 7063 0624 00000000 		.word	castleBlack
+ 7064 0628 00000000 		.word	castleGray
+ 7065 062c 00000000 		.word	castleLight
+ 7066 0630 CCFEFFFF 		.word	-308
+ 7067 0634 A8FEFFFF 		.word	-344
+ 7068 0638 60FEFFFF 		.word	-416
+ 7069 063c 00000000 		.word	gameObjectUpdate
+ 7070 0640 3CFEFFFF 		.word	-452
+ 7071 0644 18FEFFFF 		.word	-488
+ 7072 0648 F4FDFFFF 		.word	-524
+ 7073 064c 00000000 		.word	DIPUpdate
+ 7074 0650 D0FDFFFF 		.word	-560
+ 7075 0654 1CFDFFFF 		.word	-740
+ 7076 0658 F8FCFFFF 		.word	-776
+ 7077 065c D4FCFFFF 		.word	-812
+ 7078 0660 68FCFFFF 		.word	-920
+ 7079 0664 ACFDFFFF 		.word	-596
+ 7080 0668 88FDFFFF 		.word	-632
+ 7081              	.L68:
  253:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	fire3.yPos = 34-12;
- 7013              		.loc 1 253 0
- 7014 05de 224B     		ldr	r3, .L62+128
- 7015 05e0 9322     		movs	r2, #147
- 7016 05e2 D200     		lsls	r2, r2, #3
- 7017 05e4 9446     		mov	ip, r2
- 7018 05e6 41E0     		b	.L63
- 7019              	.L64:
- 7020              		.align	2
- 7021              	.L62:
- 7022 05e8 64FBFFFF 		.word	-1180
- 7023 05ec 44040000 		.word	1092
- 7024 05f0 5C040000 		.word	1116
- 7025 05f4 00000000 		.word	monster
- 7026 05f8 00000000 		.word	monsterGray
- 7027 05fc 00000000 		.word	monsterLight
- 7028 0600 00000000 		.word	playerUpdate
- 7029 0604 14040000 		.word	1044
- 7030 0608 00000000 		.word	titleBlack
- 7031 060c 00000000 		.word	titleGray
- 7032 0610 00000000 		.word	titleLight
- 7033 0614 00000000 		.word	pressBlack
- 7034 0618 00000000 		.word	pressLight
- 7035 061c 00000000 		.word	pressGray
- 7036 0620 F8FEFFFF 		.word	-264
- 7037 0624 00000000 		.word	castleBlack
- 7038 0628 00000000 		.word	castleGray
- 7039 062c 00000000 		.word	castleLight
- 7040 0630 D4FEFFFF 		.word	-300
- 7041 0634 B0FEFFFF 		.word	-336
- 7042 0638 68FEFFFF 		.word	-408
- 7043 063c 00000000 		.word	gameObjectUpdate
- 7044 0640 44FEFFFF 		.word	-444
- 7045 0644 20FEFFFF 		.word	-480
- 7046 0648 FCFDFFFF 		.word	-516
- 7047 064c 00000000 		.word	DIPUpdate
- 7048 0650 D8FDFFFF 		.word	-552
- 7049 0654 24FDFFFF 		.word	-732
- 7050 0658 00FDFFFF 		.word	-768
- 7051 065c DCFCFFFF 		.word	-804
- 7052 0660 70FCFFFF 		.word	-912
- 7053 0664 B4FDFFFF 		.word	-588
- 7054 0668 90FDFFFF 		.word	-624
- 7055              	.L63:
- 7056 066c BC44     		add	ip, ip, r7
- 7057 066e 6344     		add	r3, r3, ip
- 7058 0670 1622     		movs	r2, #22
- 7059 0672 9A60     		str	r2, [r3, #8]
+ 7082              		.loc 1 253 0
+ 7083 066c E54B     		ldr	r3, .L70
+ 7084 066e 9422     		movs	r2, #148
+ 7085 0670 D200     		lsls	r2, r2, #3
+ 7086 0672 9446     		mov	ip, r2
+ 7087 0674 BC44     		add	ip, ip, r7
+ 7088 0676 6344     		add	r3, r3, ip
+ 7089 0678 1622     		movs	r2, #22
+ 7090 067a 9A60     		str	r2, [r3, #8]
  254:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	
  255:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	fire1.xPos = 85;
- 7060              		.loc 1 255 0
- 7061 0674 EA4B     		ldr	r3, .L65
- 7062 0676 9322     		movs	r2, #147
- 7063 0678 D200     		lsls	r2, r2, #3
- 7064 067a 9446     		mov	ip, r2
- 7065 067c BC44     		add	ip, ip, r7
- 7066 067e 6344     		add	r3, r3, ip
- 7067 0680 5522     		movs	r2, #85
- 7068 0682 5A60     		str	r2, [r3, #4]
+ 7091              		.loc 1 255 0
+ 7092 067c E24B     		ldr	r3, .L70+4
+ 7093 067e 9422     		movs	r2, #148
+ 7094 0680 D200     		lsls	r2, r2, #3
+ 7095 0682 9446     		mov	ip, r2
+ 7096 0684 BC44     		add	ip, ip, r7
+ 7097 0686 6344     		add	r3, r3, ip
+ 7098 0688 5522     		movs	r2, #85
+ 7099 068a 5A60     		str	r2, [r3, #4]
  256:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	fire1.yPos = 23-12;
- 7069              		.loc 1 256 0
- 7070 0684 E64B     		ldr	r3, .L65
- 7071 0686 9322     		movs	r2, #147
- 7072 0688 D200     		lsls	r2, r2, #3
- 7073 068a 9446     		mov	ip, r2
- 7074 068c BC44     		add	ip, ip, r7
- 7075 068e 6344     		add	r3, r3, ip
- 7076 0690 0B22     		movs	r2, #11
- 7077 0692 9A60     		str	r2, [r3, #8]
+ 7100              		.loc 1 256 0
+ 7101 068c DE4B     		ldr	r3, .L70+4
+ 7102 068e 9422     		movs	r2, #148
+ 7103 0690 D200     		lsls	r2, r2, #3
+ 7104 0692 9446     		mov	ip, r2
+ 7105 0694 BC44     		add	ip, ip, r7
+ 7106 0696 6344     		add	r3, r3, ip
+ 7107 0698 0B22     		movs	r2, #11
+ 7108 069a 9A60     		str	r2, [r3, #8]
  257:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	fire4.xPos = 71;
- 7078              		.loc 1 257 0
- 7079 0694 E34B     		ldr	r3, .L65+4
- 7080 0696 9322     		movs	r2, #147
- 7081 0698 D200     		lsls	r2, r2, #3
- 7082 069a 9446     		mov	ip, r2
- 7083 069c BC44     		add	ip, ip, r7
- 7084 069e 6344     		add	r3, r3, ip
- 7085 06a0 4722     		movs	r2, #71
- 7086 06a2 5A60     		str	r2, [r3, #4]
+ 7109              		.loc 1 257 0
+ 7110 069c DB4B     		ldr	r3, .L70+8
+ 7111 069e 9422     		movs	r2, #148
+ 7112 06a0 D200     		lsls	r2, r2, #3
+ 7113 06a2 9446     		mov	ip, r2
+ 7114 06a4 BC44     		add	ip, ip, r7
+ 7115 06a6 6344     		add	r3, r3, ip
+ 7116 06a8 4722     		movs	r2, #71
+ 7117 06aa 5A60     		str	r2, [r3, #4]
  258:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	fire4.yPos = 27-11;
- 7087              		.loc 1 258 0
- 7088 06a4 DF4B     		ldr	r3, .L65+4
- 7089 06a6 9322     		movs	r2, #147
- 7090 06a8 D200     		lsls	r2, r2, #3
- 7091 06aa 9446     		mov	ip, r2
- 7092 06ac BC44     		add	ip, ip, r7
- 7093 06ae 6344     		add	r3, r3, ip
- 7094 06b0 1022     		movs	r2, #16
- 7095 06b2 9A60     		str	r2, [r3, #8]
+ 7118              		.loc 1 258 0
+ 7119 06ac D74B     		ldr	r3, .L70+8
+ 7120 06ae 9422     		movs	r2, #148
+ 7121 06b0 D200     		lsls	r2, r2, #3
+ 7122 06b2 9446     		mov	ip, r2
+ 7123 06b4 BC44     		add	ip, ip, r7
+ 7124 06b6 6344     		add	r3, r3, ip
+ 7125 06b8 1022     		movs	r2, #16
+ 7126 06ba 9A60     		str	r2, [r3, #8]
  259:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	//draw_game_object(&castleObj);
  260:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	
  261:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	fire2.animation_speed = 2;
- 7096              		.loc 1 261 0
- 7097 06b4 DC4B     		ldr	r3, .L65+8
- 7098 06b6 9322     		movs	r2, #147
- 7099 06b8 D200     		lsls	r2, r2, #3
- 7100 06ba 9446     		mov	ip, r2
- 7101 06bc BC44     		add	ip, ip, r7
- 7102 06be 6344     		add	r3, r3, ip
- 7103 06c0 0222     		movs	r2, #2
- 7104 06c2 DA61     		str	r2, [r3, #28]
+ 7127              		.loc 1 261 0
+ 7128 06bc D44B     		ldr	r3, .L70+12
+ 7129 06be 9422     		movs	r2, #148
+ 7130 06c0 D200     		lsls	r2, r2, #3
+ 7131 06c2 9446     		mov	ip, r2
+ 7132 06c4 BC44     		add	ip, ip, r7
+ 7133 06c6 6344     		add	r3, r3, ip
+ 7134 06c8 0222     		movs	r2, #2
+ 7135 06ca DA61     		str	r2, [r3, #28]
  262:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	fire3.animation_speed = 2;
- 7105              		.loc 1 262 0
- 7106 06c4 D94B     		ldr	r3, .L65+12
- 7107 06c6 9322     		movs	r2, #147
- 7108 06c8 D200     		lsls	r2, r2, #3
- 7109 06ca 9446     		mov	ip, r2
- 7110 06cc BC44     		add	ip, ip, r7
- 7111 06ce 6344     		add	r3, r3, ip
- 7112 06d0 0222     		movs	r2, #2
- 7113 06d2 DA61     		str	r2, [r3, #28]
+ 7136              		.loc 1 262 0
+ 7137 06cc CD4B     		ldr	r3, .L70
+ 7138 06ce 9422     		movs	r2, #148
+ 7139 06d0 D200     		lsls	r2, r2, #3
+ 7140 06d2 9446     		mov	ip, r2
+ 7141 06d4 BC44     		add	ip, ip, r7
+ 7142 06d6 6344     		add	r3, r3, ip
+ 7143 06d8 0222     		movs	r2, #2
+ 7144 06da DA61     		str	r2, [r3, #28]
  263:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	fire1.animation_speed = 2;
- 7114              		.loc 1 263 0
- 7115 06d4 D24B     		ldr	r3, .L65
- 7116 06d6 9322     		movs	r2, #147
- 7117 06d8 D200     		lsls	r2, r2, #3
- 7118 06da 9446     		mov	ip, r2
- 7119 06dc BC44     		add	ip, ip, r7
- 7120 06de 6344     		add	r3, r3, ip
- 7121 06e0 0222     		movs	r2, #2
- 7122 06e2 DA61     		str	r2, [r3, #28]
+ 7145              		.loc 1 263 0
+ 7146 06dc CA4B     		ldr	r3, .L70+4
+ 7147 06de 9422     		movs	r2, #148
+ 7148 06e0 D200     		lsls	r2, r2, #3
+ 7149 06e2 9446     		mov	ip, r2
+ 7150 06e4 BC44     		add	ip, ip, r7
+ 7151 06e6 6344     		add	r3, r3, ip
+ 7152 06e8 0222     		movs	r2, #2
+ 7153 06ea DA61     		str	r2, [r3, #28]
  264:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	fire4.animation_speed = 2;
- 7123              		.loc 1 264 0
- 7124 06e4 CF4B     		ldr	r3, .L65+4
- 7125 06e6 9322     		movs	r2, #147
- 7126 06e8 D200     		lsls	r2, r2, #3
- 7127 06ea 9446     		mov	ip, r2
- 7128 06ec BC44     		add	ip, ip, r7
- 7129 06ee 6344     		add	r3, r3, ip
- 7130 06f0 0222     		movs	r2, #2
- 7131 06f2 DA61     		str	r2, [r3, #28]
+ 7154              		.loc 1 264 0
+ 7155 06ec C74B     		ldr	r3, .L70+8
+ 7156 06ee 9422     		movs	r2, #148
+ 7157 06f0 D200     		lsls	r2, r2, #3
+ 7158 06f2 9446     		mov	ip, r2
+ 7159 06f4 BC44     		add	ip, ip, r7
+ 7160 06f6 6344     		add	r3, r3, ip
+ 7161 06f8 0222     		movs	r2, #2
+ 7162 06fa DA61     		str	r2, [r3, #28]
  265:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	
  266:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	fire2.update = gameObjectUpdate;
- 7132              		.loc 1 266 0
- 7133 06f4 CC4B     		ldr	r3, .L65+8
- 7134 06f6 9322     		movs	r2, #147
- 7135 06f8 D200     		lsls	r2, r2, #3
- 7136 06fa 9446     		mov	ip, r2
- 7137 06fc BC44     		add	ip, ip, r7
- 7138 06fe 6344     		add	r3, r3, ip
- 7139 0700 CB4A     		ldr	r2, .L65+16
- 7140 0702 DA60     		str	r2, [r3, #12]
+ 7163              		.loc 1 266 0
+ 7164 06fc C44B     		ldr	r3, .L70+12
+ 7165 06fe 9422     		movs	r2, #148
+ 7166 0700 D200     		lsls	r2, r2, #3
+ 7167 0702 9446     		mov	ip, r2
+ 7168 0704 BC44     		add	ip, ip, r7
+ 7169 0706 6344     		add	r3, r3, ip
+ 7170 0708 C24A     		ldr	r2, .L70+16
+ 7171 070a DA60     		str	r2, [r3, #12]
  267:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	fire3.update = gameObjectUpdate;
- 7141              		.loc 1 267 0
- 7142 0704 C94B     		ldr	r3, .L65+12
- 7143 0706 9322     		movs	r2, #147
- 7144 0708 D200     		lsls	r2, r2, #3
- 7145 070a 9446     		mov	ip, r2
- 7146 070c BC44     		add	ip, ip, r7
- 7147 070e 6344     		add	r3, r3, ip
- 7148 0710 C74A     		ldr	r2, .L65+16
- 7149 0712 DA60     		str	r2, [r3, #12]
+ 7172              		.loc 1 267 0
+ 7173 070c BD4B     		ldr	r3, .L70
+ 7174 070e 9422     		movs	r2, #148
+ 7175 0710 D200     		lsls	r2, r2, #3
+ 7176 0712 9446     		mov	ip, r2
+ 7177 0714 BC44     		add	ip, ip, r7
+ 7178 0716 6344     		add	r3, r3, ip
+ 7179 0718 BE4A     		ldr	r2, .L70+16
+ 7180 071a DA60     		str	r2, [r3, #12]
  268:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	fire1.update = gameObjectUpdate;
- 7150              		.loc 1 268 0
- 7151 0714 C24B     		ldr	r3, .L65
- 7152 0716 9322     		movs	r2, #147
- 7153 0718 D200     		lsls	r2, r2, #3
- 7154 071a 9446     		mov	ip, r2
- 7155 071c BC44     		add	ip, ip, r7
- 7156 071e 6344     		add	r3, r3, ip
- 7157 0720 C34A     		ldr	r2, .L65+16
- 7158 0722 DA60     		str	r2, [r3, #12]
+ 7181              		.loc 1 268 0
+ 7182 071c BA4B     		ldr	r3, .L70+4
+ 7183 071e 9422     		movs	r2, #148
+ 7184 0720 D200     		lsls	r2, r2, #3
+ 7185 0722 9446     		mov	ip, r2
+ 7186 0724 BC44     		add	ip, ip, r7
+ 7187 0726 6344     		add	r3, r3, ip
+ 7188 0728 BA4A     		ldr	r2, .L70+16
+ 7189 072a DA60     		str	r2, [r3, #12]
  269:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	fire4.update = gameObjectUpdate;
- 7159              		.loc 1 269 0
- 7160 0724 BF4B     		ldr	r3, .L65+4
- 7161 0726 9322     		movs	r2, #147
- 7162 0728 D200     		lsls	r2, r2, #3
- 7163 072a 9446     		mov	ip, r2
- 7164 072c BC44     		add	ip, ip, r7
- 7165 072e 6344     		add	r3, r3, ip
- 7166 0730 BF4A     		ldr	r2, .L65+16
- 7167 0732 DA60     		str	r2, [r3, #12]
+ 7190              		.loc 1 269 0
+ 7191 072c B74B     		ldr	r3, .L70+8
+ 7192 072e 9422     		movs	r2, #148
+ 7193 0730 D200     		lsls	r2, r2, #3
+ 7194 0732 9446     		mov	ip, r2
+ 7195 0734 BC44     		add	ip, ip, r7
+ 7196 0736 6344     		add	r3, r3, ip
+ 7197 0738 B64A     		ldr	r2, .L70+16
+ 7198 073a DA60     		str	r2, [r3, #12]
  270:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	
  271:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	SlowText text_kra;
  272:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	SlowText text1;
@@ -7503,2523 +7566,2778 @@
  282:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	SlowText text11;
  283:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	SlowText text12;
  284:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	init_slow_text(&text_kra, "*KRA!* *KRA!*", "   ", 1);
- 7168              		.loc 1 284 0
- 7169 0734 BF4A     		ldr	r2, .L65+20
- 7170 0736 C049     		ldr	r1, .L65+24
- 7171 0738 F423     		movs	r3, #244
- 7172 073a F818     		adds	r0, r7, r3
- 7173 073c 0123     		movs	r3, #1
- 7174 073e FFF7FEFF 		bl	init_slow_text
+ 7199              		.loc 1 284 0
+ 7200 073c B64A     		ldr	r2, .L70+20
+ 7201 073e B749     		ldr	r1, .L70+24
+ 7202 0740 F423     		movs	r3, #244
+ 7203 0742 F818     		adds	r0, r7, r3
+ 7204 0744 0123     		movs	r3, #1
+ 7205 0746 FFF7FEFF 		bl	init_slow_text
  285:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	init_slow_text(&text1, "For centuries the", "DILs-witches have", 1);
- 7175              		.loc 1 285 0
- 7176 0742 BE4A     		ldr	r2, .L65+28
- 7177 0744 BE49     		ldr	r1, .L65+32
- 7178 0746 E023     		movs	r3, #224
- 7179 0748 F818     		adds	r0, r7, r3
- 7180 074a 0123     		movs	r3, #1
- 7181 074c FFF7FEFF 		bl	init_slow_text
+ 7206              		.loc 1 285 0
+ 7207 074a B54A     		ldr	r2, .L70+28
+ 7208 074c B549     		ldr	r1, .L70+32
+ 7209 074e E023     		movs	r3, #224
+ 7210 0750 F818     		adds	r0, r7, r3
+ 7211 0752 0123     		movs	r3, #1
+ 7212 0754 FFF7FEFF 		bl	init_slow_text
  286:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	init_slow_text(&text2, "coiled in fear,", "    ", 1);
- 7182              		.loc 1 286 0
- 7183 0750 BC4A     		ldr	r2, .L65+36
- 7184 0752 BD49     		ldr	r1, .L65+40
- 7185 0754 CC23     		movs	r3, #204
- 7186 0756 F818     		adds	r0, r7, r3
- 7187 0758 0123     		movs	r3, #1
- 7188 075a FFF7FEFF 		bl	init_slow_text
+ 7213              		.loc 1 286 0
+ 7214 0758 B34A     		ldr	r2, .L70+36
+ 7215 075a B449     		ldr	r1, .L70+40
+ 7216 075c CC23     		movs	r3, #204
+ 7217 075e F818     		adds	r0, r7, r3
+ 7218 0760 0123     		movs	r3, #1
+ 7219 0762 FFF7FEFF 		bl	init_slow_text
  287:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	init_slow_text(&text3, "whenever they hear", "that a DIPs-witch", 1);
- 7189              		.loc 1 287 0
- 7190 075e BB4A     		ldr	r2, .L65+44
- 7191 0760 BB49     		ldr	r1, .L65+48
- 7192 0762 B823     		movs	r3, #184
- 7193 0764 F818     		adds	r0, r7, r3
- 7194 0766 0123     		movs	r3, #1
- 7195 0768 FFF7FEFF 		bl	init_slow_text
+ 7220              		.loc 1 287 0
+ 7221 0766 B24A     		ldr	r2, .L70+44
+ 7222 0768 B249     		ldr	r1, .L70+48
+ 7223 076a B823     		movs	r3, #184
+ 7224 076c F818     		adds	r0, r7, r3
+ 7225 076e 0123     		movs	r3, #1
+ 7226 0770 FFF7FEFF 		bl	init_slow_text
  288:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	init_slow_text(&text4, "is near.", "   ", 1);
- 7196              		.loc 1 288 0
- 7197 076c B14A     		ldr	r2, .L65+20
- 7198 076e B949     		ldr	r1, .L65+52
- 7199 0770 A423     		movs	r3, #164
- 7200 0772 F818     		adds	r0, r7, r3
- 7201 0774 0123     		movs	r3, #1
- 7202 0776 FFF7FEFF 		bl	init_slow_text
+ 7227              		.loc 1 288 0
+ 7228 0774 A84A     		ldr	r2, .L70+20
+ 7229 0776 B049     		ldr	r1, .L70+52
+ 7230 0778 A423     		movs	r3, #164
+ 7231 077a F818     		adds	r0, r7, r3
+ 7232 077c 0123     		movs	r3, #1
+ 7233 077e FFF7FEFF 		bl	init_slow_text
  289:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	init_slow_text(&text5, "So it is quite", "surprising, finding", 1);
- 7203              		.loc 1 289 0
- 7204 077a B74A     		ldr	r2, .L65+56
- 7205 077c B749     		ldr	r1, .L65+60
- 7206 077e 9023     		movs	r3, #144
- 7207 0780 F818     		adds	r0, r7, r3
- 7208 0782 0123     		movs	r3, #1
- 7209 0784 FFF7FEFF 		bl	init_slow_text
+ 7234              		.loc 1 289 0
+ 7235 0782 AE4A     		ldr	r2, .L70+56
+ 7236 0784 AE49     		ldr	r1, .L70+60
+ 7237 0786 9023     		movs	r3, #144
+ 7238 0788 F818     		adds	r0, r7, r3
+ 7239 078a 0123     		movs	r3, #1
+ 7240 078c FFF7FEFF 		bl	init_slow_text
  290:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	init_slow_text(&text6, "you here,", "    ", 1);
- 7210              		.loc 1 290 0
- 7211 0788 AE4A     		ldr	r2, .L65+36
- 7212 078a B549     		ldr	r1, .L65+64
- 7213 078c 7C23     		movs	r3, #124
- 7214 078e F818     		adds	r0, r7, r3
- 7215 0790 0123     		movs	r3, #1
- 7216 0792 FFF7FEFF 		bl	init_slow_text
+ 7241              		.loc 1 290 0
+ 7242 0790 A54A     		ldr	r2, .L70+36
+ 7243 0792 AC49     		ldr	r1, .L70+64
+ 7244 0794 7C23     		movs	r3, #124
+ 7245 0796 F818     		adds	r0, r7, r3
+ 7246 0798 0123     		movs	r3, #1
+ 7247 079a FFF7FEFF 		bl	init_slow_text
  291:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	init_slow_text(&text7, "queen Daffo of DILs,", "heir to king Lear.", 1);
- 7217              		.loc 1 291 0
- 7218 0796 B34A     		ldr	r2, .L65+68
- 7219 0798 B349     		ldr	r1, .L65+72
- 7220 079a 6823     		movs	r3, #104
- 7221 079c F818     		adds	r0, r7, r3
- 7222 079e 0123     		movs	r3, #1
- 7223 07a0 FFF7FEFF 		bl	init_slow_text
+ 7248              		.loc 1 291 0
+ 7249 079e AA4A     		ldr	r2, .L70+68
+ 7250 07a0 AA49     		ldr	r1, .L70+72
+ 7251 07a2 6823     		movs	r3, #104
+ 7252 07a4 F818     		adds	r0, r7, r3
+ 7253 07a6 0123     		movs	r3, #1
+ 7254 07a8 FFF7FEFF 		bl	init_slow_text
  292:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	init_slow_text(&text8, "But maybe you're", "tempted, to loot", 1);
- 7224              		.loc 1 292 0
- 7225 07a4 B14A     		ldr	r2, .L65+76
- 7226 07a6 B249     		ldr	r1, .L65+80
- 7227 07a8 5423     		movs	r3, #84
- 7228 07aa F818     		adds	r0, r7, r3
- 7229 07ac 0123     		movs	r3, #1
- 7230 07ae FFF7FEFF 		bl	init_slow_text
+ 7255              		.loc 1 292 0
+ 7256 07ac A84A     		ldr	r2, .L70+76
+ 7257 07ae A949     		ldr	r1, .L70+80
+ 7258 07b0 5423     		movs	r3, #84
+ 7259 07b2 F818     		adds	r0, r7, r3
+ 7260 07b4 0123     		movs	r3, #1
+ 7261 07b6 FFF7FEFF 		bl	init_slow_text
  293:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	init_slow_text(&text9, "from the riches,", "    ", 1);
- 7231              		.loc 1 293 0
- 7232 07b2 A44A     		ldr	r2, .L65+36
- 7233 07b4 AF49     		ldr	r1, .L65+84
- 7234 07b6 4023     		movs	r3, #64
- 7235 07b8 F818     		adds	r0, r7, r3
- 7236 07ba 0123     		movs	r3, #1
- 7237 07bc FFF7FEFF 		bl	init_slow_text
+ 7262              		.loc 1 293 0
+ 7263 07ba 9B4A     		ldr	r2, .L70+36
+ 7264 07bc A649     		ldr	r1, .L70+84
+ 7265 07be 4023     		movs	r3, #64
+ 7266 07c0 F818     		adds	r0, r7, r3
+ 7267 07c2 0123     		movs	r3, #1
+ 7268 07c4 FFF7FEFF 		bl	init_slow_text
  294:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	init_slow_text(&text12, "wicked DIPs-witches.", "    ", 1);
- 7238              		.loc 1 294 0
- 7239 07c0 A04A     		ldr	r2, .L65+36
- 7240 07c2 AD49     		ldr	r1, .L65+88
- 7241 07c4 381D     		adds	r0, r7, #4
- 7242 07c6 0123     		movs	r3, #1
- 7243 07c8 FFF7FEFF 		bl	init_slow_text
+ 7269              		.loc 1 294 0
+ 7270 07c8 974A     		ldr	r2, .L70+36
+ 7271 07ca A449     		ldr	r1, .L70+88
+ 7272 07cc 381D     		adds	r0, r7, #4
+ 7273 07ce 0123     		movs	r3, #1
+ 7274 07d0 FFF7FEFF 		bl	init_slow_text
  295:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	init_slow_text(&text10, "so grippily trea-", "sured by", 1);
- 7244              		.loc 1 295 0
- 7245 07cc AB4A     		ldr	r2, .L65+92
- 7246 07ce AC49     		ldr	r1, .L65+96
- 7247 07d0 2C23     		movs	r3, #44
- 7248 07d2 F818     		adds	r0, r7, r3
- 7249 07d4 0123     		movs	r3, #1
- 7250 07d6 FFF7FEFF 		bl	init_slow_text
+ 7275              		.loc 1 295 0
+ 7276 07d4 A24A     		ldr	r2, .L70+92
+ 7277 07d6 A349     		ldr	r1, .L70+96
+ 7278 07d8 2C23     		movs	r3, #44
+ 7279 07da F818     		adds	r0, r7, r3
+ 7280 07dc 0123     		movs	r3, #1
+ 7281 07de FFF7FEFF 		bl	init_slow_text
  296:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	init_slow_text(&text11, "Enter, brave witch,", "- reset the switch!", 1);
- 7251              		.loc 1 296 0
- 7252 07da AA4A     		ldr	r2, .L65+100
- 7253 07dc AA49     		ldr	r1, .L65+104
- 7254 07de 1823     		movs	r3, #24
- 7255 07e0 F818     		adds	r0, r7, r3
- 7256 07e2 0123     		movs	r3, #1
- 7257 07e4 FFF7FEFF 		bl	init_slow_text
+ 7282              		.loc 1 296 0
+ 7283 07e2 A14A     		ldr	r2, .L70+100
+ 7284 07e4 A149     		ldr	r1, .L70+104
+ 7285 07e6 1823     		movs	r3, #24
+ 7286 07e8 F818     		adds	r0, r7, r3
+ 7287 07ea 0123     		movs	r3, #1
+ 7288 07ec FFF7FEFF 		bl	init_slow_text
  297:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	//ascii_write_part("Yeeaaah!!!", "This is working! :)", 5, 10);
  298:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	set_up_ascii();
- 7258              		.loc 1 298 0
- 7259 07e8 FFF7FEFF 		bl	set_up_ascii
+ 7289              		.loc 1 298 0
+ 7290 07f0 FFF7FEFF 		bl	set_up_ascii
  299:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	set_up_DIL();
- 7260              		.loc 1 299 0
- 7261 07ec FFF7FEFF 		bl	set_up_DIL
+ 7291              		.loc 1 299 0
+ 7292 07f4 FFF7FEFF 		bl	set_up_DIL
  300:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	clear_ascii();
- 7262              		.loc 1 300 0
- 7263 07f0 FFF7FEFF 		bl	clear_ascii
+ 7293              		.loc 1 300 0
+ 7294 07f8 FFF7FEFF 		bl	clear_ascii
  301:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	
  302:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	int is_climbing = 0;
- 7264              		.loc 1 302 0
- 7265 07f4 0023     		movs	r3, #0
- 7266 07f6 A54A     		ldr	r2, .L65+108
- 7267 07f8 BA18     		adds	r2, r7, r2
- 7268 07fa 1360     		str	r3, [r2]
+ 7295              		.loc 1 302 0
+ 7296 07fc 0023     		movs	r3, #0
+ 7297 07fe 9C4A     		ldr	r2, .L70+108
+ 7298 0800 BA18     		adds	r2, r7, r2
+ 7299 0802 1360     		str	r3, [r2]
  303:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	int has_climbed = 0;
- 7269              		.loc 1 303 0
- 7270 07fc 0023     		movs	r3, #0
- 7271 07fe 9222     		movs	r2, #146
- 7272 0800 D200     		lsls	r2, r2, #3
- 7273 0802 BA18     		adds	r2, r7, r2
- 7274 0804 1360     		str	r3, [r2]
+ 7300              		.loc 1 303 0
+ 7301 0804 0023     		movs	r3, #0
+ 7302 0806 9322     		movs	r2, #147
+ 7303 0808 D200     		lsls	r2, r2, #3
+ 7304 080a BA18     		adds	r2, r7, r2
+ 7305 080c 1360     		str	r3, [r2]
  304:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	int game_over = 0;
- 7275              		.loc 1 304 0
- 7276 0806 0023     		movs	r3, #0
- 7277 0808 A14A     		ldr	r2, .L65+112
- 7278 080a BA18     		adds	r2, r7, r2
- 7279 080c 1360     		str	r3, [r2]
+ 7306              		.loc 1 304 0
+ 7307 080e 0023     		movs	r3, #0
+ 7308 0810 984A     		ldr	r2, .L70+112
+ 7309 0812 BA18     		adds	r2, r7, r2
+ 7310 0814 1360     		str	r3, [r2]
  305:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	int game_over_adder = 0;
- 7280              		.loc 1 305 0
- 7281 080e 0023     		movs	r3, #0
- 7282 0810 9122     		movs	r2, #145
- 7283 0812 D200     		lsls	r2, r2, #3
- 7284 0814 BA18     		adds	r2, r7, r2
- 7285 0816 1360     		str	r3, [r2]
+ 7311              		.loc 1 305 0
+ 7312 0816 0023     		movs	r3, #0
+ 7313 0818 9222     		movs	r2, #146
+ 7314 081a D200     		lsls	r2, r2, #3
+ 7315 081c BA18     		adds	r2, r7, r2
+ 7316 081e 1360     		str	r3, [r2]
  306:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	int no_DIP = 0;
- 7286              		.loc 1 306 0
- 7287 0818 0023     		movs	r3, #0
- 7288 081a 9E4A     		ldr	r2, .L65+116
- 7289 081c BA18     		adds	r2, r7, r2
- 7290 081e 1360     		str	r3, [r2]
+ 7317              		.loc 1 306 0
+ 7318 0820 0023     		movs	r3, #0
+ 7319 0822 954A     		ldr	r2, .L70+116
+ 7320 0824 BA18     		adds	r2, r7, r2
+ 7321 0826 1360     		str	r3, [r2]
  307:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	int exploding = 0;
- 7291              		.loc 1 307 0
- 7292 0820 0023     		movs	r3, #0
- 7293 0822 9022     		movs	r2, #144
- 7294 0824 D200     		lsls	r2, r2, #3
- 7295 0826 BA18     		adds	r2, r7, r2
- 7296 0828 1360     		str	r3, [r2]
- 308:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	
- 309:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	current_screen = RESET_GAME;
- 7297              		.loc 1 309 0
- 7298 082a 9B4B     		ldr	r3, .L65+120
- 7299 082c 0A22     		movs	r2, #10
- 7300 082e 1A60     		str	r2, [r3]
- 7301              	.L59:
- 310:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	
- 311:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	//Game loop
- 312:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	while(1) {
- 313:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 			
- 314:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 		switch(current_screen) {
- 7302              		.loc 1 314 0
- 7303 0830 994B     		ldr	r3, .L65+120
- 7304 0832 1B68     		ldr	r3, [r3]
- 7305 0834 012B     		cmp	r3, #1
- 7306 0836 20D0     		beq	.L10
- 7307 0838 02DC     		bgt	.L11
- 7308 083a 002B     		cmp	r3, #0
- 7309 083c 11D0     		beq	.L15
- 7310 083e F7E7     		b	.L59
- 7311              	.L11:
- 7312 0840 022B     		cmp	r3, #2
- 7313 0842 00D1     		bne	.LCB988
- 7314 0844 BAE2     		b	.L13	@long jump
- 7315              	.LCB988:
- 7316 0846 0A2B     		cmp	r3, #10
- 7317 0848 01D1     		bne	.LCB990
- 7318 084a 00F051FE 		bl	.L14	@far jump
- 7319              	.LCB990:
- 7320 084e EFE7     		b	.L59
- 7321              	.L16:
- 7322              	.LBB2:
+ 7322              		.loc 1 307 0
+ 7323 0828 0023     		movs	r3, #0
+ 7324 082a 9122     		movs	r2, #145
+ 7325 082c D200     		lsls	r2, r2, #3
+ 7326 082e BA18     		adds	r2, r7, r2
+ 7327 0830 1360     		str	r3, [r2]
+ 308:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	int first = 1;
+ 7328              		.loc 1 308 0
+ 7329 0832 0123     		movs	r3, #1
+ 7330 0834 914A     		ldr	r2, .L70+120
+ 7331 0836 BA18     		adds	r2, r7, r2
+ 7332 0838 1360     		str	r3, [r2]
+ 309:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	int lastFireTrigger = 0;
+ 7333              		.loc 1 309 0
+ 7334 083a 0023     		movs	r3, #0
+ 7335 083c 9022     		movs	r2, #144
+ 7336 083e D200     		lsls	r2, r2, #3
+ 7337 0840 BA18     		adds	r2, r7, r2
+ 7338 0842 1360     		str	r3, [r2]
+ 310:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 		
+ 311:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	current_screen = RESET_GAME;
+ 7339              		.loc 1 311 0
+ 7340 0844 8E4B     		ldr	r3, .L70+124
+ 7341 0846 0A22     		movs	r2, #10
+ 7342 0848 1A60     		str	r2, [r3]
+ 7343              	.L64:
+ 312:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	
+ 313:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	//Game loop
+ 314:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	while(1) {
  315:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 			
- 316:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 			case SWITCH_LOCK: //before
- 317:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 
- 318:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				while(read_DIL() == 0){
- 319:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					draw_game_object(&pressObj);
- 7323              		.loc 1 319 0
- 7324 0850 F923     		movs	r3, #249
- 7325 0852 9B00     		lsls	r3, r3, #2
- 7326 0854 FB18     		adds	r3, r7, r3
- 7327 0856 1800     		movs	r0, r3
- 7328 0858 FFF7FEFF 		bl	draw_game_object
- 320:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					show_frame(1);
- 7329              		.loc 1 320 0
- 7330 085c 0120     		movs	r0, #1
- 7331 085e FFF7FEFF 		bl	show_frame
- 7332              	.L15:
- 318:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					draw_game_object(&pressObj);
- 7333              		.loc 1 318 0
- 7334 0862 FFF7FEFF 		bl	read_DIL
- 7335 0866 031E     		subs	r3, r0, #0
- 7336 0868 F2D0     		beq	.L16
- 321:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				}
- 322:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
- 323:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				counter = 0;
- 7337              		.loc 1 323 0
- 7338 086a 8C4B     		ldr	r3, .L65+124
- 7339 086c 0022     		movs	r2, #0
- 7340 086e 1A60     		str	r2, [r3]
- 324:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				current_screen = START_SCREEN;
- 7341              		.loc 1 324 0
- 7342 0870 894B     		ldr	r3, .L65+120
- 7343 0872 0122     		movs	r2, #1
- 7344 0874 1A60     		str	r2, [r3]
- 325:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				break;
- 7345              		.loc 1 325 0
- 7346 0876 00F0E9FE 		bl	.L9	@ far jump
- 7347              	.L10:
- 326:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 			
- 327:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 			
- 328:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 			case START_SCREEN: //outside
- 329:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
- 330:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				counter++;
- 7348              		.loc 1 330 0
- 7349 087a 884B     		ldr	r3, .L65+124
- 7350 087c 1B68     		ldr	r3, [r3]
- 7351 087e 5A1C     		adds	r2, r3, #1
- 7352 0880 864B     		ldr	r3, .L65+124
- 7353 0882 1A60     		str	r2, [r3]
+ 316:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 		switch(current_screen) {
+ 7344              		.loc 1 316 0
+ 7345 084a 8D4B     		ldr	r3, .L70+124
+ 7346 084c 1B68     		ldr	r3, [r3]
+ 7347 084e 012B     		cmp	r3, #1
+ 7348 0850 20D0     		beq	.L10
+ 7349 0852 02DC     		bgt	.L11
+ 7350 0854 002B     		cmp	r3, #0
+ 7351 0856 11D0     		beq	.L15
+ 7352 0858 F7E7     		b	.L64
+ 7353              	.L11:
+ 7354 085a 022B     		cmp	r3, #2
+ 7355 085c 00D1     		bne	.LCB1000
+ 7356 085e C2E2     		b	.L13	@long jump
+ 7357              	.LCB1000:
+ 7358 0860 0A2B     		cmp	r3, #10
+ 7359 0862 01D1     		bne	.LCB1002
+ 7360 0864 00F024FF 		bl	.L14	@far jump
+ 7361              	.LCB1002:
+ 7362 0868 EFE7     		b	.L64
+ 7363              	.L16:
+ 7364              	.LBB2:
+ 317:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 			
+ 318:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 			case SWITCH_LOCK: //before
+ 319:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 
+ 320:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				while(read_DIL() == 0){
+ 321:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					draw_game_object(&pressObj);
+ 7365              		.loc 1 321 0
+ 7366 086a F923     		movs	r3, #249
+ 7367 086c 9B00     		lsls	r3, r3, #2
+ 7368 086e FB18     		adds	r3, r7, r3
+ 7369 0870 1800     		movs	r0, r3
+ 7370 0872 FFF7FEFF 		bl	draw_game_object
+ 322:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					show_frame(1);
+ 7371              		.loc 1 322 0
+ 7372 0876 0120     		movs	r0, #1
+ 7373 0878 FFF7FEFF 		bl	show_frame
+ 7374              	.L15:
+ 320:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					draw_game_object(&pressObj);
+ 7375              		.loc 1 320 0
+ 7376 087c FFF7FEFF 		bl	read_DIL
+ 7377 0880 031E     		subs	r3, r0, #0
+ 7378 0882 F2D0     		beq	.L16
+ 323:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				}
+ 324:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
+ 325:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				counter = 0;
+ 7379              		.loc 1 325 0
+ 7380 0884 7F4B     		ldr	r3, .L70+128
+ 7381 0886 0022     		movs	r2, #0
+ 7382 0888 1A60     		str	r2, [r3]
+ 326:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				current_screen = START_SCREEN;
+ 7383              		.loc 1 326 0
+ 7384 088a 7D4B     		ldr	r3, .L70+124
+ 7385 088c 0122     		movs	r2, #1
+ 7386 088e 1A60     		str	r2, [r3]
+ 327:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				break;
+ 7387              		.loc 1 327 0
+ 7388 0890 00F0C5FF 		bl	.L9	@ far jump
+ 7389              	.L10:
+ 328:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 			
+ 329:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 			
+ 330:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 			case START_SCREEN: //outside
  331:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
- 332:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				if(titleObj.yPos < 1) {
- 7354              		.loc 1 332 0
- 7355 0884 8423     		movs	r3, #132
- 7356 0886 DB00     		lsls	r3, r3, #3
- 7357 0888 FB18     		adds	r3, r7, r3
- 7358 088a 9B68     		ldr	r3, [r3, #8]
- 7359 088c 002B     		cmp	r3, #0
- 7360 088e 08DC     		bgt	.L17
- 333:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					titleObj.yPos++;
- 7361              		.loc 1 333 0
- 7362 0890 8423     		movs	r3, #132
- 7363 0892 DB00     		lsls	r3, r3, #3
- 7364 0894 FB18     		adds	r3, r7, r3
- 7365 0896 9B68     		ldr	r3, [r3, #8]
- 7366 0898 5A1C     		adds	r2, r3, #1
- 7367 089a 8423     		movs	r3, #132
- 7368 089c DB00     		lsls	r3, r3, #3
- 7369 089e FB18     		adds	r3, r7, r3
- 7370 08a0 9A60     		str	r2, [r3, #8]
- 7371              	.L17:
- 334:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				}
- 335:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
- 336:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				draw_game_object(&castleObj);
- 7372              		.loc 1 336 0
- 7373 08a2 EA23     		movs	r3, #234
- 7374 08a4 9B00     		lsls	r3, r3, #2
- 7375 08a6 FB18     		adds	r3, r7, r3
- 7376 08a8 1800     		movs	r0, r3
- 7377 08aa FFF7FEFF 		bl	draw_game_object
- 337:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				draw_game_object(&fire2);
- 7378              		.loc 1 337 0
- 7379 08ae 9323     		movs	r3, #147
- 7380 08b0 9B00     		lsls	r3, r3, #2
- 7381 08b2 FB18     		adds	r3, r7, r3
- 7382 08b4 1800     		movs	r0, r3
- 7383 08b6 FFF7FEFF 		bl	draw_game_object
- 338:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				draw_game_object(&fire3);
- 7384              		.loc 1 338 0
- 7385 08ba 8A23     		movs	r3, #138
- 7386 08bc 9B00     		lsls	r3, r3, #2
- 7387 08be FB18     		adds	r3, r7, r3
- 7388 08c0 1800     		movs	r0, r3
- 7389 08c2 FFF7FEFF 		bl	draw_game_object
- 339:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				draw_game_object(&fire1);
- 7390              		.loc 1 339 0
- 7391 08c6 F023     		movs	r3, #240
- 7392 08c8 5B00     		lsls	r3, r3, #1
- 7393 08ca FB18     		adds	r3, r7, r3
- 7394 08cc 1800     		movs	r0, r3
- 7395 08ce FFF7FEFF 		bl	draw_game_object
- 340:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				draw_game_object(&fire4);
- 7396              		.loc 1 340 0
- 7397 08d2 8123     		movs	r3, #129
- 7398 08d4 9B00     		lsls	r3, r3, #2
- 7399 08d6 FB18     		adds	r3, r7, r3
- 7400 08d8 1800     		movs	r0, r3
- 7401 08da FFF7FEFF 		bl	draw_game_object
- 341:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				draw_game_object(&titleObj);
- 7402              		.loc 1 341 0
- 7403 08de 8423     		movs	r3, #132
- 7404 08e0 DB00     		lsls	r3, r3, #3
- 7405 08e2 FB18     		adds	r3, r7, r3
- 7406 08e4 1800     		movs	r0, r3
- 7407 08e6 FFF7FEFF 		bl	draw_game_object
- 342:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				draw_game_object(&bird);
- 7408              		.loc 1 342 0
- 7409 08ea B723     		movs	r3, #183
- 7410 08ec 9B00     		lsls	r3, r3, #2
- 7411 08ee FB18     		adds	r3, r7, r3
- 7412 08f0 1800     		movs	r0, r3
- 7413 08f2 FFF7FEFF 		bl	draw_game_object
- 343:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				show_frame(1);
- 7414              		.loc 1 343 0
- 7415 08f6 0120     		movs	r0, #1
- 7416 08f8 FFF7FEFF 		bl	show_frame
- 344:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
- 345:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				static int long_text = 40;
- 346:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				static int short_text = 20;
- 347:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				static int delay_until_text = 130;
- 348:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
- 349:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				if (counter < delay_until_text - 55 && counter > delay_until_text - 90)
- 7417              		.loc 1 349 0
- 7418 08fc 684B     		ldr	r3, .L65+128
- 7419 08fe 1B68     		ldr	r3, [r3]
- 7420 0900 373B     		subs	r3, r3, #55
- 7421 0902 1A00     		movs	r2, r3
- 7422 0904 654B     		ldr	r3, .L65+124
- 7423 0906 1B68     		ldr	r3, [r3]
- 7424 0908 9A42     		cmp	r2, r3
- 7425 090a 13DD     		ble	.L18
- 7426              		.loc 1 349 0 is_stmt 0 discriminator 1
- 7427 090c 644B     		ldr	r3, .L65+128
- 7428 090e 1B68     		ldr	r3, [r3]
- 7429 0910 5A3B     		subs	r3, r3, #90
- 7430 0912 1A00     		movs	r2, r3
- 7431 0914 614B     		ldr	r3, .L65+124
- 7432 0916 1B68     		ldr	r3, [r3]
- 7433 0918 9A42     		cmp	r2, r3
- 7434 091a 0BDA     		bge	.L18
- 350:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					text_kra.display(&text_kra, 20);
- 7435              		.loc 1 350 0 is_stmt 1
- 7436 091c 614B     		ldr	r3, .L65+132
- 7437 091e 9322     		movs	r2, #147
- 7438 0920 D200     		lsls	r2, r2, #3
- 7439 0922 9446     		mov	ip, r2
- 7440 0924 BC44     		add	ip, ip, r7
- 7441 0926 6344     		add	r3, r3, ip
- 7442 0928 1B69     		ldr	r3, [r3, #16]
- 7443 092a F422     		movs	r2, #244
- 7444 092c BA18     		adds	r2, r7, r2
- 7445 092e 1421     		movs	r1, #20
- 7446 0930 1000     		movs	r0, r2
- 7447 0932 9847     		blx	r3
- 7448              	.LVL0:
- 7449              	.L18:
- 351:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				if (counter == delay_until_text - 25)
- 7450              		.loc 1 351 0
- 7451 0934 5A4B     		ldr	r3, .L65+128
- 7452 0936 1B68     		ldr	r3, [r3]
- 7453 0938 193B     		subs	r3, r3, #25
- 7454 093a 1A00     		movs	r2, r3
- 7455 093c 574B     		ldr	r3, .L65+124
- 7456 093e 1B68     		ldr	r3, [r3]
- 7457 0940 9A42     		cmp	r2, r3
- 7458 0942 01D1     		bne	.L19
- 352:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					clear_ascii();
- 7459              		.loc 1 352 0
- 7460 0944 FFF7FEFF 		bl	clear_ascii
- 7461              	.L19:
- 353:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
- 354:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				if (counter < delay_until_text);
- 7462              		.loc 1 354 0
- 7463 0948 544B     		ldr	r3, .L65+124
- 7464 094a 1A68     		ldr	r2, [r3]
- 7465 094c 544B     		ldr	r3, .L65+128
- 7466 094e 1B68     		ldr	r3, [r3]
- 7467 0950 9A42     		cmp	r2, r3
- 7468 0952 00DA     		bge	.LCB1124
- 7469 0954 BDE1     		b	.L20	@long jump
- 7470              	.LCB1124:
- 355:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				else if (counter < delay_until_text + 1*long_text)
- 7471              		.loc 1 355 0
- 7472 0956 524B     		ldr	r3, .L65+128
- 7473 0958 1A68     		ldr	r2, [r3]
- 7474 095a 534B     		ldr	r3, .L65+136
- 7475 095c 1B68     		ldr	r3, [r3]
- 7476 095e D218     		adds	r2, r2, r3
- 7477 0960 4E4B     		ldr	r3, .L65+124
- 7478 0962 1B68     		ldr	r3, [r3]
- 7479 0964 9A42     		cmp	r2, r3
- 7480 0966 0CDD     		ble	.L21
- 356:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					text1.display(&text1, 20);
- 7481              		.loc 1 356 0
- 7482 0968 504B     		ldr	r3, .L65+140
- 7483 096a 9322     		movs	r2, #147
- 7484 096c D200     		lsls	r2, r2, #3
- 7485 096e 9446     		mov	ip, r2
- 7486 0970 BC44     		add	ip, ip, r7
- 7487 0972 6344     		add	r3, r3, ip
- 7488 0974 1B69     		ldr	r3, [r3, #16]
- 7489 0976 E022     		movs	r2, #224
- 7490 0978 BA18     		adds	r2, r7, r2
- 7491 097a 1421     		movs	r1, #20
- 7492 097c 1000     		movs	r0, r2
- 7493 097e 9847     		blx	r3
- 7494              	.LVL1:
- 7495 0980 A7E1     		b	.L20
- 7496              	.L21:
- 357:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				else if(counter < delay_until_text + 1*long_text + 1*short_text)
- 7497              		.loc 1 357 0
- 7498 0982 474B     		ldr	r3, .L65+128
- 7499 0984 1A68     		ldr	r2, [r3]
- 7500 0986 484B     		ldr	r3, .L65+136
- 7501 0988 1B68     		ldr	r3, [r3]
- 7502 098a D218     		adds	r2, r2, r3
- 7503 098c 484B     		ldr	r3, .L65+144
- 7504 098e 1B68     		ldr	r3, [r3]
- 7505 0990 D218     		adds	r2, r2, r3
- 7506 0992 424B     		ldr	r3, .L65+124
- 7507 0994 1B68     		ldr	r3, [r3]
- 7508 0996 9A42     		cmp	r2, r3
- 7509 0998 0CDD     		ble	.L22
- 358:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					text2.display(&text2, 20);
- 7510              		.loc 1 358 0
- 7511 099a 464B     		ldr	r3, .L65+148
- 7512 099c 9322     		movs	r2, #147
- 7513 099e D200     		lsls	r2, r2, #3
- 7514 09a0 9446     		mov	ip, r2
- 7515 09a2 BC44     		add	ip, ip, r7
- 7516 09a4 6344     		add	r3, r3, ip
- 7517 09a6 1B69     		ldr	r3, [r3, #16]
- 7518 09a8 CC22     		movs	r2, #204
- 7519 09aa BA18     		adds	r2, r7, r2
- 7520 09ac 1421     		movs	r1, #20
- 7521 09ae 1000     		movs	r0, r2
- 7522 09b0 9847     		blx	r3
- 7523              	.LVL2:
- 7524 09b2 8EE1     		b	.L20
- 7525              	.L22:
- 359:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				else if(counter < delay_until_text + 2*long_text + 1*short_text)
- 7526              		.loc 1 359 0
- 7527 09b4 3C4B     		ldr	r3, .L65+136
- 7528 09b6 1B68     		ldr	r3, [r3]
- 7529 09b8 5A00     		lsls	r2, r3, #1
- 7530 09ba 394B     		ldr	r3, .L65+128
- 7531 09bc 1B68     		ldr	r3, [r3]
- 7532 09be D218     		adds	r2, r2, r3
- 7533 09c0 3B4B     		ldr	r3, .L65+144
- 7534 09c2 1B68     		ldr	r3, [r3]
- 7535 09c4 D218     		adds	r2, r2, r3
- 7536 09c6 354B     		ldr	r3, .L65+124
- 7537 09c8 1B68     		ldr	r3, [r3]
- 7538 09ca 9A42     		cmp	r2, r3
- 7539 09cc 0CDD     		ble	.L23
- 360:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					text3.display(&text3, 20);
- 7540              		.loc 1 360 0
- 7541 09ce 3A4B     		ldr	r3, .L65+152
- 7542 09d0 9322     		movs	r2, #147
- 7543 09d2 D200     		lsls	r2, r2, #3
- 7544 09d4 9446     		mov	ip, r2
- 7545 09d6 BC44     		add	ip, ip, r7
- 7546 09d8 6344     		add	r3, r3, ip
- 7547 09da 1B69     		ldr	r3, [r3, #16]
- 7548 09dc B822     		movs	r2, #184
- 7549 09de BA18     		adds	r2, r7, r2
- 7550 09e0 1421     		movs	r1, #20
- 7551 09e2 1000     		movs	r0, r2
- 7552 09e4 9847     		blx	r3
- 7553              	.LVL3:
- 7554 09e6 74E1     		b	.L20
- 7555              	.L23:
- 361:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				else if(counter < delay_until_text + 2*long_text + 2*short_text)
- 7556              		.loc 1 361 0
- 7557 09e8 2F4B     		ldr	r3, .L65+136
- 7558 09ea 1B68     		ldr	r3, [r3]
- 7559 09ec 5A00     		lsls	r2, r3, #1
- 7560 09ee 2C4B     		ldr	r3, .L65+128
- 7561 09f0 1B68     		ldr	r3, [r3]
- 7562 09f2 D218     		adds	r2, r2, r3
- 7563 09f4 2E4B     		ldr	r3, .L65+144
- 7564 09f6 1B68     		ldr	r3, [r3]
- 7565 09f8 5B00     		lsls	r3, r3, #1
- 7566 09fa D218     		adds	r2, r2, r3
- 7567 09fc 274B     		ldr	r3, .L65+124
- 7568 09fe 1B68     		ldr	r3, [r3]
- 7569 0a00 9A42     		cmp	r2, r3
- 7570 0a02 5DDD     		ble	.L24
- 362:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					text4.display(&text4, 20);
- 7571              		.loc 1 362 0
- 7572 0a04 2D4B     		ldr	r3, .L65+156
- 7573 0a06 9322     		movs	r2, #147
- 7574 0a08 D200     		lsls	r2, r2, #3
- 7575 0a0a 9446     		mov	ip, r2
- 7576 0a0c BC44     		add	ip, ip, r7
- 7577 0a0e 6344     		add	r3, r3, ip
- 7578 0a10 1B69     		ldr	r3, [r3, #16]
- 7579 0a12 A422     		movs	r2, #164
- 7580 0a14 BA18     		adds	r2, r7, r2
- 7581 0a16 1421     		movs	r1, #20
- 7582 0a18 1000     		movs	r0, r2
- 7583 0a1a 9847     		blx	r3
- 7584              	.LVL4:
- 7585 0a1c 59E1     		b	.L20
- 7586              	.L66:
- 7587 0a1e C046     		.align	2
- 7588              	.L65:
- 7589 0a20 48FDFFFF 		.word	-696
- 7590 0a24 6CFDFFFF 		.word	-660
- 7591 0a28 B4FDFFFF 		.word	-588
- 7592 0a2c 90FDFFFF 		.word	-624
- 7593 0a30 00000000 		.word	gameObjectUpdate
- 7594 0a34 00000000 		.word	.LC54
- 7595 0a38 04000000 		.word	.LC56
- 7596 0a3c 14000000 		.word	.LC58
- 7597 0a40 28000000 		.word	.LC60
- 7598 0a44 3C000000 		.word	.LC62
- 7599 0a48 44000000 		.word	.LC64
- 7600 0a4c 54000000 		.word	.LC66
- 7601 0a50 68000000 		.word	.LC68
- 7602 0a54 7C000000 		.word	.LC70
- 7603 0a58 88000000 		.word	.LC72
- 7604 0a5c 9C000000 		.word	.LC74
- 7605 0a60 AC000000 		.word	.LC76
- 7606 0a64 B8000000 		.word	.LC78
- 7607 0a68 CC000000 		.word	.LC80
- 7608 0a6c E4000000 		.word	.LC82
- 7609 0a70 F8000000 		.word	.LC84
- 7610 0a74 0C010000 		.word	.LC86
- 7611 0a78 20010000 		.word	.LC88
- 7612 0a7c 38010000 		.word	.LC90
- 7613 0a80 44010000 		.word	.LC92
- 7614 0a84 58010000 		.word	.LC94
- 7615 0a88 6C010000 		.word	.LC96
- 7616 0a8c 94040000 		.word	1172
- 7617 0a90 8C040000 		.word	1164
- 7618 0a94 84040000 		.word	1156
- 7619 0a98 00000000 		.word	current_screen
- 7620 0a9c 00000000 		.word	counter
- 7621 0aa0 30170000 		.word	delay_until_text.4306
- 7622 0aa4 5CFCFFFF 		.word	-932
- 7623 0aa8 34170000 		.word	long_text.4304
- 7624 0aac 48FCFFFF 		.word	-952
- 7625 0ab0 38170000 		.word	short_text.4305
- 7626 0ab4 34FCFFFF 		.word	-972
- 7627 0ab8 20FCFFFF 		.word	-992
- 7628 0abc 0CFCFFFF 		.word	-1012
- 7629              	.L24:
- 363:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				else if(counter < delay_until_text + 3*long_text + 2*short_text)
- 7630              		.loc 1 363 0
- 7631 0ac0 DA4B     		ldr	r3, .L67
- 7632 0ac2 1A68     		ldr	r2, [r3]
- 7633 0ac4 1300     		movs	r3, r2
- 7634 0ac6 5B00     		lsls	r3, r3, #1
- 7635 0ac8 9A18     		adds	r2, r3, r2
- 7636 0aca D94B     		ldr	r3, .L67+4
- 7637 0acc 1B68     		ldr	r3, [r3]
- 7638 0ace D218     		adds	r2, r2, r3
- 7639 0ad0 D84B     		ldr	r3, .L67+8
- 7640 0ad2 1B68     		ldr	r3, [r3]
- 7641 0ad4 5B00     		lsls	r3, r3, #1
- 7642 0ad6 D218     		adds	r2, r2, r3
- 7643 0ad8 D74B     		ldr	r3, .L67+12
- 7644 0ada 1B68     		ldr	r3, [r3]
- 7645 0adc 9A42     		cmp	r2, r3
- 7646 0ade 0CDD     		ble	.L25
- 364:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					text5.display(&text5, 15);
- 7647              		.loc 1 364 0
- 7648 0ae0 D64B     		ldr	r3, .L67+16
- 7649 0ae2 9322     		movs	r2, #147
- 7650 0ae4 D200     		lsls	r2, r2, #3
- 7651 0ae6 9446     		mov	ip, r2
- 7652 0ae8 BC44     		add	ip, ip, r7
- 7653 0aea 6344     		add	r3, r3, ip
- 7654 0aec 1B69     		ldr	r3, [r3, #16]
- 7655 0aee 9022     		movs	r2, #144
- 7656 0af0 BA18     		adds	r2, r7, r2
- 7657 0af2 0F21     		movs	r1, #15
- 7658 0af4 1000     		movs	r0, r2
- 7659 0af6 9847     		blx	r3
- 7660              	.LVL5:
- 7661 0af8 EBE0     		b	.L20
- 7662              	.L25:
- 365:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				else if(counter < delay_until_text + 3*long_text + 3*short_text)
- 7663              		.loc 1 365 0
- 7664 0afa CC4B     		ldr	r3, .L67
- 7665 0afc 1A68     		ldr	r2, [r3]
- 7666 0afe 1300     		movs	r3, r2
- 7667 0b00 5B00     		lsls	r3, r3, #1
- 7668 0b02 9A18     		adds	r2, r3, r2
- 7669 0b04 CA4B     		ldr	r3, .L67+4
- 7670 0b06 1B68     		ldr	r3, [r3]
- 7671 0b08 D118     		adds	r1, r2, r3
- 7672 0b0a CA4B     		ldr	r3, .L67+8
- 7673 0b0c 1A68     		ldr	r2, [r3]
- 7674 0b0e 1300     		movs	r3, r2
- 7675 0b10 5B00     		lsls	r3, r3, #1
- 7676 0b12 9B18     		adds	r3, r3, r2
- 7677 0b14 CA18     		adds	r2, r1, r3
- 7678 0b16 C84B     		ldr	r3, .L67+12
- 7679 0b18 1B68     		ldr	r3, [r3]
- 7680 0b1a 9A42     		cmp	r2, r3
- 7681 0b1c 0CDD     		ble	.L26
- 366:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					text6.display(&text6, 20);
- 7682              		.loc 1 366 0
- 7683 0b1e C84B     		ldr	r3, .L67+20
- 7684 0b20 9322     		movs	r2, #147
- 7685 0b22 D200     		lsls	r2, r2, #3
- 7686 0b24 9446     		mov	ip, r2
- 7687 0b26 BC44     		add	ip, ip, r7
- 7688 0b28 6344     		add	r3, r3, ip
- 7689 0b2a 1B69     		ldr	r3, [r3, #16]
- 7690 0b2c 7C22     		movs	r2, #124
- 7691 0b2e BA18     		adds	r2, r7, r2
- 7692 0b30 1421     		movs	r1, #20
- 7693 0b32 1000     		movs	r0, r2
- 7694 0b34 9847     		blx	r3
- 7695              	.LVL6:
- 7696 0b36 CCE0     		b	.L20
- 7697              	.L26:
- 367:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				else if(counter < delay_until_text + 4*long_text + 3*short_text + 3)
- 7698              		.loc 1 367 0
- 7699 0b38 BC4B     		ldr	r3, .L67
- 7700 0b3a 1B68     		ldr	r3, [r3]
- 7701 0b3c 9A00     		lsls	r2, r3, #2
- 7702 0b3e BC4B     		ldr	r3, .L67+4
- 7703 0b40 1B68     		ldr	r3, [r3]
- 7704 0b42 D118     		adds	r1, r2, r3
- 7705 0b44 BB4B     		ldr	r3, .L67+8
- 7706 0b46 1A68     		ldr	r2, [r3]
- 7707 0b48 1300     		movs	r3, r2
- 7708 0b4a 5B00     		lsls	r3, r3, #1
- 7709 0b4c 9B18     		adds	r3, r3, r2
- 7710 0b4e CB18     		adds	r3, r1, r3
- 7711 0b50 DA1C     		adds	r2, r3, #3
- 7712 0b52 B94B     		ldr	r3, .L67+12
- 7713 0b54 1B68     		ldr	r3, [r3]
- 7714 0b56 9A42     		cmp	r2, r3
- 7715 0b58 0CDD     		ble	.L27
- 368:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					text7.display(&text7, 20);
- 7716              		.loc 1 368 0
- 7717 0b5a BA4B     		ldr	r3, .L67+24
- 7718 0b5c 9322     		movs	r2, #147
- 7719 0b5e D200     		lsls	r2, r2, #3
- 7720 0b60 9446     		mov	ip, r2
- 7721 0b62 BC44     		add	ip, ip, r7
- 7722 0b64 6344     		add	r3, r3, ip
- 7723 0b66 1B69     		ldr	r3, [r3, #16]
- 7724 0b68 6822     		movs	r2, #104
- 7725 0b6a BA18     		adds	r2, r7, r2
- 7726 0b6c 1421     		movs	r1, #20
- 7727 0b6e 1000     		movs	r0, r2
- 7728 0b70 9847     		blx	r3
- 7729              	.LVL7:
- 7730 0b72 AEE0     		b	.L20
- 7731              	.L27:
- 369:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				else if(counter < delay_until_text + 5*long_text + 3*short_text + 2)
- 7732              		.loc 1 369 0
- 7733 0b74 AD4B     		ldr	r3, .L67
- 7734 0b76 1A68     		ldr	r2, [r3]
- 7735 0b78 1300     		movs	r3, r2
- 7736 0b7a 9B00     		lsls	r3, r3, #2
- 7737 0b7c 9A18     		adds	r2, r3, r2
- 7738 0b7e AC4B     		ldr	r3, .L67+4
- 7739 0b80 1B68     		ldr	r3, [r3]
- 7740 0b82 D118     		adds	r1, r2, r3
- 7741 0b84 AB4B     		ldr	r3, .L67+8
- 7742 0b86 1A68     		ldr	r2, [r3]
- 7743 0b88 1300     		movs	r3, r2
- 7744 0b8a 5B00     		lsls	r3, r3, #1
- 7745 0b8c 9B18     		adds	r3, r3, r2
- 7746 0b8e CB18     		adds	r3, r1, r3
- 7747 0b90 9A1C     		adds	r2, r3, #2
- 7748 0b92 A94B     		ldr	r3, .L67+12
- 7749 0b94 1B68     		ldr	r3, [r3]
- 7750 0b96 9A42     		cmp	r2, r3
- 7751 0b98 0CDD     		ble	.L28
- 370:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					text8.display(&text8, 20);
- 7752              		.loc 1 370 0
- 7753 0b9a AB4B     		ldr	r3, .L67+28
- 7754 0b9c 9322     		movs	r2, #147
- 7755 0b9e D200     		lsls	r2, r2, #3
- 7756 0ba0 9446     		mov	ip, r2
- 7757 0ba2 BC44     		add	ip, ip, r7
- 7758 0ba4 6344     		add	r3, r3, ip
- 7759 0ba6 1B69     		ldr	r3, [r3, #16]
- 7760 0ba8 5422     		movs	r2, #84
- 7761 0baa BA18     		adds	r2, r7, r2
- 7762 0bac 1421     		movs	r1, #20
- 7763 0bae 1000     		movs	r0, r2
- 7764 0bb0 9847     		blx	r3
- 7765              	.LVL8:
- 7766 0bb2 8EE0     		b	.L20
- 7767              	.L28:
- 371:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				else if(counter < delay_until_text + 5*long_text + 4*short_text + 2)
- 7768              		.loc 1 371 0
- 7769 0bb4 9D4B     		ldr	r3, .L67
- 7770 0bb6 1A68     		ldr	r2, [r3]
- 7771 0bb8 1300     		movs	r3, r2
- 7772 0bba 9B00     		lsls	r3, r3, #2
- 7773 0bbc 9A18     		adds	r2, r3, r2
- 7774 0bbe 9C4B     		ldr	r3, .L67+4
- 7775 0bc0 1B68     		ldr	r3, [r3]
- 7776 0bc2 D218     		adds	r2, r2, r3
- 7777 0bc4 9B4B     		ldr	r3, .L67+8
- 7778 0bc6 1B68     		ldr	r3, [r3]
- 7779 0bc8 9B00     		lsls	r3, r3, #2
- 7780 0bca D318     		adds	r3, r2, r3
- 7781 0bcc 9A1C     		adds	r2, r3, #2
- 7782 0bce 9A4B     		ldr	r3, .L67+12
- 7783 0bd0 1B68     		ldr	r3, [r3]
- 7784 0bd2 9A42     		cmp	r2, r3
- 7785 0bd4 0CDD     		ble	.L29
- 372:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					text9.display(&text9, 20);
- 7786              		.loc 1 372 0
- 7787 0bd6 9D4B     		ldr	r3, .L67+32
- 7788 0bd8 9322     		movs	r2, #147
- 7789 0bda D200     		lsls	r2, r2, #3
- 7790 0bdc 9446     		mov	ip, r2
- 7791 0bde BC44     		add	ip, ip, r7
- 7792 0be0 6344     		add	r3, r3, ip
- 7793 0be2 1B69     		ldr	r3, [r3, #16]
- 7794 0be4 4022     		movs	r2, #64
- 7795 0be6 BA18     		adds	r2, r7, r2
- 7796 0be8 1421     		movs	r1, #20
- 7797 0bea 1000     		movs	r0, r2
- 7798 0bec 9847     		blx	r3
- 7799              	.LVL9:
- 7800 0bee 70E0     		b	.L20
- 7801              	.L29:
- 373:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				else if(counter < delay_until_text + 6*long_text + 4*short_text - 2 + 2)
- 7802              		.loc 1 373 0
- 7803 0bf0 8E4B     		ldr	r3, .L67
- 7804 0bf2 1A68     		ldr	r2, [r3]
- 7805 0bf4 1300     		movs	r3, r2
- 7806 0bf6 5B00     		lsls	r3, r3, #1
- 7807 0bf8 9B18     		adds	r3, r3, r2
- 7808 0bfa 5B00     		lsls	r3, r3, #1
- 7809 0bfc 1A00     		movs	r2, r3
- 7810 0bfe 8C4B     		ldr	r3, .L67+4
- 7811 0c00 1B68     		ldr	r3, [r3]
- 7812 0c02 D218     		adds	r2, r2, r3
- 7813 0c04 8B4B     		ldr	r3, .L67+8
- 7814 0c06 1B68     		ldr	r3, [r3]
- 7815 0c08 9B00     		lsls	r3, r3, #2
- 7816 0c0a D218     		adds	r2, r2, r3
- 7817 0c0c 8A4B     		ldr	r3, .L67+12
- 7818 0c0e 1B68     		ldr	r3, [r3]
- 7819 0c10 9A42     		cmp	r2, r3
- 7820 0c12 0CDD     		ble	.L30
- 374:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					text10.display(&text10, 15);
- 7821              		.loc 1 374 0
- 7822 0c14 8E4B     		ldr	r3, .L67+36
- 7823 0c16 9322     		movs	r2, #147
- 7824 0c18 D200     		lsls	r2, r2, #3
- 7825 0c1a 9446     		mov	ip, r2
- 7826 0c1c BC44     		add	ip, ip, r7
- 7827 0c1e 6344     		add	r3, r3, ip
- 7828 0c20 1B69     		ldr	r3, [r3, #16]
- 7829 0c22 2C22     		movs	r2, #44
- 7830 0c24 BA18     		adds	r2, r7, r2
- 7831 0c26 0F21     		movs	r1, #15
- 7832 0c28 1000     		movs	r0, r2
- 7833 0c2a 9847     		blx	r3
- 7834              	.LVL10:
- 7835 0c2c 51E0     		b	.L20
- 7836              	.L30:
- 375:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				else if(counter < delay_until_text + 6*long_text + 5*short_text + 3 + 2)
- 7837              		.loc 1 375 0
- 7838 0c2e 7F4B     		ldr	r3, .L67
- 7839 0c30 1A68     		ldr	r2, [r3]
- 7840 0c32 1300     		movs	r3, r2
- 7841 0c34 5B00     		lsls	r3, r3, #1
- 7842 0c36 9B18     		adds	r3, r3, r2
- 7843 0c38 5B00     		lsls	r3, r3, #1
- 7844 0c3a 1A00     		movs	r2, r3
- 7845 0c3c 7C4B     		ldr	r3, .L67+4
- 7846 0c3e 1B68     		ldr	r3, [r3]
- 7847 0c40 D118     		adds	r1, r2, r3
- 7848 0c42 7C4B     		ldr	r3, .L67+8
- 7849 0c44 1A68     		ldr	r2, [r3]
- 7850 0c46 1300     		movs	r3, r2
- 7851 0c48 9B00     		lsls	r3, r3, #2
- 7852 0c4a 9B18     		adds	r3, r3, r2
- 7853 0c4c CB18     		adds	r3, r1, r3
- 7854 0c4e 5A1D     		adds	r2, r3, #5
- 7855 0c50 794B     		ldr	r3, .L67+12
- 7856 0c52 1B68     		ldr	r3, [r3]
- 7857 0c54 9A42     		cmp	r2, r3
- 7858 0c56 0BDD     		ble	.L31
- 376:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					text12.display(&text12, 15);
- 7859              		.loc 1 376 0
- 7860 0c58 7E4B     		ldr	r3, .L67+40
- 7861 0c5a 9322     		movs	r2, #147
- 7862 0c5c D200     		lsls	r2, r2, #3
- 7863 0c5e 9446     		mov	ip, r2
- 7864 0c60 BC44     		add	ip, ip, r7
- 7865 0c62 6344     		add	r3, r3, ip
- 7866 0c64 1B69     		ldr	r3, [r3, #16]
- 7867 0c66 3A1D     		adds	r2, r7, #4
- 7868 0c68 0F21     		movs	r1, #15
- 7869 0c6a 1000     		movs	r0, r2
- 7870 0c6c 9847     		blx	r3
- 7871              	.LVL11:
- 7872 0c6e 30E0     		b	.L20
- 7873              	.L31:
- 377:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				else if(counter < delay_until_text + 7*long_text + 5*short_text + 6 + 2) {
- 7874              		.loc 1 377 0
- 7875 0c70 6E4B     		ldr	r3, .L67
- 7876 0c72 1A68     		ldr	r2, [r3]
- 7877 0c74 1300     		movs	r3, r2
- 7878 0c76 DB00     		lsls	r3, r3, #3
- 7879 0c78 9A1A     		subs	r2, r3, r2
- 7880 0c7a 6D4B     		ldr	r3, .L67+4
- 7881 0c7c 1B68     		ldr	r3, [r3]
- 7882 0c7e D118     		adds	r1, r2, r3
- 7883 0c80 6C4B     		ldr	r3, .L67+8
- 7884 0c82 1A68     		ldr	r2, [r3]
- 7885 0c84 1300     		movs	r3, r2
- 7886 0c86 9B00     		lsls	r3, r3, #2
- 7887 0c88 9B18     		adds	r3, r3, r2
- 7888 0c8a CB18     		adds	r3, r1, r3
- 7889 0c8c 0833     		adds	r3, r3, #8
- 7890 0c8e 1A00     		movs	r2, r3
- 7891 0c90 694B     		ldr	r3, .L67+12
- 7892 0c92 1B68     		ldr	r3, [r3]
- 7893 0c94 9A42     		cmp	r2, r3
- 7894 0c96 0CDD     		ble	.L32
- 378:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					text11.display(&text11, 20);
- 7895              		.loc 1 378 0
- 7896 0c98 6F4B     		ldr	r3, .L67+44
- 7897 0c9a 9322     		movs	r2, #147
- 7898 0c9c D200     		lsls	r2, r2, #3
- 7899 0c9e 9446     		mov	ip, r2
- 7900 0ca0 BC44     		add	ip, ip, r7
- 7901 0ca2 6344     		add	r3, r3, ip
- 7902 0ca4 1B69     		ldr	r3, [r3, #16]
- 7903 0ca6 1822     		movs	r2, #24
- 7904 0ca8 BA18     		adds	r2, r7, r2
- 7905 0caa 1421     		movs	r1, #20
- 7906 0cac 1000     		movs	r0, r2
- 7907 0cae 9847     		blx	r3
- 7908              	.LVL12:
- 7909 0cb0 0FE0     		b	.L20
- 7910              	.L32:
- 379:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				} else {
- 380:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					if (read_DIL() == 0) {
- 7911              		.loc 1 380 0
- 7912 0cb2 FFF7FEFF 		bl	read_DIL
- 7913 0cb6 031E     		subs	r3, r0, #0
- 7914 0cb8 0BD1     		bne	.L20
- 381:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 						current_screen = GAME_SCREEN;
- 7915              		.loc 1 381 0
- 7916 0cba 684B     		ldr	r3, .L67+48
- 7917 0cbc 0222     		movs	r2, #2
- 7918 0cbe 1A60     		str	r2, [r3]
- 382:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 						random_seed = counter;
- 7919              		.loc 1 382 0
- 7920 0cc0 5D4B     		ldr	r3, .L67+12
- 7921 0cc2 1A68     		ldr	r2, [r3]
- 7922 0cc4 664B     		ldr	r3, .L67+52
- 7923 0cc6 1A60     		str	r2, [r3]
- 383:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 						counter = 0;
- 7924              		.loc 1 383 0
- 7925 0cc8 5B4B     		ldr	r3, .L67+12
- 7926 0cca 0022     		movs	r2, #0
- 7927 0ccc 1A60     		str	r2, [r3]
- 384:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 						clear_ascii();
- 7928              		.loc 1 384 0
- 7929 0cce FFF7FEFF 		bl	clear_ascii
- 7930              	.L20:
- 385:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					}
- 386:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				}
- 387:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
- 388:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				if(read_DIL() == SKIP_VALUE) {
- 7931              		.loc 1 388 0
- 7932 0cd2 FFF7FEFF 		bl	read_DIL
- 7933 0cd6 0300     		movs	r3, r0
- 7934 0cd8 812B     		cmp	r3, #129
- 7935 0cda 0BD1     		bne	.L33
- 389:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					current_screen = GAME_SCREEN;
- 7936              		.loc 1 389 0
- 7937 0cdc 5F4B     		ldr	r3, .L67+48
- 7938 0cde 0222     		movs	r2, #2
- 7939 0ce0 1A60     		str	r2, [r3]
- 390:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					random_seed = counter;
- 7940              		.loc 1 390 0
- 7941 0ce2 554B     		ldr	r3, .L67+12
- 7942 0ce4 1A68     		ldr	r2, [r3]
- 7943 0ce6 5E4B     		ldr	r3, .L67+52
- 7944 0ce8 1A60     		str	r2, [r3]
- 391:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					counter = 0;
- 7945              		.loc 1 391 0
- 7946 0cea 534B     		ldr	r3, .L67+12
- 7947 0cec 0022     		movs	r2, #0
- 7948 0cee 1A60     		str	r2, [r3]
- 392:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					clear_ascii();
- 7949              		.loc 1 392 0
- 7950 0cf0 FFF7FEFF 		bl	clear_ascii
- 7951              	.L33:
- 393:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				}
- 394:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
- 395:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
- 396:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				fire2.update(&fire2);
- 7952              		.loc 1 396 0
- 7953 0cf4 5B4B     		ldr	r3, .L67+56
- 7954 0cf6 9322     		movs	r2, #147
- 7955 0cf8 D200     		lsls	r2, r2, #3
- 7956 0cfa 9446     		mov	ip, r2
- 7957 0cfc BC44     		add	ip, ip, r7
- 7958 0cfe 6344     		add	r3, r3, ip
- 7959 0d00 DB68     		ldr	r3, [r3, #12]
- 7960 0d02 9322     		movs	r2, #147
- 7961 0d04 9200     		lsls	r2, r2, #2
- 7962 0d06 BA18     		adds	r2, r7, r2
- 7963 0d08 1000     		movs	r0, r2
- 7964 0d0a 9847     		blx	r3
- 7965              	.LVL13:
- 397:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				fire3.update(&fire3);
- 7966              		.loc 1 397 0
- 7967 0d0c 564B     		ldr	r3, .L67+60
- 7968 0d0e 9322     		movs	r2, #147
- 7969 0d10 D200     		lsls	r2, r2, #3
- 7970 0d12 9446     		mov	ip, r2
- 7971 0d14 BC44     		add	ip, ip, r7
- 7972 0d16 6344     		add	r3, r3, ip
- 7973 0d18 DB68     		ldr	r3, [r3, #12]
- 7974 0d1a 8A22     		movs	r2, #138
- 7975 0d1c 9200     		lsls	r2, r2, #2
- 7976 0d1e BA18     		adds	r2, r7, r2
- 7977 0d20 1000     		movs	r0, r2
- 7978 0d22 9847     		blx	r3
- 7979              	.LVL14:
- 398:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				fire1.update(&fire1);
- 7980              		.loc 1 398 0
- 7981 0d24 514B     		ldr	r3, .L67+64
- 7982 0d26 9322     		movs	r2, #147
- 7983 0d28 D200     		lsls	r2, r2, #3
- 7984 0d2a 9446     		mov	ip, r2
- 7985 0d2c BC44     		add	ip, ip, r7
- 7986 0d2e 6344     		add	r3, r3, ip
- 7987 0d30 DB68     		ldr	r3, [r3, #12]
- 7988 0d32 F022     		movs	r2, #240
- 7989 0d34 5200     		lsls	r2, r2, #1
- 7990 0d36 BA18     		adds	r2, r7, r2
- 7991 0d38 1000     		movs	r0, r2
- 7992 0d3a 9847     		blx	r3
- 7993              	.LVL15:
- 399:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				fire4.update(&fire4);
- 7994              		.loc 1 399 0
- 7995 0d3c 4C4B     		ldr	r3, .L67+68
- 7996 0d3e 9322     		movs	r2, #147
- 7997 0d40 D200     		lsls	r2, r2, #3
- 7998 0d42 9446     		mov	ip, r2
- 7999 0d44 BC44     		add	ip, ip, r7
- 8000 0d46 6344     		add	r3, r3, ip
- 8001 0d48 DB68     		ldr	r3, [r3, #12]
- 8002 0d4a 8122     		movs	r2, #129
- 8003 0d4c 9200     		lsls	r2, r2, #2
- 8004 0d4e BA18     		adds	r2, r7, r2
- 8005 0d50 1000     		movs	r0, r2
- 8006 0d52 9847     		blx	r3
- 8007              	.LVL16:
- 400:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				bird.update(&bird);
- 8008              		.loc 1 400 0
- 8009 0d54 474B     		ldr	r3, .L67+72
- 8010 0d56 9322     		movs	r2, #147
- 8011 0d58 D200     		lsls	r2, r2, #3
- 8012 0d5a 9446     		mov	ip, r2
- 8013 0d5c BC44     		add	ip, ip, r7
- 8014 0d5e 6344     		add	r3, r3, ip
- 8015 0d60 DB68     		ldr	r3, [r3, #12]
- 8016 0d62 B722     		movs	r2, #183
- 8017 0d64 9200     		lsls	r2, r2, #2
- 8018 0d66 BA18     		adds	r2, r7, r2
- 8019 0d68 1000     		movs	r0, r2
- 8020 0d6a 9847     		blx	r3
- 8021              	.LVL17:
- 401:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				bird.xPos -= 2;
- 8022              		.loc 1 401 0
- 8023 0d6c 414B     		ldr	r3, .L67+72
- 8024 0d6e 9322     		movs	r2, #147
- 8025 0d70 D200     		lsls	r2, r2, #3
- 8026 0d72 9446     		mov	ip, r2
- 8027 0d74 BC44     		add	ip, ip, r7
- 8028 0d76 6344     		add	r3, r3, ip
- 8029 0d78 5B68     		ldr	r3, [r3, #4]
- 8030 0d7a 9A1E     		subs	r2, r3, #2
- 8031 0d7c 3D4B     		ldr	r3, .L67+72
- 8032 0d7e 9321     		movs	r1, #147
- 8033 0d80 C900     		lsls	r1, r1, #3
- 8034 0d82 8C46     		mov	ip, r1
- 8035 0d84 BC44     		add	ip, ip, r7
- 8036 0d86 6344     		add	r3, r3, ip
- 8037 0d88 5A60     		str	r2, [r3, #4]
- 402:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				if (counter % 2 == 0) {
- 8038              		.loc 1 402 0
- 8039 0d8a 2B4B     		ldr	r3, .L67+12
- 8040 0d8c 1B68     		ldr	r3, [r3]
- 8041 0d8e 1A00     		movs	r2, r3
- 8042 0d90 0123     		movs	r3, #1
- 8043 0d92 1340     		ands	r3, r2
- 8044 0d94 01D0     		beq	.LCB1670
- 8045 0d96 00F055FC 		bl	.L60	@far jump
- 8046              	.LCB1670:
- 403:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					bird.yPos--;
- 8047              		.loc 1 403 0
- 8048 0d9a 364B     		ldr	r3, .L67+72
- 8049 0d9c 9322     		movs	r2, #147
- 8050 0d9e D200     		lsls	r2, r2, #3
- 8051 0da0 9446     		mov	ip, r2
- 8052 0da2 BC44     		add	ip, ip, r7
- 8053 0da4 6344     		add	r3, r3, ip
- 8054 0da6 9B68     		ldr	r3, [r3, #8]
- 8055 0da8 5A1E     		subs	r2, r3, #1
- 8056 0daa 324B     		ldr	r3, .L67+72
- 8057 0dac 9321     		movs	r1, #147
- 8058 0dae C900     		lsls	r1, r1, #3
- 8059 0db0 8C46     		mov	ip, r1
- 8060 0db2 BC44     		add	ip, ip, r7
- 8061 0db4 6344     		add	r3, r3, ip
- 8062 0db6 9A60     		str	r2, [r3, #8]
- 404:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				}
- 405:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
- 406:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				break;
- 8063              		.loc 1 406 0
- 8064 0db8 00F044FC 		bl	.L60	@ far jump
- 8065              	.L13:
+ 332:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				counter++;
+ 7390              		.loc 1 332 0
+ 7391 0894 7B4B     		ldr	r3, .L70+128
+ 7392 0896 1B68     		ldr	r3, [r3]
+ 7393 0898 5A1C     		adds	r2, r3, #1
+ 7394 089a 7A4B     		ldr	r3, .L70+128
+ 7395 089c 1A60     		str	r2, [r3]
+ 333:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
+ 334:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				if(titleObj.yPos < 1) {
+ 7396              		.loc 1 334 0
+ 7397 089e 8423     		movs	r3, #132
+ 7398 08a0 DB00     		lsls	r3, r3, #3
+ 7399 08a2 FB18     		adds	r3, r7, r3
+ 7400 08a4 9B68     		ldr	r3, [r3, #8]
+ 7401 08a6 002B     		cmp	r3, #0
+ 7402 08a8 08DC     		bgt	.L17
+ 335:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					titleObj.yPos++;
+ 7403              		.loc 1 335 0
+ 7404 08aa 8423     		movs	r3, #132
+ 7405 08ac DB00     		lsls	r3, r3, #3
+ 7406 08ae FB18     		adds	r3, r7, r3
+ 7407 08b0 9B68     		ldr	r3, [r3, #8]
+ 7408 08b2 5A1C     		adds	r2, r3, #1
+ 7409 08b4 8423     		movs	r3, #132
+ 7410 08b6 DB00     		lsls	r3, r3, #3
+ 7411 08b8 FB18     		adds	r3, r7, r3
+ 7412 08ba 9A60     		str	r2, [r3, #8]
+ 7413              	.L17:
+ 336:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				}
+ 337:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
+ 338:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				draw_game_object(&castleObj);
+ 7414              		.loc 1 338 0
+ 7415 08bc EA23     		movs	r3, #234
+ 7416 08be 9B00     		lsls	r3, r3, #2
+ 7417 08c0 FB18     		adds	r3, r7, r3
+ 7418 08c2 1800     		movs	r0, r3
+ 7419 08c4 FFF7FEFF 		bl	draw_game_object
+ 339:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				draw_game_object(&fire2);
+ 7420              		.loc 1 339 0
+ 7421 08c8 9323     		movs	r3, #147
+ 7422 08ca 9B00     		lsls	r3, r3, #2
+ 7423 08cc FB18     		adds	r3, r7, r3
+ 7424 08ce 1800     		movs	r0, r3
+ 7425 08d0 FFF7FEFF 		bl	draw_game_object
+ 340:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				draw_game_object(&fire3);
+ 7426              		.loc 1 340 0
+ 7427 08d4 8A23     		movs	r3, #138
+ 7428 08d6 9B00     		lsls	r3, r3, #2
+ 7429 08d8 FB18     		adds	r3, r7, r3
+ 7430 08da 1800     		movs	r0, r3
+ 7431 08dc FFF7FEFF 		bl	draw_game_object
+ 341:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				draw_game_object(&fire1);
+ 7432              		.loc 1 341 0
+ 7433 08e0 F023     		movs	r3, #240
+ 7434 08e2 5B00     		lsls	r3, r3, #1
+ 7435 08e4 FB18     		adds	r3, r7, r3
+ 7436 08e6 1800     		movs	r0, r3
+ 7437 08e8 FFF7FEFF 		bl	draw_game_object
+ 342:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				draw_game_object(&fire4);
+ 7438              		.loc 1 342 0
+ 7439 08ec 8123     		movs	r3, #129
+ 7440 08ee 9B00     		lsls	r3, r3, #2
+ 7441 08f0 FB18     		adds	r3, r7, r3
+ 7442 08f2 1800     		movs	r0, r3
+ 7443 08f4 FFF7FEFF 		bl	draw_game_object
+ 343:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				draw_game_object(&titleObj);
+ 7444              		.loc 1 343 0
+ 7445 08f8 8423     		movs	r3, #132
+ 7446 08fa DB00     		lsls	r3, r3, #3
+ 7447 08fc FB18     		adds	r3, r7, r3
+ 7448 08fe 1800     		movs	r0, r3
+ 7449 0900 FFF7FEFF 		bl	draw_game_object
+ 344:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				draw_game_object(&bird);
+ 7450              		.loc 1 344 0
+ 7451 0904 B723     		movs	r3, #183
+ 7452 0906 9B00     		lsls	r3, r3, #2
+ 7453 0908 FB18     		adds	r3, r7, r3
+ 7454 090a 1800     		movs	r0, r3
+ 7455 090c FFF7FEFF 		bl	draw_game_object
+ 345:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				show_frame(1);
+ 7456              		.loc 1 345 0
+ 7457 0910 0120     		movs	r0, #1
+ 7458 0912 FFF7FEFF 		bl	show_frame
+ 346:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
+ 347:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				static int long_text = 40;
+ 348:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				static int short_text = 20;
+ 349:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				static int delay_until_text = 130;
+ 350:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
+ 351:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				if (counter < delay_until_text - 55 && counter > delay_until_text - 90)
+ 7459              		.loc 1 351 0
+ 7460 0916 5C4B     		ldr	r3, .L70+132
+ 7461 0918 1B68     		ldr	r3, [r3]
+ 7462 091a 373B     		subs	r3, r3, #55
+ 7463 091c 1A00     		movs	r2, r3
+ 7464 091e 594B     		ldr	r3, .L70+128
+ 7465 0920 1B68     		ldr	r3, [r3]
+ 7466 0922 9A42     		cmp	r2, r3
+ 7467 0924 13DD     		ble	.L18
+ 7468              		.loc 1 351 0 is_stmt 0 discriminator 1
+ 7469 0926 584B     		ldr	r3, .L70+132
+ 7470 0928 1B68     		ldr	r3, [r3]
+ 7471 092a 5A3B     		subs	r3, r3, #90
+ 7472 092c 1A00     		movs	r2, r3
+ 7473 092e 554B     		ldr	r3, .L70+128
+ 7474 0930 1B68     		ldr	r3, [r3]
+ 7475 0932 9A42     		cmp	r2, r3
+ 7476 0934 0BDA     		bge	.L18
+ 352:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					text_kra.display(&text_kra, 20);
+ 7477              		.loc 1 352 0 is_stmt 1
+ 7478 0936 554B     		ldr	r3, .L70+136
+ 7479 0938 9422     		movs	r2, #148
+ 7480 093a D200     		lsls	r2, r2, #3
+ 7481 093c 9446     		mov	ip, r2
+ 7482 093e BC44     		add	ip, ip, r7
+ 7483 0940 6344     		add	r3, r3, ip
+ 7484 0942 1B69     		ldr	r3, [r3, #16]
+ 7485 0944 F422     		movs	r2, #244
+ 7486 0946 BA18     		adds	r2, r7, r2
+ 7487 0948 1421     		movs	r1, #20
+ 7488 094a 1000     		movs	r0, r2
+ 7489 094c 9847     		blx	r3
+ 7490              	.LVL0:
+ 7491              	.L18:
+ 353:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				if (counter == delay_until_text - 25)
+ 7492              		.loc 1 353 0
+ 7493 094e 4E4B     		ldr	r3, .L70+132
+ 7494 0950 1B68     		ldr	r3, [r3]
+ 7495 0952 193B     		subs	r3, r3, #25
+ 7496 0954 1A00     		movs	r2, r3
+ 7497 0956 4B4B     		ldr	r3, .L70+128
+ 7498 0958 1B68     		ldr	r3, [r3]
+ 7499 095a 9A42     		cmp	r2, r3
+ 7500 095c 01D1     		bne	.L19
+ 354:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					clear_ascii();
+ 7501              		.loc 1 354 0
+ 7502 095e FFF7FEFF 		bl	clear_ascii
+ 7503              	.L19:
+ 355:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
+ 356:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				if (counter < delay_until_text);
+ 7504              		.loc 1 356 0
+ 7505 0962 484B     		ldr	r3, .L70+128
+ 7506 0964 1A68     		ldr	r2, [r3]
+ 7507 0966 484B     		ldr	r3, .L70+132
+ 7508 0968 1B68     		ldr	r3, [r3]
+ 7509 096a 9A42     		cmp	r2, r3
+ 7510 096c 00DA     		bge	.LCB1136
+ 7511 096e C1E1     		b	.L20	@long jump
+ 7512              	.LCB1136:
+ 357:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				else if (counter < delay_until_text + 1*long_text)
+ 7513              		.loc 1 357 0
+ 7514 0970 454B     		ldr	r3, .L70+132
+ 7515 0972 1A68     		ldr	r2, [r3]
+ 7516 0974 464B     		ldr	r3, .L70+140
+ 7517 0976 1B68     		ldr	r3, [r3]
+ 7518 0978 D218     		adds	r2, r2, r3
+ 7519 097a 424B     		ldr	r3, .L70+128
+ 7520 097c 1B68     		ldr	r3, [r3]
+ 7521 097e 9A42     		cmp	r2, r3
+ 7522 0980 0CDD     		ble	.L21
+ 358:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					text1.display(&text1, 20);
+ 7523              		.loc 1 358 0
+ 7524 0982 444B     		ldr	r3, .L70+144
+ 7525 0984 9422     		movs	r2, #148
+ 7526 0986 D200     		lsls	r2, r2, #3
+ 7527 0988 9446     		mov	ip, r2
+ 7528 098a BC44     		add	ip, ip, r7
+ 7529 098c 6344     		add	r3, r3, ip
+ 7530 098e 1B69     		ldr	r3, [r3, #16]
+ 7531 0990 E022     		movs	r2, #224
+ 7532 0992 BA18     		adds	r2, r7, r2
+ 7533 0994 1421     		movs	r1, #20
+ 7534 0996 1000     		movs	r0, r2
+ 7535 0998 9847     		blx	r3
+ 7536              	.LVL1:
+ 7537 099a ABE1     		b	.L20
+ 7538              	.L21:
+ 359:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				else if(counter < delay_until_text + 1*long_text + 1*short_text)
+ 7539              		.loc 1 359 0
+ 7540 099c 3A4B     		ldr	r3, .L70+132
+ 7541 099e 1A68     		ldr	r2, [r3]
+ 7542 09a0 3B4B     		ldr	r3, .L70+140
+ 7543 09a2 1B68     		ldr	r3, [r3]
+ 7544 09a4 D218     		adds	r2, r2, r3
+ 7545 09a6 3C4B     		ldr	r3, .L70+148
+ 7546 09a8 1B68     		ldr	r3, [r3]
+ 7547 09aa D218     		adds	r2, r2, r3
+ 7548 09ac 354B     		ldr	r3, .L70+128
+ 7549 09ae 1B68     		ldr	r3, [r3]
+ 7550 09b0 9A42     		cmp	r2, r3
+ 7551 09b2 0CDD     		ble	.L22
+ 360:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					text2.display(&text2, 20);
+ 7552              		.loc 1 360 0
+ 7553 09b4 394B     		ldr	r3, .L70+152
+ 7554 09b6 9422     		movs	r2, #148
+ 7555 09b8 D200     		lsls	r2, r2, #3
+ 7556 09ba 9446     		mov	ip, r2
+ 7557 09bc BC44     		add	ip, ip, r7
+ 7558 09be 6344     		add	r3, r3, ip
+ 7559 09c0 1B69     		ldr	r3, [r3, #16]
+ 7560 09c2 CC22     		movs	r2, #204
+ 7561 09c4 BA18     		adds	r2, r7, r2
+ 7562 09c6 1421     		movs	r1, #20
+ 7563 09c8 1000     		movs	r0, r2
+ 7564 09ca 9847     		blx	r3
+ 7565              	.LVL2:
+ 7566 09cc 92E1     		b	.L20
+ 7567              	.L22:
+ 361:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				else if(counter < delay_until_text + 2*long_text + 1*short_text)
+ 7568              		.loc 1 361 0
+ 7569 09ce 304B     		ldr	r3, .L70+140
+ 7570 09d0 1B68     		ldr	r3, [r3]
+ 7571 09d2 5A00     		lsls	r2, r3, #1
+ 7572 09d4 2C4B     		ldr	r3, .L70+132
+ 7573 09d6 1B68     		ldr	r3, [r3]
+ 7574 09d8 D218     		adds	r2, r2, r3
+ 7575 09da 2F4B     		ldr	r3, .L70+148
+ 7576 09dc 1B68     		ldr	r3, [r3]
+ 7577 09de D218     		adds	r2, r2, r3
+ 7578 09e0 284B     		ldr	r3, .L70+128
+ 7579 09e2 1B68     		ldr	r3, [r3]
+ 7580 09e4 9A42     		cmp	r2, r3
+ 7581 09e6 5DDD     		ble	.L23
+ 362:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					text3.display(&text3, 20);
+ 7582              		.loc 1 362 0
+ 7583 09e8 2D4B     		ldr	r3, .L70+156
+ 7584 09ea 9422     		movs	r2, #148
+ 7585 09ec D200     		lsls	r2, r2, #3
+ 7586 09ee 9446     		mov	ip, r2
+ 7587 09f0 BC44     		add	ip, ip, r7
+ 7588 09f2 6344     		add	r3, r3, ip
+ 7589 09f4 1B69     		ldr	r3, [r3, #16]
+ 7590 09f6 B822     		movs	r2, #184
+ 7591 09f8 BA18     		adds	r2, r7, r2
+ 7592 09fa 1421     		movs	r1, #20
+ 7593 09fc 1000     		movs	r0, r2
+ 7594 09fe 9847     		blx	r3
+ 7595              	.LVL3:
+ 7596 0a00 78E1     		b	.L20
+ 7597              	.L71:
+ 7598 0a02 C046     		.align	2
+ 7599              	.L70:
+ 7600 0a04 88FDFFFF 		.word	-632
+ 7601 0a08 40FDFFFF 		.word	-704
+ 7602 0a0c 64FDFFFF 		.word	-668
+ 7603 0a10 ACFDFFFF 		.word	-596
+ 7604 0a14 00000000 		.word	gameObjectUpdate
+ 7605 0a18 00000000 		.word	.LC54
+ 7606 0a1c 04000000 		.word	.LC56
+ 7607 0a20 14000000 		.word	.LC58
+ 7608 0a24 28000000 		.word	.LC60
+ 7609 0a28 3C000000 		.word	.LC62
+ 7610 0a2c 44000000 		.word	.LC64
+ 7611 0a30 54000000 		.word	.LC66
+ 7612 0a34 68000000 		.word	.LC68
+ 7613 0a38 7C000000 		.word	.LC70
+ 7614 0a3c 88000000 		.word	.LC72
+ 7615 0a40 9C000000 		.word	.LC74
+ 7616 0a44 AC000000 		.word	.LC76
+ 7617 0a48 B8000000 		.word	.LC78
+ 7618 0a4c CC000000 		.word	.LC80
+ 7619 0a50 E4000000 		.word	.LC82
+ 7620 0a54 F8000000 		.word	.LC84
+ 7621 0a58 0C010000 		.word	.LC86
+ 7622 0a5c 20010000 		.word	.LC88
+ 7623 0a60 38010000 		.word	.LC90
+ 7624 0a64 44010000 		.word	.LC92
+ 7625 0a68 58010000 		.word	.LC94
+ 7626 0a6c 6C010000 		.word	.LC96
+ 7627 0a70 9C040000 		.word	1180
+ 7628 0a74 94040000 		.word	1172
+ 7629 0a78 8C040000 		.word	1164
+ 7630 0a7c 84040000 		.word	1156
+ 7631 0a80 00000000 		.word	current_screen
+ 7632 0a84 00000000 		.word	counter
+ 7633 0a88 30170000 		.word	delay_until_text.4308
+ 7634 0a8c 54FCFFFF 		.word	-940
+ 7635 0a90 34170000 		.word	long_text.4306
+ 7636 0a94 40FCFFFF 		.word	-960
+ 7637 0a98 38170000 		.word	short_text.4307
+ 7638 0a9c 2CFCFFFF 		.word	-980
+ 7639 0aa0 18FCFFFF 		.word	-1000
+ 7640              	.L23:
+ 363:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				else if(counter < delay_until_text + 2*long_text + 2*short_text)
+ 7641              		.loc 1 363 0
+ 7642 0aa4 DB4B     		ldr	r3, .L72
+ 7643 0aa6 1B68     		ldr	r3, [r3]
+ 7644 0aa8 5A00     		lsls	r2, r3, #1
+ 7645 0aaa DB4B     		ldr	r3, .L72+4
+ 7646 0aac 1B68     		ldr	r3, [r3]
+ 7647 0aae D218     		adds	r2, r2, r3
+ 7648 0ab0 DA4B     		ldr	r3, .L72+8
+ 7649 0ab2 1B68     		ldr	r3, [r3]
+ 7650 0ab4 5B00     		lsls	r3, r3, #1
+ 7651 0ab6 D218     		adds	r2, r2, r3
+ 7652 0ab8 D94B     		ldr	r3, .L72+12
+ 7653 0aba 1B68     		ldr	r3, [r3]
+ 7654 0abc 9A42     		cmp	r2, r3
+ 7655 0abe 0CDD     		ble	.L24
+ 364:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					text4.display(&text4, 20);
+ 7656              		.loc 1 364 0
+ 7657 0ac0 D84B     		ldr	r3, .L72+16
+ 7658 0ac2 9422     		movs	r2, #148
+ 7659 0ac4 D200     		lsls	r2, r2, #3
+ 7660 0ac6 9446     		mov	ip, r2
+ 7661 0ac8 BC44     		add	ip, ip, r7
+ 7662 0aca 6344     		add	r3, r3, ip
+ 7663 0acc 1B69     		ldr	r3, [r3, #16]
+ 7664 0ace A422     		movs	r2, #164
+ 7665 0ad0 BA18     		adds	r2, r7, r2
+ 7666 0ad2 1421     		movs	r1, #20
+ 7667 0ad4 1000     		movs	r0, r2
+ 7668 0ad6 9847     		blx	r3
+ 7669              	.LVL4:
+ 7670 0ad8 0CE1     		b	.L20
+ 7671              	.L24:
+ 365:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				else if(counter < delay_until_text + 3*long_text + 2*short_text)
+ 7672              		.loc 1 365 0
+ 7673 0ada CE4B     		ldr	r3, .L72
+ 7674 0adc 1A68     		ldr	r2, [r3]
+ 7675 0ade 1300     		movs	r3, r2
+ 7676 0ae0 5B00     		lsls	r3, r3, #1
+ 7677 0ae2 9A18     		adds	r2, r3, r2
+ 7678 0ae4 CC4B     		ldr	r3, .L72+4
+ 7679 0ae6 1B68     		ldr	r3, [r3]
+ 7680 0ae8 D218     		adds	r2, r2, r3
+ 7681 0aea CC4B     		ldr	r3, .L72+8
+ 7682 0aec 1B68     		ldr	r3, [r3]
+ 7683 0aee 5B00     		lsls	r3, r3, #1
+ 7684 0af0 D218     		adds	r2, r2, r3
+ 7685 0af2 CB4B     		ldr	r3, .L72+12
+ 7686 0af4 1B68     		ldr	r3, [r3]
+ 7687 0af6 9A42     		cmp	r2, r3
+ 7688 0af8 0CDD     		ble	.L25
+ 366:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					text5.display(&text5, 15);
+ 7689              		.loc 1 366 0
+ 7690 0afa CB4B     		ldr	r3, .L72+20
+ 7691 0afc 9422     		movs	r2, #148
+ 7692 0afe D200     		lsls	r2, r2, #3
+ 7693 0b00 9446     		mov	ip, r2
+ 7694 0b02 BC44     		add	ip, ip, r7
+ 7695 0b04 6344     		add	r3, r3, ip
+ 7696 0b06 1B69     		ldr	r3, [r3, #16]
+ 7697 0b08 9022     		movs	r2, #144
+ 7698 0b0a BA18     		adds	r2, r7, r2
+ 7699 0b0c 0F21     		movs	r1, #15
+ 7700 0b0e 1000     		movs	r0, r2
+ 7701 0b10 9847     		blx	r3
+ 7702              	.LVL5:
+ 7703 0b12 EFE0     		b	.L20
+ 7704              	.L25:
+ 367:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				else if(counter < delay_until_text + 3*long_text + 3*short_text)
+ 7705              		.loc 1 367 0
+ 7706 0b14 BF4B     		ldr	r3, .L72
+ 7707 0b16 1A68     		ldr	r2, [r3]
+ 7708 0b18 1300     		movs	r3, r2
+ 7709 0b1a 5B00     		lsls	r3, r3, #1
+ 7710 0b1c 9A18     		adds	r2, r3, r2
+ 7711 0b1e BE4B     		ldr	r3, .L72+4
+ 7712 0b20 1B68     		ldr	r3, [r3]
+ 7713 0b22 D118     		adds	r1, r2, r3
+ 7714 0b24 BD4B     		ldr	r3, .L72+8
+ 7715 0b26 1A68     		ldr	r2, [r3]
+ 7716 0b28 1300     		movs	r3, r2
+ 7717 0b2a 5B00     		lsls	r3, r3, #1
+ 7718 0b2c 9B18     		adds	r3, r3, r2
+ 7719 0b2e CA18     		adds	r2, r1, r3
+ 7720 0b30 BB4B     		ldr	r3, .L72+12
+ 7721 0b32 1B68     		ldr	r3, [r3]
+ 7722 0b34 9A42     		cmp	r2, r3
+ 7723 0b36 0CDD     		ble	.L26
+ 368:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					text6.display(&text6, 20);
+ 7724              		.loc 1 368 0
+ 7725 0b38 BC4B     		ldr	r3, .L72+24
+ 7726 0b3a 9422     		movs	r2, #148
+ 7727 0b3c D200     		lsls	r2, r2, #3
+ 7728 0b3e 9446     		mov	ip, r2
+ 7729 0b40 BC44     		add	ip, ip, r7
+ 7730 0b42 6344     		add	r3, r3, ip
+ 7731 0b44 1B69     		ldr	r3, [r3, #16]
+ 7732 0b46 7C22     		movs	r2, #124
+ 7733 0b48 BA18     		adds	r2, r7, r2
+ 7734 0b4a 1421     		movs	r1, #20
+ 7735 0b4c 1000     		movs	r0, r2
+ 7736 0b4e 9847     		blx	r3
+ 7737              	.LVL6:
+ 7738 0b50 D0E0     		b	.L20
+ 7739              	.L26:
+ 369:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				else if(counter < delay_until_text + 4*long_text + 3*short_text + 3)
+ 7740              		.loc 1 369 0
+ 7741 0b52 B04B     		ldr	r3, .L72
+ 7742 0b54 1B68     		ldr	r3, [r3]
+ 7743 0b56 9A00     		lsls	r2, r3, #2
+ 7744 0b58 AF4B     		ldr	r3, .L72+4
+ 7745 0b5a 1B68     		ldr	r3, [r3]
+ 7746 0b5c D118     		adds	r1, r2, r3
+ 7747 0b5e AF4B     		ldr	r3, .L72+8
+ 7748 0b60 1A68     		ldr	r2, [r3]
+ 7749 0b62 1300     		movs	r3, r2
+ 7750 0b64 5B00     		lsls	r3, r3, #1
+ 7751 0b66 9B18     		adds	r3, r3, r2
+ 7752 0b68 CB18     		adds	r3, r1, r3
+ 7753 0b6a DA1C     		adds	r2, r3, #3
+ 7754 0b6c AC4B     		ldr	r3, .L72+12
+ 7755 0b6e 1B68     		ldr	r3, [r3]
+ 7756 0b70 9A42     		cmp	r2, r3
+ 7757 0b72 0CDD     		ble	.L27
+ 370:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					text7.display(&text7, 20);
+ 7758              		.loc 1 370 0
+ 7759 0b74 AE4B     		ldr	r3, .L72+28
+ 7760 0b76 9422     		movs	r2, #148
+ 7761 0b78 D200     		lsls	r2, r2, #3
+ 7762 0b7a 9446     		mov	ip, r2
+ 7763 0b7c BC44     		add	ip, ip, r7
+ 7764 0b7e 6344     		add	r3, r3, ip
+ 7765 0b80 1B69     		ldr	r3, [r3, #16]
+ 7766 0b82 6822     		movs	r2, #104
+ 7767 0b84 BA18     		adds	r2, r7, r2
+ 7768 0b86 1421     		movs	r1, #20
+ 7769 0b88 1000     		movs	r0, r2
+ 7770 0b8a 9847     		blx	r3
+ 7771              	.LVL7:
+ 7772 0b8c B2E0     		b	.L20
+ 7773              	.L27:
+ 371:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				else if(counter < delay_until_text + 5*long_text + 3*short_text + 2)
+ 7774              		.loc 1 371 0
+ 7775 0b8e A14B     		ldr	r3, .L72
+ 7776 0b90 1A68     		ldr	r2, [r3]
+ 7777 0b92 1300     		movs	r3, r2
+ 7778 0b94 9B00     		lsls	r3, r3, #2
+ 7779 0b96 9A18     		adds	r2, r3, r2
+ 7780 0b98 9F4B     		ldr	r3, .L72+4
+ 7781 0b9a 1B68     		ldr	r3, [r3]
+ 7782 0b9c D118     		adds	r1, r2, r3
+ 7783 0b9e 9F4B     		ldr	r3, .L72+8
+ 7784 0ba0 1A68     		ldr	r2, [r3]
+ 7785 0ba2 1300     		movs	r3, r2
+ 7786 0ba4 5B00     		lsls	r3, r3, #1
+ 7787 0ba6 9B18     		adds	r3, r3, r2
+ 7788 0ba8 CB18     		adds	r3, r1, r3
+ 7789 0baa 9A1C     		adds	r2, r3, #2
+ 7790 0bac 9C4B     		ldr	r3, .L72+12
+ 7791 0bae 1B68     		ldr	r3, [r3]
+ 7792 0bb0 9A42     		cmp	r2, r3
+ 7793 0bb2 0CDD     		ble	.L28
+ 372:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					text8.display(&text8, 20);
+ 7794              		.loc 1 372 0
+ 7795 0bb4 9F4B     		ldr	r3, .L72+32
+ 7796 0bb6 9422     		movs	r2, #148
+ 7797 0bb8 D200     		lsls	r2, r2, #3
+ 7798 0bba 9446     		mov	ip, r2
+ 7799 0bbc BC44     		add	ip, ip, r7
+ 7800 0bbe 6344     		add	r3, r3, ip
+ 7801 0bc0 1B69     		ldr	r3, [r3, #16]
+ 7802 0bc2 5422     		movs	r2, #84
+ 7803 0bc4 BA18     		adds	r2, r7, r2
+ 7804 0bc6 1421     		movs	r1, #20
+ 7805 0bc8 1000     		movs	r0, r2
+ 7806 0bca 9847     		blx	r3
+ 7807              	.LVL8:
+ 7808 0bcc 92E0     		b	.L20
+ 7809              	.L28:
+ 373:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				else if(counter < delay_until_text + 5*long_text + 4*short_text + 2)
+ 7810              		.loc 1 373 0
+ 7811 0bce 914B     		ldr	r3, .L72
+ 7812 0bd0 1A68     		ldr	r2, [r3]
+ 7813 0bd2 1300     		movs	r3, r2
+ 7814 0bd4 9B00     		lsls	r3, r3, #2
+ 7815 0bd6 9A18     		adds	r2, r3, r2
+ 7816 0bd8 8F4B     		ldr	r3, .L72+4
+ 7817 0bda 1B68     		ldr	r3, [r3]
+ 7818 0bdc D218     		adds	r2, r2, r3
+ 7819 0bde 8F4B     		ldr	r3, .L72+8
+ 7820 0be0 1B68     		ldr	r3, [r3]
+ 7821 0be2 9B00     		lsls	r3, r3, #2
+ 7822 0be4 D318     		adds	r3, r2, r3
+ 7823 0be6 9A1C     		adds	r2, r3, #2
+ 7824 0be8 8D4B     		ldr	r3, .L72+12
+ 7825 0bea 1B68     		ldr	r3, [r3]
+ 7826 0bec 9A42     		cmp	r2, r3
+ 7827 0bee 0CDD     		ble	.L29
+ 374:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					text9.display(&text9, 20);
+ 7828              		.loc 1 374 0
+ 7829 0bf0 914B     		ldr	r3, .L72+36
+ 7830 0bf2 9422     		movs	r2, #148
+ 7831 0bf4 D200     		lsls	r2, r2, #3
+ 7832 0bf6 9446     		mov	ip, r2
+ 7833 0bf8 BC44     		add	ip, ip, r7
+ 7834 0bfa 6344     		add	r3, r3, ip
+ 7835 0bfc 1B69     		ldr	r3, [r3, #16]
+ 7836 0bfe 4022     		movs	r2, #64
+ 7837 0c00 BA18     		adds	r2, r7, r2
+ 7838 0c02 1421     		movs	r1, #20
+ 7839 0c04 1000     		movs	r0, r2
+ 7840 0c06 9847     		blx	r3
+ 7841              	.LVL9:
+ 7842 0c08 74E0     		b	.L20
+ 7843              	.L29:
+ 375:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				else if(counter < delay_until_text + 6*long_text + 4*short_text - 2 + 2)
+ 7844              		.loc 1 375 0
+ 7845 0c0a 824B     		ldr	r3, .L72
+ 7846 0c0c 1A68     		ldr	r2, [r3]
+ 7847 0c0e 1300     		movs	r3, r2
+ 7848 0c10 5B00     		lsls	r3, r3, #1
+ 7849 0c12 9B18     		adds	r3, r3, r2
+ 7850 0c14 5B00     		lsls	r3, r3, #1
+ 7851 0c16 1A00     		movs	r2, r3
+ 7852 0c18 7F4B     		ldr	r3, .L72+4
+ 7853 0c1a 1B68     		ldr	r3, [r3]
+ 7854 0c1c D218     		adds	r2, r2, r3
+ 7855 0c1e 7F4B     		ldr	r3, .L72+8
+ 7856 0c20 1B68     		ldr	r3, [r3]
+ 7857 0c22 9B00     		lsls	r3, r3, #2
+ 7858 0c24 D218     		adds	r2, r2, r3
+ 7859 0c26 7E4B     		ldr	r3, .L72+12
+ 7860 0c28 1B68     		ldr	r3, [r3]
+ 7861 0c2a 9A42     		cmp	r2, r3
+ 7862 0c2c 0CDD     		ble	.L30
+ 376:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					text10.display(&text10, 15);
+ 7863              		.loc 1 376 0
+ 7864 0c2e 834B     		ldr	r3, .L72+40
+ 7865 0c30 9422     		movs	r2, #148
+ 7866 0c32 D200     		lsls	r2, r2, #3
+ 7867 0c34 9446     		mov	ip, r2
+ 7868 0c36 BC44     		add	ip, ip, r7
+ 7869 0c38 6344     		add	r3, r3, ip
+ 7870 0c3a 1B69     		ldr	r3, [r3, #16]
+ 7871 0c3c 2C22     		movs	r2, #44
+ 7872 0c3e BA18     		adds	r2, r7, r2
+ 7873 0c40 0F21     		movs	r1, #15
+ 7874 0c42 1000     		movs	r0, r2
+ 7875 0c44 9847     		blx	r3
+ 7876              	.LVL10:
+ 7877 0c46 55E0     		b	.L20
+ 7878              	.L30:
+ 377:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				else if(counter < delay_until_text + 6*long_text + 5*short_text + 3 + 2)
+ 7879              		.loc 1 377 0
+ 7880 0c48 724B     		ldr	r3, .L72
+ 7881 0c4a 1A68     		ldr	r2, [r3]
+ 7882 0c4c 1300     		movs	r3, r2
+ 7883 0c4e 5B00     		lsls	r3, r3, #1
+ 7884 0c50 9B18     		adds	r3, r3, r2
+ 7885 0c52 5B00     		lsls	r3, r3, #1
+ 7886 0c54 1A00     		movs	r2, r3
+ 7887 0c56 704B     		ldr	r3, .L72+4
+ 7888 0c58 1B68     		ldr	r3, [r3]
+ 7889 0c5a D118     		adds	r1, r2, r3
+ 7890 0c5c 6F4B     		ldr	r3, .L72+8
+ 7891 0c5e 1A68     		ldr	r2, [r3]
+ 7892 0c60 1300     		movs	r3, r2
+ 7893 0c62 9B00     		lsls	r3, r3, #2
+ 7894 0c64 9B18     		adds	r3, r3, r2
+ 7895 0c66 CB18     		adds	r3, r1, r3
+ 7896 0c68 5A1D     		adds	r2, r3, #5
+ 7897 0c6a 6D4B     		ldr	r3, .L72+12
+ 7898 0c6c 1B68     		ldr	r3, [r3]
+ 7899 0c6e 9A42     		cmp	r2, r3
+ 7900 0c70 0BDD     		ble	.L31
+ 378:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					text12.display(&text12, 15);
+ 7901              		.loc 1 378 0
+ 7902 0c72 734B     		ldr	r3, .L72+44
+ 7903 0c74 9422     		movs	r2, #148
+ 7904 0c76 D200     		lsls	r2, r2, #3
+ 7905 0c78 9446     		mov	ip, r2
+ 7906 0c7a BC44     		add	ip, ip, r7
+ 7907 0c7c 6344     		add	r3, r3, ip
+ 7908 0c7e 1B69     		ldr	r3, [r3, #16]
+ 7909 0c80 3A1D     		adds	r2, r7, #4
+ 7910 0c82 0F21     		movs	r1, #15
+ 7911 0c84 1000     		movs	r0, r2
+ 7912 0c86 9847     		blx	r3
+ 7913              	.LVL11:
+ 7914 0c88 34E0     		b	.L20
+ 7915              	.L31:
+ 379:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				else if(counter < delay_until_text + 7*long_text + 5*short_text + 6 + 2) {
+ 7916              		.loc 1 379 0
+ 7917 0c8a 624B     		ldr	r3, .L72
+ 7918 0c8c 1A68     		ldr	r2, [r3]
+ 7919 0c8e 1300     		movs	r3, r2
+ 7920 0c90 DB00     		lsls	r3, r3, #3
+ 7921 0c92 9A1A     		subs	r2, r3, r2
+ 7922 0c94 604B     		ldr	r3, .L72+4
+ 7923 0c96 1B68     		ldr	r3, [r3]
+ 7924 0c98 D118     		adds	r1, r2, r3
+ 7925 0c9a 604B     		ldr	r3, .L72+8
+ 7926 0c9c 1A68     		ldr	r2, [r3]
+ 7927 0c9e 1300     		movs	r3, r2
+ 7928 0ca0 9B00     		lsls	r3, r3, #2
+ 7929 0ca2 9B18     		adds	r3, r3, r2
+ 7930 0ca4 CB18     		adds	r3, r1, r3
+ 7931 0ca6 0833     		adds	r3, r3, #8
+ 7932 0ca8 1A00     		movs	r2, r3
+ 7933 0caa 5D4B     		ldr	r3, .L72+12
+ 7934 0cac 1B68     		ldr	r3, [r3]
+ 7935 0cae 9A42     		cmp	r2, r3
+ 7936 0cb0 0CDD     		ble	.L32
+ 380:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					text11.display(&text11, 20);
+ 7937              		.loc 1 380 0
+ 7938 0cb2 644B     		ldr	r3, .L72+48
+ 7939 0cb4 9422     		movs	r2, #148
+ 7940 0cb6 D200     		lsls	r2, r2, #3
+ 7941 0cb8 9446     		mov	ip, r2
+ 7942 0cba BC44     		add	ip, ip, r7
+ 7943 0cbc 6344     		add	r3, r3, ip
+ 7944 0cbe 1B69     		ldr	r3, [r3, #16]
+ 7945 0cc0 1822     		movs	r2, #24
+ 7946 0cc2 BA18     		adds	r2, r7, r2
+ 7947 0cc4 1421     		movs	r1, #20
+ 7948 0cc6 1000     		movs	r0, r2
+ 7949 0cc8 9847     		blx	r3
+ 7950              	.LVL12:
+ 7951 0cca 13E0     		b	.L20
+ 7952              	.L32:
+ 381:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				} else {
+ 382:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					if (read_DIL() == 0) {
+ 7953              		.loc 1 382 0
+ 7954 0ccc FFF7FEFF 		bl	read_DIL
+ 7955 0cd0 031E     		subs	r3, r0, #0
+ 7956 0cd2 0FD1     		bne	.L20
+ 383:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 						current_screen = GAME_SCREEN;
+ 7957              		.loc 1 383 0
+ 7958 0cd4 5C4B     		ldr	r3, .L72+52
+ 7959 0cd6 0222     		movs	r2, #2
+ 7960 0cd8 1A60     		str	r2, [r3]
+ 384:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 						random_seed = counter;
+ 7961              		.loc 1 384 0
+ 7962 0cda 514B     		ldr	r3, .L72+12
+ 7963 0cdc 1A68     		ldr	r2, [r3]
+ 7964 0cde 5B4B     		ldr	r3, .L72+56
+ 7965 0ce0 1A60     		str	r2, [r3]
+ 385:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 						counter = 0;
+ 7966              		.loc 1 385 0
+ 7967 0ce2 4F4B     		ldr	r3, .L72+12
+ 7968 0ce4 0022     		movs	r2, #0
+ 7969 0ce6 1A60     		str	r2, [r3]
+ 386:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 						ascii_write("Daffo: I'm feeling ","a bit spooked out...");
+ 7970              		.loc 1 386 0
+ 7971 0ce8 594A     		ldr	r2, .L72+60
+ 7972 0cea 5A4B     		ldr	r3, .L72+64
+ 7973 0cec 1100     		movs	r1, r2
+ 7974 0cee 1800     		movs	r0, r3
+ 7975 0cf0 FFF7FEFF 		bl	ascii_write
+ 7976              	.L20:
+ 387:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					}
+ 388:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				}
+ 389:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
+ 390:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				if(read_DIL() == SKIP_VALUE) {
+ 7977              		.loc 1 390 0
+ 7978 0cf4 FFF7FEFF 		bl	read_DIL
+ 7979 0cf8 0300     		movs	r3, r0
+ 7980 0cfa 812B     		cmp	r3, #129
+ 7981 0cfc 0FD1     		bne	.L33
+ 391:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					current_screen = GAME_SCREEN;
+ 7982              		.loc 1 391 0
+ 7983 0cfe 524B     		ldr	r3, .L72+52
+ 7984 0d00 0222     		movs	r2, #2
+ 7985 0d02 1A60     		str	r2, [r3]
+ 392:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					random_seed = counter;
+ 7986              		.loc 1 392 0
+ 7987 0d04 464B     		ldr	r3, .L72+12
+ 7988 0d06 1A68     		ldr	r2, [r3]
+ 7989 0d08 504B     		ldr	r3, .L72+56
+ 7990 0d0a 1A60     		str	r2, [r3]
+ 393:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					counter = 0;
+ 7991              		.loc 1 393 0
+ 7992 0d0c 444B     		ldr	r3, .L72+12
+ 7993 0d0e 0022     		movs	r2, #0
+ 7994 0d10 1A60     		str	r2, [r3]
+ 394:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					ascii_write("Daffo: I'm feeling ","a bit spooked out...");
+ 7995              		.loc 1 394 0
+ 7996 0d12 4F4A     		ldr	r2, .L72+60
+ 7997 0d14 4F4B     		ldr	r3, .L72+64
+ 7998 0d16 1100     		movs	r1, r2
+ 7999 0d18 1800     		movs	r0, r3
+ 8000 0d1a FFF7FEFF 		bl	ascii_write
+ 8001              	.L33:
+ 395:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				}
+ 396:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
+ 397:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
+ 398:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				fire2.update(&fire2);
+ 8002              		.loc 1 398 0
+ 8003 0d1e 4E4B     		ldr	r3, .L72+68
+ 8004 0d20 9422     		movs	r2, #148
+ 8005 0d22 D200     		lsls	r2, r2, #3
+ 8006 0d24 9446     		mov	ip, r2
+ 8007 0d26 BC44     		add	ip, ip, r7
+ 8008 0d28 6344     		add	r3, r3, ip
+ 8009 0d2a DB68     		ldr	r3, [r3, #12]
+ 8010 0d2c 9322     		movs	r2, #147
+ 8011 0d2e 9200     		lsls	r2, r2, #2
+ 8012 0d30 BA18     		adds	r2, r7, r2
+ 8013 0d32 1000     		movs	r0, r2
+ 8014 0d34 9847     		blx	r3
+ 8015              	.LVL13:
+ 399:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				fire3.update(&fire3);
+ 8016              		.loc 1 399 0
+ 8017 0d36 494B     		ldr	r3, .L72+72
+ 8018 0d38 9422     		movs	r2, #148
+ 8019 0d3a D200     		lsls	r2, r2, #3
+ 8020 0d3c 9446     		mov	ip, r2
+ 8021 0d3e BC44     		add	ip, ip, r7
+ 8022 0d40 6344     		add	r3, r3, ip
+ 8023 0d42 DB68     		ldr	r3, [r3, #12]
+ 8024 0d44 8A22     		movs	r2, #138
+ 8025 0d46 9200     		lsls	r2, r2, #2
+ 8026 0d48 BA18     		adds	r2, r7, r2
+ 8027 0d4a 1000     		movs	r0, r2
+ 8028 0d4c 9847     		blx	r3
+ 8029              	.LVL14:
+ 400:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				fire1.update(&fire1);
+ 8030              		.loc 1 400 0
+ 8031 0d4e 444B     		ldr	r3, .L72+76
+ 8032 0d50 9422     		movs	r2, #148
+ 8033 0d52 D200     		lsls	r2, r2, #3
+ 8034 0d54 9446     		mov	ip, r2
+ 8035 0d56 BC44     		add	ip, ip, r7
+ 8036 0d58 6344     		add	r3, r3, ip
+ 8037 0d5a DB68     		ldr	r3, [r3, #12]
+ 8038 0d5c F022     		movs	r2, #240
+ 8039 0d5e 5200     		lsls	r2, r2, #1
+ 8040 0d60 BA18     		adds	r2, r7, r2
+ 8041 0d62 1000     		movs	r0, r2
+ 8042 0d64 9847     		blx	r3
+ 8043              	.LVL15:
+ 401:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				fire4.update(&fire4);
+ 8044              		.loc 1 401 0
+ 8045 0d66 3F4B     		ldr	r3, .L72+80
+ 8046 0d68 9422     		movs	r2, #148
+ 8047 0d6a D200     		lsls	r2, r2, #3
+ 8048 0d6c 9446     		mov	ip, r2
+ 8049 0d6e BC44     		add	ip, ip, r7
+ 8050 0d70 6344     		add	r3, r3, ip
+ 8051 0d72 DB68     		ldr	r3, [r3, #12]
+ 8052 0d74 8122     		movs	r2, #129
+ 8053 0d76 9200     		lsls	r2, r2, #2
+ 8054 0d78 BA18     		adds	r2, r7, r2
+ 8055 0d7a 1000     		movs	r0, r2
+ 8056 0d7c 9847     		blx	r3
+ 8057              	.LVL16:
+ 402:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				bird.update(&bird);
+ 8058              		.loc 1 402 0
+ 8059 0d7e 3A4B     		ldr	r3, .L72+84
+ 8060 0d80 9422     		movs	r2, #148
+ 8061 0d82 D200     		lsls	r2, r2, #3
+ 8062 0d84 9446     		mov	ip, r2
+ 8063 0d86 BC44     		add	ip, ip, r7
+ 8064 0d88 6344     		add	r3, r3, ip
+ 8065 0d8a DB68     		ldr	r3, [r3, #12]
+ 8066 0d8c B722     		movs	r2, #183
+ 8067 0d8e 9200     		lsls	r2, r2, #2
+ 8068 0d90 BA18     		adds	r2, r7, r2
+ 8069 0d92 1000     		movs	r0, r2
+ 8070 0d94 9847     		blx	r3
+ 8071              	.LVL17:
+ 403:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				bird.xPos -= 2;
+ 8072              		.loc 1 403 0
+ 8073 0d96 344B     		ldr	r3, .L72+84
+ 8074 0d98 9422     		movs	r2, #148
+ 8075 0d9a D200     		lsls	r2, r2, #3
+ 8076 0d9c 9446     		mov	ip, r2
+ 8077 0d9e BC44     		add	ip, ip, r7
+ 8078 0da0 6344     		add	r3, r3, ip
+ 8079 0da2 5B68     		ldr	r3, [r3, #4]
+ 8080 0da4 9A1E     		subs	r2, r3, #2
+ 8081 0da6 304B     		ldr	r3, .L72+84
+ 8082 0da8 9421     		movs	r1, #148
+ 8083 0daa C900     		lsls	r1, r1, #3
+ 8084 0dac 8C46     		mov	ip, r1
+ 8085 0dae BC44     		add	ip, ip, r7
+ 8086 0db0 6344     		add	r3, r3, ip
+ 8087 0db2 5A60     		str	r2, [r3, #4]
+ 404:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				if (counter % 2 == 0) {
+ 8088              		.loc 1 404 0
+ 8089 0db4 1A4B     		ldr	r3, .L72+12
+ 8090 0db6 1B68     		ldr	r3, [r3]
+ 8091 0db8 1A00     		movs	r2, r3
+ 8092 0dba 0123     		movs	r3, #1
+ 8093 0dbc 1340     		ands	r3, r2
+ 8094 0dbe 01D0     		beq	.LCB1690
+ 8095 0dc0 00F029FD 		bl	.L65	@far jump
+ 8096              	.LCB1690:
+ 405:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					bird.yPos--;
+ 8097              		.loc 1 405 0
+ 8098 0dc4 284B     		ldr	r3, .L72+84
+ 8099 0dc6 9422     		movs	r2, #148
+ 8100 0dc8 D200     		lsls	r2, r2, #3
+ 8101 0dca 9446     		mov	ip, r2
+ 8102 0dcc BC44     		add	ip, ip, r7
+ 8103 0dce 6344     		add	r3, r3, ip
+ 8104 0dd0 9B68     		ldr	r3, [r3, #8]
+ 8105 0dd2 5A1E     		subs	r2, r3, #1
+ 8106 0dd4 244B     		ldr	r3, .L72+84
+ 8107 0dd6 9421     		movs	r1, #148
+ 8108 0dd8 C900     		lsls	r1, r1, #3
+ 8109 0dda 8C46     		mov	ip, r1
+ 8110 0ddc BC44     		add	ip, ip, r7
+ 8111 0dde 6344     		add	r3, r3, ip
+ 8112 0de0 9A60     		str	r2, [r3, #8]
+ 406:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				}
  407:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
- 408:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 			case GAME_SCREEN: //inside
+ 408:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				break;
+ 8113              		.loc 1 408 0
+ 8114 0de2 00F018FD 		bl	.L65	@ far jump
+ 8115              	.L13:
  409:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
- 410:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				counter++;
- 8066              		.loc 1 410 0
- 8067 0dbc 1E4B     		ldr	r3, .L67+12
- 8068 0dbe 1B68     		ldr	r3, [r3]
- 8069 0dc0 5A1C     		adds	r2, r3, #1
- 8070 0dc2 1D4B     		ldr	r3, .L67+12
- 8071 0dc4 1A60     		str	r2, [r3]
- 411:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				if(read_DIL_single( LIGHT_TRIGGER )) {
- 8072              		.loc 1 411 0
- 8073 0dc6 0620     		movs	r0, #6
- 8074 0dc8 FFF7FEFF 		bl	read_DIL_single
- 8075 0dcc 031E     		subs	r3, r0, #0
- 8076 0dce 0CD0     		beq	.L35
- 412:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					draw_game_object( &indoors2 );
- 8077              		.loc 1 412 0
- 8078 0dd0 D223     		movs	r3, #210
- 8079 0dd2 9B00     		lsls	r3, r3, #2
- 8080 0dd4 FB18     		adds	r3, r7, r3
- 8081 0dd6 1800     		movs	r0, r3
- 8082 0dd8 FFF7FEFF 		bl	draw_game_object
- 413:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					ascii_write("*click*","");
- 8083              		.loc 1 413 0
- 8084 0ddc 264A     		ldr	r2, .L67+76
- 8085 0dde 274B     		ldr	r3, .L67+80
- 8086 0de0 1100     		movs	r1, r2
- 8087 0de2 1800     		movs	r0, r3
- 8088 0de4 FFF7FEFF 		bl	ascii_write
- 8089 0de8 0BE0     		b	.L36
- 8090              	.L35:
- 414:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				} else {
- 415:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					draw_game_object( &indoors );
- 8091              		.loc 1 415 0
- 8092 0dea DB23     		movs	r3, #219
- 8093 0dec 9B00     		lsls	r3, r3, #2
- 8094 0dee FB18     		adds	r3, r7, r3
- 8095 0df0 1800     		movs	r0, r3
- 8096 0df2 FFF7FEFF 		bl	draw_game_object
- 416:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					draw_game_object( &trophy );
- 8097              		.loc 1 416 0
- 8098 0df6 C923     		movs	r3, #201
- 8099 0df8 9B00     		lsls	r3, r3, #2
- 8100 0dfa FB18     		adds	r3, r7, r3
- 8101 0dfc 1800     		movs	r0, r3
- 8102 0dfe FFF7FEFF 		bl	draw_game_object
- 8103              	.L36:
- 417:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				}
- 418:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
- 419:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				if(!no_DIP)
- 8104              		.loc 1 419 0
- 8105 0e02 1F4B     		ldr	r3, .L67+84
- 8106 0e04 FB18     		adds	r3, r7, r3
- 8107 0e06 1B68     		ldr	r3, [r3]
- 8108 0e08 002B     		cmp	r3, #0
- 8109 0e0a 05D1     		bne	.L37
- 420:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					draw_game_object( &DIP );
- 8110              		.loc 1 420 0
- 8111 0e0c A523     		movs	r3, #165
- 8112 0e0e 9B00     		lsls	r3, r3, #2
- 8113 0e10 FB18     		adds	r3, r7, r3
- 8114 0e12 1800     		movs	r0, r3
- 8115 0e14 FFF7FEFF 		bl	draw_game_object
- 8116              	.L37:
- 421:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				draw_game_object( &player );
- 8117              		.loc 1 421 0
- 8118 0e18 9C23     		movs	r3, #156
- 8119 0e1a 9B00     		lsls	r3, r3, #2
- 8120 0e1c FB18     		adds	r3, r7, r3
- 8121 0e1e 1800     		movs	r0, r3
- 8122 0e20 FFF7FEFF 		bl	draw_game_object
- 422:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				static int i;
- 423:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				for(i = 0; i < 3; i++) {
- 8123              		.loc 1 423 0
- 8124 0e24 174B     		ldr	r3, .L67+88
- 8125 0e26 0022     		movs	r2, #0
- 8126 0e28 1A60     		str	r2, [r3]
- 8127 0e2a 59E0     		b	.L38
- 8128              	.L68:
- 8129              		.align	2
- 8130              	.L67:
- 8131 0e2c 34170000 		.word	long_text.4304
- 8132 0e30 30170000 		.word	delay_until_text.4306
- 8133 0e34 38170000 		.word	short_text.4305
- 8134 0e38 00000000 		.word	counter
- 8135 0e3c F8FBFFFF 		.word	-1032
- 8136 0e40 E4FBFFFF 		.word	-1052
- 8137 0e44 D0FBFFFF 		.word	-1072
- 8138 0e48 BCFBFFFF 		.word	-1092
- 8139 0e4c A8FBFFFF 		.word	-1112
- 8140 0e50 94FBFFFF 		.word	-1132
- 8141 0e54 6CFBFFFF 		.word	-1172
- 8142 0e58 80FBFFFF 		.word	-1152
- 8143 0e5c 00000000 		.word	current_screen
- 8144 0e60 00000000 		.word	random_seed
- 8145 0e64 B4FDFFFF 		.word	-588
- 8146 0e68 90FDFFFF 		.word	-624
- 8147 0e6c 48FDFFFF 		.word	-696
- 8148 0e70 6CFDFFFF 		.word	-660
- 8149 0e74 44FEFFFF 		.word	-444
- 8150 0e78 80010000 		.word	.LC104
- 8151 0e7c 84010000 		.word	.LC106
- 8152 0e80 84040000 		.word	1156
- 8153 0e84 04000000 		.word	i.4308
- 8154              	.L39:
- 424:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					draw_game_object( &fires[i] );
- 8155              		.loc 1 424 0 discriminator 3
- 8156 0e88 C14B     		ldr	r3, .L69
- 8157 0e8a 1A68     		ldr	r2, [r3]
- 8158 0e8c 8423     		movs	r3, #132
- 8159 0e8e 5B00     		lsls	r3, r3, #1
- 8160 0e90 F918     		adds	r1, r7, r3
- 8161 0e92 1300     		movs	r3, r2
- 8162 0e94 DB00     		lsls	r3, r3, #3
- 8163 0e96 9B18     		adds	r3, r3, r2
- 8164 0e98 9B00     		lsls	r3, r3, #2
- 8165 0e9a CB18     		adds	r3, r1, r3
- 8166 0e9c 1800     		movs	r0, r3
- 8167 0e9e FFF7FEFF 		bl	draw_game_object
- 425:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					fires[i].update( &fires[i] );
- 8168              		.loc 1 425 0 discriminator 3
- 8169 0ea2 BB4B     		ldr	r3, .L69
- 8170 0ea4 1A68     		ldr	r2, [r3]
- 8171 0ea6 BB4B     		ldr	r3, .L69+4
- 8172 0ea8 9321     		movs	r1, #147
- 8173 0eaa C900     		lsls	r1, r1, #3
- 8174 0eac 7918     		adds	r1, r7, r1
- 8175 0eae C918     		adds	r1, r1, r3
- 8176 0eb0 1300     		movs	r3, r2
- 8177 0eb2 DB00     		lsls	r3, r3, #3
- 8178 0eb4 9B18     		adds	r3, r3, r2
- 8179 0eb6 9B00     		lsls	r3, r3, #2
- 8180 0eb8 CB18     		adds	r3, r1, r3
- 8181 0eba 0C33     		adds	r3, r3, #12
- 8182 0ebc 1968     		ldr	r1, [r3]
- 8183 0ebe B44B     		ldr	r3, .L69
- 8184 0ec0 1A68     		ldr	r2, [r3]
- 8185 0ec2 8423     		movs	r3, #132
- 8186 0ec4 5B00     		lsls	r3, r3, #1
- 8187 0ec6 F818     		adds	r0, r7, r3
- 8188 0ec8 1300     		movs	r3, r2
- 8189 0eca DB00     		lsls	r3, r3, #3
- 8190 0ecc 9B18     		adds	r3, r3, r2
- 8191 0ece 9B00     		lsls	r3, r3, #2
- 8192 0ed0 C318     		adds	r3, r0, r3
- 8193 0ed2 1800     		movs	r0, r3
- 8194 0ed4 8847     		blx	r1
- 8195              	.LVL18:
- 423:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					draw_game_object( &fires[i] );
- 8196              		.loc 1 423 0 discriminator 3
- 8197 0ed6 AE4B     		ldr	r3, .L69
- 8198 0ed8 1B68     		ldr	r3, [r3]
- 8199 0eda 5A1C     		adds	r2, r3, #1
- 8200 0edc AC4B     		ldr	r3, .L69
- 8201 0ede 1A60     		str	r2, [r3]
- 8202              	.L38:
- 423:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					draw_game_object( &fires[i] );
- 8203              		.loc 1 423 0 is_stmt 0 discriminator 1
- 8204 0ee0 AB4B     		ldr	r3, .L69
- 8205 0ee2 1B68     		ldr	r3, [r3]
- 8206 0ee4 022B     		cmp	r3, #2
- 8207 0ee6 CFDD     		ble	.L39
- 426:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				}
- 427:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				draw_game_object( &hair );
- 8208              		.loc 1 427 0 is_stmt 1
- 8209 0ee8 C023     		movs	r3, #192
- 8210 0eea 9B00     		lsls	r3, r3, #2
- 8211 0eec FB18     		adds	r3, r7, r3
- 8212 0eee 1800     		movs	r0, r3
- 8213 0ef0 FFF7FEFF 		bl	draw_game_object
- 428:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				if(exploding) {
- 8214              		.loc 1 428 0
- 8215 0ef4 9023     		movs	r3, #144
- 8216 0ef6 DB00     		lsls	r3, r3, #3
- 8217 0ef8 FB18     		adds	r3, r7, r3
- 8218 0efa 1B68     		ldr	r3, [r3]
- 8219 0efc 002B     		cmp	r3, #0
- 8220 0efe 53D0     		beq	.L40
- 8221              	.LBB3:
- 429:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					static int first = 1;
- 430:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					if (first) {
- 8222              		.loc 1 430 0
- 8223 0f00 A54B     		ldr	r3, .L69+8
- 8224 0f02 1B68     		ldr	r3, [r3]
- 8225 0f04 002B     		cmp	r3, #0
- 8226 0f06 34D0     		beq	.L41
- 431:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 						boom.xPos = player.xPos + 9 - 53;
- 8227              		.loc 1 431 0
- 8228 0f08 A44B     		ldr	r3, .L69+12
- 8229 0f0a 9322     		movs	r2, #147
- 8230 0f0c D200     		lsls	r2, r2, #3
- 8231 0f0e 9446     		mov	ip, r2
- 8232 0f10 BC44     		add	ip, ip, r7
- 8233 0f12 6344     		add	r3, r3, ip
- 8234 0f14 5B68     		ldr	r3, [r3, #4]
- 8235 0f16 2C3B     		subs	r3, r3, #44
- 8236 0f18 1A00     		movs	r2, r3
- 8237 0f1a A14B     		ldr	r3, .L69+16
- 8238 0f1c 9321     		movs	r1, #147
- 8239 0f1e C900     		lsls	r1, r1, #3
- 8240 0f20 8C46     		mov	ip, r1
- 8241 0f22 BC44     		add	ip, ip, r7
- 8242 0f24 6344     		add	r3, r3, ip
- 8243 0f26 5A60     		str	r2, [r3, #4]
- 432:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 						boom.yPos = player.yPos + 9 - 27;
- 8244              		.loc 1 432 0
- 8245 0f28 9C4B     		ldr	r3, .L69+12
- 8246 0f2a 9322     		movs	r2, #147
- 8247 0f2c D200     		lsls	r2, r2, #3
- 8248 0f2e 9446     		mov	ip, r2
- 8249 0f30 BC44     		add	ip, ip, r7
- 8250 0f32 6344     		add	r3, r3, ip
- 8251 0f34 9B68     		ldr	r3, [r3, #8]
- 8252 0f36 123B     		subs	r3, r3, #18
- 8253 0f38 1A00     		movs	r2, r3
- 8254 0f3a 994B     		ldr	r3, .L69+16
- 8255 0f3c 9321     		movs	r1, #147
- 8256 0f3e C900     		lsls	r1, r1, #3
- 8257 0f40 8C46     		mov	ip, r1
- 8258 0f42 BC44     		add	ip, ip, r7
- 8259 0f44 6344     		add	r3, r3, ip
- 8260 0f46 9A60     		str	r2, [r3, #8]
- 433:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 						player.xPos = -100;
- 8261              		.loc 1 433 0
- 8262 0f48 944B     		ldr	r3, .L69+12
- 8263 0f4a 9322     		movs	r2, #147
- 8264 0f4c D200     		lsls	r2, r2, #3
- 8265 0f4e 9446     		mov	ip, r2
- 8266 0f50 BC44     		add	ip, ip, r7
- 8267 0f52 6344     		add	r3, r3, ip
- 8268 0f54 6422     		movs	r2, #100
- 8269 0f56 5242     		rsbs	r2, r2, #0
- 8270 0f58 5A60     		str	r2, [r3, #4]
- 434:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 						player.yPos = -100;
- 8271              		.loc 1 434 0
- 8272 0f5a 904B     		ldr	r3, .L69+12
- 8273 0f5c 9322     		movs	r2, #147
- 8274 0f5e D200     		lsls	r2, r2, #3
- 8275 0f60 9446     		mov	ip, r2
- 8276 0f62 BC44     		add	ip, ip, r7
- 8277 0f64 6344     		add	r3, r3, ip
- 8278 0f66 6422     		movs	r2, #100
- 8279 0f68 5242     		rsbs	r2, r2, #0
- 8280 0f6a 9A60     		str	r2, [r3, #8]
- 435:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 						first = 0;
- 8281              		.loc 1 435 0
- 8282 0f6c 8A4B     		ldr	r3, .L69+8
- 8283 0f6e 0022     		movs	r2, #0
- 8284 0f70 1A60     		str	r2, [r3]
- 8285              	.L41:
- 436:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					}					
- 437:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					draw_game_object( &boom );
- 8286              		.loc 1 437 0
- 8287 0f72 AE23     		movs	r3, #174
- 8288 0f74 9B00     		lsls	r3, r3, #2
- 8289 0f76 FB18     		adds	r3, r7, r3
- 8290 0f78 1800     		movs	r0, r3
- 8291 0f7a FFF7FEFF 		bl	draw_game_object
- 438:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					if(boom.current_frame < 10)
- 8292              		.loc 1 438 0
- 8293 0f7e 884B     		ldr	r3, .L69+16
- 8294 0f80 9322     		movs	r2, #147
- 8295 0f82 D200     		lsls	r2, r2, #3
- 8296 0f84 9446     		mov	ip, r2
- 8297 0f86 BC44     		add	ip, ip, r7
- 8298 0f88 6344     		add	r3, r3, ip
- 8299 0f8a 5B69     		ldr	r3, [r3, #20]
- 8300 0f8c 092B     		cmp	r3, #9
- 8301 0f8e 0BDC     		bgt	.L40
- 439:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 						boom.update( &boom );
- 8302              		.loc 1 439 0
- 8303 0f90 834B     		ldr	r3, .L69+16
- 8304 0f92 9322     		movs	r2, #147
- 8305 0f94 D200     		lsls	r2, r2, #3
- 8306 0f96 9446     		mov	ip, r2
- 8307 0f98 BC44     		add	ip, ip, r7
- 8308 0f9a 6344     		add	r3, r3, ip
- 8309 0f9c DB68     		ldr	r3, [r3, #12]
- 8310 0f9e AE22     		movs	r2, #174
- 8311 0fa0 9200     		lsls	r2, r2, #2
- 8312 0fa2 BA18     		adds	r2, r7, r2
- 8313 0fa4 1000     		movs	r0, r2
- 8314 0fa6 9847     		blx	r3
- 8315              	.LVL19:
- 8316              	.L40:
- 8317              	.LBE3:
- 440:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				}
- 441:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
- 442:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				show_frame(1);
- 8318              		.loc 1 442 0
- 8319 0fa8 0120     		movs	r0, #1
- 8320 0faa FFF7FEFF 		bl	show_frame
- 443:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
- 444:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				static int last_climb_value = 100;
- 445:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				if((read_DIL_single(CLIMB_TRIGGER) != last_climb_value) && player.xPos > 90 && player.xPos < 10
- 8321              		.loc 1 445 0
- 8322 0fae 0420     		movs	r0, #4
- 8323 0fb0 FFF7FEFF 		bl	read_DIL_single
- 8324 0fb4 0200     		movs	r2, r0
- 8325 0fb6 7B4B     		ldr	r3, .L69+20
- 8326 0fb8 1B68     		ldr	r3, [r3]
- 8327 0fba 9A42     		cmp	r2, r3
- 8328 0fbc 23D0     		beq	.L42
- 8329              		.loc 1 445 0 is_stmt 0 discriminator 1
- 8330 0fbe 774B     		ldr	r3, .L69+12
- 8331 0fc0 9322     		movs	r2, #147
- 8332 0fc2 D200     		lsls	r2, r2, #3
- 8333 0fc4 9446     		mov	ip, r2
- 8334 0fc6 BC44     		add	ip, ip, r7
- 8335 0fc8 6344     		add	r3, r3, ip
- 8336 0fca 5B68     		ldr	r3, [r3, #4]
- 8337 0fcc 5A2B     		cmp	r3, #90
- 8338 0fce 1ADD     		ble	.L42
- 8339              		.loc 1 445 0 discriminator 2
- 8340 0fd0 724B     		ldr	r3, .L69+12
- 8341 0fd2 9322     		movs	r2, #147
- 8342 0fd4 D200     		lsls	r2, r2, #3
- 8343 0fd6 9446     		mov	ip, r2
- 8344 0fd8 BC44     		add	ip, ip, r7
- 8345 0fda 6344     		add	r3, r3, ip
- 8346 0fdc 5B68     		ldr	r3, [r3, #4]
- 8347 0fde 6B2B     		cmp	r3, #107
- 8348 0fe0 11DC     		bgt	.L42
- 8349              		.loc 1 445 0 discriminator 3
- 8350 0fe2 9223     		movs	r3, #146
- 8351 0fe4 DB00     		lsls	r3, r3, #3
- 8352 0fe6 FB18     		adds	r3, r7, r3
- 8353 0fe8 1B68     		ldr	r3, [r3]
- 8354 0fea 002B     		cmp	r3, #0
- 8355 0fec 0BD1     		bne	.L42
- 446:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					is_climbing = 1;
- 8356              		.loc 1 446 0 is_stmt 1
- 8357 0fee 0123     		movs	r3, #1
- 8358 0ff0 6D4A     		ldr	r2, .L69+24
- 8359 0ff2 BA18     		adds	r2, r7, r2
- 8360 0ff4 1360     		str	r3, [r2]
- 447:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					player.xPos = 98;
- 8361              		.loc 1 447 0
- 8362 0ff6 694B     		ldr	r3, .L69+12
- 8363 0ff8 9322     		movs	r2, #147
- 8364 0ffa D200     		lsls	r2, r2, #3
- 8365 0ffc 9446     		mov	ip, r2
- 8366 0ffe BC44     		add	ip, ip, r7
- 8367 1000 6344     		add	r3, r3, ip
- 8368 1002 6222     		movs	r2, #98
- 8369 1004 5A60     		str	r2, [r3, #4]
- 8370              	.L42:
- 448:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				}
- 449:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				last_climb_value = read_DIL_single(CLIMB_TRIGGER);
- 8371              		.loc 1 449 0
- 8372 1006 0420     		movs	r0, #4
- 8373 1008 FFF7FEFF 		bl	read_DIL_single
- 8374 100c 0200     		movs	r2, r0
- 8375 100e 654B     		ldr	r3, .L69+20
- 8376 1010 1A60     		str	r2, [r3]
- 450:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
- 451:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				if(is_climbing) {
- 8377              		.loc 1 451 0
- 8378 1012 654B     		ldr	r3, .L69+24
- 8379 1014 FB18     		adds	r3, r7, r3
- 8380 1016 1B68     		ldr	r3, [r3]
- 8381 1018 002B     		cmp	r3, #0
- 8382 101a 44D0     		beq	.L43
- 452:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					gameObjectUpdate( &player );
- 8383              		.loc 1 452 0
- 8384 101c 9C23     		movs	r3, #156
- 8385 101e 9B00     		lsls	r3, r3, #2
- 8386 1020 FB18     		adds	r3, r7, r3
- 8387 1022 1800     		movs	r0, r3
- 8388 1024 FFF7FEFF 		bl	gameObjectUpdate
- 453:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					if(player.yPos > 4) {
- 8389              		.loc 1 453 0
- 8390 1028 5C4B     		ldr	r3, .L69+12
- 8391 102a 9322     		movs	r2, #147
- 8392 102c D200     		lsls	r2, r2, #3
- 8393 102e 9446     		mov	ip, r2
- 8394 1030 BC44     		add	ip, ip, r7
- 8395 1032 6344     		add	r3, r3, ip
- 8396 1034 9B68     		ldr	r3, [r3, #8]
- 8397 1036 042B     		cmp	r3, #4
- 8398 1038 15DD     		ble	.L44
- 454:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 						player.yPos--;
- 8399              		.loc 1 454 0
- 8400 103a 584B     		ldr	r3, .L69+12
- 8401 103c 9322     		movs	r2, #147
- 8402 103e D200     		lsls	r2, r2, #3
- 8403 1040 9446     		mov	ip, r2
- 8404 1042 BC44     		add	ip, ip, r7
- 8405 1044 6344     		add	r3, r3, ip
- 8406 1046 9B68     		ldr	r3, [r3, #8]
- 8407 1048 5A1E     		subs	r2, r3, #1
- 8408 104a 544B     		ldr	r3, .L69+12
- 8409 104c 9321     		movs	r1, #147
- 8410 104e C900     		lsls	r1, r1, #3
- 8411 1050 8C46     		mov	ip, r1
- 8412 1052 BC44     		add	ip, ip, r7
- 8413 1054 6344     		add	r3, r3, ip
- 8414 1056 9A60     		str	r2, [r3, #8]
+ 410:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 			case GAME_SCREEN: //inside
+ 411:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
+ 412:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				counter++;
+ 8116              		.loc 1 412 0
+ 8117 0de6 0E4B     		ldr	r3, .L72+12
+ 8118 0de8 1B68     		ldr	r3, [r3]
+ 8119 0dea 5A1C     		adds	r2, r3, #1
+ 8120 0dec 0C4B     		ldr	r3, .L72+12
+ 8121 0dee 1A60     		str	r2, [r3]
+ 413:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				if(read_DIL_single( LIGHT_TRIGGER )) {
+ 8122              		.loc 1 413 0
+ 8123 0df0 0620     		movs	r0, #6
+ 8124 0df2 FFF7FEFF 		bl	read_DIL_single
+ 8125 0df6 031E     		subs	r3, r0, #0
+ 8126 0df8 3CD0     		beq	.L35
+ 414:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					draw_game_object( &indoors2 );
+ 8127              		.loc 1 414 0
+ 8128 0dfa D223     		movs	r3, #210
+ 8129 0dfc 9B00     		lsls	r3, r3, #2
+ 8130 0dfe FB18     		adds	r3, r7, r3
+ 8131 0e00 1800     		movs	r0, r3
+ 8132 0e02 FFF7FEFF 		bl	draw_game_object
+ 415:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					ascii_write("*click*","");
+ 8133              		.loc 1 415 0
+ 8134 0e06 194A     		ldr	r2, .L72+88
+ 8135 0e08 194B     		ldr	r3, .L72+92
+ 8136 0e0a 1100     		movs	r1, r2
+ 8137 0e0c 1800     		movs	r0, r3
+ 8138 0e0e FFF7FEFF 		bl	ascii_write
+ 8139 0e12 3BE0     		b	.L36
+ 8140              	.L73:
+ 8141              		.align	2
+ 8142              	.L72:
+ 8143 0e14 34170000 		.word	long_text.4306
+ 8144 0e18 30170000 		.word	delay_until_text.4308
+ 8145 0e1c 38170000 		.word	short_text.4307
+ 8146 0e20 00000000 		.word	counter
+ 8147 0e24 04FCFFFF 		.word	-1020
+ 8148 0e28 F0FBFFFF 		.word	-1040
+ 8149 0e2c DCFBFFFF 		.word	-1060
+ 8150 0e30 C8FBFFFF 		.word	-1080
+ 8151 0e34 B4FBFFFF 		.word	-1100
+ 8152 0e38 A0FBFFFF 		.word	-1120
+ 8153 0e3c 8CFBFFFF 		.word	-1140
+ 8154 0e40 64FBFFFF 		.word	-1180
+ 8155 0e44 78FBFFFF 		.word	-1160
+ 8156 0e48 00000000 		.word	current_screen
+ 8157 0e4c 00000000 		.word	random_seed
+ 8158 0e50 80010000 		.word	.LC104
+ 8159 0e54 98010000 		.word	.LC106
+ 8160 0e58 ACFDFFFF 		.word	-596
+ 8161 0e5c 88FDFFFF 		.word	-632
+ 8162 0e60 40FDFFFF 		.word	-704
+ 8163 0e64 64FDFFFF 		.word	-668
+ 8164 0e68 3CFEFFFF 		.word	-452
+ 8165 0e6c AC010000 		.word	.LC108
+ 8166 0e70 B0010000 		.word	.LC110
+ 8167              	.L35:
+ 416:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				} else {
+ 417:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					draw_game_object( &indoors );
+ 8168              		.loc 1 417 0
+ 8169 0e74 DB23     		movs	r3, #219
+ 8170 0e76 9B00     		lsls	r3, r3, #2
+ 8171 0e78 FB18     		adds	r3, r7, r3
+ 8172 0e7a 1800     		movs	r0, r3
+ 8173 0e7c FFF7FEFF 		bl	draw_game_object
+ 418:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					draw_game_object( &trophy );
+ 8174              		.loc 1 418 0
+ 8175 0e80 C923     		movs	r3, #201
+ 8176 0e82 9B00     		lsls	r3, r3, #2
+ 8177 0e84 FB18     		adds	r3, r7, r3
+ 8178 0e86 1800     		movs	r0, r3
+ 8179 0e88 FFF7FEFF 		bl	draw_game_object
+ 8180              	.L36:
+ 419:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				}
+ 420:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
+ 421:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				if(!no_DIP)
+ 8181              		.loc 1 421 0
+ 8182 0e8c E24B     		ldr	r3, .L74
+ 8183 0e8e FB18     		adds	r3, r7, r3
+ 8184 0e90 1B68     		ldr	r3, [r3]
+ 8185 0e92 002B     		cmp	r3, #0
+ 8186 0e94 05D1     		bne	.L37
+ 422:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					draw_game_object( &DIP );
+ 8187              		.loc 1 422 0
+ 8188 0e96 A523     		movs	r3, #165
+ 8189 0e98 9B00     		lsls	r3, r3, #2
+ 8190 0e9a FB18     		adds	r3, r7, r3
+ 8191 0e9c 1800     		movs	r0, r3
+ 8192 0e9e FFF7FEFF 		bl	draw_game_object
+ 8193              	.L37:
+ 423:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				draw_game_object( &player );
+ 8194              		.loc 1 423 0
+ 8195 0ea2 9C23     		movs	r3, #156
+ 8196 0ea4 9B00     		lsls	r3, r3, #2
+ 8197 0ea6 FB18     		adds	r3, r7, r3
+ 8198 0ea8 1800     		movs	r0, r3
+ 8199 0eaa FFF7FEFF 		bl	draw_game_object
+ 424:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				static int i;
+ 425:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				for(i = 0; i < 3; i++) {
+ 8200              		.loc 1 425 0
+ 8201 0eae DB4B     		ldr	r3, .L74+4
+ 8202 0eb0 0022     		movs	r2, #0
+ 8203 0eb2 1A60     		str	r2, [r3]
+ 8204 0eb4 2BE0     		b	.L38
+ 8205              	.L39:
+ 426:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					draw_game_object( &fires[i] );
+ 8206              		.loc 1 426 0 discriminator 3
+ 8207 0eb6 D94B     		ldr	r3, .L74+4
+ 8208 0eb8 1A68     		ldr	r2, [r3]
+ 8209 0eba 8423     		movs	r3, #132
+ 8210 0ebc 5B00     		lsls	r3, r3, #1
+ 8211 0ebe F918     		adds	r1, r7, r3
+ 8212 0ec0 1300     		movs	r3, r2
+ 8213 0ec2 DB00     		lsls	r3, r3, #3
+ 8214 0ec4 9B18     		adds	r3, r3, r2
+ 8215 0ec6 9B00     		lsls	r3, r3, #2
+ 8216 0ec8 CB18     		adds	r3, r1, r3
+ 8217 0eca 1800     		movs	r0, r3
+ 8218 0ecc FFF7FEFF 		bl	draw_game_object
+ 427:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					fires[i].update( &fires[i] );
+ 8219              		.loc 1 427 0 discriminator 3
+ 8220 0ed0 D24B     		ldr	r3, .L74+4
+ 8221 0ed2 1A68     		ldr	r2, [r3]
+ 8222 0ed4 D24B     		ldr	r3, .L74+8
+ 8223 0ed6 9421     		movs	r1, #148
+ 8224 0ed8 C900     		lsls	r1, r1, #3
+ 8225 0eda 7918     		adds	r1, r7, r1
+ 8226 0edc C918     		adds	r1, r1, r3
+ 8227 0ede 1300     		movs	r3, r2
+ 8228 0ee0 DB00     		lsls	r3, r3, #3
+ 8229 0ee2 9B18     		adds	r3, r3, r2
+ 8230 0ee4 9B00     		lsls	r3, r3, #2
+ 8231 0ee6 CB18     		adds	r3, r1, r3
+ 8232 0ee8 0C33     		adds	r3, r3, #12
+ 8233 0eea 1968     		ldr	r1, [r3]
+ 8234 0eec CB4B     		ldr	r3, .L74+4
+ 8235 0eee 1A68     		ldr	r2, [r3]
+ 8236 0ef0 8423     		movs	r3, #132
+ 8237 0ef2 5B00     		lsls	r3, r3, #1
+ 8238 0ef4 F818     		adds	r0, r7, r3
+ 8239 0ef6 1300     		movs	r3, r2
+ 8240 0ef8 DB00     		lsls	r3, r3, #3
+ 8241 0efa 9B18     		adds	r3, r3, r2
+ 8242 0efc 9B00     		lsls	r3, r3, #2
+ 8243 0efe C318     		adds	r3, r0, r3
+ 8244 0f00 1800     		movs	r0, r3
+ 8245 0f02 8847     		blx	r1
+ 8246              	.LVL18:
+ 425:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					draw_game_object( &fires[i] );
+ 8247              		.loc 1 425 0 discriminator 3
+ 8248 0f04 C54B     		ldr	r3, .L74+4
+ 8249 0f06 1B68     		ldr	r3, [r3]
+ 8250 0f08 5A1C     		adds	r2, r3, #1
+ 8251 0f0a C44B     		ldr	r3, .L74+4
+ 8252 0f0c 1A60     		str	r2, [r3]
+ 8253              	.L38:
+ 425:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					draw_game_object( &fires[i] );
+ 8254              		.loc 1 425 0 is_stmt 0 discriminator 1
+ 8255 0f0e C34B     		ldr	r3, .L74+4
+ 8256 0f10 1B68     		ldr	r3, [r3]
+ 8257 0f12 022B     		cmp	r3, #2
+ 8258 0f14 CFDD     		ble	.L39
+ 428:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				}
+ 429:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				draw_game_object( &hair );
+ 8259              		.loc 1 429 0 is_stmt 1
+ 8260 0f16 C023     		movs	r3, #192
+ 8261 0f18 9B00     		lsls	r3, r3, #2
+ 8262 0f1a FB18     		adds	r3, r7, r3
+ 8263 0f1c 1800     		movs	r0, r3
+ 8264 0f1e FFF7FEFF 		bl	draw_game_object
+ 430:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				if(exploding) {
+ 8265              		.loc 1 430 0
+ 8266 0f22 9123     		movs	r3, #145
+ 8267 0f24 DB00     		lsls	r3, r3, #3
+ 8268 0f26 FB18     		adds	r3, r7, r3
+ 8269 0f28 1B68     		ldr	r3, [r3]
+ 8270 0f2a 002B     		cmp	r3, #0
+ 8271 0f2c 55D0     		beq	.L40
+ 431:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					if (first) {
+ 8272              		.loc 1 431 0
+ 8273 0f2e BD4B     		ldr	r3, .L74+12
+ 8274 0f30 FB18     		adds	r3, r7, r3
+ 8275 0f32 1B68     		ldr	r3, [r3]
+ 8276 0f34 002B     		cmp	r3, #0
+ 8277 0f36 35D0     		beq	.L41
+ 432:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 						boom.xPos = player.xPos + 9 - 53;
+ 8278              		.loc 1 432 0
+ 8279 0f38 BB4B     		ldr	r3, .L74+16
+ 8280 0f3a 9422     		movs	r2, #148
+ 8281 0f3c D200     		lsls	r2, r2, #3
+ 8282 0f3e 9446     		mov	ip, r2
+ 8283 0f40 BC44     		add	ip, ip, r7
+ 8284 0f42 6344     		add	r3, r3, ip
+ 8285 0f44 5B68     		ldr	r3, [r3, #4]
+ 8286 0f46 2C3B     		subs	r3, r3, #44
+ 8287 0f48 1A00     		movs	r2, r3
+ 8288 0f4a B84B     		ldr	r3, .L74+20
+ 8289 0f4c 9421     		movs	r1, #148
+ 8290 0f4e C900     		lsls	r1, r1, #3
+ 8291 0f50 8C46     		mov	ip, r1
+ 8292 0f52 BC44     		add	ip, ip, r7
+ 8293 0f54 6344     		add	r3, r3, ip
+ 8294 0f56 5A60     		str	r2, [r3, #4]
+ 433:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 						boom.yPos = player.yPos + 9 - 27;
+ 8295              		.loc 1 433 0
+ 8296 0f58 B34B     		ldr	r3, .L74+16
+ 8297 0f5a 9422     		movs	r2, #148
+ 8298 0f5c D200     		lsls	r2, r2, #3
+ 8299 0f5e 9446     		mov	ip, r2
+ 8300 0f60 BC44     		add	ip, ip, r7
+ 8301 0f62 6344     		add	r3, r3, ip
+ 8302 0f64 9B68     		ldr	r3, [r3, #8]
+ 8303 0f66 123B     		subs	r3, r3, #18
+ 8304 0f68 1A00     		movs	r2, r3
+ 8305 0f6a B04B     		ldr	r3, .L74+20
+ 8306 0f6c 9421     		movs	r1, #148
+ 8307 0f6e C900     		lsls	r1, r1, #3
+ 8308 0f70 8C46     		mov	ip, r1
+ 8309 0f72 BC44     		add	ip, ip, r7
+ 8310 0f74 6344     		add	r3, r3, ip
+ 8311 0f76 9A60     		str	r2, [r3, #8]
+ 434:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 						player.xPos = -100;
+ 8312              		.loc 1 434 0
+ 8313 0f78 AB4B     		ldr	r3, .L74+16
+ 8314 0f7a 9422     		movs	r2, #148
+ 8315 0f7c D200     		lsls	r2, r2, #3
+ 8316 0f7e 9446     		mov	ip, r2
+ 8317 0f80 BC44     		add	ip, ip, r7
+ 8318 0f82 6344     		add	r3, r3, ip
+ 8319 0f84 6422     		movs	r2, #100
+ 8320 0f86 5242     		rsbs	r2, r2, #0
+ 8321 0f88 5A60     		str	r2, [r3, #4]
+ 435:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 						player.yPos = -100;
+ 8322              		.loc 1 435 0
+ 8323 0f8a A74B     		ldr	r3, .L74+16
+ 8324 0f8c 9422     		movs	r2, #148
+ 8325 0f8e D200     		lsls	r2, r2, #3
+ 8326 0f90 9446     		mov	ip, r2
+ 8327 0f92 BC44     		add	ip, ip, r7
+ 8328 0f94 6344     		add	r3, r3, ip
+ 8329 0f96 6422     		movs	r2, #100
+ 8330 0f98 5242     		rsbs	r2, r2, #0
+ 8331 0f9a 9A60     		str	r2, [r3, #8]
+ 436:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 						first = 0;
+ 8332              		.loc 1 436 0
+ 8333 0f9c 0023     		movs	r3, #0
+ 8334 0f9e A14A     		ldr	r2, .L74+12
+ 8335 0fa0 BA18     		adds	r2, r7, r2
+ 8336 0fa2 1360     		str	r3, [r2]
+ 8337              	.L41:
+ 437:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					}					
+ 438:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					draw_game_object( &boom );
+ 8338              		.loc 1 438 0
+ 8339 0fa4 AE23     		movs	r3, #174
+ 8340 0fa6 9B00     		lsls	r3, r3, #2
+ 8341 0fa8 FB18     		adds	r3, r7, r3
+ 8342 0faa 1800     		movs	r0, r3
+ 8343 0fac FFF7FEFF 		bl	draw_game_object
+ 439:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					if(boom.current_frame < 10)
+ 8344              		.loc 1 439 0
+ 8345 0fb0 9E4B     		ldr	r3, .L74+20
+ 8346 0fb2 9422     		movs	r2, #148
+ 8347 0fb4 D200     		lsls	r2, r2, #3
+ 8348 0fb6 9446     		mov	ip, r2
+ 8349 0fb8 BC44     		add	ip, ip, r7
+ 8350 0fba 6344     		add	r3, r3, ip
+ 8351 0fbc 5B69     		ldr	r3, [r3, #20]
+ 8352 0fbe 092B     		cmp	r3, #9
+ 8353 0fc0 0BDC     		bgt	.L40
+ 440:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 						boom.update( &boom );
+ 8354              		.loc 1 440 0
+ 8355 0fc2 9A4B     		ldr	r3, .L74+20
+ 8356 0fc4 9422     		movs	r2, #148
+ 8357 0fc6 D200     		lsls	r2, r2, #3
+ 8358 0fc8 9446     		mov	ip, r2
+ 8359 0fca BC44     		add	ip, ip, r7
+ 8360 0fcc 6344     		add	r3, r3, ip
+ 8361 0fce DB68     		ldr	r3, [r3, #12]
+ 8362 0fd0 AE22     		movs	r2, #174
+ 8363 0fd2 9200     		lsls	r2, r2, #2
+ 8364 0fd4 BA18     		adds	r2, r7, r2
+ 8365 0fd6 1000     		movs	r0, r2
+ 8366 0fd8 9847     		blx	r3
+ 8367              	.LVL19:
+ 8368              	.L40:
+ 441:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				}
+ 442:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
+ 443:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				show_frame(1);
+ 8369              		.loc 1 443 0
+ 8370 0fda 0120     		movs	r0, #1
+ 8371 0fdc FFF7FEFF 		bl	show_frame
+ 444:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
+ 445:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				static int last_climb_value = 100;
+ 446:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				if((read_DIL_single(CLIMB_TRIGGER) != last_climb_value) && player.xPos > 90 && player.xPos < 10
+ 8372              		.loc 1 446 0
+ 8373 0fe0 0420     		movs	r0, #4
+ 8374 0fe2 FFF7FEFF 		bl	read_DIL_single
+ 8375 0fe6 0200     		movs	r2, r0
+ 8376 0fe8 914B     		ldr	r3, .L74+24
+ 8377 0fea 1B68     		ldr	r3, [r3]
+ 8378 0fec 9A42     		cmp	r2, r3
+ 8379 0fee 23D0     		beq	.L42
+ 8380              		.loc 1 446 0 is_stmt 0 discriminator 1
+ 8381 0ff0 8D4B     		ldr	r3, .L74+16
+ 8382 0ff2 9422     		movs	r2, #148
+ 8383 0ff4 D200     		lsls	r2, r2, #3
+ 8384 0ff6 9446     		mov	ip, r2
+ 8385 0ff8 BC44     		add	ip, ip, r7
+ 8386 0ffa 6344     		add	r3, r3, ip
+ 8387 0ffc 5B68     		ldr	r3, [r3, #4]
+ 8388 0ffe 5A2B     		cmp	r3, #90
+ 8389 1000 1ADD     		ble	.L42
+ 8390              		.loc 1 446 0 discriminator 2
+ 8391 1002 894B     		ldr	r3, .L74+16
+ 8392 1004 9422     		movs	r2, #148
+ 8393 1006 D200     		lsls	r2, r2, #3
+ 8394 1008 9446     		mov	ip, r2
+ 8395 100a BC44     		add	ip, ip, r7
+ 8396 100c 6344     		add	r3, r3, ip
+ 8397 100e 5B68     		ldr	r3, [r3, #4]
+ 8398 1010 6B2B     		cmp	r3, #107
+ 8399 1012 11DC     		bgt	.L42
+ 8400              		.loc 1 446 0 discriminator 3
+ 8401 1014 9323     		movs	r3, #147
+ 8402 1016 DB00     		lsls	r3, r3, #3
+ 8403 1018 FB18     		adds	r3, r7, r3
+ 8404 101a 1B68     		ldr	r3, [r3]
+ 8405 101c 002B     		cmp	r3, #0
+ 8406 101e 0BD1     		bne	.L42
+ 447:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					is_climbing = 1;
+ 8407              		.loc 1 447 0 is_stmt 1
+ 8408 1020 0123     		movs	r3, #1
+ 8409 1022 844A     		ldr	r2, .L74+28
+ 8410 1024 BA18     		adds	r2, r7, r2
+ 8411 1026 1360     		str	r3, [r2]
+ 448:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					player.xPos = 98;
+ 8412              		.loc 1 448 0
+ 8413 1028 7F4B     		ldr	r3, .L74+16
+ 8414 102a 9422     		movs	r2, #148
+ 8415 102c D200     		lsls	r2, r2, #3
+ 8416 102e 9446     		mov	ip, r2
+ 8417 1030 BC44     		add	ip, ip, r7
+ 8418 1032 6344     		add	r3, r3, ip
+ 8419 1034 6222     		movs	r2, #98
+ 8420 1036 5A60     		str	r2, [r3, #4]
+ 8421              	.L42:
+ 449:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				}
+ 450:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				last_climb_value = read_DIL_single(CLIMB_TRIGGER);
+ 8422              		.loc 1 450 0
+ 8423 1038 0420     		movs	r0, #4
+ 8424 103a FFF7FEFF 		bl	read_DIL_single
+ 8425 103e 0200     		movs	r2, r0
+ 8426 1040 7B4B     		ldr	r3, .L74+24
+ 8427 1042 1A60     		str	r2, [r3]
+ 451:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
+ 452:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				if(is_climbing) {
+ 8428              		.loc 1 452 0
+ 8429 1044 7B4B     		ldr	r3, .L74+28
+ 8430 1046 FB18     		adds	r3, r7, r3
+ 8431 1048 1B68     		ldr	r3, [r3]
+ 8432 104a 002B     		cmp	r3, #0
+ 8433 104c 60D0     		beq	.L43
+ 453:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					gameObjectUpdate( &player );
+ 8434              		.loc 1 453 0
+ 8435 104e 9C23     		movs	r3, #156
+ 8436 1050 9B00     		lsls	r3, r3, #2
+ 8437 1052 FB18     		adds	r3, r7, r3
+ 8438 1054 1800     		movs	r0, r3
+ 8439 1056 FFF7FEFF 		bl	gameObjectUpdate
+ 454:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					if (player.yPos % 6 == 0){
+ 8440              		.loc 1 454 0
+ 8441 105a 734B     		ldr	r3, .L74+16
+ 8442 105c 9422     		movs	r2, #148
+ 8443 105e D200     		lsls	r2, r2, #3
+ 8444 1060 9446     		mov	ip, r2
+ 8445 1062 BC44     		add	ip, ip, r7
+ 8446 1064 6344     		add	r3, r3, ip
+ 8447 1066 9B68     		ldr	r3, [r3, #8]
+ 8448 1068 0621     		movs	r1, #6
+ 8449 106a 1800     		movs	r0, r3
+ 8450 106c FFF7FEFF 		bl	__aeabi_idivmod
+ 8451              	.LVL20:
+ 8452 1070 0B1E     		subs	r3, r1, #0
+ 8453 1072 06D1     		bne	.L44
  455:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 						ascii_write("*tipp*","");
- 8415              		.loc 1 455 0
- 8416 1058 544A     		ldr	r2, .L69+28
- 8417 105a 554B     		ldr	r3, .L69+32
- 8418 105c 1100     		movs	r1, r2
- 8419 105e 1800     		movs	r0, r3
- 8420 1060 FFF7FEFF 		bl	ascii_write
- 8421 1064 2BE0     		b	.L46
- 8422              	.L44:
- 456:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					} else {	//Stay at top level and disable climbing forever!
- 457:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 						player.yPos = 5;
- 8423              		.loc 1 457 0
- 8424 1066 4D4B     		ldr	r3, .L69+12
- 8425 1068 9322     		movs	r2, #147
- 8426 106a D200     		lsls	r2, r2, #3
- 8427 106c 9446     		mov	ip, r2
- 8428 106e BC44     		add	ip, ip, r7
- 8429 1070 6344     		add	r3, r3, ip
- 8430 1072 0522     		movs	r2, #5
- 8431 1074 9A60     		str	r2, [r3, #8]
- 458:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 						player.xPos = 96;
- 8432              		.loc 1 458 0
- 8433 1076 494B     		ldr	r3, .L69+12
- 8434 1078 9322     		movs	r2, #147
- 8435 107a D200     		lsls	r2, r2, #3
- 8436 107c 9446     		mov	ip, r2
- 8437 107e BC44     		add	ip, ip, r7
- 8438 1080 6344     		add	r3, r3, ip
- 8439 1082 6022     		movs	r2, #96
- 8440 1084 5A60     		str	r2, [r3, #4]
- 459:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 						is_climbing = 0;
- 8441              		.loc 1 459 0
- 8442 1086 0023     		movs	r3, #0
- 8443 1088 474A     		ldr	r2, .L69+24
- 8444 108a BA18     		adds	r2, r7, r2
- 8445 108c 1360     		str	r3, [r2]
- 460:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 						has_climbed = 1;
- 8446              		.loc 1 460 0
- 8447 108e 0123     		movs	r3, #1
- 8448 1090 9222     		movs	r2, #146
- 8449 1092 D200     		lsls	r2, r2, #3
- 8450 1094 BA18     		adds	r2, r7, r2
- 8451 1096 1360     		str	r3, [r2]
- 461:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 						ascii_write("*tapp*","");
- 8452              		.loc 1 461 0
- 8453 1098 444A     		ldr	r2, .L69+28
- 8454 109a 464B     		ldr	r3, .L69+36
- 8455 109c 1100     		movs	r1, r2
- 8456 109e 1800     		movs	r0, r3
- 8457 10a0 FFF7FEFF 		bl	ascii_write
- 8458 10a4 0BE0     		b	.L46
- 8459              	.L43:
- 462:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					}
- 463:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				} else {
- 464:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					player.update(&player);
- 8460              		.loc 1 464 0
- 8461 10a6 3D4B     		ldr	r3, .L69+12
- 8462 10a8 9322     		movs	r2, #147
- 8463 10aa D200     		lsls	r2, r2, #3
- 8464 10ac 9446     		mov	ip, r2
- 8465 10ae BC44     		add	ip, ip, r7
- 8466 10b0 6344     		add	r3, r3, ip
- 8467 10b2 DB68     		ldr	r3, [r3, #12]
- 8468 10b4 9C22     		movs	r2, #156
- 8469 10b6 9200     		lsls	r2, r2, #2
- 8470 10b8 BA18     		adds	r2, r7, r2
- 8471 10ba 1000     		movs	r0, r2
- 8472 10bc 9847     		blx	r3
- 8473              	.LVL20:
- 8474              	.L46:
- 465:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				}
- 466:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
- 467:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				if (read_DIL_single(EXPLOSION_TRIGGER)){
- 8475              		.loc 1 467 0
- 8476 10be 0320     		movs	r0, #3
- 8477 10c0 FFF7FEFF 		bl	read_DIL_single
- 8478 10c4 031E     		subs	r3, r0, #0
- 8479 10c6 0FD0     		beq	.L47
- 468:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					game_over_adder = 3;
- 8480              		.loc 1 468 0
- 8481 10c8 0323     		movs	r3, #3
- 8482 10ca 9122     		movs	r2, #145
- 8483 10cc D200     		lsls	r2, r2, #3
- 8484 10ce BA18     		adds	r2, r7, r2
- 8485 10d0 1360     		str	r3, [r2]
- 469:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					ascii_write("*KABOOOOM*","");
- 8486              		.loc 1 469 0
- 8487 10d2 364A     		ldr	r2, .L69+28
- 8488 10d4 384B     		ldr	r3, .L69+40
- 8489 10d6 1100     		movs	r1, r2
- 8490 10d8 1800     		movs	r0, r3
- 8491 10da FFF7FEFF 		bl	ascii_write
- 470:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					exploding = 1;
- 8492              		.loc 1 470 0
- 8493 10de 0123     		movs	r3, #1
- 8494 10e0 9022     		movs	r2, #144
- 8495 10e2 D200     		lsls	r2, r2, #3
- 8496 10e4 BA18     		adds	r2, r7, r2
- 8497 10e6 1360     		str	r3, [r2]
- 8498              	.L47:
- 471:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				}
- 472:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
- 473:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				//fire1_indoors.update(&fire1_indoors);
- 474:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				//fire updates done above
- 475:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				if(!no_DIP) {
- 8499              		.loc 1 475 0
- 8500 10e8 344B     		ldr	r3, .L69+44
- 8501 10ea FB18     		adds	r3, r7, r3
- 8502 10ec 1B68     		ldr	r3, [r3]
- 8503 10ee 002B     		cmp	r3, #0
- 8504 10f0 1DD1     		bne	.L48
- 476:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					setPlayerPosition(player.xPos, player.yPos);
- 8505              		.loc 1 476 0
- 8506 10f2 2A4B     		ldr	r3, .L69+12
- 8507 10f4 9322     		movs	r2, #147
- 8508 10f6 D200     		lsls	r2, r2, #3
- 8509 10f8 9446     		mov	ip, r2
- 8510 10fa BC44     		add	ip, ip, r7
- 8511 10fc 6344     		add	r3, r3, ip
- 8512 10fe 5A68     		ldr	r2, [r3, #4]
- 8513 1100 264B     		ldr	r3, .L69+12
- 8514 1102 9321     		movs	r1, #147
- 8515 1104 C900     		lsls	r1, r1, #3
- 8516 1106 8C46     		mov	ip, r1
- 8517 1108 BC44     		add	ip, ip, r7
- 8518 110a 6344     		add	r3, r3, ip
- 8519 110c 9B68     		ldr	r3, [r3, #8]
- 8520 110e 1900     		movs	r1, r3
- 8521 1110 1000     		movs	r0, r2
- 8522 1112 FFF7FEFF 		bl	setPlayerPosition
- 477:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					DIP.update(&DIP);					
- 8523              		.loc 1 477 0
- 8524 1116 2A4B     		ldr	r3, .L69+48
- 8525 1118 9322     		movs	r2, #147
- 8526 111a D200     		lsls	r2, r2, #3
- 8527 111c 9446     		mov	ip, r2
- 8528 111e BC44     		add	ip, ip, r7
- 8529 1120 6344     		add	r3, r3, ip
- 8530 1122 DB68     		ldr	r3, [r3, #12]
- 8531 1124 A522     		movs	r2, #165
- 8532 1126 9200     		lsls	r2, r2, #2
- 8533 1128 BA18     		adds	r2, r7, r2
- 8534 112a 1000     		movs	r0, r2
- 8535 112c 9847     		blx	r3
- 8536              	.LVL21:
- 8537              	.L48:
- 478:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				}
- 479:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				hair.update(&hair);
- 8538              		.loc 1 479 0
- 8539 112e 254B     		ldr	r3, .L69+52
- 8540 1130 9322     		movs	r2, #147
- 8541 1132 D200     		lsls	r2, r2, #3
- 8542 1134 9446     		mov	ip, r2
- 8543 1136 BC44     		add	ip, ip, r7
- 8544 1138 6344     		add	r3, r3, ip
- 8545 113a DB68     		ldr	r3, [r3, #12]
- 8546 113c C022     		movs	r2, #192
- 8547 113e 9200     		lsls	r2, r2, #2
- 8548 1140 BA18     		adds	r2, r7, r2
- 8549 1142 1000     		movs	r0, r2
- 8550 1144 9847     		blx	r3
- 8551              	.LVL22:
- 480:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				if(read_DIL_single(HAIR_TRIGGER)) {
- 8552              		.loc 1 480 0
- 8553 1146 0120     		movs	r0, #1
- 8554 1148 FFF7FEFF 		bl	read_DIL_single
- 8555 114c 031E     		subs	r3, r0, #0
- 8556 114e 3BD0     		beq	.L49
- 481:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					hair.xPos = player.xPos;
- 8557              		.loc 1 481 0
- 8558 1150 124B     		ldr	r3, .L69+12
- 8559 1152 9322     		movs	r2, #147
- 8560 1154 D200     		lsls	r2, r2, #3
- 8561 1156 9446     		mov	ip, r2
- 8562 1158 BC44     		add	ip, ip, r7
- 8563 115a 6344     		add	r3, r3, ip
- 8564 115c 5A68     		ldr	r2, [r3, #4]
- 8565 115e 194B     		ldr	r3, .L69+52
- 8566 1160 9321     		movs	r1, #147
- 8567 1162 C900     		lsls	r1, r1, #3
- 8568 1164 8C46     		mov	ip, r1
- 8569 1166 BC44     		add	ip, ip, r7
- 8570 1168 6344     		add	r3, r3, ip
- 8571 116a 5A60     		str	r2, [r3, #4]
- 482:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					hair.yPos = player.yPos - 28;
- 8572              		.loc 1 482 0
- 8573 116c 0B4B     		ldr	r3, .L69+12
- 8574 116e 9322     		movs	r2, #147
- 8575 1170 D200     		lsls	r2, r2, #3
- 8576 1172 9446     		mov	ip, r2
- 8577 1174 BC44     		add	ip, ip, r7
- 8578 1176 6344     		add	r3, r3, ip
- 8579 1178 9B68     		ldr	r3, [r3, #8]
- 8580 117a 1C3B     		subs	r3, r3, #28
- 8581 117c 1A00     		movs	r2, r3
- 8582 117e 114B     		ldr	r3, .L69+52
- 8583 1180 9321     		movs	r1, #147
- 8584 1182 C900     		lsls	r1, r1, #3
- 8585 1184 8C46     		mov	ip, r1
- 8586 1186 BC44     		add	ip, ip, r7
- 8587 1188 6344     		add	r3, r3, ip
- 8588 118a 9A60     		str	r2, [r3, #8]
- 8589 118c 2EE0     		b	.L50
- 8590              	.L70:
- 8591 118e C046     		.align	2
- 8592              	.L69:
- 8593 1190 04000000 		.word	i.4308
- 8594 1194 70FCFFFF 		.word	-912
- 8595 1198 3C170000 		.word	first.4312
- 8596 119c D8FDFFFF 		.word	-552
- 8597 11a0 20FEFFFF 		.word	-480
- 8598 11a4 40170000 		.word	last_climb_value.4313
- 8599 11a8 94040000 		.word	1172
- 8600 11ac 80010000 		.word	.LC104
- 8601 11b0 8C010000 		.word	.LC111
- 8602 11b4 94010000 		.word	.LC113
- 8603 11b8 9C010000 		.word	.LC115
- 8604 11bc 84040000 		.word	1156
- 8605 11c0 FCFDFFFF 		.word	-516
- 8606 11c4 68FEFFFF 		.word	-408
- 8607              	.L49:
- 483:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				} else {
- 484:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					hair.xPos = -100;
- 8608              		.loc 1 484 0
- 8609 11c8 B74B     		ldr	r3, .L71
- 8610 11ca 9322     		movs	r2, #147
- 8611 11cc D200     		lsls	r2, r2, #3
- 8612 11ce 9446     		mov	ip, r2
- 8613 11d0 BC44     		add	ip, ip, r7
- 8614 11d2 6344     		add	r3, r3, ip
- 8615 11d4 6422     		movs	r2, #100
- 8616 11d6 5242     		rsbs	r2, r2, #0
- 8617 11d8 5A60     		str	r2, [r3, #4]
- 485:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					hair.yPos = -100;
- 8618              		.loc 1 485 0
- 8619 11da B34B     		ldr	r3, .L71
- 8620 11dc 9322     		movs	r2, #147
- 8621 11de D200     		lsls	r2, r2, #3
- 8622 11e0 9446     		mov	ip, r2
- 8623 11e2 BC44     		add	ip, ip, r7
- 8624 11e4 6344     		add	r3, r3, ip
- 8625 11e6 6422     		movs	r2, #100
- 8626 11e8 5242     		rsbs	r2, r2, #0
- 8627 11ea 9A60     		str	r2, [r3, #8]
- 8628              	.L50:
+ 8454              		.loc 1 455 0
+ 8455 1074 704A     		ldr	r2, .L74+32
+ 8456 1076 714B     		ldr	r3, .L74+36
+ 8457 1078 1100     		movs	r1, r2
+ 8458 107a 1800     		movs	r0, r3
+ 8459 107c FFF7FEFF 		bl	ascii_write
+ 8460 1080 13E0     		b	.L45
+ 8461              	.L44:
+ 456:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					}
+ 457:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					else if (player.yPos % 6 == 3) {
+ 8462              		.loc 1 457 0
+ 8463 1082 694B     		ldr	r3, .L74+16
+ 8464 1084 9422     		movs	r2, #148
+ 8465 1086 D200     		lsls	r2, r2, #3
+ 8466 1088 9446     		mov	ip, r2
+ 8467 108a BC44     		add	ip, ip, r7
+ 8468 108c 6344     		add	r3, r3, ip
+ 8469 108e 9B68     		ldr	r3, [r3, #8]
+ 8470 1090 0621     		movs	r1, #6
+ 8471 1092 1800     		movs	r0, r3
+ 8472 1094 FFF7FEFF 		bl	__aeabi_idivmod
+ 8473              	.LVL21:
+ 8474 1098 0B00     		movs	r3, r1
+ 8475 109a 032B     		cmp	r3, #3
+ 8476 109c 05D1     		bne	.L45
+ 458:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 						ascii_write("*tapp*","");
+ 8477              		.loc 1 458 0
+ 8478 109e 664A     		ldr	r2, .L74+32
+ 8479 10a0 674B     		ldr	r3, .L74+40
+ 8480 10a2 1100     		movs	r1, r2
+ 8481 10a4 1800     		movs	r0, r3
+ 8482 10a6 FFF7FEFF 		bl	ascii_write
+ 8483              	.L45:
+ 459:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					}
+ 460:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					if(player.yPos > 4) {
+ 8484              		.loc 1 460 0
+ 8485 10aa 5F4B     		ldr	r3, .L74+16
+ 8486 10ac 9422     		movs	r2, #148
+ 8487 10ae D200     		lsls	r2, r2, #3
+ 8488 10b0 9446     		mov	ip, r2
+ 8489 10b2 BC44     		add	ip, ip, r7
+ 8490 10b4 6344     		add	r3, r3, ip
+ 8491 10b6 9B68     		ldr	r3, [r3, #8]
+ 8492 10b8 042B     		cmp	r3, #4
+ 8493 10ba 0FDD     		ble	.L46
+ 461:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 						player.yPos--;
+ 8494              		.loc 1 461 0
+ 8495 10bc 5A4B     		ldr	r3, .L74+16
+ 8496 10be 9422     		movs	r2, #148
+ 8497 10c0 D200     		lsls	r2, r2, #3
+ 8498 10c2 9446     		mov	ip, r2
+ 8499 10c4 BC44     		add	ip, ip, r7
+ 8500 10c6 6344     		add	r3, r3, ip
+ 8501 10c8 9B68     		ldr	r3, [r3, #8]
+ 8502 10ca 5A1E     		subs	r2, r3, #1
+ 8503 10cc 564B     		ldr	r3, .L74+16
+ 8504 10ce 9421     		movs	r1, #148
+ 8505 10d0 C900     		lsls	r1, r1, #3
+ 8506 10d2 8C46     		mov	ip, r1
+ 8507 10d4 BC44     		add	ip, ip, r7
+ 8508 10d6 6344     		add	r3, r3, ip
+ 8509 10d8 9A60     		str	r2, [r3, #8]
+ 8510 10da 25E0     		b	.L48
+ 8511              	.L46:
+ 462:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					} else {	//Stay at top level and disable climbing forever!
+ 463:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 						player.yPos = 5;
+ 8512              		.loc 1 463 0
+ 8513 10dc 524B     		ldr	r3, .L74+16
+ 8514 10de 9422     		movs	r2, #148
+ 8515 10e0 D200     		lsls	r2, r2, #3
+ 8516 10e2 9446     		mov	ip, r2
+ 8517 10e4 BC44     		add	ip, ip, r7
+ 8518 10e6 6344     		add	r3, r3, ip
+ 8519 10e8 0522     		movs	r2, #5
+ 8520 10ea 9A60     		str	r2, [r3, #8]
+ 464:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 						player.xPos = 96;
+ 8521              		.loc 1 464 0
+ 8522 10ec 4E4B     		ldr	r3, .L74+16
+ 8523 10ee 9422     		movs	r2, #148
+ 8524 10f0 D200     		lsls	r2, r2, #3
+ 8525 10f2 9446     		mov	ip, r2
+ 8526 10f4 BC44     		add	ip, ip, r7
+ 8527 10f6 6344     		add	r3, r3, ip
+ 8528 10f8 6022     		movs	r2, #96
+ 8529 10fa 5A60     		str	r2, [r3, #4]
+ 465:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 						is_climbing = 0;
+ 8530              		.loc 1 465 0
+ 8531 10fc 0023     		movs	r3, #0
+ 8532 10fe 4D4A     		ldr	r2, .L74+28
+ 8533 1100 BA18     		adds	r2, r7, r2
+ 8534 1102 1360     		str	r3, [r2]
+ 466:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 						has_climbed = 1;
+ 8535              		.loc 1 466 0
+ 8536 1104 0123     		movs	r3, #1
+ 8537 1106 9322     		movs	r2, #147
+ 8538 1108 D200     		lsls	r2, r2, #3
+ 8539 110a BA18     		adds	r2, r7, r2
+ 8540 110c 1360     		str	r3, [r2]
+ 8541 110e 0BE0     		b	.L48
+ 8542              	.L43:
+ 467:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					}
+ 468:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				} else {
+ 469:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					player.update(&player);
+ 8543              		.loc 1 469 0
+ 8544 1110 454B     		ldr	r3, .L74+16
+ 8545 1112 9422     		movs	r2, #148
+ 8546 1114 D200     		lsls	r2, r2, #3
+ 8547 1116 9446     		mov	ip, r2
+ 8548 1118 BC44     		add	ip, ip, r7
+ 8549 111a 6344     		add	r3, r3, ip
+ 8550 111c DB68     		ldr	r3, [r3, #12]
+ 8551 111e 9C22     		movs	r2, #156
+ 8552 1120 9200     		lsls	r2, r2, #2
+ 8553 1122 BA18     		adds	r2, r7, r2
+ 8554 1124 1000     		movs	r0, r2
+ 8555 1126 9847     		blx	r3
+ 8556              	.LVL22:
+ 8557              	.L48:
+ 470:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				}
+ 471:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
+ 472:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				if (trophy.yPos >= player.yPos && (player.xPos + PLAYER_WIDTH/2 >= trophy.xPos && player.xPos <
+ 8558              		.loc 1 472 0
+ 8559 1128 464B     		ldr	r3, .L74+44
+ 8560 112a 9422     		movs	r2, #148
+ 8561 112c D200     		lsls	r2, r2, #3
+ 8562 112e 9446     		mov	ip, r2
+ 8563 1130 BC44     		add	ip, ip, r7
+ 8564 1132 6344     		add	r3, r3, ip
+ 8565 1134 9A68     		ldr	r2, [r3, #8]
+ 8566 1136 3C4B     		ldr	r3, .L74+16
+ 8567 1138 9421     		movs	r1, #148
+ 8568 113a C900     		lsls	r1, r1, #3
+ 8569 113c 8C46     		mov	ip, r1
+ 8570 113e BC44     		add	ip, ip, r7
+ 8571 1140 6344     		add	r3, r3, ip
+ 8572 1142 9B68     		ldr	r3, [r3, #8]
+ 8573 1144 9A42     		cmp	r2, r3
+ 8574 1146 28DB     		blt	.L49
+ 8575              		.loc 1 472 0 is_stmt 0 discriminator 1
+ 8576 1148 374B     		ldr	r3, .L74+16
+ 8577 114a 9422     		movs	r2, #148
+ 8578 114c D200     		lsls	r2, r2, #3
+ 8579 114e 9446     		mov	ip, r2
+ 8580 1150 BC44     		add	ip, ip, r7
+ 8581 1152 6344     		add	r3, r3, ip
+ 8582 1154 5B68     		ldr	r3, [r3, #4]
+ 8583 1156 0933     		adds	r3, r3, #9
+ 8584 1158 1A00     		movs	r2, r3
+ 8585 115a 3A4B     		ldr	r3, .L74+44
+ 8586 115c 9421     		movs	r1, #148
+ 8587 115e C900     		lsls	r1, r1, #3
+ 8588 1160 8C46     		mov	ip, r1
+ 8589 1162 BC44     		add	ip, ip, r7
+ 8590 1164 6344     		add	r3, r3, ip
+ 8591 1166 5B68     		ldr	r3, [r3, #4]
+ 8592 1168 9A42     		cmp	r2, r3
+ 8593 116a 16DB     		blt	.L49
+ 8594              		.loc 1 472 0 discriminator 2
+ 8595 116c 2E4B     		ldr	r3, .L74+16
+ 8596 116e 9422     		movs	r2, #148
+ 8597 1170 D200     		lsls	r2, r2, #3
+ 8598 1172 9446     		mov	ip, r2
+ 8599 1174 BC44     		add	ip, ip, r7
+ 8600 1176 6344     		add	r3, r3, ip
+ 8601 1178 5A68     		ldr	r2, [r3, #4]
+ 8602 117a 324B     		ldr	r3, .L74+44
+ 8603 117c 9421     		movs	r1, #148
+ 8604 117e C900     		lsls	r1, r1, #3
+ 8605 1180 8C46     		mov	ip, r1
+ 8606 1182 BC44     		add	ip, ip, r7
+ 8607 1184 6344     		add	r3, r3, ip
+ 8608 1186 5B68     		ldr	r3, [r3, #4]
+ 8609 1188 0933     		adds	r3, r3, #9
+ 8610 118a 9A42     		cmp	r2, r3
+ 8611 118c 05DC     		bgt	.L49
+ 473:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					ascii_write("Daffo: I need magic ","to grab the trophy!");
+ 8612              		.loc 1 473 0 is_stmt 1
+ 8613 118e 2E4A     		ldr	r2, .L74+48
+ 8614 1190 2E4B     		ldr	r3, .L74+52
+ 8615 1192 1100     		movs	r1, r2
+ 8616 1194 1800     		movs	r0, r3
+ 8617 1196 FFF7FEFF 		bl	ascii_write
+ 8618              	.L49:
+ 474:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				}
+ 475:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
+ 476:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				if (read_DIL_single(EXPLOSION_TRIGGER)){
+ 8619              		.loc 1 476 0
+ 8620 119a 0320     		movs	r0, #3
+ 8621 119c FFF7FEFF 		bl	read_DIL_single
+ 8622 11a0 031E     		subs	r3, r0, #0
+ 8623 11a2 67D0     		beq	.L50
+ 477:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					if (trophy.yPos >= player.yPos && (player.xPos + PLAYER_WIDTH/2 >= trophy.xPos && player.xPos 
+ 8624              		.loc 1 477 0
+ 8625 11a4 274B     		ldr	r3, .L74+44
+ 8626 11a6 9422     		movs	r2, #148
+ 8627 11a8 D200     		lsls	r2, r2, #3
+ 8628 11aa 9446     		mov	ip, r2
+ 8629 11ac BC44     		add	ip, ip, r7
+ 8630 11ae 6344     		add	r3, r3, ip
+ 8631 11b0 9A68     		ldr	r2, [r3, #8]
+ 8632 11b2 1D4B     		ldr	r3, .L74+16
+ 8633 11b4 9421     		movs	r1, #148
+ 8634 11b6 C900     		lsls	r1, r1, #3
+ 8635 11b8 8C46     		mov	ip, r1
+ 8636 11ba BC44     		add	ip, ip, r7
+ 8637 11bc 6344     		add	r3, r3, ip
+ 8638 11be 9B68     		ldr	r3, [r3, #8]
+ 8639 11c0 9A42     		cmp	r2, r3
+ 8640 11c2 47DB     		blt	.L51
+ 8641              		.loc 1 477 0 is_stmt 0 discriminator 1
+ 8642 11c4 184B     		ldr	r3, .L74+16
+ 8643 11c6 9422     		movs	r2, #148
+ 8644 11c8 D200     		lsls	r2, r2, #3
+ 8645 11ca 9446     		mov	ip, r2
+ 8646 11cc BC44     		add	ip, ip, r7
+ 8647 11ce 6344     		add	r3, r3, ip
+ 8648 11d0 5B68     		ldr	r3, [r3, #4]
+ 8649 11d2 0933     		adds	r3, r3, #9
+ 8650 11d4 1A00     		movs	r2, r3
+ 8651 11d6 1B4B     		ldr	r3, .L74+44
+ 8652 11d8 9421     		movs	r1, #148
+ 8653 11da C900     		lsls	r1, r1, #3
+ 8654 11dc 8C46     		mov	ip, r1
+ 8655 11de BC44     		add	ip, ip, r7
+ 8656 11e0 6344     		add	r3, r3, ip
+ 8657 11e2 5B68     		ldr	r3, [r3, #4]
+ 8658 11e4 9A42     		cmp	r2, r3
+ 8659 11e6 35DB     		blt	.L51
+ 8660              		.loc 1 477 0 discriminator 2
+ 8661 11e8 0F4B     		ldr	r3, .L74+16
+ 8662 11ea 9422     		movs	r2, #148
+ 8663 11ec D200     		lsls	r2, r2, #3
+ 8664 11ee 9446     		mov	ip, r2
+ 8665 11f0 BC44     		add	ip, ip, r7
+ 8666 11f2 6344     		add	r3, r3, ip
+ 8667 11f4 5A68     		ldr	r2, [r3, #4]
+ 8668 11f6 134B     		ldr	r3, .L74+44
+ 8669 11f8 9421     		movs	r1, #148
+ 8670 11fa C900     		lsls	r1, r1, #3
+ 8671 11fc 8C46     		mov	ip, r1
+ 8672 11fe BC44     		add	ip, ip, r7
+ 8673 1200 6344     		add	r3, r3, ip
+ 8674 1202 5B68     		ldr	r3, [r3, #4]
+ 8675 1204 0933     		adds	r3, r3, #9
+ 8676 1206 9A42     		cmp	r2, r3
+ 8677 1208 24DC     		bgt	.L51
+ 478:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 						//TODO WIN
+ 479:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 						ascii_write("PLACEHOLDER DU VANN","");
+ 8678              		.loc 1 479 0 is_stmt 1
+ 8679 120a 0B4A     		ldr	r2, .L74+32
+ 8680 120c 104B     		ldr	r3, .L74+56
+ 8681 120e 1100     		movs	r1, r2
+ 8682 1210 1800     		movs	r0, r3
+ 8683 1212 FFF7FEFF 		bl	ascii_write
+ 8684 1216 2DE0     		b	.L50
+ 8685              	.L75:
+ 8686              		.align	2
+ 8687              	.L74:
+ 8688 1218 8C040000 		.word	1164
+ 8689 121c 04000000 		.word	i.4310
+ 8690 1220 68FCFFFF 		.word	-920
+ 8691 1224 84040000 		.word	1156
+ 8692 1228 D0FDFFFF 		.word	-560
+ 8693 122c 18FEFFFF 		.word	-488
+ 8694 1230 3C170000 		.word	last_climb_value.4314
+ 8695 1234 9C040000 		.word	1180
+ 8696 1238 AC010000 		.word	.LC108
+ 8697 123c B8010000 		.word	.LC114
+ 8698 1240 C0010000 		.word	.LC116
+ 8699 1244 84FEFFFF 		.word	-380
+ 8700 1248 C8010000 		.word	.LC118
+ 8701 124c DC010000 		.word	.LC120
+ 8702 1250 F4010000 		.word	.LC122
+ 8703              	.L51:
+ 480:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					}
+ 481:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					else{
+ 482:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 						game_over_adder = 3;
+ 8704              		.loc 1 482 0
+ 8705 1254 0323     		movs	r3, #3
+ 8706 1256 9222     		movs	r2, #146
+ 8707 1258 D200     		lsls	r2, r2, #3
+ 8708 125a BA18     		adds	r2, r7, r2
+ 8709 125c 1360     		str	r3, [r2]
+ 483:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 						ascii_write("*KABOOOOM*","");
+ 8710              		.loc 1 483 0
+ 8711 125e 614A     		ldr	r2, .L76
+ 8712 1260 614B     		ldr	r3, .L76+4
+ 8713 1262 1100     		movs	r1, r2
+ 8714 1264 1800     		movs	r0, r3
+ 8715 1266 FFF7FEFF 		bl	ascii_write
+ 484:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 						exploding = 1;
+ 8716              		.loc 1 484 0
+ 8717 126a 0123     		movs	r3, #1
+ 8718 126c 9122     		movs	r2, #145
+ 8719 126e D200     		lsls	r2, r2, #3
+ 8720 1270 BA18     		adds	r2, r7, r2
+ 8721 1272 1360     		str	r3, [r2]
+ 8722              	.L50:
+ 485:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					}
  486:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				}
  487:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
- 488:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
- 489:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
- 490:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				if (!no_DIP && DIP.yPos >= player.yPos && (player.xPos + DIP_WIDTH/2 >= DIP.xPos && player.xPos
- 8629              		.loc 1 490 0
- 8630 11ec AF4B     		ldr	r3, .L71+4
- 8631 11ee FB18     		adds	r3, r7, r3
- 8632 11f0 1B68     		ldr	r3, [r3]
- 8633 11f2 002B     		cmp	r3, #0
- 8634 11f4 3DD1     		bne	.L51
- 8635              		.loc 1 490 0 is_stmt 0 discriminator 1
- 8636 11f6 AE4B     		ldr	r3, .L71+8
- 8637 11f8 9322     		movs	r2, #147
- 8638 11fa D200     		lsls	r2, r2, #3
- 8639 11fc 9446     		mov	ip, r2
- 8640 11fe BC44     		add	ip, ip, r7
- 8641 1200 6344     		add	r3, r3, ip
- 8642 1202 9A68     		ldr	r2, [r3, #8]
- 8643 1204 AB4B     		ldr	r3, .L71+12
- 8644 1206 9321     		movs	r1, #147
- 8645 1208 C900     		lsls	r1, r1, #3
- 8646 120a 8C46     		mov	ip, r1
- 8647 120c BC44     		add	ip, ip, r7
- 8648 120e 6344     		add	r3, r3, ip
- 8649 1210 9B68     		ldr	r3, [r3, #8]
- 8650 1212 9A42     		cmp	r2, r3
- 8651 1214 2DDB     		blt	.L51
- 8652              		.loc 1 490 0 discriminator 2
- 8653 1216 A74B     		ldr	r3, .L71+12
- 8654 1218 9322     		movs	r2, #147
- 8655 121a D200     		lsls	r2, r2, #3
- 8656 121c 9446     		mov	ip, r2
- 8657 121e BC44     		add	ip, ip, r7
- 8658 1220 6344     		add	r3, r3, ip
- 8659 1222 5B68     		ldr	r3, [r3, #4]
- 8660 1224 0933     		adds	r3, r3, #9
- 8661 1226 1A00     		movs	r2, r3
- 8662 1228 A14B     		ldr	r3, .L71+8
- 8663 122a 9321     		movs	r1, #147
- 8664 122c C900     		lsls	r1, r1, #3
- 8665 122e 8C46     		mov	ip, r1
- 8666 1230 BC44     		add	ip, ip, r7
- 8667 1232 6344     		add	r3, r3, ip
- 8668 1234 5B68     		ldr	r3, [r3, #4]
- 8669 1236 9A42     		cmp	r2, r3
- 8670 1238 1BDB     		blt	.L51
- 8671              		.loc 1 490 0 discriminator 3
- 8672 123a 9E4B     		ldr	r3, .L71+12
- 8673 123c 9322     		movs	r2, #147
- 8674 123e D200     		lsls	r2, r2, #3
- 8675 1240 9446     		mov	ip, r2
- 8676 1242 BC44     		add	ip, ip, r7
- 8677 1244 6344     		add	r3, r3, ip
- 8678 1246 5A68     		ldr	r2, [r3, #4]
- 8679 1248 994B     		ldr	r3, .L71+8
- 8680 124a 9321     		movs	r1, #147
- 8681 124c C900     		lsls	r1, r1, #3
- 8682 124e 8C46     		mov	ip, r1
- 8683 1250 BC44     		add	ip, ip, r7
- 8684 1252 6344     		add	r3, r3, ip
- 8685 1254 5B68     		ldr	r3, [r3, #4]
- 8686 1256 0933     		adds	r3, r3, #9
- 8687 1258 9A42     		cmp	r2, r3
- 8688 125a 0ADC     		bgt	.L51
- 491:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					game_over_adder = 100;
- 8689              		.loc 1 491 0 is_stmt 1
- 8690 125c 6423     		movs	r3, #100
- 8691 125e 9122     		movs	r2, #145
- 8692 1260 D200     		lsls	r2, r2, #3
- 8693 1262 BA18     		adds	r2, r7, r2
- 8694 1264 1360     		str	r3, [r2]
- 492:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					ascii_write("DIPs-WITCH:","       NyAHAHAHAH");
- 8695              		.loc 1 492 0
- 8696 1266 944A     		ldr	r2, .L71+16
- 8697 1268 944B     		ldr	r3, .L71+20
- 8698 126a 1100     		movs	r1, r2
- 8699 126c 1800     		movs	r0, r3
- 8700 126e FFF7FEFF 		bl	ascii_write
- 8701              	.L51:
+ 488:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				//fire1_indoors.update(&fire1_indoors);
+ 489:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				//fire updates done above
+ 490:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				if(!no_DIP) {
+ 8723              		.loc 1 490 0
+ 8724 1274 5D4B     		ldr	r3, .L76+8
+ 8725 1276 FB18     		adds	r3, r7, r3
+ 8726 1278 1B68     		ldr	r3, [r3]
+ 8727 127a 002B     		cmp	r3, #0
+ 8728 127c 1DD1     		bne	.L52
+ 491:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					setPlayerPosition(player.xPos, player.yPos);
+ 8729              		.loc 1 491 0
+ 8730 127e 5C4B     		ldr	r3, .L76+12
+ 8731 1280 9422     		movs	r2, #148
+ 8732 1282 D200     		lsls	r2, r2, #3
+ 8733 1284 9446     		mov	ip, r2
+ 8734 1286 BC44     		add	ip, ip, r7
+ 8735 1288 6344     		add	r3, r3, ip
+ 8736 128a 5A68     		ldr	r2, [r3, #4]
+ 8737 128c 584B     		ldr	r3, .L76+12
+ 8738 128e 9421     		movs	r1, #148
+ 8739 1290 C900     		lsls	r1, r1, #3
+ 8740 1292 8C46     		mov	ip, r1
+ 8741 1294 BC44     		add	ip, ip, r7
+ 8742 1296 6344     		add	r3, r3, ip
+ 8743 1298 9B68     		ldr	r3, [r3, #8]
+ 8744 129a 1900     		movs	r1, r3
+ 8745 129c 1000     		movs	r0, r2
+ 8746 129e FFF7FEFF 		bl	setPlayerPosition
+ 492:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					DIP.update(&DIP);					
+ 8747              		.loc 1 492 0
+ 8748 12a2 544B     		ldr	r3, .L76+16
+ 8749 12a4 9422     		movs	r2, #148
+ 8750 12a6 D200     		lsls	r2, r2, #3
+ 8751 12a8 9446     		mov	ip, r2
+ 8752 12aa BC44     		add	ip, ip, r7
+ 8753 12ac 6344     		add	r3, r3, ip
+ 8754 12ae DB68     		ldr	r3, [r3, #12]
+ 8755 12b0 A522     		movs	r2, #165
+ 8756 12b2 9200     		lsls	r2, r2, #2
+ 8757 12b4 BA18     		adds	r2, r7, r2
+ 8758 12b6 1000     		movs	r0, r2
+ 8759 12b8 9847     		blx	r3
+ 8760              	.LVL23:
+ 8761              	.L52:
  493:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				}
- 494:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
- 495:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				static int distance_player_fire;	//fire_collision
- 496:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				static int j;
- 497:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				for(j = 0; j < 3; j++) {
- 8702              		.loc 1 497 0
- 8703 1272 934B     		ldr	r3, .L71+24
- 8704 1274 0022     		movs	r2, #0
- 8705 1276 1A60     		str	r2, [r3]
- 8706 1278 61E0     		b	.L52
- 8707              	.L54:
- 498:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					distance_player_fire = (player.xPos + 9) - (fires[j].xPos + 5);
- 8708              		.loc 1 498 0
- 8709 127a 8E4B     		ldr	r3, .L71+12
- 8710 127c 9322     		movs	r2, #147
- 8711 127e D200     		lsls	r2, r2, #3
- 8712 1280 9446     		mov	ip, r2
- 8713 1282 BC44     		add	ip, ip, r7
- 8714 1284 6344     		add	r3, r3, ip
- 8715 1286 5B68     		ldr	r3, [r3, #4]
- 8716 1288 0933     		adds	r3, r3, #9
- 8717 128a 1900     		movs	r1, r3
- 8718 128c 8C4B     		ldr	r3, .L71+24
- 8719 128e 1A68     		ldr	r2, [r3]
- 8720 1290 8C4B     		ldr	r3, .L71+28
- 8721 1292 9320     		movs	r0, #147
- 8722 1294 C000     		lsls	r0, r0, #3
- 8723 1296 3818     		adds	r0, r7, r0
- 8724 1298 C018     		adds	r0, r0, r3
- 8725 129a 1300     		movs	r3, r2
- 8726 129c DB00     		lsls	r3, r3, #3
- 8727 129e 9B18     		adds	r3, r3, r2
- 8728 12a0 9B00     		lsls	r3, r3, #2
- 8729 12a2 C318     		adds	r3, r0, r3
- 8730 12a4 0433     		adds	r3, r3, #4
- 8731 12a6 1B68     		ldr	r3, [r3]
- 8732 12a8 0533     		adds	r3, r3, #5
- 8733 12aa CA1A     		subs	r2, r1, r3
- 8734 12ac 864B     		ldr	r3, .L71+32
- 8735 12ae 1A60     		str	r2, [r3]
- 499:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					if(player.yPos > (fires[j].yPos - 18 + 7) && 
- 8736              		.loc 1 499 0
- 8737 12b0 804B     		ldr	r3, .L71+12
- 8738 12b2 9322     		movs	r2, #147
- 8739 12b4 D200     		lsls	r2, r2, #3
- 8740 12b6 9446     		mov	ip, r2
- 8741 12b8 BC44     		add	ip, ip, r7
- 8742 12ba 6344     		add	r3, r3, ip
- 8743 12bc 9968     		ldr	r1, [r3, #8]
- 8744 12be 804B     		ldr	r3, .L71+24
- 8745 12c0 1A68     		ldr	r2, [r3]
- 8746 12c2 804B     		ldr	r3, .L71+28
- 8747 12c4 9320     		movs	r0, #147
- 8748 12c6 C000     		lsls	r0, r0, #3
- 8749 12c8 3818     		adds	r0, r7, r0
- 8750 12ca C018     		adds	r0, r0, r3
- 8751 12cc 1300     		movs	r3, r2
- 8752 12ce DB00     		lsls	r3, r3, #3
- 8753 12d0 9B18     		adds	r3, r3, r2
- 8754 12d2 9B00     		lsls	r3, r3, #2
- 8755 12d4 C318     		adds	r3, r0, r3
- 8756 12d6 0833     		adds	r3, r3, #8
- 8757 12d8 1B68     		ldr	r3, [r3]
- 8758 12da 0B3B     		subs	r3, r3, #11
- 8759 12dc 9942     		cmp	r1, r3
- 8760 12de 29DD     		ble	.L53
- 500:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 							player.yPos < fires[j].yPos && distance_player_fire < 8 && distance_player_fire > -8) {
- 8761              		.loc 1 500 0 discriminator 1
- 8762 12e0 744B     		ldr	r3, .L71+12
- 8763 12e2 9322     		movs	r2, #147
- 8764 12e4 D200     		lsls	r2, r2, #3
- 8765 12e6 9446     		mov	ip, r2
- 8766 12e8 BC44     		add	ip, ip, r7
- 8767 12ea 6344     		add	r3, r3, ip
- 8768 12ec 9968     		ldr	r1, [r3, #8]
- 8769 12ee 744B     		ldr	r3, .L71+24
- 8770 12f0 1A68     		ldr	r2, [r3]
- 8771 12f2 744B     		ldr	r3, .L71+28
- 8772 12f4 9320     		movs	r0, #147
- 8773 12f6 C000     		lsls	r0, r0, #3
- 8774 12f8 3818     		adds	r0, r7, r0
- 8775 12fa C018     		adds	r0, r0, r3
- 8776 12fc 1300     		movs	r3, r2
- 8777 12fe DB00     		lsls	r3, r3, #3
- 8778 1300 9B18     		adds	r3, r3, r2
- 8779 1302 9B00     		lsls	r3, r3, #2
- 8780 1304 C318     		adds	r3, r0, r3
- 8781 1306 0833     		adds	r3, r3, #8
- 8782 1308 1B68     		ldr	r3, [r3]
- 499:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					if(player.yPos > (fires[j].yPos - 18 + 7) && 
- 8783              		.loc 1 499 0 discriminator 1
- 8784 130a 9942     		cmp	r1, r3
- 8785 130c 12DA     		bge	.L53
- 8786              		.loc 1 500 0
- 8787 130e 6E4B     		ldr	r3, .L71+32
- 8788 1310 1B68     		ldr	r3, [r3]
- 8789 1312 072B     		cmp	r3, #7
- 8790 1314 0EDC     		bgt	.L53
- 8791              		.loc 1 500 0 is_stmt 0 discriminator 1
- 8792 1316 6C4B     		ldr	r3, .L71+32
- 8793 1318 1B68     		ldr	r3, [r3]
- 8794 131a 0733     		adds	r3, r3, #7
- 8795 131c 0ADB     		blt	.L53
- 501:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 						game_over_adder = 20;
- 8796              		.loc 1 501 0 is_stmt 1
- 8797 131e 1423     		movs	r3, #20
- 8798 1320 9122     		movs	r2, #145
- 8799 1322 D200     		lsls	r2, r2, #3
- 8800 1324 BA18     		adds	r2, r7, r2
- 8801 1326 1360     		str	r3, [r2]
- 502:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 						ascii_write("*FWOOSH*","");
- 8802              		.loc 1 502 0
- 8803 1328 684A     		ldr	r2, .L71+36
- 8804 132a 694B     		ldr	r3, .L71+40
- 8805 132c 1100     		movs	r1, r2
- 8806 132e 1800     		movs	r0, r3
- 8807 1330 FFF7FEFF 		bl	ascii_write
- 8808              	.L53:
- 497:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					distance_player_fire = (player.xPos + 9) - (fires[j].xPos + 5);
- 8809              		.loc 1 497 0 discriminator 2
- 8810 1334 624B     		ldr	r3, .L71+24
- 8811 1336 1B68     		ldr	r3, [r3]
- 8812 1338 5A1C     		adds	r2, r3, #1
- 8813 133a 614B     		ldr	r3, .L71+24
- 8814 133c 1A60     		str	r2, [r3]
- 8815              	.L52:
- 497:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					distance_player_fire = (player.xPos + 9) - (fires[j].xPos + 5);
- 8816              		.loc 1 497 0 is_stmt 0 discriminator 1
- 8817 133e 604B     		ldr	r3, .L71+24
- 8818 1340 1B68     		ldr	r3, [r3]
- 8819 1342 022B     		cmp	r3, #2
- 8820 1344 99DD     		ble	.L54
- 503:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					}					
+ 494:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				hair.update(&hair);
+ 8762              		.loc 1 494 0
+ 8763 12ba 4F4B     		ldr	r3, .L76+20
+ 8764 12bc 9422     		movs	r2, #148
+ 8765 12be D200     		lsls	r2, r2, #3
+ 8766 12c0 9446     		mov	ip, r2
+ 8767 12c2 BC44     		add	ip, ip, r7
+ 8768 12c4 6344     		add	r3, r3, ip
+ 8769 12c6 DB68     		ldr	r3, [r3, #12]
+ 8770 12c8 C022     		movs	r2, #192
+ 8771 12ca 9200     		lsls	r2, r2, #2
+ 8772 12cc BA18     		adds	r2, r7, r2
+ 8773 12ce 1000     		movs	r0, r2
+ 8774 12d0 9847     		blx	r3
+ 8775              	.LVL24:
+ 495:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				if(read_DIL_single(HAIR_TRIGGER)) {
+ 8776              		.loc 1 495 0
+ 8777 12d2 0120     		movs	r0, #1
+ 8778 12d4 FFF7FEFF 		bl	read_DIL_single
+ 8779 12d8 031E     		subs	r3, r0, #0
+ 8780 12da 2AD0     		beq	.L53
+ 496:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					if (lastFireTrigger == 0){
+ 8781              		.loc 1 496 0
+ 8782 12dc 9023     		movs	r3, #144
+ 8783 12de DB00     		lsls	r3, r3, #3
+ 8784 12e0 FB18     		adds	r3, r7, r3
+ 8785 12e2 1B68     		ldr	r3, [r3]
+ 8786 12e4 002B     		cmp	r3, #0
+ 8787 12e6 05D1     		bne	.L54
+ 497:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 						ascii_write("*FwOOOo*","");
+ 8788              		.loc 1 497 0
+ 8789 12e8 3E4A     		ldr	r2, .L76
+ 8790 12ea 444B     		ldr	r3, .L76+24
+ 8791 12ec 1100     		movs	r1, r2
+ 8792 12ee 1800     		movs	r0, r3
+ 8793 12f0 FFF7FEFF 		bl	ascii_write
+ 8794              	.L54:
+ 498:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					}
+ 499:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					hair.xPos = player.xPos;
+ 8795              		.loc 1 499 0
+ 8796 12f4 3E4B     		ldr	r3, .L76+12
+ 8797 12f6 9422     		movs	r2, #148
+ 8798 12f8 D200     		lsls	r2, r2, #3
+ 8799 12fa 9446     		mov	ip, r2
+ 8800 12fc BC44     		add	ip, ip, r7
+ 8801 12fe 6344     		add	r3, r3, ip
+ 8802 1300 5A68     		ldr	r2, [r3, #4]
+ 8803 1302 3D4B     		ldr	r3, .L76+20
+ 8804 1304 9421     		movs	r1, #148
+ 8805 1306 C900     		lsls	r1, r1, #3
+ 8806 1308 8C46     		mov	ip, r1
+ 8807 130a BC44     		add	ip, ip, r7
+ 8808 130c 6344     		add	r3, r3, ip
+ 8809 130e 5A60     		str	r2, [r3, #4]
+ 500:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					hair.yPos = player.yPos - 28;
+ 8810              		.loc 1 500 0
+ 8811 1310 374B     		ldr	r3, .L76+12
+ 8812 1312 9422     		movs	r2, #148
+ 8813 1314 D200     		lsls	r2, r2, #3
+ 8814 1316 9446     		mov	ip, r2
+ 8815 1318 BC44     		add	ip, ip, r7
+ 8816 131a 6344     		add	r3, r3, ip
+ 8817 131c 9B68     		ldr	r3, [r3, #8]
+ 8818 131e 1C3B     		subs	r3, r3, #28
+ 8819 1320 1A00     		movs	r2, r3
+ 8820 1322 354B     		ldr	r3, .L76+20
+ 8821 1324 9421     		movs	r1, #148
+ 8822 1326 C900     		lsls	r1, r1, #3
+ 8823 1328 8C46     		mov	ip, r1
+ 8824 132a BC44     		add	ip, ip, r7
+ 8825 132c 6344     		add	r3, r3, ip
+ 8826 132e 9A60     		str	r2, [r3, #8]
+ 8827 1330 11E0     		b	.L55
+ 8828              	.L53:
+ 501:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				} else {
+ 502:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					hair.xPos = -100;
+ 8829              		.loc 1 502 0
+ 8830 1332 314B     		ldr	r3, .L76+20
+ 8831 1334 9422     		movs	r2, #148
+ 8832 1336 D200     		lsls	r2, r2, #3
+ 8833 1338 9446     		mov	ip, r2
+ 8834 133a BC44     		add	ip, ip, r7
+ 8835 133c 6344     		add	r3, r3, ip
+ 8836 133e 6422     		movs	r2, #100
+ 8837 1340 5242     		rsbs	r2, r2, #0
+ 8838 1342 5A60     		str	r2, [r3, #4]
+ 503:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					hair.yPos = -100;
+ 8839              		.loc 1 503 0
+ 8840 1344 2C4B     		ldr	r3, .L76+20
+ 8841 1346 9422     		movs	r2, #148
+ 8842 1348 D200     		lsls	r2, r2, #3
+ 8843 134a 9446     		mov	ip, r2
+ 8844 134c BC44     		add	ip, ip, r7
+ 8845 134e 6344     		add	r3, r3, ip
+ 8846 1350 6422     		movs	r2, #100
+ 8847 1352 5242     		rsbs	r2, r2, #0
+ 8848 1354 9A60     		str	r2, [r3, #8]
+ 8849              	.L55:
  504:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				}
  505:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
- 506:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				static int trophy_burned = 0;	//trophy burning
- 507:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				static int distance_hair_trophy;
- 508:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				distance_hair_trophy = (hair.xPos + 9) - (trophy.xPos + 5);
- 8821              		.loc 1 508 0 is_stmt 1
- 8822 1346 584B     		ldr	r3, .L71
- 8823 1348 9322     		movs	r2, #147
- 8824 134a D200     		lsls	r2, r2, #3
- 8825 134c 9446     		mov	ip, r2
- 8826 134e BC44     		add	ip, ip, r7
- 8827 1350 6344     		add	r3, r3, ip
- 8828 1352 5B68     		ldr	r3, [r3, #4]
- 8829 1354 0933     		adds	r3, r3, #9
- 8830 1356 1A00     		movs	r2, r3
- 8831 1358 5E4B     		ldr	r3, .L71+44
- 8832 135a 9321     		movs	r1, #147
- 8833 135c C900     		lsls	r1, r1, #3
- 8834 135e 8C46     		mov	ip, r1
- 8835 1360 BC44     		add	ip, ip, r7
- 8836 1362 6344     		add	r3, r3, ip
- 8837 1364 5B68     		ldr	r3, [r3, #4]
- 8838 1366 0533     		adds	r3, r3, #5
- 8839 1368 D21A     		subs	r2, r2, r3
- 8840 136a 5B4B     		ldr	r3, .L71+48
- 8841 136c 1A60     		str	r2, [r3]
- 509:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				if(!trophy_burned && abs(distance_hair_trophy) < 5) {
- 8842              		.loc 1 509 0
- 8843 136e 5B4B     		ldr	r3, .L71+52
- 8844 1370 1B68     		ldr	r3, [r3]
- 8845 1372 002B     		cmp	r3, #0
- 8846 1374 30D1     		bne	.L55
- 8847              		.loc 1 509 0 is_stmt 0 discriminator 1
- 8848 1376 584B     		ldr	r3, .L71+48
- 8849 1378 1B68     		ldr	r3, [r3]
- 8850 137a 0433     		adds	r3, r3, #4
- 8851 137c 2CDB     		blt	.L55
- 8852              		.loc 1 509 0 discriminator 2
- 8853 137e 564B     		ldr	r3, .L71+48
- 8854 1380 1B68     		ldr	r3, [r3]
- 8855 1382 042B     		cmp	r3, #4
- 8856 1384 28DC     		bgt	.L55
- 510:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					trophy_burned = 1;
- 8857              		.loc 1 510 0 is_stmt 1
- 8858 1386 554B     		ldr	r3, .L71+52
- 8859 1388 0122     		movs	r2, #1
- 8860 138a 1A60     		str	r2, [r3]
- 511:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					fires[1].xPos = trophy.xPos;
- 8861              		.loc 1 511 0
- 8862 138c 514B     		ldr	r3, .L71+44
- 8863 138e 9322     		movs	r2, #147
- 8864 1390 D200     		lsls	r2, r2, #3
- 8865 1392 9446     		mov	ip, r2
- 8866 1394 BC44     		add	ip, ip, r7
- 8867 1396 6344     		add	r3, r3, ip
- 8868 1398 5A68     		ldr	r2, [r3, #4]
- 8869 139a 4A4B     		ldr	r3, .L71+28
- 8870 139c 9321     		movs	r1, #147
- 8871 139e C900     		lsls	r1, r1, #3
- 8872 13a0 8C46     		mov	ip, r1
- 8873 13a2 BC44     		add	ip, ip, r7
- 8874 13a4 6344     		add	r3, r3, ip
- 8875 13a6 9A62     		str	r2, [r3, #40]
- 512:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					fires[1].yPos = trophy.yPos + 5;
- 8876              		.loc 1 512 0
- 8877 13a8 4A4B     		ldr	r3, .L71+44
- 8878 13aa 9322     		movs	r2, #147
- 8879 13ac D200     		lsls	r2, r2, #3
- 8880 13ae 9446     		mov	ip, r2
- 8881 13b0 BC44     		add	ip, ip, r7
- 8882 13b2 6344     		add	r3, r3, ip
- 8883 13b4 9B68     		ldr	r3, [r3, #8]
- 8884 13b6 5A1D     		adds	r2, r3, #5
- 8885 13b8 424B     		ldr	r3, .L71+28
- 8886 13ba 9321     		movs	r1, #147
- 8887 13bc C900     		lsls	r1, r1, #3
- 8888 13be 8C46     		mov	ip, r1
- 8889 13c0 BC44     		add	ip, ip, r7
- 8890 13c2 6344     		add	r3, r3, ip
- 8891 13c4 DA62     		str	r2, [r3, #44]
- 513:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					trophy.xPos = 500;
- 8892              		.loc 1 513 0
- 8893 13c6 434B     		ldr	r3, .L71+44
- 8894 13c8 9322     		movs	r2, #147
- 8895 13ca D200     		lsls	r2, r2, #3
- 8896 13cc 9446     		mov	ip, r2
- 8897 13ce BC44     		add	ip, ip, r7
- 8898 13d0 6344     		add	r3, r3, ip
- 8899 13d2 FA22     		movs	r2, #250
- 8900 13d4 5200     		lsls	r2, r2, #1
- 8901 13d6 5A60     		str	r2, [r3, #4]
- 8902              	.L55:
- 514:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				}
- 515:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
- 516:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				static int DIP_burned = 0;
- 517:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				static int distance_hair_DIP;
- 518:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				distance_hair_DIP = (hair.xPos + 9) - (DIP.xPos + 9);
- 8903              		.loc 1 518 0
- 8904 13d8 334B     		ldr	r3, .L71
- 8905 13da 9322     		movs	r2, #147
- 8906 13dc D200     		lsls	r2, r2, #3
- 8907 13de 9446     		mov	ip, r2
- 8908 13e0 BC44     		add	ip, ip, r7
- 8909 13e2 6344     		add	r3, r3, ip
- 8910 13e4 5B68     		ldr	r3, [r3, #4]
- 8911 13e6 0933     		adds	r3, r3, #9
- 8912 13e8 1A00     		movs	r2, r3
- 8913 13ea 314B     		ldr	r3, .L71+8
- 8914 13ec 9321     		movs	r1, #147
- 8915 13ee C900     		lsls	r1, r1, #3
- 8916 13f0 8C46     		mov	ip, r1
- 8917 13f2 BC44     		add	ip, ip, r7
- 8918 13f4 6344     		add	r3, r3, ip
- 8919 13f6 5B68     		ldr	r3, [r3, #4]
- 8920 13f8 0933     		adds	r3, r3, #9
- 8921 13fa D21A     		subs	r2, r2, r3
- 8922 13fc 384B     		ldr	r3, .L71+56
- 8923 13fe 1A60     		str	r2, [r3]
- 519:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				if(!DIP_burned && read_DIL_single(LIGHT_TRIGGER) && player.yPos > 10 && abs(distance_hair_DIP) 
- 8924              		.loc 1 519 0
- 8925 1400 384B     		ldr	r3, .L71+60
- 8926 1402 1B68     		ldr	r3, [r3]
- 8927 1404 002B     		cmp	r3, #0
- 8928 1406 39D1     		bne	.L56
- 8929              		.loc 1 519 0 is_stmt 0 discriminator 1
- 8930 1408 0620     		movs	r0, #6
- 8931 140a FFF7FEFF 		bl	read_DIL_single
- 8932 140e 031E     		subs	r3, r0, #0
- 8933 1410 34D0     		beq	.L56
- 8934              		.loc 1 519 0 discriminator 2
- 8935 1412 284B     		ldr	r3, .L71+12
- 8936 1414 9322     		movs	r2, #147
- 8937 1416 D200     		lsls	r2, r2, #3
- 8938 1418 9446     		mov	ip, r2
- 8939 141a BC44     		add	ip, ip, r7
- 8940 141c 6344     		add	r3, r3, ip
- 8941 141e 9B68     		ldr	r3, [r3, #8]
- 8942 1420 0A2B     		cmp	r3, #10
- 8943 1422 2BDD     		ble	.L56
- 8944              		.loc 1 519 0 discriminator 3
- 8945 1424 2E4B     		ldr	r3, .L71+56
- 8946 1426 1B68     		ldr	r3, [r3]
- 8947 1428 0433     		adds	r3, r3, #4
- 8948 142a 27DB     		blt	.L56
- 8949              		.loc 1 519 0 discriminator 4
- 8950 142c 2C4B     		ldr	r3, .L71+56
- 8951 142e 1B68     		ldr	r3, [r3]
- 8952 1430 042B     		cmp	r3, #4
- 8953 1432 23DC     		bgt	.L56
- 520:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					DIP_burned = 1;
- 8954              		.loc 1 520 0 is_stmt 1
- 8955 1434 2B4B     		ldr	r3, .L71+60
- 8956 1436 0122     		movs	r2, #1
- 8957 1438 1A60     		str	r2, [r3]
- 521:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					fires[2].xPos = DIP.xPos;
- 8958              		.loc 1 521 0
- 8959 143a 1D4B     		ldr	r3, .L71+8
- 8960 143c 9322     		movs	r2, #147
- 8961 143e D200     		lsls	r2, r2, #3
- 8962 1440 9446     		mov	ip, r2
- 8963 1442 BC44     		add	ip, ip, r7
- 8964 1444 6344     		add	r3, r3, ip
- 8965 1446 5A68     		ldr	r2, [r3, #4]
- 8966 1448 1E4B     		ldr	r3, .L71+28
- 8967 144a 9321     		movs	r1, #147
- 8968 144c C900     		lsls	r1, r1, #3
- 8969 144e 8C46     		mov	ip, r1
- 8970 1450 BC44     		add	ip, ip, r7
- 8971 1452 6344     		add	r3, r3, ip
- 8972 1454 DA64     		str	r2, [r3, #76]
- 522:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					fires[2].yPos = DIP.yPos + 6;
- 8973              		.loc 1 522 0
- 8974 1456 164B     		ldr	r3, .L71+8
- 8975 1458 9322     		movs	r2, #147
- 8976 145a D200     		lsls	r2, r2, #3
- 8977 145c 9446     		mov	ip, r2
- 8978 145e BC44     		add	ip, ip, r7
- 8979 1460 6344     		add	r3, r3, ip
- 8980 1462 9B68     		ldr	r3, [r3, #8]
- 8981 1464 9A1D     		adds	r2, r3, #6
- 8982 1466 174B     		ldr	r3, .L71+28
- 8983 1468 9321     		movs	r1, #147
- 8984 146a C900     		lsls	r1, r1, #3
- 8985 146c 8C46     		mov	ip, r1
- 8986 146e BC44     		add	ip, ip, r7
- 8987 1470 6344     		add	r3, r3, ip
- 8988 1472 1A65     		str	r2, [r3, #80]
- 523:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					no_DIP = 1;
- 8989              		.loc 1 523 0
- 8990 1474 0123     		movs	r3, #1
- 8991 1476 0D4A     		ldr	r2, .L71+4
- 8992 1478 BA18     		adds	r2, r7, r2
- 8993 147a 1360     		str	r3, [r2]
- 8994              	.L56:
- 524:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				}
- 525:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
- 526:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				game_over += game_over_adder;
- 8995              		.loc 1 526 0
- 8996 147c 1A4B     		ldr	r3, .L71+64
- 8997 147e FB18     		adds	r3, r7, r3
- 8998 1480 1A68     		ldr	r2, [r3]
- 8999 1482 9123     		movs	r3, #145
- 9000 1484 DB00     		lsls	r3, r3, #3
- 9001 1486 FB18     		adds	r3, r7, r3
- 9002 1488 1B68     		ldr	r3, [r3]
- 9003 148a D318     		adds	r3, r2, r3
- 9004 148c 164A     		ldr	r2, .L71+64
- 9005 148e BA18     		adds	r2, r7, r2
- 9006 1490 1360     		str	r3, [r2]
- 527:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
- 528:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				if(game_over >= 100) {
- 9007              		.loc 1 528 0
- 9008 1492 154B     		ldr	r3, .L71+64
- 9009 1494 FB18     		adds	r3, r7, r3
- 9010 1496 1B68     		ldr	r3, [r3]
- 9011 1498 632B     		cmp	r3, #99
- 9012 149a 00DC     		bgt	.LCB2572
- 9013 149c D5E0     		b	.L61	@long jump
- 9014              	.LCB2572:
- 529:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					current_screen = RESET_GAME;
- 9015              		.loc 1 529 0
- 9016 149e 134B     		ldr	r3, .L71+68
- 9017 14a0 0A22     		movs	r2, #10
- 9018 14a2 1A60     		str	r2, [r3]
- 530:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				}
- 531:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
- 532:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				break;
- 9019              		.loc 1 532 0
- 9020 14a4 D1E0     		b	.L61
- 9021              	.L72:
- 9022 14a6 C046     		.align	2
- 9023              	.L71:
- 9024 14a8 68FEFFFF 		.word	-408
- 9025 14ac 84040000 		.word	1156
- 9026 14b0 FCFDFFFF 		.word	-516
- 9027 14b4 D8FDFFFF 		.word	-552
- 9028 14b8 A8010000 		.word	.LC117
- 9029 14bc BC010000 		.word	.LC119
- 9030 14c0 08000000 		.word	j.4315
- 9031 14c4 70FCFFFF 		.word	-912
- 9032 14c8 0C000000 		.word	distance_player_fire.4314
- 9033 14cc 80010000 		.word	.LC104
- 9034 14d0 C8010000 		.word	.LC123
- 9035 14d4 8CFEFFFF 		.word	-372
- 9036 14d8 10000000 		.word	distance_hair_trophy.4320
- 9037 14dc 14000000 		.word	trophy_burned.4319
- 9038 14e0 18000000 		.word	distance_hair_DIP.4322
- 9039 14e4 1C000000 		.word	DIP_burned.4321
- 9040 14e8 8C040000 		.word	1164
- 9041 14ec 00000000 		.word	current_screen
- 9042              	.L14:
- 533:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
- 534:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 			
- 535:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 			case RESET_GAME: //restart
- 536:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				counter = 0;
- 9043              		.loc 1 536 0
- 9044 14f0 574B     		ldr	r3, .L73
- 9045 14f2 0022     		movs	r2, #0
- 9046 14f4 1A60     		str	r2, [r3]
- 537:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				current_screen = START_SCREEN;
- 9047              		.loc 1 537 0
- 9048 14f6 574B     		ldr	r3, .L73+4
- 9049 14f8 0122     		movs	r2, #1
- 9050 14fa 1A60     		str	r2, [r3]
- 538:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				if(read_DIL() == 0) {
- 9051              		.loc 1 538 0
- 9052 14fc FFF7FEFF 		bl	read_DIL
- 9053 1500 031E     		subs	r3, r0, #0
- 9054 1502 02D1     		bne	.L58
- 539:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					current_screen = SWITCH_LOCK; 
- 9055              		.loc 1 539 0
- 9056 1504 534B     		ldr	r3, .L73+4
- 9057 1506 0022     		movs	r2, #0
- 9058 1508 1A60     		str	r2, [r3]
- 9059              	.L58:
- 540:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				}
- 541:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	
- 542:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				static int test = 0;
- 543:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				test+=2;
- 9060              		.loc 1 543 0
- 9061 150a 534B     		ldr	r3, .L73+8
- 9062 150c 1B68     		ldr	r3, [r3]
- 9063 150e 9A1C     		adds	r2, r3, #2
- 9064 1510 514B     		ldr	r3, .L73+8
- 9065 1512 1A60     		str	r2, [r3]
- 544:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	
- 545:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				exploding = 0;
- 9066              		.loc 1 545 0
- 9067 1514 0023     		movs	r3, #0
- 9068 1516 9022     		movs	r2, #144
- 9069 1518 D200     		lsls	r2, r2, #3
- 9070 151a BA18     		adds	r2, r7, r2
- 9071 151c 1360     		str	r3, [r2]
- 546:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				is_climbing = 0;
- 9072              		.loc 1 546 0
- 9073 151e 0023     		movs	r3, #0
- 9074 1520 4E4A     		ldr	r2, .L73+12
- 9075 1522 BA18     		adds	r2, r7, r2
- 9076 1524 1360     		str	r3, [r2]
- 547:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				has_climbed = 0;
- 9077              		.loc 1 547 0
- 9078 1526 0023     		movs	r3, #0
- 9079 1528 9222     		movs	r2, #146
- 9080 152a D200     		lsls	r2, r2, #3
- 9081 152c BA18     		adds	r2, r7, r2
- 9082 152e 1360     		str	r3, [r2]
- 548:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				game_over = 0;
- 9083              		.loc 1 548 0
- 9084 1530 0023     		movs	r3, #0
- 9085 1532 4B4A     		ldr	r2, .L73+16
- 9086 1534 BA18     		adds	r2, r7, r2
- 9087 1536 1360     		str	r3, [r2]
- 549:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				game_over_adder = 0;
- 9088              		.loc 1 549 0
- 9089 1538 0023     		movs	r3, #0
- 9090 153a 9122     		movs	r2, #145
- 9091 153c D200     		lsls	r2, r2, #3
- 9092 153e BA18     		adds	r2, r7, r2
- 9093 1540 1360     		str	r3, [r2]
- 550:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				fires[0].xPos = 40;		//FIRE1_INDO
- 9094              		.loc 1 550 0
- 9095 1542 484B     		ldr	r3, .L73+20
- 9096 1544 9322     		movs	r2, #147
- 9097 1546 D200     		lsls	r2, r2, #3
- 9098 1548 9446     		mov	ip, r2
- 9099 154a BC44     		add	ip, ip, r7
- 9100 154c 6344     		add	r3, r3, ip
- 9101 154e 2822     		movs	r2, #40
- 9102 1550 5A60     		str	r2, [r3, #4]
- 551:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				fires[0].yPos = 64-12-8;
- 9103              		.loc 1 551 0
- 9104 1552 444B     		ldr	r3, .L73+20
- 9105 1554 9322     		movs	r2, #147
- 9106 1556 D200     		lsls	r2, r2, #3
- 9107 1558 9446     		mov	ip, r2
- 9108 155a BC44     		add	ip, ip, r7
- 9109 155c 6344     		add	r3, r3, ip
- 9110 155e 2C22     		movs	r2, #44
- 9111 1560 9A60     		str	r2, [r3, #8]
- 552:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				fires[2].xPos = -50;		//FIRE1_INDO
- 9112              		.loc 1 552 0
- 9113 1562 404B     		ldr	r3, .L73+20
- 9114 1564 9322     		movs	r2, #147
- 9115 1566 D200     		lsls	r2, r2, #3
- 9116 1568 9446     		mov	ip, r2
- 9117 156a BC44     		add	ip, ip, r7
- 9118 156c 6344     		add	r3, r3, ip
- 9119 156e 3222     		movs	r2, #50
- 9120 1570 5242     		rsbs	r2, r2, #0
- 9121 1572 DA64     		str	r2, [r3, #76]
- 553:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				fires[2].yPos = -50;
- 9122              		.loc 1 553 0
- 9123 1574 3B4B     		ldr	r3, .L73+20
- 9124 1576 9322     		movs	r2, #147
- 9125 1578 D200     		lsls	r2, r2, #3
- 9126 157a 9446     		mov	ip, r2
- 9127 157c BC44     		add	ip, ip, r7
- 9128 157e 6344     		add	r3, r3, ip
- 9129 1580 3222     		movs	r2, #50
- 9130 1582 5242     		rsbs	r2, r2, #0
- 9131 1584 1A65     		str	r2, [r3, #80]
- 554:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				fires[1].xPos = -50;		//FIRE1_INDO
- 9132              		.loc 1 554 0
- 9133 1586 374B     		ldr	r3, .L73+20
- 9134 1588 9322     		movs	r2, #147
- 9135 158a D200     		lsls	r2, r2, #3
- 9136 158c 9446     		mov	ip, r2
- 9137 158e BC44     		add	ip, ip, r7
- 9138 1590 6344     		add	r3, r3, ip
- 9139 1592 3222     		movs	r2, #50
- 9140 1594 5242     		rsbs	r2, r2, #0
- 9141 1596 9A62     		str	r2, [r3, #40]
- 555:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				fires[1].yPos = -50;
- 9142              		.loc 1 555 0
- 9143 1598 324B     		ldr	r3, .L73+20
- 9144 159a 9322     		movs	r2, #147
- 9145 159c D200     		lsls	r2, r2, #3
- 9146 159e 9446     		mov	ip, r2
- 9147 15a0 BC44     		add	ip, ip, r7
- 9148 15a2 6344     		add	r3, r3, ip
- 9149 15a4 3222     		movs	r2, #50
- 9150 15a6 5242     		rsbs	r2, r2, #0
- 9151 15a8 DA62     		str	r2, [r3, #44]
- 556:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				bird.xPos = 180;
- 9152              		.loc 1 556 0
- 9153 15aa 2F4B     		ldr	r3, .L73+24
- 9154 15ac 9322     		movs	r2, #147
- 9155 15ae D200     		lsls	r2, r2, #3
- 9156 15b0 9446     		mov	ip, r2
- 9157 15b2 BC44     		add	ip, ip, r7
- 9158 15b4 6344     		add	r3, r3, ip
- 9159 15b6 B422     		movs	r2, #180
- 9160 15b8 5A60     		str	r2, [r3, #4]
- 557:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				bird.yPos = 40;
- 9161              		.loc 1 557 0
- 9162 15ba 2B4B     		ldr	r3, .L73+24
- 9163 15bc 9322     		movs	r2, #147
- 9164 15be D200     		lsls	r2, r2, #3
- 9165 15c0 9446     		mov	ip, r2
- 9166 15c2 BC44     		add	ip, ip, r7
- 9167 15c4 6344     		add	r3, r3, ip
- 9168 15c6 2822     		movs	r2, #40
- 9169 15c8 9A60     		str	r2, [r3, #8]
- 558:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
- 559:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				trophy.xPos = 19;
- 9170              		.loc 1 559 0
- 9171 15ca 284B     		ldr	r3, .L73+28
- 9172 15cc 9322     		movs	r2, #147
- 9173 15ce D200     		lsls	r2, r2, #3
- 9174 15d0 9446     		mov	ip, r2
- 9175 15d2 BC44     		add	ip, ip, r7
- 9176 15d4 6344     		add	r3, r3, ip
- 9177 15d6 1322     		movs	r2, #19
- 9178 15d8 5A60     		str	r2, [r3, #4]
- 560:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				trophy.yPos = 5;
- 9179              		.loc 1 560 0
- 9180 15da 244B     		ldr	r3, .L73+28
- 9181 15dc 9322     		movs	r2, #147
- 9182 15de D200     		lsls	r2, r2, #3
- 9183 15e0 9446     		mov	ip, r2
- 9184 15e2 BC44     		add	ip, ip, r7
- 9185 15e4 6344     		add	r3, r3, ip
- 9186 15e6 0522     		movs	r2, #5
- 9187 15e8 9A60     		str	r2, [r3, #8]
- 561:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				trophy_burned = 0;
- 9188              		.loc 1 561 0
- 9189 15ea 214B     		ldr	r3, .L73+32
- 9190 15ec 0022     		movs	r2, #0
- 9191 15ee 1A60     		str	r2, [r3]
- 562:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
- 563:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				DIP.xPos = 100;
- 9192              		.loc 1 563 0
- 9193 15f0 204B     		ldr	r3, .L73+36
- 9194 15f2 9322     		movs	r2, #147
- 9195 15f4 D200     		lsls	r2, r2, #3
- 9196 15f6 9446     		mov	ip, r2
- 9197 15f8 BC44     		add	ip, ip, r7
- 9198 15fa 6344     		add	r3, r3, ip
- 9199 15fc 6422     		movs	r2, #100
- 9200 15fe 5A60     		str	r2, [r3, #4]
- 564:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				DIP.yPos = 5;
- 9201              		.loc 1 564 0
- 9202 1600 1C4B     		ldr	r3, .L73+36
- 9203 1602 9322     		movs	r2, #147
- 9204 1604 D200     		lsls	r2, r2, #3
- 9205 1606 9446     		mov	ip, r2
- 9206 1608 BC44     		add	ip, ip, r7
- 9207 160a 6344     		add	r3, r3, ip
- 9208 160c 0522     		movs	r2, #5
- 9209 160e 9A60     		str	r2, [r3, #8]
- 565:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				DIP_burned = 0;
- 9210              		.loc 1 565 0
- 9211 1610 194B     		ldr	r3, .L73+40
- 9212 1612 0022     		movs	r2, #0
- 9213 1614 1A60     		str	r2, [r3]
- 566:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				no_DIP = 0;
- 9214              		.loc 1 566 0
- 9215 1616 0023     		movs	r3, #0
- 9216 1618 184A     		ldr	r2, .L73+44
- 9217 161a BA18     		adds	r2, r7, r2
- 9218 161c 1360     		str	r3, [r2]
- 567:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
- 568:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				player.xPos = 3;
- 9219              		.loc 1 568 0
- 9220 161e 184B     		ldr	r3, .L73+48
- 9221 1620 9322     		movs	r2, #147
- 9222 1622 D200     		lsls	r2, r2, #3
- 9223 1624 9446     		mov	ip, r2
- 9224 1626 BC44     		add	ip, ip, r7
- 9225 1628 6344     		add	r3, r3, ip
- 9226 162a 0322     		movs	r2, #3
- 9227 162c 5A60     		str	r2, [r3, #4]
- 569:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				player.yPos = 64-18-7; //player position
- 9228              		.loc 1 569 0
- 9229 162e 144B     		ldr	r3, .L73+48
- 9230 1630 9322     		movs	r2, #147
- 9231 1632 D200     		lsls	r2, r2, #3
- 9232 1634 9446     		mov	ip, r2
- 9233 1636 BC44     		add	ip, ip, r7
- 9234 1638 6344     		add	r3, r3, ip
- 9235 163a 2722     		movs	r2, #39
- 9236 163c 9A60     		str	r2, [r3, #8]
- 570:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				clear_ascii();
- 9237              		.loc 1 570 0
- 9238 163e FFF7FEFF 		bl	clear_ascii
- 571:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				break;
- 9239              		.loc 1 571 0
- 9240 1642 03E0     		b	.L9
- 9241              	.L60:
- 406:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
- 9242              		.loc 1 406 0
- 9243 1644 C046     		nop
- 9244 1646 FFF7F3F8 		bl	.L59	@ far jump
- 9245              	.L61:
- 532:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
- 9246              		.loc 1 532 0
- 9247 164a C046     		nop
- 9248              	.L9:
- 9249              	.LBE2:
- 314:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 			
- 9250              		.loc 1 314 0 discriminator 1
- 9251 164c FFF7F0F8 		bl	.L59	@ far jump
- 9252              	.L74:
- 9253              		.align	2
- 9254              	.L73:
- 9255 1650 00000000 		.word	counter
- 9256 1654 00000000 		.word	current_screen
- 9257 1658 20000000 		.word	test.4324
- 9258 165c 94040000 		.word	1172
- 9259 1660 8C040000 		.word	1164
- 9260 1664 70FCFFFF 		.word	-912
- 9261 1668 44FEFFFF 		.word	-444
- 9262 166c 8CFEFFFF 		.word	-372
- 9263 1670 14000000 		.word	trophy_burned.4319
- 9264 1674 FCFDFFFF 		.word	-516
- 9265 1678 1C000000 		.word	DIP_burned.4321
- 9266 167c 84040000 		.word	1156
- 9267 1680 D8FDFFFF 		.word	-552
- 9268              		.cfi_endproc
- 9269              	.LFE3:
- 9271              		.align	1
- 9272              		.global	abs
- 9273              		.syntax unified
- 9274              		.code	16
- 9275              		.thumb_func
- 9276              		.fpu softvfp
- 9278              	abs:
- 9279              	.LFB4:
- 572:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 							
- 573:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 		} //end of switch
- 574:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 		
- 575:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 		
- 576:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 		
- 577:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 		
- 578:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 		
- 579:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 		
- 580:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	}
- 581:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	
- 582:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** }
- 583:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 
- 584:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** int abs(int value) {
- 9280              		.loc 1 584 0
- 9281              		.cfi_startproc
- 9282              		@ args = 0, pretend = 0, frame = 8
- 9283              		@ frame_needed = 1, uses_anonymous_args = 0
- 9284 1684 80B5     		push	{r7, lr}
- 9285              		.cfi_def_cfa_offset 8
- 9286              		.cfi_offset 7, -8
- 9287              		.cfi_offset 14, -4
- 9288 1686 82B0     		sub	sp, sp, #8
- 9289              		.cfi_def_cfa_offset 16
- 9290 1688 00AF     		add	r7, sp, #0
- 9291              		.cfi_def_cfa_register 7
- 9292 168a 7860     		str	r0, [r7, #4]
- 585:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	if(value < 0) {
- 9293              		.loc 1 585 0
- 9294 168c 7B68     		ldr	r3, [r7, #4]
- 9295 168e 002B     		cmp	r3, #0
- 9296 1690 02DA     		bge	.L76
- 586:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 		return -value;
- 9297              		.loc 1 586 0
- 9298 1692 7B68     		ldr	r3, [r7, #4]
- 9299 1694 5B42     		rsbs	r3, r3, #0
- 9300 1696 00E0     		b	.L77
- 9301              	.L76:
- 587:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	}
- 588:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	return value;
- 9302              		.loc 1 588 0
- 9303 1698 7B68     		ldr	r3, [r7, #4]
- 9304              	.L77:
- 589:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** }
- 9305              		.loc 1 589 0
- 9306 169a 1800     		movs	r0, r3
- 9307 169c BD46     		mov	sp, r7
- 9308 169e 02B0     		add	sp, sp, #8
- 9309              		@ sp needed
- 9310 16a0 80BD     		pop	{r7, pc}
- 9311              		.cfi_endproc
- 9312              	.LFE4:
- 9314              		.data
- 9315              		.align	2
- 9318              	delay_until_text.4306:
- 9319 1730 82000000 		.word	130
- 9320              		.align	2
- 9323              	long_text.4304:
- 9324 1734 28000000 		.word	40
- 9325              		.align	2
- 9328              	short_text.4305:
- 9329 1738 14000000 		.word	20
- 9330              		.bss
- 9331              		.align	2
- 9332              	i.4308:
- 9333 0004 00000000 		.space	4
- 9335              		.data
- 9336              		.align	2
- 9339              	first.4312:
- 9340 173c 01000000 		.word	1
- 9341              		.align	2
- 9344              	last_climb_value.4313:
- 9345 1740 64000000 		.word	100
- 9346              		.bss
- 9347              		.align	2
- 9348              	j.4315:
- 9349 0008 00000000 		.space	4
- 9351              		.align	2
- 9352              	distance_player_fire.4314:
- 9353 000c 00000000 		.space	4
- 9355              		.align	2
- 9356              	distance_hair_trophy.4320:
- 9357 0010 00000000 		.space	4
- 9359              		.align	2
- 9360              	trophy_burned.4319:
- 9361 0014 00000000 		.space	4
- 9363              		.align	2
- 9364              	distance_hair_DIP.4322:
- 9365 0018 00000000 		.space	4
- 9367              		.align	2
- 9368              	DIP_burned.4321:
- 9369 001c 00000000 		.space	4
- 9371              		.align	2
- 9372              	test.4324:
- 9373 0020 00000000 		.space	4
- 9375              		.text
- 9376              	.Letext0:
- 9377              		.file 2 "C:/mop/c/Moplaborationer/DIPs-Witch/C/sprite.h"
- 9378              		.file 3 "C:/mop/c/Moplaborationer/DIPs-Witch/C/image.h"
- 9379              		.file 4 "C:/mop/c/Moplaborationer/DIPs-Witch/C/gameobject.h"
- 9380              		.file 5 "C:/mop/c/Moplaborationer/DIPs-Witch/C/graphics.h"
- 9381              		.file 6 "C:/mop/c/Moplaborationer/DIPs-Witch/C/monster_black.xbm"
- 9382              		.file 7 "C:/mop/c/Moplaborationer/DIPs-Witch/C/monster_light.xbm"
- 9383              		.file 8 "C:/mop/c/Moplaborationer/DIPs-Witch/C/monster_gray.xbm"
- 9384              		.file 9 "C:/mop/c/Moplaborationer/DIPs-Witch/C/press_black.xbm"
- 9385              		.file 10 "C:/mop/c/Moplaborationer/DIPs-Witch/C/press_light.xbm"
- 9386              		.file 11 "C:/mop/c/Moplaborationer/DIPs-Witch/C/press_gray.xbm"
- 9387              		.file 12 "C:/mop/c/Moplaborationer/DIPs-Witch/C/castle_black.xbm"
- 9388              		.file 13 "C:/mop/c/Moplaborationer/DIPs-Witch/C/castle_gray.xbm"
- 9389              		.file 14 "C:/mop/c/Moplaborationer/DIPs-Witch/C/castle_light.xbm"
- 9390              		.file 15 "C:/mop/c/Moplaborationer/DIPs-Witch/C/title_light.xbm"
- 9391              		.file 16 "C:/mop/c/Moplaborationer/DIPs-Witch/C/title_gray.xbm"
- 9392              		.file 17 "C:/mop/c/Moplaborationer/DIPs-Witch/C/title_black.xbm"
- 9393              		.file 18 "C:/mop/c/Moplaborationer/DIPs-Witch/C/slow_text.h"
- 9394              		.file 19 "C:/mop/c/Moplaborationer/DIPs-Witch/C/bg.xbm"
+ 506:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
+ 507:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
+ 508:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				if (!no_DIP && DIP.yPos >= player.yPos && (player.xPos + DIP_WIDTH/2 >= DIP.xPos && player.xPos
+ 8850              		.loc 1 508 0
+ 8851 1356 254B     		ldr	r3, .L76+8
+ 8852 1358 FB18     		adds	r3, r7, r3
+ 8853 135a 1B68     		ldr	r3, [r3]
+ 8854 135c 002B     		cmp	r3, #0
+ 8855 135e 3DD1     		bne	.L56
+ 8856              		.loc 1 508 0 is_stmt 0 discriminator 1
+ 8857 1360 244B     		ldr	r3, .L76+16
+ 8858 1362 9422     		movs	r2, #148
+ 8859 1364 D200     		lsls	r2, r2, #3
+ 8860 1366 9446     		mov	ip, r2
+ 8861 1368 BC44     		add	ip, ip, r7
+ 8862 136a 6344     		add	r3, r3, ip
+ 8863 136c 9A68     		ldr	r2, [r3, #8]
+ 8864 136e 204B     		ldr	r3, .L76+12
+ 8865 1370 9421     		movs	r1, #148
+ 8866 1372 C900     		lsls	r1, r1, #3
+ 8867 1374 8C46     		mov	ip, r1
+ 8868 1376 BC44     		add	ip, ip, r7
+ 8869 1378 6344     		add	r3, r3, ip
+ 8870 137a 9B68     		ldr	r3, [r3, #8]
+ 8871 137c 9A42     		cmp	r2, r3
+ 8872 137e 2DDB     		blt	.L56
+ 8873              		.loc 1 508 0 discriminator 2
+ 8874 1380 1B4B     		ldr	r3, .L76+12
+ 8875 1382 9422     		movs	r2, #148
+ 8876 1384 D200     		lsls	r2, r2, #3
+ 8877 1386 9446     		mov	ip, r2
+ 8878 1388 BC44     		add	ip, ip, r7
+ 8879 138a 6344     		add	r3, r3, ip
+ 8880 138c 5B68     		ldr	r3, [r3, #4]
+ 8881 138e 0933     		adds	r3, r3, #9
+ 8882 1390 1A00     		movs	r2, r3
+ 8883 1392 184B     		ldr	r3, .L76+16
+ 8884 1394 9421     		movs	r1, #148
+ 8885 1396 C900     		lsls	r1, r1, #3
+ 8886 1398 8C46     		mov	ip, r1
+ 8887 139a BC44     		add	ip, ip, r7
+ 8888 139c 6344     		add	r3, r3, ip
+ 8889 139e 5B68     		ldr	r3, [r3, #4]
+ 8890 13a0 9A42     		cmp	r2, r3
+ 8891 13a2 1BDB     		blt	.L56
+ 8892              		.loc 1 508 0 discriminator 3
+ 8893 13a4 124B     		ldr	r3, .L76+12
+ 8894 13a6 9422     		movs	r2, #148
+ 8895 13a8 D200     		lsls	r2, r2, #3
+ 8896 13aa 9446     		mov	ip, r2
+ 8897 13ac BC44     		add	ip, ip, r7
+ 8898 13ae 6344     		add	r3, r3, ip
+ 8899 13b0 5A68     		ldr	r2, [r3, #4]
+ 8900 13b2 104B     		ldr	r3, .L76+16
+ 8901 13b4 9421     		movs	r1, #148
+ 8902 13b6 C900     		lsls	r1, r1, #3
+ 8903 13b8 8C46     		mov	ip, r1
+ 8904 13ba BC44     		add	ip, ip, r7
+ 8905 13bc 6344     		add	r3, r3, ip
+ 8906 13be 5B68     		ldr	r3, [r3, #4]
+ 8907 13c0 0933     		adds	r3, r3, #9
+ 8908 13c2 9A42     		cmp	r2, r3
+ 8909 13c4 0ADC     		bgt	.L56
+ 509:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					game_over_adder = 100;
+ 8910              		.loc 1 509 0 is_stmt 1
+ 8911 13c6 6423     		movs	r3, #100
+ 8912 13c8 9222     		movs	r2, #146
+ 8913 13ca D200     		lsls	r2, r2, #3
+ 8914 13cc BA18     		adds	r2, r7, r2
+ 8915 13ce 1360     		str	r3, [r2]
+ 510:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					ascii_write("DIPs-WITCH:","      NyAHAHAHAH!");
+ 8916              		.loc 1 510 0
+ 8917 13d0 0B4A     		ldr	r2, .L76+28
+ 8918 13d2 0C4B     		ldr	r3, .L76+32
+ 8919 13d4 1100     		movs	r1, r2
+ 8920 13d6 1800     		movs	r0, r3
+ 8921 13d8 FFF7FEFF 		bl	ascii_write
+ 8922              	.L56:
+ 511:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				}
+ 512:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
+ 513:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				static int distance_player_fire;	//fire_collision
+ 514:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				static int j;
+ 515:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				for(j = 0; j < 3; j++) {
+ 8923              		.loc 1 515 0
+ 8924 13dc 0A4B     		ldr	r3, .L76+36
+ 8925 13de 0022     		movs	r2, #0
+ 8926 13e0 1A60     		str	r2, [r3]
+ 8927 13e2 75E0     		b	.L57
+ 8928              	.L77:
+ 8929              		.align	2
+ 8930              	.L76:
+ 8931 13e4 AC010000 		.word	.LC108
+ 8932 13e8 08020000 		.word	.LC124
+ 8933 13ec 8C040000 		.word	1164
+ 8934 13f0 D0FDFFFF 		.word	-560
+ 8935 13f4 F4FDFFFF 		.word	-524
+ 8936 13f8 60FEFFFF 		.word	-416
+ 8937 13fc 14020000 		.word	.LC126
+ 8938 1400 20020000 		.word	.LC128
+ 8939 1404 34020000 		.word	.LC130
+ 8940 1408 08000000 		.word	j.4316
+ 8941              	.L59:
+ 516:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					distance_player_fire = (player.xPos + 9) - (fires[j].xPos + 5);
+ 8942              		.loc 1 516 0
+ 8943 140c 944B     		ldr	r3, .L78
+ 8944 140e 9422     		movs	r2, #148
+ 8945 1410 D200     		lsls	r2, r2, #3
+ 8946 1412 9446     		mov	ip, r2
+ 8947 1414 BC44     		add	ip, ip, r7
+ 8948 1416 6344     		add	r3, r3, ip
+ 8949 1418 5B68     		ldr	r3, [r3, #4]
+ 8950 141a 0933     		adds	r3, r3, #9
+ 8951 141c 1900     		movs	r1, r3
+ 8952 141e 914B     		ldr	r3, .L78+4
+ 8953 1420 1A68     		ldr	r2, [r3]
+ 8954 1422 914B     		ldr	r3, .L78+8
+ 8955 1424 9420     		movs	r0, #148
+ 8956 1426 C000     		lsls	r0, r0, #3
+ 8957 1428 3818     		adds	r0, r7, r0
+ 8958 142a C018     		adds	r0, r0, r3
+ 8959 142c 1300     		movs	r3, r2
+ 8960 142e DB00     		lsls	r3, r3, #3
+ 8961 1430 9B18     		adds	r3, r3, r2
+ 8962 1432 9B00     		lsls	r3, r3, #2
+ 8963 1434 C318     		adds	r3, r0, r3
+ 8964 1436 0433     		adds	r3, r3, #4
+ 8965 1438 1B68     		ldr	r3, [r3]
+ 8966 143a 0533     		adds	r3, r3, #5
+ 8967 143c CA1A     		subs	r2, r1, r3
+ 8968 143e 8B4B     		ldr	r3, .L78+12
+ 8969 1440 1A60     		str	r2, [r3]
+ 517:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					if(player.yPos > (fires[j].yPos - 18 + 7) && 
+ 8970              		.loc 1 517 0
+ 8971 1442 874B     		ldr	r3, .L78
+ 8972 1444 9422     		movs	r2, #148
+ 8973 1446 D200     		lsls	r2, r2, #3
+ 8974 1448 9446     		mov	ip, r2
+ 8975 144a BC44     		add	ip, ip, r7
+ 8976 144c 6344     		add	r3, r3, ip
+ 8977 144e 9968     		ldr	r1, [r3, #8]
+ 8978 1450 844B     		ldr	r3, .L78+4
+ 8979 1452 1A68     		ldr	r2, [r3]
+ 8980 1454 844B     		ldr	r3, .L78+8
+ 8981 1456 9420     		movs	r0, #148
+ 8982 1458 C000     		lsls	r0, r0, #3
+ 8983 145a 3818     		adds	r0, r7, r0
+ 8984 145c C018     		adds	r0, r0, r3
+ 8985 145e 1300     		movs	r3, r2
+ 8986 1460 DB00     		lsls	r3, r3, #3
+ 8987 1462 9B18     		adds	r3, r3, r2
+ 8988 1464 9B00     		lsls	r3, r3, #2
+ 8989 1466 C318     		adds	r3, r0, r3
+ 8990 1468 0833     		adds	r3, r3, #8
+ 8991 146a 1B68     		ldr	r3, [r3]
+ 8992 146c 0B3B     		subs	r3, r3, #11
+ 8993 146e 9942     		cmp	r1, r3
+ 8994 1470 29DD     		ble	.L58
+ 518:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 							player.yPos < fires[j].yPos && distance_player_fire < 8 && distance_player_fire > -8) {
+ 8995              		.loc 1 518 0 discriminator 1
+ 8996 1472 7B4B     		ldr	r3, .L78
+ 8997 1474 9422     		movs	r2, #148
+ 8998 1476 D200     		lsls	r2, r2, #3
+ 8999 1478 9446     		mov	ip, r2
+ 9000 147a BC44     		add	ip, ip, r7
+ 9001 147c 6344     		add	r3, r3, ip
+ 9002 147e 9968     		ldr	r1, [r3, #8]
+ 9003 1480 784B     		ldr	r3, .L78+4
+ 9004 1482 1A68     		ldr	r2, [r3]
+ 9005 1484 784B     		ldr	r3, .L78+8
+ 9006 1486 9420     		movs	r0, #148
+ 9007 1488 C000     		lsls	r0, r0, #3
+ 9008 148a 3818     		adds	r0, r7, r0
+ 9009 148c C018     		adds	r0, r0, r3
+ 9010 148e 1300     		movs	r3, r2
+ 9011 1490 DB00     		lsls	r3, r3, #3
+ 9012 1492 9B18     		adds	r3, r3, r2
+ 9013 1494 9B00     		lsls	r3, r3, #2
+ 9014 1496 C318     		adds	r3, r0, r3
+ 9015 1498 0833     		adds	r3, r3, #8
+ 9016 149a 1B68     		ldr	r3, [r3]
+ 517:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					if(player.yPos > (fires[j].yPos - 18 + 7) && 
+ 9017              		.loc 1 517 0 discriminator 1
+ 9018 149c 9942     		cmp	r1, r3
+ 9019 149e 12DA     		bge	.L58
+ 9020              		.loc 1 518 0
+ 9021 14a0 724B     		ldr	r3, .L78+12
+ 9022 14a2 1B68     		ldr	r3, [r3]
+ 9023 14a4 072B     		cmp	r3, #7
+ 9024 14a6 0EDC     		bgt	.L58
+ 9025              		.loc 1 518 0 is_stmt 0 discriminator 1
+ 9026 14a8 704B     		ldr	r3, .L78+12
+ 9027 14aa 1B68     		ldr	r3, [r3]
+ 9028 14ac 0733     		adds	r3, r3, #7
+ 9029 14ae 0ADB     		blt	.L58
+ 519:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 						game_over_adder = 20;
+ 9030              		.loc 1 519 0 is_stmt 1
+ 9031 14b0 1423     		movs	r3, #20
+ 9032 14b2 9222     		movs	r2, #146
+ 9033 14b4 D200     		lsls	r2, r2, #3
+ 9034 14b6 BA18     		adds	r2, r7, r2
+ 9035 14b8 1360     		str	r3, [r2]
+ 520:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 						ascii_write("*FWOOSH*","");
+ 9036              		.loc 1 520 0
+ 9037 14ba 6D4A     		ldr	r2, .L78+16
+ 9038 14bc 6D4B     		ldr	r3, .L78+20
+ 9039 14be 1100     		movs	r1, r2
+ 9040 14c0 1800     		movs	r0, r3
+ 9041 14c2 FFF7FEFF 		bl	ascii_write
+ 9042              	.L58:
+ 515:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					distance_player_fire = (player.xPos + 9) - (fires[j].xPos + 5);
+ 9043              		.loc 1 515 0 discriminator 2
+ 9044 14c6 674B     		ldr	r3, .L78+4
+ 9045 14c8 1B68     		ldr	r3, [r3]
+ 9046 14ca 5A1C     		adds	r2, r3, #1
+ 9047 14cc 654B     		ldr	r3, .L78+4
+ 9048 14ce 1A60     		str	r2, [r3]
+ 9049              	.L57:
+ 515:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					distance_player_fire = (player.xPos + 9) - (fires[j].xPos + 5);
+ 9050              		.loc 1 515 0 is_stmt 0 discriminator 1
+ 9051 14d0 644B     		ldr	r3, .L78+4
+ 9052 14d2 1B68     		ldr	r3, [r3]
+ 9053 14d4 022B     		cmp	r3, #2
+ 9054 14d6 99DD     		ble	.L59
+ 521:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					}					
+ 522:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				}
+ 523:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
+ 524:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				static int trophy_burned = 0;	//trophy burning
+ 525:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				static int distance_hair_trophy;
+ 526:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				distance_hair_trophy = (hair.xPos + 9) - (trophy.xPos + 5);
+ 9055              		.loc 1 526 0 is_stmt 1
+ 9056 14d8 674B     		ldr	r3, .L78+24
+ 9057 14da 9422     		movs	r2, #148
+ 9058 14dc D200     		lsls	r2, r2, #3
+ 9059 14de 9446     		mov	ip, r2
+ 9060 14e0 BC44     		add	ip, ip, r7
+ 9061 14e2 6344     		add	r3, r3, ip
+ 9062 14e4 5B68     		ldr	r3, [r3, #4]
+ 9063 14e6 0933     		adds	r3, r3, #9
+ 9064 14e8 1A00     		movs	r2, r3
+ 9065 14ea 644B     		ldr	r3, .L78+28
+ 9066 14ec 9421     		movs	r1, #148
+ 9067 14ee C900     		lsls	r1, r1, #3
+ 9068 14f0 8C46     		mov	ip, r1
+ 9069 14f2 BC44     		add	ip, ip, r7
+ 9070 14f4 6344     		add	r3, r3, ip
+ 9071 14f6 5B68     		ldr	r3, [r3, #4]
+ 9072 14f8 0533     		adds	r3, r3, #5
+ 9073 14fa D21A     		subs	r2, r2, r3
+ 9074 14fc 604B     		ldr	r3, .L78+32
+ 9075 14fe 1A60     		str	r2, [r3]
+ 527:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				if(!trophy_burned && abs(distance_hair_trophy) < 5) {
+ 9076              		.loc 1 527 0
+ 9077 1500 604B     		ldr	r3, .L78+36
+ 9078 1502 1B68     		ldr	r3, [r3]
+ 9079 1504 002B     		cmp	r3, #0
+ 9080 1506 36D1     		bne	.L60
+ 9081              		.loc 1 527 0 is_stmt 0 discriminator 1
+ 9082 1508 5D4B     		ldr	r3, .L78+32
+ 9083 150a 1B68     		ldr	r3, [r3]
+ 9084 150c 0433     		adds	r3, r3, #4
+ 9085 150e 32DB     		blt	.L60
+ 9086              		.loc 1 527 0 discriminator 2
+ 9087 1510 5B4B     		ldr	r3, .L78+32
+ 9088 1512 1B68     		ldr	r3, [r3]
+ 9089 1514 042B     		cmp	r3, #4
+ 9090 1516 2EDC     		bgt	.L60
+ 528:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					trophy_burned = 1;
+ 9091              		.loc 1 528 0 is_stmt 1
+ 9092 1518 5A4B     		ldr	r3, .L78+36
+ 9093 151a 0122     		movs	r2, #1
+ 9094 151c 1A60     		str	r2, [r3]
+ 529:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					fires[1].xPos = trophy.xPos;
+ 9095              		.loc 1 529 0
+ 9096 151e 574B     		ldr	r3, .L78+28
+ 9097 1520 9422     		movs	r2, #148
+ 9098 1522 D200     		lsls	r2, r2, #3
+ 9099 1524 9446     		mov	ip, r2
+ 9100 1526 BC44     		add	ip, ip, r7
+ 9101 1528 6344     		add	r3, r3, ip
+ 9102 152a 5A68     		ldr	r2, [r3, #4]
+ 9103 152c 4E4B     		ldr	r3, .L78+8
+ 9104 152e 9421     		movs	r1, #148
+ 9105 1530 C900     		lsls	r1, r1, #3
+ 9106 1532 8C46     		mov	ip, r1
+ 9107 1534 BC44     		add	ip, ip, r7
+ 9108 1536 6344     		add	r3, r3, ip
+ 9109 1538 9A62     		str	r2, [r3, #40]
+ 530:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					fires[1].yPos = trophy.yPos + 5;
+ 9110              		.loc 1 530 0
+ 9111 153a 504B     		ldr	r3, .L78+28
+ 9112 153c 9422     		movs	r2, #148
+ 9113 153e D200     		lsls	r2, r2, #3
+ 9114 1540 9446     		mov	ip, r2
+ 9115 1542 BC44     		add	ip, ip, r7
+ 9116 1544 6344     		add	r3, r3, ip
+ 9117 1546 9B68     		ldr	r3, [r3, #8]
+ 9118 1548 5A1D     		adds	r2, r3, #5
+ 9119 154a 474B     		ldr	r3, .L78+8
+ 9120 154c 9421     		movs	r1, #148
+ 9121 154e C900     		lsls	r1, r1, #3
+ 9122 1550 8C46     		mov	ip, r1
+ 9123 1552 BC44     		add	ip, ip, r7
+ 9124 1554 6344     		add	r3, r3, ip
+ 9125 1556 DA62     		str	r2, [r3, #44]
+ 531:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					trophy.xPos = 500;
+ 9126              		.loc 1 531 0
+ 9127 1558 484B     		ldr	r3, .L78+28
+ 9128 155a 9422     		movs	r2, #148
+ 9129 155c D200     		lsls	r2, r2, #3
+ 9130 155e 9446     		mov	ip, r2
+ 9131 1560 BC44     		add	ip, ip, r7
+ 9132 1562 6344     		add	r3, r3, ip
+ 9133 1564 FA22     		movs	r2, #250
+ 9134 1566 5200     		lsls	r2, r2, #1
+ 9135 1568 5A60     		str	r2, [r3, #4]
+ 532:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					ascii_write("DAFFO:  ","        Oops...!");
+ 9136              		.loc 1 532 0
+ 9137 156a 474A     		ldr	r2, .L78+40
+ 9138 156c 474B     		ldr	r3, .L78+44
+ 9139 156e 1100     		movs	r1, r2
+ 9140 1570 1800     		movs	r0, r3
+ 9141 1572 FFF7FEFF 		bl	ascii_write
+ 9142              	.L60:
+ 533:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				}
+ 534:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
+ 535:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				static int DIP_burned = 0;
+ 536:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				static int distance_hair_DIP;
+ 537:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				distance_hair_DIP = (hair.xPos + 9) - (DIP.xPos + 9);
+ 9143              		.loc 1 537 0
+ 9144 1576 404B     		ldr	r3, .L78+24
+ 9145 1578 9422     		movs	r2, #148
+ 9146 157a D200     		lsls	r2, r2, #3
+ 9147 157c 9446     		mov	ip, r2
+ 9148 157e BC44     		add	ip, ip, r7
+ 9149 1580 6344     		add	r3, r3, ip
+ 9150 1582 5B68     		ldr	r3, [r3, #4]
+ 9151 1584 0933     		adds	r3, r3, #9
+ 9152 1586 1A00     		movs	r2, r3
+ 9153 1588 414B     		ldr	r3, .L78+48
+ 9154 158a 9421     		movs	r1, #148
+ 9155 158c C900     		lsls	r1, r1, #3
+ 9156 158e 8C46     		mov	ip, r1
+ 9157 1590 BC44     		add	ip, ip, r7
+ 9158 1592 6344     		add	r3, r3, ip
+ 9159 1594 5B68     		ldr	r3, [r3, #4]
+ 9160 1596 0933     		adds	r3, r3, #9
+ 9161 1598 D21A     		subs	r2, r2, r3
+ 9162 159a 3E4B     		ldr	r3, .L78+52
+ 9163 159c 1A60     		str	r2, [r3]
+ 538:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				if(!DIP_burned && read_DIL_single(LIGHT_TRIGGER) && player.yPos > 10 && abs(distance_hair_DIP) 
+ 9164              		.loc 1 538 0
+ 9165 159e 3E4B     		ldr	r3, .L78+56
+ 9166 15a0 1B68     		ldr	r3, [r3]
+ 9167 15a2 002B     		cmp	r3, #0
+ 9168 15a4 3FD1     		bne	.L61
+ 9169              		.loc 1 538 0 is_stmt 0 discriminator 1
+ 9170 15a6 0620     		movs	r0, #6
+ 9171 15a8 FFF7FEFF 		bl	read_DIL_single
+ 9172 15ac 031E     		subs	r3, r0, #0
+ 9173 15ae 3AD0     		beq	.L61
+ 9174              		.loc 1 538 0 discriminator 2
+ 9175 15b0 2B4B     		ldr	r3, .L78
+ 9176 15b2 9422     		movs	r2, #148
+ 9177 15b4 D200     		lsls	r2, r2, #3
+ 9178 15b6 9446     		mov	ip, r2
+ 9179 15b8 BC44     		add	ip, ip, r7
+ 9180 15ba 6344     		add	r3, r3, ip
+ 9181 15bc 9B68     		ldr	r3, [r3, #8]
+ 9182 15be 0A2B     		cmp	r3, #10
+ 9183 15c0 31DD     		ble	.L61
+ 9184              		.loc 1 538 0 discriminator 3
+ 9185 15c2 344B     		ldr	r3, .L78+52
+ 9186 15c4 1B68     		ldr	r3, [r3]
+ 9187 15c6 0433     		adds	r3, r3, #4
+ 9188 15c8 2DDB     		blt	.L61
+ 9189              		.loc 1 538 0 discriminator 4
+ 9190 15ca 324B     		ldr	r3, .L78+52
+ 9191 15cc 1B68     		ldr	r3, [r3]
+ 9192 15ce 042B     		cmp	r3, #4
+ 9193 15d0 29DC     		bgt	.L61
+ 539:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					DIP_burned = 1;
+ 9194              		.loc 1 539 0 is_stmt 1
+ 9195 15d2 314B     		ldr	r3, .L78+56
+ 9196 15d4 0122     		movs	r2, #1
+ 9197 15d6 1A60     		str	r2, [r3]
+ 540:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					fires[2].xPos = DIP.xPos;
+ 9198              		.loc 1 540 0
+ 9199 15d8 2D4B     		ldr	r3, .L78+48
+ 9200 15da 9422     		movs	r2, #148
+ 9201 15dc D200     		lsls	r2, r2, #3
+ 9202 15de 9446     		mov	ip, r2
+ 9203 15e0 BC44     		add	ip, ip, r7
+ 9204 15e2 6344     		add	r3, r3, ip
+ 9205 15e4 5A68     		ldr	r2, [r3, #4]
+ 9206 15e6 204B     		ldr	r3, .L78+8
+ 9207 15e8 9421     		movs	r1, #148
+ 9208 15ea C900     		lsls	r1, r1, #3
+ 9209 15ec 8C46     		mov	ip, r1
+ 9210 15ee BC44     		add	ip, ip, r7
+ 9211 15f0 6344     		add	r3, r3, ip
+ 9212 15f2 DA64     		str	r2, [r3, #76]
+ 541:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					fires[2].yPos = DIP.yPos + 6;
+ 9213              		.loc 1 541 0
+ 9214 15f4 264B     		ldr	r3, .L78+48
+ 9215 15f6 9422     		movs	r2, #148
+ 9216 15f8 D200     		lsls	r2, r2, #3
+ 9217 15fa 9446     		mov	ip, r2
+ 9218 15fc BC44     		add	ip, ip, r7
+ 9219 15fe 6344     		add	r3, r3, ip
+ 9220 1600 9B68     		ldr	r3, [r3, #8]
+ 9221 1602 9A1D     		adds	r2, r3, #6
+ 9222 1604 184B     		ldr	r3, .L78+8
+ 9223 1606 9421     		movs	r1, #148
+ 9224 1608 C900     		lsls	r1, r1, #3
+ 9225 160a 8C46     		mov	ip, r1
+ 9226 160c BC44     		add	ip, ip, r7
+ 9227 160e 6344     		add	r3, r3, ip
+ 9228 1610 1A65     		str	r2, [r3, #80]
+ 542:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					no_DIP = 1;
+ 9229              		.loc 1 542 0
+ 9230 1612 0123     		movs	r3, #1
+ 9231 1614 214A     		ldr	r2, .L78+60
+ 9232 1616 BA18     		adds	r2, r7, r2
+ 9233 1618 1360     		str	r3, [r2]
+ 543:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					ascii_write("DIPs-WITCH:","       ARGHGHHRH!");
+ 9234              		.loc 1 543 0
+ 9235 161a 214A     		ldr	r2, .L78+64
+ 9236 161c 214B     		ldr	r3, .L78+68
+ 9237 161e 1100     		movs	r1, r2
+ 9238 1620 1800     		movs	r0, r3
+ 9239 1622 FFF7FEFF 		bl	ascii_write
+ 9240              	.L61:
+ 544:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				}
+ 545:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
+ 546:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				lastFireTrigger = read_DIL_single(HAIR_TRIGGER);
+ 9241              		.loc 1 546 0
+ 9242 1626 0120     		movs	r0, #1
+ 9243 1628 FFF7FEFF 		bl	read_DIL_single
+ 9244 162c 0300     		movs	r3, r0
+ 9245 162e 9022     		movs	r2, #144
+ 9246 1630 D200     		lsls	r2, r2, #3
+ 9247 1632 BA18     		adds	r2, r7, r2
+ 9248 1634 1360     		str	r3, [r2]
+ 547:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
+ 548:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				game_over += game_over_adder;
+ 9249              		.loc 1 548 0
+ 9250 1636 1C4B     		ldr	r3, .L78+72
+ 9251 1638 FB18     		adds	r3, r7, r3
+ 9252 163a 1A68     		ldr	r2, [r3]
+ 9253 163c 9223     		movs	r3, #146
+ 9254 163e DB00     		lsls	r3, r3, #3
+ 9255 1640 FB18     		adds	r3, r7, r3
+ 9256 1642 1B68     		ldr	r3, [r3]
+ 9257 1644 D318     		adds	r3, r2, r3
+ 9258 1646 184A     		ldr	r2, .L78+72
+ 9259 1648 BA18     		adds	r2, r7, r2
+ 9260 164a 1360     		str	r3, [r2]
+ 549:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
+ 550:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				if(game_over >= 100) {
+ 9261              		.loc 1 550 0
+ 9262 164c 164B     		ldr	r3, .L78+72
+ 9263 164e FB18     		adds	r3, r7, r3
+ 9264 1650 1B68     		ldr	r3, [r3]
+ 9265 1652 632B     		cmp	r3, #99
+ 9266 1654 00DC     		bgt	.LCB2789
+ 9267 1656 E1E0     		b	.L66	@long jump
+ 9268              	.LCB2789:
+ 551:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					current_screen = RESET_GAME;
+ 9269              		.loc 1 551 0
+ 9270 1658 144B     		ldr	r3, .L78+76
+ 9271 165a 0A22     		movs	r2, #10
+ 9272 165c 1A60     		str	r2, [r3]
+ 552:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				}
+ 553:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
+ 554:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				break;
+ 9273              		.loc 1 554 0
+ 9274 165e DDE0     		b	.L66
+ 9275              	.L79:
+ 9276              		.align	2
+ 9277              	.L78:
+ 9278 1660 D0FDFFFF 		.word	-560
+ 9279 1664 08000000 		.word	j.4316
+ 9280 1668 68FCFFFF 		.word	-920
+ 9281 166c 0C000000 		.word	distance_player_fire.4315
+ 9282 1670 AC010000 		.word	.LC108
+ 9283 1674 40020000 		.word	.LC134
+ 9284 1678 60FEFFFF 		.word	-416
+ 9285 167c 84FEFFFF 		.word	-380
+ 9286 1680 10000000 		.word	distance_hair_trophy.4321
+ 9287 1684 14000000 		.word	trophy_burned.4320
+ 9288 1688 4C020000 		.word	.LC138
+ 9289 168c 60020000 		.word	.LC140
+ 9290 1690 F4FDFFFF 		.word	-524
+ 9291 1694 18000000 		.word	distance_hair_DIP.4323
+ 9292 1698 1C000000 		.word	DIP_burned.4322
+ 9293 169c 8C040000 		.word	1164
+ 9294 16a0 6C020000 		.word	.LC144
+ 9295 16a4 34020000 		.word	.LC130
+ 9296 16a8 94040000 		.word	1172
+ 9297 16ac 00000000 		.word	current_screen
+ 9298              	.L14:
+ 555:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
+ 556:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 			
+ 557:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 			case RESET_GAME: //restart
+ 558:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				counter = 0;
+ 9299              		.loc 1 558 0
+ 9300 16b0 5C4B     		ldr	r3, .L80
+ 9301 16b2 0022     		movs	r2, #0
+ 9302 16b4 1A60     		str	r2, [r3]
+ 559:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				current_screen = START_SCREEN;
+ 9303              		.loc 1 559 0
+ 9304 16b6 5C4B     		ldr	r3, .L80+4
+ 9305 16b8 0122     		movs	r2, #1
+ 9306 16ba 1A60     		str	r2, [r3]
+ 560:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				if(read_DIL() == 0) {
+ 9307              		.loc 1 560 0
+ 9308 16bc FFF7FEFF 		bl	read_DIL
+ 9309 16c0 031E     		subs	r3, r0, #0
+ 9310 16c2 02D1     		bne	.L63
+ 561:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 					current_screen = SWITCH_LOCK; 
+ 9311              		.loc 1 561 0
+ 9312 16c4 584B     		ldr	r3, .L80+4
+ 9313 16c6 0022     		movs	r2, #0
+ 9314 16c8 1A60     		str	r2, [r3]
+ 9315              	.L63:
+ 562:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				}
+ 563:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	
+ 564:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				static int test = 0;
+ 565:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				test+=2;
+ 9316              		.loc 1 565 0
+ 9317 16ca 584B     		ldr	r3, .L80+8
+ 9318 16cc 1B68     		ldr	r3, [r3]
+ 9319 16ce 9A1C     		adds	r2, r3, #2
+ 9320 16d0 564B     		ldr	r3, .L80+8
+ 9321 16d2 1A60     		str	r2, [r3]
+ 566:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	
+ 567:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				first = 1;
+ 9322              		.loc 1 567 0
+ 9323 16d4 0123     		movs	r3, #1
+ 9324 16d6 564A     		ldr	r2, .L80+12
+ 9325 16d8 BA18     		adds	r2, r7, r2
+ 9326 16da 1360     		str	r3, [r2]
+ 568:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				exploding = 0;
+ 9327              		.loc 1 568 0
+ 9328 16dc 0023     		movs	r3, #0
+ 9329 16de 9122     		movs	r2, #145
+ 9330 16e0 D200     		lsls	r2, r2, #3
+ 9331 16e2 BA18     		adds	r2, r7, r2
+ 9332 16e4 1360     		str	r3, [r2]
+ 569:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				is_climbing = 0;
+ 9333              		.loc 1 569 0
+ 9334 16e6 0023     		movs	r3, #0
+ 9335 16e8 524A     		ldr	r2, .L80+16
+ 9336 16ea BA18     		adds	r2, r7, r2
+ 9337 16ec 1360     		str	r3, [r2]
+ 570:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				has_climbed = 0;
+ 9338              		.loc 1 570 0
+ 9339 16ee 0023     		movs	r3, #0
+ 9340 16f0 9322     		movs	r2, #147
+ 9341 16f2 D200     		lsls	r2, r2, #3
+ 9342 16f4 BA18     		adds	r2, r7, r2
+ 9343 16f6 1360     		str	r3, [r2]
+ 571:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				game_over = 0;
+ 9344              		.loc 1 571 0
+ 9345 16f8 0023     		movs	r3, #0
+ 9346 16fa 4F4A     		ldr	r2, .L80+20
+ 9347 16fc BA18     		adds	r2, r7, r2
+ 9348 16fe 1360     		str	r3, [r2]
+ 572:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				game_over_adder = 0;
+ 9349              		.loc 1 572 0
+ 9350 1700 0023     		movs	r3, #0
+ 9351 1702 9222     		movs	r2, #146
+ 9352 1704 D200     		lsls	r2, r2, #3
+ 9353 1706 BA18     		adds	r2, r7, r2
+ 9354 1708 1360     		str	r3, [r2]
+ 573:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				fires[0].xPos = 40;		//FIRE1_INDO
+ 9355              		.loc 1 573 0
+ 9356 170a 4C4B     		ldr	r3, .L80+24
+ 9357 170c 9422     		movs	r2, #148
+ 9358 170e D200     		lsls	r2, r2, #3
+ 9359 1710 9446     		mov	ip, r2
+ 9360 1712 BC44     		add	ip, ip, r7
+ 9361 1714 6344     		add	r3, r3, ip
+ 9362 1716 2822     		movs	r2, #40
+ 9363 1718 5A60     		str	r2, [r3, #4]
+ 574:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				fires[0].yPos = 64-12-8;
+ 9364              		.loc 1 574 0
+ 9365 171a 484B     		ldr	r3, .L80+24
+ 9366 171c 9422     		movs	r2, #148
+ 9367 171e D200     		lsls	r2, r2, #3
+ 9368 1720 9446     		mov	ip, r2
+ 9369 1722 BC44     		add	ip, ip, r7
+ 9370 1724 6344     		add	r3, r3, ip
+ 9371 1726 2C22     		movs	r2, #44
+ 9372 1728 9A60     		str	r2, [r3, #8]
+ 575:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				fires[2].xPos = -50;		//FIRE1_INDO
+ 9373              		.loc 1 575 0
+ 9374 172a 444B     		ldr	r3, .L80+24
+ 9375 172c 9422     		movs	r2, #148
+ 9376 172e D200     		lsls	r2, r2, #3
+ 9377 1730 9446     		mov	ip, r2
+ 9378 1732 BC44     		add	ip, ip, r7
+ 9379 1734 6344     		add	r3, r3, ip
+ 9380 1736 3222     		movs	r2, #50
+ 9381 1738 5242     		rsbs	r2, r2, #0
+ 9382 173a DA64     		str	r2, [r3, #76]
+ 576:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				fires[2].yPos = -50;
+ 9383              		.loc 1 576 0
+ 9384 173c 3F4B     		ldr	r3, .L80+24
+ 9385 173e 9422     		movs	r2, #148
+ 9386 1740 D200     		lsls	r2, r2, #3
+ 9387 1742 9446     		mov	ip, r2
+ 9388 1744 BC44     		add	ip, ip, r7
+ 9389 1746 6344     		add	r3, r3, ip
+ 9390 1748 3222     		movs	r2, #50
+ 9391 174a 5242     		rsbs	r2, r2, #0
+ 9392 174c 1A65     		str	r2, [r3, #80]
+ 577:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				fires[1].xPos = -50;		//FIRE1_INDO
+ 9393              		.loc 1 577 0
+ 9394 174e 3B4B     		ldr	r3, .L80+24
+ 9395 1750 9422     		movs	r2, #148
+ 9396 1752 D200     		lsls	r2, r2, #3
+ 9397 1754 9446     		mov	ip, r2
+ 9398 1756 BC44     		add	ip, ip, r7
+ 9399 1758 6344     		add	r3, r3, ip
+ 9400 175a 3222     		movs	r2, #50
+ 9401 175c 5242     		rsbs	r2, r2, #0
+ 9402 175e 9A62     		str	r2, [r3, #40]
+ 578:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				fires[1].yPos = -50;
+ 9403              		.loc 1 578 0
+ 9404 1760 364B     		ldr	r3, .L80+24
+ 9405 1762 9422     		movs	r2, #148
+ 9406 1764 D200     		lsls	r2, r2, #3
+ 9407 1766 9446     		mov	ip, r2
+ 9408 1768 BC44     		add	ip, ip, r7
+ 9409 176a 6344     		add	r3, r3, ip
+ 9410 176c 3222     		movs	r2, #50
+ 9411 176e 5242     		rsbs	r2, r2, #0
+ 9412 1770 DA62     		str	r2, [r3, #44]
+ 579:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				bird.xPos = 180;
+ 9413              		.loc 1 579 0
+ 9414 1772 334B     		ldr	r3, .L80+28
+ 9415 1774 9422     		movs	r2, #148
+ 9416 1776 D200     		lsls	r2, r2, #3
+ 9417 1778 9446     		mov	ip, r2
+ 9418 177a BC44     		add	ip, ip, r7
+ 9419 177c 6344     		add	r3, r3, ip
+ 9420 177e B422     		movs	r2, #180
+ 9421 1780 5A60     		str	r2, [r3, #4]
+ 580:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				bird.yPos = 40;
+ 9422              		.loc 1 580 0
+ 9423 1782 2F4B     		ldr	r3, .L80+28
+ 9424 1784 9422     		movs	r2, #148
+ 9425 1786 D200     		lsls	r2, r2, #3
+ 9426 1788 9446     		mov	ip, r2
+ 9427 178a BC44     		add	ip, ip, r7
+ 9428 178c 6344     		add	r3, r3, ip
+ 9429 178e 2822     		movs	r2, #40
+ 9430 1790 9A60     		str	r2, [r3, #8]
+ 581:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
+ 582:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				trophy.xPos = 24;
+ 9431              		.loc 1 582 0
+ 9432 1792 2C4B     		ldr	r3, .L80+32
+ 9433 1794 9422     		movs	r2, #148
+ 9434 1796 D200     		lsls	r2, r2, #3
+ 9435 1798 9446     		mov	ip, r2
+ 9436 179a BC44     		add	ip, ip, r7
+ 9437 179c 6344     		add	r3, r3, ip
+ 9438 179e 1822     		movs	r2, #24
+ 9439 17a0 5A60     		str	r2, [r3, #4]
+ 583:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				trophy.yPos = 5;
+ 9440              		.loc 1 583 0
+ 9441 17a2 284B     		ldr	r3, .L80+32
+ 9442 17a4 9422     		movs	r2, #148
+ 9443 17a6 D200     		lsls	r2, r2, #3
+ 9444 17a8 9446     		mov	ip, r2
+ 9445 17aa BC44     		add	ip, ip, r7
+ 9446 17ac 6344     		add	r3, r3, ip
+ 9447 17ae 0522     		movs	r2, #5
+ 9448 17b0 9A60     		str	r2, [r3, #8]
+ 584:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				trophy_burned = 0;
+ 9449              		.loc 1 584 0
+ 9450 17b2 254B     		ldr	r3, .L80+36
+ 9451 17b4 0022     		movs	r2, #0
+ 9452 17b6 1A60     		str	r2, [r3]
+ 585:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
+ 586:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				DIP.xPos = 100;
+ 9453              		.loc 1 586 0
+ 9454 17b8 244B     		ldr	r3, .L80+40
+ 9455 17ba 9422     		movs	r2, #148
+ 9456 17bc D200     		lsls	r2, r2, #3
+ 9457 17be 9446     		mov	ip, r2
+ 9458 17c0 BC44     		add	ip, ip, r7
+ 9459 17c2 6344     		add	r3, r3, ip
+ 9460 17c4 6422     		movs	r2, #100
+ 9461 17c6 5A60     		str	r2, [r3, #4]
+ 587:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				DIP.yPos = 5;
+ 9462              		.loc 1 587 0
+ 9463 17c8 204B     		ldr	r3, .L80+40
+ 9464 17ca 9422     		movs	r2, #148
+ 9465 17cc D200     		lsls	r2, r2, #3
+ 9466 17ce 9446     		mov	ip, r2
+ 9467 17d0 BC44     		add	ip, ip, r7
+ 9468 17d2 6344     		add	r3, r3, ip
+ 9469 17d4 0522     		movs	r2, #5
+ 9470 17d6 9A60     		str	r2, [r3, #8]
+ 588:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				DIP_burned = 0;
+ 9471              		.loc 1 588 0
+ 9472 17d8 1D4B     		ldr	r3, .L80+44
+ 9473 17da 0022     		movs	r2, #0
+ 9474 17dc 1A60     		str	r2, [r3]
+ 589:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				no_DIP = 0;
+ 9475              		.loc 1 589 0
+ 9476 17de 0023     		movs	r3, #0
+ 9477 17e0 1C4A     		ldr	r2, .L80+48
+ 9478 17e2 BA18     		adds	r2, r7, r2
+ 9479 17e4 1360     		str	r3, [r2]
+ 590:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
+ 591:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				lastFireTrigger = 0;
+ 9480              		.loc 1 591 0
+ 9481 17e6 0023     		movs	r3, #0
+ 9482 17e8 9022     		movs	r2, #144
+ 9483 17ea D200     		lsls	r2, r2, #3
+ 9484 17ec BA18     		adds	r2, r7, r2
+ 9485 17ee 1360     		str	r3, [r2]
+ 592:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
+ 593:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				player.xPos = 3;
+ 9486              		.loc 1 593 0
+ 9487 17f0 194B     		ldr	r3, .L80+52
+ 9488 17f2 9422     		movs	r2, #148
+ 9489 17f4 D200     		lsls	r2, r2, #3
+ 9490 17f6 9446     		mov	ip, r2
+ 9491 17f8 BC44     		add	ip, ip, r7
+ 9492 17fa 6344     		add	r3, r3, ip
+ 9493 17fc 0322     		movs	r2, #3
+ 9494 17fe 5A60     		str	r2, [r3, #4]
+ 594:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				player.yPos = 64-18-7; //player position
+ 9495              		.loc 1 594 0
+ 9496 1800 154B     		ldr	r3, .L80+52
+ 9497 1802 9422     		movs	r2, #148
+ 9498 1804 D200     		lsls	r2, r2, #3
+ 9499 1806 9446     		mov	ip, r2
+ 9500 1808 BC44     		add	ip, ip, r7
+ 9501 180a 6344     		add	r3, r3, ip
+ 9502 180c 2722     		movs	r2, #39
+ 9503 180e 9A60     		str	r2, [r3, #8]
+ 595:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				clear_ascii();
+ 9504              		.loc 1 595 0
+ 9505 1810 FFF7FEFF 		bl	clear_ascii
+ 596:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				break;
+ 9506              		.loc 1 596 0
+ 9507 1814 03E0     		b	.L9
+ 9508              	.L65:
+ 408:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
+ 9509              		.loc 1 408 0
+ 9510 1816 C046     		nop
+ 9511 1818 FFF717F8 		bl	.L64	@ far jump
+ 9512              	.L66:
+ 554:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 				
+ 9513              		.loc 1 554 0
+ 9514 181c C046     		nop
+ 9515              	.L9:
+ 9516              	.LBE2:
+ 316:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 			
+ 9517              		.loc 1 316 0 discriminator 1
+ 9518 181e FFF714F8 		bl	.L64	@ far jump
+ 9519              	.L81:
+ 9520 1822 C046     		.align	2
+ 9521              	.L80:
+ 9522 1824 00000000 		.word	counter
+ 9523 1828 00000000 		.word	current_screen
+ 9524 182c 20000000 		.word	test.4325
+ 9525 1830 84040000 		.word	1156
+ 9526 1834 9C040000 		.word	1180
+ 9527 1838 94040000 		.word	1172
+ 9528 183c 68FCFFFF 		.word	-920
+ 9529 1840 3CFEFFFF 		.word	-452
+ 9530 1844 84FEFFFF 		.word	-380
+ 9531 1848 14000000 		.word	trophy_burned.4320
+ 9532 184c F4FDFFFF 		.word	-524
+ 9533 1850 1C000000 		.word	DIP_burned.4322
+ 9534 1854 8C040000 		.word	1164
+ 9535 1858 D0FDFFFF 		.word	-560
+ 9536              		.cfi_endproc
+ 9537              	.LFE3:
+ 9539              		.align	1
+ 9540              		.global	abs
+ 9541              		.syntax unified
+ 9542              		.code	16
+ 9543              		.thumb_func
+ 9544              		.fpu softvfp
+ 9546              	abs:
+ 9547              	.LFB4:
+ 597:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 							
+ 598:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 		} //end of switch
+ 599:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 		
+ 600:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 		
+ 601:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	}
+ 602:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	
+ 603:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** }
+ 604:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 
+ 605:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** int abs(int value) {
+ 9548              		.loc 1 605 0
+ 9549              		.cfi_startproc
+ 9550              		@ args = 0, pretend = 0, frame = 8
+ 9551              		@ frame_needed = 1, uses_anonymous_args = 0
+ 9552 185c 80B5     		push	{r7, lr}
+ 9553              		.cfi_def_cfa_offset 8
+ 9554              		.cfi_offset 7, -8
+ 9555              		.cfi_offset 14, -4
+ 9556 185e 82B0     		sub	sp, sp, #8
+ 9557              		.cfi_def_cfa_offset 16
+ 9558 1860 00AF     		add	r7, sp, #0
+ 9559              		.cfi_def_cfa_register 7
+ 9560 1862 7860     		str	r0, [r7, #4]
+ 606:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	if(value < 0) {
+ 9561              		.loc 1 606 0
+ 9562 1864 7B68     		ldr	r3, [r7, #4]
+ 9563 1866 002B     		cmp	r3, #0
+ 9564 1868 02DA     		bge	.L83
+ 607:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 		return -value;
+ 9565              		.loc 1 607 0
+ 9566 186a 7B68     		ldr	r3, [r7, #4]
+ 9567 186c 5B42     		rsbs	r3, r3, #0
+ 9568 186e 00E0     		b	.L84
+ 9569              	.L83:
+ 608:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	}
+ 609:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** 	return value;
+ 9570              		.loc 1 609 0
+ 9571 1870 7B68     		ldr	r3, [r7, #4]
+ 9572              	.L84:
+ 610:C:/mop/c/Moplaborationer/DIPs-Witch/C\startup.c **** }
+ 9573              		.loc 1 610 0
+ 9574 1872 1800     		movs	r0, r3
+ 9575 1874 BD46     		mov	sp, r7
+ 9576 1876 02B0     		add	sp, sp, #8
+ 9577              		@ sp needed
+ 9578 1878 80BD     		pop	{r7, pc}
+ 9579              		.cfi_endproc
+ 9580              	.LFE4:
+ 9582              		.data
+ 9583              		.align	2
+ 9586              	delay_until_text.4308:
+ 9587 1730 82000000 		.word	130
+ 9588              		.align	2
+ 9591              	long_text.4306:
+ 9592 1734 28000000 		.word	40
+ 9593              		.align	2
+ 9596              	short_text.4307:
+ 9597 1738 14000000 		.word	20
+ 9598              		.bss
+ 9599              		.align	2
+ 9600              	i.4310:
+ 9601 0004 00000000 		.space	4
+ 9603              		.data
+ 9604              		.align	2
+ 9607              	last_climb_value.4314:
+ 9608 173c 64000000 		.word	100
+ 9609              		.bss
+ 9610              		.align	2
+ 9611              	j.4316:
+ 9612 0008 00000000 		.space	4
+ 9614              		.align	2
+ 9615              	distance_player_fire.4315:
+ 9616 000c 00000000 		.space	4
+ 9618              		.align	2
+ 9619              	distance_hair_trophy.4321:
+ 9620 0010 00000000 		.space	4
+ 9622              		.align	2
+ 9623              	trophy_burned.4320:
+ 9624 0014 00000000 		.space	4
+ 9626              		.align	2
+ 9627              	distance_hair_DIP.4323:
+ 9628 0018 00000000 		.space	4
+ 9630              		.align	2
+ 9631              	DIP_burned.4322:
+ 9632 001c 00000000 		.space	4
+ 9634              		.align	2
+ 9635              	test.4325:
+ 9636 0020 00000000 		.space	4
+ 9638              		.text
+ 9639              	.Letext0:
+ 9640              		.file 2 "C:/mop/c/Moplaborationer/DIPs-Witch/C/sprite.h"
+ 9641              		.file 3 "C:/mop/c/Moplaborationer/DIPs-Witch/C/image.h"
+ 9642              		.file 4 "C:/mop/c/Moplaborationer/DIPs-Witch/C/gameobject.h"
+ 9643              		.file 5 "C:/mop/c/Moplaborationer/DIPs-Witch/C/graphics.h"
+ 9644              		.file 6 "C:/mop/c/Moplaborationer/DIPs-Witch/C/monster_black.xbm"
+ 9645              		.file 7 "C:/mop/c/Moplaborationer/DIPs-Witch/C/monster_light.xbm"
+ 9646              		.file 8 "C:/mop/c/Moplaborationer/DIPs-Witch/C/monster_gray.xbm"
+ 9647              		.file 9 "C:/mop/c/Moplaborationer/DIPs-Witch/C/press_black.xbm"
+ 9648              		.file 10 "C:/mop/c/Moplaborationer/DIPs-Witch/C/press_light.xbm"
+ 9649              		.file 11 "C:/mop/c/Moplaborationer/DIPs-Witch/C/press_gray.xbm"
+ 9650              		.file 12 "C:/mop/c/Moplaborationer/DIPs-Witch/C/castle_black.xbm"
+ 9651              		.file 13 "C:/mop/c/Moplaborationer/DIPs-Witch/C/castle_gray.xbm"
+ 9652              		.file 14 "C:/mop/c/Moplaborationer/DIPs-Witch/C/castle_light.xbm"
+ 9653              		.file 15 "C:/mop/c/Moplaborationer/DIPs-Witch/C/title_light.xbm"
+ 9654              		.file 16 "C:/mop/c/Moplaborationer/DIPs-Witch/C/title_gray.xbm"
+ 9655              		.file 17 "C:/mop/c/Moplaborationer/DIPs-Witch/C/title_black.xbm"
+ 9656              		.file 18 "C:/mop/c/Moplaborationer/DIPs-Witch/C/slow_text.h"
+ 9657              		.file 19 "C:/mop/c/Moplaborationer/DIPs-Witch/C/bg.xbm"
