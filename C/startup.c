@@ -28,6 +28,8 @@
 #include "indoors.h"
 #include "indoors2.h"
 #include "DIP.h"
+#include "roger.h"
+#include "game_over_witch.h"
 
 int abs(int value);
 
@@ -189,6 +191,12 @@ void main(void)
 	roger.xPos = 1;
 	roger.yPos = 1;
 	
+	GameObject game_over_witch;
+	init_game_over_witch( &game_over_witch );
+	game_over_witch.xPos = 1;
+	game_over_witch.yPos = 1;
+	game_over_witch.update = gameObjectUpdate;
+	
 	GameObject indoors;
 	init_indoors( &indoors );
 	indoors.xPos = 1;
@@ -313,7 +321,7 @@ void main(void)
 	int first = 1;
 	int lastFireTrigger = 0;
 		
-	current_screen = WIN_SCREEN; //RESET_GAME;
+	current_screen = RESET_GAME;
 	
 	//Game loop
 	while(1) {
@@ -480,8 +488,8 @@ void main(void)
 				
 				if (read_DIL_single(EXPLOSION_TRIGGER)){
 					if (trophy.yPos >= player.yPos && (player.xPos + PLAYER_WIDTH/2 >= trophy.xPos && player.xPos <= trophy.xPos + PLAYER_WIDTH/2 )){
-						//TODO WIN
-						ascii_write("PLACEHOLDER DU VANN","");
+						current_screen = WIN_SCREEN;
+						ascii_write("Roger (King Lear): ","I am proud of you!");
 					}
 					else{
 						game_over_adder = 5;
@@ -555,7 +563,7 @@ void main(void)
 				game_over += game_over_adder;
 				
 				if(game_over >= 100) {
-					current_screen = RESET_GAME;
+					current_screen = GAME_OVER_SCREEN;
 				}
 				
 				break;
@@ -610,6 +618,18 @@ void main(void)
 				draw_game_object( &roger );
 				show_frame(1);
 				break;
+				
+			case GAME_OVER_SCREEN:
+				draw_game_object(&game_over_witch);
+				show_frame(1);
+				game_over_witch.update(&game_over_witch);
+				
+				static int game_over_counter = 0;
+				game_over_counter++;
+				if (game_over_counter > 150){
+					current_screen = RESET_GAME;
+				}
+			break;
 							
 		} //end of switch
 		
