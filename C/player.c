@@ -4,6 +4,21 @@
 #include "player.h"
 #include "ascii_display.h"
 
+	// Variables
+	static lastJumpValue = 0;
+	static lastRightValue = 0;
+	static lastLeftValue = 0; 
+	static xSpeed = 0;
+	static ySpeed = 0;
+
+void playerReset(void){
+	lastJumpValue = 0;
+	lastRightValue = 0;
+	lastLeftValue = 0; 
+	xSpeed = 0;
+	ySpeed = 0;
+}
+
 void playerUpdate(GameObject *this) {
 	
 	// Animate
@@ -12,13 +27,6 @@ void playerUpdate(GameObject *this) {
 		this->animation_counter = 0;
 		this->current_frame = (this->current_frame + 1) % this->n_frames;
 	}
-	
-	// Variables
-	static lastJumpValue = 0;
-	static lastRightValue = 0;
-	static lastLeftValue = 0; 
-	static xSpeed = 0;
-	static ySpeed = 0;
 	
 	// Y position changes
 	

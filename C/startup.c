@@ -484,7 +484,7 @@ void main(void)
 						ascii_write("PLACEHOLDER DU VANN","");
 					}
 					else{
-						game_over_adder = 3;
+						game_over_adder = 5;
 						ascii_write("*KABOOOOM*","");
 						exploding = 1;
 					}
@@ -492,10 +492,7 @@ void main(void)
 				
 				//fire1_indoors.update(&fire1_indoors);
 				//fire updates done above
-				if(!no_DIP) {
-					setPlayerPosition(player.xPos, player.yPos);
-					DIP.update(&DIP);					
-				}
+				
 				hair.update(&hair);
 				if(read_DIL_single(HAIR_TRIGGER)) {
 					if (lastFireTrigger == 0){
@@ -511,8 +508,12 @@ void main(void)
 				
 				
 				if (!no_DIP && DIP.yPos >= player.yPos && (player.xPos + DIP_WIDTH/2 >= DIP.xPos && player.xPos <= DIP.xPos + DIP_WIDTH/2 )){ // DIP_collision
-					game_over_adder = 100;
+					game_over_adder = 5;
 					ascii_write("DIPs-WITCH:","      NyAHAHAHAH!");
+					exploding = 1;
+				} else if(!no_DIP) {
+					setPlayerPosition(player.xPos, player.yPos);
+					DIP.update(&DIP);					
 				}
 				
 				static int distance_player_fire;	//fire_collision
@@ -521,8 +522,9 @@ void main(void)
 					distance_player_fire = (player.xPos + 9) - (fires[j].xPos + 5);
 					if(player.yPos > (fires[j].yPos - 18 + 7) && 
 							player.yPos < fires[j].yPos && distance_player_fire < 8 && distance_player_fire > -8) {
-						game_over_adder = 20;
+						game_over_adder = 10;
 						ascii_write("*FWOOSH*","");
+						exploding = 1;
 					}					
 				}
 				
@@ -541,11 +543,11 @@ void main(void)
 				static int distance_hair_DIP;
 				distance_hair_DIP = (hair.xPos + 9) - (DIP.xPos + 9);
 				if(!DIP_burned && read_DIL_single(LIGHT_TRIGGER) && player.yPos > 10 && abs(distance_hair_DIP) < 5) {
+					ascii_write("DIPs-WITCH:","         ARHGRGHR!");
 					DIP_burned = 1;
 					fires[2].xPos = DIP.xPos;
 					fires[2].yPos = DIP.yPos + 6;
 					no_DIP = 1;
-					ascii_write("DIPs-WITCH: ","       ARGHGHHRH!");
 				}
 				
 				lastFireTrigger = read_DIL_single(HAIR_TRIGGER);
@@ -568,7 +570,8 @@ void main(void)
 	
 				static int test = 0;
 				test+=2;
-	
+				
+				boom.current_frame = 0;
 				first = 1;
 				exploding = 0;
 				is_climbing = 0;
@@ -595,9 +598,11 @@ void main(void)
 				
 				lastFireTrigger = 0;
 				
+				playerReset();
 				player.xPos = 3;
 				player.yPos = 64-18-7; //player position
-				clear_ascii();
+				//clear_ascii();
+				ascii_write("                    ","                    ");
 				break;
 				
 				

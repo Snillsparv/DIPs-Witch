@@ -5,6 +5,7 @@
 #include "gameobject.h"
 
 void playerUpdate(GameObject *this);
+void playerReset(void);
 
 #define PLAYER_WIDTH 18
 #define PLAYER_HEIGHT 18
