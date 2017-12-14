@@ -66,10 +66,10 @@ ARM_V6LIB:=$(CodeLiteDir)/tools/gcc-arm/arm-none-eabi/lib/thumb/v6-m
 ARM_GCC_V6LIB:=$(CodeLiteDir)/tools/gcc-arm/lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m
 ARM_M4FPLIB:=$(CodeLiteDir)/tools/gcc-arm/arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard
 ARM_GCC_M4FPLIB:=$(CodeLiteDir)/tools/gcc-arm/lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m
-Objects0=$(IntermediateDirectory)/startup.c$(ObjectSuffix) $(IntermediateDirectory)/gameobject.c$(ObjectSuffix) $(IntermediateDirectory)/fire.c$(ObjectSuffix) $(IntermediateDirectory)/player.c$(ObjectSuffix) $(IntermediateDirectory)/bird.c$(ObjectSuffix) $(IntermediateDirectory)/witch.c$(ObjectSuffix) $(IntermediateDirectory)/DIP.c$(ObjectSuffix) $(IntermediateDirectory)/flame.c$(ObjectSuffix) $(IntermediateDirectory)/graphics.c$(ObjectSuffix) $(IntermediateDirectory)/image.c$(ObjectSuffix) \
-	$(IntermediateDirectory)/sprite.c$(ObjectSuffix) $(IntermediateDirectory)/gpio.c$(ObjectSuffix) $(IntermediateDirectory)/ascii_display.c$(ObjectSuffix) $(IntermediateDirectory)/slow_text.c$(ObjectSuffix) 
+Objects0=$(IntermediateDirectory)/startup.c$(ObjectSuffix) $(IntermediateDirectory)/gameobject.c$(ObjectSuffix) $(IntermediateDirectory)/fire.c$(ObjectSuffix) $(IntermediateDirectory)/player.c$(ObjectSuffix) $(IntermediateDirectory)/bird.c$(ObjectSuffix) $(IntermediateDirectory)/witch.c$(ObjectSuffix) $(IntermediateDirectory)/DIP.c$(ObjectSuffix) $(IntermediateDirectory)/flame.c$(ObjectSuffix) $(IntermediateDirectory)/boom.c$(ObjectSuffix) $(IntermediateDirectory)/graphics.c$(ObjectSuffix) \
+	$(IntermediateDirectory)/image.c$(ObjectSuffix) $(IntermediateDirectory)/sprite.c$(ObjectSuffix) $(IntermediateDirectory)/gpio.c$(ObjectSuffix) 
 
-Objects1=$(IntermediateDirectory)/indoors.c$(ObjectSuffix) $(IntermediateDirectory)/indoors2.c$(ObjectSuffix) $(IntermediateDirectory)/trophy.c$(ObjectSuffix) 
+Objects1=$(IntermediateDirectory)/ascii_display.c$(ObjectSuffix) $(IntermediateDirectory)/slow_text.c$(ObjectSuffix) $(IntermediateDirectory)/indoors.c$(ObjectSuffix) $(IntermediateDirectory)/indoors2.c$(ObjectSuffix) $(IntermediateDirectory)/trophy.c$(ObjectSuffix) 
 
 
 
@@ -170,6 +170,14 @@ $(IntermediateDirectory)/flame.c$(DependSuffix): flame.c
 
 $(IntermediateDirectory)/flame.c$(PreprocessSuffix): flame.c
 	$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/flame.c$(PreprocessSuffix) flame.c
+
+$(IntermediateDirectory)/boom.c$(ObjectSuffix): boom.c $(IntermediateDirectory)/boom.c$(DependSuffix)
+	$(CC) $(SourceSwitch) "C:/mop/c/Moplaborationer/DIPs-Witch/C/boom.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/boom.c$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/boom.c$(DependSuffix): boom.c
+	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/boom.c$(ObjectSuffix) -MF$(IntermediateDirectory)/boom.c$(DependSuffix) -MM boom.c
+
+$(IntermediateDirectory)/boom.c$(PreprocessSuffix): boom.c
+	$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/boom.c$(PreprocessSuffix) boom.c
 
 $(IntermediateDirectory)/graphics.c$(ObjectSuffix): graphics.c $(IntermediateDirectory)/graphics.c$(DependSuffix)
 	$(CC) $(SourceSwitch) "C:/mop/c/Moplaborationer/DIPs-Witch/C/graphics.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/graphics.c$(ObjectSuffix) $(IncludePath)

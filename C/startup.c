@@ -210,6 +210,10 @@ void main(void)
 	bird.yPos = 40;
 	bird.update = gameObjectUpdate;
 	
+	GameObject boom;
+	init_boom( &boom );
+	boom.update = gameObjectUpdate;
+	
 	GameObject DIP;
 	init_DIP( &DIP );
 	DIP.update = DIPUpdate;
@@ -300,7 +304,8 @@ void main(void)
 	int game_over = 0;
 	int game_over_adder = 0;
 	int no_DIP = 0;
-	
+	int exploding = 0;
+	int first = 1;
 	
 	current_screen = RESET_GAME;
 	
@@ -421,6 +426,19 @@ void main(void)
 					fires[i].update( &fires[i] );
 				}
 				draw_game_object( &hair );
+				if(exploding) {
+					if (first) {
+						boom.xPos = player.xPos + 9 - 53;
+						boom.yPos = player.yPos + 9 - 27;
+						player.xPos = -100;
+						player.yPos = -100;
+						first = 0;
+					}					
+					draw_game_object( &boom );
+					if(boom.current_frame < 10)
+						boom.update( &boom );
+				}
+				
 				show_frame(1);
 				
 				static int last_climb_value = 100;
@@ -447,8 +465,9 @@ void main(void)
 				}
 				
 				if (read_DIL_single(EXPLOSION_TRIGGER)){
-					game_over_adder = 20;
+					game_over_adder = 3;
 					ascii_write("*KABOOOOM*","");
+					exploding = 1;
 				}
 				
 				//fire1_indoors.update(&fire1_indoors);
@@ -523,6 +542,8 @@ void main(void)
 				static int test = 0;
 				test+=2;
 	
+				first = 1;
+				exploding = 0;
 				is_climbing = 0;
 				has_climbed = 0;
 				game_over = 0;

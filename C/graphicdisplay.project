@@ -36,6 +36,8 @@
       <File Name="DIP.c"/>
       <File Name="flame.h"/>
       <File Name="flame.c"/>
+      <File Name="boom.h"/>
+      <File Name="boom.c"/>
     </VirtualDirectory>
     <VirtualDirectory Name="Graphics">
       <File Name="graphics.c"/>
@@ -154,6 +156,26 @@
       <File Name="flame4_black.xbm"/>
       <File Name="flame4_gray.xbm"/>
       <File Name="flame4_light.xbm"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="boom">
+      <File Name="boom1_black.xbm"/>
+      <File Name="boom1_gray.xbm"/>
+      <File Name="boom1_light.xbm"/>
+      <File Name="boom2_black.xbm"/>
+      <File Name="boom2_gray.xbm"/>
+      <File Name="boom2_light.xbm"/>
+      <File Name="boom3_black.xbm"/>
+      <File Name="boom3_gray.xbm"/>
+      <File Name="boom3_light.xbm"/>
+      <File Name="boom4_black.xbm"/>
+      <File Name="boom4_gray.xbm"/>
+      <File Name="boom4_light.xbm"/>
+      <File Name="boom5_black.xbm"/>
+      <File Name="boom5_gray.xbm"/>
+      <File Name="boom5_light.xbm"/>
+      <File Name="boom6_black.xbm"/>
+      <File Name="boom6_gray.xbm"/>
+      <File Name="boom6_light.xbm"/>
     </VirtualDirectory>
   </VirtualDirectory>
   <Settings Type="Executable">
