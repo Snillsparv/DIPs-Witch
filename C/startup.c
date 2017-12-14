@@ -300,6 +300,7 @@ void main(void)
 	int game_over = 0;
 	int game_over_adder = 0;
 	int no_DIP = 0;
+	int lastFireTrigger = 0;
 	
 	
 	current_screen = RESET_GAME;
@@ -377,7 +378,7 @@ void main(void)
 						current_screen = GAME_SCREEN;
 						random_seed = counter;
 						counter = 0;
-						clear_ascii();
+						ascii_write("Daffo: I'm feeling ","a bit spooked out...");
 					}
 				}
 				
@@ -385,7 +386,7 @@ void main(void)
 					current_screen = GAME_SCREEN;
 					random_seed = counter;
 					counter = 0;
-					clear_ascii();
+					ascii_write("Daffo: I'm feeling ","a bit spooked out...");
 				}
 				
 				
@@ -432,23 +433,37 @@ void main(void)
 				
 				if(is_climbing) {
 					gameObjectUpdate( &player );
+					if (player.yPos % 6 == 0){
+						ascii_write("*tipp*","");
+					}
+					else if (player.yPos % 6 == 3) {
+						ascii_write("*tapp*","");
+					}
 					if(player.yPos > 4) {
 						player.yPos--;
-						ascii_write("*tipp*","");
 					} else {	//Stay at top level and disable climbing forever!
 						player.yPos = 5;
 						player.xPos = 96;
 						is_climbing = 0;
 						has_climbed = 1;
-						ascii_write("*tapp*","");
 					}
 				} else {
 					player.update(&player);
 				}
 				
+				if (trophy.yPos >= player.yPos && (player.xPos + PLAYER_WIDTH/2 >= trophy.xPos && player.xPos <= trophy.xPos + PLAYER_WIDTH/2 )) {
+					ascii_write("Daffo: I need magic ","to grab the trophy!");
+				}
+				
 				if (read_DIL_single(EXPLOSION_TRIGGER)){
-					game_over_adder = 20;
-					ascii_write("*KABOOOOM*","");
+					if (trophy.yPos >= player.yPos && (player.xPos + PLAYER_WIDTH/2 >= trophy.xPos && player.xPos <= trophy.xPos + PLAYER_WIDTH/2 )){
+						//TODO WIN
+						ascii_write("PLACEHOLDER DU VANN","");
+					}
+					else{
+						game_over_adder = 20;
+						ascii_write("*KABOOOOM*","");
+					}
 				}
 				
 				//fire1_indoors.update(&fire1_indoors);
@@ -459,6 +474,9 @@ void main(void)
 				}
 				hair.update(&hair);
 				if(read_DIL_single(HAIR_TRIGGER)) {
+					if (lastFireTrigger == 0){
+						ascii_write("*FwOOOo*","");
+					}
 					hair.xPos = player.xPos;
 					hair.yPos = player.yPos - 28;
 				} else {
@@ -470,7 +488,7 @@ void main(void)
 				
 				if (!no_DIP && DIP.yPos >= player.yPos && (player.xPos + DIP_WIDTH/2 >= DIP.xPos && player.xPos <= DIP.xPos + DIP_WIDTH/2 )){ // DIP_collision
 					game_over_adder = 100;
-					ascii_write("DIPs-WITCH:","       NyAHAHAHAH");
+					ascii_write("DIPs-WITCH:","      NyAHAHAHAH!");
 				}
 				
 				static int distance_player_fire;	//fire_collision
@@ -492,6 +510,7 @@ void main(void)
 					fires[1].xPos = trophy.xPos;
 					fires[1].yPos = trophy.yPos + 5;
 					trophy.xPos = 500;
+					ascii_write("DAFFO:  ","        Oops...!");
 				}
 				
 				static int DIP_burned = 0;
@@ -502,7 +521,10 @@ void main(void)
 					fires[2].xPos = DIP.xPos;
 					fires[2].yPos = DIP.yPos + 6;
 					no_DIP = 1;
+					ascii_write("DIPs-WITCH:","       ARGHGHHRH!");
 				}
+				
+				lastFireTrigger = read_DIL_single(HAIR_TRIGGER);
 				
 				game_over += game_over_adder;
 				
@@ -536,7 +558,7 @@ void main(void)
 				bird.xPos = 180;
 				bird.yPos = 40;
 				
-				trophy.xPos = 19;
+				trophy.xPos = 24;
 				trophy.yPos = 5;
 				trophy_burned = 0;
 				
@@ -544,6 +566,8 @@ void main(void)
 				DIP.yPos = 5;
 				DIP_burned = 0;
 				no_DIP = 0;
+				
+				lastFireTrigger = 0;
 				
 				player.xPos = 3;
 				player.yPos = 64-18-7; //player position
