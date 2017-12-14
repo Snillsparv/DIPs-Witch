@@ -69,7 +69,7 @@ ARM_GCC_M4FPLIB:=$(CodeLiteDir)/tools/gcc-arm/lib/gcc/arm-none-eabi/6.3.1/thumb/
 Objects0=$(IntermediateDirectory)/startup.c$(ObjectSuffix) $(IntermediateDirectory)/gameobject.c$(ObjectSuffix) $(IntermediateDirectory)/fire.c$(ObjectSuffix) $(IntermediateDirectory)/player.c$(ObjectSuffix) $(IntermediateDirectory)/bird.c$(ObjectSuffix) $(IntermediateDirectory)/witch.c$(ObjectSuffix) $(IntermediateDirectory)/DIP.c$(ObjectSuffix) $(IntermediateDirectory)/flame.c$(ObjectSuffix) $(IntermediateDirectory)/boom.c$(ObjectSuffix) $(IntermediateDirectory)/graphics.c$(ObjectSuffix) \
 	$(IntermediateDirectory)/image.c$(ObjectSuffix) $(IntermediateDirectory)/sprite.c$(ObjectSuffix) $(IntermediateDirectory)/gpio.c$(ObjectSuffix) 
 
-Objects1=$(IntermediateDirectory)/ascii_display.c$(ObjectSuffix) $(IntermediateDirectory)/slow_text.c$(ObjectSuffix) $(IntermediateDirectory)/indoors.c$(ObjectSuffix) $(IntermediateDirectory)/indoors2.c$(ObjectSuffix) $(IntermediateDirectory)/trophy.c$(ObjectSuffix) 
+Objects1=$(IntermediateDirectory)/ascii_display.c$(ObjectSuffix) $(IntermediateDirectory)/slow_text.c$(ObjectSuffix) $(IntermediateDirectory)/indoors.c$(ObjectSuffix) $(IntermediateDirectory)/indoors2.c$(ObjectSuffix) $(IntermediateDirectory)/trophy.c$(ObjectSuffix) $(IntermediateDirectory)/roger.c$(ObjectSuffix) 
 
 
 
@@ -250,6 +250,14 @@ $(IntermediateDirectory)/trophy.c$(DependSuffix): trophy.c
 
 $(IntermediateDirectory)/trophy.c$(PreprocessSuffix): trophy.c
 	$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/trophy.c$(PreprocessSuffix) trophy.c
+
+$(IntermediateDirectory)/roger.c$(ObjectSuffix): roger.c $(IntermediateDirectory)/roger.c$(DependSuffix)
+	$(CC) $(SourceSwitch) "C:/mop/c/Moplaborationer/DIPs-Witch/C/roger.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/roger.c$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/roger.c$(DependSuffix): roger.c
+	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/roger.c$(ObjectSuffix) -MF$(IntermediateDirectory)/roger.c$(DependSuffix) -MM roger.c
+
+$(IntermediateDirectory)/roger.c$(PreprocessSuffix): roger.c
+	$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/roger.c$(PreprocessSuffix) roger.c
 
 
 -include $(IntermediateDirectory)/*$(DependSuffix)

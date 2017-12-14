@@ -59,6 +59,8 @@
         <File Name="indoors2.c"/>
         <File Name="trophy.h"/>
         <File Name="trophy.c"/>
+        <File Name="roger.h"/>
+        <File Name="roger.c"/>
       </VirtualDirectory>
     </VirtualDirectory>
     <VirtualDirectory Name="Definitions">
@@ -176,6 +178,11 @@
       <File Name="boom6_black.xbm"/>
       <File Name="boom6_gray.xbm"/>
       <File Name="boom6_light.xbm"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="roger">
+      <File Name="roger_black.xbm"/>
+      <File Name="roger_gray.xbm"/>
+      <File Name="roger_light.xbm"/>
     </VirtualDirectory>
   </VirtualDirectory>
   <Settings Type="Executable">

@@ -183,6 +183,11 @@ void main(void)
 	castleObj.xPos = 1;
 	castleObj.yPos = 1;
 	castleObj.current_frame = 0;
+
+	GameObject roger;
+	init_roger( &roger );
+	roger.xPos = 1;
+	roger.yPos = 1;
 	
 	GameObject indoors;
 	init_indoors( &indoors );
@@ -308,7 +313,7 @@ void main(void)
 	int first = 1;
 	int lastFireTrigger = 0;
 		
-	current_screen = RESET_GAME;
+	current_screen = WIN_SCREEN; //RESET_GAME;
 	
 	//Game loop
 	while(1) {
@@ -540,7 +545,7 @@ void main(void)
 					fires[2].xPos = DIP.xPos;
 					fires[2].yPos = DIP.yPos + 6;
 					no_DIP = 1;
-					ascii_write("DIPs-WITCH:","       ARGHGHHRH!");
+					ascii_write("DIPs-WITCH: ","       ARGHGHHRH!");
 				}
 				
 				lastFireTrigger = read_DIL_single(HAIR_TRIGGER);
@@ -593,6 +598,12 @@ void main(void)
 				player.xPos = 3;
 				player.yPos = 64-18-7; //player position
 				clear_ascii();
+				break;
+				
+				
+			case WIN_SCREEN:
+				draw_game_object( &roger );
+				show_frame(1);
 				break;
 							
 		} //end of switch
