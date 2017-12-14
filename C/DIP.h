@@ -8,6 +8,7 @@
 void init_DIP( GameObject *DIPObj );
 void DIPUpdate(GameObject *this);
 void setPlayerPosition(int x, int y);
+void resetDIP(void);
 
 #define DIP_WIDTH 18
 #define DIP_HEIGHT 18

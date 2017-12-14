@@ -106,18 +106,25 @@ void init_DIP( GameObject *DIPObj ) {
 
 static int playerPositionX = 0;
 static int playerPositionY = 0;
+static int counter = 0;
+static int direction = -1;
+static int isRunning = 0;
 
 void setPlayerPosition(int x, int y){
 	playerPositionX = x;
 	playerPositionY = y;
 }
 
+void resetDIP(void){
+	playerPositionX = 0;
+	playerPositionY = 0;
+	counter = 0;
+	direction = -1;
+	isRunning = 0;
+}
 
 void DIPUpdate(GameObject *this) {
 	gameObjectUpdate(this);
-	static int counter = 0;
-	static int direction = -1;
-	static int isRunning = 0;
 	counter++;
 	
 	if (!read_DIL_single(LIGHT_TRIGGER)){ // Only move if the light is off
