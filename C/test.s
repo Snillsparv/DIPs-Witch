@@ -15,7 +15,7 @@
   15              		.data
   16              		.align	2
   19              	roger_black_bits:
-  20 0000 07       		.byte	7
+  20 0000 00       		.byte	0
   21 0001 00       		.byte	0
   22 0002 00       		.byte	0
   23 0003 00       		.byte	0
@@ -30,8 +30,8 @@
   32 000c 00       		.byte	0
   33 000d 00       		.byte	0
   34 000e 00       		.byte	0
-  35 000f E0       		.byte	-32
-  36 0010 07       		.byte	7
+  35 000f 00       		.byte	0
+  36 0010 00       		.byte	0
   37 0011 00       		.byte	0
   38 0012 00       		.byte	0
   39 0013 00       		.byte	0
@@ -46,8 +46,8 @@
   48 001c 00       		.byte	0
   49 001d 00       		.byte	0
   50 001e 00       		.byte	0
-  51 001f E0       		.byte	-32
-  52 0020 07       		.byte	7
+  51 001f 00       		.byte	0
+  52 0020 00       		.byte	0
   53 0021 00       		.byte	0
   54 0022 00       		.byte	0
   55 0023 00       		.byte	0
@@ -62,8 +62,8 @@
   64 002c 00       		.byte	0
   65 002d 00       		.byte	0
   66 002e 00       		.byte	0
-  67 002f E0       		.byte	-32
-  68 0030 07       		.byte	7
+  67 002f 00       		.byte	0
+  68 0030 00       		.byte	0
   69 0031 00       		.byte	0
   70 0032 00       		.byte	0
   71 0033 00       		.byte	0
@@ -78,8 +78,8 @@
   80 003c 00       		.byte	0
   81 003d 00       		.byte	0
   82 003e 00       		.byte	0
-  83 003f E0       		.byte	-32
-  84 0040 07       		.byte	7
+  83 003f 00       		.byte	0
+  84 0040 00       		.byte	0
   85 0041 00       		.byte	0
   86 0042 00       		.byte	0
   87 0043 00       		.byte	0
@@ -94,8 +94,8 @@
   96 004c 00       		.byte	0
   97 004d 00       		.byte	0
   98 004e 00       		.byte	0
-  99 004f E0       		.byte	-32
- 100 0050 07       		.byte	7
+  99 004f 00       		.byte	0
+ 100 0050 00       		.byte	0
  101 0051 00       		.byte	0
  102 0052 00       		.byte	0
  103 0053 00       		.byte	0
@@ -110,8 +110,8 @@
  112 005c 00       		.byte	0
  113 005d 00       		.byte	0
  114 005e 00       		.byte	0
- 115 005f E0       		.byte	-32
- 116 0060 07       		.byte	7
+ 115 005f 00       		.byte	0
+ 116 0060 00       		.byte	0
  117 0061 00       		.byte	0
  118 0062 00       		.byte	0
  119 0063 00       		.byte	0
@@ -126,8 +126,8 @@
  128 006c 00       		.byte	0
  129 006d 00       		.byte	0
  130 006e 00       		.byte	0
- 131 006f E0       		.byte	-32
- 132 0070 07       		.byte	7
+ 131 006f 00       		.byte	0
+ 132 0070 00       		.byte	0
  133 0071 00       		.byte	0
  134 0072 00       		.byte	0
  135 0073 00       		.byte	0
@@ -142,8 +142,8 @@
  144 007c 00       		.byte	0
  145 007d 00       		.byte	0
  146 007e 00       		.byte	0
- 147 007f E0       		.byte	-32
- 148 0080 07       		.byte	7
+ 147 007f 00       		.byte	0
+ 148 0080 00       		.byte	0
  149 0081 00       		.byte	0
  150 0082 00       		.byte	0
  151 0083 00       		.byte	0
@@ -158,8 +158,8 @@
  160 008c 00       		.byte	0
  161 008d 00       		.byte	0
  162 008e 00       		.byte	0
- 163 008f E0       		.byte	-32
- 164 0090 07       		.byte	7
+ 163 008f 00       		.byte	0
+ 164 0090 00       		.byte	0
  165 0091 00       		.byte	0
  166 0092 00       		.byte	0
  167 0093 00       		.byte	0
@@ -167,15 +167,15 @@
  169 0095 00       		.byte	0
  170 0096 00       		.byte	0
  171 0097 00       		.byte	0
- 172 0098 DC       		.byte	-36
+ 172 0098 FC       		.byte	-4
  173 0099 7F       		.byte	127
  174 009a 00       		.byte	0
  175 009b 00       		.byte	0
  176 009c 00       		.byte	0
  177 009d 00       		.byte	0
  178 009e 00       		.byte	0
- 179 009f E0       		.byte	-32
- 180 00a0 07       		.byte	7
+ 179 009f 00       		.byte	0
+ 180 00a0 00       		.byte	0
  181 00a1 00       		.byte	0
  182 00a2 00       		.byte	0
  183 00a3 00       		.byte	0
@@ -190,8 +190,8 @@
  192 00ac 00       		.byte	0
  193 00ad 00       		.byte	0
  194 00ae 00       		.byte	0
- 195 00af E0       		.byte	-32
- 196 00b0 07       		.byte	7
+ 195 00af 00       		.byte	0
+ 196 00b0 00       		.byte	0
  197 00b1 00       		.byte	0
  198 00b2 00       		.byte	0
  199 00b3 00       		.byte	0
@@ -206,8 +206,8 @@
  208 00bc 00       		.byte	0
  209 00bd 00       		.byte	0
  210 00be 00       		.byte	0
- 211 00bf E0       		.byte	-32
- 212 00c0 07       		.byte	7
+ 211 00bf 00       		.byte	0
+ 212 00c0 00       		.byte	0
  213 00c1 00       		.byte	0
  214 00c2 00       		.byte	0
  215 00c3 00       		.byte	0
@@ -222,8 +222,8 @@
  224 00cc 00       		.byte	0
  225 00cd 00       		.byte	0
  226 00ce 00       		.byte	0
- 227 00cf E0       		.byte	-32
- 228 00d0 07       		.byte	7
+ 227 00cf 00       		.byte	0
+ 228 00d0 00       		.byte	0
  229 00d1 00       		.byte	0
  230 00d2 00       		.byte	0
  231 00d3 00       		.byte	0
@@ -238,8 +238,8 @@
  240 00dc 00       		.byte	0
  241 00dd 00       		.byte	0
  242 00de 00       		.byte	0
- 243 00df E7       		.byte	-25
- 244 00e0 07       		.byte	7
+ 243 00df 07       		.byte	7
+ 244 00e0 00       		.byte	0
  245 00e1 00       		.byte	0
  246 00e2 00       		.byte	0
  247 00e3 00       		.byte	0
@@ -254,8 +254,8 @@
  256 00ec 00       		.byte	0
  257 00ed 00       		.byte	0
  258 00ee 80       		.byte	-128
- 259 00ef E7       		.byte	-25
- 260 00f0 07       		.byte	7
+ 259 00ef 07       		.byte	7
+ 260 00f0 00       		.byte	0
  261 00f1 8F       		.byte	-113
  262 00f2 07       		.byte	7
  263 00f3 00       		.byte	0
@@ -264,14 +264,14 @@
  266 00f6 00       		.byte	0
  267 00f7 00       		.byte	0
  268 00f8 08       		.byte	8
- 269 00f9 3D       		.byte	61
+ 269 00f9 3F       		.byte	63
  270 00fa 07       		.byte	7
  271 00fb 00       		.byte	0
  272 00fc 00       		.byte	0
  273 00fd 00       		.byte	0
  274 00fe 80       		.byte	-128
- 275 00ff E7       		.byte	-25
- 276 0100 07       		.byte	7
+ 275 00ff 07       		.byte	7
+ 276 0100 00       		.byte	0
  277 0101 8F       		.byte	-113
  278 0102 07       		.byte	7
  279 0103 00       		.byte	0
@@ -286,8 +286,8 @@
  288 010c C0       		.byte	-64
  289 010d 00       		.byte	0
  290 010e 80       		.byte	-128
- 291 010f E3       		.byte	-29
- 292 0110 07       		.byte	7
+ 291 010f 03       		.byte	3
+ 292 0110 00       		.byte	0
  293 0111 8E       		.byte	-114
  294 0112 03       		.byte	3
  295 0113 00       		.byte	0
@@ -302,8 +302,8 @@
  304 011c E0       		.byte	-32
  305 011d 01       		.byte	1
  306 011e 80       		.byte	-128
- 307 011f E3       		.byte	-29
- 308 0120 07       		.byte	7
+ 307 011f 03       		.byte	3
+ 308 0120 00       		.byte	0
  309 0121 DE       		.byte	-34
  310 0122 03       		.byte	3
  311 0123 00       		.byte	0
@@ -318,8 +318,8 @@
  320 012c C0       		.byte	-64
  321 012d 00       		.byte	0
  322 012e 80       		.byte	-128
- 323 012f E3       		.byte	-29
- 324 0130 07       		.byte	7
+ 323 012f 03       		.byte	3
+ 324 0130 00       		.byte	0
  325 0131 FC       		.byte	-4
  326 0132 E1       		.byte	-31
  327 0133 38       		.byte	56
@@ -334,8 +334,8 @@
  336 013c 0E       		.byte	14
  337 013d D8       		.byte	-40
  338 013e 81       		.byte	-127
- 339 013f E3       		.byte	-29
- 340 0140 07       		.byte	7
+ 339 013f 03       		.byte	3
+ 340 0140 00       		.byte	0
  341 0141 F8       		.byte	-8
  342 0142 F0       		.byte	-16
  343 0143 79       		.byte	121
@@ -350,8 +350,8 @@
  352 014c CF       		.byte	-49
  353 014d F9       		.byte	-7
  354 014e 83       		.byte	-125
- 355 014f E3       		.byte	-29
- 356 0150 07       		.byte	7
+ 355 014f 03       		.byte	3
+ 356 0150 00       		.byte	0
  357 0151 70       		.byte	112
  358 0152 F8       		.byte	-8
  359 0153 73       		.byte	115
@@ -366,8 +366,8 @@
  368 015c E7       		.byte	-25
  369 015d F9       		.byte	-7
  370 015e 87       		.byte	-121
- 371 015f E3       		.byte	-29
- 372 0160 07       		.byte	7
+ 371 015f 03       		.byte	3
+ 372 0160 00       		.byte	0
  373 0161 70       		.byte	112
  374 0162 B8       		.byte	-72
  375 0163 73       		.byte	115
@@ -382,8 +382,8 @@
  384 016c E7       		.byte	-25
  385 016d 71       		.byte	113
  386 016e 87       		.byte	-121
- 387 016f E1       		.byte	-31
- 388 0170 07       		.byte	7
+ 387 016f 01       		.byte	1
+ 388 0170 00       		.byte	0
  389 0171 70       		.byte	112
  390 0172 B8       		.byte	-72
  391 0173 73       		.byte	115
@@ -398,8 +398,8 @@
  400 017c C7       		.byte	-57
  401 017d 71       		.byte	113
  402 017e 07       		.byte	7
- 403 017f E0       		.byte	-32
- 404 0180 07       		.byte	7
+ 403 017f 00       		.byte	0
+ 404 0180 00       		.byte	0
  405 0181 70       		.byte	112
  406 0182 B8       		.byte	-72
  407 0183 73       		.byte	115
@@ -414,8 +414,8 @@
  416 018c C7       		.byte	-57
  417 018d 71       		.byte	113
  418 018e 07       		.byte	7
- 419 018f E0       		.byte	-32
- 420 0190 07       		.byte	7
+ 419 018f 00       		.byte	0
+ 420 0190 00       		.byte	0
  421 0191 70       		.byte	112
  422 0192 F8       		.byte	-8
  423 0193 F3       		.byte	-13
@@ -430,8 +430,8 @@
  432 019c C3       		.byte	-61
  433 019d 71       		.byte	113
  434 019e 87       		.byte	-121
- 435 019f E1       		.byte	-31
- 436 01a0 07       		.byte	7
+ 435 019f 01       		.byte	1
+ 436 01a0 00       		.byte	0
  437 01a1 F8       		.byte	-8
  438 01a2 F0       		.byte	-16
  439 01a3 E1       		.byte	-31
@@ -446,8 +446,8 @@
  448 01ac C3       		.byte	-61
  449 01ad 73       		.byte	115
  450 01ae CF       		.byte	-49
- 451 01af E3       		.byte	-29
- 452 01b0 07       		.byte	7
+ 451 01af 03       		.byte	3
+ 452 01b0 00       		.byte	0
  453 01b1 F8       		.byte	-8
  454 01b2 E0       		.byte	-32
  455 01b3 C0       		.byte	-64
@@ -462,8 +462,8 @@
  464 01bc 81       		.byte	-127
  465 01bd 33       		.byte	51
  466 01be 8E       		.byte	-114
- 467 01bf E1       		.byte	-31
- 468 01c0 07       		.byte	7
+ 467 01bf 01       		.byte	1
+ 468 01c0 00       		.byte	0
  469 01c1 00       		.byte	0
  470 01c2 00       		.byte	0
  471 01c3 00       		.byte	0
@@ -478,8 +478,8 @@
  480 01cc 00       		.byte	0
  481 01cd 00       		.byte	0
  482 01ce 00       		.byte	0
- 483 01cf E0       		.byte	-32
- 484 01d0 07       		.byte	7
+ 483 01cf 00       		.byte	0
+ 484 01d0 00       		.byte	0
  485 01d1 00       		.byte	0
  486 01d2 00       		.byte	0
  487 01d3 00       		.byte	0
@@ -494,8 +494,8 @@
  496 01dc 00       		.byte	0
  497 01dd 00       		.byte	0
  498 01de 00       		.byte	0
- 499 01df E0       		.byte	-32
- 500 01e0 07       		.byte	7
+ 499 01df 00       		.byte	0
+ 500 01e0 00       		.byte	0
  501 01e1 00       		.byte	0
  502 01e2 00       		.byte	0
  503 01e3 00       		.byte	0
@@ -510,8 +510,8 @@
  512 01ec 00       		.byte	0
  513 01ed 00       		.byte	0
  514 01ee 00       		.byte	0
- 515 01ef E0       		.byte	-32
- 516 01f0 07       		.byte	7
+ 515 01ef 00       		.byte	0
+ 516 01f0 00       		.byte	0
  517 01f1 00       		.byte	0
  518 01f2 00       		.byte	0
  519 01f3 00       		.byte	0
@@ -526,8 +526,8 @@
  528 01fc 00       		.byte	0
  529 01fd 00       		.byte	0
  530 01fe 00       		.byte	0
- 531 01ff E0       		.byte	-32
- 532 0200 07       		.byte	7
+ 531 01ff 00       		.byte	0
+ 532 0200 00       		.byte	0
  533 0201 00       		.byte	0
  534 0202 00       		.byte	0
  535 0203 00       		.byte	0
@@ -542,8 +542,8 @@
  544 020c 00       		.byte	0
  545 020d 00       		.byte	0
  546 020e 00       		.byte	0
- 547 020f E0       		.byte	-32
- 548 0210 07       		.byte	7
+ 547 020f 00       		.byte	0
+ 548 0210 00       		.byte	0
  549 0211 00       		.byte	0
  550 0212 00       		.byte	0
  551 0213 00       		.byte	0
@@ -558,8 +558,8 @@
  560 021c 00       		.byte	0
  561 021d 00       		.byte	0
  562 021e 00       		.byte	0
- 563 021f E0       		.byte	-32
- 564 0220 07       		.byte	7
+ 563 021f 00       		.byte	0
+ 564 0220 00       		.byte	0
  565 0221 00       		.byte	0
  566 0222 00       		.byte	0
  567 0223 00       		.byte	0
@@ -574,8 +574,8 @@
  576 022c 00       		.byte	0
  577 022d 00       		.byte	0
  578 022e 00       		.byte	0
- 579 022f E0       		.byte	-32
- 580 0230 07       		.byte	7
+ 579 022f 00       		.byte	0
+ 580 0230 00       		.byte	0
  581 0231 00       		.byte	0
  582 0232 00       		.byte	0
  583 0233 00       		.byte	0
@@ -590,8 +590,8 @@
  592 023c 00       		.byte	0
  593 023d 00       		.byte	0
  594 023e 00       		.byte	0
- 595 023f E0       		.byte	-32
- 596 0240 07       		.byte	7
+ 595 023f 00       		.byte	0
+ 596 0240 00       		.byte	0
  597 0241 00       		.byte	0
  598 0242 00       		.byte	0
  599 0243 00       		.byte	0
@@ -606,8 +606,8 @@
  608 024c 00       		.byte	0
  609 024d 00       		.byte	0
  610 024e 00       		.byte	0
- 611 024f E0       		.byte	-32
- 612 0250 07       		.byte	7
+ 611 024f 00       		.byte	0
+ 612 0250 00       		.byte	0
  613 0251 00       		.byte	0
  614 0252 00       		.byte	0
  615 0253 00       		.byte	0
@@ -622,8 +622,8 @@
  624 025c 00       		.byte	0
  625 025d 00       		.byte	0
  626 025e 00       		.byte	0
- 627 025f E0       		.byte	-32
- 628 0260 07       		.byte	7
+ 627 025f 00       		.byte	0
+ 628 0260 00       		.byte	0
  629 0261 00       		.byte	0
  630 0262 00       		.byte	0
  631 0263 00       		.byte	0
@@ -638,8 +638,8 @@
  640 026c 00       		.byte	0
  641 026d 00       		.byte	0
  642 026e 00       		.byte	0
- 643 026f E0       		.byte	-32
- 644 0270 07       		.byte	7
+ 643 026f 00       		.byte	0
+ 644 0270 00       		.byte	0
  645 0271 00       		.byte	0
  646 0272 00       		.byte	0
  647 0273 00       		.byte	0
@@ -654,8 +654,8 @@
  656 027c 00       		.byte	0
  657 027d 00       		.byte	0
  658 027e 00       		.byte	0
- 659 027f E0       		.byte	-32
- 660 0280 07       		.byte	7
+ 659 027f 00       		.byte	0
+ 660 0280 00       		.byte	0
  661 0281 00       		.byte	0
  662 0282 00       		.byte	0
  663 0283 00       		.byte	0
@@ -670,8 +670,8 @@
  672 028c 00       		.byte	0
  673 028d 00       		.byte	0
  674 028e 00       		.byte	0
- 675 028f E0       		.byte	-32
- 676 0290 07       		.byte	7
+ 675 028f 00       		.byte	0
+ 676 0290 00       		.byte	0
  677 0291 00       		.byte	0
  678 0292 00       		.byte	0
  679 0293 00       		.byte	0
@@ -686,8 +686,8 @@
  688 029c 00       		.byte	0
  689 029d 00       		.byte	0
  690 029e 00       		.byte	0
- 691 029f E0       		.byte	-32
- 692 02a0 07       		.byte	7
+ 691 029f 00       		.byte	0
+ 692 02a0 00       		.byte	0
  693 02a1 00       		.byte	0
  694 02a2 00       		.byte	0
  695 02a3 C0       		.byte	-64
@@ -702,8 +702,8 @@
  704 02ac 00       		.byte	0
  705 02ad 00       		.byte	0
  706 02ae 00       		.byte	0
- 707 02af E0       		.byte	-32
- 708 02b0 07       		.byte	7
+ 707 02af 00       		.byte	0
+ 708 02b0 00       		.byte	0
  709 02b1 00       		.byte	0
  710 02b2 00       		.byte	0
  711 02b3 C0       		.byte	-64
@@ -718,8 +718,8 @@
  720 02bc 00       		.byte	0
  721 02bd 00       		.byte	0
  722 02be 00       		.byte	0
- 723 02bf E0       		.byte	-32
- 724 02c0 07       		.byte	7
+ 723 02bf 00       		.byte	0
+ 724 02c0 00       		.byte	0
  725 02c1 00       		.byte	0
  726 02c2 00       		.byte	0
  727 02c3 F0       		.byte	-16
@@ -734,8 +734,8 @@
  736 02cc 00       		.byte	0
  737 02cd 00       		.byte	0
  738 02ce 00       		.byte	0
- 739 02cf E0       		.byte	-32
- 740 02d0 07       		.byte	7
+ 739 02cf 00       		.byte	0
+ 740 02d0 00       		.byte	0
  741 02d1 00       		.byte	0
  742 02d2 00       		.byte	0
  743 02d3 F0       		.byte	-16
@@ -750,8 +750,8 @@
  752 02dc 00       		.byte	0
  753 02dd 00       		.byte	0
  754 02de 00       		.byte	0
- 755 02df E0       		.byte	-32
- 756 02e0 07       		.byte	7
+ 755 02df 00       		.byte	0
+ 756 02e0 00       		.byte	0
  757 02e1 00       		.byte	0
  758 02e2 00       		.byte	0
  759 02e3 FC       		.byte	-4
@@ -766,8 +766,8 @@
  768 02ec 00       		.byte	0
  769 02ed 00       		.byte	0
  770 02ee 00       		.byte	0
- 771 02ef E0       		.byte	-32
- 772 02f0 07       		.byte	7
+ 771 02ef 00       		.byte	0
+ 772 02f0 00       		.byte	0
  773 02f1 00       		.byte	0
  774 02f2 00       		.byte	0
  775 02f3 FF       		.byte	-1
@@ -782,12 +782,12 @@
  784 02fc 00       		.byte	0
  785 02fd 00       		.byte	0
  786 02fe 00       		.byte	0
- 787 02ff E0       		.byte	-32
- 788 0300 07       		.byte	7
+ 787 02ff 00       		.byte	0
+ 788 0300 00       		.byte	0
  789 0301 00       		.byte	0
  790 0302 C0       		.byte	-64
  791 0303 FF       		.byte	-1
- 792 0304 BB       		.byte	-69
+ 792 0304 FF       		.byte	-1
  793 0305 3F       		.byte	63
  794 0306 00       		.byte	0
  795 0307 00       		.byte	0
@@ -798,8 +798,8 @@
  800 030c 00       		.byte	0
  801 030d 00       		.byte	0
  802 030e 00       		.byte	0
- 803 030f E0       		.byte	-32
- 804 0310 07       		.byte	7
+ 803 030f 00       		.byte	0
+ 804 0310 00       		.byte	0
  805 0311 00       		.byte	0
  806 0312 E0       		.byte	-32
  807 0313 FF       		.byte	-1
@@ -814,11 +814,11 @@
  816 031c 00       		.byte	0
  817 031d 00       		.byte	0
  818 031e 00       		.byte	0
- 819 031f E0       		.byte	-32
- 820 0320 07       		.byte	7
+ 819 031f 00       		.byte	0
+ 820 0320 00       		.byte	0
  821 0321 00       		.byte	0
  822 0322 F0       		.byte	-16
- 823 0323 EF       		.byte	-17
+ 823 0323 FF       		.byte	-1
  824 0324 FF       		.byte	-1
  825 0325 3F       		.byte	63
  826 0326 00       		.byte	0
@@ -830,12 +830,12 @@
  832 032c 00       		.byte	0
  833 032d 00       		.byte	0
  834 032e 00       		.byte	0
- 835 032f E0       		.byte	-32
- 836 0330 07       		.byte	7
+ 835 032f 00       		.byte	0
+ 836 0330 00       		.byte	0
  837 0331 00       		.byte	0
  838 0332 FC       		.byte	-4
  839 0333 FF       		.byte	-1
- 840 0334 7F       		.byte	127
+ 840 0334 FF       		.byte	-1
  841 0335 3F       		.byte	63
  842 0336 00       		.byte	0
  843 0337 00       		.byte	0
@@ -846,8 +846,8 @@
  848 033c 00       		.byte	0
  849 033d 00       		.byte	0
  850 033e 00       		.byte	0
- 851 033f E0       		.byte	-32
- 852 0340 07       		.byte	7
+ 851 033f 00       		.byte	0
+ 852 0340 00       		.byte	0
  853 0341 00       		.byte	0
  854 0342 FE       		.byte	-2
  855 0343 FF       		.byte	-1
@@ -862,8 +862,8 @@
  864 034c 00       		.byte	0
  865 034d 00       		.byte	0
  866 034e 00       		.byte	0
- 867 034f E0       		.byte	-32
- 868 0350 07       		.byte	7
+ 867 034f 00       		.byte	0
+ 868 0350 00       		.byte	0
  869 0351 00       		.byte	0
  870 0352 FF       		.byte	-1
  871 0353 FF       		.byte	-1
@@ -878,11 +878,11 @@
  880 035c 00       		.byte	0
  881 035d 00       		.byte	0
  882 035e 00       		.byte	0
- 883 035f E0       		.byte	-32
- 884 0360 07       		.byte	7
+ 883 035f 00       		.byte	0
+ 884 0360 00       		.byte	0
  885 0361 C0       		.byte	-64
- 886 0362 BF       		.byte	-65
- 887 0363 DF       		.byte	-33
+ 886 0362 FF       		.byte	-1
+ 887 0363 FF       		.byte	-1
  888 0364 FF       		.byte	-1
  889 0365 7F       		.byte	127
  890 0366 00       		.byte	0
@@ -894,28 +894,28 @@
  896 036c 01       		.byte	1
  897 036d 00       		.byte	0
  898 036e 00       		.byte	0
- 899 036f E0       		.byte	-32
- 900 0370 07       		.byte	7
+ 899 036f 00       		.byte	0
+ 900 0370 00       		.byte	0
  901 0371 C0       		.byte	-64
  902 0372 FF       		.byte	-1
  903 0373 FF       		.byte	-1
- 904 0374 FD       		.byte	-3
+ 904 0374 FF       		.byte	-1
  905 0375 7F       		.byte	127
  906 0376 00       		.byte	0
  907 0377 00       		.byte	0
  908 0378 00       		.byte	0
  909 0379 FC       		.byte	-4
- 910 037a FE       		.byte	-2
+ 910 037a FF       		.byte	-1
  911 037b FF       		.byte	-1
  912 037c 01       		.byte	1
  913 037d 00       		.byte	0
  914 037e 00       		.byte	0
- 915 037f E0       		.byte	-32
- 916 0380 07       		.byte	7
+ 915 037f 00       		.byte	0
+ 916 0380 00       		.byte	0
  917 0381 F0       		.byte	-16
  918 0382 FF       		.byte	-1
  919 0383 FF       		.byte	-1
- 920 0384 BF       		.byte	-65
+ 920 0384 FF       		.byte	-1
  921 0385 7F       		.byte	127
  922 0386 00       		.byte	0
  923 0387 00       		.byte	0
@@ -926,26 +926,26 @@
  928 038c 7F       		.byte	127
  929 038d 00       		.byte	0
  930 038e 00       		.byte	0
- 931 038f E0       		.byte	-32
- 932 0390 07       		.byte	7
+ 931 038f 00       		.byte	0
+ 932 0390 00       		.byte	0
  933 0391 F0       		.byte	-16
  934 0392 FF       		.byte	-1
- 935 0393 FE       		.byte	-2
+ 935 0393 FF       		.byte	-1
  936 0394 FF       		.byte	-1
- 937 0395 3E       		.byte	62
+ 937 0395 3F       		.byte	63
  938 0396 00       		.byte	0
  939 0397 00       		.byte	0
  940 0398 00       		.byte	0
  941 0399 FF       		.byte	-1
- 942 039a DF       		.byte	-33
+ 942 039a FF       		.byte	-1
  943 039b FF       		.byte	-1
  944 039c 7F       		.byte	127
  945 039d 00       		.byte	0
  946 039e 00       		.byte	0
- 947 039f E0       		.byte	-32
- 948 03a0 07       		.byte	7
+ 947 039f 00       		.byte	0
+ 948 03a0 00       		.byte	0
  949 03a1 F0       		.byte	-16
- 950 03a2 FE       		.byte	-2
+ 950 03a2 FF       		.byte	-1
  951 03a3 FF       		.byte	-1
  952 03a4 FF       		.byte	-1
  953 03a5 3F       		.byte	63
@@ -958,8 +958,8 @@
  960 03ac 7F       		.byte	127
  961 03ad 00       		.byte	0
  962 03ae 00       		.byte	0
- 963 03af E0       		.byte	-32
- 964 03b0 07       		.byte	7
+ 963 03af 00       		.byte	0
+ 964 03b0 00       		.byte	0
  965 03b1 F0       		.byte	-16
  966 03b2 FF       		.byte	-1
  967 03b3 FF       		.byte	-1
@@ -968,18 +968,18 @@
  970 03b6 00       		.byte	0
  971 03b7 00       		.byte	0
  972 03b8 00       		.byte	0
- 973 03b9 FB       		.byte	-5
- 974 03ba FE       		.byte	-2
- 975 03bb FD       		.byte	-3
+ 973 03b9 FF       		.byte	-1
+ 974 03ba FF       		.byte	-1
+ 975 03bb FF       		.byte	-1
  976 03bc FF       		.byte	-1
  977 03bd 00       		.byte	0
  978 03be 00       		.byte	0
- 979 03bf E0       		.byte	-32
- 980 03c0 07       		.byte	7
+ 979 03bf 00       		.byte	0
+ 980 03c0 00       		.byte	0
  981 03c1 F0       		.byte	-16
  982 03c2 FF       		.byte	-1
- 983 03c3 F7       		.byte	-9
- 984 03c4 FE       		.byte	-2
+ 983 03c3 FF       		.byte	-1
+ 984 03c4 FF       		.byte	-1
  985 03c5 3F       		.byte	63
  986 03c6 00       		.byte	0
  987 03c7 00       		.byte	0
@@ -990,10 +990,10 @@
  992 03cc FF       		.byte	-1
  993 03cd 00       		.byte	0
  994 03ce 00       		.byte	0
- 995 03cf E0       		.byte	-32
- 996 03d0 07       		.byte	7
+ 995 03cf 00       		.byte	0
+ 996 03d0 00       		.byte	0
  997 03d1 F8       		.byte	-8
- 998 03d2 F7       		.byte	-9
+ 998 03d2 FF       		.byte	-1
  999 03d3 FF       		.byte	-1
  1000 03d4 FF       		.byte	-1
  1001 03d5 7F       		.byte	127
@@ -1002,17 +1002,17 @@
  1004 03d8 00       		.byte	0
  1005 03d9 FF       		.byte	-1
  1006 03da FF       		.byte	-1
- 1007 03db EF       		.byte	-17
+ 1007 03db FF       		.byte	-1
  1008 03dc FF       		.byte	-1
  1009 03dd 01       		.byte	1
  1010 03de 00       		.byte	0
- 1011 03df E0       		.byte	-32
- 1012 03e0 07       		.byte	7
+ 1011 03df 00       		.byte	0
+ 1012 03e0 00       		.byte	0
  1013 03e1 F8       		.byte	-8
  1014 03e2 FF       		.byte	-1
  1015 03e3 FF       		.byte	-1
  1016 03e4 FF       		.byte	-1
- 1017 03e5 7D       		.byte	125
+ 1017 03e5 7F       		.byte	127
  1018 03e6 40       		.byte	64
  1019 03e7 00       		.byte	0
  1020 03e8 00       		.byte	0
@@ -1022,8 +1022,8 @@
  1024 03ec FF       		.byte	-1
  1025 03ed 01       		.byte	1
  1026 03ee 00       		.byte	0
- 1027 03ef E0       		.byte	-32
- 1028 03f0 07       		.byte	7
+ 1027 03ef 00       		.byte	0
+ 1028 03f0 00       		.byte	0
  1029 03f1 F8       		.byte	-8
  1030 03f2 FF       		.byte	-1
  1031 03f3 FF       		.byte	-1
@@ -1033,12 +1033,12 @@
  1035 03f7 00       		.byte	0
  1036 03f8 00       		.byte	0
  1037 03f9 FF       		.byte	-1
- 1038 03fa EF       		.byte	-17
+ 1038 03fa FF       		.byte	-1
  1039 03fb FF       		.byte	-1
- 1040 03fc FE       		.byte	-2
+ 1040 03fc FF       		.byte	-1
  1041 03fd 01       		.byte	1
  1042 03fe 00       		.byte	0
- 1043 03ff E0       		.byte	-32
+ 1043 03ff 00       		.byte	0
  1044              		.align	2
  1047              	roger_gray_bits:
  1048 0400 00       		.byte	0

@@ -184,6 +184,26 @@
       <File Name="roger_gray.xbm"/>
       <File Name="roger_light.xbm"/>
     </VirtualDirectory>
+    <VirtualDirectory Name="game_over_witch">
+      <File Name="game_over_witch1_black.xbm"/>
+      <File Name="game_over_witch1_gray.xbm"/>
+      <File Name="game_over_witch1_light.xbm"/>
+      <File Name="game_over_witch2_black.xbm"/>
+      <File Name="game_over_witch2_gray.xbm"/>
+      <File Name="game_over_witch2_light.xbm"/>
+      <File Name="game_over_witch3_black.xbm"/>
+      <File Name="game_over_witch3_gray.xbm"/>
+      <File Name="game_over_witch3_light.xbm"/>
+      <File Name="game_over_witch4_black.xbm"/>
+      <File Name="game_over_witch4_gray.xbm"/>
+      <File Name="game_over_witch4_light.xbm"/>
+      <File Name="game_over_witch5_black.xbm"/>
+      <File Name="game_over_witch5_gray.xbm"/>
+      <File Name="game_over_witch5_light.xbm"/>
+      <File Name="game_over_witch6_black.xbm"/>
+      <File Name="game_over_witch6_gray.xbm"/>
+      <File Name="game_over_witch6_light.xbm"/>
+    </VirtualDirectory>
   </VirtualDirectory>
   <Settings Type="Executable">
     <GlobalSettings>
