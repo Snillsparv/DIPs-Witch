@@ -19,7 +19,7 @@
 #include "game_over_witch6_black.xbm"
 #include "game_over_witch6_gray.xbm"
 #include "game_over_witch6_light.xbm"
-#include "game_over_witch7_black.xbm"
+/*#include "game_over_witch7_black.xbm"
 #include "game_over_witch7_gray.xbm"
 #include "game_over_witch7_light.xbm"
 #include "game_over_witch8_black.xbm"
@@ -36,7 +36,7 @@
 #include "game_over_witch11_light.xbm"
 #include "game_over_witch12_black.xbm"
 #include "game_over_witch12_gray.xbm"
-#include "game_over_witch12_light.xbm"
+#include "game_over_witch12_light.xbm"*/
 
 
 sprite *game_over_witch1Black;
@@ -57,7 +57,7 @@ sprite *game_over_witch5Light;
 sprite *game_over_witch6Black;
 sprite *game_over_witch6Gray;
 sprite *game_over_witch6Light;
-sprite *game_over_witch7Black;
+/*sprite *game_over_witch7Black;
 sprite *game_over_witch7Gray;
 sprite *game_over_witch7Light;
 sprite *game_over_witch8Black;
@@ -74,7 +74,7 @@ sprite *game_over_witch11Gray;
 sprite *game_over_witch11Light;
 sprite *game_over_witch12Black;
 sprite *game_over_witch12Gray;
-sprite *game_over_witch12Light;
+sprite *game_over_witch12Light;*/
 
 sprite tempgame_over_witchBlack;
 sprite tempgame_over_witchLight;
@@ -94,7 +94,7 @@ sprite tempgame_over_witch5Gray;
 sprite tempgame_over_witch6Black;
 sprite tempgame_over_witch6Light;
 sprite tempgame_over_witch6Gray;
-sprite tempgame_over_witch7Black;
+/*sprite tempgame_over_witch7Black;
 sprite tempgame_over_witch7Light;
 sprite tempgame_over_witch7Gray;
 sprite tempgame_over_witch8Black;
@@ -111,7 +111,7 @@ sprite tempgame_over_witch11Light;
 sprite tempgame_over_witch11Gray;
 sprite tempgame_over_witch12Black;
 sprite tempgame_over_witch12Light;
-sprite tempgame_over_witch12Gray;
+sprite tempgame_over_witch12Gray;*/
 
 
 GameObject game_over_witchObj;
@@ -121,13 +121,13 @@ Image game_over_witch3Image;
 Image game_over_witch4Image;
 Image game_over_witch5Image;
 Image game_over_witch6Image;
-Image game_over_witch7Image;
+/*Image game_over_witch7Image;
 Image game_over_witch8Image;
 Image game_over_witch9Image;
 Image game_over_witch10Image;
 Image game_over_witch11Image;
-Image game_over_witch12Image;
-Image game_over_witchImages[12];
+Image game_over_witch12Image;*/
+Image game_over_witchImages[6];
 static void initSprites( void ) {	
 	
 	sprite *pointer11 = &tempgame_over_witchLight;
@@ -191,7 +191,7 @@ static void initSprites( void ) {
 	load_sprite(pointer27, game_over_witch6_black_bits, game_over_witch6_black_width, game_over_witch6_black_height);
 	game_over_witch6Black = pointer27;
 	
-	sprite *pointer;
+	/*sprite *pointer;
 	
 	*pointer = &tempgame_over_witch7Light;
 	load_sprite(pointer, game_over_witch7_light_bits, game_over_witch7_black_width, game_over_witch7_black_height);
@@ -251,7 +251,7 @@ static void initSprites( void ) {
 	game_over_witch12Gray = pointer;
 	*pointer = &tempgame_over_witch12Black;
 	load_sprite(pointer, game_over_witch12_black_bits, game_over_witch12_black_width, game_over_witch12_black_height);
-	game_over_witch12Black = pointer;
+	game_over_witch12Black = pointer;*/
 }
 	
 void init_game_over_witch( GameObject *game_over_witchObj ) {
@@ -266,12 +266,12 @@ void init_game_over_witch( GameObject *game_over_witchObj ) {
 		game_over_witchImages[3] = game_over_witch4Image;
 		game_over_witchImages[4] = game_over_witch5Image;
 		game_over_witchImages[5] = game_over_witch6Image;
-		game_over_witchImages[6] = game_over_witch7Image;
+		/*game_over_witchImages[6] = game_over_witch7Image;
 		game_over_witchImages[7] = game_over_witch8Image;
 		game_over_witchImages[8] = game_over_witch9Image;
 		game_over_witchImages[9] = game_over_witch10Image;
 		game_over_witchImages[10] = game_over_witch11Image;
-		game_over_witchImages[11] = game_over_witch12Image;
+		game_over_witchImages[11] = game_over_witch12Image;*/
 		
 		load_image(&game_over_witchImages[0], game_over_witch1Black, game_over_witch1Gray, game_over_witch1Light);
 		load_image(&game_over_witchImages[1], game_over_witch2Black, game_over_witch2Gray, game_over_witch2Light);
@@ -279,18 +279,18 @@ void init_game_over_witch( GameObject *game_over_witchObj ) {
 		load_image(&game_over_witchImages[3], game_over_witch4Black, game_over_witch4Gray, game_over_witch4Light);
 		load_image(&game_over_witchImages[4], game_over_witch5Black, game_over_witch5Gray, game_over_witch5Light);
 		load_image(&game_over_witchImages[5], game_over_witch6Black, game_over_witch6Gray, game_over_witch6Light);
-		load_image(&game_over_witchImages[6], game_over_witch7Black, game_over_witch7Gray, game_over_witch7Light);
+		/*load_image(&game_over_witchImages[6], game_over_witch7Black, game_over_witch7Gray, game_over_witch7Light);
 		load_image(&game_over_witchImages[7], game_over_witch8Black, game_over_witch8Gray, game_over_witch8Light);
 		load_image(&game_over_witchImages[8], game_over_witch9Black, game_over_witch9Gray, game_over_witch9Light);
 		load_image(&game_over_witchImages[9], game_over_witch10Black, game_over_witch10Gray, game_over_witch10Light);
 		load_image(&game_over_witchImages[10], game_over_witch11Black, game_over_witch11Gray, game_over_witch11Light);
-		load_image(&game_over_witchImages[11], game_over_witch12Black, game_over_witch12Gray, game_over_witch12Light);
+		load_image(&game_over_witchImages[11], game_over_witch12Black, game_over_witch12Gray, game_over_witch12Light);*/
 	}
 	
 	game_over_witchObj->images = game_over_witchImages;
 
 	game_over_witchObj->current_frame = 0;
-	game_over_witchObj->n_frames = 12;
+	game_over_witchObj->n_frames = 6;
 	game_over_witchObj->animation_speed = 1;
 	game_over_witchObj->animation_counter = 0;
 }
