@@ -479,7 +479,7 @@ void main(void)
 						ascii_write("PLACEHOLDER DU VANN","");
 					}
 					else{
-						game_over_adder = 3;
+						game_over_adder = 5;
 						ascii_write("*KABOOOOM*","");
 						exploding = 1;
 					}
@@ -505,6 +505,7 @@ void main(void)
 				if (!no_DIP && DIP.yPos >= player.yPos && (player.xPos + DIP_WIDTH/2 >= DIP.xPos && player.xPos <= DIP.xPos + DIP_WIDTH/2 )){ // DIP_collision
 					game_over_adder = 5;
 					ascii_write("DIPs-WITCH:","      NyAHAHAHAH!");
+					exploding = 1;
 				} else if(!no_DIP) {
 					setPlayerPosition(player.xPos, player.yPos);
 					DIP.update(&DIP);					
@@ -518,6 +519,7 @@ void main(void)
 							player.yPos < fires[j].yPos && distance_player_fire < 8 && distance_player_fire > -8) {
 						game_over_adder = 10;
 						ascii_write("*FWOOSH*","");
+						exploding = 1;
 					}					
 				}
 				
@@ -563,7 +565,8 @@ void main(void)
 	
 				static int test = 0;
 				test+=2;
-	
+				
+				boom.current_frame = 0;
 				first = 1;
 				exploding = 0;
 				is_climbing = 0;
