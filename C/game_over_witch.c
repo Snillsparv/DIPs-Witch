@@ -114,7 +114,7 @@ sprite tempgame_over_witch12Light;
 sprite tempgame_over_witch12Gray;*/
 
 
-GameObject game_over_witchObj;
+//GameObject game_over_witchObj;
 Image game_over_witch1Image;
 Image game_over_witch2Image;
 Image game_over_witch3Image;

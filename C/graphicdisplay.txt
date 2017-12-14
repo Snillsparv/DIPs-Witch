@@ -1,2 +1,2 @@
 ./Debug/startup.c.o ./Debug/gameobject.c.o ./Debug/fire.c.o ./Debug/player.c.o ./Debug/bird.c.o ./Debug/witch.c.o ./Debug/DIP.c.o ./Debug/flame.c.o ./Debug/boom.c.o ./Debug/graphics.c.o ./Debug/image.c.o ./Debug/sprite.c.o ./Debug/gpio.c.o   
-./Debug/ascii_display.c.o ./Debug/slow_text.c.o ./Debug/indoors.c.o ./Debug/indoors2.c.o ./Debug/trophy.c.o ./Debug/roger.c.o  
+./Debug/ascii_display.c.o ./Debug/slow_text.c.o ./Debug/indoors.c.o ./Debug/indoors2.c.o ./Debug/trophy.c.o ./Debug/roger.c.o ./Debug/game_over_witch.c.o  

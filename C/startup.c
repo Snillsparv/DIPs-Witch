@@ -189,13 +189,14 @@ void main(void)
 	GameObject roger;
 	init_roger( &roger );
 	roger.xPos = 1;
-	roger.yPos = 1;
+	roger.yPos = 100;
 	
 	GameObject game_over_witch;
 	init_game_over_witch( &game_over_witch );
 	game_over_witch.xPos = 1;
 	game_over_witch.yPos = 1;
 	game_over_witch.update = gameObjectUpdate;
+	game_over_witch.animation_speed = 2;
 	
 	GameObject indoors;
 	init_indoors( &indoors );
@@ -213,7 +214,7 @@ void main(void)
 	
 	GameObject hair;
 	init_flame(&hair);
-	hair.xPos = 40;
+	hair.xPos = -300;
 	hair.yPos = 10;
 	hair.update = gameObjectUpdate;
 	
@@ -294,6 +295,8 @@ void main(void)
 	SlowText text10;
 	SlowText text11;
 	SlowText text12;
+	SlowText textGameOver;
+	SlowText textWin;
 	init_slow_text(&text_kra, "*KRA!* *KRA!*", "   ", 1);
 	init_slow_text(&text1, "For centuries the", "DILs-witches have", 1);
 	init_slow_text(&text2, "coiled in fear,", "    ", 1);
@@ -307,10 +310,14 @@ void main(void)
 	init_slow_text(&text12, "wicked DIPs-witches.", "    ", 1);
 	init_slow_text(&text10, "so grippily trea-", "sured by", 1);
 	init_slow_text(&text11, "Enter, brave witch,", "- reset the switch!", 1);
+	init_slow_text(&textGameOver, "DIPs-WITCH:","HAHAHAHAHAAAAAAAA!!!", 1);
+	init_slow_text(&textWin, "Roger (King Lear): ","I am proud of you!", 1);
 	//ascii_write_part("Yeeaaah!!!", "This is working! :)", 5, 10);
 	set_up_ascii();
 	set_up_DIL();
 	clear_ascii();
+	
+	int game_over_counter = 0;
 	
 	int is_climbing = 0;
 	int has_climbed = 0;
@@ -320,6 +327,7 @@ void main(void)
 	int exploding = 0;
 	int first = 1;
 	int lastFireTrigger = 0;
+	int final_show_count = 8192;
 		
 	current_screen = RESET_GAME;
 	
@@ -488,8 +496,9 @@ void main(void)
 				
 				if (read_DIL_single(EXPLOSION_TRIGGER)){
 					if (trophy.yPos >= player.yPos && (player.xPos + PLAYER_WIDTH/2 >= trophy.xPos && player.xPos <= trophy.xPos + PLAYER_WIDTH/2 )){
+						counter = 0;
 						current_screen = WIN_SCREEN;
-						ascii_write("Roger (King Lear): ","I am proud of you!");
+						//ascii_write("Roger (King Lear): ","I am proud of you!");
 					}
 					else{
 						game_over_adder = 5;
@@ -530,7 +539,7 @@ void main(void)
 					distance_player_fire = (player.xPos + 9) - (fires[j].xPos + 5);
 					if(player.yPos > (fires[j].yPos - 18 + 7) && 
 							player.yPos < fires[j].yPos && distance_player_fire < 8 && distance_player_fire > -8) {
-						game_over_adder = 10;
+						game_over_adder = 5;
 						ascii_write("*FWOOSH*","");
 						exploding = 1;
 					}					
@@ -564,6 +573,7 @@ void main(void)
 				
 				if(game_over >= 100) {
 					current_screen = GAME_OVER_SCREEN;
+					counter = 0;
 				}
 				
 				break;
@@ -579,6 +589,8 @@ void main(void)
 				static int test = 0;
 				test+=2;
 				
+				roger.yPos = 80;
+				final_show_count = 8192;
 				boom.current_frame = 0;
 				first = 1;
 				exploding = 0;
@@ -605,6 +617,7 @@ void main(void)
 				no_DIP = 0;
 				
 				lastFireTrigger = 0;
+				game_over_counter = 0;
 				
 				playerReset();
 				player.xPos = 3;
@@ -616,7 +629,14 @@ void main(void)
 				
 			case WIN_SCREEN:
 				draw_game_object( &roger );
+				if(roger.yPos > 1) {
+					roger.yPos--;
+				}
 				show_frame(1);
+				counter++;
+				if(counter > 72) {
+					display(&textWin, 20);
+				}
 				break;
 				
 			case GAME_OVER_SCREEN:
@@ -624,9 +644,13 @@ void main(void)
 				show_frame(1);
 				game_over_witch.update(&game_over_witch);
 				
-				static int game_over_counter = 0;
+				
 				game_over_counter++;
-				if (game_over_counter > 150){
+				if (game_over_counter > 5) {
+					textGameOver.display(&textGameOver, 15);
+				}
+				
+				if (game_over_counter > 50){
 					current_screen = RESET_GAME;
 				}
 			break;

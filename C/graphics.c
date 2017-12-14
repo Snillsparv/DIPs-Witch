@@ -260,6 +260,17 @@ void pixel(int x, int y, int set, int color) {
 
 }
 
+void fill_screen(int pixels) {
+	int row, col;
+	for(row = 1; row < 65; row++) {
+		for(col = 1; col < 129; col++) {
+			pixel(col, row, 1, 3);
+			if(pixels <= 0)
+				return;
+			pixels--;
+		}
+	}
+}
 
 void pixel2(int x, int y, int set) {
 	uint8_t mask, c, controller;

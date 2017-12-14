@@ -3,7 +3,8 @@ Debug/startup.c.o: startup.c graphics.h sprite.h gameobject.h image.h \
  press_light.xbm press_gray.xbm controls.h castle_black.xbm \
  castle_gray.xbm castle_light.xbm title_light.xbm title_gray.xbm \
  title_black.xbm startup.h slow_text.h ascii_display.h bg.xbm gpio.h \
- fire.h player.h bird.h witch.h indoors.h indoors2.h DIP.h
+ fire.h player.h bird.h witch.h indoors.h indoors2.h DIP.h roger.h \
+ game_over_witch.h
 
 graphics.h:
 
@@ -62,3 +63,7 @@ indoors.h:
 indoors2.h:
 
 DIP.h:
+
+roger.h:
+
+game_over_witch.h:

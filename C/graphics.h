@@ -35,6 +35,8 @@
 #define LCD_BUSY 0x80
 typedef unsigned char uint8_t;
 
+void fill_screen(int pixels);
+
 void delay_250ns(void);
 void delay_500ns(void);
 void delay_micro(unsigned int us);

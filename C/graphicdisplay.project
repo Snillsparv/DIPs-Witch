@@ -61,6 +61,8 @@
         <File Name="trophy.c"/>
         <File Name="roger.h"/>
         <File Name="roger.c"/>
+        <File Name="game_over_witch.c"/>
+        <File Name="game_over_witch.h"/>
       </VirtualDirectory>
     </VirtualDirectory>
     <VirtualDirectory Name="Definitions">
