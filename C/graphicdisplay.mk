@@ -13,7 +13,7 @@ CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=Sparven
-Date                   :=14/12/2017
+Date                   :=15/12/2017
 CodeLitePath           :=C:/cseapp/CodeLite
 LinkerName             :=$(CodeLiteDir)/tools/gcc-arm/bin/arm-none-eabi-g++.exe
 SharedObjectLinkerName :=$(CodeLiteDir)/tools/gcc-arm/arm-none-eabi-g++.exe -shared -fPIC
@@ -66,11 +66,11 @@ ARM_V6LIB:=$(CodeLiteDir)/tools/gcc-arm/arm-none-eabi/lib/thumb/v6-m
 ARM_GCC_V6LIB:=$(CodeLiteDir)/tools/gcc-arm/lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m
 ARM_M4FPLIB:=$(CodeLiteDir)/tools/gcc-arm/arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard
 ARM_GCC_M4FPLIB:=$(CodeLiteDir)/tools/gcc-arm/lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m
-Objects0=$(IntermediateDirectory)/startup.c$(ObjectSuffix) $(IntermediateDirectory)/gameobject.c$(ObjectSuffix) $(IntermediateDirectory)/fire.c$(ObjectSuffix) $(IntermediateDirectory)/player.c$(ObjectSuffix) $(IntermediateDirectory)/bird.c$(ObjectSuffix) $(IntermediateDirectory)/witch.c$(ObjectSuffix) $(IntermediateDirectory)/DIP.c$(ObjectSuffix) $(IntermediateDirectory)/flame.c$(ObjectSuffix) $(IntermediateDirectory)/boom.c$(ObjectSuffix) $(IntermediateDirectory)/graphics.c$(ObjectSuffix) \
-	$(IntermediateDirectory)/image.c$(ObjectSuffix) $(IntermediateDirectory)/sprite.c$(ObjectSuffix) $(IntermediateDirectory)/gpio.c$(ObjectSuffix) 
+Objects0=$(IntermediateDirectory)/startup.c$(ObjectSuffix) $(IntermediateDirectory)/gameobject.c$(ObjectSuffix) $(IntermediateDirectory)/fire.c$(ObjectSuffix) $(IntermediateDirectory)/player.c$(ObjectSuffix) $(IntermediateDirectory)/bird.c$(ObjectSuffix) $(IntermediateDirectory)/witch.c$(ObjectSuffix) $(IntermediateDirectory)/DIP.c$(ObjectSuffix) $(IntermediateDirectory)/flame.c$(ObjectSuffix) $(IntermediateDirectory)/boom.c$(ObjectSuffix) $(IntermediateDirectory)/dragon.c$(ObjectSuffix) \
+	$(IntermediateDirectory)/graphics.c$(ObjectSuffix) $(IntermediateDirectory)/image.c$(ObjectSuffix) $(IntermediateDirectory)/sprite.c$(ObjectSuffix) $(IntermediateDirectory)/gpio.c$(ObjectSuffix) 
 
-Objects1=$(IntermediateDirectory)/ascii_display.c$(ObjectSuffix) $(IntermediateDirectory)/slow_text.c$(ObjectSuffix) $(IntermediateDirectory)/indoors.c$(ObjectSuffix) $(IntermediateDirectory)/indoors2.c$(ObjectSuffix) $(IntermediateDirectory)/trophy.c$(ObjectSuffix) $(IntermediateDirectory)/roger.c$(ObjectSuffix) $(IntermediateDirectory)/game_over_witch.c$(ObjectSuffix) \
-	
+Objects1=$(IntermediateDirectory)/ascii_display.c$(ObjectSuffix) $(IntermediateDirectory)/slow_text.c$(ObjectSuffix) $(IntermediateDirectory)/indoors.c$(ObjectSuffix) $(IntermediateDirectory)/indoors2.c$(ObjectSuffix) $(IntermediateDirectory)/trophy.c$(ObjectSuffix) $(IntermediateDirectory)/roger.c$(ObjectSuffix) \
+	$(IntermediateDirectory)/game_over_witch.c$(ObjectSuffix) $(IntermediateDirectory)/stone.c$(ObjectSuffix) 
 
 
 
@@ -180,6 +180,14 @@ $(IntermediateDirectory)/boom.c$(DependSuffix): boom.c
 $(IntermediateDirectory)/boom.c$(PreprocessSuffix): boom.c
 	$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/boom.c$(PreprocessSuffix) boom.c
 
+$(IntermediateDirectory)/dragon.c$(ObjectSuffix): dragon.c $(IntermediateDirectory)/dragon.c$(DependSuffix)
+	$(CC) $(SourceSwitch) "C:/mop/c/Moplaborationer/DIPs-Witch/C/dragon.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/dragon.c$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/dragon.c$(DependSuffix): dragon.c
+	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/dragon.c$(ObjectSuffix) -MF$(IntermediateDirectory)/dragon.c$(DependSuffix) -MM dragon.c
+
+$(IntermediateDirectory)/dragon.c$(PreprocessSuffix): dragon.c
+	$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/dragon.c$(PreprocessSuffix) dragon.c
+
 $(IntermediateDirectory)/graphics.c$(ObjectSuffix): graphics.c $(IntermediateDirectory)/graphics.c$(DependSuffix)
 	$(CC) $(SourceSwitch) "C:/mop/c/Moplaborationer/DIPs-Witch/C/graphics.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/graphics.c$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/graphics.c$(DependSuffix): graphics.c
@@ -267,6 +275,14 @@ $(IntermediateDirectory)/game_over_witch.c$(DependSuffix): game_over_witch.c
 
 $(IntermediateDirectory)/game_over_witch.c$(PreprocessSuffix): game_over_witch.c
 	$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/game_over_witch.c$(PreprocessSuffix) game_over_witch.c
+
+$(IntermediateDirectory)/stone.c$(ObjectSuffix): stone.c $(IntermediateDirectory)/stone.c$(DependSuffix)
+	$(CC) $(SourceSwitch) "C:/mop/c/Moplaborationer/DIPs-Witch/C/stone.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/stone.c$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/stone.c$(DependSuffix): stone.c
+	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/stone.c$(ObjectSuffix) -MF$(IntermediateDirectory)/stone.c$(DependSuffix) -MM stone.c
+
+$(IntermediateDirectory)/stone.c$(PreprocessSuffix): stone.c
+	$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/stone.c$(PreprocessSuffix) stone.c
 
 
 -include $(IntermediateDirectory)/*$(DependSuffix)

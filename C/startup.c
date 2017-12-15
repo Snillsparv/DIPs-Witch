@@ -30,6 +30,7 @@
 #include "DIP.h"
 #include "roger.h"
 #include "game_over_witch.h"
+#include "stone.h"
 
 int abs(int value);
 
@@ -189,13 +190,14 @@ void main(void)
 	GameObject roger;
 	init_roger( &roger );
 	roger.xPos = 1;
-	roger.yPos = 1;
+	roger.yPos = 100;
 	
 	GameObject game_over_witch;
 	init_game_over_witch( &game_over_witch );
 	game_over_witch.xPos = 1;
 	game_over_witch.yPos = 1;
 	game_over_witch.update = gameObjectUpdate;
+	game_over_witch.animation_speed = 2;
 	
 	GameObject indoors;
 	init_indoors( &indoors );
@@ -210,10 +212,16 @@ void main(void)
 	GameObject trophy;
 	init_trophy( &trophy );
 
+	GameObject stone;
+	init_stone( &stone );
+	stone.xPos = 70;
+	stone.yPos = -30;
+	stone.update = stoneUpdate; 
+
 	
 	GameObject hair;
 	init_flame(&hair);
-	hair.xPos = 40;
+	hair.xPos = -300;
 	hair.yPos = 10;
 	hair.update = gameObjectUpdate;
 	
@@ -221,7 +229,13 @@ void main(void)
 	init_bird( &bird );
 	bird.xPos = 180;
 	bird.yPos = 40;
-	bird.update = gameObjectUpdate;
+	bird.update = gameObjectUpdate;	
+	
+	GameObject dragon;
+	init_dragon( &dragon );
+	dragon.xPos = 130;
+	dragon.yPos = 64-10-21;
+	dragon.update = gameObjectUpdate;
 	
 	GameObject boom;
 	init_boom( &boom );
@@ -281,6 +295,8 @@ void main(void)
 	fire1.update = gameObjectUpdate;
 	fire4.update = gameObjectUpdate;
 	
+	SlowText textGameOver;
+	SlowText textWin;
 	SlowText text_kra;
 	SlowText text1;
 	SlowText text2;
@@ -307,11 +323,14 @@ void main(void)
 	init_slow_text(&text12, "wicked DIPs-witches.", "    ", 1);
 	init_slow_text(&text10, "so grippily trea-", "sured by", 1);
 	init_slow_text(&text11, "Enter, brave witch,", "- reset the switch!", 1);
+	init_slow_text(&textGameOver, "DIPs-WITCH:","HAHAHAHAHAAAAAAAA!!!", 1);
+	init_slow_text(&textWin, "Roger (King Lear): ","I am proud of you.", 1);
 	//ascii_write_part("Yeeaaah!!!", "This is working! :)", 5, 10);
 	set_up_ascii();
 	set_up_DIL();
 	clear_ascii();
 	
+	int game_over_counter = 0;
 	int is_climbing = 0;
 	int has_climbed = 0;
 	int game_over = 0;
@@ -320,6 +339,9 @@ void main(void)
 	int exploding = 0;
 	int first = 1;
 	int lastFireTrigger = 0;
+	int dragonAlive = 1;
+	int dragonDirection = -1;
+	int dragonStarted = 0;
 		
 	current_screen = RESET_GAME;
 	
@@ -385,11 +407,11 @@ void main(void)
 					text8.display(&text8, 20);
 				else if(counter < delay_until_text + 5*long_text + 4*short_text + 2)
 					text9.display(&text9, 20);
-				else if(counter < delay_until_text + 6*long_text + 4*short_text - 2 + 2)
+				else if(counter < delay_until_text + 6*long_text + 4*short_text - 2 + 2 - 5)
 					text10.display(&text10, 15);
-				else if(counter < delay_until_text + 6*long_text + 5*short_text + 3 + 2)
+				else if(counter < delay_until_text + 6*long_text + 5*short_text + 3 + 2 - 4)
 					text12.display(&text12, 15);
-				else if(counter < delay_until_text + 7*long_text + 5*short_text + 6 + 2) {
+				else if(counter < delay_until_text + 7*long_text + 5*short_text + 6 + 2 - 4) {
 					text11.display(&text11, 20);
 				} else {
 					if (read_DIL() == 0) {
@@ -452,6 +474,43 @@ void main(void)
 					if(boom.current_frame < 10)
 						boom.update( &boom );
 				}
+				draw_game_object( &stone );
+				
+				if(!dragonStarted && player.xPos > 60-9)
+					dragonStarted = 1;
+				
+				
+				if(dragonAlive && dragonStarted) {
+					draw_game_object( &dragon );
+					dragon.update(&dragon);
+					
+					if(dragon.xPos < 55) {
+						dragonDirection = 1;
+					}
+					if(dragon.xPos > 120) {
+						dragonDirection = -1;
+					}
+					dragon.xPos += dragonDirection;
+					
+					
+					if(player.yPos > 15 && player.xPos + 9 - dragon.xPos >= 0) {
+						game_over_adder = 5;
+						ascii_write("*YUM YUM YUM*","");
+						exploding = 1;
+					}
+					
+					if(abs(dragon.yPos - 10 - (stone.yPos - 12)) < 10 && 
+						dragon.xPos < 90) {
+						ascii_write("*BAM!*","");
+						dragonAlive = 0;
+						//exploding = 1;
+					}					
+
+					
+				} else if (!dragonAlive) {
+					draw_game_object( &dragon );
+					dragon.yPos += 2;
+				}
 				
 				show_frame(1);
 				
@@ -483,13 +542,14 @@ void main(void)
 				}
 				
 				if (trophy.yPos >= player.yPos && (player.xPos + PLAYER_WIDTH/2 >= trophy.xPos && player.xPos <= trophy.xPos + PLAYER_WIDTH/2 )) {
-					ascii_write("Daffo: I need magic ","to grab the trophy!");
+					ascii_write("Ghost: Only the dar-","ing gets the prize!");
 				}
 				
 				if (read_DIL_single(EXPLOSION_TRIGGER)){
 					if (trophy.yPos >= player.yPos && (player.xPos + PLAYER_WIDTH/2 >= trophy.xPos && player.xPos <= trophy.xPos + PLAYER_WIDTH/2 )){
+						counter = 0;
 						current_screen = WIN_SCREEN;
-						ascii_write("Roger (King Lear): ","I am proud of you!");
+						//ascii_write("Roger (King Lear): ","I am proud of you!");
 					}
 					else{
 						game_over_adder = 5;
@@ -530,11 +590,23 @@ void main(void)
 					distance_player_fire = (player.xPos + 9) - (fires[j].xPos + 5);
 					if(player.yPos > (fires[j].yPos - 18 + 7) && 
 							player.yPos < fires[j].yPos && distance_player_fire < 8 && distance_player_fire > -8) {
-						game_over_adder = 10;
+						game_over_adder = 5;
 						ascii_write("*FWOOSH*","");
 						exploding = 1;
 					}					
 				}
+				
+				static int distance_player_stone;	//fire_collision
+				static int k;
+			
+				distance_player_stone = (player.xPos + 9) - (stone.xPos + 12);
+				if(abs(player.yPos - 9 - (stone.yPos - 12)) < 10 && 
+						abs(distance_player_stone) < 10) {
+					game_over_adder = 5;
+					ascii_write("*BAM!*","");
+					exploding = 1;
+				}					
+				
 				
 				static int trophy_burned = 0;	//trophy burning
 				static int distance_hair_trophy;
@@ -564,7 +636,10 @@ void main(void)
 				
 				if(game_over >= 100) {
 					current_screen = GAME_OVER_SCREEN;
+					counter = 0;
 				}
+				
+				stone.update(&stone);
 				
 				break;
 				
@@ -579,6 +654,13 @@ void main(void)
 				static int test = 0;
 				test+=2;
 				
+				reset_Stone();
+				dragonDirection = -1;
+				dragonStarted = 0;
+				stone.xPos = 70;
+				stone.yPos = -30;
+				roger.yPos = 130;
+				game_over_counter = 0;
 				boom.current_frame = 0;
 				first = 1;
 				exploding = 0;
@@ -595,9 +677,15 @@ void main(void)
 				bird.xPos = 180;
 				bird.yPos = 40;
 				
+				
+				
 				trophy.xPos = 24;
 				trophy.yPos = 5;
 				trophy_burned = 0;
+				
+				dragon.xPos = 130;
+				dragon.yPos = 64-10-21;
+				dragonAlive = 1;
 				
 				resetDIP();
 				DIP.xPos = 100;
@@ -617,7 +705,14 @@ void main(void)
 				
 			case WIN_SCREEN:
 				draw_game_object( &roger );
+				if(roger.yPos > 1) {
+					roger.yPos--;
+				}
 				show_frame(1);
+				counter++;
+				if(counter > 150) {
+					display(&textWin, 20);
+				}
 				break;
 				
 			case GAME_OVER_SCREEN:
@@ -625,9 +720,12 @@ void main(void)
 				show_frame(1);
 				game_over_witch.update(&game_over_witch);
 				
-				static int game_over_counter = 0;
 				game_over_counter++;
-				if (game_over_counter > 150){
+				if (game_over_counter > 5) {
+					textGameOver.display(&textGameOver, 15);
+				}
+				
+				if (game_over_counter > 70){
 					current_screen = RESET_GAME;
 				}
 			break;

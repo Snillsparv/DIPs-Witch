@@ -38,6 +38,8 @@
       <File Name="flame.c"/>
       <File Name="boom.h"/>
       <File Name="boom.c"/>
+      <File Name="dragon.h"/>
+      <File Name="dragon.c"/>
     </VirtualDirectory>
     <VirtualDirectory Name="Graphics">
       <File Name="graphics.c"/>
@@ -63,6 +65,8 @@
         <File Name="roger.c"/>
         <File Name="game_over_witch.c"/>
         <File Name="game_over_witch.h"/>
+        <File Name="stone.h"/>
+        <File Name="stone.c"/>
       </VirtualDirectory>
     </VirtualDirectory>
     <VirtualDirectory Name="Definitions">
@@ -205,6 +209,22 @@
       <File Name="game_over_witch6_black.xbm"/>
       <File Name="game_over_witch6_gray.xbm"/>
       <File Name="game_over_witch6_light.xbm"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="stone">
+      <File Name="stone_black.xbm"/>
+      <File Name="stone_gray.xbm"/>
+      <File Name="stone_light.xbm"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="dragon">
+      <File Name="dragon1_black.xbm"/>
+      <File Name="dragon1_gray.xbm"/>
+      <File Name="dragon1_light.xbm"/>
+      <File Name="dragon2_black.xbm"/>
+      <File Name="dragon2_gray.xbm"/>
+      <File Name="dragon2_light.xbm"/>
+      <File Name="dragon3_black.xbm"/>
+      <File Name="dragon3_gray.xbm"/>
+      <File Name="dragon3_light.xbm"/>
     </VirtualDirectory>
   </VirtualDirectory>
   <Settings Type="Executable">

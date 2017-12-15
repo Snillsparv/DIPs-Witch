@@ -4,7 +4,7 @@ Debug/startup.c.o: startup.c graphics.h sprite.h gameobject.h image.h \
  castle_gray.xbm castle_light.xbm title_light.xbm title_gray.xbm \
  title_black.xbm startup.h slow_text.h ascii_display.h bg.xbm gpio.h \
  fire.h player.h bird.h witch.h indoors.h indoors2.h DIP.h roger.h \
- game_over_witch.h
+ game_over_witch.h stone.h
 
 graphics.h:
 
@@ -67,3 +67,5 @@ DIP.h:
 roger.h:
 
 game_over_witch.h:
+
+stone.h:
